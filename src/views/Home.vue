@@ -1,13 +1,65 @@
 <template>
-  <HelloWorld />
+  <v-content class=" pa-0">
+
+    <v-container fluid class="my-4">
+      <v-layout wrap align-center justify-center row fill-height class="">
+        <v-flex xs12 md10 >
+          <HomeStartScreen />
+        </v-flex>
+      </v-layout>
+    </v-container>
+
+    <v-container fluid style="background-color:#F9F9F9" >
+      <v-layout wrap align-center justify-center row fill-height>
+        <v-flex xs12 md10 class="">
+          <whatWeDo />
+        </v-flex>
+      </v-layout>
+    </v-container>
+
+    <v-container fluid style="background-color:#4C4A78" >
+      <v-layout wrap align-center justify-center row fill-height>
+        <v-flex xs12 md10 class="">
+          <AboutGDGChapter />
+        </v-flex>
+      </v-layout>
+    </v-container>
+
+    <v-container fluid >
+      <v-layout wrap align-center justify-center row fill-height>
+        <v-flex xs12 md10 class="">
+          <eventshowcase />
+        </v-flex>
+      </v-layout>
+    </v-container>
+
+    <v-container fluid >
+      <v-layout wrap align-center justify-center row fill-height>
+        <v-flex xs12 md10 class="">
+          <wtmInfo />
+        </v-flex>
+      </v-layout>
+    </v-container>
+
+
+  </v-content>
+  
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+  import HomeStartScreen from '@/components/home/HomeStartScreen'
+  import whatWeDo from '@/components/home/whatWeDo'
+  import AboutGDGChapter from '@/components/home/AboutGDGChapter'
+  import eventshowcase from '@/components/home/eventshowcase'
+  import wtmInfo from '@/components/home/wtmInfo'
 
   export default {
     components: {
-      HelloWorld
+      HomeStartScreen,
+      whatWeDo,
+      AboutGDGChapter,
+      eventshowcase,
+      wtmInfo
     }
   }
 </script>

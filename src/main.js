@@ -7,6 +7,7 @@ import './registerServiceWorker'
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import './style.css'
+import './filters/truncate'
 
 Vue.config.productionTip = false
 
