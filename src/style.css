@@ -1,0 +1,7 @@
+@font-face {
+    font-family: google-sans;
+    src: url(assets/fonts/GoogleSans-Regular.ttf);
+}
+.google-font{
+    font-family: google-sans
+}
