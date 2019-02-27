@@ -10,7 +10,7 @@
         </v-layout>
 
         <v-layout wrap align-start justify-start row fill-height class="hidden-sm-and-down">
-            <v-flex xs12 class="text-xs-center" v-if="showLoader">
+            <v-flex xs12 v-if="showLoader">
                 <v-progress-circular
                     :size="50"
                     color="blue"
@@ -105,7 +105,7 @@ export default {
             showData:false,
         }
     },
-    created(){
+    mounted(){
         fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
             console.log(res)
             this.showLoader = false
