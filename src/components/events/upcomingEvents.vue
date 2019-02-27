@@ -1,16 +1,15 @@
 <template>
     <v-container class="pa-0">
-        <v-layout wrap align-center justify-center row fill-height class="mt-5" >
-           <v-flex xs12 md9 lg9 class="pa-2 text-xs-center">
-               <p class="google-font" style="font-size:170%">Our Events & Meetups</p>
-               <p class="google-font" style="font-size:120%">
-                   At sessions that span from the technical to the visionary, let’s celebrate and discover what the technologies can enable: how product innovation, open source, and ML and AI can propel enterprises forward and solve the big problems that impact all of us.
-               </p>
-               <v-btn flat color="#4C4A78" class="ma-0 google-font" style="border-radius:7px;text-transform: capitalize;">See More</v-btn>             
+        <v-layout wrap align-center justify-center row fill-height class="mt-0 mb-0" >
+           <v-flex xs12 md12 lg12 class="pa-2 mb-0">
+               <p class="google-font mb-0" style="font-size:170%">Upcoming Events</p>
+               <p class="google-font mt-0 mb-0" style="font-size:120%">
+                   Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.
+               </p>     
             </v-flex> 
         </v-layout>
 
-        <v-layout wrap align-center justify-center row fill-height class="hidden-sm-and-down">
+        <v-layout wrap align-start justify-start row fill-height class="hidden-sm-and-down">
             <v-flex xs12 class="text-xs-center" v-if="showLoader">
                 <v-progress-circular
                     :size="50"
@@ -107,7 +106,7 @@ export default {
         }
     },
     created(){
-        fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?desc=true&photo-host=public&page=4&status=past&key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
+        fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
             console.log(res)
             this.showLoader = false
             this.showData = true

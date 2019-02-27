@@ -1,5 +1,5 @@
 <template>
-    <v-container class="pa-0">
+    <v-container class="pa-0 my-0">
         <v-layout wrap align-center justify-center row fill-height class="mt-5" style="background-color:#FAFAFA">
             <v-flex xs12 md2 lg2 class="pa-4">
                 <v-img

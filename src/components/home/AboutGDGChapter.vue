@@ -12,7 +12,7 @@
                 <br><br>
                <a href="#" class="google-font">See More about {{chapterDetails.ChapterName}}</a>
             </v-flex> 
-            <v-flex xs12 md2 lg2 class="">
+            <v-flex xs12 md2 lg2 class="hidden-sm-and-down">
                <v-img
                     :src="require('@/assets/img/svg/svg1.svg')"
                     :lazy-src="require('@/assets/img/svg/svg1.svg')"
