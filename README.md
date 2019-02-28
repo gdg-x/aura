@@ -1,5 +1,7 @@
 # gdg-web-app
 
+[![Build Status](https://travis-ci.org/Vrijraj/aura.svg?branch=master)](https://travis-ci.org/Vrijraj/aura)
+
 ## Project setup
 ```
 npm install
