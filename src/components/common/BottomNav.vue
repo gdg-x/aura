@@ -13,7 +13,7 @@
         flat
         value="Home"
         router
-        to="/"
+        to="/home"
       >
         <span>Home</span>
         <v-icon>dashboard</v-icon>
