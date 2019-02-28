@@ -1,6 +1,6 @@
 {
-  "name": "gdg-web-app",
-  "short_name": "gdg-web-app",
+  "name": "GDG Web App",
+  "short_name": "GDG Web App",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -15,6 +15,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#4DBA87"
+  "background_color": "#ffff",
+  "theme_color": "#0277bd"
 }

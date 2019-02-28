@@ -9,7 +9,7 @@
       
     >
       <v-btn
-        color="cyan"
+        color="#518FF5"
         flat
         value="Home"
         router
@@ -20,7 +20,7 @@
       </v-btn>
 
       <v-btn
-        color="cyan"
+        color="#518FF5"
         flat
         value="events"
         router
@@ -31,7 +31,7 @@
       </v-btn>
 
       <v-btn
-        color="cyan"
+        color="#518FF5"
         flat
         value="team"
         router
@@ -42,7 +42,7 @@
       </v-btn>
 
       <v-btn
-        color="cyan"
+        color="#518FF5"
         flat
         value="about"
         router
@@ -54,8 +54,8 @@
 
       
 
-      <v-btn
-        color="cyan"
+      <!-- <v-btn
+        color="#518FF5"
         flat
         value="contact"
         router
@@ -63,7 +63,7 @@
       >
         <span>Contant</span>
         <v-icon>person</v-icon>
-      </v-btn>
+      </v-btn> -->
 
     </v-bottom-nav>
   </v-card>
