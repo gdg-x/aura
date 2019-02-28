@@ -35,7 +35,7 @@
 
     <v-container fluid >
       <v-layout wrap align-center justify-center row fill-height>
-        <v-flex xs12 md10 class="">
+        <v-flex xs12 md10>
           <wtmInfo />
         </v-flex>
       </v-layout>

@@ -10,7 +10,7 @@
             </v-flex> 
         </v-layout>
 
-        <v-layout wrap align-center justify-center row fill-height class="hidden-sm-and-down">
+        <v-layout wrap align-start justify-center row fill-height class="hidden-sm-and-down">
             <v-flex xs12 class="text-xs-center" v-if="showLoader">
                 <v-progress-circular
                     :size="50"
@@ -28,9 +28,11 @@
                         <div>
                             <p class="google-font mb-0" style="font-size:130%">{{ item.name | summery(25) }}</p>
                             <p class="google-font mt-1 mb-0" style="font-size:110%">
-                                {{item.local_date}}
+                                <v-icon>insert_invitation</v-icon>
+                                {{item.local_date | dateFilter}}
                             </p>
                             <p class="google-font mt-0 mb-0" style="font-size:110%">
+                                <v-icon>watch_later</v-icon>
                                 {{item.local_time}}
                             </p>
                             <p class="google-font mt-0 mb-0" style="font-size:110%">
@@ -50,7 +52,7 @@
             </v-flex>
         </v-layout>
 
-        <v-layout wrap align-center justify-center row fill-height class="hidden-sm-and-up">
+        <v-layout wrap align-center justify-center row fill-height class="hidden-md-and-up">
             <v-flex xs12 class="text-xs-center" v-if="showLoader">
                 <v-progress-circular
                     :size="50"
@@ -73,7 +75,7 @@
 
                             <v-list-tile-content>
                                 <v-list-tile-title class="google-font">{{ item.name }}</v-list-tile-title>
-                                <v-list-tile-sub-title class="google-font">{{ item.local_date }} | {{ item.local_time }}</v-list-tile-sub-title>
+                                <v-list-tile-sub-title class="google-font">{{ item.local_date |dateFilter }} | {{ item.local_time }}</v-list-tile-sub-title>
                             </v-list-tile-content>
 
                             <v-list-tile-action>
@@ -117,6 +119,10 @@ export default {
     filters:{
         summery: (val,num)=>{
             return val.substring(0,num)+".."
+        },
+        dateFilter: (value)=>{
+            const date = new Date(value)
+            return date.toLocaleString(['en-US'], {month: 'short', day: '2-digit', year: 'numeric'})
         }
     }
 }

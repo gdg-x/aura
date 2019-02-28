@@ -1,10 +1,10 @@
 <template>
   <v-content class="pa-0">
 
-    <v-container fluid class="mt-4 mb-0">
+    <v-container fluid class="mt-2 mb-0">
       <v-layout wrap align-center justify-center row fill-height class="my-0">
         <v-flex xs12 md10 class="mb-0">
-            <p class="google-font mb-0 mt-0" style="font-size:200%">About {{ChapterDetails.ChapterName}}</p>
+            <p class="google-font mb-0 mt-0" style="font-size:200%;color:#616161">About {{ChapterDetails.ChapterName}}</p>
             <v-divider></v-divider>
         </v-flex>
       </v-layout>
@@ -18,7 +18,7 @@
       </v-layout>
     </v-container>
 
-    <v-container fluid class="grey lighten-5 py-5">
+    <v-container fluid class="grey lighten-5 pt-5 pb-2">
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10 class="">
           <contactInfo/>
@@ -26,7 +26,7 @@
       </v-layout>
     </v-container>
 
-    <v-container fluid class="py-5">
+    <v-container fluid class="grey lighten-5 py-2">
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10 class="">
           <coc/>

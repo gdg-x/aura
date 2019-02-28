@@ -2,7 +2,7 @@
     "AboutSession":[
         {
             "LinkName":"GDG Jalandhar",
-            "Link":"http://gdgjalandhar.com/"
+            "Link":"/"
         },
         {
             "LinkName":"Google Developers Groups",
@@ -20,11 +20,11 @@
     "ChapterResourcesSession":[
         {
             "LinkName" : "Become a Sponsor",
-            "Link" : "gdgjalandhar@gmail.com"
+            "Link" : "mailto:gdgjalandhar@gmail.com"
         },
         {
             "LinkName" : "Call for Speaker",
-            "Link" : "gdgjalandhar@gmail.com"
+            "Link" : "mailto:gdgjalandhar@gmail.com"
         },
         {
             "LinkName" : "Media Kit",

@@ -3,28 +3,13 @@
         <v-layout wrap align-start justify-start row fill-height class="my-0" >
      
             <v-flex xs12 md8 lg8 class="pa-2 my-0">
-                <p class="google-font" style="font-size:180%">Code of conduct</p>
+                <p class="google-font" style="font-size:150%">Code of conduct</p>
 
-                <p class="google-font" style="font-size:120%">{{aboutPage.coc}}</p>
+                <p class="google-font" style="font-size:110%">{{aboutPage.coc}}</p>
             </v-flex> 
            
             <v-flex xs12 md4 lg4 class="pa-2 hidden-sm-and-down">
-                <!-- <v-img
-                    :src="require('@/assets/img/svg/bg.svg')"
-                    :lazy-src="require('@/assets/img/svg/bg.svg')"
-                    width="70%"
-                    style="float:right"
-                    >
-                    <v-layout
-                        slot="placeholder"
-                        fill-height
-                        align-center
-                        justify-center
-                        ma-0
-                    >
-                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                    </v-layout>
-                </v-img> -->
+                
             </v-flex>
         </v-layout>
 
