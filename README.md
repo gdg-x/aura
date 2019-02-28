@@ -36,7 +36,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
     ```js 
         {
             "projects": {
-                "default": "aura-client-master" //Your Firebase Project ID
+                "default": "Your_Firebase_Project_ID"
             }
         }
     ```
@@ -73,3 +73,16 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * [Vuetify](https://vuetifyjs.com/en/)
 * [Firebase](https://firebase.google.com/)
 * [Service Worker & PWA](https://www.npmjs.com/package/vue-pwa)
+
+### View Website Built with Project 
+
+| Community Name | Web App Link | 
+| --- | --- | 
+| GDG Jalandhar | [View Now](https://devfest.gdgjalandhar.com) |
+
+
+
+
+
+Project is published under the [MIT license](/LICENSE.md).  
+Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
