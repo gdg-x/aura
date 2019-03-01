@@ -45,7 +45,7 @@ import coreTeam from '@/components/team/coreTeam'
     },
     data() {
       return {
-        TeamDetails: TeamDetails
+        TeamDetails: TeamDetails,
       }
     },
   }
