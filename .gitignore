@@ -2,7 +2,7 @@
 node_modules
 /dist
 tempKey.js
-/src/config
+/src/config/key.js
 
 # local env files
 .env.local
