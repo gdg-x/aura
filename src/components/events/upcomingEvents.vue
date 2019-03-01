@@ -119,7 +119,6 @@ export default {
             this.showData = true
             this.showData1 = true
             this.eventsData = res
-            console.log(res)
         })
     },
     filters:{

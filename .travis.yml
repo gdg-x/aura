@@ -1,11 +1,17 @@
 language: node_js
 node_js:
-  - "4.0"
+  - "10.15.2"
 script:
   - echo "Deploying"
-install:
+
+before_script:
   - npm install -g firebase-tools
-after_success:  
+  - npm install -g @vue/cli@latest
+  - npm install
+
+script:
   - npm run build
-after_success:
+
+after_success:  
   - firebase deploy --token $FKEY
+

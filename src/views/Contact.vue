@@ -53,11 +53,9 @@
 
 <script>
 import ChapterDetails from '@/assets/data/chapterDetails.json'
-import aboutGDGChapter from '@/components/about/aboutGDGChapter'
 
   export default {
     components: {
-      aboutGDGChapter,
     },
     data() {
       return {

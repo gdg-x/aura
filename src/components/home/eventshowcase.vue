@@ -6,7 +6,7 @@
                <p class="google-font" style="font-size:120%">
                    At sessions that span from the technical to the visionary, let’s celebrate and discover what the technologies can enable: how product innovation, open source, and ML and AI can propel enterprises forward and solve the big problems that impact all of us.
                </p>
-               <v-btn flat color="#4C4A78" class="ma-0 google-font" style="border-radius:7px;text-transform: capitalize;">See More</v-btn>             
+               <router-link to="/events" flat color="#4C4A78" class="ma-0 google-font" style="border-radius:5px;text-transform: capitalize;text-decoration:none;color:#4C4A78">See More</router-link>             
             </v-flex> 
         </v-layout>
 
@@ -110,7 +110,6 @@ export default {
     },
     created(){
         fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?desc=true&photo-host=public&page=4&status=past&key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
-            console.log(res)
             this.showLoader = false
             this.showData = true
             this.eventsData = res

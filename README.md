@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Vrijraj/aura.svg?branch=master)](https://travis-ci.org/Vrijraj/aura)
 
-<img width="100%" src="https://doc-0g-20-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/1o2trjk5rdn7se60vjushc9q3k662n8h/1551355200000/03213074667067221613/*/1VOuBc_AnzShLOrdINh62I_jeVlnPWxRX">
+<img width="100%" src="https://doc-0g-20-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/pl7gen3ksdidgug05est5v9a3p25ku4a/1551448800000/03213074667067221613/*/1VOuBc_AnzShLOrdINh62I_jeVlnPWxRX">
 
 Standard Web App for GDG Communties. <br>
 [Demo](https://aura-client-master.firebaseapp.com/) <br>
@@ -27,20 +27,17 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 ## Getting Started
 1. [Fork repository](https://github.com/Vrijraj/aura/fork) and clone it locally
 1. Install project dependencies: `npm install` 
+1. Find the [Meetup API Key](https://secure.meetup.com/meetup_api/key/) and paste it [here](/src/config/key.js), also replace the chapter URL from `Meetup.com/[gdg-chapter-url]`
 1. Compiles and hot-reloads for development: `npm run serve`
-1. Update [Firebase Web Setup & Basic Info](/public/index.html), [manifest.json](/src/manifest.json) and [Resources](/src/assets/data)
+1. Update [Firebase Web Setup & Basic Info](/public/index.html), [manifest.json](/public/manifest.json) and [Resources](/src/assets/data)
+1. For the production: `npm run build` and then one dir will be created `dist`
+1. For testing: `npm run test`
+
+## Deploy your Web App on Firebase
+
 1. Setup Environment for the Firebase deployment
    * Install Firebase CLI: `npm i -g firebase-tools` or `yarn global add firebase-tools`
 1. Create [Firebase account](https://console.firebase.google.com) and login into [Firebase CLI](https://firebase.google.com/docs/cli/): `firebase login`
-1. Update `.firebaserc` file
-    ```js 
-        {
-            "projects": {
-                "default": "Your_Firebase_Project_ID"
-            }
-        }
-    ```
-
 1. Open Terminal/CMD/Powershell in your dir.
 1. Now type `firebase login` command in your Terminal/CMD/Powershell. 
 1. Type `firebase init`.
@@ -49,11 +46,11 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Click `No` for Single page web app.
 1. Type `dist`.
 1. Some by default file will be created successfully.
-1. Move the cloned source file in `dist` dir.    
 1. Run locally
    * `firebase serve` or `npm run serve` or `yarn serve` 
 1. Build and deploy
    * `firebase deploy` or `npm run deploy` or `yarn deploy`
+
 
 
 ### Run your tests
