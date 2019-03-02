@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Vrijraj/aura.svg?branch=master)](https://travis-ci.org/Vrijraj/aura)
 
-<img width="100%" src="https://doc-0g-20-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/pl7gen3ksdidgug05est5v9a3p25ku4a/1551448800000/03213074667067221613/*/1VOuBc_AnzShLOrdINh62I_jeVlnPWxRX">
+<img width="100%" src="https://raw.githubusercontent.com/GDG-Jalandhar/WebsiteData/master/promotion%20images/Aura.png">
 
 Standard Web App for GDG Communties. <br>
 [Demo](https://aura-client-master.firebaseapp.com/) <br>
