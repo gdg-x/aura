@@ -41,6 +41,16 @@
       </v-layout>
     </v-container>
 
+    <v-container fluid >
+      <v-layout wrap align-center justify-center row fill-height>
+        <v-flex xs12 md10>
+          <partners />
+        </v-flex>
+      </v-layout>
+    </v-container>
+
+    
+
 
   </v-content>
   
@@ -52,14 +62,16 @@
   import AboutGDGChapter from '@/components/home/AboutGDGChapter'
   import eventshowcase from '@/components/home/eventshowcase'
   import wtmInfo from '@/components/home/wtmInfo'
-
+  import partners from '@/components/home/partners'
+  
   export default {
     components: {
       HomeStartScreen,
       whatWeDo,
       AboutGDGChapter,
       eventshowcase,
-      wtmInfo
+      wtmInfo,
+      partners
     }
   }
 </script>

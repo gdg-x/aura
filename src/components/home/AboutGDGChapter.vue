@@ -1,7 +1,7 @@
 <template>
     <v-container class="pa-0 white--text">
-        <v-layout wrap align-center justify-center row fill-height class="my-5" >
-           <v-flex xs12 md10 lg10 class="pa-2 ">
+        <v-layout wrap align-center justify-center row fill-height class="my-3" >
+           <v-flex xs12 md10 lg10 class="pa-2">
                <p class="google-font" style="font-size:150%">About {{chapterDetails.ChapterName}}</p>
                <p class="google-font" style="font-size:110%">
                    {{chapterDetails.ChapterLongDec}}
