@@ -3,7 +3,7 @@
         <v-layout wrap align-start justify-start row fill-height class="my-0" >
      
             <v-flex xs12 md8 lg8 class="pa-2 my-0">
-                <p class="google-font" style="font-size:150%">Community Guidelines</p>
+                <p class="google-font" style="font-size:180%;color:#0277bd">Community Guidelines</p>
 
                 <v-expansion-panel >
                     <v-expansion-panel-content

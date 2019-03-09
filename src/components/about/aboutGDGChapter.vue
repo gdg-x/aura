@@ -19,7 +19,7 @@
                 </v-img>
             </v-flex>
             <v-flex xs12 sm7 md8 lg8 class="pa-2 my-0">
-                <p class="google-font" style="font-size:110%;">{{chapterDetails.ChapterLongDec}}</p>
+                <p class="google-font" style="font-size:120%;">{{chapterDetails.ChapterLongDec}}</p>
 
                 <p class="google-font grey--text mt-3" style="font-size:120%">{{chapterDetails.aboutGDGProgram}}</p>
 
