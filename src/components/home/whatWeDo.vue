@@ -14,7 +14,7 @@
                 <img src="@/assets/img/svg/tf.svg" width="30vh" alt="" srcset="">
                 <br><br>
 
-                <v-btn :href="chapterDetails.GDGProgramWebsite" outline target="_blank" round color="cyan" style="text-transform: capitalize;border-radius:7px;text-transform: capitalize;" flat  class="ml-0 google-font hidden-md-and-down" dark>Learn More</v-btn>
+                <v-btn :href="chapterDetails.GDGProgramWebsite" outline target="_blank" round color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" flat  class="ml-0 google-font hidden-md-and-down" dark>Learn More</v-btn>
 
             </v-flex> 
             <v-flex xs12 md9 lg9 class="">
