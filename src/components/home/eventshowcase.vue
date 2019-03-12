@@ -1,6 +1,6 @@
 <template>
     <v-container class="pa-0">
-        <v-layout wrap align-center justify-center row fill-height class="mt-5" >
+        <v-layout wrap align-center justify-center row fill-height class="my-3 " >
            <v-flex xs12 md9 lg9 class="pa-2 text-xs-center">
                <p class="google-font" style="font-size:170%">Our Events & Meetups</p>
                <p class="google-font" style="font-size:120%">
@@ -10,7 +10,7 @@
             </v-flex> 
         </v-layout>
 
-        <v-layout wrap align-start justify-center row fill-height class="hidden-sm-and-down">
+        <v-layout wrap align-start justify-center row fill-height class="hidden-sm-and-down mb-4">
             <v-flex xs12 class="text-xs-center" v-if="showLoader">
                 <v-progress-circular
                     :size="50"
@@ -52,7 +52,7 @@
             </v-flex>
         </v-layout>
 
-        <v-layout wrap align-center justify-center row fill-height class="hidden-md-and-up">
+        <v-layout wrap align-center justify-center row fill-height class="hidden-md-and-up mb-3">
             <v-flex xs12 class="text-xs-center" v-if="showLoader">
                 <v-progress-circular
                     :size="50"
