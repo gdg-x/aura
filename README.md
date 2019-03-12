@@ -28,7 +28,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. [Fork repository](https://github.com/Vrijraj/aura/fork) and clone it locally
 1. Install project dependencies: `npm install` 
 1. Find the [Meetup API Key](https://secure.meetup.com/meetup_api/key/) and paste it [here](/src/config/key.js), also replace the chapter URL from `Meetup.com/[gdg-chapter-url]`
-1. Compiles and hot-reloads for development: `npm run serv`
+1. Compiles and hot-reloads for development: `npm run serve`
 1. Update Meta Tag, Title Tag, [Google Analytics Code](https://analytics.google.com/analytics/web/#/) from [Basic Info](/public/index.html), [manifest.json](/public/manifest.json) and [Resources](/src/assets/data)
 1. For the production: `npm run build` and then one dir will be created `dist`
 1. For testing: `npm run test`
