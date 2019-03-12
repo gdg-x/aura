@@ -36,7 +36,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 ## Deploy your Web App on Firebase
 
 1. Setup Environment for the Firebase deployment
-   * Install Firebase CLI: `npm i -g firebase-tools` or `yarn global add firebase-tools`
+   * Install Firebase CLI: `npm i -g firebase-tools`
 1. Create [Firebase account](https://console.firebase.google.com) and login into [Firebase CLI](https://firebase.google.com/docs/cli/): `firebase login`
 1. Open Terminal/CMD/Powershell in your dir.
 1. Now type `firebase login` command in your Terminal/CMD/Powershell. 
@@ -47,9 +47,9 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Type `dist`.
 1. Some by default file will be created successfully.
 1. Run locally
-   * `firebase serve` or `npm run serve` or `yarn serve` 
+   * `firebase serve` or `npm run serve` 
 1. Build and deploy
-   * `firebase deploy` or `npm run deploy` or `yarn deploy`
+   * `firebase deploy` or `npm run deploy` 
 
 
 
@@ -60,6 +60,9 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 ### Lints and fixes files
 1. For Lints and Fixes files: `npm run lint`
 
+### Documentation
+1. The [Getting Started guide](#getting-started) is probably a good first point of call! <br>
+1. [Full documentation](/docs).
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
