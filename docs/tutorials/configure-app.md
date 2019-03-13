@@ -7,6 +7,6 @@
 
 # Next steps
 
-Now your Hoverboard is up configured, learn how to integrate [firebase][firebase] in your app and [deploy][deploy].
+Now your Aura is up configured, learn how to integrate [firebase][firebase] in your app and [deploy][deploy].
 
 [deploy]: deploy.md
