@@ -1,7 +1,11 @@
 {
     "FeatureEventName":"IWD'19 Jalandhar",
     "EventImage":"IWD.jpg",
-    "EventDate":"31st March, 2019",
+    "EventDate":{
+        "Date":"31",
+        "Month":"3",
+        "Year":"2019"
+    },
     "EventTime":"9 AM to 5 PM",
     "EventVenue":"Apeejay Institute of Management Technical Campus, Rama Mandi, Hoshiarpur Road, Jalandhar",
     "EventWebsite":"https://iwd.gdgjalandhar.com/",
@@ -9,3 +13,4 @@
     "MeetupLink":"https://www.meetup.com/GDG-Jalandhar/events/253165595/",
     "RegistrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSciM-nL87uQd_it2ulou1mFv55aXqE9qSSnwL3No3fWhX8OzA/closedform"
 }
+

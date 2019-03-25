@@ -21,7 +21,8 @@
                 <p class="google-font mb-0" style="font-size:150%;color:rgb(2, 119, 189)">{{eventDetails.FeatureEventName}}</p>
                 <span class="google-font mt-1 mb-0 grey--text"  style="font-size:105%">
                     <v-icon small>insert_invitation</v-icon>
-                    {{eventDetails.EventDate}} | 
+                    {{showUTCDate(eventDetails.EventDate.Date, eventDetails.EventDate.Month, eventDetails.EventDate.Year)}}
+                    <!-- {{eventDetails.EventDate}} |  -->
                     <v-icon small>watch_later</v-icon>
                     {{eventDetails.EventTime}} |
                     <v-icon small>map</v-icon>
@@ -77,6 +78,10 @@ export default {
                 return require('@/assets/img/featureEvent/imagenotfound.png')
             }
         },
+
+        showUTCDate(yy,mm,dd){
+            return new Date(Date.UTC(yy, mm, dd));
+        }
     },
     filters:{
         summery: (val,num)=>{
