@@ -28,15 +28,15 @@
                         <div>
                             <p class="google-font mb-0" style="font-size:130%">{{ item.name | summery(25) }}</p>
                             <p class="google-font mt-1 mb-0" style="font-size:110%">
-                                <v-icon>insert_invitation</v-icon>
+                                <v-icon small>insert_invitation</v-icon>
                                 {{item.local_date | dateFilter}}
                             </p>
                             <p class="google-font mt-0 mb-0" style="font-size:110%">
-                                <v-icon>watch_later</v-icon>
+                                <v-icon small>watch_later</v-icon>
                                 {{item.local_time}}
                             </p>
                             <p class="google-font mt-0 mb-0" style="font-size:110%">
-                                <v-icon>map</v-icon>
+                                <v-icon small>map</v-icon>
                                 {{item.venue.name | summery(30)}}
                             </p>
                         </div>

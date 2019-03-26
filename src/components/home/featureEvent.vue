@@ -21,12 +21,13 @@
                 <p class="google-font mb-0" style="font-size:150%;color:rgb(2, 119, 189)">{{eventDetails.FeatureEventName}}</p>
                 <span class="google-font mt-1 mb-0 grey--text"  style="font-size:105%">
                     <v-icon small>insert_invitation</v-icon>
-                    {{showUTCDate(eventDetails.EventDate.Date, eventDetails.EventDate.Month, eventDetails.EventDate.Year)}}
-                    <!-- {{eventDetails.EventDate}} |  -->
+                    {{eventDetails.EventDate.Date +'/'+ eventDetails.EventDate.Month +'/'+ eventDetails.EventDate.Year}} 
+                    &nbsp;
                     <v-icon small>watch_later</v-icon>
-                    {{eventDetails.EventTime}} |
+                    {{eventDetails.EventTime.StartTime +' - '+ eventDetails.EventTime.EndTime}}
+                    &nbsp;
                     <v-icon small>map</v-icon>
-                    {{eventDetails.EventVenue | summery(80)}}
+                    {{eventDetails.EventVenue | summery(50)}} <a :href="eventDetails.EventVenueMapLink" target="_blank">(Map)</a>
                 </span>    
                <p class="google-font mt-2 mb-1" style="font-size:115%;color:#757575">
                    {{eventDetails.EventDescription}}
@@ -78,10 +79,6 @@ export default {
                 return require('@/assets/img/featureEvent/imagenotfound.png')
             }
         },
-
-        showUTCDate(yy,mm,dd){
-            return new Date(Date.UTC(yy, mm, dd));
-        }
     },
     filters:{
         summery: (val,num)=>{
