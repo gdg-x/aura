@@ -13,6 +13,23 @@
 1. Some by default file will be created successfully.
 1. Run locally
    * `firebase serve` or `npm run serve` or `yarn serve` 
+1. Update Firebase.json file
+    ```js
+        {
+            "hosting": {
+                "public": "dist",
+                "rewrites": [ {
+                    "source": "**",
+                    "destination": "/index.html"
+                } ],
+                "ignore": [
+                    "firebase.json",
+                    "**/.*",
+                    "**/node_modules/**"
+                ]
+            }
+        }
+    ```
 1. Build and deploy
    * `firebase deploy` or `npm run deploy` or `yarn deploy`
 1. The URL to your live site is listed in the output.
