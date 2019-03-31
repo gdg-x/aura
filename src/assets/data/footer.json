@@ -1,7 +1,7 @@
 {
     "AboutSession":[
         {
-            "LinkName":"GDG Jalandhar",
+            "LinkName":"GDG Tokyo",
             "Link":"/"
         },
         {
@@ -14,21 +14,17 @@
         },
         {
             "LinkName":"Become a Member",
-            "Link":"https://www.meetup.com/GDG-Jalandhar/"
+            "Link":"https://www.meetup.com/gdg-tokyo-jp/"
         }
     ],
     "ChapterResourcesSession":[
         {
             "LinkName" : "Become a Sponsor",
-            "Link" : "mailto:gdgjalandhar@gmail.com"
+            "Link" : "mailto:gdg.tokyo.jp@gmail.com"
         },
         {
             "LinkName" : "Call for Speaker",
-            "Link" : "mailto:gdgjalandhar@gmail.com"
-        },
-        {
-            "LinkName" : "Media Kit",
-            "Link" : "https://drive.google.com/drive/folders/16rHDaHbuS_YApMWgJHUxygpd-A5gCkLK"
+            "Link" : "mailto:gdg.tokyo.jp@gmail.com"
         }
     ],
     "DevConsole":[
@@ -52,11 +48,11 @@
     "FooterEndSession":[
         {
             "LinkName" : "Code of Conduct",
-            "Link" : "https://docs.google.com/document/d/1Wz_w6Z7usMnXKFMpOY4IPbA35twK7Uc4CAxScGDiwOk/edit"
+            "Link" : "https://docs.google.com/document/d/1CArqiNTgWI3bwLnkxdlpfxjISSkJnsJ_rykf8mu-dgI/edit?usp=sharing"
         },
         {
-            "LinkName" : "Terms & Servies",
-            "Link" : "https://docs.google.com/document/d/14g3fv9NItiB8Hd-YGYyVYd2N4LRxe6Bx3syWse_wsiA/edit?usp=sharing"
+            "LinkName" : "Privacy",
+            "Link" : "https://docs.google.com/document/d/1tSlbgLBbxZC_Z3vGk_4wTmjIRhJnWXOLy_F5j8D5rx8/edit?usp=sharing"
         }
     ]
 }

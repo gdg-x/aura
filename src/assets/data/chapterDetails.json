@@ -1,31 +1,26 @@
 {
-    "ChapterName":"GDG Jalandhar",
-    "ChapterShortDescription":"Google Developers Group Jalandhar is an initiative to concentrate the efforts of many developers in and around Punjab to learn, share and get productive using the various Google products.",
-    "ChapterLongDec":"Google Developer Group Jalandhar is inspired by GTUG/GDG Family . We started our journey in Feb 2011. We try to engage student developers, fresh graduates and professionals through our hack events & meetups. The motive is to create a local ecosystem of programmers & hackers in and around Jalandhar. The technology awareness is main goal for first few years of the group.",
-    "ChapterMeetupLink":"https://www.meetup.com/GDG-Jalandhar",
-    "ChapterEmail":"gdgjalandhar@gmail.com",
-    "website":"https://gdgjalandhar.com",
+    "ChapterName":"GDG Tokyo",
+    "ChapterShortDescription":"Google Developers Group (GDG) Tokyo is a group of people who are interested in Google technology mainly and share information.",
+    "ChapterLongDec":"Google Developers Group (GDG) Tokyo is a group of people who are interested in Google technology mainly and share information. We have study sessions in Tokyo on weekdays and weekends. Please feel free to join us if you are interested.",
+    "ChapterMeetupLink":"https://www.meetup.com/gog-tokyo-jp",
+    "ChapterEmail":"gdg.tokyo.jp@gmail.com",
+    "website":"https://tokyo.gdgjapan.org",
     "GDGProgramWebsite":"https://developers.google.com/programs/community/",
-    "ChapterHashTags":["GDGJalandhar","WTMJalandhar","GDG","WTM"],
+    "ChapterHashTags":["GDGTokyo","WTMTokyo","GDG","WTM"],
     "socialLinks":[
         {
-            "name" : "Facebook",
-            "link" : "https://www.facebook.com/GDGJalandhar/",
-            "icon" : "fab fa-facebook"
-        },
-        {
-            "name" : "Google Plus",
-            "link" : "https://plus.google.com/u/0/+GdgjalandharIn/posts",
-            "icon" : "fab fa-google-plus"
+            "name" : "Connpass",
+            "link" : "https://gdg-tokyo.connpass.com/",
+            "icon" : "fas fa-globe"
         },
         {
             "name" : "Twitter",
-            "link" : "https://twitter.com/gdgjalandhar",
+            "link" : "https://twitter.com/gdgtokyo",
             "icon" : "fab fa-twitter"
         },
         {
             "name" : "Meetup",
-            "link" : "https://www.meetup.com/GDG-Jalandhar/",
+            "link" : "https://www.meetup.com/gdg-tokyo-jp/",
             "icon" : "fab fa-meetup"
         }
     ],
