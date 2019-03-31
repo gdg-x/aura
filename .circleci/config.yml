@@ -1,0 +1,28 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8
+    branches:
+        only:
+          - master
+    working_directory: ~/workspace
+    steps:
+      - checkout
+
+      - run:
+          name: Install node packages
+          command: sudo npm install
+
+      - run:
+          name: Install firebase-tools
+          command: sudo npm install -g firebase-tools
+
+      - run: 
+          name: Build vuejs
+          command: npm run build
+
+      - run:
+          name: Deploy Firebase Hosting
+          command: |
+              firebase deploy --only hosting --token $FIREBASE_TOKEN
