@@ -1,55 +1,55 @@
 [
     {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
+        "name":"Shoko Okochi",
+        "designation":"Back End Engineer",
+        "twitter":"",
+        "linkedin":"",
+        "github":"",
+        "profileImage":"https://okohs.github.io/images/avatar.png",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
+        "name":"Shoco Sato",
         "designation":"Front End Developer",
         "twitter":"",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
+        "linkedin":"",
+        "github":"",
+        "profileImage":"https://storage.googleapis.com/shoco310/images/icon.jpg",
+        "website":""
+    },
+    {
+        "name":"katsu tomoki",
+        "designation":"System Architect",
+        "twitter":"",
+        "linkedin":"",
+        "github":"",
+        "profileImage":"https://drive.google.com/file/d/1nX084dIRjoumvt_h8jUoisbIEIk8Gx9c/view?usp=sharing",
+        "website":""
+    },
+    {
+        "name":"kappa0923",
+        "designation":"Cloud Architect",
+        "twitter":"",
+        "linkedin":"",
+        "github":"",
+        "profileImage":"https://avatars1.githubusercontent.com/u/15257414?s=460&v=4",
+        "website":""
+    },
+    {
+        "name":"Daiki",
+        "designation":"ML Engineer",
+        "twitter":"",
+        "linkedin":"",
+        "github":"",
         "profileImage":"",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
+        "name":"Ryota",
+        "designation":"System Engineer",
+        "twitter":"",
+        "linkedin":"",
+        "github":"",
         "profileImage":"",
         "website":""
     }

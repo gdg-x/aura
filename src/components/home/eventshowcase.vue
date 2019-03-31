@@ -35,7 +35,7 @@
                                 <v-icon small>watch_later</v-icon>
                                 {{item.local_time}}
                             </p>
-                            <p class="google-font mt-0 mb-0" style="font-size:110%">
+                            <p class="google-font mt-0 mb-0" style="font-size:110%" v-if="item.venue != null">
                                 <v-icon small>map</v-icon>
                                 {{item.venue.name | summery(30)}}
                             </p>
@@ -109,7 +109,9 @@ export default {
         }
     },
     created(){
-        fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?desc=true&photo-host=public&page=4&status=past&key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
+        fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?desc=true&photo-host=public&page=4&status=past')
+        .then(data=>data.json())
+        .then(res=>{
             this.showLoader = false
             this.showData = true
             this.eventsData = res

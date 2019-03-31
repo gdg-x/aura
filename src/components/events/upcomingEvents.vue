@@ -35,7 +35,7 @@
                                 <v-icon>watch_later</v-icon>
                                 {{item.local_time}}
                             </p>
-                            <p class="google-font mt-1 mb-0" style="font-size:110%">
+                            <p class="google-font mt-1 mb-0" style="font-size:110%" v-if="item.venue != null">
                                 <v-icon>map</v-icon>
                                 {{item.venue.name | summery(30)}}
                             </p>
@@ -100,21 +100,18 @@
 import ChapterDetails from '@/assets/data/chapterDetails.json'
 import { MeetupAPI } from '@/config/key'
 
-
-    
-
 export default {
     data() {
         return {
             chapterDetails: ChapterDetails,
-            eventsData:[],
+            eventsData: [],
             showLoader: true,
-            showData:false,
-            showData1:false
+            showData: false,
+            showData1: false
         }
     },
     created(){
-        fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
+        fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?has_ended=false').then(data=>data.json()).then(res=>{
             this.showLoader = false
             this.showData = true
             this.showData1 = true
