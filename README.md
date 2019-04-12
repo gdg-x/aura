@@ -96,6 +96,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | Community Name | Web App Link | 
 | --- | --- | 
 | GDG Jalandhar | [View Now](https://gdgjalandhar.com) |
+| GDG Kuala Lumpur | [View Now](https://www.gdgkl.dev/) |
 
 
 
