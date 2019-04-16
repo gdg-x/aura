@@ -97,6 +97,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | --- | --- | 
 | GDG Jalandhar | [View Now](https://gdgjalandhar.com) |
 | GDG Kuala Lumpur | [View Now](https://www.gdgkl.dev/) |
+| GDG Fortaleza | [View Now](http://gdgfortaleza.com.br/) |
 
 
 
