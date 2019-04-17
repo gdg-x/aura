@@ -4,7 +4,7 @@
 
 <img width="100%" src="https://raw.githubusercontent.com/GDG-Jalandhar/WebsiteData/master/promotion%20images/Aura.png">
 
-Standard Web App for GDG Communties. <br>
+Standard Web App for GDG's Communties. <br>
 [Demo](https://aura-client-master.firebaseapp.com/) <br>
 Version: 1.0.3
 
