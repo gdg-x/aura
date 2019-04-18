@@ -99,7 +99,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Kuala Lumpur | [View Now](https://www.gdgkl.dev/) |
 | GDG Fortaleza | [View Now](http://gdgfortaleza.com.br/) |
 | GDG Kozhikode | [View Now](https://gdgkozhikode.org/) |
-| GDG Delta | [View Now](http://gdgdelta.com/) |
+| GDG Delta | [View Now](https://gdgdelta.com/) |
 
 
 
