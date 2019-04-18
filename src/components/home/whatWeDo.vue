@@ -6,15 +6,46 @@
                <p class="google-font" style="font-size:110%">Google Developer Groups (GDGs) are for developers who are interested in Google's developer technology.</p>
 
                <p class="google-font" style="font-size:110%">About different Google technologies</p>
-               <img src="@/assets/img/svg/angular.svg" width="30vh" alt="" srcset=""> &nbsp;&nbsp;&nbsp;
-                <img src="@/assets/img/svg/gcp.svg" width="30vh" alt="" srcset="">&nbsp;&nbsp;&nbsp;
-                <img src="@/assets/img/svg/android.svg" width="30vh" alt="" srcset="">&nbsp;&nbsp;&nbsp;
-                <img src="@/assets/img/svg/aog.png" width="30vh" alt="" srcset="">&nbsp;&nbsp;&nbsp;
-                <img src="@/assets/img/svg/firebase.svg" width="30vh" alt="" srcset="">&nbsp;&nbsp;&nbsp;
-                <img src="@/assets/img/svg/tf.svg" width="30vh" alt="" srcset="">
+
+                <v-tooltip bottom>
+                    <template v-slot:activator="{ on }">
+                        <img src="@/assets/img/svg/angular.svg" width="30vh" alt="" srcset="" dark v-on="on"> &nbsp;&nbsp;&nbsp;
+                    </template>
+                    <span>Angular</span>
+                </v-tooltip>
+                <v-tooltip bottom>
+                    <template v-slot:activator="{ on }">
+                        <img src="@/assets/img/svg/gcp.svg" width="30vh" alt="" srcset="" dark v-on="on">&nbsp;&nbsp;&nbsp;
+                    </template>
+                    <span>Google Cloud Platform</span>
+                </v-tooltip>
+                <v-tooltip bottom>
+                    <template v-slot:activator="{ on }">
+                        <img src="@/assets/img/svg/android.svg" width="30vh" alt="" srcset="" dark v-on="on">&nbsp;&nbsp;&nbsp;
+                    </template>
+                    <span>Android</span>
+                </v-tooltip>
+                <v-tooltip bottom>
+                    <template v-slot:activator="{ on }">
+                        <img src="@/assets/img/svg/aog.png" width="30vh" alt="" srcset="" dark v-on="on">&nbsp;&nbsp;&nbsp;
+                    </template>
+                    <span>Actions On Google</span>
+                </v-tooltip>
+                <v-tooltip bottom>
+                    <template v-slot:activator="{ on }">
+                        <img src="@/assets/img/svg/firebase.svg" width="30vh" alt="" srcset="" dark v-on="on">&nbsp;&nbsp;&nbsp;
+                    </template>
+                    <span>Firebase</span>
+                </v-tooltip>
+                <v-tooltip bottom>
+                    <template v-slot:activator="{ on }">
+                        <img src="@/assets/img/svg/tf.svg" width="30vh" alt="" srcset="" dark v-on="on">
+                    </template>
+                    <span>Tenserflow</span>
+                </v-tooltip>
                 <br><br>
 
-                <v-btn :href="chapterDetails.GDGProgramWebsite" outline target="_blank" round color="cyan" style="text-transform: capitalize;border-radius:7px;text-transform: capitalize;" flat  class="ml-0 google-font hidden-md-and-down" dark>Learn More</v-btn>
+                <v-btn :href="chapterDetails.GDGProgramWebsite" outline target="_blank" round color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" flat  class="ml-0 google-font hidden-md-and-down" dark>Learn More</v-btn>
 
             </v-flex> 
             <v-flex xs12 md9 lg9 class="">

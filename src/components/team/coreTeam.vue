@@ -1,6 +1,5 @@
 <template>
     <v-container class="pa-0">
-
         <v-layout wrap align-start justify-start row fill-height class="mt-0 mb-0">
             <v-flex xs6 sm3 md2 lg2 v-for="(item,i) in TeamDetails" :key="i" class="text-xs-center" style="text-align:center">
                 <!-- style="text-align:center;border: 1px solid #e0e0e0;min-height:250px;border-radius:7px" -->

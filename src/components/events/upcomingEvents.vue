@@ -100,9 +100,6 @@
 import ChapterDetails from '@/assets/data/chapterDetails.json'
 import { MeetupAPI } from '@/config/key'
 
-
-    
-
 export default {
     data() {
         return {
