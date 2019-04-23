@@ -102,6 +102,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Delta | [View Now](https://gdgdelta.com/) |
 | GDG Tokyo | [View Now](https://tokyo.gdgjapan.org/) |
 | GDG Yangon | [View Now](https://gdgyangon.org/) |
+| GDG Gran Canaria | [View Now](https://gdggrancanaria.org/) |
 
 
 
