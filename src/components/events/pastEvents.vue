@@ -74,6 +74,9 @@ export default {
             this.showLoader = false
             this.showData = true
             this.eventsData = res
+        }).catch(e=>{
+            this.showLoader = false
+            alert('Issue found with '+e)
         })
     },
     filters:{
