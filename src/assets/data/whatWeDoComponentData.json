@@ -1,0 +1,26 @@
+[
+    {
+        "TechName":"Angular",
+        "image":"angular.svg"
+    },
+    {
+        "TechName":"Google Cloud Platform",
+        "image":"gcp.svg"
+    },
+    {
+        "TechName":"Android",
+        "image":"android.svg"
+    },
+    {
+        "TechName":"Actions On Google",
+        "image":"aog.png"
+    },
+    {
+        "TechName":"Firebase",
+        "image":"firebase.svg"
+    },
+    {
+        "TechName":"TensorFlow",
+        "image":"tf.svg"
+    }
+]

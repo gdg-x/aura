@@ -3,7 +3,7 @@ export const MeetupAPI = {
     urlname: "CHAPTER_URL_NAME" // Example GDG-Jalandhar  
 }
 
-// PASTE_YOUR_MEETUP_API_KEY_HERE
+
 
 
 // MEETUP_API_KEY

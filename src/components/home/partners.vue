@@ -8,7 +8,7 @@
             </v-flex>
 
             <v-flex xs12 md12 class="mt-2">
-                <p class="google-font my-2" style="font-size:110%">General Partner</p>
+                <p class="google-font my-2" style="font-size:110%">General Partners</p>
                 
 
                 <v-layout row wrap class="transparent">

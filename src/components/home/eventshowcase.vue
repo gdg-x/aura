@@ -1,5 +1,20 @@
 <template>
     <v-container class="pa-0">
+        <v-snackbar
+            v-model="errorAlert"
+            bottom
+            left
+            >
+            {{ errorMsg }}
+            <v-btn
+                color="pink"
+                flat
+                @click="errorAlert = false"
+            >
+                Close
+            </v-btn>
+        </v-snackbar>
+
         <v-layout wrap align-center justify-center row fill-height class="my-3 " >
            <v-flex xs12 md9 lg9 class="pa-2 text-xs-center">
                <p class="google-font" style="font-size:170%">Our Events & Meetups</p>
@@ -106,6 +121,8 @@ export default {
             eventsData:[],
             showLoader: true,
             showData:false,
+            errorMsg:'',
+            errorAlert:false
         }
     },
     created(){
@@ -115,7 +132,8 @@ export default {
             this.eventsData = res
         }).catch(e=>{
             this.showLoader = false
-            alert('Issue found with '+e)
+            this.errorMsg = 'Issue found with '+e
+            this.errorAlert = true
         })
     },
     filters:{
