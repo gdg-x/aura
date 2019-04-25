@@ -5,7 +5,7 @@
       <v-layout wrap align-center justify-center row fill-height class="my-0">
         <v-flex xs12 md10 class="mb-0">
             <p class="google-font mb-0 mt-0" style="font-size:200%;color:#616161">About {{ChapterDetails.ChapterName}}</p>
-            <v-divider></v-divider>
+            
         </v-flex>
       </v-layout>
     </v-container>

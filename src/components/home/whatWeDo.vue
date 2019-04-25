@@ -9,8 +9,11 @@
 
                 <span v-for="(item,i) in whatWeDoData" :key="i">
                     <v-tooltip bottom>
-                        <template v-slot:activator="{ on }">
-                            <img :src="getImgUrl(item.image)" width="30vh" alt="" srcset="" dark v-on="on"> &nbsp;&nbsp;&nbsp;
+                        <template v-slot:activator="{ on }" >
+                            <a :href="item.link" target="_blank" flat class="ma-0">
+                                <img :src="getImgUrl(item.image)" width="30vh" alt="" srcset="" dark v-on="on">
+                            </a> 
+                            &nbsp;&nbsp;&nbsp;
                         </template>
                         <span>{{item.TechName}}</span>
                     </v-tooltip>

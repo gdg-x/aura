@@ -3,6 +3,7 @@
     app
     color="white"
     height="55px"
+    class="elevation-3"
     scroll-off-screen
   >
     <v-toolbar-side-icon
