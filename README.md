@@ -104,6 +104,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Yangon | [View Now](https://gdgyangon.org/) |
 | GDG Gran Canaria | [View Now](https://gdggrancanaria.org/) |
 | GDG Santander | [View Now](https://gdgsantander.com/) |
+| GDG Ciudad del Este | [View Now](http://gdgcde.org/) |
 
 
 
