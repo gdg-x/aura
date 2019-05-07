@@ -67,6 +67,10 @@
                     </v-list>
                 </v-slide-y-reverse-transition>
             </v-flex>
+
+            <v-flex xs12 v-if="notFoundPastEventFlag==true">
+                <p class="google-font px-2" style="font-size:140%"><v-icon >highlight_off</v-icon> Past Events Not Found!</p>
+            </v-flex>
         </v-layout>
 
     </v-container>
@@ -83,14 +87,21 @@ export default {
             showLoader: true,
             showData:false,
             errorMsg:'',
-            errorAlert:false
+            errorAlert:false,
+            notFoundPastEventFlag:false
         }
     },
     created(){
         fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?desc=true&photo-host=public&page=8&status=past&key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
-            this.showLoader = false
-            this.showData = true
-            this.eventsData = res
+            if(res.length>0){
+                this.showLoader = false
+                this.showData = true
+                this.eventsData = res
+            }else{
+                this.notFoundPastEventFlag = true
+                this.showLoader = false
+            }
+            
         }).catch(e=>{
             this.showLoader = false
             this.errorMsg = 'Issue found with '+e

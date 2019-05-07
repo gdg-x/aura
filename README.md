@@ -111,6 +111,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 
-
 Project is published under the [MIT license](/LICENSE.md).  
 Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)

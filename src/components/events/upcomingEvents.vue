@@ -36,7 +36,7 @@
                 <v-card 
                     flat
                     class="ma-1 pa-1 my-0 elevation-1" 
-                    style="">
+                    style="border-radius:7px;">
 
                     <v-card-title class="mb-0">
                         <div>
@@ -67,7 +67,7 @@
             </v-flex>
 
             <v-flex xs12 v-if="notFoundUpcomingEventFlag==true">
-                <p class="google-font px-2" style="font-size:140%"><v-icon >highlight_off</v-icon> No Upcoming Event Found!</p>
+                <p class="google-font px-2" style="font-size:140%"><v-icon >highlight_off</v-icon> Upcoming Events Not Found!</p>
             </v-flex>
         </v-layout>
 
@@ -111,7 +111,7 @@
             </v-flex>
 
             <v-flex xs12 v-if="notFoundUpcomingEventFlag==true">
-                <p class="google-font px-2" style="font-size:140%"><v-icon >highlight_off</v-icon> No Upcoming Event Found!</p>
+                <p class="google-font px-2" style="font-size:140%"><v-icon >highlight_off</v-icon> Upcoming Events Not Found!</p>
             </v-flex>
 
         </v-layout>

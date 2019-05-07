@@ -37,7 +37,7 @@
                 <v-card 
                     flat
                     class="ma-1 pa-1 my-0" 
-                    style="border: 1px solid #e0e0e0;min-height:160px;border-radius:7px">
+                    style="border: 1px solid #e0e0e0;min-height:160px;border-radius:7px;">
 
                     <v-card-title class="mb-0">
                         <div>
@@ -64,6 +64,10 @@
                     </v-card-actions>
                     
                 </v-card>
+            </v-flex>
+
+            <v-flex xs12 v-if="notFoundEventFlag==true" class="text-xs-center">
+                <p class="google-font px-2" style="font-size:140%"><v-icon >highlight_off</v-icon> Events Not Found!</p>
             </v-flex>
         </v-layout>
 
@@ -106,6 +110,9 @@
                     </v-list>
                 </v-slide-y-reverse-transition>
             </v-flex>
+            <v-flex xs12 v-if="notFoundEventFlag==true" class="text-xs-center">
+                <p class="google-font px-2" style="font-size:140%"><v-icon >highlight_off</v-icon> Events Not Found!</p>
+            </v-flex>
         </v-layout>
 
     </v-container>
@@ -122,14 +129,21 @@ export default {
             showLoader: true,
             showData:false,
             errorMsg:'',
-            errorAlert:false
+            errorAlert:false,
+            notFoundEventFlag:false
         }
     },
     created(){
         fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?desc=true&photo-host=public&page=4&status=past&key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
-            this.showLoader = false
-            this.showData = true
-            this.eventsData = res
+            if(res.length>0){
+                this.showLoader = false
+                this.showData = true
+                this.eventsData = res
+            }
+            else{
+                this.notFoundEventFlag = true
+                this.showLoader = false 
+            }
         }).catch(e=>{
             this.showLoader = false
             this.errorMsg = 'Issue found with '+e
