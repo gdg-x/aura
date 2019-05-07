@@ -106,7 +106,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Santander | [View Now](https://gdgsantander.com/) |
 | GDG Ciudad del Este | [View Now](http://gdgcde.org/) |
 | GDG Ilorin | [View Now](https://gdg-ilorin-d9f0d.firebaseapp.com/) |
-| GDG Chetumal | [View Now](https://gdg-chetumal.firebaseapp.com/) |
 
 
 
