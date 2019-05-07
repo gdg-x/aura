@@ -107,6 +107,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Ciudad del Este | [View Now](http://gdgcde.org/) |
 | GDG Ilorin | [View Now](https://gdg-ilorin-d9f0d.firebaseapp.com/) |
 | GDG Chetumal | [View Now](https://gdg-chetumal.firebaseapp.com/) |
+| GDG Porto | [View Now](https://gdgporto-aura.firebaseapp.com/) |
 
 
 
