@@ -108,6 +108,7 @@ export default {
             this.showLoader = false
             this.errorMsg = 'Issue found with '+e
             this.errorAlert = true
+            this.notFoundPastEventFlag = true
         })
     },
     methods:{
