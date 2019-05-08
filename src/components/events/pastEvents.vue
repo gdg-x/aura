@@ -43,7 +43,9 @@
                             style="border-color:#e0e0e0;border-width: 1px;border-style: solid;border-top:0; border-left:0; border-right:0; border-bottom:1"
                         >
                             <v-list-tile-avatar>
-                                <v-icon>view_compact</v-icon>
+                                <v-avatar color="grey lighten-2" >
+                                    <span class="google-font" style="width:100vh">{{getCharString(item.name)}}</span>
+                                </v-avatar>
                             </v-list-tile-avatar>
 
                             <v-list-tile-content>
@@ -54,7 +56,7 @@
                             <v-list-tile-action>
                                 <v-tooltip bottom>
                                     <v-btn icon ripple :href="item.link" target="_blank" slot="activator">
-                                        <v-icon color="grey lighten-1">arrow_forward</v-icon>
+                                        <v-icon color="grey darken-1">info</v-icon>
                                     </v-btn>
                                     
                                     <span>See More about {{item.name}}</span>
@@ -92,7 +94,7 @@ export default {
         }
     },
     created(){
-        fetch('https://cors.io/?https://api.meetup.com/'+MeetupAPI.urlname+'/events?desc=true&photo-host=public&page=8&status=past&key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
+        fetch('https://cors-anywhere.herokuapp.com/https://api.meetup.com/'+MeetupAPI.urlname+'/events?desc=true&photo-host=public&page=8&status=past&key='+MeetupAPI.apiKey).then(data=>data.json()).then(res=>{
             if(res.length>0){
                 this.showLoader = false
                 this.showData = true
@@ -108,6 +110,17 @@ export default {
             this.errorAlert = true
         })
     },
+    methods:{
+        getCharString(data){
+            var splitArr = data.split(" ")
+            if(splitArr.length>1){
+                return (splitArr[0].substring(0,1)+''+splitArr[1].substring(0,1)).toUpperCase()
+            }
+            else{
+                return (splitArr[0].substring(0,1)).toUpperCase()
+            }
+        },
+    },
     filters:{
         summery: (val,num)=>{
             return val.substring(0,num)+".."
@@ -120,3 +133,8 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    
+</style>
+
