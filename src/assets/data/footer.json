@@ -1,7 +1,7 @@
 {
     "AboutSession":[
         {
-            "LinkName":"GDG Jalandhar",
+            "LinkName":"GDG Port-of-Spain",
             "Link":"/"
         },
         {
@@ -9,22 +9,18 @@
             "Link":"https://developers.google.com/programs/community/gdg/"
         },
         {
-            "LinkName":"WomenTechamkers",
-            "Link":"https://www.womentechmakers.com/"
-        },
-        {
             "LinkName":"Become a Member",
-            "Link":"https://www.meetup.com/GDG-Jalandhar/"
+            "Link":"https://www.meetup.com/GDG-Port-of-Spain/"
         }
     ],
     "ChapterResourcesSession":[
         {
             "LinkName" : "Become a Sponsor",
-            "Link" : "mailto:gdgjalandhar@gmail.com"
+            "Link" : "mailto:gdgpos@gmail.com"
         },
         {
             "LinkName" : "Call for Speaker",
-            "Link" : "mailto:gdgjalandhar@gmail.com"
+            "Link" : "mailto:gdgpos@gmail.com"
         },
         {
             "LinkName" : "Media Kit",

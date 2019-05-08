@@ -1,11 +1,12 @@
 {
-  "name": "gdg-web-app",
+  "name": "GDG-POS",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+	  "deploy": "firebase deploy --only hosting"
   },
   "dependencies": {
     "axios": "^0.18.0",
