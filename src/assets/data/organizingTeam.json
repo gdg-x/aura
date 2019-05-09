@@ -1,11 +1,47 @@
 [
 	{
-		"name":"Nicholas Mendez",
-		"designation":"Web Developer, Chapter Organizer",
-		"twitter":"https://twitter.com/snickdx",
-		"linkedin":"https://www.linkedin.com/in/snickdx",
-		"github":"https://github.com/snickdx",
-		"profileImage":"https://nicholasmendez.dev/img/profile.png",
-		"website":"https://nicholasmendez.dev"
-	}
+        "name":"Nicholas Mendez",
+        "designation":"Web Developer, Chapter Organizer",
+        "twitter":"https://twitter.com/snickdx",
+        "linkedin":"https://www.linkedin.com/in/snickdx",
+        "github":"https://github.com/snickdx",
+        "profileImage":"",
+        "website":"https://nicholasmendez.dev"
+    },
+    {
+        "name":"Larnelle Cooper",
+        "designation":"Chapter Organizer",
+        "twitter":"",
+        "linkedin":"",
+        "github":"",
+        "profileImage":"",
+        "website":""
+    },
+    {
+        "name":"Nigel Bellamy",
+        "designation":"Chapter Organizer",
+        "twitter":"",
+        "linkedin":"",
+        "github":"",
+        "profileImage":"",
+        "website":""
+    },
+    {
+        "name":"Denzil Joelfield",
+        "designation":"Chapter Organizer",
+        "twitter":"",
+        "linkedin":"",
+        "github":"",
+        "profileImage":"",
+        "website":""
+    },
+    {
+        "name":"Chantell",
+        "designation":"Chapter Organizer",
+        "twitter":"",
+        "linkedin":"",
+        "github":"",
+        "profileImage":"",
+        "website":""
+    }
 ]

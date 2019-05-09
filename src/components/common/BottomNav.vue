@@ -52,6 +52,17 @@
         <v-icon>toc</v-icon>
       </v-btn>
 
+      <v-btn
+        color="#518FF5"
+        flat
+        value="devkit"
+        router
+        to="/devkit"
+      >
+        <span>Devkit</span>
+        <v-icon>assignment_returned</v-icon>
+      </v-btn>
+
       
 
       <!-- <v-btn

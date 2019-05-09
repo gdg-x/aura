@@ -19,7 +19,7 @@
                             <img :src="getImgUrl(item.profileImage)">
                         </v-list-tile-avatar>
 
-                        <v-list-tile-content>
+                        <v-list-tile-content style="height:100px">
                             <v-list-tile-title class="google-font" v-html="item.name"></v-list-tile-title>
                             <v-list-tile-sub-title><span class="google-font">{{item.designation}}</span></v-list-tile-sub-title>
                             <v-list-tile-sub-title>
