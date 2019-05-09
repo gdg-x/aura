@@ -6,7 +6,7 @@
 
 Standard Web App for GDG's Communties. <br>
 [Demo](https://aura-client-master.firebaseapp.com/) <br>
-Version: 1.0.3
+Version: 1.0.5
 
 ## Overview
 
@@ -90,6 +90,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * [Vuetify](https://vuetifyjs.com/en/)
 * [Firebase](https://firebase.google.com/)
 * [Service Worker & PWA](https://www.npmjs.com/package/vue-pwa)
+* [Workbox](https://developers.google.com/web/tools/workbox)
 
 ### View Website Built with Project 
 
