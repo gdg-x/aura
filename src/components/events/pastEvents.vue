@@ -44,9 +44,7 @@
                             </v-list-tile-content>
 
                             <v-list-tile-action>
-                                <v-btn icon ripple target="_blank" slot="activator">
-                                    <v-icon color="grey lighten-2">info</v-icon>
-                                </v-btn>
+                                <v-icon color="grey lighten-2">info</v-icon>
                             </v-list-tile-action>
                             
                         </v-list-tile>
