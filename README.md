@@ -108,6 +108,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Ilorin | [View Now](https://gdg-ilorin-d9f0d.firebaseapp.com/) |
 | GDG Chetumal | [View Now](https://gdg-chetumal.firebaseapp.com/) |
 | GDG Porto | [View Now](https://gdgporto-aura.firebaseapp.com/) |
+| GDG Istanbul | [View Now](https://gdgist.firebaseapp.com/) |
 
 
 
