@@ -1,6 +1,6 @@
 <template>
   <v-content class="pa-0">
-    <v-container fluid class="mt-2 mb-0">''
+    <v-container fluid class="mt-2 mb-0">
       <v-layout wrap align-start justify-center row fill-height class="my-0">
         <v-flex xs12 md8 class="mb-0">
           
@@ -17,7 +17,7 @@
 
             <p class="google-font" style="font-size:180%;color:#0277bd">Step 1: Install Chocolatey</p>
             <p class="body-1">
-                <a href="https://chocolatey.org/">Chocolatey</a> is a really neat package manager for windows. It can not only help us install imporatnt developer software but help you manage and update any regular applications as well, including browesers, media players etc.
+                <a href="https://chocolatey.org/">Chocolatey</a> is a really neat package manager for windows. It can not only help us install imporatnt developer software but help you manage and update any regular applications as well, including web browsers, media players etc.
             </p>
 
             <p>
