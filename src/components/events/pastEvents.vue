@@ -27,29 +27,35 @@
         </v-layout>
 
         <v-layout wrap row >
-            <v-flex xs12 sm6 md4 lg4 v-for="n in 3" :key="`4${n}`">
-                    <v-list two-line subheader v-if="showLoader" class="pa-2">
-                        <v-list-tile
-                            avatar
-                        >
-                            <v-list-tile-avatar>
-                                <v-avatar color="grey lighten-3" >
-                                    <span class="google-font" style="width:100vh;"></span>
-                                </v-avatar>
-                            </v-list-tile-avatar>
 
-                            <v-list-tile-content>
-                                <v-list-tile-title class="google-font" style="color:#424242;width:200px;height:20px;background:#fafafa"></v-list-tile-title>
-                                <v-list-tile-sub-title class="google-font mt-1" style="color:#424242;width:100px;height:20px;background:#fafafa"></v-list-tile-sub-title>
-                            </v-list-tile-content>
+            <v-flex xs12 v-if="showLoader">
+                <v-layout row wrap>
+                    <v-flex xs12 sm6 md4 lg4 v-for="n in 3" :key="`4${n}`">
+                        <v-list two-line subheader  class="pa-2">
+                            <v-list-tile
+                                avatar
+                            >
+                                <v-list-tile-avatar>
+                                    <v-avatar color="animate-shimmer" >
+                                        <span class="google-font" style="width:100vh;"></span>
+                                    </v-avatar>
+                                </v-list-tile-avatar>
 
-                            <v-list-tile-action>
-                                <v-icon color="grey lighten-2">info</v-icon>
-                            </v-list-tile-action>
-                            
-                        </v-list-tile>
-                    </v-list>
+                                <v-list-tile-content>
+                                    <v-list-tile-title class="google-font animate-shimmer" style="color:#424242;width:200px;height:20px;"></v-list-tile-title>
+                                    <v-list-tile-sub-title class="google-font mt-1 animate-shimmer" style="color:#424242;width:100px;height:20px;"></v-list-tile-sub-title>
+                                </v-list-tile-content>
+
+                                <v-list-tile-action>
+                                    <v-icon color="grey lighten-3">info</v-icon>
+                                </v-list-tile-action>
+                                
+                            </v-list-tile>
+                        </v-list>
+                    </v-flex>
+                </v-layout>
             </v-flex>
+           
 
             <v-flex xs12 sm6 md4 lg4 v-for="(item,i) in eventsData" :key="i">
                 <v-slide-y-reverse-transition>
