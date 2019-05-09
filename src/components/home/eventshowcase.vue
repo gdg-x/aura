@@ -26,13 +26,33 @@
         </v-layout>
 
         <v-layout wrap align-start justify-center row fill-height class="hidden-sm-and-down mb-4">
-            <v-flex xs12 class="text-xs-center" v-if="showLoader">
-                <v-progress-circular
-                    :size="50"
-                    color="blue"
-                    indeterminate
-                ></v-progress-circular>
-            </v-flex>
+
+             <v-flex xs12 v-if="showLoader">
+                <v-layout row wrap>
+                    <v-flex xs12 sm6 md3 lg3 v-for="n in 4" :key="`4${n}`">
+                        <v-card 
+                            flat
+                            class="ma-1 pa-1 my-0 elevation-0" 
+                            style="border-radius:7px;border:1px #ddd solid">
+
+                            <v-card-title class="mb-0">
+                                <div>
+                                    <p class="google-font mb-2 animate-shimmer" style="color:#424242;width:200px;height:20px;"></p>
+                                    <p class="google-font mt-1 mb-0 animate-shimmer" style="color:#424242;width:100px;height:20px;"></p>
+                                    <p class="google-font mt-1 mb-0 animate-shimmer" style="color:#424242;width:100px;height:20px;"></p>
+                                    <p class="google-font mt-1 mb-0 animate-shimmer" style="color:#424242;width:100px;height:20px;"></p>
+                                </div>
+                            </v-card-title>
+                        
+                            <v-card-actions class="mt-0">
+                                <v-spacer></v-spacer>
+                                <span class="animate-shimmer" style="color:#424242;width:60px;height:25px;"></span>
+                            </v-card-actions>
+                            
+                        </v-card>
+                    </v-flex>
+                </v-layout>
+             </v-flex>
             <v-flex xs12 sm6 md3 lg3 v-for="(item,i) in eventsData" :key="i">
                 <v-card 
                     flat
@@ -69,17 +89,36 @@
             <v-flex xs12 v-if="notFoundEventFlag==true" class="text-xs-center">
                 <p class="google-font px-2" style="font-size:140%"><v-icon >highlight_off</v-icon> Events Not Found!</p>
             </v-flex>
-
-            
         </v-layout>
 
+        <!-- Mobile Screen -->
         <v-layout wrap align-center justify-center row fill-height class="hidden-md-and-up mb-3">
-            <v-flex xs12 class="text-xs-center" v-if="showLoader">
-                <v-progress-circular
-                    :size="50"
-                    color="blue"
-                    indeterminate
-                ></v-progress-circular>
+            <v-flex xs12 v-if="showLoader">
+                <v-layout row wrap>
+                    <v-flex xs12 sm6 md4 lg4 v-for="n in 4" :key="`4${n}`">
+                        <v-list two-line subheader  class="pa-2">
+                            <v-list-tile
+                                avatar
+                            >
+                                <v-list-tile-avatar>
+                                    <v-avatar color="animate-shimmer" >
+                                        <span class="google-font" style="width:100vh;"></span>
+                                    </v-avatar>
+                                </v-list-tile-avatar>
+
+                                <v-list-tile-content>
+                                    <v-list-tile-title class="google-font animate-shimmer" style="color:#424242;width:200px;height:20px;"></v-list-tile-title>
+                                    <v-list-tile-sub-title class="google-font mt-1 animate-shimmer" style="color:#424242;width:100px;height:20px;"></v-list-tile-sub-title>
+                                </v-list-tile-content>
+
+                                <v-list-tile-action>
+                                    <v-icon color="grey lighten-3">info</v-icon>
+                                </v-list-tile-action>
+                                
+                            </v-list-tile>
+                        </v-list>
+                    </v-flex>
+                </v-layout>
             </v-flex>
 
             <v-flex xs12>
@@ -180,3 +219,34 @@ export default {
     }
 }
 </script>
+
+
+<style>
+.animate-shimmer{
+        background: linear-gradient(286deg, #ffffff, #ddd);
+        background-size: 400% 400%;
+
+        -webkit-animation: AnimationName 5s ease infinite;
+        -moz-animation: AnimationName 5s ease infinite;
+        animation: AnimationName 5s ease infinite;   
+    };
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 52%}
+        50%{background-position:100% 49%}
+        100%{background-position:0% 52%}
+    }
+
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 52%}
+        50%{background-position:100% 49%}
+        100%{background-position:0% 52%}
+    }
+
+    @keyframes AnimationName { 
+        0%{background-position:0% 52%}
+        50%{background-position:100% 49%}
+        100%{background-position:0% 52%}
+    }
+</style>
+
