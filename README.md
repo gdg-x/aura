@@ -113,6 +113,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Port-of-Spain | [View Now](https://gdgpos.com/) |
 | GDG Jeddah | [View Now](https://www.gdgjed.com/home) |
 | GDG Sevilla | [View Now](https://www.gdgsevilla.com/) |
+| GDG Madeira | [View Now](https://gdgmadeira.xyz/) |
 
 
 
