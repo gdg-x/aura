@@ -112,6 +112,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Istanbul | [View Now](https://gdgist.firebaseapp.com/) |
 | GDG Port-of-Spain | [View Now](https://gdgpos.com/) |
 | GDG Jeddah | [View Now](https://www.gdgjed.com/home) |
+| GDG Sevilla | [View Now](https://www.gdgsevilla.com/) |
 
 
 
