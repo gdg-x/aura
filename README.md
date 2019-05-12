@@ -114,6 +114,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Jeddah | [View Now](https://www.gdgjed.com/home) |
 | GDG Sevilla | [View Now](https://www.gdgsevilla.com/) |
 | GDG Madeira | [View Now](https://gdgmadeira.xyz/) |
+| GDG Chandigarh | [View Now](https://gdg-chd.web.app/) |
 
 
 
