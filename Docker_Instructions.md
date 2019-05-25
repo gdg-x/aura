@@ -25,7 +25,9 @@
 </pre>
 ## Deploy your image with Docker
 1. Issue the command
+<pre>
     docker run -d -p 80:80 gdg_cloudjacksonville:v1 
+</pre>
 1. Visit http://localhost
 
 
