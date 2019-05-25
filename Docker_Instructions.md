@@ -4,7 +4,7 @@
 1. Find the [Meetup API Key](https://secure.meetup.com/meetup_api/key/) and paste it [here](/src/config/key.js), also replace the chapter URL from `Meetup.com/[gdg-chapter-url]`
 1. Update `Meta Tag`, `Title Tag` and [Google Analytics Code](https://analytics.google.com/analytics/web/#/) from [Basic Info](/public/index.html), [manifest.json](/public/manifest.json) and [Resources](/src/assets/data)
 
-## Build you image with Docker
+## Build your image with Docker
 1. The Dockerfile and /nginix_config are already included
 1. Issue the command
     docker build -t vue-aura .
