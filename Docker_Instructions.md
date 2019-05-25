@@ -10,13 +10,15 @@
     docker build -t vue-aura .
 1. This will take some time
 1. After its completed verify the image is there
-    docker images
-    REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-    vue-aura            latest              dc21bfebeaee        10 minutes ago      241MB
+    docker images<br /> 
+    REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE<br /> 
+    vue-aura            latest              dc21bfebeaee        10 minutes ago      241MB<br /> 
 1. Rename the image after your GDG group
-    docker tag vue-aura gdg_cloudjacksonville:v1  
-gdg_cloudjacksonville   v1                  dc21bfebeaee        12 minutes ago      241MB
-vue-aura                latest              dc21bfebeaee        12 minutes ago      241MB
+    docker tag vue-aura gdg_cloudjacksonville:v1<br /> 
+    docker images<br /> 
+        REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE<br /> 
+    gdg_cloudjacksonville   v1                  dc21bfebeaee        12 minutes ago      241MB<br /> 
+    vue-aura                latest              dc21bfebeaee        12 minutes ago      241MB<br /> 
 
 ## Deploy your image with Docker
 1. Issue the command
