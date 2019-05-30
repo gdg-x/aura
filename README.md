@@ -117,6 +117,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Chandigarh | [View Now](https://gdg-chd.web.app/) |
 | GDG Rochester | [View Now](https://gdgrochester.com/) |
 | GDG Sri Lanka | [View Now](https://gdgsrilanka.org) |
+| GDG Lafia | [View Now](https://lafia.gdg.ng/) |
 
 
 
