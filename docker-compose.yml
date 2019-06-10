@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  node:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ".:/app"
+    tty: true
+    command: npm run serve
