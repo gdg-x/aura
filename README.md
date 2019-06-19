@@ -118,6 +118,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Rochester | [View Now](https://gdgrochester.com/) |
 | GDG Sri Lanka | [View Now](https://gdgsrilanka.org) |
 | GDG Lafia | [View Now](https://lafia.gdg.ng/) |
+| GDG Kinshasa | [View Now](https://gdg-kin.firebaseapp.com/) |
 
 
 
