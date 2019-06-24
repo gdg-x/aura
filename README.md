@@ -120,6 +120,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Lafia | [View Now](https://lafia.gdg.ng/) |
 | GDG Kinshasa | [View Now](https://gdg-kin.firebaseapp.com/) |
 | Dev Cluster Goa | [View Now](https://beta.devcluster.community/) |
+| GDG Cloud Calgary | [View Now](https://gdgyyc.com/) |
 
 
 
