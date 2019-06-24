@@ -119,6 +119,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Sri Lanka | [View Now](https://gdgsrilanka.org) |
 | GDG Lafia | [View Now](https://lafia.gdg.ng/) |
 | GDG Kinshasa | [View Now](https://gdg-kin.firebaseapp.com/) |
+| Dev Cluster Goa | [View Now](https://beta.devcluster.community/) |
 
 
 
