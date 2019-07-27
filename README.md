@@ -124,6 +124,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Cloud SF | [View Now](https://cloudsf.withgdg.com/) |
 | GDG Nagpur | [View Now](https://gdgnagpur.com/) |
 | GDG Kolkata | [View Now](https://gdgkolkata.org/) |
+| GDG Ahmedabad | [View Now](http://gdgahmedabad.com/) |
 
 
 
