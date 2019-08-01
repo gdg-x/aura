@@ -125,6 +125,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Nagpur | [View Now](https://gdgnagpur.com/) |
 | GDG Kolkata | [View Now](https://gdgkolkata.org/) |
 | GDG Ahmedabad | [View Now](http://gdgahmedabad.com/) |
+| GDG Fremont | [View Now](https://gdg-fremont.firebaseapp.com/) |
 
 
 
