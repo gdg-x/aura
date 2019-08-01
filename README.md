@@ -126,7 +126,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Kolkata | [View Now](https://gdgkolkata.org/) |
 | GDG Ahmedabad | [View Now](http://gdgahmedabad.com/) |
 | GDG Fremont | [View Now](https://gdg-fremont.firebaseapp.com/) |
-
+| GDG Savannah | [View Now](https://gdgsavannah.com/) |
 
 
 Project is published under the [MIT license](/LICENSE.md).  
