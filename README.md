@@ -92,6 +92,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * [Service Worker & PWA](https://www.npmjs.com/package/vue-pwa)
 * [Workbox](https://developers.google.com/web/tools/workbox)
 
+## Contributors
+<b>Maintainer:</b> [Vrijraj Singh](https://github.com/vrijraj)
+
 ### View Website Built with Project 
 
 | Community Name | Web App Link | 
