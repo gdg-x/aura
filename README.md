@@ -8,6 +8,8 @@ Standard Web App for GDG's Communties. <br>
 [Demo](https://aura-client-master.firebaseapp.com/) <br>
 Version: 1.0.5
 
+### Show some :heart: and star the repo to support the project
+
 ## Overview
 
 Aura is the website template that helps you to set GDG's Communities website with events, team and  management in a few minutes.
