@@ -151,6 +151,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Fremont | [View Now](https://gdg-fremont.firebaseapp.com/) |
 | GDG Savannah | [View Now](https://gdgsavannah.com/) |
 | GDG Indore | [View Now](https://gdgindore.in/) |
+| GDG Pescara | [View Now](https://gdgpescara.it/en/) |
 
 
 Project is published under the [MIT license](/LICENSE.md).  
