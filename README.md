@@ -152,6 +152,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Savannah | [View Now](https://gdgsavannah.com/) |
 | GDG Indore | [View Now](https://gdgindore.in/) |
 | GDG Pescara | [View Now](https://gdgpescara.it/en/) |
+| GDG CDE | [View Now](http://gdgcde.org/) |
 
 
 Project is published under the [MIT license](/LICENSE.md).  
