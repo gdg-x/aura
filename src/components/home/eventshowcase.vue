@@ -237,7 +237,11 @@ export default {
   },
   filters: {
     summery: (val, num) => {
-      return val.substring(0, num) + "..";
+      if(val.length > num){
+        return val.substring(0,num)+".."
+      }else{
+        return val
+      }
     },
     dateFilter: value => {
       const date = new Date(value);
