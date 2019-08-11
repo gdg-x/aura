@@ -7,6 +7,6 @@
 
 # Next steps
 
-Now your Aura is up configured, learn how to integrate [firebase][firebase] in your app and [deploy][deploy].
+Now your Aura is up configured, learn how to [deploy][deploy] web app using firebase.
 
 [deploy]: deploy.md

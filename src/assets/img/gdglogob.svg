@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="501px" height="501px" viewBox="0 0 501 501" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="501" height="501"></rect>
+        <g id="Group" transform="translate(44.000000, 143.000000)">
+            <rect id="Rectangle-Copy" fill="#EA4334" transform="translate(99.977587, 74.779800) scale(-1, 1) rotate(30.000000) translate(-99.977587, -74.779800) " x="4.97758664" y="43.2798002" width="190" height="63" rx="31.5"></rect>
+            <rect id="Rectangle-Copy-2" fill="#4285F4" transform="translate(98.977587, 138.779800) scale(-1, 1) rotate(-30.000000) translate(-98.977587, -138.779800) " x="3.97758664" y="107.2798" width="190" height="63" rx="31.5"></rect>
+            <rect id="Rectangle" fill="#FCBC05" transform="translate(314.022413, 139.779800) rotate(-30.000000) translate(-314.022413, -139.779800) " x="219.022413" y="108.2798" width="190" height="63" rx="31.5"></rect>
+            <rect id="Rectangle" fill="#0D9D58" transform="translate(315.022413, 75.779800) rotate(30.000000) translate(-315.022413, -75.779800) " x="220.022413" y="44.2798002" width="190" height="63" rx="31.5"></rect>
+        </g>
+    </g>
+</svg>

@@ -8,11 +8,11 @@
             </v-flex>
 
             <v-flex xs12 md12 class="mt-2">
-                <p class="google-font my-2" style="font-size:110%">General Partner</p>
+                <p class="google-font my-2" style="font-size:110%">General Partners</p>
                 
 
                 <v-layout row wrap class="transparent">
-                    <v-flex xs12 sm6 class="elevation-0 transparent">
+                    <v-flex xs12 sm7 class="elevation-0 transparent">
                         <v-card class="elevation-0 pa-0 ma-0 transparent">
                             <v-container grid-list-sm fluid class="pa-0 ma-0">
                                 <v-layout row wrap class="ma-0 pa-0">
@@ -67,13 +67,14 @@
                 <p class="google-font my-2" style="font-size:110%">Template Partner</p>
 
                 <v-layout class="transparent" >
-                    <v-flex xs12 sm10 class="elevation-0 transparent">
+                    <v-flex xs12 sm11 class="elevation-0 transparent">
                         <v-card class="elevation-0 pa-0 ma-0 transparent">
                             <v-container grid-list-sm fluid class="pa-0 ma-0">
                                 <v-layout row wrap class="ma-0 pa-0">
                                     <v-flex
                                         xs6
                                         md2
+                                        sm4
                                         d-flex
                                         class="white elevation-0"
                                     >

@@ -5,7 +5,7 @@
         <v-flex xs12 md8 class="mb-0">
           
           <p class="google-font mb-0 mt-3" style="font-size:200%;color:#616161">Contact {{ChapterDetails.ChapterName}}</p>
-          <v-divider></v-divider>
+          <!-- <v-divider></v-divider> -->
           <p class="google-font mt-3" style="font-size:110%">Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.</p>
           
           <p class="google-font mb-0" style="font-size:130%">Social Media:</p>

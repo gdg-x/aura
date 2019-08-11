@@ -1,12 +1,14 @@
 # Aura - GDG[x]
-
+[![MadeWithVueJs.com shield](https://madewithvuejs.com/storage/repo-shields/1444-shield.svg)](https://madewithvuejs.com/p/aura/shield-link)
 <!-- [![Build Status](https://travis-ci.org/Vrijraj/aura.svg?branch=master)](https://travis-ci.org/Vrijraj/aura) -->
 
-<img width="100%" src="https://raw.githubusercontent.com/GDG-Jalandhar/WebsiteData/master/promotion%20images/Aura.png">
+<img width="100%" src="https://raw.githubusercontent.com/GDG-Jalandhar/WebsiteData/master/promotion%20images/Aura%20v1.0.3.png">
 
-Standard Web App for GDG Communties. <br>
+Standard Web App for GDG's Communties. <br>
 [Demo](https://aura-client-master.firebaseapp.com/) <br>
-Version: 1.0.2
+Version: 1.0.5
+
+### Show some :heart: and star the repo to support the project
 
 ## Overview
 
@@ -48,6 +50,23 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Some by default file will be created successfully.
 1. Run locally
    * `firebase serve` or `npm run serve` 
+1. Update Firebase.json file
+    ```js
+        {
+            "hosting": {
+                "public": "dist",
+                "rewrites": [ {
+                    "source": "**",
+                    "destination": "/index.html"
+                } ],
+                "ignore": [
+                    "firebase.json",
+                    "**/.*",
+                    "**/node_modules/**"
+                ]
+            }
+        }
+    ```
 1. Build and deploy
    * `firebase deploy` or `npm run deploy` 
 
@@ -73,15 +92,67 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * [Vuetify](https://vuetifyjs.com/en/)
 * [Firebase](https://firebase.google.com/)
 * [Service Worker & PWA](https://www.npmjs.com/package/vue-pwa)
+* [Workbox](https://developers.google.com/web/tools/workbox)
+
+## Contributing
+
+Awesome! Contributions of all kinds are greatly appreciated. To help smoothen the process we have a few non-exhaustive guidelines to follow which should get you going in no time.
+
+### Using GitHub Issues
+
+- Feel free to use GitHub issues for questions, bug reports, and feature requests
+- Use the search feature to check for an existing issue
+- Include as much information as possible and provide any relevant resources (Eg. screenshots)
+- For bug reports ensure you have a reproducible test case
+  - A pull request with a breaking test would be super preferable here but isn't required
+
+### Submitting a Pull Request
+
+- Squash commits
+- Lint your code with eslint (config provided)
+- Include relevant test updates/additions
+
+## Contributors
+<b>Maintainer:</b> [Vrijraj Singh](https://github.com/vrijraj)
 
 ### View Website Built with Project 
 
 | Community Name | Web App Link | 
 | --- | --- | 
 | GDG Jalandhar | [View Now](https://gdgjalandhar.com) |
-
-
-
+| GDG Kuala Lumpur | [View Now](https://www.gdgkl.dev/) |
+| GDG Fortaleza | [View Now](http://gdgfortaleza.com.br/) |
+| GDG Kozhikode | [View Now](https://gdgkozhikode.org/) |
+| GDG Delta | [View Now](https://gdgdelta.com/) |
+| GDG Tokyo | [View Now](https://tokyo.gdgjapan.org/) |
+| GDG Yangon | [View Now](https://gdgyangon.org/) |
+| GDG Gran Canaria | [View Now](https://gdggrancanaria.org/) |
+| GDG Santander | [View Now](https://gdgsantander.com/) |
+| GDG Ciudad del Este | [View Now](http://gdgcde.org/) |
+| GDG Ilorin | [View Now](https://gdg-ilorin-d9f0d.firebaseapp.com/) |
+| GDG Chetumal | [View Now](https://gdg-chetumal.firebaseapp.com/) |
+| GDG Porto | [View Now](https://gdgporto-aura.firebaseapp.com/) |
+| GDG Istanbul | [View Now](https://gdgist.firebaseapp.com/) |
+| GDG Port-of-Spain | [View Now](https://gdgpos.com/) |
+| GDG Jeddah | [View Now](https://www.gdgjed.com/home) |
+| GDG Sevilla | [View Now](https://www.gdgsevilla.com/) |
+| GDG Madeira | [View Now](https://gdgmadeira.xyz/) |
+| GDG Chandigarh | [View Now](https://gdg-chd.web.app/) |
+| GDG Rochester | [View Now](https://gdgrochester.com/) |
+| GDG Sri Lanka | [View Now](https://gdgsrilanka.org) |
+| GDG Lafia | [View Now](https://lafia.gdg.ng/) |
+| GDG Kinshasa | [View Now](https://gdg-kin.firebaseapp.com/) |
+| Dev Cluster Goa | [View Now](https://beta.devcluster.community/) |
+| GDG Cloud Calgary | [View Now](https://gdgyyc.com/) |
+| GDG Cloud SF | [View Now](https://cloudsf.withgdg.com/) |
+| GDG Nagpur | [View Now](https://gdgnagpur.com/) |
+| GDG Kolkata | [View Now](https://gdgkolkata.org/) |
+| GDG Ahmedabad | [View Now](http://gdgahmedabad.com/) |
+| GDG Fremont | [View Now](https://gdg-fremont.firebaseapp.com/) |
+| GDG Savannah | [View Now](https://gdgsavannah.com/) |
+| GDG Indore | [View Now](https://gdgindore.in/) |
+| GDG Pescara | [View Now](https://gdgpescara.it/en/) |
+| GDG CDE | [View Now](http://gdgcde.org/) |
 
 
 Project is published under the [MIT license](/LICENSE.md).  
