@@ -6,7 +6,7 @@
 
 Standard Web App for GDG's Communties. <br>
 [Demo](https://aura-client-master.firebaseapp.com/) <br>
-Version: 1.0.5
+Version: 1.0.6
 
 ### Show some :heart: and star the repo to support the project
 
