@@ -12,6 +12,6 @@ before_script:
 script:
   - npm run build
 
-# after_success:  
-  # - firebase deploy --token $FKEY
+after_success:  
+  - firebase deploy --token $FKEY
 

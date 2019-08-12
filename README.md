@@ -1,12 +1,14 @@
 # Aura - GDG[x]
 [![MadeWithVueJs.com shield](https://madewithvuejs.com/storage/repo-shields/1444-shield.svg)](https://madewithvuejs.com/p/aura/shield-link)
-<!-- [![Build Status](https://travis-ci.org/Vrijraj/aura.svg?branch=master)](https://travis-ci.org/Vrijraj/aura) -->
+[![Build Status](https://travis-ci.org/gdg-x/aura.svg?branch=master)](https://travis-ci.org/gdg-x/aura)
 
 <img width="100%" src="https://raw.githubusercontent.com/GDG-Jalandhar/WebsiteData/master/promotion%20images/Aura%20v1.0.3.png">
 
 Standard Web App for GDG's Communties. <br>
 [Demo](https://aura-client-master.firebaseapp.com/) <br>
-Version: 1.0.5
+Version: 1.0.6
+
+### Show some :heart: and star the repo to support the project
 
 ## Overview
 
@@ -26,8 +28,8 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 
 ## Getting Started
 1. [Fork repository](https://github.com/Vrijraj/aura/fork) and clone it locally
-1. Install project dependencies: `npm install`
-1. Find the [Meetup API Key](https://secure.meetup.com/meetup_api/key/) and paste it [here](/src/config/key.js), also replace the chapter URL from `Meetup.com/[gdg-chapter-url]`
+1. Install project dependencies: `npm install` 
+1. Replace the `urlname` Field (`CHAPTER_URL_NAME`)  [here](/src/config/key.js)
 1. Compiles and hot-reloads for development: `npm run serve`
 1. Update `Meta Tag`, `Title Tag` and [Google Analytics Code](https://analytics.google.com/analytics/web/#/) from [Basic Info](/public/index.html), [manifest.json](/public/manifest.json) and [Resources](/src/assets/data)
 1. For the production: `npm run build` and then one dir will be created `dist`
@@ -92,7 +94,28 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * [Service Worker & PWA](https://www.npmjs.com/package/vue-pwa)
 * [Workbox](https://developers.google.com/web/tools/workbox)
 
-### View Website Built with Project
+## Contributing
+
+Awesome! Contributions of all kinds are greatly appreciated. To help smoothen the process we have a few non-exhaustive guidelines to follow which should get you going in no time.
+
+### Using GitHub Issues
+
+- Feel free to use GitHub issues for questions, bug reports, and feature requests
+- Use the search feature to check for an existing issue
+- Include as much information as possible and provide any relevant resources (Eg. screenshots)
+- For bug reports ensure you have a reproducible test case
+  - A pull request with a breaking test would be super preferable here but isn't required
+
+### Submitting a Pull Request
+
+- Squash commits
+- Lint your code with eslint (config provided)
+- Include relevant test updates/additions
+
+## Contributors
+<b>Maintainer:</b> [Vrijraj Singh](https://github.com/vrijraj)
+
+### View Website Built with Projects
 
 | Community Name | Web App Link |
 | --- | --- |
@@ -128,6 +151,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Fremont | [View Now](https://gdg-fremont.firebaseapp.com/) |
 | GDG Savannah | [View Now](https://gdgsavannah.com/) |
 | GDG San Salvador | [View Now](https://gdgsansalvador.dev/) |
+| GDG Indore | [View Now](https://gdgindore.in/) |
+| GDG Pescara | [View Now](https://gdgpescara.it/en/) |
+| GDG CDE | [View Now](http://gdgcde.org/) |
 
 Project is published under the [MIT license](/LICENSE.md).  
 Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
