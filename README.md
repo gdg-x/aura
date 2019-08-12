@@ -26,7 +26,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 
 ## Getting Started
 1. [Fork repository](https://github.com/Vrijraj/aura/fork) and clone it locally
-1. Install project dependencies: `npm install` 
+1. Install project dependencies: `npm install`
 1. Find the [Meetup API Key](https://secure.meetup.com/meetup_api/key/) and paste it [here](/src/config/key.js), also replace the chapter URL from `Meetup.com/[gdg-chapter-url]`
 1. Compiles and hot-reloads for development: `npm run serve`
 1. Update `Meta Tag`, `Title Tag` and [Google Analytics Code](https://analytics.google.com/analytics/web/#/) from [Basic Info](/public/index.html), [manifest.json](/public/manifest.json) and [Resources](/src/assets/data)
@@ -39,7 +39,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
    * Install Firebase CLI: `npm i -g firebase-tools`
 1. Create [Firebase account](https://console.firebase.google.com) and login into [Firebase CLI](https://firebase.google.com/docs/cli/): `firebase login`
 1. Open Terminal/CMD/Powershell in your dir.
-1. Now type `firebase login` command in your Terminal/CMD/Powershell. 
+1. Now type `firebase login` command in your Terminal/CMD/Powershell.
 1. Type `firebase init`.
 1. Select the project by using the arrow keys.
 1. Then Select the `Firebase Hosting` by using Spacebar and arrow key.
@@ -47,7 +47,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Type `dist`.
 1. Some by default file will be created successfully.
 1. Run locally
-   * `firebase serve` or `npm run serve` 
+   * `firebase serve` or `npm run serve`
 1. Update Firebase.json file
     ```js
         {
@@ -66,7 +66,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
         }
     ```
 1. Build and deploy
-   * `firebase deploy` or `npm run deploy` 
+   * `firebase deploy` or `npm run deploy`
 
 
 
@@ -92,10 +92,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * [Service Worker & PWA](https://www.npmjs.com/package/vue-pwa)
 * [Workbox](https://developers.google.com/web/tools/workbox)
 
-### View Website Built with Project 
+### View Website Built with Project
 
-| Community Name | Web App Link | 
-| --- | --- | 
+| Community Name | Web App Link |
+| --- | --- |
 | GDG Jalandhar | [View Now](https://gdgjalandhar.com) |
 | GDG Kuala Lumpur | [View Now](https://www.gdgkl.dev/) |
 | GDG Fortaleza | [View Now](http://gdgfortaleza.com.br/) |
@@ -127,7 +127,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG Ahmedabad | [View Now](http://gdgahmedabad.com/) |
 | GDG Fremont | [View Now](https://gdg-fremont.firebaseapp.com/) |
 | GDG Savannah | [View Now](https://gdgsavannah.com/) |
-
+| GDG San Salvador | [View Now](https://gdgsansalvador.dev/) |
 
 Project is published under the [MIT license](/LICENSE.md).  
 Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
