@@ -41,7 +41,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
    * Install Firebase CLI: `npm i -g firebase-tools`
 1. Create [Firebase account](https://console.firebase.google.com) and login into [Firebase CLI](https://firebase.google.com/docs/cli/): `firebase login`
 1. Open Terminal/CMD/Powershell in your dir.
-1. Now type `firebase login` command in your Terminal/CMD/Powershell. 
+1. Now type `firebase login` command in your Terminal/CMD/Powershell.
 1. Type `firebase init`.
 1. Select the project by using the arrow keys.
 1. Then Select the `Firebase Hosting` by using Spacebar and arrow key.
@@ -49,7 +49,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Type `dist`.
 1. Some by default file will be created successfully.
 1. Run locally
-   * `firebase serve` or `npm run serve` 
+   * `firebase serve` or `npm run serve`
 1. Update Firebase.json file
     ```js
         {
@@ -68,7 +68,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
         }
     ```
 1. Build and deploy
-   * `firebase deploy` or `npm run deploy` 
+   * `firebase deploy` or `npm run deploy`
 
 
 
@@ -115,10 +115,10 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 ## Contributors
 <b>Maintainer:</b> [Vrijraj Singh](https://github.com/vrijraj)
 
-### View Website Built with Project 
+### View Website Built with Projects
 
-| Community Name | Web App Link | 
-| --- | --- | 
+| Community Name | Web App Link |
+| --- | --- |
 | GDG Jalandhar | [View Now](https://gdgjalandhar.com) |
 | GDG Kuala Lumpur | [View Now](https://www.gdgkl.dev/) |
 | GDG Fortaleza | [View Now](http://gdgfortaleza.com.br/) |
@@ -150,10 +150,10 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Ahmedabad | [View Now](http://gdgahmedabad.com/) |
 | GDG Fremont | [View Now](https://gdg-fremont.firebaseapp.com/) |
 | GDG Savannah | [View Now](https://gdgsavannah.com/) |
+| GDG San Salvador | [View Now](https://gdgsansalvador.dev/) |
 | GDG Indore | [View Now](https://gdgindore.in/) |
 | GDG Pescara | [View Now](https://gdgpescara.it/en/) |
 | GDG CDE | [View Now](http://gdgcde.org/) |
-
 
 Project is published under the [MIT license](/LICENSE.md).  
 Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
