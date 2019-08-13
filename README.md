@@ -154,6 +154,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Indore | [View Now](https://gdgindore.in/) |
 | GDG Pescara | [View Now](https://gdgpescara.it/en/) |
 | GDG CDE | [View Now](http://gdgcde.org/) |
+| GDG Galicia | [View Now](https://gdggalicia.com/) |
 
 Project is published under the [MIT license](/LICENSE.md).  
 Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
