@@ -1,18 +1,22 @@
 [
-    {
-        "name":"GDG",
-        "link":"https://developers.google.com/groups",
-        "img":"gdglogo.png"
-    },
-    {
-        "name":"WomenTechmakers",
-        "link":"https://www.womentechmakers.com/",
-        "img":"wtm.png"
-    },
-    {
-        "name":"GDG[x]",
-        "link":"https://github.com/gdg-x",
-        "img":"gdg-x.svg"
-    }
-
+  {
+    "name": "GDG",
+    "link": "https://developers.google.com/groups",
+    "img": "gdglogo.png"
+  },
+  {
+    "name": "Portershed",
+    "link": "https://portershed.com/",
+    "img": "portershed-logo.png"
+  },
+  {
+    "name": "Bank of Ireland Workbench",
+    "link": "https://businessbanking.bankofireland.com/campaigns/bank-of-ireland-workbench/",
+    "img": "bank-of-ireland-logo-default-blue.svg"
+  },
+  {
+    "name": "GDG[x]",
+    "link": "https://github.com/gdg-x",
+    "img": "gdg-x.svg"
+  }
 ]

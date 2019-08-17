@@ -87,7 +87,7 @@
                 <v-icon>watch_later</v-icon>
                 {{item.local_time}}
               </p>
-              <p class="google-font mt-1 mb-0" style="font-size:110%">
+              <p v-if="item.venue" class="google-font mt-1 mb-0" style="font-size:110%">
                 <v-icon>map</v-icon>
                 {{item.venue.name | summery(30)}}
               </p>
@@ -211,9 +211,7 @@ export default {
   },
   created() {
     fetch(
-      "https://cors-anywhere.herokuapp.com/https://api.meetup.com/" +
-        MeetupAPI.urlname +
-        "/events?&sign=true"
+      `https://cors-anywhere.herokuapp.com/https://api.meetup.com/${MeetupAPI.urlname}/events?key=2d5477004812804075381a7b71583b&page=3`
     )
       .then(data => data.json())
       .then(res => {

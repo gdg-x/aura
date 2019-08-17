@@ -1,56 +1,38 @@
 [
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    }
+  {
+    "name": "Antonio Moreno",
+    "designation": "GDG Lead Organiser",
+    "twitter": "https://twitter.com/Aerawraith",
+    "linkedin": "https://www.linkedin.com/in/amoreno84/",
+    "github": "",
+    "profileImage": "https://media.licdn.com/dms/image/C4E03AQG6Yosp7KxI2A/profile-displayphoto-shrink_200_200/0?e=1571270400&v=beta&t=Mk_ppQOtLh949C7_rELCw9d5r1YSJeywTvFL5Rvz86I",
+    "website": "https://blackpugstudio.com/"
+  },
+  {
+    "name": "Julien Garrigues",
+    "designation": "GDG Co-Organiser",
+    "twitter": "https://twitter.com/BPS_Julien",
+    "linkedin": "https://www.linkedin.com/in/julien-garrigues-821860162/",
+    "github": "https://github.com/bps-julien",
+    "profileImage": "https://media.licdn.com/dms/image/C4D03AQHFlCDrRsxsag/profile-displayphoto-shrink_200_200/0?e=1571270400&v=beta&t=OwswKyxg6axcx5TJxYz-Jd23HnI-Aq10DyuGZUe5eto",
+    "website": "https://blackpugstudio.com/"
+  },
+  {
+    "name": "Rossano D'Angelo",
+    "designation": "GDG Co-Organiser",
+    "twitter": "https://twitter.com/rossanodan",
+    "linkedin": "https://www.linkedin.com/in/rossano-d-angelo-a587b3a6/",
+    "github": "https://github.com/Vrijraj",
+    "profileImage": "https://media.licdn.com/dms/image/C5603AQEhcV-6bt-rvA/profile-displayphoto-shrink_200_200/0?e=1571270400&v=beta&t=rpunxa8iBKtJsKr3OTY7XN6a8gSN_wQ11GH4eF25yWs",
+    "website": ""
+  },
+  {
+    "name": "Swapnil Parashar",
+    "designation": "GDG Co-Organiser",
+    "twitter": "https://twitter.com/SwapnilParasha3",
+    "linkedin": "https://www.linkedin.com/in/swapnil-parashar-67a8601a/",
+    "github": "https://github.com/swapnilparashar",
+    "profileImage": "https://media.licdn.com/dms/image/C4D03AQFtWzJ1i5Ndkw/profile-displayphoto-shrink_200_200/0?e=1571270400&v=beta&t=DFFxhneOG2-ywrqvhjc--ZQVrcr3zgYngHING95kEX0",
+    "website": ""
+  }
 ]

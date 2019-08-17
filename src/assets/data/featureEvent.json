@@ -1,21 +1,20 @@
 {
-    "FeatureEventName":"IWD'19 Jalandhar",
-    "EventImage":"IWD.jpg",
-    "EventDate":{
-        "Date":"31",
-        "Month":"3",
-        "Year":"2019"
-    },
-    "EventTime":{
-        "StartTime":"09:00 AM",
-        "EndTime":"04:30 PM"
-    },
-    "EventVenue":"Apeejay Institute of Management Technical Campus, Rama Mandi, Hoshiarpur Road, Jalandhar",
-    "EventVenueMapLink":"https://goo.gl/maps/4Z8pminYsp42",
-    "EventWebsite":"https://iwd.gdgjalandhar.com/",
-    "EventDescription":"International Women's Day (IWD) is marked on March 8th every year. In different regions, the focus of celebrations ranges from general respect and appreciation for women to a celebration of women's economic, political, and social achievements.",
-    "MeetupLink":"https://www.meetup.com/GDG-Jalandhar/events/253165595/",
-    "RegistrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSciM-nL87uQd_it2ulou1mFv55aXqE9qSSnwL3No3fWhX8OzA/closedform",
-    "FBEventPageURL":"s"
+  "FeatureEventName": "Building an ARt Gallery in the Browser with Doug Sillars",
+  "EventImage": "gdg-doug-sillars2x.png",
+  "EventDate": {
+    "Date": "21",
+    "Month": "8",
+    "Year": "2019"
+  },
+  "EventTime": {
+    "StartTime": "06:30 AM",
+    "EndTime": "08:30 PM"
+  },
+  "EventVenue": "Apeejay Institute of Management Technical Campus, Rama Mandi, Hoshiarpur Road, Jalandhar",
+  "EventVenueMapLink": "https://goo.gl/maps/4Z8pminYsp42",
+  "EventWebsite": "https://www.meetup.com/en-AU/Google-Developers-Group-in-Galway-Meetup/events/263450319/",
+  "EventDescription": "For this exceptional talk and codelab, we will be welcoming Doug Sillars to our lovely stage!\nHe is a freelance mobile performance expert, having helped thousands of developers speed up their mobile apps and websites. A Google Developer Expert and the author of O’Reilly’s “High Performance Android Apps,” Doug regularly speaks at conferences, and blogs at dougsillars.com. He is currently working as a freelance digital nomad, traveling with his family in Europe. The world of virtual reality allows us to build new 3D interactive spaces that we can fill with anything we want - like the art of the great Renaissance masters. More into Cubism? With a quick click - now the gallery is full of a completely different genre. With new AR features, we can actually build the gallery in our own space - and just as easily swap out the art - all in our browser! In this talk, we’ll walk through the steps to build a virtual ARt gallery, with web technology available today, but also take a peek at the new WebXR technology that is coming to our browsers soon! We will also take a nice break to enjoy some food and drinks courtesy of our generous sponsors! NOTE: Don't forget your laptops and chargers if you want to take part in the Doug's codelab!",
+  "MeetupLink": "https://www.meetup.com/en-AU/Google-Developers-Group-in-Galway-Meetup/events/263450319/",
+  "RegistrationLink": "https://www.meetup.com/en-AU/Google-Developers-Group-in-Galway-Meetup/events/263450319/",
+  "FBEventPageURL": "https://www.facebook.com/events/554048858465184/"
 }
-
