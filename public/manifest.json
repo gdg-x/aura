@@ -1,6 +1,6 @@
 {
-  "name": "GDG Galway Web App",
-  "short_name": "GDG Galway Web App",
+  "name": "GDG Galway",
+  "short_name": "GDG Galway",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
