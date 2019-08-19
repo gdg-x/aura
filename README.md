@@ -156,6 +156,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG CDE | [View Now](http://gdgcde.org/) |
 | GDG Galicia | [View Now](https://gdggalicia.com/) |
 | GDG Campobasso| [View Now](https://gdgcampobasso.it/) |
+| GDG Galway | [View Now](https://gdg-galway.com/) |
 
 Project is published under the [MIT license](/LICENSE.md).  
 Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
