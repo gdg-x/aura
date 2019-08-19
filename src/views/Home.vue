@@ -32,7 +32,6 @@
         </v-flex>
       </v-layout>
     </v-container>
-
   
     <v-container fluid class="py-5" style="background-color:#F9F9F9">
       <v-layout wrap align-start justify-start row fill-height>
@@ -44,7 +43,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-
+    
      <!-- <v-container fluid >
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10>

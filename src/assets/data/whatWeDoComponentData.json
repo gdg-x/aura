@@ -1,0 +1,32 @@
+[
+    {
+        "TechName":"Angular",
+        "image":"angular.svg",
+        "link":"https://angular.io/"
+    },
+    {
+        "TechName":"Google Cloud Platform",
+        "image":"gcp.svg",
+        "link":"https://cloud.google.com/"
+    },
+    {
+        "TechName":"Android",
+        "image":"android.svg",
+        "link":"https://www.android.com/"
+    },
+    {
+        "TechName":"Actions On Google",
+        "image":"aog.png",
+        "link":"https://developers.google.com/actions/"
+    },
+    {
+        "TechName":"Firebase",
+        "image":"firebase.svg",
+        "link":"https://firebase.google.com/"
+    },
+    {
+        "TechName":"TensorFlow",
+        "image":"tf.svg",
+        "link":"https://www.tensorflow.org/"
+    }
+]
