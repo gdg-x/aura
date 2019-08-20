@@ -12,12 +12,12 @@
             </p>
 
             <p class="google-font mt-3" style="font-size:110%">
-                NB: This guide is for windows workstations, linux and mac users already has built package managers so this guide won't be necessary.
+                NB: This guide is for windows workstations, linux and mac users already have built in package managers so this guide won't be necessary.
             </p>
 
             <p class="google-font" style="font-size:180%;color:#0277bd">Step 1: Install Chocolatey</p>
             <p class="body-1">
-                <a href="https://chocolatey.org/">Chocolatey</a> is a really neat package manager for windows. It can not only help us install imporatnt developer software but help you manage and update any regular applications as well, including web browsers, media players etc.
+                <a href="https://chocolatey.org/">Chocolatey</a> is a really neat package manager for windows. Not only can it help us install important developer software, but can manage and update any regular applications as well, including web browsers, media players etc.
             </p>
 
             <p>
@@ -25,15 +25,15 @@
             </p>
 
             <ul>
-                <li>Open command prompt as admin by presssing windows key ⊞ + x then clicking 'Command Prompt (Admin) from the menu</li>
-                <li>A command prompt terminal window should open up, now copy and paste the following command (both lines) into the window and press enter</li>
+                <li>Open command prompt as admin by presssing windows key ⊞ + x then clicking 'Command Prompt (Admin)' from the menu.</li>
+                <li>A command prompt terminal window should open up, now copy and paste the following command (all lines) into the window and press enter.</li>
             </ul>
             <br>
-            <p>
-                @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-            </p>
-
-            <p>Close the window, now chocolatey is installed!</p>
+            <code style="margin:10px" id="code">@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"</code>
+          
+            <br>
+            
+            <p>After the installation competes you can then close the window, now chocolatey is installed!</p>
 
             <p class="google-font" style="font-size:180%;color:#0277bd">Step 2: Install Developer Packages</p>
             <p>We can now use chcolatey's import feature to install all our required packages at once.</p>
@@ -41,8 +41,7 @@
             <ul>
                 <li>Download <a href="https://firebasestorage.googleapis.com/v0/b/gdgpos-24892.appspot.com/o/devapps.config?alt=media&token=ef2896c9-c6d2-4b15-aeff-0aee5d2f016c" download>this chocolatey export file</a> to your machine and place it on your desktop.</li>
                 <li>Open another command prompt (admin) window</li>
-                <li>Enter the following command with your username: cd C:\Users\ReplaceWithYourUsername\Desktop</li>
-                <li>Now enter the following command: choco install devapps.config</li>
+                <li>Enter the following command: <code>choco install %USERPROFILE%\Desktop\devapps.config</code></li>
             </ul>
 
             <br>
@@ -51,11 +50,10 @@
 
             <ul>
                 <li><a href="https://nodejs.org/en/">Nodejs and npm</a> - Javascript runtime</li>
-                <li><a href="https://code.visualstudio.com/">Visual Studio Code</a> - Our Code editor of choice</li>
                 <li><a href="https://www.python.org/download/releases/3.0/">Python 3</a> - Python runtime</li>
-                <li><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Java 8</a> - Java runtime</li>
+                <li><a href="https://code.visualstudio.com/">Visual Studio Code</a> - Our Code editor of choice</li>
                 <li><a href="https://www.getpostman.com/">Postman</a> - Great api testing tool</li>
-                <li><a href="https://git-scm.com/">Git - Version Control</a> - Essential for collaboration</li>
+                <li><a href="https://git-scm.com/">Git</a> - Essential for collaboration & downloading projects</li>
             </ul>
             
             <br>
