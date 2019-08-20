@@ -69,9 +69,9 @@ export default {
         }
     },
     methods:{
-        getImgUrl(pic) {
-            if(pic.length>0){
-                return require('@/assets/img/what-we-do/'+pic)
+        getImgUrl(url) {
+            if(url.length>0){
+                return require('@/assets/img/what-we-do/'+url)
             }else{
                 return require('@/assets/img/what-we-do/notFound.png')
             }
