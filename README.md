@@ -4,7 +4,11 @@
 
 ## What we're about
 
-The Google Developers Group Galway is a community regrouping Tech aficionados based in our beautiful city of Galway, Ireland. We organize events focused on new technologies, Google products and services, but also workshops, competitions, and networking events. We invite people from all backgrounds and technical level to join our community on Twitter, Discord, and Meetup group! Disclaimer: GDG Galway is an independent group; our activities and the opinions expressed here should in no way be linked to the Google Corporation.
+The Google Developers Group Galway is a community regrouping Tech aficionados based in our beautiful city of Galway, Ireland.
+
+We organize events focused on new technologies, Google products and services, but also workshops, competitions, and networking events. We invite people from all backgrounds and technical level to join our community on Twitter, Discord, and Meetup group!
+
+Disclaimer: GDG Galway is an independent group; our activities and the opinions expressed here should in no way be linked to the Google Corporation.
 
 ## What is this project?
 
