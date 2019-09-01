@@ -8,6 +8,8 @@ before_script:
   - npm install -g firebase-tools
   - npm install -g @vue/cli@latest
   - npm install
+  - cd functions
+  - npm install
 
 script:
   - npm run build
