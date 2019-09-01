@@ -19,26 +19,12 @@
       "Link": "mailto:gdggalway@gmail.com"
     },
     {
-      "LinkName": "Call for Speaker",
+      "LinkName": "Call for Papers",
       "Link": "mailto:gdggalway@gmail.com"
-    }
-  ],
-  "DevConsole": [
-    {
-      "LinkName": "Google API Console",
-      "Link": "https://console.developers.google.com/"
     },
     {
-      "LinkName": "GCP Console",
-      "Link": "https://console.cloud.google.com/"
-    },
-    {
-      "LinkName": "Google Play Console",
-      "Link": "https://console.cloud.google.com/"
-    },
-    {
-      "LinkName": "Firebase Console",
-      "Link": "https://console.firebase.google.com/"
+      "LinkName": "Call to Action",
+      "Link": "https://forms.gle/s76uGWebemj9zsTr8"
     }
   ],
   "FooterEndSession": [

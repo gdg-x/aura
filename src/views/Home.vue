@@ -3,7 +3,7 @@
     <v-container fluid class="my-4">
       <v-layout wrap align-center justify-center row fill-height class>
         <v-flex xs12 md10>
-          <HomeStartScreen />
+          <HomeStartScreen/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -11,7 +11,7 @@
     <v-container fluid style="background-color:#F9F9F9">
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10 class>
-          <whatWeDo />
+          <whatWeDo/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -19,7 +19,7 @@
     <v-container fluid style="background-color:#4C4A78">
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10 class>
-          <AboutGDGChapter />
+          <AboutGDGChapter/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -27,7 +27,7 @@
     <v-container fluid>
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10 class>
-          <eventshowcase />
+          <eventshowcase/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -54,7 +54,7 @@
     <v-container fluid>
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10>
-          <partners />
+          <partners/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -68,7 +68,7 @@ import AboutGDGChapter from "@/components/home/AboutGDGChapter";
 import eventshowcase from "@/components/home/eventshowcase";
 // import wtmInfo from '@/components/home/wtmInfo'
 import partners from "@/components/home/partners";
-import featureEvent from "@/components/home/featureEvent";
+// import featureEvent from "@/components/home/featureEvent";
 
 export default {
   components: {
@@ -77,8 +77,8 @@ export default {
     AboutGDGChapter,
     eventshowcase,
     // wtmInfo,
-    partners,
-    featureEvent
+    partners
+    // featureEvent
   }
 };
 </script>
