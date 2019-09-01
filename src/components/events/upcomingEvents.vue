@@ -211,7 +211,9 @@ export default {
   },
   created() {
     fetch(
-      `https://cors-anywhere.herokuapp.com/https://api.meetup.com/${MeetupAPI.urlname}/events?key=2d5477004812804075381a7b71583b&page=3`
+      `https://cors-anywhere.herokuapp.com/https://api.meetup.com/${
+        MeetupAPI.urlname
+      }/events?key=2d5477004812804075381a7b71583b&page=3`
     )
       .then(data => data.json())
       .then(res => {

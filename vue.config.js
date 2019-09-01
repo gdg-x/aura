@@ -1,4 +1,5 @@
 module.exports = {
+  proxy: 'https://api.meetup.com/',
   pwa: {
     name: "GDG Galway",
     workboxPluginMode: "InjectManifest",
