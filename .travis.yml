@@ -10,6 +10,7 @@ before_script:
   - npm install
   - cd functions
   - npm install
+  - cd ..
 
 script:
   - npm run build
