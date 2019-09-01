@@ -23,6 +23,11 @@
       "name": "Meetup",
       "link": "https://www.meetup.com/en-AU/Google-Developers-Group-in-Galway-Meetup/",
       "icon": "fab fa-meetup"
+    },
+    {
+      "name": "Slack",
+      "link": "https://join.slack.com/t/gdg-galway/shared_invite/enQtNzQ1NTE0OTgwMDcxLWY0ZWFiMjhiNDY5MzkyZGIwMTUxZWM4N2VkYTMzZWM4MjY2NTU4MjFhYmI3ZmExNGVhMGYzZDZhMmZmMzE4YzE",
+      "icon": "fab fa-slack"
     }
   ],
   "aboutGDGProgram": "GDGs are local groups of developers who are specifically interested in Google products and APIs. Each local group is called a GDG chapter and can host a variety of technical activities for developers - from just a few people getting together to watch our latest videos, to large gatherings with demos and tech talks, to hackathons."
