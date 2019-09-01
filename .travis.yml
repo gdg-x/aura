@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "10.15.2"
+  - "node"
 script:
   - echo "Deploying"
 
@@ -8,10 +8,19 @@ before_script:
   - npm install -g firebase-tools
   - npm install -g @vue/cli@latest
   - npm install
+  - cd functions
+  - npm install
+  - cd ..
 
 script:
   - npm run build
 
+deploy:
+  provider: firebase
+  skip_cleanup: true
+  token:
+    secure: "Z9vdz5+uRMLoKBc4KjaPU/0DGVrEHbITrPEYzhcBEO2GWMLdQMf3gbkI5dLMdLfN5KkVuASd7RInf5Z5+cwpDKCAKAFuj4tEfABhsN9N1pqnBC1lTWjpGlG8CMa4jpm2DNiJUdI5XcpYXBRHUEJK+DQ+sJElm9D1InG0J90qkMySZrvdDBESyh2m3pM9Juwdc4wXMKzXuhy5r2rXclAdHGqlr1hMmih4D1JhlGV5snxZhd9XZ9a3Xdh0Tky0Lbr9/4GGy4Y+uy83KS+O3KDFu1PxIzBgD6vBHY3wSvVQtFON+dx2rVwouMHAkamaxBOI2S1CJAYzlOlDOQl62PZbyNWzwTgw0CeG8Z4RVRqYXheW7N+eD6Qx3iWZ38c4eyIlFN5neumZtSP10j8tkD8t7S8i+t4ufoPXi2EavLdNL8I0kRtcgKIZLAlK4xPeyDEb2nXRS8E31zkNXQ8H0Bo8cZzkXw4/Df2Z89UmtYhtaMrFWf1InDs+md508ZeLTUZoKXgrUtqA1/o9onnvMbmIr+fF1OmAPI51Sv+kRR104zE0rHKN2qzTx4GZ/E6kWVS0lk93ygDiJicMacfl0U1ftHc9SQRNshGl8MFn7NSHStymybFfI5yLPm0//kF2fHEJDjlyEb6wtQNQtoI7HLHTeizPtefWNkQcVp6MTOEE9LI="
+
 after_success:  
-  - firebase deploy --token $FKEY
+  - firebase deploy --token $FIREBASE_TOKEN
 
