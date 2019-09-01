@@ -1,11 +1,14 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import firebase from "firebase/app";
+import "firebase/functions";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     drawer: false,
+    firebase,
     items: [
       { text: "Home", to: "/", icon: "home" },
       { text: "Events", to: "/events", icon: "rounded_corner" },
@@ -17,6 +20,9 @@ export default new Vuex.Store({
   getters: {
     links: state => {
       return state.items;
+    },
+    functions: state => {
+      return state.firebase.functions();
     }
   },
   mutations: {
