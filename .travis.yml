@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "10.15.2"
+  - "node"
 script:
   - echo "Deploying"
 
@@ -12,6 +12,13 @@ before_script:
 script:
   - npm run build
 
+deploy:
+  provider: firebase
+  skip_cleanup: true
+  token:
+    secure: "Bh9n/ooBB5GlqAqi5slecHEMv/0hylG7gZ2aZK0HrL8geisBOjLD44c07n6WgIMqc03od5xtC0H8YgP87J06eFz/Bkos0hsTR7PpLe3XCX1wEFUdbxlClkf8AY5sTT4pdPYc54tV/GvGy8aCoSUzodiCsp4EUQkQrhIs1omJFaqNc5kajoHa0pMLFTHH/o6onaUtulDh6iiJ5tqz1ZYKllM0eypPm8DBk8gm+SQI641tKYLPENTuzmlwlrGkw9BrFjhlhL2UbkyCWfd0gdYC2tcyDo620v4vtfi/guS6YSwxXt7uF05NyAd4hHHrck/Z3aTKLybfTwBVIAAX0yIjgp6kJJ9Jib83QK+LjIYXccqQkyhixCH+a7nqJoZ7fnhxUFwGyZBgbVu3wGno19d8UCD/1S2u6fQQpGPQEZp+XRPnsQthLMxgJGo15E12qTpLkWJjkZyeO2xt1m0uAJagAGJ1BFHe6x/+DG35/VoJ4YlKeooXTVsKXot2rnUsXQrfeelxFBXaYXn2g859O9fKIbXD3r5euye5ZakQAs8qMMeP9JG03AFtzc0AMIeGFJMnRLLbFOrjCRzz4Y9hJnlWIqR/ATMT12PBuNbQ0NMIzf2awQ9ToyIuqH2Aw5wKYVaLWpER/9BT+IEb0PniUREONK3Ph9FKwuYiUJDQ5Pnn0WM="
+
+
 after_success:  
-  - firebase deploy --token $FKEY
+  - firebase deploy --token $FIREBASE_TOKEN
 
