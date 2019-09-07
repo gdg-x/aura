@@ -159,6 +159,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Galway | [View Now](https://gdg-galway.com/) |
 | GDG Nizhny Novgorod | [View Now](https://gdgnnsite-62ac7.firebaseapp.com/) |
 | GDG Madurai | [View Now](https://www.gdgmadurai.in/) |
+| GDG Bristol | [View Now](https://gdgbristol.org/) | 
 
 
 Project is published under the [MIT license](/LICENSE.md).  
