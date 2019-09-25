@@ -161,6 +161,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Madurai | [View Now](https://www.gdgmadurai.in/) |
 | GDG Bristol | [View Now](https://gdgbristol.org/) | 
 | GDG Ranchi | [View Now](https://www.gdgranchi.in/) |
+| GDG Chennai | [View Now](https://gdgchennai.in)|
 
 
 Project is published under the [MIT license](/LICENSE.md).  
