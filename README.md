@@ -35,7 +35,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. For the production: `npm run build` and then one dir will be created `dist`
 1. For testing: `npm run test`
 
-## Deploy your Web App on Firebase
+## Deploy on Firebase
 
 1. Setup Environment for the Firebase deployment
    * Install Firebase CLI: `npm i -g firebase-tools`
@@ -70,7 +70,24 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Build and deploy
    * `firebase deploy` or `npm run deploy`
 
+## Deploy on Netlify
+1. On Netlify, setup up a new project from GitHub with the following settings:
 
+    - **Build Command:** `npm run build` or `yarn build`
+    - **Publish directory:** `dist`
+
+2. Hit the deploy button!
+
+Also checkout [vue-cli-plugin-netlify-lambda](https://github.com/netlify/vue-cli-plugin-netlify-lambda).
+
+In order to receive direct hits using `history mode` on Vue Router, you need to create a file called `_redirects` under `/public` with the following content:
+
+```
+# Netlify settings for single-page application
+/*    /index.html   200
+```
+
+More information on [Netlify redirects documentation](https://www.netlify.com/docs/redirects/#history-pushstate-and-single-page-apps).
 
 ### Run your tests
 1. For Test: `npm run test`
