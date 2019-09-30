@@ -1,13 +1,16 @@
 <template>
-  <HelloWorld />
+  <v-container fluid>
+    <homeStartScreen />
+    <h1>lo</h1>
+  </v-container>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld';
+import homeStartScreen from '../components/home/homeStartScreen';
 
 export default {
   components: {
-    HelloWorld,
+    homeStartScreen,
   },
 };
 </script>

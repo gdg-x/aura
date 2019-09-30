@@ -28,22 +28,24 @@
     <AuraToolbar/>
     <AuraDrawer />
     <AuraBottomNav />
+    <AuraView />
+    
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
 import AuraToolbar from './components/core/Toolbar'
 import AuraDrawer from './components/core/Drawer'
 import AuraBottomNav from './components/core/BottomNav'
+import AuraView from './components/core/View'
 
 export default {
   name: 'App',
   components: {
     AuraToolbar,
     AuraDrawer,
-    AuraBottomNav,
-    HelloWorld,
+    AuraView,
+    AuraBottomNav
   },
   data: () => ({
     refreshing: false,
