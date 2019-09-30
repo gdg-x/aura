@@ -27,6 +27,7 @@
 
     <AuraToolbar/>
     <AuraDrawer />
+    <AuraBottomNav />
   </v-app>
 </template>
 
@@ -34,12 +35,14 @@
 import HelloWorld from './components/HelloWorld';
 import AuraToolbar from './components/core/Toolbar'
 import AuraDrawer from './components/core/Drawer'
+import AuraBottomNav from './components/core/BottomNav'
 
 export default {
   name: 'App',
   components: {
     AuraToolbar,
     AuraDrawer,
+    AuraBottomNav,
     HelloWorld,
   },
   data: () => ({
