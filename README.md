@@ -180,6 +180,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Ranchi | [View Now](https://www.gdgranchi.in/) |
 | GDG Chennai | [View Now](https://gdgchennai.in)|
 | GDG Kano | [View Now](http://kano.gdg.ng/)|
+| GDG Gandhinagar |[View Now](https://gdggandhinagar.org/) |
 
 
 Project is published under the [MIT license](/LICENSE.md).  
