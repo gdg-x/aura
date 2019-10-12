@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="pa-0 ma-0" >
     <v-snackbar
         v-model="snackWithButtons"
         :timeout="timeout"
@@ -27,8 +27,10 @@
 
     <AuraToolbar/>
     <AuraDrawer />
-    <AuraBottomNav />
-    <AuraView />
+    
+    <AuraView class="" />
+    
+    <AuraBottomNav class="d-flex d-sm-none" />
     
   </v-app>
 </template>
