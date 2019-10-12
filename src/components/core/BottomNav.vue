@@ -4,7 +4,7 @@
     grow
     app
     dark
-    background-color="primary"
+    :background-color="this.$vuetify.theme.dark?'#212121':'primary'"
     shift
     color="white"
   > 
