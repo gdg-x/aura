@@ -1,7 +1,7 @@
 <template>
-  <div>
     <v-app-bar
-      color="white"
+      app
+      fixed
     >
       <v-app-bar-nav-icon 
       @click="toggleDrawer"></v-app-bar-nav-icon>
@@ -14,7 +14,7 @@
             v-for="(link, i) in links"
             :key="i"
             :to="link.to"
-            class="ml-0 google-font hidden-sm-and-down"
+            class="ml-2 google-font hidden-sm-and-down"
             style="text-transform: capitalize;" 
             text
             @click="onClick($event, link)"
@@ -24,11 +24,12 @@
 
       <!-- <v-btn icon>
         <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
       </v-btn> -->
+
+      <v-btn icon v-on:click="darkMode" class="ml-2">
+        <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-5</v-icon>
+        <v-icon v-else>mdi-brightness-4</v-icon>
+      </v-btn> 
 
       <v-menu
         left
@@ -51,7 +52,6 @@
         </v-list>
       </v-menu>
     </v-app-bar>
-  </div>
 </template>
 
 <script>
@@ -73,6 +73,10 @@
         e.stopPropagation()
         if (item.to || !item.href) return
         this.$vuetify.goTo(item.href)
+      },
+
+      darkMode(){
+        this.$vuetify.theme.dark = !this.$vuetify.theme.dark
       }
     }
   }
