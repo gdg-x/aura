@@ -1,0 +1,67 @@
+  
+{
+    "AboutSession":[
+        {
+            "LinkName":"GDG Jalandhar",
+            "Link":"https://meetup.com/GDG-Jalandhar/"
+        },
+        {
+            "LinkName":"GDG Chandigarh",
+            "Link":"https://www.meetup.com/GDG-chandigarh/"
+        },
+        {
+            "LinkName":"Google Developers Groups",
+            "Link":"https://developers.google.com/programs/community/gdg/"
+        },
+        {
+            "LinkName":"Women Techmakers",
+            "Link":"https://www.womentechmakers.com/"
+        }
+    ],
+    "ChapterResourcesSession":[
+        {
+            "LinkName" : "Become a Sponsor",
+            "Link" : "mailto:devfestpunjab@gmail.com"
+        },
+        {
+            "LinkName" : "Call for Speaker",
+            "Link" : "mailto:devfestpunjab@gmail.com"
+        },
+        {
+            "LinkName" : "Media Kit",
+            "Link" : "https://drive.google.com/drive/folders/16rHDaHbuS_YApMWgJHUxygpd-A5gCkLK"
+        }
+    ],
+    "DevConsole":[
+        {
+            "LinkName" : "Google API Console",
+            "Link" : "https://console.developers.google.com/"
+        },
+        {
+            "LinkName" : "GCP Console",
+            "Link" : "https://console.cloud.google.com/"
+        },
+        {
+            "LinkName" : "Google Play Console",
+            "Link" : "https://console.cloud.google.com/"
+        },
+        {
+            "LinkName" : "Firebase Console",
+            "Link" : "https://console.firebase.google.com/"
+        }
+    ],
+    "FooterEndSession":[
+        {
+            "LinkName" : "Code of Conduct",
+            "Link" : "https://docs.google.com/document/d/1Wz_w6Z7usMnXKFMpOY4IPbA35twK7Uc4CAxScGDiwOk/edit"
+        },
+        {
+            "LinkName" : "Terms & Servies",
+            "Link" : "https://docs.google.com/document/d/14g3fv9NItiB8Hd-YGYyVYd2N4LRxe6Bx3syWse_wsiA/edit?usp=sharing"
+        },
+        {
+            "LinkName" : "Community Guidelines",
+            "Link" : "/community-guidelines"
+        }
+    ]
+}
