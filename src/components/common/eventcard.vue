@@ -1,7 +1,7 @@
 <template>
     <v-dialog
       v-model="dialog"
-      width="1000"
+      width="700"
     >
       <template v-slot:activator="{ on }">
           <div 
@@ -14,13 +14,13 @@
               <p class="google-font ma-0 mt-0" style="font-size:120%;" >{{data.data.name }}</p>
               <p class="google-font mt-0 mb-0" style="font-size:90%;">{{data.data.local_time}}</p>
               <p class="google-font mt-0 mb-0" style="font-size:90%;">{{data.data.venue.name }}</p>
-
+              <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
           </div>
       </template>
 <!-- :style="{'background-image':'url('+require('@/assets/img/svg/footer.svg')+')'}" -->
       <v-card color="" v-if="dialog">
         <v-card-title
-          class="px-5 py-5 grey lighten-4 google-font"
+          class="px-5 py-5 google-font"
           
           style="background-position:right bottom;"
         >
@@ -30,20 +30,17 @@
         <v-card-text class="pa-5">
             <!-- <v-chip :color="data.vdata.tag.color" label outlined class="mt-1 mb-0" small>{{data.vdata.tag.name}}</v-chip> -->
 
-            <p class="google-font mt-3 mb-0" style="font-size:110%"><b>Venue:</b> {{data.data.venue.name}}</p>
-            <p class="google-font mt-1 mb-0" style="font-size:90%"><b>Date:</b>{{data.data.local_date | dateFilter}}</p>
-              <p class="google-font mt-0 mb-0" style="font-size:80%;color:#424242"><b>Time:</b>{{data.data.local_time}}</p>
-            <p class="google-font mt-3 mb-0" style="font-size:110%"><b>Description:</b> <span v-html="data.data.description"></span> </p>
-            <!-- <p class="google-font mt-0 mb-0" style="font-size:110%"><b>Time Durations:</b> {{data.vdata.timeDuration}} min</p> -->
-            <!-- <p class="google-font mt-0 mb-0" style="font-size:110%"><b>Type:</b> {{data.vdata.subtype}} </p>    -->
-            <!-- <p class="google-font mt-0 mb-0" style="font-size:110%" v-if="data.vdata.complexity"><b>Content level:</b> {{data.vdata.complexity}} </p>                   -->
+            <p class="google-font mt-3 mb-0" style="font-size:110%"><b>Venue: </b> {{data.data.venue.name}}</p>
+            <p class="google-font mt-1 mb-0" style="font-size:110%"><b>Date: </b>{{data.data.local_date | dateFilter}}</p>
+            <p class="google-font mt-0 mb-0" style="font-size:110%;"><b>Time: </b>{{data.data.local_time}}</p>
+            <p class="google-font mt-3 mb-0" style="font-size:110%"><b>Description: </b> <span  v-html="$options.filters.summary(data.data.description,100)"></span> </p>
+          <!-- {{data.data}}   -->
+            <!-- <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p> -->
 
-            <!-- <p class="google-font mt-3" style="font-size:105%">{{data.vdata.description}} <br> </p> -->
-
-          
-       
-         
-      
+            <v-btn color="#1a73e8" v-if="data.data.link.length>0" :href="data.data.link" target="_blank" class="ma-0 elevation-0 my-2 mr-3" dark style="text-transform: capitalize;"> 
+              See More at Meetup
+            </v-btn>
+            
         </v-card-text>
 
         <v-divider></v-divider>
