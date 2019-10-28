@@ -2,11 +2,12 @@
     <v-app-bar
       app
       fixed
+      class=""
     >
       <v-app-bar-nav-icon 
       @click="toggleDrawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title class="google-font">Page title</v-toolbar-title>
+      <v-toolbar-title class="google-font">GDG Jalandhar</v-toolbar-title>
 
       <div class="flex-grow-1"></div>
 
@@ -22,35 +23,10 @@
             {{ link.text }}
       </v-btn>
 
-      <!-- <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn> -->
-
       <v-btn icon v-on:click="darkMode" class="ml-2">
-        <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-5</v-icon>
+        <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
         <v-icon v-else>mdi-brightness-4</v-icon>
       </v-btn> 
-
-      <v-menu
-        left
-        bottom
-      >
-        <template v-slot:activator="{ on }">
-          <v-btn icon v-on="on">
-            <v-icon>mdi-dots-vertical</v-icon>
-          </v-btn>
-        </template>
-
-        <v-list>
-          <v-list-item
-            v-for="n in 5"
-            :key="n"
-            @click="() => {}"
-          >
-            <v-list-item-title>Option {{ n }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
     </v-app-bar>
 </template>
 
@@ -76,7 +52,14 @@
       },
 
       darkMode(){
+        let metaThemeColor = document.querySelector("meta[name=theme-color]");
         this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+
+        if(this.$vuetify.theme.dark){
+          metaThemeColor.setAttribute("content", '#212121');
+        }else{
+           metaThemeColor.setAttribute("content", '#0277bd');
+        }
       }
     }
   }
