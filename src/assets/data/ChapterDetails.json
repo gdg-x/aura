@@ -14,11 +14,6 @@
             "icon" : "mdi-facebook"
         },
         {
-            "name" : "Google Plus",
-            "link" : "https://plus.google.com/u/0/+GdgjalandharIn/posts",
-            "icon" : "mdi-google-glass"
-        },
-        {
             "name" : "Twitter",
             "link" : "https://twitter.com/gdgjalandhar",
             "icon" : "mdi-twitter"
@@ -26,7 +21,7 @@
         {
             "name" : "Meetup",
             "link" : "https://www.meetup.com/GDG-Jalandhar/",
-            "icon" : "fab fa-meetup"
+            "icon" : "mdi-meetup"
         },
         {
             "name" : "Instagram",
