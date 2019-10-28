@@ -1,5 +1,5 @@
 <template>
-  <v-app class="pa-0 ma-0" >
+  <v-app class="pa-0 ma-0">
     <v-snackbar
         v-model="snackWithButtons"
         :timeout="timeout"
@@ -29,9 +29,8 @@
     <AuraDrawer />
     
     <AuraView class="" />
-    
+    <AuraFooter/>
     <AuraBottomNav class="d-flex d-sm-none" />
-    <!-- <AuraFooter/> -->
   </v-app>
 </template>
 
@@ -60,6 +59,7 @@ export default {
     timeout: 7000,
   }),
   created(){
+    
      // Listen for swUpdated event and display refresh snackbar as required.
     document.addEventListener('swUpdated', this.showRefreshUI, { once: true });
     // Refresh all open app tabs when a new service worker is installed.
