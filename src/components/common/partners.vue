@@ -7,7 +7,7 @@
                 </p>
                 <!-- <b>{{chapterDetails.ChapterName}}</b> -->
                 <p class="google-font mt-1 mb-0" style="font-size:120%">A very big thank you to all our partners for their continued partnership.</p>
-                <!-- <p class="google-font mt-0" style="font-size:120%">If you’re interested in being showcased throughout , contact <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${chapterDetails.ChapterEmail}`">{{chapterDetails.ChapterEmail}}</a> to discuss sponsorship opportunities.</p> -->
+                <p class="google-font mt-0" style="font-size:120%">If you’re interested in being showcased throughout , contact <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${chapterDetails.ChapterEmail}`">{{chapterDetails.ChapterEmail}}</a> to discuss sponsorship opportunities.</p>
             </v-flex>
 
             <v-flex xs12 class="px-5">
@@ -51,11 +51,12 @@
 
 <script>
 import datap from '@/assets/data/partners.json'
-// import chapterDetails from '@/assets/data/chapterDetails.json'
+import chapterDetails from '@/assets/data/ChapterDetails.json'
 export default {
     data() {
         return {
             partnerData: datap,
+            chapterDetails: chapterDetails
         }
     },
     methods:{
