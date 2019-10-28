@@ -1,5 +1,5 @@
 <template>
-  <v-container :class="this.$vuetify.theme.dark == true?'black':'white'" fluid style="">
+  <v-container fluid :class="this.$vuetify.theme.dark == true?'black':'white'" class="px-1">
     <v-slide-y-reverse-transition>
       <router-view v-show="show" />
     </v-slide-y-reverse-transition>
