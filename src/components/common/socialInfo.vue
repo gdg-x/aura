@@ -1,0 +1,39 @@
+<template>
+    <v-container fluid class="py-0 my-0">
+        <v-row class="py-0 my-0" justify="start" align="start">
+            <v-col md="12" lg="12" sm="12" cols="12" class="py-0 my-0">
+                <v-btn aria-label="social media btn" small class="ml-0 mt-0 mx-0" icon v-if="data.data.twitter" :href="data.data.twitter" target="_blank">
+                    <v-icon small style="color:#1da1f2">mdi-twitter</v-icon>
+                </v-btn>
+
+                <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.data.linkedin" :href="data.data.linkedin" target="_blank">
+                    <v-icon small style="color:#0077b5">mdi-linkedin</v-icon>
+                </v-btn>
+                
+                <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.data.github" :href="data.data.github" target="_blank">
+                    <v-icon small style="color:#333">mdi-github-circle</v-icon>
+                </v-btn>
+                
+                <!-- <br class="hidden-sm-and-up"> -->
+
+                <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.data.website" :href="data.data.website" target="_blank">
+                    <v-icon style="color:#333">mdi-link</v-icon>
+                </v-btn>
+
+                <!-- <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.data.medium" :href="data.data.medium" target="_blank">
+                    <v-icon small style="color:#1da1f2">fab fa-medium</v-icon>
+                </v-btn> -->
+            </v-col>
+        </v-row>
+    </v-container>
+</template>
+
+<script>
+export default {
+    props:{
+        data:{
+            data:{}
+        }
+    }
+}
+</script>
