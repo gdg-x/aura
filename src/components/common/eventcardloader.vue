@@ -27,7 +27,7 @@
 
         <v-card-actions class="mt-0">
         <v-spacer></v-spacer>
-        <span class="animate-shimmer" style="color:#424242;width:60px;height:25px;"></span>
+          <span class="animate-shimmer" style="color:#424242;width:60px;height:25px;"></span>
         </v-card-actions>
     </v-card>
 </template>
