@@ -182,6 +182,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Kano | [View Now](http://kano.gdg.ng/)|
 | GDG Gandhinagar |[View Now](https://gdggandhinagar.org/) |
 | GDG Craiova | [View Now](https://gdgcraiova.dev/) |
+| GDG Houston | [View Now](https://gdghoustontx.org/) |
 
 
 
