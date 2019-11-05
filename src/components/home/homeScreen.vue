@@ -1,11 +1,10 @@
 <template>
     <v-container fluid>
         <v-row align="center">
-            <v-col md="3" sm="4">
+            <v-col md="3" sm="5">
                 <v-img
-                    :src="require('@/assets/img/gdg.jpg')"
-                    :lazy-src="require('@/assets/img/gdg.jpg')"
-                    class="grey lighten-2"
+                    :src="require('@/assets/img/home.png')"
+                    :lazy-src="require('@/assets/img/home.png')"
                     width="100%"
                 >
                     <template v-slot:placeholder>
@@ -19,26 +18,36 @@
                     </template>
                 </v-img>
             </v-col>
-            <v-col md="9" sm="4">
+            <v-col md="9" sm="7">
                 <p class="google-font mb-1" style="font-weight: 350;color: #616161;font-size:200%"><b>Make good things 
                     <span style="color: #1a73e8;">together</span>.</b>
                 </p>
-                <p class="google-font mt-0 mb-0" style="font-size:150%">GDG Jalandhar</p>
-                <p class="google-font" style="font-size:100%">Google Developers Group Jalandhar is an initiative to concentrate the efforts of many developers in and around Punjab to learn, share and get productive using the various Google products.</p>
+                <p class="google-font mt-0 mb-0" style="font-size:150%">{{communitydata.CommunityName}}</p>
+                <p class="google-font" style="font-size:100%">{{communitydata.CommunityShortDescription}}</p>
                 <p class="google-font" style="font-size:100%;color:#9e9e9e">
-                    #GDGJalandhar   #WTMJalandhar   #GDG   #WTM  
-                    <!-- <span v-for="(item,i) in chapterDetails.ChapterHashTags" :key="i">
+                    <span v-for="(item,i) in communitydata.CommunityHashTags" :key="i">
                         #{{item}} &nbsp;
-                    </span> -->
+                    </span>
                 </p>
 
-                <v-btn href="#" target="_blank" class="ma-0 google-font elevation-1" color="#1a73e8" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
+                <v-btn :href="communitydata.CommunityMeetupLink" target="_blank" class="ma-0 google-font elevation-1" color="#6200EE" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
 
                 &nbsp;
 
-                <v-btn href="#" target="_blank" rounded color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" outlined  class="ml-0" dark>Learn More</v-btn>
+                <v-btn :href="communitydata.GDGProgramWebsite" target="_blank" rounded color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" outlined  class="ml-0" dark>Learn More</v-btn>
 
             </v-col>
         </v-row>
     </v-container>
 </template>
+
+<script>
+    import communitydata from '@/assets/data/communitydata.json'
+    export default {
+        data() {
+            return {
+                communitydata:communitydata   
+            }
+        },
+    }
+</script>

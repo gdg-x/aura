@@ -5,18 +5,24 @@
                 <p class="google-font mb-0" style="font-weight: 350;font-size:180%"><b>Our lineup of big thinkers and even bigger doers </b>
                 </p>
                 <p class="google-font mt-0">Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about.</p>
-                <p class="google-font mt-0 mb-0">Our goal is to organize space to connect the best industry experts with Indian audience to boost development of IT. And Our Core Team is:</p>
+                <p class="google-font mt-0 ">Our goal is to organize space to connect the best industry experts with Indian audience to boost development of IT. And Our Core Team is:</p>
+                
             </v-col>
+
+            <!-- <v-col md="9" sm="12" cols="12" class="py-0 my-0" :style="{'background-image':'url('+require('@/assets/img/svg/team.svg')+')'}" style="background-size:500px">
+                <p class="google-font mb-0" style="font-weight: 350;font-size:180%"><b>Our lineup of big thinkers and even bigger doers </b>
+                </p>
+                <p class="google-font mt-0">Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about.</p>
+                <p class="google-font mt-0 mb-0">Our goal is to organize space to connect the best industry experts with Indian audience to boost development of IT. And Our Core Team is:</p>
+            </v-col> -->
         </v-row>
     </v-container>
 </template>
 
 <script>
-import chapterDetails from '@/assets/data/ChapterDetails.json'
 export default {
     data() {
         return {
-            chapterDetails: chapterDetails
         }
     }
 }

@@ -11,13 +11,13 @@
                 </v-btn>
                 
                 <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.data.github" :href="data.data.github" target="_blank">
-                    <v-icon small style="color:#333">mdi-github-circle</v-icon>
+                    <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-github-circle</v-icon>
                 </v-btn>
                 
                 <!-- <br class="hidden-sm-and-up"> -->
 
                 <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.data.website" :href="data.data.website" target="_blank">
-                    <v-icon style="color:#333">mdi-link</v-icon>
+                    <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-link-variant</v-icon>
                 </v-btn>
 
                 <!-- <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.data.medium" :href="data.data.medium" target="_blank">

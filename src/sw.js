@@ -2,14 +2,13 @@ self.addEventListener('message', (e) => {
     if (!e.data) {
         return;
     }
-
     switch (e.data) {
         case 'skipWaiting':
-        self.skipWaiting();
-        break;
+            self.skipWaiting();
+            break;
         default:
-        // NOOP
-        break;
+            // NOOP
+            break;
     }
 });
 

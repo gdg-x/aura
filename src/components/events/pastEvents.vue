@@ -8,7 +8,7 @@
             <v-col cols="12" md="12" lg="12" sm="12" class="">
                 <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Directory of past events</p>
                 <p class="google-font mt-0 mb-0" style="font-size:95%">Events are listed in reverse chronological order by date.</p>
-                <p class="google-font mt-0" style="font-size:95%">Here are the recent 10 meetups. To know more about the past meetups See More</p>
+                <p class="google-font mt-0" style="font-size:95%">Here are the recent 10 meetups. To know more about the past meetups  <a :href="communitydata.CommunityMeetupLink" target="_blank" style="text-decoration:none;color:#0277bd">Click here</a></p>
 
                 <v-row v-if="showLoader">
                     <v-col md="4" lg="4" sm="6" cols="12" class="pa-0" v-for="i in 6" :key="i">
@@ -39,7 +39,7 @@
 </template>
 
 <script>
-    import whatWeDoData from '@/assets/data/whatWeDo.json'
+    import communitydata from '@/assets/data/communitydata.json'
     import { MeetupAPI } from "@/config/config";
     import pastEventCard from '@/components/common/card/pastEvent/pastEventCard'
     import pastEventCardLoader from '@/components/common/card/pastEvent/pastEventCardLoader'
@@ -50,7 +50,7 @@
             pastEventCardLoader
         },
         data: () => ({
-            whatWeDoData: whatWeDoData,
+            communitydata: communitydata,
             eventsData:[],
             showData: false,
             showLoader: true,

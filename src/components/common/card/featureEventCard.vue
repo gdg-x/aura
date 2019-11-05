@@ -21,7 +21,7 @@
 
                             <!-- <p class="google-font">{{data.data.EventDescription}}</p> -->
 
-                            <p class="mb-0 mt-2" style="color:#1a73e8">See More</p>
+                            <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
                         </v-col>
                     </v-row>
                 </v-container>

@@ -4,7 +4,7 @@
       width="700"
     >
       <template v-slot:activator="{ on }">
-          <div v-on="on" style="cursor: pointer;" class="text-center py-3 ma-1" :class="$vuetify.theme.dark == true?'darkModeCard':'white'" >
+          <div v-on="on" style="cursor: pointer;" class="text-center py-3 ma-1" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
               <v-avatar size="100">
                     <v-img
                     :src="getImgUrl(data.data.image)"
@@ -39,9 +39,7 @@
         <v-card-text class="pa-5">
             <p class="google-font">{{data.data.designation}}</p>
             <p class="google-font">{{data.data.bio}}</p>
-
-            <socialMediaDetails :data="{data:data.data.socialLinks}"/>
-
+            <socialMediaDetails  class="pl-0 ml-0" :data="{data:data.data.socialLinks}"/>
         </v-card-text>
 
         <v-divider></v-divider>
@@ -104,3 +102,11 @@
     }
   }
 </script>
+
+<style scoped>
+  .whiteTheme{
+    background: white;
+    border:1px solid #e0e0e0;
+    border-radius:5px
+  }
+</style>

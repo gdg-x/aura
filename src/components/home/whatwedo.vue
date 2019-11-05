@@ -1,11 +1,11 @@
 <template>
     <v-container fluid>
         <v-row align="center" justify="center">
-            <v-col cols="12" md="3" lg="3" sm="4" class="">
+            <v-col cols="12" md="3" lg="3" sm="12">
                 <p class="google-font mb-0" style="font-size:150%">What we do?</p>
                 <p class="google-font mt-0" style="font-size:95%">Google Developer Groups (GDGs) are for developers who are interested in Google's developer technology.</p>
                 <p class="google-font" style="font-size:95%">About different Google technologies</p>
-                <span v-for="(item,i) in whatWeDoData" :key="i">
+                <span v-for="(item,i) in communitydata.WhatWeDoTech" :key="i">
                     <v-tooltip bottom>
                         <template v-slot:activator="{ on }" >
                             <a :href="item.link" target="_blank" class="ma-0">
@@ -17,12 +17,12 @@
                     </v-tooltip>
                 </span>
                 
-                
+                <br>
 
                 <v-btn href="#" outlined target="_blank" rounded small style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" class="ml-0 mt-3 google-font hidden-md-and-down">Learn More</v-btn>
 
             </v-col>
-            <v-col cols="12" md="9" lg="9" sm="4" >
+            <v-col cols="12" md="9" lg="9" sm="12" >
                <v-container fluid>
                    <v-row>
                        <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
@@ -53,11 +53,11 @@
 </template>
 
 <script>
-    import whatWeDoData from '@/assets/data/whatWeDo.json'
+    import communitydata from '@/assets/data/communitydata.json'
     export default {
         name: 'App',
         data: () => ({
-            whatWeDoData: whatWeDoData
+            communitydata: communitydata
         }),
         methods:{
             getImgUrl(url) {

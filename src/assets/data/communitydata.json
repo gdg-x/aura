@@ -1,0 +1,98 @@
+{
+    "CommunityName":"GDG Jalandhar",
+    "CommunityShortDescription":"Google Developers Group Jalandhar is an initiative to concentrate the efforts of many developers in and around Punjab to learn, share and get productive using the various Google products.",
+    "CommunityLongDec":"Google Developer Group Jalandhar is inspired by GTUG/GDG Family . We started our journey in Feb 2011. We try to engage student developers, fresh graduates and professionals through our hack events & meetups. The motive is to create a local ecosystem of programmers & hackers in and around Jalandhar. The technology awareness is main goal for first few years of the group.",
+    "CommunityMeetupLink":"https://www.meetup.com/GDG-Jalandhar",
+    "CommunityEmail":"gdgjalandhar@gmail.com",
+    "Website":"https://gdgjalandhar.com",
+    "GDGProgramWebsite":"https://developers.google.com/programs/community/",
+    "CommunityHashTags":["GDGJalandhar","WTMJalandhar"],
+    "SocialLinks":[
+        {
+            "name" : "Facebook",
+            "link" : "https://www.facebook.com/GDGJalandhar/",
+            "icon" : "mdi-facebook"
+        },
+        {
+            "name" : "Twitter",
+            "link" : "https://twitter.com/gdgjalandhar",
+            "icon" : "mdi-twitter"
+        },
+        {
+            "name" : "Meetup",
+            "link" : "https://www.meetup.com/GDG-Jalandhar/",
+            "icon" : "mdi-meetup"
+        },
+        {
+            "name" : "Instagram",
+            "link" : "http://instagram.com/gdgjalandhar",
+            "icon" : "mdi-instagram"
+        },
+        {
+            "name" : "LinkedIn",
+            "link" : "https://www.linkedin.com/company/18048778",
+            "icon" : "mdi-linkedin"
+        }
+    ],
+    "AboutGDGProgram":"GDGs are local groups of developers who are specifically interested in Google products and APIs. Each local group is called a GDG chapter and can host a variety of technical activities for developers - from just a few people getting together to watch our latest videos, to large gatherings with demos and tech talks, to hackathons.",
+    "WhatWeDoTech":[
+        {
+            "TechName":"Angular",
+            "image":"angular.svg",
+            "link":"https://angular.io/"
+        },
+        {
+            "TechName":"Google Cloud Platform",
+            "image":"gcp.svg",
+            "link":"https://cloud.google.com/"
+        },
+        {
+            "TechName":"Android",
+            "image":"android.svg",
+            "link":"https://www.android.com/"
+        },
+        {
+            "TechName":"Actions On Google",
+            "image":"aog.png",
+            "link":"https://developers.google.com/actions/"
+        },
+        {
+            "TechName":"Firebase",
+            "image":"firebase.svg",
+            "link":"https://firebase.google.com/"
+        },
+        {
+            "TechName":"TensorFlow",
+            "image":"tf.svg",
+            "link":"https://www.tensorflow.org/"
+        }
+    ],
+    "CommunityGuideline":[
+        {
+            "name":"Be nice",
+            "des":"We're all part of the same community, so be friendly, welcoming, and generally a nice person. Be someone that other people want to be around."
+        },
+        {
+            "name":"Be respectful and constructive",
+            "des":"Remember to be respectful and constructive with your communication to fellow members. Don't get into flamewars, make personal attacks, vent, or rant unconstructively. Everyone should take responsibility for the community and take the initiative to diffuse tension and stop a negative thread as early as possible."
+        },
+        {
+            "name":"Be collaborative",
+            "des":"Work together! We can learn a lot from each other. Share knowledge, and help each other out."
+        },
+        {
+            "name":"Participate",
+            "des":"Join in on discussions, show up for in-person meetings regularly, offer feedback, and help implement that feedback."
+        },
+        {
+            "name":"Step down considerately",
+            "des":"If you have some form of responsibility in your community, be aware of your own constraints. If you know that a new job or personal situation will limit your time, find someone who can take over for you and transfer the relevant information (contacts, passwords, etc.) for a smooth transition."
+        },
+        {
+            "name":"Basic etiquette for online discussions",
+            "des":"Don’t send messages to a big list that only need to go to one person. Keep off topic conversations to a minimum. Don’t be spammy by advertising or promoting personal projects which are off topic."
+        }
+
+    ],
+    "CodeOfConduct":"When you join our programs, you’re joining a community. And like any growing community, a few ground rules about expected behavior are good for everyone. These guidelines cover both online (e.g. mailing lists, social channels) and offline (e.g. in-person meetups) behavior. Violations of this code of conduct can result in members being removed from the program. Use your best judgement, and if you’d like more clarity or have questions feel free to reach out."
+}

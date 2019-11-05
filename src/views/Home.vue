@@ -16,8 +16,8 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="pa-0 py-2" >
-      <v-row justify="center" align="center">
+    <v-container fluid class="pa-0 py-5" >
+      <v-row justify="center" align="center" style="background:#4C4A78" class="py-5">
         <v-col md="12" lg="10" xs="12" class="py-0" >
           <aboutCommunity />
         </v-col>
@@ -44,7 +44,7 @@
     <v-container fluid class="pa-0 py-2" >
       <v-row justify="center" align="center">
         <v-col md="12" lg="10" xs="12" class="py-0">
-          <part />
+          <partners />
         </v-col>
       </v-row>
     </v-container>
@@ -59,7 +59,6 @@ import aboutCommunity from '../components/home/aboutCommunity';
 import events from '../components/home/events';
 import featureEvents from '../components/home/featureEvents';
 import partners from '../components/common/partners'
-import part from '../components/common/part'
 
 export default {
   components: {
@@ -68,8 +67,7 @@ export default {
     aboutCommunity,
     events,
     featureEvents,
-    partners,
-    part
+    partners
   },
   created(){
     let metaThemeColor = document.querySelector("meta[name=theme-color]");

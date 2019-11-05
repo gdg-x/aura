@@ -24,7 +24,7 @@
                 </v-row>
 
                 <v-row v-if="notFoundUpcomingEventFlag" class="pa-2">
-                    <v-col md="3" lg="3" sm="6" cols="6" class="pa-3" :class="$vuetify.theme.dark == true?'darkModeCard':'lightModeCard'" >
+                    <v-col md="3" lg="3" sm="6" cols="12" class="pa-3" :class="$vuetify.theme.dark == true?'darkModeCard':'lightModeCard'" >
                         <p class="google-font px-2 mb-0" style="font-size:140%">
                             <v-icon>mdi-calendar-blank</v-icon>
                             <br>
@@ -39,7 +39,6 @@
 </template>
 
 <script>
-    import whatWeDoData from '@/assets/data/whatWeDo.json'
     import { MeetupAPI } from "@/config/config";
     import upcomingEvent from '@/components/common/card/upcomingEvent'
     import upcomingEventLoader from '@/components/common/card/upcomingEventLoader'
@@ -50,7 +49,6 @@
             upcomingEventLoader
         },
         data: () => ({
-            whatWeDoData: whatWeDoData,
             eventsData:[],
             showLoader: true,
             showData: false,
@@ -76,7 +74,7 @@
                 }
             })
             .catch(e => {
-                console.log(e)
+                // console.log(e)
                 this.showLoader = false;
                 this.errorMsg = "Issue found with " + e;
                 this.errorAlert = true;

@@ -48,9 +48,8 @@
 </template>
 
 <script>
-    import whatWeDoData from '@/assets/data/whatWeDo.json'
-    import eventCard from '@/components/common/eventcard'
-    import eventCardLoader from '@/components/common/eventcardloader'
+    import eventCard from '@/components/common/card/home/eventcard'
+    import eventCardLoader from '@/components/common/card/home/eventcardloader'
     import { MeetupAPI } from "@/config/config";
     export default {
         name: 'App',
@@ -67,7 +66,7 @@
             fetch("https://cors-anywhere.herokuapp.com/https://api.meetup.com/" +
                 MeetupAPI.urlname +
                 "/events?desc=true&photo-host=public&sign=true&page=4&status=past"
-            )
+        )
             .then(data => data.json())
             .then(res => {
                 if (res.length > 0) {

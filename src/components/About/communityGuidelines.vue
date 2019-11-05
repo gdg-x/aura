@@ -8,9 +8,10 @@
         <v-row align="center" class="py-0 my-0 mb-5">
             <v-col md="8" sm="8" cols="12" class="py-0 my-0">
                 <p class="google-font" style="font-size:150%;color:#0277bd">Community Guidelines</p>
+                <!-- {{communitydata.CommunityGuideline}} -->
                 <v-expansion-panels accordion>
                     <v-expansion-panel
-                        v-for="(item,i) in communityGuidelinesData.communityGuideline"
+                        v-for="(item,i) in communitydata.CommunityGuideline"
                         :key="i"
                     >
                         <v-expansion-panel-header>{{item.name}}</v-expansion-panel-header>
@@ -44,11 +45,11 @@
 </template>
 
 <script>
-import communityGuidelinesData from '@/assets/data/about.json'
+import communitydata from '@/assets/data/communitydata.json'
 export default {
     data() {
         return {
-            communityGuidelinesData: communityGuidelinesData
+            communitydata: communitydata
         }
     }
 }

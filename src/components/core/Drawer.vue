@@ -2,6 +2,7 @@
   <v-navigation-drawer
     v-model="drawer"
     app
+    width="300px"
     temporary
   >
     
@@ -26,12 +27,12 @@
 
     <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="title google-font">
-            Application
+          <v-list-item-title class="google-font " style="font-size:130%">
+            {{communitydata.CommunityName}}
           </v-list-item-title>
-          <v-list-item-subtitle class="google-font">
-            subtext
-          </v-list-item-subtitle>
+          <!-- <v-list-item-subtitle class="google-font">
+            Google Developers Group
+          </v-list-item-subtitle> -->
         </v-list-item-content>
     </v-list-item>  
 
@@ -69,7 +70,7 @@
 </template>
 
 <script>
-// import ChapterDetails from '@/assets/data/chapterDetails.json'
+  import communitydata from '@/assets/data/communitydata.json'
   // Utilities
   import {
     mapGetters,
@@ -79,7 +80,7 @@
     name: 'CoreDrawer',
     data() {
       return {
-        // ChapterDetails:ChapterDetails
+        communitydata:communitydata
       }
     },
     computed: {

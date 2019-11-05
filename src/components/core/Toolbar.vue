@@ -4,10 +4,26 @@
       fixed
       class=""
     >
-      <v-app-bar-nav-icon 
+      <v-app-bar-nav-icon class="d-md-none d-lg-none"
       @click="toggleDrawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title class="google-font">GDG Jalandhar</v-toolbar-title>
+      <v-toolbar-title class="px-0">
+        <v-container fluid>
+          <v-row align="center">
+            <v-col class="px-0 hidden-sm-and-down">
+              <v-img 
+                :src="require('@/assets/img/gdg.png')"
+                :lazy-src="require('@/assets/img/gdg.png')"
+                width="4vh"
+                >
+              </v-img>
+            </v-col>
+            <v-col class="pl-2">
+              <router-link :to="{ name: 'home'}" class="google-font" style="text-decoration:none" :class="this.$vuetify.theme.dark?'whiteText':'blackText'">{{communitydata.CommunityName}}</router-link>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-toolbar-title>
 
       <div class="flex-grow-1"></div>
 
@@ -31,6 +47,7 @@
 </template>
 
 <script>
+  import communitydata from '@/assets/data/communitydata.json'
   import {
     mapGetters,
     mapMutations
@@ -38,6 +55,7 @@
   export default {
     data() {
       return {
+        communitydata:communitydata
       }
     },
     computed: {
@@ -64,3 +82,12 @@
     }
   }
 </script>
+
+<style scoped>
+  .whiteText{
+    color:white
+  }
+  .blackText{
+    color: rgba(0,0,0,.87);
+  }
+</style>

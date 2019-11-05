@@ -1,16 +1,16 @@
 <template>
-  <v-content class="px-0 mx-0 pt-5">
-    <v-container fluid class="px-0 pt-5 mt-5">
-      <v-row justify="center" align="center">
-        <v-col md="12" lg="10" xs="12" class="pt-3 ">
+  <v-content class="px-0 mx-0 pt-1">
+    <v-container fluid class="px-0 pt-5 mt-5" >
+      <v-row justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'black':'grey lighten-4'" >
+        <v-col md="12" lg="10" xs="12" class="pt-3 bottom-space"  >
           <teamHeader />
         </v-col>
       </v-row>
     </v-container>
 
     <v-container fluid class="pa-0 py-0 my-0" >
-      <v-row justify="center" align="center">
-        <v-col md="12" lg="10" xs="12" class="py-0">
+      <v-row justify="center" align="center" class="py-2">
+        <v-col md="12" lg="10" xs="12" class="py-0 card-top-margin">
           <CoreTeam />
         </v-col>
       </v-row>
@@ -49,5 +49,29 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  .darkbg{
+    /* background: #1F1A24 */
+  }
+  @media screen and (min-width: 600px) {
+    .card-top-margin {
+      margin-top:-110px
+    }
+    .bottom-space{
+      margin-bottom: 80px;
+      margin-top: 20px
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .card-top-margin {
+      margin-top:-100px
+    }
+    .bottom-space{
+      margin-bottom: 50px
+    }
+  }
+</style>
 
 
