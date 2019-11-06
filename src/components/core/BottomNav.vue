@@ -13,6 +13,7 @@
         v-for="(link, i) in links"
         :key="i"
         :to="link.to"
+        v-if="link.meta.showBottomNav"
         class="ml-0 google-font"
         style="text-transform: capitalize;" 
         text
@@ -21,26 +22,6 @@
         <span>{{ link.text }}</span>
         <v-icon>{{ link.icon }}</v-icon>
     </v-btn>
-    
-    <!-- <v-btn>
-      <span>Recents</span>
-      <v-icon>mdi-home</v-icon>
-    </v-btn>
-
-    <v-btn>
-      <span>Favorites</span>
-      <v-icon>mdi-heart</v-icon>
-    </v-btn>
-
-    <v-btn>
-      <span>Favorites</span>
-      <v-icon>mdi-heart</v-icon>
-    </v-btn>
-
-    <v-btn>
-      <span>Nearby</span>
-      <v-icon>mdi-map-marker</v-icon>
-    </v-btn> -->
   </v-bottom-navigation>
 </template>
 

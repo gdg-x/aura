@@ -7,10 +7,10 @@
         </v-row>
         <v-row class="py-0 my-0">
             <v-col md="8" sm="8" cols="12" class="py-0 my-0">
-                <p class="google-font" style="font-size:110%">
+                <p class="google-font" style="font-size:100%">
                     <b style="font-size:120%;">Why do we have an official Anti-Harassment policy for {{communitydata.CommunityName}} events?</b>
 
-                    <ul class="mt-2" style="font-size:110%">
+                    <ul class="mt-2" style="font-size:100%">
                         <li class="google-font">It sets expectations for behavior at the event. Simply having an anti-harassment policy can prevent harassment.</li>
                         <li class="google-font">It encourages people to attend who have had bad experiences at other events</li>
                         <li class="google-font">It gives event staff/volunteers instructions on how to handle harassment quickly, with minimum amount of disruption for the event.</li>
@@ -37,7 +37,7 @@
                 <p class="google-font" style="font-size:120%">Sexual language and imagery is not appropriate for any event venue, including talks. Event participants violating these rules may be expelled from the event, and event banned from future events at the discretion of the event organizers/management. </p>
 
                 <p class="google-font" style="font-size:110%">Harassment includes (but is not limited to):
-                    <ul class="mt-2" style="font-size:110%">
+                    <ul class="mt-2" style="font-size:100%">
                         <li class="google-font">Offensive verbal comments related to gender, sexual orientation, disability, gender identity, age, race, religion</li>
                         <li class="google-font">The use or display of sexual images in public spaces</li>
                         <li class="google-font">Deliberate intimidation</li>

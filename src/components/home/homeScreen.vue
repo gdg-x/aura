@@ -3,9 +3,10 @@
         <v-row align="center">
             <v-col md="3" sm="5">
                 <v-img
-                    :src="require('@/assets/img/home.png')"
-                    :lazy-src="require('@/assets/img/home.png')"
+                    :src="require('@/assets/img/home.jpg')"
+                    :lazy-src="require('@/assets/img/home.jpg')"
                     width="100%"
+                    style="border-radius:8px"
                 >
                     <template v-slot:placeholder>
                         <v-row
@@ -30,7 +31,7 @@
                     </span>
                 </p>
 
-                <v-btn :href="communitydata.CommunityMeetupLink" target="_blank" class="ma-0 google-font elevation-1" color="#6200EE" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
+                <v-btn :href="communitydata.CommunityMeetupLink" target="_blank" class="ma-0 google-font elevation-1 primary" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
 
                 &nbsp;
 

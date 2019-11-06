@@ -11,7 +11,7 @@
                         &nbsp;
                         <v-btn href="#" target="_blank" outlined color="" class="ma-0 google-font" style="border-radius:5px;text-transform: capitalize;color:white">Facebook Page</v-btn>
                         <br><br>
-                        <router-link to="/about" class="google-font" style="text-decoration:none;color:white">See More about {{communitydata.CommunityName}}</router-link>
+                    <router-link to="/about" class="google-font" style="text-decoration:none;color:white">See More about {{communitydata.CommunityName}}</router-link>
                     </div>
                 </div>
                 

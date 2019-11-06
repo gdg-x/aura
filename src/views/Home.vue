@@ -1,6 +1,6 @@
 <template>
   <v-content class="px-0 mx-0 pt-5">
-    <v-container fluid class="px-0 pt-5 mt-5">
+    <v-container fluid class="px-0 pt-0 container-margin-top">
       <v-row justify="center" align="center">
         <v-col md="12" lg="10" xs="12" class="py-5 ">
           <homeStartScreen />
@@ -79,5 +79,17 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  /* for large screen */
+  @media screen and (min-width: 600px) {
+    .container-margin-top{
+      margin-top:40px
+    }
+  }
+  /* for small screen */
+  @media screen and (max-width: 600px) {
+  }
+</style>
 
 

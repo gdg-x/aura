@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-// import vuetify from './plugins/vuetify';
+import communitydata from './assets/data/communitydata.json'
 
 Vue.use(Router)
 
@@ -17,7 +17,7 @@ const router = new Router({
       name: 'home',
       component: Home,
       meta:{
-        title:'Home | GDG',
+        title:'Home | '+communitydata.CommunityName,
         color:'#0277bd'
       }
     },
@@ -26,7 +26,7 @@ const router = new Router({
       name: 'home',
       component: Home,
       meta:{
-        title:'Home | GDG',
+        title:'Home | '+communitydata.CommunityName,
         color:'#0277bd'
       }
     },
@@ -35,7 +35,7 @@ const router = new Router({
       name: 'home',
       component: Home,
       meta:{
-        title:'Home | GDG',
+        title:'Home | '+communitydata.CommunityName,
         color:'#0277bd'
       }
     },
@@ -44,7 +44,7 @@ const router = new Router({
       name: 'about',
       component: () => import( './views/About.vue'),
       meta:{
-        title:'About | GDG',
+        title:'About | '+communitydata.CommunityName,
         color:'#0277bd'
       }
     },
@@ -53,7 +53,7 @@ const router = new Router({
       name: 'events',
       component: () => import( './views/Events.vue'),
       meta:{
-        title:'Events | GDG',
+        title:'Events | '+communitydata.CommunityName,
         color:'#0277bd'
       }
     },
@@ -62,7 +62,7 @@ const router = new Router({
       name: 'team',
       component: () => import( './views/Team.vue'),
       meta:{
-        title:'Team | GDG',
+        title:'Team | '+communitydata.CommunityName,
         color:'#0277bd'
       }
     },
@@ -71,7 +71,16 @@ const router = new Router({
       name: 'contact',
       component: () => import( './views/Contact.vue'),
       meta:{
-        title:'Contact | GDG',
+        title:'Contact | '+communitydata.CommunityName,
+        color:'#0277bd'
+      }
+    },
+    {
+      path: '/partners',
+      name: 'partners',
+      component: () => import( './views/Partners.vue'),
+      meta:{
+        title:'Partners | '+communitydata.CommunityName,
         color:'#0277bd'
       }
     }

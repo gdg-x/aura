@@ -31,6 +31,7 @@
             v-for="(link, i) in links"
             :key="i"
             :to="link.to"
+            v-if="link.meta.showToolbar"
             class="ml-2 google-font hidden-sm-and-down"
             style="text-transform: capitalize;" 
             text

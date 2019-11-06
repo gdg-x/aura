@@ -23,7 +23,7 @@
                 <p class="google-font mt-0" style="font-size:110%">{{communitydata.CommunityLongDec}}</p>
                 <p class="google-font mt-0 mb-0" style="font-size:110%">GDGs are local groups of developers who are specifically interested in Google products and APIs. Each local group is called a GDG chapter and can host a variety of technical activities for developers - from just a few people getting together to watch our latest videos, to large gatherings with demos and tech talks, to hackathons.</p>
                 <br>
-                <v-btn :href="communitydata.CommunityMeetupLink" target="_blank" class="ma-0 google-font elevation-1" color="#6200EE" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
+                <v-btn :href="communitydata.CommunityMeetupLink" target="_blank" class="ma-0 google-font elevation-1 primary" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
 
                 &nbsp;
 
