@@ -83,6 +83,15 @@ const router = new Router({
         title:'Partners | '+communitydata.CommunityName,
         color:'#0277bd'
       }
+    },
+    {
+      path: '/blogs',
+      name: 'blogs',
+      component: () => import( './views/Blogs.vue'),
+      meta:{
+        title:'Blogs | '+communitydata.CommunityName,
+        color:'#0277bd'
+      }
     }
   ]
 })

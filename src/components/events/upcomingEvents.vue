@@ -39,7 +39,7 @@
 </template>
 
 <script>
-    import { MeetupAPI } from "@/config/config";
+    import { configData } from "@/config/config";
     import upcomingEvent from '@/components/common/card/upcomingEvent'
     import upcomingEventLoader from '@/components/common/card/upcomingEventLoader'
     export default {
@@ -59,7 +59,7 @@
          created() {
             fetch(
             "https://cors-anywhere.herokuapp.com/https://api.meetup.com/" +
-                MeetupAPI.urlname +
+                configData.MeetupURLName +
                 "/events?&sign=true"
             )
             .then(data => data.json())

@@ -40,7 +40,7 @@
 
 <script>
     import communitydata from '@/assets/data/communitydata.json'
-    import { MeetupAPI } from "@/config/config";
+    import { configData } from "@/config/config";
     import pastEventCard from '@/components/common/card/pastEvent/pastEventCard'
     import pastEventCardLoader from '@/components/common/card/pastEvent/pastEventCardLoader'
     export default {
@@ -60,7 +60,7 @@
         }),
          created() {
             fetch(
-            'https://cors-anywhere.herokuapp.com/https://api.meetup.com/'+MeetupAPI.urlname+'/events?desc=true&photo-host=public&page=8&status=past&sign=true')
+            'https://cors-anywhere.herokuapp.com/https://api.meetup.com/'+configData.MeetupURLName+'/events?desc=true&photo-host=public&page=8&status=past&sign=true')
             .then(data => data.json())
             .then(res => {
                 if (res.length > 0) {
