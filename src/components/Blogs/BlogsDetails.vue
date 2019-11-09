@@ -4,7 +4,8 @@
             <v-col md="12" sm="12" cols="12" class="py-0 my-0">
                 <v-row class="">
                     <v-col>
-                        <p class="google-font mb-0">Here are the top 10 blogs/articles written by me. You can find more blogs/articles on <a :href="blogsData.feed.link" style="text-decoration:none" target="_blank">Medium</a></p>
+                        <p class="google-font mb-0">Here are the top 10 blogs/articles written by me. You can find more blogs/articles on <a :href="'https://medium.com/'+cd.MediumBlogPublicationUsername" style="text-decoration:none" target="_blank">Medium</a></p>
+                        <!-- {{blogsData.feed.link}} -->
                     </v-col>
                 </v-row>
                 <v-row class="mb-5">
@@ -29,7 +30,8 @@ export default {
     data() {
         return {
             communitydata: communitydata,
-            blogsData: []
+            blogsData: [],
+            cd: configData
         }
     },
     created(){
