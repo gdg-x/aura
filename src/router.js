@@ -55,7 +55,7 @@ const router = new Router({
       meta:{
         title:'Events | '+communitydata.CommunityName,
         color:'#0277bd'
-      }
+      },
     },
     {
       path: '/team',
@@ -92,7 +92,16 @@ const router = new Router({
         title:'Blogs | '+communitydata.CommunityName,
         color:'#0277bd'
       }
-    }
+    },
+    {
+      path: '/events/:id',
+      name: 'event-data',
+      component: () => import( './views/Events/EventTemplate.vue'),
+      meta:{
+        title:'Event Name | '+communitydata.CommunityName,
+        color:'#0277bd'
+      },
+    },
   ]
 })
 

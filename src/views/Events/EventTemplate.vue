@@ -4,31 +4,30 @@
     <v-container fluid class="px-0 pt-5 mt-3 py-0">
       <v-row justify="center" align="center" class="py-3 pb-5" :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'" >
         <v-col md="12" lg="10" xs="12" class="pt-3 bottom-space">
-          <BlogsHeader />
+            <!-- {{$route.params.id  }} -->
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container fluid class="px-0 py-0">
-      <v-row justify="center" align="center">
-        <v-col md="12" lg="10" xs="12" class="card-top-margin">
-          <BlogsDetails />
+    <v-container fluid class="px-0 pt-5 mt-3 py-0">
+      <v-row justify="center" align="center" class="py-3 pb-5" >
+        <v-col md="12" lg="10" xs="12" class="card-top-margin white elevation-2 pa-0">
+           <layout/>
         </v-col>
       </v-row>
     </v-container>
+
+    
 
 
   </v-content>
 </template>
 
 <script>
-import BlogsHeader from '../components/Blogs/BlogsHeader';
-import BlogsDetails from '../components/Blogs/BlogsDetails';
-
+import layout from '../Events/Layout/Layout'
 export default {
   components: {
-    BlogsDetails,
-    BlogsHeader,
+    layout
   },
   created(){
     let metaThemeColor = document.querySelector("meta[name=theme-color]");
@@ -45,10 +44,10 @@ export default {
 
   @media screen and (min-width: 600px) {
     .card-top-margin {
-      margin-top:-150px
+      margin-top:-180px
     }
     .bottom-space{
-      margin-bottom: 130px;
+      margin-bottom: 150px;
       margin-top: 8px
     }
   }
