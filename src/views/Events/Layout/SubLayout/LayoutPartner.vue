@@ -4,7 +4,7 @@
             <v-col md="12" sm="12" cols="12" class="py-0 my-0 mb-5 mt-5">
                 <v-row class="pa-0" align="center" >
                     <v-col cols="6" md="2" lg="2" sm="4" class="pa-1" v-for="(item,i) in 15" :key="i" >
-                        <div class="ma-1 pa-2" style="border:1px solid #e0e0e0;border-radius:5px">
+                        <div class="ma-1 px-2" style="border:1px solid #e0e0e0;border-radius:5px">
                             <v-img
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/220px-Google_2015_logo.svg.png"
                                 lazy-src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/220px-Google_2015_logo.svg.png"
