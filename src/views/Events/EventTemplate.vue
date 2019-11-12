@@ -29,36 +29,21 @@ export default {
   },
   data(){
       return{
+        notFound:0,
         EventData: {}
       }
   },
-  // beforeRouteEnter: (to, from, next) => {
-  //   EventsData.map(res=>{
-  //       if(res.id == to.params.id){
-  //           next();
-  //       }else{
-  //           next('home');
-  //       }
-  //   })
-  // },
-  // watch:{
-  //   '$route':"fetchData"
-  // },
-// //   methods:{
-// //     fetchData(){
-// //         this.EventData = {}
-// //         EventsData.map(res=>{
-// //             if(res.id == this.$route.params.id)
-// //                 this.EventData = res
-// //         })
-// //     }
-// //   },
   mounted(){
     this.EventData = {}
     EventsData.map(res=>{
-        if(res.id == this.$route.params.id)
+        if(res.id == this.$route.params.id){
+            this.notFound = 1;
             this.EventData = res
+        }
     })
+    if(this.notFound != 1)
+      this.$router.push({ path: '/events' })
+
   },
   created(){
     let metaThemeColor = document.querySelector("meta[name=theme-color]");
