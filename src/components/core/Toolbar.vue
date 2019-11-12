@@ -73,7 +73,8 @@
       darkMode(){
         let metaThemeColor = document.querySelector("meta[name=theme-color]");
         this.$vuetify.theme.dark = !this.$vuetify.theme.dark
-
+        if(localStorage)
+              localStorage.setItem('darkMode',this.$vuetify.theme.dark);
         if(this.$vuetify.theme.dark){
           metaThemeColor.setAttribute("content", '#212121');
         }else{
