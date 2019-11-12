@@ -3,16 +3,16 @@
         <v-row class="py-0 my-0">
             <v-col md="12" sm="12" cols="12" class="py-0 my-0">
                 <v-row class="py-0">
-                    <v-col cols="12" md="9" sm="7" lg="9" class="red py-0">
-                        <v-row class="yellow py-0">
+                    <v-col cols="12" md="9" sm="7" lg="9" class="py-0">
+                        <v-row class="py-0">
                             <v-col cols="12" md="12" class="pa-0" >
                                 <v-img
-                                    src="https://images.unsplash.com/photo-1442033025416-c6a7da752d71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1959&q=80"
-                                    lazy-src="https://images.unsplash.com/photo-1442033025416-c6a7da752d71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1959&q=80"
+                                    src="https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-9/69274786_2500025083374637_3726796238599749632_o.jpg?_nc_cat=107&_nc_oc=AQmIdUSs5JrL3yJYZemhw9-p_vLaCAETQdF2L4nmOLwCjF0XCWyjx2pdRJCpKMw9zdjWmrVrePm_P8hKhUFpKSIL&_nc_ht=scontent.fdel1-2.fna&oh=0241c4f1c5c4deacc2d547f28fba9f7e&oe=5E8C8A1E"
+                                    lazy-src="https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-9/69274786_2500025083374637_3726796238599749632_o.jpg?_nc_cat=107&_nc_oc=AQmIdUSs5JrL3yJYZemhw9-p_vLaCAETQdF2L4nmOLwCjF0XCWyjx2pdRJCpKMw9zdjWmrVrePm_P8hKhUFpKSIL&_nc_ht=scontent.fdel1-2.fna&oh=0241c4f1c5c4deacc2d547f28fba9f7e&oe=5E8C8A1E"
                                     width="100%"
                                     cover
-                                    style="border-radius:5px"
-                                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                                    style="border-top-left-radius:5px;"
+                                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,1)"
                                     height="300px"
                                 >
                                     <template v-slot:placeholder>
@@ -25,9 +25,15 @@
                                         </v-row>
                                     </template>
                                     <v-card-title
-                                        class="fill-height align-end google-font pb-5 text-white"
+                                        class="fill-height align-end google-font pb-5 white--text"
                                     >
-                                        Event Name
+                                        <p>
+                                            {{eventdata.data.EventName}} 
+                                            <br>
+                                            <span style="font-size:60%"> 
+                                                <!-- {{eventdata.data.EventDate.Date}}/{{eventdata.data.EventDate.Month}}/{{eventdata.data.EventDate.Year}} -->
+                                            </span>
+                                        </p> 
                                     </v-card-title>
                                     <v-layout
                                         slot="placeholder"
@@ -46,7 +52,8 @@
                                 <v-tabs
                                     v-model="tab"
                                     grow
-                                    background-color="white"
+                                    :background-color="this.$vuetify.theme.dark == true?'grey darken-4':'primary'"
+                                    dark
                                     class="elevation-0"
                                     :prev-icon="prevIcon ? 'mdi-arrow-left-bold-box-outline' : undefined"
                                     :next-icon="nextIcon ? 'mdi-arrow-right-bold-box-outline' : undefined"
@@ -59,31 +66,30 @@
                                             :key="item"
                                         >
                                             {{item}}
-                                            <v-icon v-if="icons">mdi-phone</v-icon>
                                         </v-tab>
 
                                         <v-tabs-items v-model="tab">
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutAbout/>
+                                                    <LayoutAbout :aboutData="eventdata.data"/>
                                                 </v-card>
                                             </v-tab-item>
 
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutSpeakers />
+                                                    <LayoutSpeakers :speakersData="eventdata.data.Speakers" />
                                                 </v-card>
                                             </v-tab-item>
 
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutAgenda />
+                                                    <LayoutAgenda :agendaData="eventdata.data.Agenda" />
                                                 </v-card>
                                             </v-tab-item>
 
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutPartners />
+                                                    <LayoutPartners :parntersData="eventdata.data.Partners" />
                                                 </v-card>
                                             </v-tab-item>
                                         </v-tabs-items>
@@ -93,6 +99,9 @@
                     </v-col>
                     <v-col cols="12" md="3" sm="5" lg="3" class="green">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis vero officiis exercitationem eligendi possimus fugiat totam illum illo laboriosam eos, dolorum doloremque distinctio placeat commodi enim reprehenderit! At, in eaque?</p>
+
+
+                        {{eventdata.data}}
                     </v-col>
                 </v-row>
                
@@ -115,6 +124,9 @@ export default {
         LayoutAgenda,
         LayoutPartners
     },
+    props:{
+        eventdata:{}
+    },
     data() {
         return {
             communitydata: communitydata,
@@ -136,13 +148,7 @@ export default {
         }
     },
     created(){
-        fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/'+configData.MediumBlogPublicationUsername).then(res=>res.json()).then(data=>{
-            console.log(data)
-            this.blogsData = data
-            console.log(this.blogsData)
-        }).catch(e=>{
-            console.log(e)
-        })
+        
     }
 }
 </script>

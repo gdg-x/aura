@@ -5,17 +5,41 @@
                 <v-row class="">
                     <v-col>
                         <p class="google-font mb-0"><b>About</b></p>
-                        <p class="google-font mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores non aliquid consequuntur sapiente nobis, iste aperiam aut nemo, ex a, tenetur ducimus quis labore quibusdam alias! Nobis, officia saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores non aliquid consequuntur sapiente nobis, iste aperiam aut nemo, ex a, tenetur ducimus quis labore quibusdam alias! Nobis, officia saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores non aliquid consequuntur sapiente nobis, iste aperiam aut nemo, ex a, tenetur ducimus quis labore quibusdam alias! Nobis, officia saepe.</p>
+                        <p class="google-font mb-3">{{aboutData.EventDescription}}</p>
                         
+                        <!-- {{aboutData}} -->
 
-                        <p class="google-font mb-0 mt-3"><b>Date:</b> 29th Nov 2019</p>
-                        <p class="google-font mb-0 mb-0"><b>Time:</b> 9 am to 5 pm</p>
-                        <p class="google-font mb-0 mb-0"><b>Venue:</b> Your Venue Name</p>
-                        <br>
-                        <v-btn class="ml-0 ma-2" outlined color="indigo">Registration</v-btn>
-                        <v-btn class="ma-2" outlined color="indigo">Meetup</v-btn>
-                        <v-btn class="ma-2" outlined color="indigo">Facebook</v-btn>
-                        <v-btn class="ma-2" outlined color="indigo">Feedback</v-btn>
+                        <p class="google-font mb-0 mt-3"><b>Date:</b> {{aboutData.EventDate.Date}}/{{aboutData.EventDate.Month}}/{{aboutData.EventDate.Year}}</p>
+                        <p class="google-font mb-0 mb-0"><b>Time:</b> {{aboutData.EventTime.StartTime}} - {{aboutData.EventTime.EndTime}}</p>
+                        <p class="google-font mb-0 mb-0"><b>Venue:</b> {{aboutData.EventVenue}}</p>
+                        <p class="google-font mb-0 mb-0"><b>Contact Email:</b> {{communitydata.CommunityEmail}}</p>
+                        
+                        <div class="mt-3 mb-2">
+                            <span v-for="(item,i) in aboutData.EventHashTags" :key="i">
+                                <v-chip small class="mr-1">{{item}}</v-chip>
+                            </span>
+                            
+                        </div>
+
+                        <div class="mt-4">
+                            <!-- <p class="google-font mb-0"><b>Registraton, RSVP & Feedback</b></p> -->
+                            <v-btn v-if="aboutData.Links.RegistrationLink" class="ml-0 ma-2" dark  :href="aboutData.Links.RegistrationLink" target="_blank" color="indigo">Registration</v-btn>
+
+                            <v-btn v-if="aboutData.Links.MeetupLink" :href="aboutData.Links.MeetupLink" target="_blank"  class="ml-0 ma-2" dark color="green">RSVP</v-btn>
+
+                            <v-btn v-if="aboutData.Links.EventFeedbackURL" :href="aboutData.Links.EventFeedbackURL" target="_blank" class="ml-0 ma-2" dark color="cyan">Feeback</v-btn>
+                        </div>
+
+                        <div class="mt-3">
+                            <p class="google-font mb-0"><b>Social Media Pages</b></p>
+                            <v-btn class="ml-0 ma-2" dark color="indigo" v-if="aboutData.Links.EventFacebookPageURL" :href="aboutData.Links.EventFacebookPageURL" target="_blank">
+                                <v-icon left>mdi-facebook</v-icon>Facebook
+                            </v-btn>
+
+                            <v-btn class="ml-0 ma-2" dark color="pink" v-if="aboutData.Links.MeetupLink" :href="aboutData.Links.MeetupLink" target="_blank">
+                                <v-icon left>mdi-meetup</v-icon>Meetup
+                            </v-btn>
+                        </div>
                         
                     </v-col>
                 </v-row>
@@ -31,6 +55,9 @@ import { configData } from "@/config/config";
 export default {
     components:{
         
+    },
+    props:{
+        aboutData:{}
     },
     data() {
         return {

@@ -5,29 +5,60 @@
       <v-row justify="center" align="center" class="py-3 pb-5" :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'" >
         <v-col md="12" lg="10" xs="12" class="pt-3 bottom-space">
             <!-- {{$route.params.id  }} -->
+            <!-- {{EventData}} -->
         </v-col>
       </v-row>
     </v-container>
 
     <v-container fluid class="px-0 pt-5 mt-3 py-0">
       <v-row justify="center" align="center" class="py-3 pb-5" >
-        <v-col md="12" lg="10" xs="12" class="card-top-margin white elevation-2 pa-0">
-           <layout/>
+        <v-col md="12" lg="10" xs="12" class="card-top-margin elevation-1 pa-0">
+           <layout :eventdata="{data:EventData}" />
         </v-col>
       </v-row>
     </v-container>
-
-    
-
-
   </v-content>
 </template>
 
 <script>
 import layout from '../Events/Layout/Layout'
+import EventsData from '../../assets/data/Events/eventsData'
 export default {
   components: {
     layout
+  },
+  data(){
+      return{
+        EventData: {}
+      }
+  },
+  // beforeRouteEnter: (to, from, next) => {
+  //   EventsData.map(res=>{
+  //       if(res.id == to.params.id){
+  //           next();
+  //       }else{
+  //           next('home');
+  //       }
+  //   })
+  // },
+  // watch:{
+  //   '$route':"fetchData"
+  // },
+// //   methods:{
+// //     fetchData(){
+// //         this.EventData = {}
+// //         EventsData.map(res=>{
+// //             if(res.id == this.$route.params.id)
+// //                 this.EventData = res
+// //         })
+// //     }
+// //   },
+  mounted(){
+    this.EventData = {}
+    EventsData.map(res=>{
+        if(res.id == this.$route.params.id)
+            this.EventData = res
+    })
   },
   created(){
     let metaThemeColor = document.querySelector("meta[name=theme-color]");
@@ -57,7 +88,7 @@ export default {
       margin-top:-150px;
     }
     .bottom-space{
-      margin-bottom: 100px
+      margin-bottom: 0px
     }
   }
 </style>

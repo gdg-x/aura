@@ -4,10 +4,11 @@
       width="700"
     >
       <template v-slot:activator="{ on }">
-          <div v-on="on" style="cursor: pointer;" class="text-center py-3 ma-1" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
-              <v-avatar size="100">
+          <div v-on="on" style="cursor: pointer;height:220px" class="text-center py-3 ma-1 pt-0" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'"  >
+              
                     <v-img
                     :src="require('@/assets/img/common/avatar.png')"
+                    height="130"
                     :lazy-src="require('@/assets/img/common/avatar.png')">
                         <v-layout
                             slot="placeholder"
@@ -20,12 +21,12 @@
                         </v-layout>
                     
                     </v-img>
-                </v-avatar>
                 <!-- <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{data.data.name}}</p>
                 <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{data.data.designation}}</p>
                 <socialMediaDetails :data="{data:data.data.socialLinks}"/> -->
-                <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">Name</p>
-                <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">designation</p>
+                <p class="mt-3 mb-0 google-font mb-0" style="font-size:105%">{{speakerData.name}}</p>
+                <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{speakerData.company.name | summery(20)}}</p>
+                <!-- {{speakerData}} -->
                 <!-- <socialMediaDetails :data="{data:data.data.socialLinks}"/> -->
           </div>
           
@@ -36,17 +37,15 @@
           class="px-5 google-font"
           primary-title
         >
-         <!-- {{data.data.name}}  -->
-         Name
+         {{speakerData.name}}
         </v-card-title>
 
         <v-card-text class="pa-5">
-            <p class="google-font">Designattaion</p>
-            <p class="google-font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quas accusantium quod molestias odit harum porro, consequuntur, optio similique officiis labore soluta iure? Repudiandae temporibus consequuntur non vel libero natus.</p>
-            <!-- <socialMediaDetails  class="pl-0 ml-0" :data="{data:data.data.socialLinks}"/> -->
-            <!-- <p class="google-font">{{data.data.designation}}</p>
-            <p class="google-font">{{data.data.bio}}</p>
-            <socialMediaDetails  class="pl-0 ml-0" :data="{data:data.data.socialLinks}"/> -->
+            <p class="google-font mb-0">{{speakerData.city}}, {{speakerData.country}}</p>
+            <p class="google-font mb-0">{{speakerData.designation}}</p>
+            <p class="google-font mt-0">{{speakerData.company.name}}</p>
+            <p class="google-font">{{speakerData.bio}}</p>
+            <socialMediaDetails  class="pl-0 ml-0" :data="{data:speakerData.social}"/> 
         </v-card-text>
 
         <v-divider></v-divider>
@@ -72,9 +71,7 @@
         socialMediaDetails
     },
     props:{
-      data:{
-        data:{}
-      }
+      speakerData:{}
     },
     data () {
       return {

@@ -1,0 +1,176 @@
+[
+    {
+        "id":"devfest",
+        "EventName":"Event Name",
+        "EventImage":"",
+        "EventDate":{
+            "Date":"31",
+            "Month":"3",
+            "Year":"2019"
+        },
+        "EventTime":{
+            "StartTime":"09:00 AM",
+            "EndTime":"04:30 PM"
+        },
+        "EventHashTags":["HashTag1","HashTag2","HashTag3","HashTag4","HashTag5"],
+        "EventDescription":"International Women's Day (IWD) is marked on March 8th every year. In different regions, the focus of celebrations ranges from general respect and appreciation for women to a celebration of women's economic, political, and social achievements. International Women's Day (IWD) is marked on March 8th every year. In different regions, the focus of celebrations ranges from general respect and appreciation for women to a celebration of women's economic, political, and social achievements International Women's Day (IWD) is marked on March 8th every year. In different regions, the focus of celebrations ranges from general respect and appreciation for women to a celebration of women's economic, political, and social achievements",
+        "EventVenue":"Apeejay Institute of Management Technical Campus, Rama Mandi, Hoshiarpur Road, Jalandhar",
+        "Links":{
+            "EventVenueMapLink":"https://goo.gl/maps/4Z8pminYsp42",
+            "MeetupLink":"https://www.meetup.com/GDG-Jalandhar/events/253165595/",
+            "RegistrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSciM-nL87uQd_it2ulou1mFv55aXqE9qSSnwL3No3fWhX8OzA/closedform",
+            "EventFacebookPageURL":"",
+            "EventFeedbackURL":""        
+        },
+        "Speakers":[
+            "nikita_gandhi",
+            "sabyasachi_mukhopadhyay",
+            "paresh_mayani"
+        ],
+        "Agenda":[
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            },
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            },
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            },
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            },
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            },
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            }
+        ],
+        "Partners":[
+            {
+                "Name":"Google Developers",
+                "Website":"",
+                "Image":"googledevs.webp"
+            },
+            {
+                "Name":"GDG",
+                "Website":"",
+                "Image":"gdglogo.webp"
+            },
+            {
+                "Name":"Women Techmakers",
+                "Website":"",
+                "Image":"wtm.svg"
+            }
+        ]
+    },
+    {
+        "id":"devfest2",
+        "EventName":"Event Name",
+        "EventImage":"",
+        "EventDate":{
+            "Date":"31",
+            "Month":"3",
+            "Year":"2019"
+        },
+        "EventTime":{
+            "StartTime":"09:00 AM",
+            "EndTime":"04:30 PM"
+        },
+        "EventHashTags":["HashTag1","HashTag2","HashTag3","HashTag4","HashTag5"],
+        "EventDescription":"International Women's Day (IWD) is marked on March 8th every year. In different regions, the focus of celebrations ranges from general respect and appreciation for women to a celebration of women's economic, political, and social achievements.",
+        "EventVenue":"Apeejay Institute of Management Technical Campus, Rama Mandi, Hoshiarpur Road, Jalandhar",
+        "Links":{
+            "EventVenueMapLink":"https://goo.gl/maps/4Z8pminYsp42",
+            "EventWebsite":"https://iwd.gdgjalandhar.com/",
+            "MeetupLink":"https://www.meetup.com/GDG-Jalandhar/events/253165595/",
+            "RegistrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSciM-nL87uQd_it2ulou1mFv55aXqE9qSSnwL3No3fWhX8OzA/closedform",
+            "EventFacebookPageURL":"",
+            "EventFeedbackURL":""        
+        },
+        "Speakers":[
+            "nikita_gandhi",
+            "sabyasachi_mukhopadhyay",
+            "paresh_mayani"
+        ],
+        "Agenda":[
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            },
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            },
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            },
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            },
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            },
+            {
+                "StartTime":"09:00 AM",
+                "EndTime":"05:30 PM",
+                "Title":"Tile",
+                "Description":"Some Description abouth ehe title"
+            }
+        ],
+        "Partners":[
+            {
+                "Name":"Google",
+                "Website":"",
+                "Image":""
+            },
+            {
+                "Name":"Google",
+                "Website":"",
+                "Image":""
+            },
+            {
+                "Name":"Google",
+                "Website":"",
+                "Image":""
+            },
+            {
+                "Name":"Google",
+                "Website":"",
+                "Image":""
+            }
+        ]
+    }
+]
