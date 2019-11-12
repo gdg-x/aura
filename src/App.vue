@@ -58,6 +58,9 @@ export default {
     snackWithButtons: false,
     timeout: 7000,
   }),
+  beforeCreate(){
+      (localStorage.getItem('darkMode') == 'true')?this.$vuetify.theme.dark  = true:this.$vuetify.theme.dark  = false;
+  },
   created(){
     
      // Listen for swUpdated event and display refresh snackbar as required.
