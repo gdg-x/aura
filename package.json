@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-	  "deploy": "firebase deploy --only hosting"
+    "deploy": "firebase deploy --only hosting"
   },
   "dependencies": {
     "axios": "^0.18.0",
