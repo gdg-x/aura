@@ -38,7 +38,7 @@
         > 
             {{ link.text }}
       </v-btn>
-
+      <PushNotification/>
       <v-btn icon v-on:click="darkMode" class="ml-2">
         <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
         <v-icon v-else>mdi-brightness-4</v-icon>
@@ -48,6 +48,7 @@
 
 <script>
   import communitydata from '@/assets/data/communitydata.json'
+  import PushNotification from '@/components/core/PushNotifications'
   import {
     mapGetters,
     mapMutations
@@ -57,6 +58,9 @@
       return {
         communitydata:communitydata
       }
+    },
+    components:{
+      PushNotification
     },
     computed: {
       ...mapGetters(['links'])

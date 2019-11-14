@@ -25,12 +25,12 @@
         </v-btn>
     </v-snackbar>
 
-    <AuraToolbar/>
-    <AuraDrawer />
+    <AuraToolbar v-if="!$route.meta.requiresAuth"/>
+    <AuraDrawer v-if="!$route.meta.requiresAuth" />
     
     <AuraView class="" />
-    <AuraFooter/>
-    <AuraBottomNav class="d-flex d-sm-none" />
+    <AuraFooter v-if="!$route.meta.requiresAuth"/>
+    <AuraBottomNav v-if="!$route.meta.requiresAuth" class="d-flex d-sm-none" />
   </v-app>
 </template>
 

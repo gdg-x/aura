@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 
 import { register } from 'register-service-worker'
+import firebase from '@/firebase'
 
 if (process.env.NODE_ENV === 'production') {
   register(`${process.env.BASE_URL}service-worker.js`, {
@@ -12,6 +13,7 @@ if (process.env.NODE_ENV === 'production') {
     },
     registered ( registration) {
       console.log('Service worker has been registered.')
+      firebase.messaging.useServiceWorker(registration)
       setInterval(() => {
         registration.update();
       }, 1000 * 60 * 60); // hourly checks
