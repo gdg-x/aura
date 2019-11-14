@@ -6,20 +6,10 @@
       <template v-slot:activator="{ on }">
           <div v-on="on" style="cursor: pointer;" class="text-center py-3 ma-1" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
               <v-avatar size="100">
-                    <v-img
+                  <img 
                     :src="getImgUrl(data.data.image)"
-                    :lazy-src="getImgUrl(data.data.image)">
-                        <v-layout
-                            slot="placeholder"
-                            fill-height
-                            align-center
-                            justify-center
-                            ma-0
-                        >
-                            <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                        </v-layout>
-                    
-                    </v-img>
+                    :lazy-src="getImgUrl(data.data.image)" alt=""
+                  >
                 </v-avatar>
                 <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{data.data.name}}</p>
                 <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{data.data.designation}}</p>

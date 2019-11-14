@@ -28,10 +28,8 @@
                                         class="fill-height align-end google-font pb-5 white--text"
                                     >
                                         <p>
+                                            <span style="font-size:150%">
                                             {{eventdata.data.EventName}} 
-                                            <br>
-                                            <span style="font-size:60%"> 
-                                                <!-- {{eventdata.data.EventDate.Date}}/{{eventdata.data.EventDate.Month}}/{{eventdata.data.EventDate.Year}} -->
                                             </span>
                                         </p> 
                                     </v-card-title>
@@ -97,10 +95,8 @@
                             </v-col>
                         </v-row>
                     </v-col>
-                    <v-col cols="12" md="3" sm="5" lg="3" class="green">
+                    <v-col cols="12" md="3" sm="5" lg="3" class=" hidden-sm-and-down green">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis vero officiis exercitationem eligendi possimus fugiat totam illum illo laboriosam eos, dolorum doloremque distinctio placeat commodi enim reprehenderit! At, in eaque?</p>
-
-
                         {{eventdata.data}}
                     </v-col>
                 </v-row>
@@ -136,7 +132,7 @@ export default {
             items: [
             'About', 'Speakers', 'Agenda','Partners',
             ],
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            
             icons: false,
             centered: false,
             grow: false,
@@ -146,6 +142,8 @@ export default {
             right: false,
             tabs: 3,
         }
+    },
+    methods:{
     },
     created(){
         

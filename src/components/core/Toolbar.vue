@@ -19,14 +19,13 @@
               </v-img>
             </v-col>
             <v-col class="pl-2">
-              <router-link :to="{ name: 'home'}" class="google-font" style="text-decoration:none" :class="this.$vuetify.theme.dark?'whiteText':'blackText'">{{communitydata.CommunityName}}</router-link>
+              <router-link :to="{ name: 'home'}" class="google-font" style="text-decoration:none;font-size:110%" :class="this.$vuetify.theme.dark?'whiteText':'blackText'">{{communitydata.CommunityName}}</router-link>
             </v-col>
           </v-row>
         </v-container>
       </v-toolbar-title>
 
       <div class="flex-grow-1"></div>
-
       <v-btn
             v-for="(link, i) in links"
             :key="i"
@@ -36,7 +35,7 @@
             style="text-transform: capitalize;" 
             text
             @click="onClick($event, link)"
-        >
+        > 
             {{ link.text }}
       </v-btn>
 

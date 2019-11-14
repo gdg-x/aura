@@ -7,7 +7,7 @@
         </v-row> -->
         <v-row align="center" class="py-0 my-0 mb-5">
             <v-col md="8" sm="8" cols="12" class="py-0 my-0">
-                <p class="google-font" style="font-size:150%;color:#0277bd">Community Guidelines</p>
+                <h1 class="google-font mb-2">Community Guidelines</h1>
                 <!-- {{communitydata.CommunityGuideline}} -->
                 <v-expansion-panels accordion>
                     <v-expansion-panel

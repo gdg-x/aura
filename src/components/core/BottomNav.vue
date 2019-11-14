@@ -3,10 +3,9 @@
     :value="activeBtn"
     grow
     app
-    dark
-    :background-color="this.$vuetify.theme.dark?'#212121':'primary'"
-    shift
-    color="white"
+    :dark="this.$vuetify.theme.dark"
+    :background-color="this.$vuetify.theme.dark?'#212121':'white'"
+    :color="this.$vuetify.theme.dark?'white':'primary'"
   > 
     
     <v-btn

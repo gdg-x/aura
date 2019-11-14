@@ -2,14 +2,14 @@
   <div>
     <div 
       :class="$vuetify.theme.dark == true?'darkModeCard':'lightModeCard'" 
-      class="pa-0 hidden-sm-and-down">
+      class="pa-0 hidden-sm-and-down" >
         <v-img
               :src="data.data.thumbnail"
               :lazy-src="data.data.thumbnail"
               width="100%"
               cover
               style="border-radius:5px"
-              height="200px"
+              height="180px"
           >
               <template v-slot:placeholder>
                   <v-row
@@ -21,7 +21,7 @@
                   </v-row>
               </template>
           </v-img>
-          <div class="pa-3">
+          <div class="pa-3" >
             <p class="google-font ma-0 mt-2" style="font-size:120%;" >{{data.data.title | summary(30) }}</p>
             <p class="google-font mt-0 mb-0" style="font-size:90%;">{{data.data.pubDate}}</p>
             <p class="google-font mt-0 mb-4" style="font-size:90%;">{{data.data.author }}</p>
@@ -80,7 +80,6 @@
       filterData(d){
         let r =d.replace(/<img[^>]*>/gi,"");
         return r
-        console.log(r)
       },
       getCharString(data) {
       var splitArr = data.split(" ");

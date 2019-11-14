@@ -2,7 +2,7 @@
     <v-container fluid class="py-0 my-0 mt-5">
         <v-row class="py-0 my-0">
             <v-col md="12" sm="12" cols="12" class="py-0 my-0">
-                <p class="google-font" style="font-size:150%;color:#0277bd">AntiHarassment Policy</p>
+                <h1 class="google-font mb-2">AntiHarassment Policy</h1>
             </v-col>
         </v-row>
         <v-row class="py-0 my-0">
@@ -31,7 +31,7 @@
                         <li class="google-font">Nationality</li>
                     </ul>
 
-                    <span class="google-font" style="font-size:110%">The above is not an exhaustive list -- we do not tolerate harassment of event spanarticipants in any form. </span>
+                    <span class="google-font" style="font-size:100%">The above is not an exhaustive list -- we do not tolerate harassment of event spanarticipants in any form. </span>
                 </p>
 
                 <p class="google-font" style="font-size:120%">Sexual language and imagery is not appropriate for any event venue, including talks. Event participants violating these rules may be expelled from the event, and event banned from future events at the discretion of the event organizers/management. </p>
@@ -49,7 +49,7 @@
                     </ul>
                 </p>
 
-                <p class="google-font" style="font-size:120%">Participants asked to stop any harassing behavior are expected to comply immediately. 
+                <p class="google-font" style="font-size:100%">Participants asked to stop any harassing behavior are expected to comply immediately. 
                     <br><br>
                     Exhibiting partners and guests are also subject to the anti-harassment policy. In particular, exhibitors and speakers should not use sexualized images, activities, or other material, or otherwise create a sexualized environment in their slide decks, exhibit material, exhibit staffing, promotional items or demo material. 
                     <br><br>

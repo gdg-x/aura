@@ -28,8 +28,8 @@
                             <eventCardLoader/>
                        </v-col>
                    </v-row>
-                   <v-row v-else>
-                       <v-col md="3" lg="3" sm="6" cols="6" class="pa-2" v-for="(item,i) in eventsData" :key="i">
+                   <v-row v-else class="no-gutters">
+                       <v-col md="3" lg="3" sm="6" cols="6" class="pa-2 " v-for="(item,i) in eventsData" :key="i">
                             <eventCard :data="{data:item}" />
                        </v-col>
                    </v-row>
@@ -40,6 +40,8 @@
                             <p>Events Not Found!</p>
                        </v-col>
                    </v-row>
+
+                
 
                </v-container>
             </v-col>
@@ -97,3 +99,7 @@
         }
 };
 </script>
+
+<style scoped>
+   
+</style>
