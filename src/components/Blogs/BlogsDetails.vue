@@ -8,12 +8,39 @@
                         <!-- {{blogsData.feed.link}} -->
                     </v-col>
                 </v-row>
+
+                <v-row class="mb-5" align="center" justify="center">
+                    <v-col md="3" lg="3" sm="4" cols="12" class="pa-2" >
+                            <v-progress-circular
+                            :size="70"
+                            :width="7"
+                            color="indigo"
+                            indeterminate
+                            ></v-progress-circular>
+
+                            <template>
+  <v-sheet
+    :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`"
+    class="px-3 pt-3 pb-3"
+  >
+    <v-skeleton-loader
+      class="mx-auto"
+      max-width="300"
+      type="card"
+    ></v-skeleton-loader>
+  </v-sheet>
+</template>
+                    </v-col>
+                </v-row>
+
                 <v-row class="mb-5">
                     <v-col md="3" lg="3" sm="4" cols="12" class="pa-2" v-for="(item,i) in blogsData.items" :key="i">
                         <BlogCard :data="{data:item}" />
                     </v-col>
                     <br>
                 </v-row>
+
+                
             </v-col>
         </v-row>
     </v-container>
@@ -24,6 +51,7 @@ import communitydata from '@/assets/data/communitydata.json'
 import BlogCard from '@/components/Blogs/BlogCard'
 import { configData } from "@/config/config";
 export default {
+    inject: ['theme'],
     components:{
         BlogCard
     },
