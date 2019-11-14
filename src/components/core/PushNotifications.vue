@@ -111,7 +111,7 @@ firebase.messaging.usePublicVapidKey("BKU4Wd2od6JjO5Re6wjD32hTY6F7TSKV2UbQXtDQlg
     },
     mounted(){
       let token = localStorage.getItem('pushNotificationToken');
-      if(token !=null || token.length > 0){
+      if(token == null || token.length > 0){
         this.token = token;
         this.buttonText=='Allowed'
       }

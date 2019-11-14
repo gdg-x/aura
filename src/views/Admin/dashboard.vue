@@ -51,7 +51,8 @@ export default {
                         "notification": {    
                             "title": this.title,    
                             "body": this.body,    
-                            "icon": require('@/assets/img/gdg-logo.svg')
+                            // "icon": require('@/assets/img/gdg-logo.svg')
+                            "icon":"https://dsccu.in/images/icons/android-icon-192x192.png"
                         }
                     }
                     const options = {
