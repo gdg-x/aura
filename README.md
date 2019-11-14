@@ -35,7 +35,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. For the production: `npm run build` and then one dir will be created `dist`
 1. For testing: `npm run test`
 
-## Deploy your Web App on Firebase
+## Deploy on Firebase
 
 1. Setup Environment for the Firebase deployment
    * Install Firebase CLI: `npm i -g firebase-tools`
@@ -70,7 +70,24 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Build and deploy
    * `firebase deploy` or `npm run deploy`
 
+## Deploy on Netlify
+1. On Netlify, setup up a new project from GitHub with the following settings:
 
+    - **Build Command:** `npm run build` or `yarn build`
+    - **Publish directory:** `dist`
+
+2. Hit the deploy button!
+
+Also checkout [vue-cli-plugin-netlify-lambda](https://github.com/netlify/vue-cli-plugin-netlify-lambda).
+
+In order to receive direct hits using `history mode` on Vue Router, you need to create a file called `_redirects` under `/public` with the following content:
+
+```
+# Netlify settings for single-page application
+/*    /index.html   200
+```
+
+More information on [Netlify redirects documentation](https://www.netlify.com/docs/redirects/#history-pushstate-and-single-page-apps).
 
 ### Run your tests
 1. For Test: `npm run test`
@@ -157,6 +174,17 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Galicia | [View Now](https://gdggalicia.com/) |
 | GDG Campobasso| [View Now](https://gdgcampobasso.it/) |
 | GDG Galway | [View Now](https://gdg-galway.com/) |
+| GDG Nizhny Novgorod | [View Now](https://gdgnnsite-62ac7.firebaseapp.com/) |
+| GDG Madurai | [View Now](https://www.gdgmadurai.in/) |
+| GDG Bristol | [View Now](https://gdgbristol.org/) | 
+| GDG Ranchi | [View Now](https://www.gdgranchi.in/) |
+| GDG Chennai | [View Now](https://gdgchennai.in)|
+| GDG Kano | [View Now](http://kano.gdg.ng/)|
+| GDG Gandhinagar |[View Now](https://gdggandhinagar.org/) |
+| GDG Craiova | [View Now](https://gdgcraiova.dev/) |
+| GDG Houston | [View Now](https://gdghoustontx.org/) |
+
+
 
 Project is published under the [MIT license](/LICENSE.md).  
 Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)

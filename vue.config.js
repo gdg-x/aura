@@ -1,4 +1,5 @@
 module.exports = {
+  productionSourceMap: false,
   pwa: {
     name: 'GDG Web App',
     workboxPluginMode: 'InjectManifest',
