@@ -2,7 +2,7 @@
   <div class="text-center">
     <v-dialog
       v-model="dialog"
-      width="700"
+      width="500"
     >
       <template v-slot:activator="{ on }">
         <v-btn icon
@@ -57,7 +57,7 @@
 
 <script>
 import firebase from '@/firebase';
-firebase.messaging.usePublicVapidKey("BKU4Wd2od6JjO5Re6wjD32hTY6F7TSKV2UbQXtDQlgpQlCeRLA6aNxzi_Kk70YWliHXcLTzubRUdD8AhM5oheB0");
+firebase.messaging.usePublicVapidKey("BL1bXSTTWszcfqVmCS08tibdCdy3MTCKwovqgCx-oF8wu9tll8iRwhGOypGAkhAzB7EdbfxXH-yEPgBmixKubI0");
   export default {
 
     name:"PushNotification",
