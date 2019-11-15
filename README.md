@@ -184,6 +184,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Craiova | [View Now](https://gdgcraiova.dev/) |
 | GDG Houston | [View Now](https://gdghoustontx.org/) |
 | GDG Cloud Ahmedabad | [View Now](https://gdgahmedabad.cloud/) |
+| GDG Cloud Hanoi | [View Now](https://gdgcloudhanoi.com/) |
 
 
 
