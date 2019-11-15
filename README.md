@@ -2,11 +2,10 @@
 [![MadeWithVueJs.com shield](https://madewithvuejs.com/storage/repo-shields/1444-shield.svg)](https://madewithvuejs.com/p/aura/shield-link)
 [![Build Status](https://travis-ci.org/gdg-x/aura.svg?branch=master)](https://travis-ci.org/gdg-x/aura)
 
-<img width="100%" src="https://raw.githubusercontent.com/GDG-Jalandhar/WebsiteData/master/promotion%20images/Aura%20v1.0.3.png">
 
 Standard Web App for GDG's Communties. <br>
 [Demo](https://aura-client-master.firebaseapp.com/) <br>
-Version: 1.0.6
+Version: 2.0.1
 
 ### Show some :heart: and star the repo to support the project
 
@@ -23,7 +22,11 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 | **Works offline** | Can works offline |
 | **Mobile first** | Mobo Friendly Web app can be installed as a native app on your phone |
 | **SEO optimized** | index all content and get to the top in search results |
-| **Easy in management** | keep and update all information in the JSON File |
+| **Easy in management** | keep and update all information in the Admin Pannel |
+| **Push Notification** | Sending Push Notifictaion using Admin Dashboard |
+| **Custom Event Rroting** | Now no need to create the website for XYZ events/Meetups |
+| **Dark Theme Mode** | Added Dark theme mode |
+| **Blogs Integration** | Blogs page with Medium API Integration |
 
 
 ## Getting Started
@@ -114,6 +117,8 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 
 ## Contributors
 <b>Maintainer:</b> [Vrijraj Singh](https://github.com/vrijraj)
+<br>
+<b>Developer:</b> [Bharat Agarwal](https://github.com/bharatagsrwal)
 
 ### View Website Built with Project 
 
