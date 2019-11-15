@@ -1,11 +1,25 @@
 <template>
     <div class="admin-dashboard text-center fill-height">
+         <v-snackbar
+            v-model="isSuccessAlert"
+            >
+            Push notification sent Successfully
+            <v-btn
+                color="pink"
+                text
+                @click="isSuccessAlert = false"
+            >
+                Close
+            </v-btn>
+    </v-snackbar>
         <v-content>
             <v-container>
                 <v-row>
                     <v-col>
+                    <v-btn :to="'/home'" outlined class="ma-5">Home
+                    </v-btn>
                         <p>Logged in as {{ userEmail }}</p>
-                        <button type="button" class="btn btn-warning pb-4" v-on:click="logout">Logout</button>
+                        <v-btn text class="mb-3" v-on:click="logout">Logout</v-btn>
                         <h3>Send Push Notification </h3>
                         <p>* Push Notification will be sent to all registred users</p>
                         <v-text-field
@@ -14,12 +28,12 @@
                             type="text"
                             outlined
                         ></v-text-field>
-                        <v-text-field
+                        <v-textarea
                             type="text"
                             v-model="body"
                             label="Body"
                             outlined
-                        ></v-text-field>
+                        ></v-textarea>
                         <v-btn class="primary mt-3" @click="send" :loading="isLoading" text>Send Push</v-btn>
                     </v-col>
                 </v-row>
@@ -37,7 +51,8 @@ export default {
         userEmail:'',
         title:"",
         body:"",
-        isLoading:false
+        isLoading:false,
+        isSuccessAlert:false
     }),
     mounted(){
         if(firebase.auth.currentUser){
@@ -69,7 +84,10 @@ export default {
                     options.body = JSON.stringify(body);
                     console.log(options.body)
                     fetch('https://fcm.googleapis.com/fcm/send', options).then((res) => res.json())
-                    .then((data) =>  alert(data))
+                    .then((data) =>{
+                        this.isSuccessAlert = true;
+                        console.log(data);
+                    })
                     .catch((err)=>alert(err));
                 });
             });
