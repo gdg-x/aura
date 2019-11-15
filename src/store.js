@@ -68,6 +68,15 @@ export default new Vuex.Store({
           showToolbar: true,
           showBottomNav: false
         }, 
+      },
+      { 
+        text: 'Admin', 
+        to: '/admin', 
+        icon:'mdi-account-key',
+        meta:{
+          showToolbar: false,
+          showBottomNav: false
+        }, 
       }
     ]
   },

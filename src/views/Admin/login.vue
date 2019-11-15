@@ -7,7 +7,7 @@
                     align="center"
                     justify="center"
                 >
-                    <v-col cols="12" md="3">
+                    <v-col cols="12" md="4">
                         <p class="google-font" style="font-size:100%">Login Panel for GDG-X</p>
                         <v-text-field
                             label="Email"

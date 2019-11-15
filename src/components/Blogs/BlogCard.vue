@@ -1,6 +1,7 @@
 <template>
   <div>
     <div 
+    style="min-height:360px;max-height:360px"
       :class="$vuetify.theme.dark == true?'darkModeCard':'lightModeCard'" 
       class="pa-0 hidden-sm-and-down" >
         <v-img
@@ -26,7 +27,7 @@
             <p class="google-font mt-0 mb-0" style="font-size:90%;">{{data.data.pubDate}}</p>
             <p class="google-font mt-0 mb-4" style="font-size:90%;">{{data.data.author }}</p>
             <!-- <v-chip x-small v-for="(item,i) in data.data.categories" outlined :key="i">{{item}}</v-chip> -->
-            <a target="_blank" :href="data.data.link" class="mb-0 mt-0 google-font" style="color:#1a73e8;text-decoration:none">Read</a>
+            <v-btn target="_blank" text small :href="data.data.link" class="mb-0 mt-0 google-font" style="color:#1a73e8;text-decoration:none">Read</v-btn>
           </div>
         
     </div>

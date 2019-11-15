@@ -12,6 +12,7 @@
         v-for="(link, i) in links"
         :key="i"
         :to="link.to"
+        small
         v-if="link.meta.showBottomNav"
         class="ml-0 google-font"
         style="text-transform: capitalize;" 
@@ -49,3 +50,8 @@
   }
 </script>
 
+<style scoped>
+.v-size--small{
+  min-width: 50px !important;
+}
+</style>
