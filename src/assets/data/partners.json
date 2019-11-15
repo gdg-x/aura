@@ -10,9 +10,14 @@
         "img":"gdgcloud.png"
     },
     {
+        "name":"GDG Cloud HCM",
+        "link":"https://www.gdgcloudhcm.com",
+        "img":"gdgcloudhcm.png"
+    },
+    {
         "name":"GDG Hanoi",
         "link":"https://www.facebook.com/gdghanoi",
         "img":"gdghanoi.png"
     }
-
+   
 ]

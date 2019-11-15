@@ -14,7 +14,7 @@
         "twitter":"https://twitter.com/huy_miracle",
         "linkedin":"",
         "github":"https://github.com/huynguyennovem",
-        "profileImage":"",
+        "profileImage":"HuyNQ.png",
         "website":""
     },
     {
@@ -34,26 +34,6 @@
         "github":"https://github.com/",
         "profileImage":"AnNP.png",
         "website":"https://github.com"
-    },
-    {
-        "name":"Nguyen Huu Hoa",
-        "designation":"Co-organizer",
-        "twitter":"https://twitter.com/",
-        "linkedin":"",
-        "github":"https://github.com/",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Dang Duc Huy",
-        "designation":"Co-organizer",
-        "twitter":"https://twitter.com/",
-        "linkedin":"",
-        "github":"https://github.com/",
-        "profileImage":"",
-        "website":""
     }
-
-
 
 ]

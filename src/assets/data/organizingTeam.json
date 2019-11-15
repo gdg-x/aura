@@ -1,4 +1,23 @@
 [
+    
+    {
+        "name":"Nguyen Huu Hoa",
+        "designation":"Technical Specialist",
+        "twitter":"https://twitter.com/",
+        "linkedin":"",
+        "github":"https://github.com/",
+        "profileImage":"HoaNH.png",
+        "website":""
+    },
+    {
+        "name":"Dang Duc Huy",
+        "designation":"Technical Specialist",
+        "twitter":"https://twitter.com/",
+        "linkedin":"",
+        "github":"https://github.com/",
+        "profileImage":"HuyDD.png",
+        "website":""
+    },
     {
         "name":"Mai Phuong Thao",
         "designation":"Event organizer",
@@ -14,7 +33,7 @@
         "twitter":"https://twitter.com/",
         "linkedin":"https://www.linkedin.com/",
         "github":"https://github.com/yenbka",
-        "profileImage":"",
+        "profileImage":"YenNH.png",
         "website":""
     },
     {

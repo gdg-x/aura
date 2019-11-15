@@ -1,13 +1,13 @@
 {
     "ChapterName":"GDG Cloud Hanoi",
-    "ChapterShortDescription":"GDG Cloud Hanoi is dedicated to building a strong community for GCP users in Hanoi, we runs meetup for developers interested in resources and technology from Google Developers.",
+    "ChapterShortDescription":"GDG Cloud Hanoi is dedicated to building a strong community for GCP users in Hanoi, we run meetup for developers interested in resources and technology from Google Developers.",
     "ChapterLongDec":"GDG Cloud Hanoi is inspired by GDG Global. We started our journey in June 2019. We try to engage student developers, fresh graduates and professionals through our hack events & meetups. The motive is to create a local ecosystem of programmers & hackers in and around Hanoi. The technology awareness is main goal for first few years of the group.",
     "ChapterMeetupLink":"https://www.meetup.com/GDG-Cloud-Hanoi",
     "ChapterEmail":"gdgcloudhanoivn@gmail.com",
     "FounderEmail":"nguyenhaitruonghp@gmail.com",
     "website":"https://gdgcloudhanoi.com",
     "GDGProgramWebsite":"https://developers.google.com/community/gdg/",
-    "ChapterHashTags":["GDGCloudHanoi","GDG","WTM","GDGHanoi"],
+    "ChapterHashTags":["GDGCloudHanoi","GDG","WTM","GDGHanoi","DevFest","CloudStudyJams"],
     "socialLinks":[
         {
             "name" : "Facebook",
