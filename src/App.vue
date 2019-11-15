@@ -25,7 +25,10 @@
         </v-btn>
     </v-snackbar>
 
+    <AdminToolbar v-if="$route.meta.requiresAuth" />
     <AuraToolbar v-if="!$route.meta.requiresAuth"/>
+
+    <!-- <AdminDrawer v-if="$route.meta.requiresAuth"/> -->
     <AuraDrawer v-if="!$route.meta.requiresAuth" />
     
     <AuraView class="" />
@@ -35,6 +38,9 @@
 </template>
 
 <script>
+import AdminToolbar from './components/Admin/Core/AdminToolbar'
+import AdminDrawer from './components/Admin/Core/AdminDrawer'
+
 import AuraToolbar from './components/core/Toolbar'
 import AuraDrawer from './components/core/Drawer'
 import AuraBottomNav from './components/core/BottomNav'
@@ -44,6 +50,8 @@ import AuraFooter from './components/core/Footer'
 export default {
   name: 'App',
   components: {
+    AdminDrawer,
+    AdminToolbar,
     AuraToolbar,
     AuraDrawer,
     AuraView,

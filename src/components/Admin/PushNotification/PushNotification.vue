@@ -1,17 +1,38 @@
 <template>
-  <v-content>
-    <v-container fluid class="text-center">
-      <notification/>
-    </v-container>
-  </v-content>
+    <v-content class="">     
+        <v-container fluid class="">
+                <v-row justify="center">
+                    <v-col md="8" class="text-center">
+                    <v-btn :to="'/home'" outlined class="ma-5">Home
+                    </v-btn>
+                        <p>Logged in as {{ userEmail }}</p>
+                        <v-btn text class="mb-3" v-on:click="logout">Logout</v-btn>
+                        <h3>Send Push Notification </h3>
+                        <p>* Push Notification will be sent to all registred users</p>
+                        <v-text-field
+                            label="Title"
+                            v-model="title"
+                            type="text"
+                            outlined
+                        ></v-text-field>
+                        <v-textarea
+                            type="text"
+                            v-model="body"
+                            label="Body"
+                            outlined
+                        ></v-textarea>
+                        <v-btn class="primary mt-3" @click="send" :loading="isLoading" text>Send Push</v-btn>
+                    </v-col>
+                </v-row>
+            </v-container>
+            
+        </v-content>
 </template>
 
 <script>
-import notification from '../../components/Admin/PushNotification/PushNotification'
 import firebase from '@/firebase';
 export default {
     components:{
-        notification
     },
     name:"admin-dashboard",
     data:()=>({
@@ -67,7 +88,3 @@ export default {
     }
 }
 </script>
-
-<style>
-
-</style>
