@@ -1,11 +1,14 @@
 <template>
     <div class="admin-dashboard text-center fill-height">
         <v-content>
-            <p>Logged in as {{ userEmail }}</p>
-            <button type="button" class="btn btn-warning pb-4" v-on:click="logout">Logout</button>
-            <h3>Send Push Notification </h3>
-            <p>* Push Notification will be sent to all registred users</p>
-            <v-text-field
+            <v-container>
+                <v-row>
+                    <v-col>
+                        <p>Logged in as {{ userEmail }}</p>
+                        <button type="button" class="btn btn-warning pb-4" v-on:click="logout">Logout</button>
+                        <h3>Send Push Notification </h3>
+                        <p>* Push Notification will be sent to all registred users</p>
+                        <v-text-field
                             label="Title"
                             v-model="title"
                             type="text"
@@ -18,6 +21,10 @@
                             outlined
                         ></v-text-field>
                         <v-btn class="primary mt-3" @click="send" :loading="isLoading" text>Send Push</v-btn>
+                    </v-col>
+                </v-row>
+            </v-container>
+            
         </v-content>
   </div>
 </template>
@@ -57,7 +64,7 @@ export default {
                     }
                     const options = {
                         method: 'POST',
-                        headers: new Headers({"Authorization": "key=AAAAySvZIQs:APA91bHaQjPfid_sLjLRIpG4eVg8kwWgD_w_D_yRgnRh9cO0hCemHkMwKNc79-pZacH0A2Lz6B0u7YBrMyX8J9r697Q-J1NlzuPHGdWsdEl6Y3jmYYfmbgmyJ9WE17sYQOQhpXJzAH53",'Content-Type': 'application/json',}),
+                        headers: new Headers({"Authorization": "key=AAAAJKAFx0g:APA91bG4RFcmV5d3PYgeNSXui0oCgcS8AqnTGe79Zv0X3udydnTnRM0r4EEQlWrpDPmOABVOTBbI3nCuST_3c1Z8yfyIPBwAa4jjoIOrzdocg3lsuJdpo4XIam01_Kk-mKUzaGjsqDep",'Content-Type': 'application/json',}),
                     };
                     options.body = JSON.stringify(body);
                     console.log(options.body)

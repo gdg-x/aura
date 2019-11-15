@@ -12,8 +12,8 @@
 
     <v-container fluid class="px-0 pt-5 mt-3 py-0">
       <v-row justify="center" align="center" class="py-3 pb-5" >
-        <v-col md="12" lg="10" xs="12" class="card-top-margin elevation-1 pa-0">
-           <layout :eventdata="{data:EventData}" />
+        <v-col md="12" lg="9" xs="12" class="card-top-margin elevation-2 pa-0">
+          <layout :eventdata="EventData" />
         </v-col>
       </v-row>
     </v-container>

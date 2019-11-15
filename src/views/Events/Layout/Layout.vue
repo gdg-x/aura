@@ -1,9 +1,9 @@
 <template>
     <v-container fluid class="py-0 my-0 mt-0">
-        <v-row class="py-0 my-0">
+        <v-row class="py-0 my-0" align="center">
             <v-col md="12" sm="12" cols="12" class="py-0 my-0">
                 <v-row class="py-0">
-                    <v-col cols="12" md="9" sm="7" lg="9" class="py-0">
+                    <v-col cols="12" md="12" sm="12" lg="12" class="py-0">
                         <v-row class="py-0">
                             <v-col cols="12" md="12" class="pa-0" >
                                 <v-img
@@ -29,7 +29,7 @@
                                     >
                                         <p>
                                             <span style="font-size:150%">
-                                            {{eventdata.data.EventName}} 
+                                            {{eventdata.EventName}} 
                                             </span>
                                         </p> 
                                     </v-card-title>
@@ -69,25 +69,25 @@
                                         <v-tabs-items v-model="tab">
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutAbout :aboutData="eventdata.data"/>
+                                                    <LayoutAbout :aboutData="eventdata"/>
                                                 </v-card>
                                             </v-tab-item>
 
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutSpeakers :speakersData="eventdata.data.Speakers" />
+                                                    <LayoutSpeakers :speakersData="eventdata.Speakers" />
                                                 </v-card>
                                             </v-tab-item>
 
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutAgenda :agendaData="eventdata.data.Agenda" />
+                                                    <LayoutAgenda :agendaData="eventdata.Agenda" />
                                                 </v-card>
                                             </v-tab-item>
 
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutPartners :parntersData="eventdata.data.Partners" />
+                                                    <LayoutPartners :parntersData="eventdata.Partners" />
                                                 </v-card>
                                             </v-tab-item>
                                         </v-tabs-items>
@@ -95,10 +95,13 @@
                             </v-col>
                         </v-row>
                     </v-col>
-                    <v-col cols="12" md="3" sm="5" lg="3" class=" hidden-sm-and-down green">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis vero officiis exercitationem eligendi possimus fugiat totam illum illo laboriosam eos, dolorum doloremque distinctio placeat commodi enim reprehenderit! At, in eaque?</p>
-                        {{eventdata.data}}
-                    </v-col>
+                    <!-- <v-col cols="12" md="3" sm="5" lg="3" class="pa-0 hidden-sm-and-down" :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207901.51231883702!2d77.04124558163848!3d30.670594295690147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f92d96c158255%3A0x5e136f50f545b1fc!2sThe%20LaLiT%20Chandigarh!5e0!3m2!1sen!2sin!4v1573725228682!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <div class="pa-2">   
+                            <h2 class="google-font">Community Guidelines</h2>
+                            <p class="google-font">Participants asked to stop any harassing behavior are expected to comply immediately. Our zero-tolerance policy means that we will look into and review every allegation of violation of our Event Community Guidelines and Anti-Harassment Policy and respond appropriately. We empower and encourage you to report any behavior that makes you or others feel uncomfortable by finding a Google staff member wearing a STAFF shirt or by emailing {{communitydata.CommunityEmail}}</p>
+                        </div>
+                    </v-col> -->
                 </v-row>
                
             </v-col>

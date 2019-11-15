@@ -25,6 +25,8 @@
                             <!-- <p class="google-font mb-0"><b>Registraton, RSVP & Feedback</b></p> -->
                             <v-btn v-if="aboutData.Links.RegistrationLink" class="ml-0 ma-2" dark  :href="aboutData.Links.RegistrationLink" target="_blank" color="indigo">Registration</v-btn>
 
+                            <v-btn v-if="aboutData.Links.CallForSpeaker" class="ml-0 ma-2" dark  :href="aboutData.Links.CallForSpeaker" target="_blank" color="warning">Call For Speaker</v-btn>
+
                             <v-btn v-if="aboutData.Links.MeetupLink" :href="aboutData.Links.MeetupLink" target="_blank"  class="ml-0 ma-2" dark color="green">RSVP</v-btn>
 
                             <v-btn v-if="aboutData.Links.EventFeedbackURL" :href="aboutData.Links.EventFeedbackURL" target="_blank" class="ml-0 ma-2" dark color="cyan">Feeback</v-btn>
