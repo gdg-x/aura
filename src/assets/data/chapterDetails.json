@@ -1,31 +1,27 @@
 {
-    "ChapterName":"GDG Jalandhar",
-    "ChapterShortDescription":"Google Developers Group Jalandhar is an initiative to concentrate the efforts of many developers in and around Punjab to learn, share and get productive using the various Google products.",
-    "ChapterLongDec":"Google Developer Group Jalandhar is inspired by GTUG/GDG Family . We started our journey in Feb 2011. We try to engage student developers, fresh graduates and professionals through our hack events & meetups. The motive is to create a local ecosystem of programmers & hackers in and around Jalandhar. The technology awareness is main goal for first few years of the group.",
-    "ChapterMeetupLink":"https://www.meetup.com/GDG-Jalandhar",
-    "ChapterEmail":"gdgjalandhar@gmail.com",
-    "website":"https://gdgjalandhar.com",
-    "GDGProgramWebsite":"https://developers.google.com/programs/community/",
-    "ChapterHashTags":["GDGJalandhar","WTMJalandhar","GDG","WTM"],
+    "ChapterName":"GDG Cloud Hanoi",
+    "ChapterShortDescription":"GDG Cloud Hanoi is dedicated to building a strong community for GCP users in Hanoi, we runs meetup for developers interested in resources and technology from Google Developers.",
+    "ChapterLongDec":"GDG Cloud Hanoi is inspired by GDG Global. We started our journey in June 2019. We try to engage student developers, fresh graduates and professionals through our hack events & meetups. The motive is to create a local ecosystem of programmers & hackers in and around Hanoi. The technology awareness is main goal for first few years of the group.",
+    "ChapterMeetupLink":"https://www.meetup.com/GDG-Cloud-Hanoi",
+    "ChapterEmail":"gdgcloudhanoivn@gmail.com",
+    "FounderEmail":"nguyenhaitruonghp@gmail.com",
+    "website":"https://gdgcloudhanoi.com",
+    "GDGProgramWebsite":"https://developers.google.com/community/gdg/",
+    "ChapterHashTags":["GDGCloudHanoi","GDG","WTM","GDGHanoi"],
     "socialLinks":[
         {
             "name" : "Facebook",
-            "link" : "https://www.facebook.com/GDGJalandhar/",
+            "link" : "https://www.facebook.com/GDGCloudHanoi",
             "icon" : "fab fa-facebook"
         },
         {
-            "name" : "Google Plus",
-            "link" : "https://plus.google.com/u/0/+GdgjalandharIn/posts",
-            "icon" : "fab fa-google-plus"
-        },
-        {
             "name" : "Twitter",
-            "link" : "https://twitter.com/gdgjalandhar",
+            "link" : "https://twitter.com/GDGCloudHanoi",
             "icon" : "fab fa-twitter"
         },
         {
             "name" : "Meetup",
-            "link" : "https://www.meetup.com/GDG-Jalandhar/",
+            "link" : "https://www.meetup.com/GDG-Cloud-Hanoi/",
             "icon" : "fab fa-meetup"
         }
     ],

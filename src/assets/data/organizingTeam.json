@@ -1,47 +1,39 @@
 [
     {
-        "name":"Name",
-        "designation":"Development",
+        "name":"Mai Phuong Thao",
+        "designation":"Event organizer",
         "twitter":"https://twitter.com/",
         "linkedin":"https://www.linkedin.com/",
         "github":"https://github.com/",
+        "profileImage":"ThaoMP.png",
+        "website":""
+    },
+    {
+        "name":"Nguyen Hai Yen",
+        "designation":"Event organizer",
+        "twitter":"https://twitter.com/",
+        "linkedin":"https://www.linkedin.com/",
+        "github":"https://github.com/yenbka",
         "profileImage":"",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Management",
-        "twitter":"",
+        "name":"Bui Phuong Lien",
+        "designation":"Assistant organizer",
+        "twitter":"https://twitter.com/",
         "linkedin":"https://www.linkedin.com/",
-        "github":"",
-        "profileImage":"",
+        "github":"https://github.com/",
+        "profileImage":"PhuongLien.png",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Development",
+        "name":"Pham Kieu Trang",
+        "designation":"Media / Designer",
         "twitter":"https://twitter.com/",
         "linkedin":"https://www.linkedin.com/",
-        "github":"https://www.github.com/",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Development",
-        "twitter":"https://twitter.com/",
-        "linkedin":"https://linkedin.com/",
         "github":"https://github.com/",
-        "profileImage":"",
-        "website":"https://github.com"
-    },
-    {
-        "name":"Name",
-        "designation":"Development",
-        "twitter":"https://twitter.com/",
-        "linkedin":"",
-        "github":"https://github.com/",
-        "profileImage":"",
+        "profileImage":"TrangPK.png",
         "website":""
     }
+
 ]

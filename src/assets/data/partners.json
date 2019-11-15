@@ -5,14 +5,14 @@
         "img":"gdglogo.png"
     },
     {
-        "name":"WomenTechmakers",
-        "link":"https://www.womentechmakers.com/",
-        "img":"wtm.png"
+        "name":"GDG Cloud",
+        "link":"https://cloud.google.com/community/",
+        "img":"gdgcloud.png"
     },
     {
-        "name":"GDG[x]",
-        "link":"https://github.com/gdg-x",
-        "img":"gdg-x.svg"
+        "name":"GDG Hanoi",
+        "link":"https://www.facebook.com/gdghanoi",
+        "img":"gdghanoi.png"
     }
 
 ]

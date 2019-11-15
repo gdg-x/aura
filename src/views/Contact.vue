@@ -20,7 +20,7 @@
             </span>
           </p>
             
-            <p class="google-font mb-0" style="font-size:120%">Questions? Please contact {{ChapterDetails.ChapterEmail}}.</p>
+            <p class="google-font mb-0" style="font-size:120%; color:DodgerBlue">Questions? Please contact <b>{{ChapterDetails.ChapterEmail}}</b> or send email to Community Lead of GDG Cloud Hanoi: <b>{{ChapterDetails.FounderEmail}}</b></p>
         </v-flex>
         <v-flex xs12 md2 lg2 class="pa-2">
           <v-img

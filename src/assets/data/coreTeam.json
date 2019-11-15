@@ -1,56 +1,59 @@
 [
     {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
+        "name":"Nguyen Hai-Truong",
+        "designation":"Founder / Community Lead",
+        "twitter":"https://twitter.com/truongnh92",
+        "linkedin":"https://www.linkedin.com/in/nguyen-hai-truong-hp/",
+        "github":"https://github.com/truongnh1992",
+        "profileImage":"nht.png",
+        "website":"https://truongnh1992.github.io/"
+    },
+    {
+        "name":"Nguyen Quang Huy",
+        "designation":"Co-organizer",
+        "twitter":"https://twitter.com/huy_miracle",
+        "linkedin":"",
+        "github":"https://github.com/huynguyennovem",
         "profileImage":"",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
+        "name":"Dao Cong Tien",
+        "designation":"Co-organizer",
         "twitter":"",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
+        "linkedin":"https://www.linkedin.com/",
+        "github":"https://www.github.com/",
+        "profileImage":"DaoCongTien.png",
+        "website":""
+    },
+    {
+        "name":"Nguyen Phuong An",
+        "designation":"Co-organizer",
+        "twitter":"https://twitter.com/",
+        "linkedin":"https://linkedin.com/",
+        "github":"https://github.com/",
+        "profileImage":"AnNP.png",
+        "website":"https://github.com"
+    },
+    {
+        "name":"Nguyen Huu Hoa",
+        "designation":"Co-organizer",
+        "twitter":"https://twitter.com/",
+        "linkedin":"",
+        "github":"https://github.com/",
         "profileImage":"",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
+        "name":"Dang Duc Huy",
+        "designation":"Co-organizer",
+        "twitter":"https://twitter.com/",
+        "linkedin":"",
+        "github":"https://github.com/",
         "profileImage":"",
         "website":""
     }
+
+
+
 ]
