@@ -3,8 +3,8 @@
         <v-row align="center">
             <v-col md="3" sm="5">
                 <v-img
-                    :src="require('@/assets/img/home.jpg')"
-                    :lazy-src="require('@/assets/img/home.jpg')"
+                    :src="require('@/assets/img/home.svg')"
+                    :lazy-src="require('@/assets/img/home.svg')"
                     width="100%"
                     style="border-radius:8px"
                 >
