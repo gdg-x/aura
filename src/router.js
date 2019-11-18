@@ -132,6 +132,16 @@ const router = new Router({
         requiresAuth: true,
       }
     },
+    {
+      path:'/dashboard/events',
+      name:"admin-events",
+      component:()=> import('@/views/Admin/Events'),
+      meta:{
+        title:`Admin Dashboard | ${communitydata.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: true,
+      }
+    },
   ]
 })
 
