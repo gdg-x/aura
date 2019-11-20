@@ -17,11 +17,11 @@ importScripts('https://www.gstatic.com/firebasejs/3.5.2/firebase-messaging.js')
 
 var config = {
     apiKey: "AIzaSyBb-1hlnQfIELblC3HUqzI-M29xiwoMYds",
-    authDomain: "aura-gdg.firebaseapp.com",
-    databaseURL: "https://aura-gdg.firebaseio.com",
-    projectId: "aura-gdg",
-    storageBucket: "aura-gdg.appspot.com",
-    messagingSenderId: "157303555912",
+    authDomain: "mitre-saf.firebaseapp.com",
+    databaseURL: "https://mitre-saf.firebaseio.com",
+    projectId: "mitre-saf",
+    storageBucket: "mitre-saf.appspot.com",
+    messagingSenderId: "238290153339",
     appId: "1:157303555912:web:04c0e431777d1ee41f557d"
 }
 

@@ -1,6 +1,6 @@
 {
-  "name": "aura2.0",
-  "short_name": "aura2.0",
+  "name": "MITRE Security Automation Framework",
+  "short_name": "MITRE-SAF",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
