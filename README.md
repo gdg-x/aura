@@ -185,6 +185,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Houston | [View Now](https://gdghoustontx.org/) |
 | GDG Cloud Ahmedabad | [View Now](https://gdgahmedabad.cloud/) |
 | GDG Cloud Hanoi | [View Now](https://gdgcloudhanoi.com/) |
+| GDG Ulaanbaatar | [View Now](https://gdgub.org/) |
 
 
 Project is published under the [MIT license](/LICENSE.md).  
