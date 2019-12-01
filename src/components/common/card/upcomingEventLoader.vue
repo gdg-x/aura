@@ -1,34 +1,31 @@
 <template>
-    <v-card
-        flat
-        :class="$vuetify.theme.dark == true?'darkModeCard':'lightModeCard'"
-        class="ma-1 pa-1 my-0"
-    >
-        <v-card-title class="mb-0">
-            <div>
-                <p
-                class="google-font mb-2 animate-shimmer"
-                style="color:#424242;width:120px;height:10px;"
-                ></p>
-                <p
-                class="google-font mt-1 mb-0 animate-shimmer"
-                style="color:#424242;width:140px;height:20px;"
-                ></p>
-                <p
-                class="google-font mt-1 mb-0 animate-shimmer"
-                style="color:#424242;width:100px;height:20px;"
-                ></p>
-                <p
-                class="google-font mt-1 mb-0 animate-shimmer"
-                style="color:#424242;width:100px;height:20px;"
-                ></p>
-            </div>
-        </v-card-title>
+  <v-card
+    flat
+    :class="$vuetify.theme.dark == true?'darkModeCard':'lightModeCard'"
+    class="ma-1 pa-1 my-0"
+  >
+    <v-card-title class="mb-0">
+      <div>
+        <p class="google-font mb-2 animate-shimmer" style="color:#424242;width:120px;height:10px;"></p>
+        <p
+          class="google-font mt-1 mb-0 animate-shimmer"
+          style="color:#424242;width:140px;height:20px;"
+        ></p>
+        <p
+          class="google-font mt-1 mb-0 animate-shimmer"
+          style="color:#424242;width:100px;height:20px;"
+        ></p>
+        <p
+          class="google-font mt-1 mb-0 animate-shimmer"
+          style="color:#424242;width:100px;height:20px;"
+        ></p>
+      </div>
+    </v-card-title>
 
-        <v-card-actions class="mt-0">
-          <span class="animate-shimmer ml-2" style="color:#424242;width:60px;height:25px;"></span>
-        </v-card-actions>
-    </v-card>
+    <v-card-actions class="mt-0">
+      <span class="animate-shimmer ml-2" style="color:#424242;width:60px;height:25px;"></span>
+    </v-card-actions>
+  </v-card>
 </template>
 
 <style>

@@ -1,91 +1,90 @@
 [
-    {
-        "id":"nikita_gandhi",
-        "name":"Nikita Gandhi",
-        "designation":"Program Co-Ordinator",
-        "company":{
-            "name":"Google",
-            "url":""
-        },
-        "bio": "Nikita Gandhi is a Program coordinate Google's EngEdu's Machine Learning Program in India. She specially look forward to train the enthusiastic university students with concepts in ML. Extremely passionate about spreading technical knowledge with masses online and offline, her source of bread and butter and hobbies run in parallel. Satisfaction of office work helps her to do a little extra for the society.",
-        "city":"Bangalore",
-        "country":"India",
-        "image":"nikita.webp",
-        "sessionId": [201],
-    "social":{
-            "facebook":"",
-            "twitter":"https://twitter.com/Nikkitagandhi",
-            "linkedin":"https://www.linkedin.com/in/nikita-gandhi01/",
-            "github":"",
-            "website":"",
-            "medium": ""
-        }
-
+  {
+    "id": "nikita_gandhi",
+    "name": "Nikita Gandhi",
+    "designation": "Program Co-Ordinator",
+    "company": {
+      "name": "Google",
+      "url": ""
     },
-    {
-        "id":"sabyasachi_mukhopadhyay",
-        "name":"Sabyasachi Mukhopadhyay",
-        "designation":"GDE for ML & Chief Research Officer",
-        "company":{
-            "name":"Twelit Med Pvt. Ltd.",
-            "url":""
-        },
-        "bio": "Apart from being ‘Kolkata Lead of Facebook Developer Circle’, Sabyasachi has been recognized as 'Intel Software Innovator', 'Google Developer Expert (GDE) in Machine Learning' by Google in 2019. Sabyasachi is also the Co-Founder & Chief Research Officer (CRO) of Twelit MedTech Pvt.Ltd. His healthcare venture Twelit and automation venture Roovx were ranked as ‘Top 400 Startup’ by Govt. of India and IIM Kolkata at Smart Fifty Programme. Recently he has been honored with ‘Distinguished Lifetime Membership Award’ by ‘Society For Data Science’.",
-        "city":"Kolkata",
-        "country":"India",
-        "image":"sab.webp",
-        "sessionId": [203],
-        "social":{
-            "facebook":"https://www.facebook.com/SM2017Official/",
-            "twitter":"https://twitter.com/sabyasachi_uni",
-            "linkedin":"https://www.linkedin.com/in/sabyasachi-mukhopadhyay-303a1027/",
-            "github":"",
-            "website":"",
-            "medium": ""
-        }
-    },
-    {
-        "id":"paresh_mayani",
-        "name":"Paresh Mayani",
-        "designation":"Organizer, GDG Ahm & Practice Head",
-        "company":{
-            "name":"Simform",
-            "url":""
-        },
-        "bio": "Paresh is an experienced developer turned engineering and product/project manager, exploring the horizon of software industry since last 10 years. He is holding 100,000 reputation points over Stackoverflow, have written 150+ blogs, have published 50+ applications and known for community contribution, write blogs and deliver talks across the India and outside India too. Founded and managing GDG Ahmedabad since 2011",
-        "city":"Ahmedabad",
-        "country":"India",
-        "image":"paresh.webp",
-        "sessionId": [204],
-        "social":{
-            "facebook":"",
-            "twitter":"https://twitter.com/pareshmayani",
-            "linkedin":"https://www.linkedin.com/in/pareshmayani/",
-            "github":"",
-            "website":"",
-            "medium": ""
-        }
-    },
-    {
-        "id":"prajyot_mainkar",
-        "name":"Prajyot Mainkar",
-        "designation":"Organizer, GDG Goa & Founder",
-        "company":{
-            "name":"Androcid",
-            "url":""
-        },
-        "bio": "Prajyot Mainkar is the director of Androcid - A Mobile engineering development company based out of Goa and one of the winner's of Goa State CM Startup Award. He has been associated with Hon. PM Shri. Narendra Modi's PMO initiative of MYGOV. In mentoring more than 50 startups under the PMO initiative. Recipient of the Young Entrepreneur of the year by Business Goa and one of the 14 Intel innovators in the country, Prajyot has delivered more than 350 talks across the globe of which the prominent have been Droidcon Greece, Android Developer Days in Turkey, Google developer summit, Sri Lanka. Yourstory, one of India's leading startup brand recognized him as the Android man of Goa and was also featured as top techies in India in 2015. He is the technical advisor to India's one of the leading Digital Incubator For Students - The Startup Village and also several other incubators. Recently, became the first Goan author to publish a book on Mobile Technology called - Expert Android Programming, which is circulated in UK, India, Sri Lanka, Nepal, and Bangladesh. Post that, published another book on Flutter. He is also on the board of EDC Ignite as an advisor and industry advisor to Goa Stage IT policy.GEMS(Goa entrepreneur mentoring service) recently awarded him The trailblazer excellence award for contribution of IT in Goa.",
-        "city":"Goa",
-        "country":"India",
-        "image":"parjyot.webp",
-        "sessionId": [205],
-        "social":{
-            "facebook":"",
-            "twitter":"https://twitter.com/prajyotm",
-            "linkedin":"https://www.linkedin.com/in/prajyotm/",
-            "github":"",
-            "website":"",
-            "medium": ""
-        }
+    "bio": "Nikita Gandhi is a Program coordinate Google's EngEdu's Machine Learning Program in India. She specially look forward to train the enthusiastic university students with concepts in ML. Extremely passionate about spreading technical knowledge with masses online and offline, her source of bread and butter and hobbies run in parallel. Satisfaction of office work helps her to do a little extra for the society.",
+    "city": "Bangalore",
+    "country": "India",
+    "image": "nikita.webp",
+    "sessionId": [201],
+    "social": {
+      "facebook": "",
+      "twitter": "https://twitter.com/Nikkitagandhi",
+      "linkedin": "https://www.linkedin.com/in/nikita-gandhi01/",
+      "github": "",
+      "website": "",
+      "medium": ""
     }
+  },
+  {
+    "id": "sabyasachi_mukhopadhyay",
+    "name": "Sabyasachi Mukhopadhyay",
+    "designation": "GDE for ML & Chief Research Officer",
+    "company": {
+      "name": "Twelit Med Pvt. Ltd.",
+      "url": ""
+    },
+    "bio": "Apart from being ‘Kolkata Lead of Facebook Developer Circle’, Sabyasachi has been recognized as 'Intel Software Innovator', 'Google Developer Expert (GDE) in Machine Learning' by Google in 2019. Sabyasachi is also the Co-Founder & Chief Research Officer (CRO) of Twelit MedTech Pvt.Ltd. His healthcare venture Twelit and automation venture Roovx were ranked as ‘Top 400 Startup’ by Govt. of India and IIM Kolkata at Smart Fifty Programme. Recently he has been honored with ‘Distinguished Lifetime Membership Award’ by ‘Society For Data Science’.",
+    "city": "Kolkata",
+    "country": "India",
+    "image": "sab.webp",
+    "sessionId": [203],
+    "social": {
+      "facebook": "https://www.facebook.com/SM2017Official/",
+      "twitter": "https://twitter.com/sabyasachi_uni",
+      "linkedin": "https://www.linkedin.com/in/sabyasachi-mukhopadhyay-303a1027/",
+      "github": "",
+      "website": "",
+      "medium": ""
+    }
+  },
+  {
+    "id": "paresh_mayani",
+    "name": "Paresh Mayani",
+    "designation": "Organizer, GDG Ahm & Practice Head",
+    "company": {
+      "name": "Simform",
+      "url": ""
+    },
+    "bio": "Paresh is an experienced developer turned engineering and product/project manager, exploring the horizon of software industry since last 10 years. He is holding 100,000 reputation points over Stackoverflow, have written 150+ blogs, have published 50+ applications and known for community contribution, write blogs and deliver talks across the India and outside India too. Founded and managing GDG Ahmedabad since 2011",
+    "city": "Ahmedabad",
+    "country": "India",
+    "image": "paresh.webp",
+    "sessionId": [204],
+    "social": {
+      "facebook": "",
+      "twitter": "https://twitter.com/pareshmayani",
+      "linkedin": "https://www.linkedin.com/in/pareshmayani/",
+      "github": "",
+      "website": "",
+      "medium": ""
+    }
+  },
+  {
+    "id": "prajyot_mainkar",
+    "name": "Prajyot Mainkar",
+    "designation": "Organizer, GDG Goa & Founder",
+    "company": {
+      "name": "Androcid",
+      "url": ""
+    },
+    "bio": "Prajyot Mainkar is the director of Androcid - A Mobile engineering development company based out of Goa and one of the winner's of Goa State CM Startup Award. He has been associated with Hon. PM Shri. Narendra Modi's PMO initiative of MYGOV. In mentoring more than 50 startups under the PMO initiative. Recipient of the Young Entrepreneur of the year by Business Goa and one of the 14 Intel innovators in the country, Prajyot has delivered more than 350 talks across the globe of which the prominent have been Droidcon Greece, Android Developer Days in Turkey, Google developer summit, Sri Lanka. Yourstory, one of India's leading startup brand recognized him as the Android man of Goa and was also featured as top techies in India in 2015. He is the technical advisor to India's one of the leading Digital Incubator For Students - The Startup Village and also several other incubators. Recently, became the first Goan author to publish a book on Mobile Technology called - Expert Android Programming, which is circulated in UK, India, Sri Lanka, Nepal, and Bangladesh. Post that, published another book on Flutter. He is also on the board of EDC Ignite as an advisor and industry advisor to Goa Stage IT policy.GEMS(Goa entrepreneur mentoring service) recently awarded him The trailblazer excellence award for contribution of IT in Goa.",
+    "city": "Goa",
+    "country": "India",
+    "image": "parjyot.webp",
+    "sessionId": [205],
+    "social": {
+      "facebook": "",
+      "twitter": "https://twitter.com/prajyotm",
+      "linkedin": "https://www.linkedin.com/in/prajyotm/",
+      "github": "",
+      "website": "",
+      "medium": ""
+    }
+  }
 ]

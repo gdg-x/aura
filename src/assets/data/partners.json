@@ -1,32 +1,24 @@
 {
-    "General Partners":[
-        {
-            "name":"Google Developers",
-            "link":"https://developers.google.com/groups",
-            "img":"googledevs.webp"
-        },
-        {
-            "name":"GDG",
-            "link":"https://developers.google.com/groups",
-            "img":"gdglogo.webp"
-        },
-        {
-            "name":"WomenTechmakers",
-            "link":"https://www.womentechmakers.com/",
-            "img":"wtm.svg"
-        },
-        {
-            "name":"GDG[x]",
-            "link":"https://github.com/gdg-x",
-            "img":"gdg-x.svg"
-        }
-    ],
-    "Template Partner":[
-        {
-            "name":"GDG Jalandhar",
-            "link":"https://developers.google.com/groups",
-            "img":"gdgjalandhar.webp"
-        }
-    ]    
-
+  "General Partners": [
+    {
+      "name": "Google Developers",
+      "link": "https://developers.google.com/groups",
+      "img": "googledevs.webp"
+    },
+    {
+      "name": "GDG",
+      "link": "https://developers.google.com/groups",
+      "img": "gdglogo.webp"
+    },
+    {
+      "name": "WomenTechmakers",
+      "link": "https://www.womentechmakers.com/",
+      "img": "wtm.svg"
+    },
+    {
+      "name": "GDG[x]",
+      "link": "https://github.com/gdg-x",
+      "img": "gdg-x.svg"
+    }
+  ]
 }

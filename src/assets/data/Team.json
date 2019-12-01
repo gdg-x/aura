@@ -1,62 +1,62 @@
 [
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "bio":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-        "image":"",
-        "socialLinks":{
-            "twitter":"https://twitter.com/vrijrajsingh",
-            "linkedin":"https://www.linkedin.com/in/vrijraj",
-            "github":"https://github.com/Vrijraj",
-            "website":"asd"
-        }        
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "bio":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-        "image":"",
-        "socialLinks":{
-            "twitter":"https://twitter.com/vrijrajsingh",
-            "linkedin":"https://www.linkedin.com/in/vrijraj",
-            "github":"https://github.com/Vrijraj",
-            "website":""
-        }        
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "bio":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-        "image":"",
-        "socialLinks":{
-            "twitter":"https://twitter.com/vrijrajsingh",
-            "linkedin":"https://www.linkedin.com/in/vrijraj",
-            "github":"https://github.com/Vrijraj",
-            "website":""
-        }        
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "bio":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-        "image":"",
-        "socialLinks":{
-            "twitter":"https://twitter.com/vrijrajsingh",
-            "linkedin":"https://www.linkedin.com/in/vrijraj",
-            "github":"https://github.com/Vrijraj",
-            "website":""
-        }        
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "bio":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-        "image":"",
-        "socialLinks":{
-            "twitter":"https://twitter.com/vrijrajsingh",
-            "linkedin":"https://www.linkedin.com/in/vrijraj",
-            "github":"https://github.com/Vrijraj",
-            "website":""
-        }        
+  {
+    "name": "Name",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": "asd"
     }
+  },
+  {
+    "name": "Name",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Name",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Name",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Name",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  }
 ]

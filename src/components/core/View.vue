@@ -3,18 +3,18 @@
     <v-slide-y-reverse-transition>
       <router-view v-show="show" />
     </v-slide-y-reverse-transition>
-  </v-container >
+  </v-container>
 </template>
 
 <script>
 export default {
-  data(){
+  data() {
     return {
-      show : false,
-    }
+      show: false
+    };
   },
-  created(){
-   this.show = true
+  created() {
+    this.show = true;
   }
-}
+};
 </script>

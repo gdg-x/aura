@@ -2,38 +2,43 @@
     font-family: google-sans;
     src: url(assets/fonts/google-font.woff2);
 }
-.google-font{
-    font-family: google-sans
-};
 
-body{
+.google-font {
     font-family: google-sans
 }
 
-.lightModeContainer{
-    background-color:#F9F9F9;
-    border:1px solid #e0e0e0;
-    border-radius:5px
-}
-.lightModeWhiteContainer{
-    background-color:#ffff;
-    border:1px solid #e0e0e0;
-    border-radius:5px
-}
-.darkModeContainer{
-    background-color:#292929;
-    border:1px solid #212121;
-    border-radius:5px
+;
+
+body {
+    font-family: google-sans
 }
 
-.lightModeCard{
-    background-color:#ffff;
-    border:1px solid #e0e0e0;
-    border-radius:5px
-}
-.darkModeCard{
-    background-color:#292929;
-    border:1px solid #212121;
-    border-radius:5px
+.lightModeContainer {
+    background-color: #F9F9F9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px
 }
 
+.lightModeWhiteContainer {
+    background-color: #ffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px
+}
+
+.darkModeContainer {
+    background-color: #292929;
+    border: 1px solid #212121;
+    border-radius: 5px
+}
+
+.lightModeCard {
+    background-color: #ffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px
+}
+
+.darkModeCard {
+    background-color: #292929;
+    border: 1px solid #212121;
+    border-radius: 5px
+}

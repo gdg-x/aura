@@ -1,35 +1,28 @@
 <template>
-    <v-card
-        flat
-        class="ma-1 pa-1 my-0 elevation-0"
-        style="border-radius:7px;border:1px #ddd solid"
-    >
-        <v-card-title class="mb-0">
-        <div>
-            <p
-            class="google-font mb-2 animate-shimmer"
-            style="color:#424242;width:200px;height:20px;"
-            ></p>
-            <p
-            class="google-font mt-1 mb-0 animate-shimmer"
-            style="color:#424242;width:100px;height:20px;"
-            ></p>
-            <p
-            class="google-font mt-1 mb-0 animate-shimmer"
-            style="color:#424242;width:100px;height:20px;"
-            ></p>
-            <p
-            class="google-font mt-1 mb-0 animate-shimmer"
-            style="color:#424242;width:100px;height:20px;"
-            ></p>
-        </div>
-        </v-card-title>
+  <v-card flat class="ma-1 pa-1 my-0 elevation-0" style="border-radius:7px;border:1px #ddd solid">
+    <v-card-title class="mb-0">
+      <div>
+        <p class="google-font mb-2 animate-shimmer" style="color:#424242;width:200px;height:20px;"></p>
+        <p
+          class="google-font mt-1 mb-0 animate-shimmer"
+          style="color:#424242;width:100px;height:20px;"
+        ></p>
+        <p
+          class="google-font mt-1 mb-0 animate-shimmer"
+          style="color:#424242;width:100px;height:20px;"
+        ></p>
+        <p
+          class="google-font mt-1 mb-0 animate-shimmer"
+          style="color:#424242;width:100px;height:20px;"
+        ></p>
+      </div>
+    </v-card-title>
 
-        <v-card-actions class="mt-0">
-        <v-spacer></v-spacer>
-          <span class="animate-shimmer" style="color:#424242;width:60px;height:25px;"></span>
-        </v-card-actions>
-    </v-card>
+    <v-card-actions class="mt-0">
+      <v-spacer></v-spacer>
+      <span class="animate-shimmer" style="color:#424242;width:60px;height:25px;"></span>
+    </v-card-actions>
+  </v-card>
 </template>
 
 <style>

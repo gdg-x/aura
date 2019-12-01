@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Validation",
+    "desc": "Get the needed security data at the right time and detail.",
+    "icon": "mdi-thumb-up",
+    "more_link": "https://www.google.com"
+  },
+  {
+    "name": "Hardening",
+    "desc": "Ansible, Chef and Puppet content to counter-point our Validation content.",
+    "icon": "mdi-security",
+    "more_link": "https://www.google.com"
+  },
+  {
+    "name": "Visualization",
+    "desc": "Communicate the complexity of compliance visually via rollups, charts and timelines.",
+    "icon": "mdi-image-search",
+    "more_link": "https://www.google.com"
+  },
+  {
+    "name": "Training",
+    "desc": "Learn the best methods and approaches to writing the best content possible for communicating across the team. ",
+    "icon": "mdi-chair-school",
+    "more_link": "https://www.google.com"
+  }
+]

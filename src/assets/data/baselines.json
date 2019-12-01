@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "category": "Operating Systems",
+      "values": {
+        "RedHat 6 STIG Baseline": "https://github.com/mitre/red-hat-enterprise-linux-6-stig-baseline",
+        "RedHat 7 STIG Baseline": "https://github.com/simp/inspec-profile-disa_stig-el7",
+        "RedHat CVE Vulnerability Scan Baseline": "https://github.cms.gov/ISPG/rhel_cve_vulnerability_scan_baseline",
+        "Microsoft Windows 2012r2 Member Server STIG Baseline": "https://github.com/mitre/microsoft-windows-2012r2-memberserver-stig-baseline",
+        "Docker CE CIS Baseline": "https://github.com/mitre/docker-ce-cis-baseline",
+        "Canonical Ubuntu 16.04 STIG Baseline": "https://github.com/mitre/canonical-ubuntu-16.04-lts-stig-baseline"
+      }
+    },
+    {
+      "category": "Application Logic",
+      "values": {
+        "RSA Archer 6 Security Configuration Guide Baseline": "https://github.com/mitre/rsa-archer-6-security-configuration-guide-baseline",
+        "RedHat Jboss Enterprise Application Server 6.3 STIG Baseline": "https://github.com/mitre/red-hat-jboss-eap-6.3-stig-baseline",
+        "Oracle Java Runtime Environment 7 Unix STIG Baseline": "https://github.com/mitre/oracle-java-runtime-environment-7-unix-stig-baseline",
+        "Oracle Java Runtime Environment 8 Unix STIG Baseline": "https://github.com/mitre/oracle-java-runtime-environment-8-unix-stig-baseline"
+      }
+    },
+    {
+      "category": "Web Servers",
+      "values": {
+        "Microsoft IIS 8.5 Server STIG Baseline": "https://github.com/mitre/microsoft-iis-8.5-server-stig-baseline",
+        "Microsoft IIS 8.5 Site STIG Baseline": "https://github.com/mitre/microsoft-iis-8.5-site-stig-baseline",
+        "NGINX Baseline": "https://github.com/mitre/nginx-baseline"
+      }
+    },
+    {
+      "category": "Cloud Service Providers",
+      "values": {
+        "AWS CIS Foundations Baseline": "https://github.com/mitre/cis-aws-foundations-baseline",
+        "AWS S3 Baseline": "https:// github.com/mitre/aws-s3-baseline",
+        "AWS RDS Infrastructure CIS Baseline": "https://github.com/mitre/aws-rds-infrastructure-cis-baseline"
+      }
+    },
+    {
+      "category": "Databases",
+      "values": {
+        "Oracle MySQL Enterprise Edition 5.7 CIS Baseline": "https://github.com/mitre/oracle-mysql-ee-5.7-cis-baseline",
+        "AWS RDS Oracle MySQL Enterprise Edition 5.7 CIS Baseline": "https://github.com/mitre/aws-rds-oracle-mysql-ee-5.7-cis-baseline",
+        "Crunchy Data PostgreSQL 9.x STIG Baseline": "https://github.com/CrunchyData/pgstigcheck-inspec",
+        "AWS RDS Crunchy Data PostgreSQL 9 STIG Baseline": "https://github.com/mitre/aws-rds-crunchy-data-postgresql-9-stig-baseline",
+        "Microsoft SQL Server 2014 Database STIG Baseline": "https://github.com/mitre/microsoft-sql-server-2014-database-stig-baseline",
+        "Microsoft SQL Server 2014 Instance STIG Baseline": "https://github.com/mitre/microsoft-sql-server-2014-instance-stig-baseline",
+        "AWS RDS Microsoft SQL 2014 Server STIG Instance Baseline": "https://github.com/mitre/aws-rds-microsoft-sql-server-2014-instance-stig-baseline",
+        "Oracle Database 12c STIG Baseline": "https://github.com/mitre/oracle-database-12c-stig-baseline",
+        "MongoDB STIG Baseline": "https://github.com/mitre/mongodb-enterprise-advanced-3-stig-baseline"
+      }
+    }
+  ]
+}

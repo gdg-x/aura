@@ -5,7 +5,7 @@ FROM alpine:3.7
 RUN apk add --update nginx nodejs
 
 # Create the directories we will need
-RUN mkdir -p /tmp/nginx/aura
+RUN mkdir -p /tmp/nginx/saf
 RUN mkdir -p /var/log/nginx
 RUN mkdir -p /var/www/html
 
@@ -14,7 +14,7 @@ COPY nginx_config/nginx.conf /etc/nginx/nginx.conf
 COPY nginx_config/default.conf /etc/nginx/conf.d/default.conf
 
 # Set the directory we want to run the next commands for
-WORKDIR /tmp/nginx/aura
+WORKDIR /tmp/nginx/saf
 # Copy our source code into the container
 COPY . .
 # Install the dependencies, can be commented out if you're running the same node version
