@@ -123,7 +123,7 @@ const router = new Router({
       },
     },
     {
-      path:'/dashboard',
+      path:'/admin/dashboard/home',
       name:"admin-dashhboard",
       component:()=> import('@/views/Admin/dashboard'),
       meta:{
@@ -133,7 +133,7 @@ const router = new Router({
       }
     },
     {
-      path:'/dashboard/events',
+      path:'/admin/dashboard/events',
       name:"admin-events",
       component:()=> import('@/views/Admin/Events'),
       meta:{

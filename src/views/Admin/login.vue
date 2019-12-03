@@ -60,7 +60,7 @@ export default {
             this.isLoading = true;
             firebase.auth.signInWithEmailAndPassword(this.email,this.password).then((user)=>{
                 this.loading=false
-                this.$router.replace('dashboard')
+                this.$router.replace('/admin/dashboard/home')
             }).catch(e=>{
                 this.loading=false
                 alert('Alert '+e);

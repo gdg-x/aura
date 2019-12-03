@@ -6,6 +6,27 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     drawer: false,
+    adminDrawer:true,
+    adminLinks:[
+      { 
+        text: 'Home', 
+        to: '/admin/dashboard/home', 
+        icon:'mdi-home', 
+        meta:{
+          showToolbar: false,
+          showBottomNav: true
+        }, 
+      },
+      { 
+        text: 'Events', 
+        to: '/admin/dashboard/events', 
+        icon: 'mdi-assistant', 
+        meta:{
+          showToolbar: false,
+          showBottomNav: true
+        }, 
+      }
+    ],
     items: [ 
       { 
         text: 'Home', 
@@ -83,11 +104,18 @@ export default new Vuex.Store({
   getters:{
     links: (state) => {
       return state.items
+    },
+    AdminLinks: (state) => {
+      return state.adminLinks
     }
   },
   mutations: {
     setDrawer: (state, payload) => (state.drawer = payload),
-    toggleDrawer: state => (state.drawer = !state.drawer)
+    toggleDrawer: state => (state.drawer = !state.drawer),
+    
+    // For Admin
+    ADsetDrawer: (state, payload) => (state.adminDrawer = payload),
+    ADtoggleDrawer: state => (state.adminDrawer = !state.adminDrawer)
   },
   actions: {
 

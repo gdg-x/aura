@@ -1,63 +1,120 @@
 <template>
   <v-content>
     <v-container fluid class="text-center">
-      <h1>This is admin Event Page</h1>
+      <v-row justify="center" align="center">
+          <v-col cols="12" md="11">
+              <v-toolbar class="elevation-1">
+                <v-toolbar-title>Events Details: </v-toolbar-title>
+                <div class="flex-grow-1"></div>
+                <v-text-field
+                    flat
+                    v-model="search"
+                    solo-inverted
+                    hide-details
+                    prepend-inner-icon="mdi-search-web"
+                    label="Search"
+                    single-line
+                    class="hidden-sm-and-down"
+                ></v-text-field>
+                <!-- <v-btn text v-on:click="dataLoad" icon color="indigo" class="ml-2">
+                    <v-icon>mdi-reload</v-icon>
+                </v-btn> -->
+            </v-toolbar>
+          </v-col> 
+      </v-row>
+      <v-row justify="center" align="center"> 
+          <v-col cols="12" md="11">
+            <v-data-table
+            :headers="headers"
+            :items="eventsData"
+            :items-per-page="10"
+            :search="search"
+            class="elevation-1"
+            :loading="loading" 
+            loading-text="Loading... Please wait"
+            >
+                <template v-slot:item.status="{ item }">
+                    <v-chip v-if="item.status == true" class="green" small dark>Upcoming</v-chip>
+                    <v-chip v-else class="red" small dark>Past</v-chip>
+                </template>
+
+                <template v-slot:item.link="{ item }">
+                    <a :href="item.link" target="_blank" style="text-decoration:none">See More</a>
+                </template>
+            </v-data-table>
+          </v-col>
+      </v-row>
+      
     </v-container>
   </v-content>
 </template>
 
 <script>
 import firebase from '@/firebase';
+import { configData } from "@/config/config";
 export default {
     components:{
         
     },
     name:"admin-dashboard",
     data:()=>({
+        search:'',
+        loading:true,
+        headers: [
+          {
+            text: 'Name',
+            align: 'left',
+            sortable: false,
+            value: 'name',
+          },
+          { text: 'Date', value: 'local_date' },
+          { text: 'Status', value: 'status' },
+          { text: 'Venue', value: 'venue.name' },
+          { text: 'RSVP Yes', value: 'yes_rsvp_count' },
+          { text: 'See More', value: 'link' },
+        ],
         userEmail:'',
         title:"",
         body:"",
         isLoading:false,
-        isSuccessAlert:false
+        isSuccessAlert:false,
+        eventsData: [],
+        showLoader: true,
+        notFoundEventFlag: false
     }),
     mounted(){
         if(firebase.auth.currentUser){
             this.userEmail = firebase.auth.currentUser.email
+            this.loading = true
+            fetch("https://cors-anywhere.herokuapp.com/https://api.meetup.com/" +
+                configData.MeetupURLName +
+                "/events?desc=true&photo-host=public&sign=true&page=1000&status=past")
+            .then(data => data.json())
+            .then(res => {
+                if (res.length > 0) {
+                    this.showLoader = false;
+                    // this.showData = true;
+                    this.eventsData = res;
+                    this.loading = false
+                    // console.log(this.eventsData)
+                } else {
+                    this.notFoundEventFlag = true;
+                    this.loading = false
+                    this.showLoader = false;
+                }
+            })
+            .catch(e => {
+                this.showLoader = false;
+                this.errorMsg = "Issue found with " + e;
+                // this.errorAlert = true;
+                // this.notFoundEventFlag = true;
+            });
         }else{
             this.$router.replace('admin')
         }
     },
     methods:{
-        send(){
-            firebase.firestore.collection("apiEnd")
-            .get()
-            .then(docs => {
-                docs.forEach(doc => {
-                    let token = doc.data().token;
-                    let body={  
-                        "to": token,  
-                        "notification": {    
-                            "title": this.title,    
-                            "body": this.body,    
-                            // "icon": require('@/assets/img/gdg-logo.svg')
-                            "icon":"https://dsccu.in/images/icons/android-icon-192x192.png"
-                        }
-                    }
-                    const options = {
-                        method: 'POST',
-                        headers: new Headers({"Authorization": "key=AAAAJKAFx0g:APA91bG4RFcmV5d3PYgeNSXui0oCgcS8AqnTGe79Zv0X3udydnTnRM0r4EEQlWrpDPmOABVOTBbI3nCuST_3c1Z8yfyIPBwAa4jjoIOrzdocg3lsuJdpo4XIam01_Kk-mKUzaGjsqDep",'Content-Type': 'application/json',}),
-                    };
-                    options.body = JSON.stringify(body);
-                    console.log(options.body)
-                    fetch('https://fcm.googleapis.com/fcm/send', options).then((res) => res.json())
-                    .then((data) =>{
-                        this.isSuccessAlert = true;
-                        console.log(data);
-                    })
-                    .catch((err)=>alert(err));
-                });
-            });
-        },
+      
         logout(){
             firebase.auth.signOut().then(()=>{
                 this.$router.replace('/admin')
@@ -66,7 +123,3 @@ export default {
     }
 }
 </script>
-
-<style>
-
-</style>

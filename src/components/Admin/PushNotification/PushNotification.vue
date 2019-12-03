@@ -1,12 +1,11 @@
-<template>
-    <v-content class="">     
+<template>   
         <v-container fluid class="">
-                <v-row justify="center">
+                <v-row justify="center" align="center">
                     <v-col md="8" class="text-center">
-                    <v-btn :to="'/home'" outlined class="ma-5">Home
-                    </v-btn>
-                    <v-btn :to="'/dashboard/events'" outlined class="ma-5">Events
-                    </v-btn>
+                    <!-- <v-btn :to="'/home'" outlined class="ma-5">Home
+                    </v-btn> -->
+                    <!-- <v-btn :to="'/dashboard/events'" outlined class="ma-5">Events
+                    </v-btn> -->
                         <p>Logged in as {{ userEmail }}</p>
                         <v-btn text class="mb-3" v-on:click="logout">Logout</v-btn>
                         <h3>Send Push Notification </h3>
@@ -27,8 +26,6 @@
                     </v-col>
                 </v-row>
             </v-container>
-            
-        </v-content>
 </template>
 
 <script>
