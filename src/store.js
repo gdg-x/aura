@@ -25,6 +25,15 @@ export default new Vuex.Store({
           showToolbar: false,
           showBottomNav: true
         }, 
+      },
+      { 
+        text: 'Team', 
+        to: '/admin/dashboard/team', 
+        icon: 'mdi-assistant', 
+        meta:{
+          showToolbar: false,
+          showBottomNav: true
+        }, 
       }
     ],
     items: [ 
