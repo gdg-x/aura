@@ -12,6 +12,7 @@
         </v-avatar>
         <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{data.data.name}}</p>
         <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{data.data.designation}}</p>
+        <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{data.data.group}}</p> 
         <socialMediaDetails :data="{data:data.data.socialLinks}" />
       </div>
     </template>
@@ -20,8 +21,9 @@
       <v-card-title class="px-5 google-font" primary-title>{{data.data.name}}</v-card-title>
 
       <v-card-text class="pa-5">
-        <p class="google-font">{{data.data.designation}}</p>
-        <p class="google-font">{{data.data.bio}}</p>
+        <p class="google-font" style="font-size:120%">{{data.data.designation}}</p>
+        <p class="google-font">Other Roles: {{data.data.roles}}</p>
+        
         <socialMediaDetails class="pl-0 ml-0" :data="{data:data.data.socialLinks}" />
       </v-card-text>
 

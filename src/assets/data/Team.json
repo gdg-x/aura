@@ -1,62 +1,114 @@
 [
   {
-    "name": "Name",
-    "designation": "Front End Developer",
-    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-    "image": "",
-    "socialLinks": {
-      "twitter": "https://twitter.com/vrijrajsingh",
-      "linkedin": "https://www.linkedin.com/in/vrijraj",
-      "github": "https://github.com/Vrijraj",
-      "website": "asd"
-    }
+    "name": "Brett Kreider",
+    "designation": "Principal Lead for SAF",
+    "group": "T8A1", 
+    "roles": "CEL for Security Automation",
+    "image": "brett-kreider.png"
   },
   {
-    "name": "Name",
-    "designation": "Front End Developer",
-    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-    "image": "",
-    "socialLinks": {
-      "twitter": "https://twitter.com/vrijrajsingh",
-      "linkedin": "https://www.linkedin.com/in/vrijraj",
-      "github": "https://github.com/Vrijraj",
-      "website": ""
-    }
+    "name": "Aaron Lippold",
+    "designation": "Project Lead for SAF",
+    "group": "T8A1",
+    "roles": "Project Lead for Security Automation, Profile Development, InSpec_Tools Development, Heimdall-Lite Lead",
+    "image": "aaron-lippold.png"
   },
   {
-    "name": "Name",
-    "designation": "Front End Developer",
-    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-    "image": "",
-    "socialLinks": {
-      "twitter": "https://twitter.com/vrijrajsingh",
-      "linkedin": "https://www.linkedin.com/in/vrijraj",
-      "github": "https://github.com/Vrijraj",
-      "website": ""
-    }
+    "name": "Eugene Aronne",
+    "designation": "Project Lead for SAF",
+    "group": "T8A1",
+    "roles": "Project Development",
+    "image": "eugene-aronne.png"
   },
   {
-    "name": "Name",
+    "name": "Alicia Sturtevant",
     "designation": "Front End Developer",
-    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-    "image": "",
-    "socialLinks": {
-      "twitter": "https://twitter.com/vrijrajsingh",
-      "linkedin": "https://www.linkedin.com/in/vrijraj",
-      "github": "https://github.com/Vrijraj",
-      "website": ""
-    }
+    "group": "T8A1",
+    "roles": "Project Development",
+    "image": "alicia-sturtevant.png"
   },
   {
-    "name": "Name",
+    "name": "Colin Doherty",
+    "designation": "Technical Developer",
+    "group": "T8A1",
+    "roles": "VueJS Developer",
+    "image": "colin-doherty.png"
+  },
+  {
+    "name": "Dan Haynes",
+    "designation": "Profile Development",
+    "group": "T8A1",
+    "roles": "Profile Development and Review",
+    "image": "dan-haynes.png"
+  },
+  {
+    "name": "Jacob Henry",
+    "designation": "Lead Technical Developer",
+    "group": "T8AC",
+    "roles": "Heimdall-Lite Lead, Data Middleware and Backend, InSpecJS Lead, InSpecJS_Tools and HeimdallJS_Tools Developer",
+    "image": "jacob-henry.png"
+  },
+  {
+    "name": "Lipee Vora",
     "designation": "Front End Developer",
-    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-    "image": "",
-    "socialLinks": {
-      "twitter": "https://twitter.com/vrijrajsingh",
-      "linkedin": "https://www.linkedin.com/in/vrijraj",
-      "github": "https://github.com/Vrijraj",
-      "website": ""
-    }
+    "group": "T8A1",
+    "roles": "Front end development on the SAF site",
+    "image": "lipee-vora.png" 
+  },
+  {
+    "name": "Luke Malinowski",
+    "designation": "Profile Development and Reivew",
+    "group": "T8AC",
+    "roles": "InSpec Profile Development and Reivew, InSpec Trainer, Hardening Developer, InSpec and Heimdall Tools Developer, InSpecJS_Tools and HeimdallJS_Tools Developer",
+    "image": "luke-malinowski.png"
+  },
+  {
+    "name": "Mark Tollick",
+    "designation": "Programs Lead",
+    "group": "T8A1",
+    "roles": "MITRE Internal Programs Lead, InSpec Systems Intigrator",
+    "image": "mark-tollick.png"
+  },
+  {
+    "name": "Mohamed El-Sharkawi",
+    "designation": "Front End Developer",
+    "group": "T8A1",
+    "roles": "InSpec Training Lead, InSpec Windows Lead and Profile Developer",
+    "image": "mohamed-el-sharkawi.png"
+  },
+  {
+    "name": "Robert Thew",
+    "designation": "Lead Technical Developer",
+    "group": "T8A7",
+    "roles": "Project UX Lead, Heimdall Server Lead, Rails and JavaScript Developer",
+    "image": "robert-thew.png"
+  },
+  {
+    "name": "Rony Xavier",
+    "designation": "Lead Technical Developer",
+    "group": "T8AC",
+    "roles": "Project Lueitent, Core InSpec Developer, InSpec Cloud Lead, Inspec Trainer, Hardening Developer, InSpec and Heimdall Tools Developer",
+    "image": "rony-xavier.png"
+  },
+  {
+    "name": "Sam Cornwell",
+    "designation": "Technical Developer",
+    "group": "T8B1",
+    "roles": "InSpec and Heimdall Tools Developer, CICD Pipeline Developer",
+    "image": "sam-cornwell.png"
+  },
+  {
+    "name": "Vikram Bala",
+    "designation": "Technical Developer",
+    "group":"T857",
+    "roles": "VueJS Developer",
+    "image": "vikram-bala.png"
+  },
+  {
+    "name": "Will Dower",
+    "designation": "Front End Developer",
+    "group":"T8A1",
+    "roles": "Front end development on the SAF site",
+    "image": "will-dower.png"
   }
 ]
