@@ -1,7 +1,9 @@
 <template>
-  <v-row justify="center">
+  <div>
     <v-btn
-        class="ma-0 "
+        small
+        dark
+        color="red"
         @click.stop="dialog = true"
     >
         Remove
@@ -9,7 +11,7 @@
 
     <v-dialog
       v-model="dialog"
-      max-width="290"
+      max-width="300"
     >
       <v-card>
         <v-card-title class="headline">Are you sure?</v-card-title>
@@ -41,7 +43,7 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-  </v-row>
+  </div>
 </template>
 
 <script>

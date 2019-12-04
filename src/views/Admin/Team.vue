@@ -4,7 +4,7 @@
       :timeout="5000"
       v-model="snackbarSuccess"
       >
-          Event Added Successfully
+          Team Member Added Successfully
           <v-btn
               color="pink"
               text
@@ -40,7 +40,17 @@
       <v-row justify="center" align="center" class="">
         <v-col cols="12" md="11" class="">
           <v-container fluid>
-            <v-row>
+            <v-row justify="center" align="center" v-if="teamLoader">
+              <v-col col="12" md="2" class="text-center">
+                <v-progress-circular
+                  :width="4"
+                  :size="70"
+                  color="indigo"
+                  indeterminate
+                ></v-progress-circular>
+              </v-col>
+            </v-row>
+            <v-row v-else>
               <v-col col="12" md="2" v-for="(item,i) in teamData" :key="i" class="pa-1">
                 <Team :teamData="item" />
               </v-col>
@@ -81,7 +91,7 @@ import firebase from 'firebase/app'
 import { firestore } from 'firebase';
 import { configData } from "@/config/config";
 import AddTeam from '../../components/Admin/Team/addTeam'
-import Team from '../../components/Admin/Team/team'
+import Team from '../../components/Admin/Team/viewTeam'
 export default {
     components:{
       AddTeam,
@@ -89,6 +99,7 @@ export default {
     },
     name:"admin-dashboard",
     data:()=>({
+        teamLoader:true,
         search:'',
         loading:true,
         headers: [
@@ -118,6 +129,7 @@ export default {
     },
     methods:{
       showData(){
+          this.teamLoader = true
           // this.dataLoadingStatus = true
           this.teamData = []
           console.log('Calling Show Data')
@@ -128,7 +140,9 @@ export default {
                   console.log(doc.data())
                   this.teamData.push(doc.data())
                   console.log(this.teamData)
+                  
               });
+              this.teamLoader = false
           })
           .catch((err) => {
               console.log('Error getting documents', err);

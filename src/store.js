@@ -29,7 +29,7 @@ export default new Vuex.Store({
       { 
         text: 'Team', 
         to: '/admin/dashboard/team', 
-        icon: 'mdi-assistant', 
+        icon: 'mdi-account-group', 
         meta:{
           showToolbar: false,
           showBottomNav: true
