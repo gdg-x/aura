@@ -131,7 +131,17 @@ const router = new Router({
         color: "#0277bd",
         requiresAuth: false
       }
+    },
+    {
+      path: "/hardening",
+      name: "hardening",
+      component: () => import("@/views/Hardening.vue"),
+      meta: {
+        title: `Hardening Profiles | ${communitydata.CommunityName}`,
+        color: "#0277bd",
+        requiresAuth: false
     }
+  }
   ]
 });
 

@@ -1,0 +1,44 @@
+{
+    "items": [
+      {
+        "category": "Operating Systems",
+        "values": {
+            "Windows 2016 r2 STIG (Chef)": "https://github.com/mitre/chef-stig-windows-server-2016-v1r4-hardening",
+            "Windows 2012 r2 STIG (Chef)": "https://github.com/mitre/chef-stig-windows-2012-v2r12-memberserver-hardening",
+            "Ubuntu 16.04 STIG (Chef)": "https://github.com/mitre/chef-canonical-ubuntu-16.04-lts-stig-hardening",
+            "RedHat Enterprise Linux STIG (Ansible)": "https://github.com/mitre/ansible-rhel7-stig-hardening"
+        }
+      },
+      {
+        "category": "Cloud",
+        "values": {
+            "AWS Basic Example (kitchen-terraform)": "https://github.com/mitre/demo-aws-hardening",
+            "CIS AWS Foundations Benchmark (kitchen-terraform)": "https://github.com/mitre/cis-aws-foundations-hardening"
+        }
+      },
+      {
+        "category": "Application Logic",
+        "values": {
+            "CIS Docker Community Edition Benchmark (Ansible)": "https://github.com/mitre/ansible-cis-docker-ce-hardening",
+            "CIS Docker Community Edition Benchmark (Chef)": "https://github.com/mitre/chef-cis-docker-ce-hardening"
+        }
+      },
+      {
+        "category": "Web Servers",
+        "values": {
+            "CIS Tomcat Benchmark (Ansible)": "https://github.com/mitre/ansible-cis-tomcat-hardening",
+            "CIS Tomcat Benchmark (Chef)": "https://github.com/mitre/chef-cis-tomcat-hardening",
+            "nginx (Chef)": "https://github.com/mitre/chef-nginx-hardening",
+            "IIS Sites (Chef)": "https://github.com/mitre/chef-iis-site-hardening",
+            "IIS Server (Chef)": "https://github.com/mitre/chef-iis-85-hardening"
+        }
+      },
+      {
+        "category": "Databases",
+        "values": {
+            "MongoDB Enterprise STIG (Chef)": "https://github.com/mitre/chef-stig-mongodb-enterprise-advanced-hardening"
+        }
+      }
+    ]
+  }
+  

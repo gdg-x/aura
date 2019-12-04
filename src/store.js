@@ -26,50 +26,15 @@ export default new Vuex.Store({
         }
       },
       {
-        text: "Events",
-        to: "/events",
-        icon: "mdi-assistant",
+        text: "Hardening",
+        to: "/hardening",
+        icon: "mdi-home",
         meta: {
           showToolbar: true,
           showBottomNav: true
         }
-      },
-      {
-        text: "Team",
-        to: "/team",
-        icon: "mdi-account-settings",
-        meta: {
-          showToolbar: true,
-          showBottomNav: true
-        }
-      },
-      {
-        text: "About",
-        to: "/about",
-        icon: "mdi-comment-alert-outline",
-        meta: {
-          showToolbar: true,
-          showBottomNav: true
-        }
-      },
-      {
-        text: "Contact",
-        to: "/contact",
-        icon: "mdi-contacts",
-        meta: {
-          showToolbar: true,
-          showBottomNav: true
-        }
-      },
-      {
-        text: "Partners",
-        to: "/partners",
-        icon: "mdi-currency-usd",
-        meta: {
-          showToolbar: false,
-          showBottomNav: false
-        }
-      },
+      }
+
       // {
       //   text: 'Blogs',
       //   to: '/blogs',
@@ -79,15 +44,6 @@ export default new Vuex.Store({
       //     showBottomNav: false
       //   },
       // },
-      {
-        text: "Admin",
-        to: "/admin",
-        icon: "mdi-account-key",
-        meta: {
-          showToolbar: false,
-          showBottomNav: false
-        }
-      }
     ]
   },
   getters: {
