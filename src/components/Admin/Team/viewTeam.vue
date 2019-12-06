@@ -22,7 +22,7 @@
           
       </template>
 
-      <v-card color="">
+      <v-card v-if="dialog" color="">
         <v-card-title
           class="px-5 google-font"
           primary-title
@@ -78,8 +78,9 @@
                             </span>
                         </p>
                         <p class="mb-1 mt-4"><b>Action Links</b></p>
-                        <removeTeam style="margin-left:0.9px" @removeSuccess="RemoveSuceess" :teamData="{id:teamData.id,name:teamData.name}" />
-
+                        <removeTeam style="margin-left:0.9px" class="mr-1" @removeSuccess="RemoveSuceess" :teamData="{id:teamData.id,name:teamData.name}" />
+                        &nbsp;
+                        <editTeam :teamData="teamData"/>
                     </v-col>
                 </v-row>
             </v-container>
@@ -112,9 +113,11 @@
 
 <script>
 import removeTeam from '../../../components/Admin/Team/removeTeam'
+import editTeam from '../../../components/Admin/Team/editTeam'
     export default {
         components:{
-            removeTeam
+            removeTeam,
+            editTeam
         },
         props:{
             teamData:{}

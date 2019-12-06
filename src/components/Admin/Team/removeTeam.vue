@@ -1,18 +1,20 @@
 <template>
-  <div>
-    <v-btn
-        small
-        dark
-        color="red"
-        @click.stop="dialog = true"
-    >
-        Remove
-    </v-btn>
+    
 
     <v-dialog
       v-model="dialog"
       max-width="300"
     >
+      <template v-slot:activator="{ on }">
+        <v-btn
+          small
+          dark
+          color="red"
+          @click.stop="dialog = true"
+      >
+          Remove
+      </v-btn>
+      </template>
       <v-card>
         <v-card-title class="headline">Are you sure?</v-card-title>
 
@@ -43,7 +45,6 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-  </div>
 </template>
 
 <script>
