@@ -2,6 +2,13 @@
   <v-content>
     <div class="title text-justify pa-2">
       <p>
+        These open-source community-based InSpec profiles validate security of
+        common system components. MITRE is helping to provide stewardship over
+        these profiles, hosted here and at other community vendor sites. If you
+        are interested in new profiles, please contact us at
+        <a
+          :href="mail_link"
+        >{{ db.email }}</a>. If you are interested in developing and contributing your ownvprofiles, please see our links to Training material.
         These open-source community-based hardening baselines help to securely configure common system components. MITRE is helping to provide stewardship over these hardening baselines, hosted here and at other community vendor sites. If you are interested in new hardening baselines, please contact us at
         <a
           :href="mail_link"

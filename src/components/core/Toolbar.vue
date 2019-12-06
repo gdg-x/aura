@@ -5,13 +5,13 @@
     <v-toolbar-title class="px-0">
       <v-container fluid>
         <v-row align="center">
-          <v-col class="px-0 hidden-sm-and-down">
+          <!-- <v-col class="px-0 hidden-sm-and-down">
             <v-img
               :src="require('@/assets/img/gdg.png')"
               :lazy-src="require('@/assets/img/gdg.png')"
               width="4vh"
             ></v-img>
-          </v-col>
+          </v-col> -->
           <v-col class="pl-2">
             <router-link
               :to="{ name: 'home'}"

@@ -24,7 +24,7 @@ export default new Vuex.Store({
           showToolbar: true,
           showBottomNav: true
         }
-      },
+      },     
       {
         text: "Hardening",
         to: "/hardening",

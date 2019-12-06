@@ -38,32 +38,26 @@
   "WhatWeDoTech": [
     {
       "TechName": "Heimdall Lite",
-      "image": "angular.svg",
       "link": "https://github.com/mitre/heimdall-lite"
     },
     {
       "TechName": "Heimdall Server",
-      "image": "gcp.svg",
       "link": "https://github.com/mitre/heimdall"
     },
     {
       "TechName": "InSpec_Tools",
-      "image": "android.svg",
       "link": "https://github.com/mitre/inspec_tools/"
     },
     {
       "TechName": "Heimdall_Tools",
-      "image": "aog.png",
       "link": "https://github.com/mitre/heimdall_tools"
     },
     {
       "TechName": "InSpecJS_Tools",
-      "image": "firebase.svg",
       "link": "https://github.com/mitre/inspec_tools_js/"
     },
     {
       "TechName": "HeimdallJS_Tools",
-      "image": "tf.svg",
       "link": "https://github.com/mitre/heimdalljs_tools"
     }
   ],

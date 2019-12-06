@@ -1,4 +1,4 @@
-<template>
+<!--<template>
     <v-container fluid class="py-0 my-0 mt-5">
         <v-row class="py-0 my-0">
             <v-col md="12" sm="12" cols="12" class="py-0 my-0">
@@ -75,4 +75,4 @@ export default {
         }
     }
 }
-</script>
+</script>-->

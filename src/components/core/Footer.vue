@@ -8,8 +8,8 @@
     <v-container fluid>
       <v-row align="center" justify="center" class="my-0 py-0">
         <v-col cols="12" md="10" lg="10" sm="10" class="py-0 my-0">
-          <v-divider v-if="!this.$vuetify.theme.dark"></v-divider>
-          <p class="google-font mt-4 mb-3" style="font-size:130%">
+          <!-- <v-divider v-if="!this.$vuetify.theme.dark"></v-divider> -->
+          <!-- <p class="google-font mt-4 mb-3" style="font-size:130%">
             Follow Us:
             <span v-for="(item,i) in communitydata.SocialLinks" :key="i">
               <v-tooltip top>
@@ -21,8 +21,8 @@
                 <span>{{item.name}}</span>
               </v-tooltip>
             </span>
-          </p>
-          <v-divider></v-divider>
+          </p> -->
+          <!-- <v-divider></v-divider> -->
         </v-col>
       </v-row>
 
@@ -40,7 +40,7 @@
                 v-for="(item,i) in FooterData.Links"
                 :key="i"
               >
-                <div v-for="(itemp,j) in item" :key="j" class="mt-1">
+                <!-- <div v-for="(itemp,j) in item" :key="j" class="mt-1">
                   <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;">
                     <b>{{j}}</b>
                   </p>
@@ -54,7 +54,7 @@
                     >{{linkdata.LinkName}}</a>
                     <br />
                   </div>
-                </div>
+                </div> -->
               </v-col>
             </v-row>
             <!-- Links Section -->
@@ -73,7 +73,7 @@
           >
             <v-toolbar-title class="google-font pl-0 ml-0 mr-3" style="font-size:200%">MITRE SAF</v-toolbar-title>
 
-            <v-btn
+            <!-- <v-btn
               v-for="(item,i) in FooterData.FooterEndSession"
               :key="i"
               :href="item.Link"
@@ -82,7 +82,7 @@
               style="text-transform: capitalize;font-size:110%"
               text
               aria-label="Footer Bottom Button"
-            >{{ item.LinkName }}</v-btn>
+            >{{ item.LinkName }}</v-btn> -->
           </v-toolbar>
         </v-col>
       </v-row>

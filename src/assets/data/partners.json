@@ -1,24 +1,69 @@
 {
-  "General Partners": [
+  "General Community": [
     {
-      "name": "Google Developers",
-      "link": "https://developers.google.com/groups",
-      "img": "googledevs.webp"
+      "name": "Nation Geospatial-Intelligence Agency",
+      "link": "https://www.nga.mil/",
+      "img": "NGIA.png"
     },
     {
-      "name": "GDG",
-      "link": "https://developers.google.com/groups",
-      "img": "gdglogo.webp"
+      "name": "Department of Defense",
+      "link": "https://www.defense.gov/",
+      "img": "DOD.png"
     },
     {
-      "name": "WomenTechmakers",
-      "link": "https://www.womentechmakers.com/",
-      "img": "wtm.svg"
+      "name": "United States Army",
+      "link": "https://home.army.mil/imcom/index.php",
+      "img": "Army.png"
     },
     {
-      "name": "GDG[x]",
-      "link": "https://github.com/gdg-x",
-      "img": "gdg-x.svg"
+      "name": "Defense Information Systems Agnecy",
+      "link": "https://www.disa.mil/",
+      "img": "DISA.png"
+    },
+    {
+      "name": "Department of Health & Human Services",
+      "link": "https://www.hhs.gov/",
+      "img": "DHHS.png"
+    },
+    {
+      "name": "Center for Medicare & Medicaid Services",
+      "link": "https://www.cms.gov/",
+      "img": "CMS.png"
+    },
+    {
+      "name": "Internal Revenue Service",
+      "link": "https://www.irs.gov/",
+      "img": "IRS.png"
+    },
+    {
+      "name": "National Reconnaissance Office",
+      "link": "https://www.nro.gov/",
+      "img": "NRO.png"
+    },
+    {
+      "name": "Department of Homeland Security",
+      "link": "https://www.dhs.gov/",
+      "img": "DHS.png"
+    },
+    {
+      "name": "United States Army INSCOM",
+      "link": "https://www.army.mil/inscom",
+      "img": "Shield.png"
+    },
+    {
+      "name": "Department of Veterans Affairs",
+      "link": "https://www.va.gov/",
+      "img": "VA.png"
+    },
+    {
+      "name": "Federal Aviation Administration",
+      "link": "https://www.faa.gov/",
+      "img": "FAA.png"
+    },
+    {
+      "name": "Center for Disease Control and Prevention",
+      "link": "https://www.cdc.gov/",
+      "img": "CDC.png"
     }
   ]
 }

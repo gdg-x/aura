@@ -4,18 +4,18 @@
       {{ errorMsg }}
       <v-btn color="pink" text @click="errorAlert = false">Close</v-btn>
     </v-snackbar>
-    <v-row
+    <!-- <v-row
       align="center"
       justify="center"
       :style="{'background-image':'url('+require('@/assets/img/svg/bg.svg')+')'}"
       style="background-position:right"
-    >
+    > -->
       <v-col cols="12" md="12" lg="12" sm="12" class>
         <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Upcoming Events</p>
         <p
           class="google-font mt-0"
           style="font-size:95%"
-        >Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.</p>
+        >As events and Trainings are scheduled, they will appear below along with additional contact information for those events. </p>
         <v-row v-if="showLoader">
           <v-col md="4" lg="4" sm="6" cols="12" class="pa-2" v-for="(item,i) in 3" :key="i">
             <upcomingEventLoader />
@@ -54,7 +54,7 @@
           </v-col>
         </v-row>
       </v-col>
-    </v-row>
+    <!-- </v-row> -->
   </v-container>
 </template>
 

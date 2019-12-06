@@ -7,29 +7,29 @@
             <p class="google-font mb-0" style="font-size:150%">About {{communitydata.CommunityName}}</p>
             <p class="google-font mt-0" style="font-size:95%">{{communitydata.CommunityLongDec}}</p>
 
-            <v-btn
+            <!-- <v-btn
               :href="communitydata.CommunityMeetupLink"
               target="_blank"
               outlined
               color
               class="ma-0 google-font"
               style="border-radius:5px;text-transform: capitalize;color:white"
-            >Meetup Page</v-btn>&nbsp;
-            <v-btn
+            >Meetup Page</v-btn>&nbsp; -->
+            <!-- <v-btn
               href="#"
               target="_blank"
               outlined
               color
               class="ma-0 google-font"
               style="border-radius:5px;text-transform: capitalize;color:white"
-            >Facebook Page</v-btn>
-            <br />
+            >Facebook Page</v-btn> -->
+            <!-- <br />
             <br />
             <router-link
               to="/about"
               class="google-font"
               style="text-decoration:none;color:white"
-            >See More about {{communitydata.CommunityName}}</router-link>
+            >See More about {{communitydata.CommunityName}}</router-link> -->
           </div>
         </div>
       </v-col>

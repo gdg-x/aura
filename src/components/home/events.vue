@@ -16,13 +16,13 @@
           class="google-font mt-0"
           style="font-size:95%"
         >At sessions that span from the technical to the visionary, let’s celebrate and discover what the technologies can enable: how product innovation, open source, and ML and AI can propel enterprises forward and solve the big problems that impact all of us.</p>
-        <router-link
+        <!-- <router-link
           to="/events"
           text
           color="#4C4A78"
           class="ma-0 google-font mb-0"
           style="border-radius:5px;text-transform: capitalize;text-decoration:none;color:#4C4A78"
-        >See More</router-link>
+        >See More</router-link> -->
       </v-col>
       <v-col cols="12" md="12" lg="12" sm="12" class="mt-0">
         <v-container fluid>

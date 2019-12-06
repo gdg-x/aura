@@ -1,6 +1,6 @@
 [
   {
-    "FeatureEventName": "IWD'19 Jalandhar",
+    "FeatureEventName": "Training Videos",
     "EventImage": "",
     "EventDate": {
       "Date": "31",
@@ -11,13 +11,13 @@
       "StartTime": "09:00 AM",
       "EndTime": "04:30 PM"
     },
-    "EventDescription": "International Women's Day (IWD) is marked on March 8th every year. In different regions, the focus of celebrations ranges from general respect and appreciation for women to a celebration of women's economic, political, and social achievements.",
-    "EventVenue": "Apeejay Institute of Management Technical Campus, Rama Mandi, Hoshiarpur Road, Jalandhar",
+    "EventDescription": "MITRE hosts and provides training for many of the tools listed and seen here. More information about how to access these will appear as events are announced. ",
+    "EventVenue": "Links and informtaion to future training videos and events will appear here",
     "Links": {
-      "EventVenueMapLink": "https://goo.gl/maps/4Z8pminYsp42",
-      "EventWebsite": "https://iwd.gdgjalandhar.com/",
-      "MeetupLink": "https://www.meetup.com/GDG-Jalandhar/events/253165595/",
-      "RegistrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSciM-nL87uQd_it2ulou1mFv55aXqE9qSSnwL3No3fWhX8OzA/closedform",
+      "EventVenueMapLink": "",
+      "EventWebsite": "",
+      "MeetupLink": "",
+      "RegistrationLink": "",
       "FBEventPageURL": ""
     }
   }

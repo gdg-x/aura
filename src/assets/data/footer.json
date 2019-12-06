@@ -4,23 +4,7 @@
       "About": [
         {
           "LinkName": "MITRE SAF",
-          "Link": ""
-        }
-      ]
-    },
-    {
-      "Resources": [
-        {
-          "LinkName": "Find out More",
-          "Link": "mailto:saf@groups.mitre.org"
-        }
-      ]
-    },
-    {
-      "Developer Console": [
-        {
-          "LinkName": "Coming Soon",
-          "Link": ""
+          "Link": "/about"
         }
       ]
     }

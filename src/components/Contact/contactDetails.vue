@@ -2,13 +2,18 @@
   <v-container fluid class="py-0 my-0 mt-0">
     <v-row class="py-0 my-0">
       <v-col md="9" sm="6" cols="12" class="py-0 my-0">
-        <p
+        <!-- <p
           class="google-font mb-0"
           style="font-size:110%"
-        >Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.</p>
+        >Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.</p> -->
         <br />
-        <p class="google-font">Questions? Please contact {{communitydata.CommunityEmail}}.</p>
-        <p class="google-font mt-4 mb-3" style="font-size:130%">
+        <p class="google-font">Questions? Please contact
+          <a
+            style="color:#1565C0;text-decoration: none;"
+            :href="`mailto:${communitydata.CommunityEmail}`"
+          >{{communitydata.CommunityEmail}}</a>
+        </p>
+        <!-- <p class="google-font mt-4 mb-3" style="font-size:130%">
           Follow Us:
           <span v-for="(item,i) in communitydata.SocialLinks" :key="i">
             <v-tooltip top>
@@ -20,11 +25,11 @@
               <span>{{item.name}}</span>
             </v-tooltip>
           </span>
-        </p>
+        </p> -->
       </v-col>
-      <v-col md="3" sm="6" cols="12" class="py-0 my-0">
+      <!-- <v-col md="3" sm="6" cols="12" class="py-0 my-0">
         <img :src="require('@/assets/img/svg/contact.svg')" style="float:right" width="80%" alt />
-      </v-col>
+      </v-col> -->
     </v-row>
   </v-container>
 </template>
