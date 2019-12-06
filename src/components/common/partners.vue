@@ -21,8 +21,55 @@
         </p>
       </v-col>
     </v-row>
+ 
+      <v-container>
+        <v-row justify="space-between" v-for="(itemp,i) in partnerData" :key="i">
+          <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-if="itemp.length>0" >
+              <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
+          </v-col>
+          <v-sheet
+              class="mx-auto"
+              elevation="0"
+              height="300"
+              max-width="1200">
+              <v-slide-group
+                v-model="model"
+                class="pa-4"
+                :multiple="multiple"
+                :mandatory="mandatory"
+                :show-arrows="showArrows">
+                <v-col v-for="(item,j) in itemp" :key="j" class >
+                  <a v-bind:href="item.link" target="_blank" v-if="itemp.length>0" >
+                    <v-card
+                      :color="active ? 'primary' : '#574B75'"
+                      class="ma-4"
+                      elevation="4"
+                      height="180"
+                      width="200"
+                      @click="toggle">
+                      <v-tooltip bottom>
+                        <template v-slot:activator="{ on }">
+                          <v-img
+                            :src="getImgUrl(item.img)"
+                            :lazy-src="getImgUrl(item.img)"
+                            class="white"
+                            height="100"
+                            width="200"
+                            contain
+                            v-on="on">
+                          </v-img>
+                          <v-card-subtitle class="google-font mb-0" style="color:white"> {{item.name}} </v-card-subtitle>
+                        </template>
+                      </v-tooltip>
+                    </v-card>
+                   </a>
+                 </v-col>
+              </v-slide-group>
+          </v-sheet>
+        </v-row>
+      </v-container>
 
-    <v-row align="center" justify="start" class="mt-0" v-for="(itemp,i) in partnerData" :key="i">
+    <!-- <v-row align="center" justify="start" class="mt-0" v-for="(itemp,i) in partnerData" :key="i">
       <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-if="itemp.length>0">
         <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
       </v-col>
@@ -49,7 +96,7 @@
           </a>
         </div>
       </v-col>
-    </v-row>
+    </v-row>  -->
   </v-container>
 </template>
 

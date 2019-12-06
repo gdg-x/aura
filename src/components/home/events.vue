@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
-    <v-row align="center" justify="center">
-      <v-col cols="12" md="10" lg="10" sm="12" class="text-center mb-0">
+    <v-row align="left" justify="left">
+      <v-col cols="12" md="10" lg="10" sm="12" >
         <p class="google-font mb-1" style="font-weight: 350;font-size:180%">
           <b>
             Our
