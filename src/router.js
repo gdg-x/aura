@@ -8,8 +8,12 @@ Vue.use(Router);
 const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
-  scrollBehavior() {
-    return { x: 0, y: 0 };
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        selector: to.hash
+      }
+    }
   },
   routes: [
     {

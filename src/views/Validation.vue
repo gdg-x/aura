@@ -1,6 +1,6 @@
 <template>
   <v-content>
-    <div class="title text-justify pa-4">
+    <div class="title text-justify pa-2">
       <p>
         These open-source community-based InSpec profiles validate security of
         common system components. MITRE is helping to provide stewardship over
@@ -8,43 +8,32 @@
         are interested in new profiles, please contact us at
         <a
           :href="mail_link"
-        >{{ db.email }}</a>. If you are interested in developing and contributing your own
+        >{{ db.CommunityEmail }}</a>. If you are interested in developing and contributing your own
         profiles, please see our links to Training material.
       </p>
     </div>
-
-    <v-sheet v-for="item in items" :key="item.category" class="ma-4 pa-2">
-      <h2>{{ item.category }}</h2>
-      <v-card
-        flat
-        v-for="(link, entry) in item.values"
-        :key="link"
-        class="ma-4"
-        :href="link"
-        target="_blank"
-        outlined
-      >
-        <v-card-title class="headline break-word">{{ entry }}</v-card-title>
-      </v-card>
-    </v-sheet>
+    <profileTemplate :profiles="baselines" />
   </v-content>
 </template>
 
 <script>
+import profileTemplate from "@/components/profiles/profileTemplate.vue";
 import baselines from "@/assets/data/baselines.json";
-import db from "@/assets/data/db.json";
+import db from "@/assets/data/communitydata.json";
 
 export default {
+  components: {
+    profileTemplate
+  },
   data() {
     return {
-      items: baselines.items, // fetch data
-      db: db, // catch-all for misc data like the contact email
-      width: "1000" // should width be locked in? cards can be bound to this
+      baselines: baselines,
+      db: db
     };
   },
   computed: {
     mail_link() {
-      return "mailto:" + db.email;
+      return "mailto:" + db.CommunityEmail;
     }
   }
 };

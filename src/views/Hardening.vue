@@ -1,46 +1,37 @@
 <template>
   <v-content>
-    <div class="title text-justify pa-4">
+    <div class="title text-justify pa-2">
       <p>
         These open-source community-based hardening baselines help to securely configure common system components. MITRE is helping to provide stewardship over these hardening baselines, hosted here and at other community vendor sites. If you are interested in new hardening baselines, please contact us at
         <a
           :href="mail_link"
-        >{{ db.email }}</a>.
+        >{{ db.CommunityEmail }}</a>.
       </p>
     </div>
-
-    <v-sheet v-for="item in items" :key="item.category" class="ma-4 pa-2">
-      <h2>{{ item.category }}</h2>
-      <v-card
-        flat
-        v-for="(link, entry) in item.values"
-        :key="link"
-        class="ma-4"
-        :href="link"
-        target="_blank"
-        outlined
-      >
-        <v-card-title class="headline break-word">{{ entry }}</v-card-title>
-      </v-card>
-    </v-sheet>
+    <profileTemplate :profiles="hardening" />
   </v-content>
 </template>
 
 <script>
-import baselines from "@/assets/data/hardening.json";
-import db from "@/assets/data/db.json";
+
+import profileTemplate from "@/components/profiles/profileTemplate.vue";
+import hardening from "@/assets/data/hardening.json";
+import db from "@/assets/data/communitydata.json";
 
 export default {
+  components: {
+    profileTemplate
+  },
   data() {
     return {
-      items: baselines.items, // fetch data
-      db: db, // catch-all for misc data like the contact email
-      width: "1000" // should width be locked in? cards can be bound to this
+      hardening: hardening,
+      db: db
+
     };
   },
   computed: {
     mail_link() {
-      return "mailto:" + db.email;
+      return "mailto:" + db.CommunityEmail;
     }
   }
 };
@@ -58,5 +49,3 @@ p {
   hyphens: auto;
 }
 </style>
-
-wrap button text fix the viewports -- buttons should stack
