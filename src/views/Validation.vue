@@ -51,5 +51,3 @@ p {
   hyphens: auto;
 }
 </style>
-
-wrap button text fix the viewports -- buttons should stack

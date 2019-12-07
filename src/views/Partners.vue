@@ -1,5 +1,5 @@
 <template>
-  <v-content class="px-0 mx-0 pt-1">
+  <v-content class="pa-0 pt-5">
     <v-container fluid class="px-0 pt-5 mt-5">
       <v-row
         justify="center"
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import partners from "../components/common/partners";
+import partners from "@/components/common/partners.vue";
 
 export default {
   components: {

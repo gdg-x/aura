@@ -33,7 +33,7 @@
 
     <v-divider></v-divider>
 
-    <v-list dense shaped>
+    <v-list dense>
       <v-list-item
         v-for="(link, i) in links"
         :key="i"
@@ -42,9 +42,10 @@
         @click="onClick($event, link)"
         class="google-font my-0 py-0"
         color="primary"
+        v-if="link.meta.enabled"
       >
         <v-list-item-icon>
-          <v-icon v-text="link.icon"></v-icon>
+          <v-icon>{{ link.meta.enabled ? link.icon : 'mdi-close-circle-outline' }}</v-icon>
         </v-list-item-icon>
 
         <v-list-item-content>

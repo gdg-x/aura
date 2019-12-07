@@ -11,7 +11,7 @@
               :lazy-src="require('@/assets/img/gdg.png')"
               width="4vh"
             ></v-img>
-          </v-col> -->
+          </v-col>-->
           <v-col class="pl-2">
             <router-link
               :to="{ name: 'home'}"
@@ -29,7 +29,7 @@
       v-for="(link, i) in links"
       :key="i"
       :to="link.to"
-      v-if="link.meta.showToolbar"
+      v-if="link.meta.enabled"
       class="ml-2 google-font hidden-sm-and-down"
       style="text-transform: capitalize;"
       text

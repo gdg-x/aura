@@ -12,7 +12,7 @@
       :key="i"
       :to="link.to"
       small
-      v-if="link.meta.showBottomNav"
+      v-if="link.meta.showBottomNav && link.meta.enabled"
       class="ml-0 google-font"
       style="text-transform: capitalize;"
       text
