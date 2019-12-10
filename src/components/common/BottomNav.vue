@@ -15,7 +15,7 @@
         router
         to="/home"
       >
-        <span>Home</span>
+        <span>Acceuil</span>
         <v-icon>dashboard</v-icon>
       </v-btn>
 
@@ -26,7 +26,7 @@
         router
         to="/events"
       >
-        <span>Events</span>
+        <span>Événements</span>
         <v-icon>rounded_corner</v-icon>
       </v-btn>
 
@@ -37,7 +37,7 @@
         router
         to="/team"
       >
-        <span>Team</span>
+        <span>Équipe</span>
         <v-icon>group</v-icon>
       </v-btn>
 
@@ -48,7 +48,7 @@
         router
         to="/about"
       >
-        <span>About</span>
+        <span>À propos</span>
         <v-icon>toc</v-icon>
       </v-btn>
 

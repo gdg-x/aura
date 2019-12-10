@@ -7,10 +7,10 @@ export default new Vuex.Store({
   state: {
     drawer: false,
     items: [ 
-      { text: 'Home', to: '/', icon:'home'},
-      { text: 'Events', to: '/events', icon: 'rounded_corner'},
-      { text: 'Team', to: '/team', icon:'group'},
-      { text: 'About', to: '/about', icon: 'toc'},
+      { text: 'Acceuil', to: '/', icon:'home'},
+      { text: 'Événements', to: '/events', icon: 'rounded_corner'},
+      { text: 'Équipe', to: '/team', icon:'group'},
+      { text: 'À propos', to: '/about', icon: 'toc'},
       { text: 'Contact', to: '/contact', icon:'person'}
     ]
   },
