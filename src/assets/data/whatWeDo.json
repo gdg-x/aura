@@ -1,13 +1,13 @@
 [
   {
     "name": "Validation",
-    "desc": "Get the needed security data at the right time and detail.",
+    "desc": "Get security data at the right time and level of detail.",
     "icon": "mdi-thumb-up",
     "more_link": "https://www.google.com"
   },
   {
     "name": "Hardening",
-    "desc": "Ansible, Chef and Puppet content to counter-point our Validation content.",
+    "desc": "Ansible, Chef and Puppet content to support our Validation content.",
     "icon": "mdi-security",
     "more_link": "https://www.google.com"
   },

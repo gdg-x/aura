@@ -15,7 +15,7 @@
         <p
           class="google-font mt-0"
           style="font-size:95%"
-        >At sessions that span from the technical to the visionary, let’s celebrate and discover what the technologies can enable: how product innovation, open source, and ML and AI can propel enterprises forward and solve the big problems that impact all of us.</p>
+        >MITRE is proud to offer sessions covering topics that span from the technical to the visionary. Join us to discover what technology can enable: how product innovation, open source, machine learning, and atificial intelligence can propel enterprises forward and solve the big problems that impact all of us.</p>
         <!-- <router-link
           to="/events"
           text

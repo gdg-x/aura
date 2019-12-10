@@ -38,7 +38,7 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="pa-0 py-0">
+    <!--<v-container fluid class="pa-0 py-0">
       <v-row
         justify="center"
         align="center"
@@ -49,7 +49,7 @@
           <featureEvents />
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
 
     <v-container fluid class="pa-0 py-2">
       <v-row justify="center" align="center">
