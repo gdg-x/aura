@@ -6,9 +6,9 @@
       </v-col>
       
       <v-container>
-      <v-row justify="space-between" v-for="(itemp,i) in trainingdata" :key="i">
+      <v-row justify="space-between" v-for="(itemp,i) in pasttrainingdata" :key="i">
         <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-if="itemp.length>0">
-          <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
+          <p class="google-font mb-0" style="font-size:150%">{{i}}</p>
         </v-col>
         <!-- <v-sheet class="mx-auto" elevation="1" height="300" max-width="900"> -->
         <v-slide-group class="pa-2" show-arrows>
@@ -77,7 +77,7 @@
 
 <script>
 import communitydata from "@/assets/data/communitydata.json";
-import trainingdata from "@/assets/data/trainingdata.json";
+import pasttrainingdata from "@/assets/data/pasttrainingdata.json";
 import { configData } from "@/config/config";
 import pastEventCard from "@/components/common/card/pastEvent/pastEventCard";
 import pastEventCardLoader from "@/components/common/card/pastEvent/pastEventCardLoader";
@@ -89,7 +89,7 @@ export default {
   },
   data: () => ({
     communitydata: communitydata,
-    trainingdata: trainingdata,
+    pasttrainingdata: pasttrainingdata,
     eventsData: [],
     showData: false,
     showLoader: true,
