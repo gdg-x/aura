@@ -2,12 +2,12 @@
   <v-container fluid>
     <v-row align="center" justify="center">
       <v-col cols="12" md="3" lg="3" sm="12" class="text-center pa-2">
-        <p class="google-font mb-0" style="font-size:150%">What we do?</p>
+        <p class="google-font mb-0" style="font-size:150%">What We Do</p>
         <p
           class="google-font mt-0"
           style="font-size:95%"
-        >The MITRE SAF works to bring the needed technologies, methodologies and patterns together to help bridge the needs of Security with the methods of todays developers and operators.</p>
-        <p class="google-font" style="font-size:95%">About the SAF tool chain and libraries: </p>
+        >The MITRE SAF works to bring together technologies, methodologies and patterns to help meet the needs of security using the tools of today's developers and operators.</p>
+        <p class="google-font" style="font-size:95%">The SAF tool chain and libraries: </p>
 
         <span v-for="(item,i) in communitydata.WhatWeDoTech" :key="i">
           <v-tooltip bottom >
