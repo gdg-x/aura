@@ -7,11 +7,13 @@
 
     <v-layout wrap align-center justify-center row fill-height class="my-3">
       <v-flex xs12 md9 lg9 class="pa-2 text-xs-center">
-        <p class="google-font" style="font-size:170%">Our Events & Meetups</p>
+        <p class="google-font" style="font-size:170%">Nos événements et Meetups</p>
         <p
           class="google-font"
           style="font-size:120%"
-        >At sessions that span from the technical to the visionary, let’s celebrate and discover what the technologies can enable: how product innovation, open source, and ML and AI can propel enterprises forward and solve the big problems that impact all of us.</p>
+        >Nous organisons des rencontres et des événements ciblant l'éducation et l'échange entre les 
+        participants. Tout le monde est invité à découvrir la technologie, l'innovation, 
+        "Open Source", le développement d'applications mobiles et Web et plus encore.</p>
         <router-link
           to="/events"
           flat
@@ -93,7 +95,7 @@
               target="_blank"
               class="mb-0 ml-0 mt-0 google-font"
               style="border-radius:7px;text-transform: capitalize;"
-            >See More</v-btn>
+            >Plus</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -201,7 +203,7 @@ export default {
     fetch(
       "https://cors-anywhere.herokuapp.com/https://api.meetup.com/" +
         MeetupAPI.urlname +
-        "/events?desc=true&photo-host=public&sign=true&page=4&status=past"
+        "/events?&sign=true&photo-host=public&page=4&desc=true&status=past"
     )
       .then(data => data.json())
       .then(res => {

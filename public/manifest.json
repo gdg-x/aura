@@ -1,6 +1,6 @@
 {
-  "name": "GDG Web App",
-  "short_name": "GDG Web App",
+  "name": "Appli GDG Foumban",
+  "short_name": "GDG Foumban App",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -16,6 +16,6 @@
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffff",
-  "theme_color": "#0277bd",
-  "description": "Aura is the website template that helps you to set GDG's Communities website with events, team and management in a few minutes."
+  "theme_color": "#03a9f4",
+  "description": "GDG Foumban est un groupe communautaire ouvert qui s'adresse à tous ceux qui souhaitent apprendre les technologies de base de Google et les technologies connexes qui évoluent chaque jour"
 }

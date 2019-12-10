@@ -1,31 +1,30 @@
 {
-    "ChapterName":"GDG Jalandhar",
-    "ChapterShortDescription":"Google Developers Group Jalandhar is an initiative to concentrate the efforts of many developers in and around Punjab to learn, share and get productive using the various Google products.",
-    "ChapterLongDec":"Google Developer Group Jalandhar is inspired by GTUG/GDG Family . We started our journey in Feb 2011. We try to engage student developers, fresh graduates and professionals through our hack events & meetups. The motive is to create a local ecosystem of programmers & hackers in and around Jalandhar. The technology awareness is main goal for first few years of the group.",
-    "ChapterMeetupLink":"https://www.meetup.com/GDG-Jalandhar",
+    "ChapterName":"GDG Foumban",
+    "ChapterShortDescription": "GDG Foumban est un groupe communautaire ouvert qui s'adresse à tous ceux qui souhaitent apprendre les technologies de base de Google et les technologies connexes qui évoluent chaque jour. Que vous soyez développeur, étudiant, passionné, professionnel ou dans n'importe quel domaine, vous êtes libre de vous inscrire librement.",
+    "ChapterLongDec": ["GDG Foumban est un groupe communautaire ouvert qui s'adresse à tous ceux qui souhaitent apprendre les technologies de base de Google et les technologies connexes qui évoluent chaque jour. Que vous soyez développeur, étudiant, passionné, professionnel ou dans n'importe quel domaine, vous êtes libre de vous inscrire librement. Nous organisons ",
+    "des conférences technologiques tous les mois et de grandes conférences tous les 3 mois. Les participants repartent emballés avec des connaissances sur la manière d'utiliser la technologie, d'y contribuer et de rendre l'environnement meilleur.",
+    "Nos conférences incluent parfois des rafraîchissements, des swags, des autocollants pour ordinateurs portables, des cadeaux et bien plus encore.",
+    "Nous visons à rendre notre région grande. ",
+    "Rejoignez-nous."],
+    "ChapterMeetupLink":"https://www.meetup.com/GDGFoumban",
     "ChapterEmail":"gdgjalandhar@gmail.com",
-    "website":"https://gdgjalandhar.com",
+    "website":"https://gdgfoumban.cm",
     "GDGProgramWebsite":"https://developers.google.com/programs/community/",
-    "ChapterHashTags":["GDGJalandhar","WTMJalandhar","GDG","WTM"],
+    "ChapterHashTags":["GDGFoumban","WTMFoumban","GDG","WTM", "Noun", "Ouest"],
     "socialLinks":[
         {
             "name" : "Facebook",
-            "link" : "https://www.facebook.com/GDGJalandhar/",
+            "link" : "https://www.facebook.com/GDGfoumban/",
             "icon" : "fab fa-facebook"
         },
         {
-            "name" : "Google Plus",
-            "link" : "https://plus.google.com/u/0/+GdgjalandharIn/posts",
-            "icon" : "fab fa-google-plus"
-        },
-        {
             "name" : "Twitter",
-            "link" : "https://twitter.com/gdgjalandhar",
+            "link" : "https://twitter.com/GDGFoumban",
             "icon" : "fab fa-twitter"
         },
         {
             "name" : "Meetup",
-            "link" : "https://www.meetup.com/GDG-Jalandhar/",
+            "link" : "https://www.meetup.com/GDGFoumban",
             "icon" : "fab fa-meetup"
         }
     ],

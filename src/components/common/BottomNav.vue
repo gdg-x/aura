@@ -11,7 +11,7 @@
       <v-btn
         color="#518FF5"
         flat
-        value="Home"
+        value="Acceuil"
         router
         to="/home"
       >

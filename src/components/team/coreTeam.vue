@@ -44,12 +44,13 @@
         </v-layout>
 
 
-
     </v-container>
 </template>
 
 <script>
 import TeamDetails from '@/assets/data/coreTeam.json'
+
+
 export default {
     data() {
         return {
@@ -58,6 +59,7 @@ export default {
             showData:false,
         }
     },
+    
     mounted(){
         
     },
@@ -76,4 +78,5 @@ export default {
         }
     }
 }
+
 </script>
