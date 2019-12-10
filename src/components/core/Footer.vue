@@ -1,6 +1,7 @@
 <template>
   <v-footer
     height="auto"
+    fixedfir
     class="hidden-sm-and-down ma-0"
     :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'"
   >

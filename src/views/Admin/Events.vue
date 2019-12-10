@@ -1,5 +1,5 @@
 <template>
-  <v-content class="grey lighten-5">
+  <v-content class="">
     <v-container fluid class="text-center ">
       <v-row justify="center" align="center">
           <v-col cols="12" md="11">
