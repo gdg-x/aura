@@ -10,7 +10,7 @@
       right
       color="primary"
       @click="toTop"
-        :style="moveForBottomNavStyle"
+      :style="moveForBottomNavStyle"
     >
       <v-icon>mdi-arrow-up-bold-circle-outline</v-icon>
     </v-btn>
@@ -66,11 +66,11 @@ export default {
   computed: {
     moveForBottomNavStyle() {
       if (this.$vuetify.breakpoint.smAndDown) {
-        return "z-index: 10; bottom: 60px"
+        return "z-index: 10; bottom: 60px";
       } else {
-        return ""
+        return "";
       }
-    },
+    }
   }
 };
 </script>

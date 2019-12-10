@@ -40,9 +40,10 @@
 
     <v-container fluid class="pa-0 py-0">
       <v-row
+        v-if="showTraining"
         justify="center"
         align="center"
-        class="py-4"
+        class="py-2"
         :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
       >
         <v-col md="12" lg="10" xs="12" class="py-0">
@@ -77,6 +78,11 @@ export default {
     events,
     featureEvents,
     partners
+  },
+  computed: {
+    showTraining() {
+      return this.$store.state.showFutureTraining;
+    }
   },
   created() {
     let metaThemeColor = document.querySelector("meta[name=theme-color]");

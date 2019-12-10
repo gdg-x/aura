@@ -38,27 +38,33 @@
   "WhatWeDoTech": [
     {
       "TechName": "Heimdall Lite",
-      "link": "https://github.com/mitre/heimdall-lite"
+      "link": "https://github.com/mitre/heimdall-lite",
+      "icon": "mdi-web"
     },
     {
       "TechName": "Heimdall Server",
-      "link": "https://github.com/mitre/heimdall"
+      "link": "https://github.com/mitre/heimdall",
+      "icon": "mdi-web"
     },
     {
       "TechName": "InSpec_Tools",
-      "link": "https://github.com/mitre/inspec_tools/"
+      "link": "https://github.com/mitre/inspec_tools/",
+      "icon": "mdi-web"
     },
     {
       "TechName": "Heimdall_Tools",
-      "link": "https://github.com/mitre/heimdall_tools"
+      "link": "https://github.com/mitre/heimdall_tools",
+      "icon": "mdi-web"
     },
     {
       "TechName": "InSpecJS_Tools",
-      "link": "https://github.com/mitre/inspec_tools_js/"
+      "link": "https://github.com/mitre/inspec_tools_js/",
+      "icon": "mdi-web"
     },
     {
       "TechName": "HeimdallJS_Tools",
-      "link": "https://github.com/mitre/heimdalljs_tools"
+      "link": "https://github.com/mitre/heimdalljs_tools",
+      "icon": "mdi-web"
     }
   ],
   "CommunityGuideline": [
