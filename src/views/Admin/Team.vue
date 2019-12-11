@@ -92,21 +92,6 @@
         </v-col>
         
       </v-row>
-      <!-- <v-row justify="center" align="center"> 
-          <v-col cols="12" md="11">
-            <v-data-table
-            :headers="headers"
-            :items="teamData"
-            :items-per-page="10"
-            :search="search"
-            class="elevation-1"
-            :loading="loading" 
-            loading-text="Loading... Please wait"
-            >
-               
-            </v-data-table>
-          </v-col>
-      </v-row> -->
       
     </v-container>
   </v-content>
