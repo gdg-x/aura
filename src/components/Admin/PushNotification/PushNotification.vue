@@ -62,7 +62,7 @@ export default {
                             "title": this.title,    
                             "body": {
                                 "body":this.body,
-                                "eventID": "Devfest",
+                                "eventID": "devfest",
                                 "regLink": "https://somelink.com",
                             },
                             "tag":"newEvent",
