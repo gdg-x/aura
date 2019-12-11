@@ -143,15 +143,6 @@ const router = new Router({
       }
     },
     {
-<<<<<<< HEAD
-      path:'/admin/dashboard/team/:id',
-      name:"admin-team-member",
-      component:()=> import('@/views/Admin/Team/showTeam'),
-      meta:{
-        title:`Admin Dashboard | ${communitydata.CommunityName}`,
-        color:"#0277bd",
-        requiresAuth: true,
-=======
       path: '*',
       name: 'redirect',
       redirect: { path: '/' },
@@ -159,7 +150,6 @@ const router = new Router({
         title:`Redirect | ${communitydata.CommunityName}`,
         color:"#0277bd",
         requiresAuth: false,
->>>>>>> 6e5e91ebd73c00cccec308a37e59ab40bc4c2ca5
       }
     },
   ]
