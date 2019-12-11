@@ -163,6 +163,26 @@ const router = new Router({
       }
     },
     {
+      path:'/admin/dashboard/speaker',
+      name:"admin-events",
+      component:()=> import('@/views/Admin/Speaker'),
+      meta:{
+        title:`Admin Dashboard | ${communitydata.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: true,
+      }
+    },
+    {
+      path:'/admin/dashboard/speaker/:id',
+      name:"admin-speaker-member",
+      component:()=> import('@/views/Admin/Speaker/viewSpeaker'),
+      meta:{
+        title:`Admin Dashboard | ${communitydata.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: true,
+      }
+    },
+    {
       path: '*',
       name: 'redirect',
       redirect: { path: '/' },

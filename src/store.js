@@ -34,6 +34,15 @@ export default new Vuex.Store({
           showToolbar: false,
           showBottomNav: true
         }, 
+      },
+      { 
+        text: 'Speaker', 
+        to: '/admin/dashboard/speaker', 
+        icon: 'mdi-account-switch', 
+        meta:{
+          showToolbar: false,
+          showBottomNav: true
+        }, 
       }
     ],
     items: [ 
