@@ -63,6 +63,16 @@ const router = new Router({
       }
     },
     {
+      path: '/team/:id',
+      name: 'team-details',
+      component: () => import( './views/ViewTeam.vue'),
+      meta:{
+        title:'Team | '+communitydata.CommunityName,
+        color:'#0277bd',
+        requiresAuth:false
+      }
+    },
+    {
       path: '/contact',
       name: 'contact',
       component: () => import( './views/Contact.vue'),
