@@ -46,6 +46,8 @@ self.addEventListener('notificationclick', function(event) {
         clients.openWindow(dataPush.body.regLink);
     }else if(event.action === 'visit'){
         clients.openWindow("/events/"+dataPush.body.eventID);
+    }else{
+        clients.openWindow("/");
     }
     event.notification.close();
 }, false);
