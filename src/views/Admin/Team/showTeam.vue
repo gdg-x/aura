@@ -35,6 +35,14 @@
                     <editTeam :teamData="teamData" v-on:editedSuccess="editedSuccessFun" class="mr-2" v-if="showTeamData"/>
                     &nbsp;
                     <removeTeam class="mr-1" v-if="showTeamData" :teamData="{id:$route.params.id,name:teamData.name}" />
+                    <v-tooltip top>
+                        <template v-slot:activator="{ on }">
+                            <v-btn icon v-on="on" v-on:click="showPublicURL($route.params.id)">
+                            <v-icon color="grey lighten-1">mdi-cart</v-icon>
+                            </v-btn>
+                        </template>
+                        <span>Programmatic tooltip</span>
+                    </v-tooltip>
                 </v-toolbar>
               <!-- {{$route.params.id }} -->
           </v-col> 
@@ -191,7 +199,11 @@ export default {
             this.$router.replace('login')
         }
     },
-    methods:{  
+    methods:{ 
+      showPublicURL(uid){
+          console.log(uid)
+        this.$router.push({ path: `/team/${uid}` })
+      },
       editedSuccessFun(){
         console.log('calls')
         this.snackbarSuccess = true

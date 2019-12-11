@@ -4,6 +4,7 @@
       <v-row justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'black':'grey lighten-4'" >
         <v-col md="12" lg="10" xs="12" class="pt-3 bottom-space"  >
           <h1>Team</h1>
+          {{$route.params.id}}
         </v-col>
       </v-row>
     </v-container>
@@ -15,9 +16,6 @@
 <script>
 export default {
   components: {
-    teamHeader,
-    CoreTeam,
-    organizingTeam
   },
   created(){
     let metaThemeColor = document.querySelector("meta[name=theme-color]");
@@ -31,27 +29,7 @@ export default {
 </script>
 
 <style scoped>
-  .darkbg{
-    /* background: #1F1A24 */
-  }
-  @media screen and (min-width: 600px) {
-    .card-top-margin {
-      margin-top:-110px
-    }
-    .bottom-space{
-      margin-bottom: 80px;
-      margin-top: 20px
-    }
-  }
 
-  @media screen and (max-width: 600px) {
-    .card-top-margin {
-      margin-top:-100px
-    }
-    .bottom-space{
-      margin-bottom: 50px
-    }
-  }
 </style>
 
 
