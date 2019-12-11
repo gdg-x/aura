@@ -12,8 +12,8 @@
     </v-col>
       
     <v-container>
-      <v-row justify="space-between" v-for="(itemp,i) in pasttrainingdata" :key="i">
-        <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-if="itemp.length>0">
+      <v-row justify="space-between">
+        <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-for="item in pasttrainingdata.training" :key="item">
           <v-dialog v-model="dialog" width="700">
             <template v-slot:activator="{ on }">
               <div
@@ -25,7 +25,7 @@
                 <p class="google-font mt-1 mb-0" style="font-size:90%">{{item.data}}</p>
                 <p class="google-font ma-0 mt-0" style="font-size:120%;">{{item.name }}</p>
                 <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
-              </div> -->
+              </div>
             </template>
             
             <v-card color v-if="dialog">
