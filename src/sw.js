@@ -1,3 +1,4 @@
+
 self.addEventListener('message', (e) => {
     if (!e.data) {
         return;
@@ -12,22 +13,42 @@ self.addEventListener('message', (e) => {
     }
 });
 
-importScripts('https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js')
-importScripts('https://www.gstatic.com/firebasejs/3.5.2/firebase-messaging.js')
+var dataPush = {}
 
-var config = {
-    apiKey: "AIzaSyBb-1hlnQfIELblC3HUqzI-M29xiwoMYds",
-    authDomain: "aura-gdg.firebaseapp.com",
-    databaseURL: "https://aura-gdg.firebaseio.com",
-    projectId: "aura-gdg",
-    storageBucket: "aura-gdg.appspot.com",
-    messagingSenderId: "157303555912",
-    appId: "1:157303555912:web:04c0e431777d1ee41f557d"
+self.addEventListener('push', (event)=>{
+    if (event.data) {
+        let data = JSON.parse(event.data.text());
+        dataPush = data.notification
+        dataPush.body = JSON.parse(dataPush.body);
+    }
+    var options = {
+        body: dataPush.body.body,
+        icon: 'img/icons/favicon-32x32.png',
+        dir: 'ltr',
+        image: dataPush.image,
+        badge: 'img/icons/favicon-32x32.png',
+        tag: dataPush.tag,
+        requireInteraction:true,
+        renotify: true,
+        actions: [{
+            action: 'register',
+            title: 'Register'
+        },{
+            action: 'visit',
+            title: 'view Event'
+        }]
+    };
+    event.waitUntil(self.registration.showNotification(dataPush.title, options));
 }
-
-firebase.initializeApp(config)
-
-const messaging = firebase.messaging()
+);
+self.addEventListener('notificationclick', function(event) {
+    if (event.action === 'register') {
+        clients.openWindow(dataPush.body.regLink);
+    }else if(event.action === 'visit'){
+        clients.openWindow("/events/"+dataPush.body.eventID);
+    }
+    event.notification.close();
+}, false);
 
 workbox.clientsClaim();
 

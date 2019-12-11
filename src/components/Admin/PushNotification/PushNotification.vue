@@ -50,6 +50,7 @@ export default {
     },
     methods:{
         send(){
+            this.isLoading = true;
             firebase.firestore.collection("apiEnd")
             .get()
             .then(docs => {
@@ -59,10 +60,14 @@ export default {
                         "to": token,  
                         "notification": {    
                             "title": this.title,    
-                            "body": this.body,    
-                            // "icon": require('@/assets/img/gdg-logo.svg')
-                            "icon":"https://dsccu.in/images/icons/android-icon-192x192.png"
-                        }
+                            "body": {
+                                "body":this.body,
+                                "eventID": "Devfest",
+                                "regLink": "https://somelink.com",
+                            },
+                            "tag":"newEvent",
+                            "image": "https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-9/69274786_2500025083374637_3726796238599749632_o.jpg?_nc_cat=107&_nc_oc=AQmIdUSs5JrL3yJYZemhw9-p_vLaCAETQdF2L4nmOLwCjF0XCWyjx2pdRJCpKMw9zdjWmrVrePm_P8hKhUFpKSIL&_nc_ht=scontent.fdel1-2.fna&oh=0241c4f1c5c4deacc2d547f28fba9f7e&oe=5E8C8A1E",
+                        },
                     }
                     const options = {
                         method: 'POST',
@@ -74,6 +79,7 @@ export default {
                     .then((data) =>{
                         this.isSuccessAlert = true;
                         console.log(data);
+                        this.isLoading = false;
                     })
                     .catch((err)=>alert(err));
                 });
