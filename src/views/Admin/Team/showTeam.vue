@@ -35,13 +35,14 @@
                     <editTeam :teamData="teamData" v-on:editedSuccess="editedSuccessFun" class="mr-2" v-if="showTeamData"/>
                     &nbsp;
                     <removeTeam class="mr-1" v-if="showTeamData" :teamData="{id:$route.params.id,name:teamData.name}" />
-                    <v-tooltip top>
+
+                    <v-tooltip bottom v-if="showTeamData">
                         <template v-slot:activator="{ on }">
-                            <v-btn icon v-on="on" v-on:click="showPublicURL($route.params.id)">
-                            <v-icon color="grey lighten-1">mdi-cart</v-icon>
+                            <v-btn icon v-on="on" target="_blank" v-on:click="showPublicURL($route.params.id)">
+                            <v-icon color="indigo">mdi-eye</v-icon>
                             </v-btn>
                         </template>
-                        <span>Programmatic tooltip</span>
+                        <span>Show Public URL</span>
                     </v-tooltip>
                 </v-toolbar>
               <!-- {{$route.params.id }} -->
@@ -129,21 +130,6 @@
             </v-container>
         </v-col>
     </v-row>
-      <!-- <v-row justify="center" align="center"> 
-          <v-col cols="12" md="11">
-            <v-data-table
-            :headers="headers"
-            :items="teamData"
-            :items-per-page="10"
-            :search="search"
-            class="elevation-1"
-            :loading="loading" 
-            loading-text="Loading... Please wait"
-            >
-               
-            </v-data-table>
-          </v-col>
-      </v-row> -->
       
     </v-container>
   </v-content>
@@ -169,19 +155,7 @@ export default {
         teamLoader:true,
         search:'',
         loading:true,
-        headers: [
-          {
-            text: 'Name',
-            align: 'left',
-            sortable: false,
-            value: 'name',
-          },
-          { text: 'Designation', value: 'designation' },
-          { text: 'Role', value: 'role' },
-          { text: 'Visible', value: 'visible' },
-          { text: 'Active', value: 'active' },
-          { text: 'See More', value: '' },
-        ],
+       
         teamData:[],
         snackbarSuccess:false
     }),
@@ -201,8 +175,8 @@ export default {
     },
     methods:{ 
       showPublicURL(uid){
-          console.log(uid)
-        this.$router.push({ path: `/team/${uid}` })
+        let routeData = this.$router.resolve({path: `/team/${uid}`});
+        window.open(routeData.href, '_blank');
       },
       editedSuccessFun(){
         console.log('calls')
