@@ -187,6 +187,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Cloud Hanoi | [View Now](https://gdgcloudhanoi.com/) |
 | GDG Ulaanbaatar | [View Now](https://gdgub.org/) |
 | GDG Ado-Ekiti | [View Now](https://gdgadoekiti.com) |
+| GDG Gwalior | [View Now](https://gdggwalior.in/) |
 
 
 Project is published under the [MIT license](/LICENSE.md).  
