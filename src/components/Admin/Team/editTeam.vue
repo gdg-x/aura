@@ -1,17 +1,24 @@
 <template>
     <v-dialog
       v-model="dialog"
-      width="800"
+      width="1200"
     >
       <template v-slot:activator="{ on }">
-        <v-btn
-          small
-          color="cyan"
-          dark
-          v-on="on"
-        >
-          Edit {{teamData.name}} Details 
-        </v-btn>
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+              <v-btn
+                icon
+                color="primary"
+                v-on="on" 
+                @click.stop="dialog = true" 
+                dark
+              >
+                <v-icon >mdi-lead-pencil</v-icon>
+                <!--  -->
+              </v-btn>
+          </template>
+          <span>Edit {{teamData.name}} Details </span>
+        </v-tooltip>
       </template>
 
       <v-card v-if="dialog">
@@ -24,184 +31,199 @@
           Edit {{teamData.name}} Details
         </v-card-title>
 
-        <v-card-text>
-          <v-container fluid>
-              <v-layout row wrap>
-                  <v-flex xs12 md12 >
-                    <v-form
+        <v-card-text class="">
+          <v-container fluid class="pa-0">
+              <v-row class="pa-0">
+                <v-col md="12" cols="12">
+                  <v-form
                         ref="form"
                         v-model="valid"
                         lazy-validation
-                    >
-                      <v-layout row wrap class="pa-3">
-                          <v-flex xs12 class="pa-1 ma-0">
-                              <p style="font-size:120%" class="my-0">Team Member Status</p>
-                          </v-flex>
+                  >
+                    <!-- Row 1 -->
+                    <v-row class="pa-3">
+                      <v-col md="12" cols="12" class="pa-1 ma-0">
+                        <p style="font-size:120%" class="my-0">Team Member Status</p>
+                      </v-col>
 
-                          <v-flex xs3 class="pa-1 ma-0">
-                                <v-select
-                                :items="items"
-                                v-model="updatedData.active"
-                                label="Active Status"
-                                outlined
-                                ></v-select>
-                          </v-flex>
-                          <v-flex xs3 class="pa-1 ma-0">
-                                <v-select
-                                :items="items"
-                                v-model="updatedData.visible"
-                                label="Visiblity Status"
-                                outlined
-                                ></v-select>
-                          </v-flex>
-                          <v-flex xs3 class="pa-1 ma-0">
-                                <v-text-field
-                                    v-model="updatedData.id"
-                                    class="ma-0"
-                                    disabled
-                                    label="ID"
-                                    type="text"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs3 class="pa-1 ma-0">
-                                <v-select
-                                    :items="teamRole"
-                                    v-model="updatedData.role"
-                                    label="Role"
-                                    outlined
-                                ></v-select>
-                          </v-flex>
-                      </v-layout>
+                      <v-col md="3" xs="3" cols="12" class="pa-1 ma-0">
+                        <v-select
+                        :items="items"
+                        v-model="updatedData.active"
+                        label="Active Status"
+                        outlined
+                        ></v-select>
+                      </v-col>
 
-                      <v-layout row wrap class="pa-3">
-                          <v-flex xs12 class="pa-1 ma-0">
-                              <p style="font-size:120%" class="my-0">Team Member Info</p>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    v-model="updatedData.name"
-                                    :rules="nameRules"
-                                    class="ma-0"
-                                    label="Name"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    v-model="updatedData.designation"
-                                    class="ma-0"
-                                    :rules="nameRules"
-                                    label="Desigination"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          
-                          <v-flex xs8 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="updatedData.image"
-                                    label="Profile Image URL"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          
-                          <v-flex xs10 class="pa-1 ma-0">
-                                <v-textarea
-                                outlined
-                                name="input-7-4"
-                                v-model="updatedData.bio"
-                                label="Bio"
-                                ></v-textarea>
-                          </v-flex>
+                      <v-col md="3" xs="3" cols="12" class="pa-1 ma-0">
+                        <v-select
+                        :items="items"
+                        v-model="updatedData.visible"
+                        label="Visiblity Status"
+                        outlined
+                        ></v-select>
+                      </v-col>
 
-                      </v-layout>
+                      <v-col md="3" xs="3" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            v-model="updatedData.id"
+                            class="ma-0"
+                            disabled
+                            label="ID"
+                            type="text"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
 
-                      <v-layout row wrap class="pa-3">
-                          <v-flex xs12 class="pa-1 ma-0">
-                              <p style="font-size:120%" class="my-0">Personal Info</p>
-                          </v-flex>
+                      <v-col md="3" xs="3" cols="12" class="pa-1 ma-0">
+                        <v-select
+                            :items="teamRole"
+                            v-model="updatedData.role"
+                            label="Role"
+                            outlined
+                        ></v-select>
+                      </v-col>
 
-                          <v-flex xs4 class="pa-1 ma-0">
-                              <v-text-field
-                                    class="ma-0"
-                                    v-model="updatedData.mbnumber"
-                                    label="Contact Number"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs6 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="updatedData.email"
-                                    :rules="emailRules"
-                                    label="Email Id"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          
-                      </v-layout>
+                    </v-row>
+                    <!-- Row 1 -->
 
-                      <v-layout row wrap class="pa-3">
-                          <v-flex xs12 class="pa-1 ma-0">
-                              <p style="font-size:120%" class="my-0">Social Links</p>
-                              <!-- {{teamData}} -->
-                              <!-- {{updatedData}} -->
-                          </v-flex>
+                    <!-- Row 2 -->
+                    <v-row class="pa-3">
+                      <v-col md="12" cols="12" class="pa-1 ma-0">
+                        <p style="font-size:120%" class="my-0">Team Member Info</p>
+                      </v-col>
 
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    label="Facebook"
-                                    outlined
-                                    v-model="updatedData.socialLinks.facebook"
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    label="Github"
-                                    v-model="updatedData.socialLinks.github"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="updatedData.socialLinks.linkedin"
-                                    label="Linkedin"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="updatedData.socialLinks.meetup"
-                                    label="Meetup"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="updatedData.socialLinks.twitter"
-                                    label="Twitter"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="updatedData.socialLinks.web"
-                                    label="Website/Blog"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                      </v-layout>
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            v-model="updatedData.name"
+                            :rules="nameRules"
+                            class="ma-0"
+                            label="Name"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
 
-                    </v-form>
-                  </v-flex>
-              </v-layout>
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            v-model="updatedData.designation"
+                            class="ma-0"
+                            :rules="nameRules"
+                            label="Desigination"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+
+                      <v-col md="12" xs="12" cols="12" class="pa-1 ma-0">
+                        <v-textarea
+                        outlined
+                        name="input-7-4"
+                        v-model="updatedData.bio"
+                        label="Bio"
+                        ></v-textarea>
+                      </v-col>
+
+                    </v-row>
+                    <!-- Row 2 -->
+
+
+                    <!-- Row 3 -->
+                    <v-row class="pa-3">
+                      <v-col md="12" cols="12" class="pa-1 ma-0">
+                        <p style="font-size:120%" class="my-0">Personal Info</p>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="updatedData.mbnumber"
+                            label="Contact Number"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+
+                      <v-col md="8" xs="8" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="updatedData.email"
+                            :rules="emailRules"
+                            label="Email Id"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+                    </v-row>
+                    <!-- Row 3 -->
+
+                    <!-- Row 4 -->
+                    <v-row class="pa-3">
+                      <v-col md="12" cols="12" class="pa-1 ma-0">
+                        <p style="font-size:120%" class="my-0">Social Links</p>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            label="Facebook"
+                            outlined
+                            v-model="updatedData.socialLinks.facebook"
+                        ></v-text-field>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            label="Github"
+                            v-model="updatedData.socialLinks.github"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="updatedData.socialLinks.linkedin"
+                            label="Linkedin"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="updatedData.socialLinks.meetup"
+                            label="Meetup"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="updatedData.socialLinks.twitter"
+                            label="Twitter"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="updatedData.socialLinks.web"
+                            label="Website/Blog"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+                    </v-row>
+                    <!-- Row 4 -->
+
+                  </v-form> 
+                </v-col>
+              </v-row>
+             
           </v-container>
         </v-card-text>
 
@@ -328,8 +350,9 @@ import { firestore } from 'firebase';
                     });
                 }).then(()=>{
                     // alert('Data Updated')
-                    self.loading = false
-                    self.dialog = false 
+                  self.loading = false
+                  self.dialog = false 
+                  self.$emit('editedSuccess')
                 }).catch(e=>{
                     console.log(e)
                     self.loading = false

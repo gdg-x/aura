@@ -30,7 +30,7 @@
           </div>
       </template>
 <!-- :style="{'background-image':'url('+require('@/assets/img/svg/footer.svg')+')'}" -->
-      <v-card color="" v-if="dialog">
+      <v-card color="" v-if="dialog" class="" style="border-radius:10px">
         <v-card-title
           class="px-5 py-5 google-font"
           style="background-position:right bottom;"
@@ -81,9 +81,10 @@
 
         <v-divider></v-divider>
 
-        <v-card-actions>
+        <v-card-actions :class="this.$vuetify.theme.dark == true?'grey darken-3':'grey lighten-3'">
           <v-spacer></v-spacer>
           <v-btn
+            
             color="primary"
             text
             @click="dialog = false"

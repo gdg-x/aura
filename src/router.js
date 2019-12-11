@@ -152,6 +152,16 @@ const router = new Router({
         requiresAuth: true,
       }
     },
+    {
+      path:'/admin/dashboard/team/:id',
+      name:"admin-team-member",
+      component:()=> import('@/views/Admin/Team/showTeam'),
+      meta:{
+        title:`Admin Dashboard | ${communitydata.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: true,
+      }
+    },
   ]
 })
 

@@ -6,14 +6,22 @@
       max-width="300"
     >
       <template v-slot:activator="{ on }">
-        <v-btn
-          small
-          dark
-          color="red"
-          @click.stop="dialog = true"
-      >
-          Remove
-      </v-btn>
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn
+                icon
+                v-on="on"
+                dark
+                color="red"
+                @click.stop="dialog = true"
+            >
+              <v-icon>mdi-delete</v-icon>
+            </v-btn>
+          </template>
+          <span>Remove {{teamData.name}}  </span>
+        </v-tooltip>
+
+        
       </template>
       <v-card>
         <v-card-title class="headline">Are you sure?</v-card-title>
@@ -68,9 +76,9 @@
                     doc.ref.delete()
                     this.loading = false
                     this.dialog = false
-                    
-                    alert('Data Deleted')
-                    this.$emit('removeSuccess')
+                    this.$emit('RemoveSuceess')
+                    this.$router.push({ path: '/admin/dashboard/team', query: { msg: 'removesuccess' } })
+                    // this.$router.replace('/admin/dashboard/team?msg=removesuccess')
                 })
             })
         },

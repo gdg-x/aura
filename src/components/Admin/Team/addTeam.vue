@@ -290,7 +290,7 @@ import { firestore } from 'firebase';
                         web: this.web,
                     }
                 }
-                firebase.firestore().collection('team').add(Data).then(res=>{
+                firebase.firestore().collection('team').doc(Data.id).set(Data).then(res=>{
                     // console.log(res)
                     this.dialog = false
                     this.$emit('showSuccess')
