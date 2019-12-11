@@ -21,9 +21,9 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 | **Fast and optimized** | PWA on Lighthouse |
 | **Works offline** | Can works offline |
 | **Mobile first** | Mobo Friendly Web app can be installed as a native app on your phone |
-| **SEO optimized** | index all content and get to the top in search results |
-| **Easy in management** | keep and update all information in the Admin Pannel |
-| **Push Notification** | Sending Push Notifictaion using Admin Dashboard |
+| **SEO optimized** | Index all content and get to the top in search results |
+| **Easy in management** | Keep and update all information in the Admin Panel |
+| **Push Notification** | Sending Push Notification using Admin Dashboard |
 | **Custom Event Rroting** | Now no need to create the website for XYZ events/Meetups |
 | **Dark Theme Mode** | Added Dark theme mode |
 | **Blogs Integration** | Blogs page with Medium API Integration |
