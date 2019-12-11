@@ -1,71 +1,71 @@
 <template>
-    <v-list two-line subheader class="py-0" :class="$vuetify.theme.dark == true?'black':'white'">
-        <v-list-item
-        >
-            <v-list-item-avatar>
-                <v-avatar :class="$vuetify.theme.dark == true?'grey darken-3':'grey lighten-2'" >
-                    <span class="google-font" style="width:100vh">{{getCharString(data.data.name)}}</span>
-                </v-avatar>
-            </v-list-item-avatar>
+  <v-dialog v-model="dialog" width="700">
+    <template v-slot:activator="{ on }">
+      <div
+        v-on="on"
+        style="cursor: pointer;"
+        :class="$vuetify.theme.dark == true?'darkModeCard':'lightModeCard'"
+        class="pa-3"
+      >
+        <p class="google-font mt-1 mb-0" style="font-size:90%">{{item.date}}</p>
+        <p class="google-font ma-0 mt-0" style="font-size:120%;">{{item.name}}</p>
+        <v-btn v-on="on" >See More</v-btn>            
+      </div>   
+     </template>
 
-            <v-list-item-content>
-                <v-list-item-title class="google-font" v-text="data.data.name"></v-list-item-title>
-                <v-list-item-subtitle class="google-font">{{ data.data.local_date | dateFilter}} | {{ data.data.local_time }}</v-list-item-subtitle>
-            </v-list-item-content>
+      <v-card>
+        <v-card-title
+          class="px-5 py-5 google-font"
+          style="background-position:right bottom;"
+        >{{item.name}}</v-card-title>
 
-            <v-list-item-action>
-            <v-btn icon :href="data.data.link" target="_blank">
-                <v-icon color="grey lighten-1">mdi-information</v-icon>
-            </v-btn>
-            </v-list-item-action>
-        </v-list-item>
+        <v-card-text class="pa-5">
+          <p class="google-font mt-3 mb-0" style="font-size:110%">
+            <b>Venue:</b>
+            {{item.venue}}
+          </p>
+          <p class="google-font mt-1 mb-0" style="font-size:110%">
+            <b>Date:</b>
+            {{item.date}}
+          </p>
+          <p class="google-font mt-0 mb-0" style="font-size:110%;">
+            <b>Video Day 1:</b>
+            {{item.D1link}}
+          </p>
+          <p class="google-font mt-0 mb-0" style="font-size:110%;">
+            <b>Video Day 2:</b>
+            {{item.D2link}}
+          </p>
+          <p class="google-font mt-3 mb-0" style="font-size:110%">
+            <b>Description:</b>
+            {{item.description}}
+          </p>
+        </v-card-text>
 
-        <v-divider inset></v-divider>
-    </v-list>
-</template>
+      
+        <v-divider></v-divider>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" text @click="dialog = false" >Close</v-btn>
+        </v-card-actions>
+
+      </v-card>
+    </v-dialog>
+  </template>
 
 <script>
-  export default {
-    props:{
-      data:{
-        data:{}
-      }
-    },
-    data () {
-      return {
-        dialog: false,
-      }
-    },
-    methods:{
-      getCharString(data) {
-      var splitArr = data.split(" ");
-        if (splitArr.length > 1) {
-          return (
-            splitArr[0].substring(0, 1) +
-            "" +
-            splitArr[1].substring(0, 1)
-          ).toUpperCase();
-        } else {
-          return splitArr[0].substring(0, 1).toUpperCase();
-        }
-      }
-    },
-    filters:{
-        summary: (val,num)=>{
-          if(val.length > num){
-            return val.substring(0,num)+".."
-          }else{
-            return val
-          }
-        },
-        dateFilter: value => {
-            const date = new Date(value);
-            return date.toLocaleString(["en-US"], {
-                month: "short",
-                day: "2-digit",
-                year: "numeric"
-            });
-        }
-    }
-  }
+export default {
+  name: "App",
+  components: {
+    pasteventCard,
+    pastEventCardLoader
+  },
+  data: () => ({
+    communitydata: communitydata,
+    pasttrainingdata: pasttrainingdata,
+    dialog: false
+  })
+};
 </script>
+    

@@ -16,7 +16,7 @@
     <v-container>
       <v-row v-for="(itemp,i) in pasttrainingdata" :key="i">
         <v-col md="3" lg="3" sm="6" cols="6" class="pa-2" v-for="(item,j) in itemp" :key="j" >
-            <v-dialog v-model="dialog" width="700">
+            <v-dialog v-model="dialog" width="800">
               <template v-slot:activator="{ on }">
                 <div
                   v-on="on"
@@ -24,10 +24,14 @@
                   :class="$vuetify.theme.dark == true?'darkModeCard':'lightModeCard'"
                   class="pa-3"
                 >
+                  <!-- <v-list-item>
+                    <v-list-item-avatar color="#1a73e8"></v-list-item-avatar>
+                  </v-list-item> -->
                   <p class="google-font mt-1 mb-0" style="font-size:90%">{{item.date}}</p>
                   <p class="google-font ma-0 mt-0" style="font-size:120%;">{{item.name}}</p>
-                  <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
+                  <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>                
                 </div>
+                
               </template>
               <v-card color v-if="dialog">
                 <v-card-title
@@ -36,10 +40,25 @@
                 >{{item.name}}</v-card-title>
 
                 <v-card-text class="pa-5">
-
+                  <p class="google-font mt-3 mb-0" style="font-size:110%">
+                    <b>Venue:</b>
+                    {{item.venue}}
+                  </p>
                   <p class="google-font mt-1 mb-0" style="font-size:110%">
                     <b>Date:</b>
                     {{item.date}}
+                  </p>
+                  <!-- <p class="google-font mt-0 mb-0" style="font-size:110%;">
+                    <b>Video Day 1:</b>
+                    {{item.D1link}}
+                  </p>
+                  <p class="google-font mt-0 mb-0" style="font-size:110%;">
+                    <b>Video Day 2:</b>
+                    {{item.D2link}}
+                  </p> -->
+                  <p class="google-font mt-3 mb-0" style="font-size:110%">
+                    <b>Description:</b>
+                    {{item.description}}
                   </p>
                 </v-card-text>
 

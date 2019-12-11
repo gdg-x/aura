@@ -3,32 +3,47 @@
       {
         "name": "Introductory InSpec Training",
         "date": "March 7-8th 2019",
+        "venue":"",
+        "D1link": "",
+        "D2link": "",
         "description": "",
-        "link": ""
+        "color":"#1a73e8"
       },
       {
         "name": "Introductory InSpec Training",
         "date": "March 13-14th 2019",
+        "venue":"",
+        "D1link": "",
+        "D2link": "",
         "description": "",
-        "link": ""
+        "color":"#1a73e8"
       },
       {
         "name": "Introductory InSpec Training",
         "date": "August 28-29th 2019",
+        "venue":"",
+        "D1link": "",
+        "D2link": "",
         "description": "",
-        "link": ""
+        "color":"#1a73e8"
       },
       {
         "name": "Introductory InSpec Training",
         "date": "November 13-14 2019",
+        "venue":"",
+        "D1link": "",
+        "D2link": "",
         "description": "",
-        "link": ""
+        "color":"#1a73e8"
       },
       {
         "name": "Advanced InSpec Profile Training",
         "date": "September 5-6th 2019",
+        "venue":"",
+        "D1link": "",
+        "D2link": "",
         "description": "",
-        "link": ""
+        "color":"#5b1ae8"
       }
     ]
 }
