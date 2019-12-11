@@ -4,7 +4,7 @@
     <v-container fluid class="mt-2 mb-0">
       <v-layout wrap align-center justify-center row fill-height class="my-0">
         <v-flex xs12 md10 class="mb-0">
-            <p class="google-font mb-0 mt-0" style="font-size:200%;color:#616161">About {{ChapterDetails.ChapterName}}</p>
+            <p class="google-font mb-0 mt-0" style="font-size:200%;color:#616161">À propos de {{ChapterDetails.ChapterName}}</p>
             
         </v-flex>
       </v-layout>
