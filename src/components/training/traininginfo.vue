@@ -8,20 +8,12 @@
 
     <br>
 
-     <v-container>
+     <v-container fluid>
       <v-row >
         <v-col md="12" lg="10" sm="6" cols="6" class="pa-2" v-for="item in uctrainingdata.introtraining" :key="item">
           <v-dialog v-model="dialog" >
             <template v-slot:activator="{ on }">
-              <div
-                v-on="on"
-                style="cursor: pointer;"
-                :class="$vuetify.theme.dark == true?'darkModeCard':'lightModeCard'"
-                class="pa-3"
-              >
-                <p class="google-font mt-1 mb-0" style="font-size:90%">{{item.date}}</p>
                 <p class="google-font ma-0 mt-0" style="font-size:120%;">{{item.name }}</p>
-              </div>
             </template>
           </v-dialog>
         </v-col>
@@ -35,10 +27,9 @@
       <p class="google-font mt-0 mb-0" style="font-size:95%" >Trainings are listed in chronological order by date.</p>
     </v-col>
       
-    <v-container>
+    <v-container fluid>
       <v-row >
-        <v-sheet class="mx-auto" height="200" max-width="1200">
-        <v-slide-group class="pa-2" show-arrows>
+        <v-slide-group class="pa-2" show-arrows >
         <v-col md="6" lg="3" sm="6" cols="6" class="pa-2" v-for="item in pasttrainingdata.introtraining" :key="item">
           <v-dialog v-model="dialog" >
             <template v-slot:activator="{ on }">
@@ -78,7 +69,7 @@
           </v-dialog>
         </v-col>
         </v-slide-group>
-        </v-sheet>
+       
       </v-row>
     </v-container>
   </v-container>
@@ -96,6 +87,12 @@ export default {
     pasttrainingdata: pasttrainingdata,
     uctrainingdata: uctrainingdata,
     dialog: false
-  })
+  }),
+  computed: {
+    color_mode() {
+      if (this.$vuetify.theme.dark) return "darkModeContainer";
+      return "lightModeContainer";
+    }
+  }
 };
 </script>

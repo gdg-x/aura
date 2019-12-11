@@ -26,7 +26,7 @@
 
 <script>
 import trainingHeader from "../components/training/trainingHeader";
-import pastTraining from "../components/training/pastTraining";
+import pastTraining from "../components/training/traininginfo";
 
 export default {
   components: {
