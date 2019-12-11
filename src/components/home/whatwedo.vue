@@ -7,30 +7,26 @@
           class="google-font mt-0"
           style="font-size:95%"
         >The MITRE SAF works to bring the needed technologies, methodologies and patterns together to help bridge the needs of Security with the methods of todays developers and operators.</p>
-        <p class="google-font" style="font-size:95%">About the SAF tool chain and libraries: </p>
-
-        <span v-for="(item,i) in communitydata.WhatWeDoTech" :key="i">
-          <v-tooltip bottom >
+        <p class="google-font" style="font-size:95%"></p>
+        <!-- <span v-for="(item,i) in communitydata.WhatWeDoTech" :key="i">
+          <v-tooltip bottom>
             <template v-slot:activator="{ on }">
-              <a :href="item.link" target="_blank" class="ma-0">
-                <v-btn
-                  href="#"
-                  outlined
-                  target="_blank"
-                  rounded
-                  small
-                  style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
-                  class="ml-0 mt-3 google-font hidden-md-and-down"
-
-                 >{{item.TechName}}</v-btn>
-              </a>
-              &nbsp;&nbsp;&nbsp;
+              <v-btn
+                v-bind:href="item.link"
+                target="_blank"
+                flat
+                outlined
+                color="primary"
+                rounded
+                style="text-transform: capitalize;border-radius:3px;text-transform: capitalize;"
+                class="ml-0 mt-2 google-font"
+              >{{item.TechName}}</v-btn>&nbsp;&nbsp;&nbsp;
             </template>
             <span>{{item.TechName}}</span>
           </v-tooltip>
-        </span>
+        </span>-->
 
-        <br />
+        <!-- <br /> -->
 
         <!-- <v-btn
           href="#"
@@ -40,7 +36,7 @@
           small
           style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
           class="ml-0 mt-3 google-font hidden-md-and-down"
-        >Learn More</v-btn> -->
+        >Learn More</v-btn>-->
       </v-col>
       <v-col cols="12" md="9" lg="9" sm="12">
         <v-container fluid>
@@ -65,11 +61,31 @@
                 small
                 style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
                 class="ml-0 mt-3 google-font"
-              >Learn More</v-btn> -->
+              >Learn More</v-btn>-->
             </v-col>
           </v-row>
         </v-container>
       </v-col>
+    </v-row>
+    <v-row>
+      <v-list nav dense flat>
+        <v-title class="headline-2" :color="primary">SAF Tool Chain</v-title>
+        <v-list-item-group color="primary">
+          <v-list-item
+            v-for="(item, i) in communitydata.WhatWeDoTech"
+            :key="i"
+            v-bind:href="item.link"
+            target="_blank"
+          >
+            <!-- <v-list-item-icon>
+                <v-icon v-text="item.icon"></v-icon>
+            </v-list-item-icon>-->
+            <v-list-item-content>
+              <v-list-item-title v-text="item.TechName"></v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
     </v-row>
   </v-container>
 </template>

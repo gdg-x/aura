@@ -5,7 +5,7 @@
         <p class="google-font mb-0" style="font-weight: 350;font-size:200%">
           <b>
             <span style="color: #1a73e8;">About</span>
-            {{communitydata.CommunityName}}
+            {{ communitydata.CommunityName }}
           </b>
         </p>
       </v-col>
