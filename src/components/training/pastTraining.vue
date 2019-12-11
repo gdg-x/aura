@@ -80,78 +80,20 @@
 <script>
 import communitydata from "@/assets/data/communitydata.json";
 import pasttrainingdata from "@/assets/data/pasttrainingdata.json";
-import { configData } from "@/config/config";
 import pastEventCard from "@/components/common/card/pastEvent/pastEventCard";
 import pastEventCardLoader from "@/components/common/card/pastEvent/pastEventCardLoader";
+import { configData } from "@/config/config";
 
 export default {
   name: "App",
-  components: {
-    pastEventCard,
-    pastEventCardLoader
+   components: {
+     pastEventCard,
+     pastEventCardLoader
   },
   data: () => ({
     communitydata: communitydata,
     pasttrainingdata: pasttrainingdata,
     dialog: false
   })
-  // created() {
-  //   fetch(
-  //     "https://cors-anywhere.herokuapp.com/https://api.meetup.com/" +
-  //       configData.MeetupURLName +
-  //       "/events?desc=true&photo-host=public&page=8&status=past&sign=true"
-  //   )
-  //     .then(data => data.json())
-  //     .then(res => {
-  //       if (res.length > 0) {
-  //         this.showLoader = false;
-  //         this.showData = true;
-  //         this.eventsData = res;
-  //       } else {
-  //         this.showLoader = false;
-  //         this.notFoundUpcomingEventFlag = true;
-  //       }
-  //     })
-  //     .catch(e => {
-  //       this.showLoader = false;
-  //       this.errorMsg = "Issue found with " + e;
-  //       this.errorAlert = true;
-  //       this.notFoundUpcomingEventFlag = true;
-  //     });
-  // },
-  // methods: {
-  //   getImgUrl(url) {
-  //     if (url.length > 0) {
-  //       return require("@/assets/img/what-we-do/" + url);
-  //     } else {
-  //       return require("@/assets/img/what-we-do/notFound.png");
-  //     }
-  //   },
-  //   getCharString(data) {
-  //     var splitArr = data.split(" ");
-  //     if (splitArr.length > 1) {
-  //       return (
-  //         splitArr[0].substring(0, 1) +
-  //         "" +
-  //         splitArr[1].substring(0, 1)
-  //       ).toUpperCase();
-  //     } else {
-  //       return splitArr[0].substring(0, 1).toUpperCase();
-  //     }
-  //   }
-  // },
-  // filters: {
-  //   summery: (val, num) => {
-  //     return val.substring(0, num) + "..";
-  //   },
-  //   dateFilter: value => {
-  //     const date = new Date(value);
-  //     return date.toLocaleString(["en-US"], {
-  //       month: "short",
-  //       day: "2-digit",
-  //       year: "numeric"
-  //     });
-  //   }
-  // }
 };
 </script>
