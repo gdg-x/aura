@@ -42,3 +42,9 @@ body {
     border: 1px solid #212121;
     border-radius: 5px
 }
+.break-word {
+    overflow-wrap: normal;
+    word-wrap: break-word;
+    word-break: normal;
+    hyphens: auto;
+  }

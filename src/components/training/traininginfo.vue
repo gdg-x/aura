@@ -92,6 +92,13 @@ export default {
     color_mode() {
       if (this.$vuetify.theme.dark) return "darkModeContainer";
       return "lightModeContainer";
+    },
+    moveForBottomNavStyle() {
+      if (this.$vuetify.breakpoint.smAndDown) {
+        return "z-index: 10; bottom: 60px";
+      } else {
+        return "";
+      }
     }
   }
 };
