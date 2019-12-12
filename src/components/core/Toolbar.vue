@@ -18,7 +18,7 @@
               class="google-font"
               style="text-decoration:none;font-size:110%"
               :class="this.$vuetify.theme.dark?'whiteText':'blackText'"
-            >{{communitydata.CommunityName}}</router-link>
+            >{{communityData.community}}</router-link>
           </v-col>
         </v-row>
       </v-container>
@@ -44,13 +44,13 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 import PushNotification from "@/components/core/PushNotifications";
 import { mapGetters, mapMutations } from "vuex";
 export default {
   data() {
     return {
-      communitydata: communitydata
+      communityData: communityData
     };
   },
   components: {

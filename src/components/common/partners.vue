@@ -17,8 +17,8 @@
           If you’re interested in being showcased here, please contact
           <a
             style="color:#1565C0;text-decoration: none;"
-            :href="`mailto:${communitydata.CommunityEmail}`"
-          >{{communitydata.CommunityEmail}}</a> to discuss opportunities.
+            :href="`mailto:${communityData.communityEmail}`"
+          >{{communityData.communityEmail}}</a> to discuss opportunities.
         </p>
       </v-col>
     </v-row>
@@ -62,12 +62,12 @@
 
 <script>
 import datap from "@/assets/data/partners.json";
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
       partnerData: datap,
-      communitydata: communitydata,
+      communityData: communityData,
       showArrows: true
     };
   },

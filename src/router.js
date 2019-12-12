@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
-import communitydata from "./assets/data/communitydata.json";
+import communityData from "./assets/data/communityData.json";
 import goTo from 'vuetify/es5/services/goto';
 
 Vue.use(Router);
@@ -24,7 +24,7 @@ const router = new Router({
       name: "home",
       component: Home,
       meta: {
-        title: "Home | " + communitydata.CommunityName,
+        title: "Home | " + communityData.communityName,
         color: "#0277bd",
         requiresAuth: false
       }
@@ -34,7 +34,7 @@ const router = new Router({
       name: "home",
       component: Home,
       meta: {
-        title: "Home | " + communitydata.CommunityName,
+        title: "Home | " + communityData.communityName,
         color: "#0277bd",
         requiresAuth: false
       }
@@ -44,7 +44,7 @@ const router = new Router({
       name: "about",
       component: () => import("./views/About.vue"),
       meta: {
-        title: "About | " + communitydata.CommunityName,
+        title: "About | " + communityData.communityName,
         color: "#0277bd",
         requiresAuth: false
       }
@@ -54,7 +54,7 @@ const router = new Router({
       name: "events",
       component: () => import("./views/Events.vue"),
       meta: {
-        title: "Events | " + communitydata.CommunityName,
+        title: "Events | " + communityData.communityName,
         color: "#0277bd",
         requiresAuth: false
       }
@@ -64,7 +64,7 @@ const router = new Router({
       name: "team",
       component: () => import("./views/Team.vue"),
       meta: {
-        title: "Team | " + communitydata.CommunityName,
+        title: "Team | " + communityData.communityName,
         color: "#0277bd",
         requiresAuth: false
       }
@@ -74,7 +74,7 @@ const router = new Router({
       name: "contact",
       component: () => import("./views/Contact.vue"),
       meta: {
-        title: "Contact | " + communitydata.CommunityName,
+        title: "Contact | " + communityData.communityName,
         color: "#0277bd",
         requiresAuth: false
       }
@@ -84,7 +84,7 @@ const router = new Router({
       name: "partners",
       component: () => import("./views/Partners.vue"),
       meta: {
-        title: "Partners | " + communitydata.CommunityName,
+        title: "Partners | " + communityData.communityName,
         color: "#0277bd",
         requiresAuth: false
       }
@@ -94,7 +94,7 @@ const router = new Router({
     //   name: 'blogs',
     //   component: () => import( './views/Blogs.vue'),
     //   meta:{
-    //     title:'Blogs | '+communitydata.CommunityName,
+    //     title:'Blogs | '+communityData.communityName,
     //     color:'#0277bd',
     //     requiresAuth:false
     //   }
@@ -104,7 +104,7 @@ const router = new Router({
       name: "event-data",
       component: () => import("./views/Events/EventTemplate.vue"),
       meta: {
-        title: "Event Name | " + communitydata.CommunityName,
+        title: "Event Name | " + communityData.communityName,
         color: "#0277bd",
         requiresAuth: false
       }
@@ -114,7 +114,7 @@ const router = new Router({
       name: "admin",
       component: () => import("@/views/Admin/login"),
       meta: {
-        title: `Admin Login | ${communitydata.CommunityName}`,
+        title: `Admin Login | ${communityData.communityName}`,
         color: "#0277bd",
         requiresAuth: false
       }
@@ -124,7 +124,7 @@ const router = new Router({
       name: "admin-dashhboard",
       component: () => import("@/views/Admin/dashboard"),
       meta: {
-        title: `Admin Dashboard | ${communitydata.CommunityName}`,
+        title: `Admin Dashboard | ${communityData.communityName}`,
         color: "#0277bd",
         requiresAuth: true
       }
@@ -134,7 +134,7 @@ const router = new Router({
       name: "validation",
       component: () => import("@/views/Validation.vue"),
       meta: {
-        title: `Validation Profiles | ${communitydata.CommunityName}`,
+        title: `Validation Profiles | ${communityData.communityName}`,
         color: "#0277bd",
         requiresAuth: false
       }
@@ -144,7 +144,7 @@ const router = new Router({
       name: "hardening",
       component: () => import("@/views/Hardening.vue"),
       meta: {
-        title: `Hardening Profiles | ${communitydata.CommunityName}`,
+        title: `Hardening Profiles | ${communityData.communityName}`,
         color: "#0277bd",
         requiresAuth: false
       }
@@ -154,7 +154,7 @@ const router = new Router({
       name: "training",
       component: () => import("@/views/Training.vue"),
       meta: {
-        title: `Training | ${communitydata.CommunityName}`,
+        title: `Training | ${communityData.communityName}`,
         color: "#0277bd",
         requiresAuth: false
       }

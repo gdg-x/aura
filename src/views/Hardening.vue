@@ -5,7 +5,7 @@
         These open-source community-based hardening baselines help to securely configure common system components. MITRE is helping to provide stewardship over these hardening baselines, hosted here and at other community vendor sites. If you are interested in new hardening baselines, please contact us at
         <a
           :href="mail_link"
-        >{{ db.CommunityEmail }}</a>.
+        >{{ db.communityEmail }}</a>.
       </p>
     </div>
     <profileTemplate :profiles="hardening" />
@@ -16,7 +16,7 @@
 
 import profileTemplate from "@/components/profiles/profileTemplate.vue";
 import hardening from "@/assets/data/hardening.json";
-import db from "@/assets/data/communitydata.json";
+import db from "@/assets/data/communityData.json";
 
 export default {
   components: {
@@ -31,7 +31,7 @@ export default {
   },
   computed: {
     mail_link() {
-      return "mailto:" + db.CommunityEmail;
+      return "mailto:" + db.communityEmail;
     }
   }
 };

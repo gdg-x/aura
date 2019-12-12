@@ -23,21 +23,21 @@
             Framework
           </b>
         </p>
-        <!-- <p class="google-font mt-0 mb-0" style="font-size:150%">{{communitydata.CommunityName}}</p> -->
-        <p class="google-font" style="font-size:100%">{{communitydata.CommunityShortDescription}}</p>
+        <!-- <p class="google-font mt-0 mb-0" style="font-size:150%">{{communityData.community}}</p> -->
+        <p class="google-font" style="font-size:100%">{{communityData.communityShortDescription}}</p>
         <!-- <p class="google-font" style="font-size:100%;color:#9e9e9e">
-          <span v-for="(item,i) in communitydata.CommunityHashTags" :key="i">#{{item}} &nbsp;</span>
+          <span v-for="(item,i) in communityData.communityHashTags" :key="i">#{{item}} &nbsp;</span>
         </p>-->
 
         <!-- <v-btn
-          :href="communitydata.CommunityMeetupLink"
+          :href="communityData.CommunityMeetupLink"
           target="_blank"
           class="ma-0 google-font elevation-1 primary"
           style="text-transform: capitalize;border-radius:5px;color:white"
         >Become a Member</v-btn>
 &nbsp;
         <v-btn
-          :href="communitydata.GDGProgramWebsite"
+          :href="communityData.GDGProgramWebsite"
           target="_blank"
           rounded
           color="cyan"
@@ -52,11 +52,11 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
-      communitydata: communitydata
+      communityData: communityData
     };
   }
 };

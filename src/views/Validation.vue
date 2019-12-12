@@ -8,7 +8,7 @@
         are interested in new profiles, please contact us at
         <a
           :href="mail_link"
-        >{{ db.CommunityEmail }}</a>. If you are interested in developing and contributing your own
+        >{{ db.communityEmail }}</a>. If you are interested in developing and contributing your own
         profiles, please see our links to Training material.
       </p>
     </div>
@@ -19,7 +19,7 @@
 <script>
 import profileTemplate from "@/components/profiles/profileTemplate.vue";
 import baselines from "@/assets/data/baselines.json";
-import db from "@/assets/data/communitydata.json";
+import db from "@/assets/data/communityData.json";
 
 export default {
   components: {
@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     mail_link() {
-      return "mailto:" + db.CommunityEmail;
+      return "mailto:" + db.communityEmail;
     }
   }
 };

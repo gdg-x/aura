@@ -24,7 +24,7 @@
         <v-list-item-title
           class="google-font"
           style="font-size:130%"
-        >{{communitydata.CommunityName}}</v-list-item-title>
+        >{{communityData.community}}</v-list-item-title>
         <!-- <v-list-item-subtitle class="google-font">
             Google Developers Group
         </v-list-item-subtitle>-->
@@ -63,14 +63,14 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 // Utilities
 import { mapGetters, mapMutations } from "vuex";
 export default {
   name: "CoreDrawer",
   data() {
     return {
-      communitydata: communitydata
+      communityData: communityData
     };
   },
   computed: {

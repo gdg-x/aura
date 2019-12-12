@@ -12,8 +12,8 @@
           Questions? Please contact
           <a
             style="color:#1565C0;text-decoration: none;"
-            :href="`mailto:${communitydata.CommunityEmail}`"
-          >{{communitydata.CommunityEmail}}</a>
+            :href="`mailto:${communityData.communityEmail}`"
+          >{{communityData.communityEmail}}</a>
         </p>
       </v-col>
     </v-row>
@@ -21,11 +21,11 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
-      communitydata: communitydata
+      communityData: communityData
     };
   }
 };

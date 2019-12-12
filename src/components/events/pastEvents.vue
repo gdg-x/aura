@@ -14,7 +14,7 @@
         <p class="google-font mt-0" style="font-size:95%">
           Here are the recent 10 meetups. To know more about the past meetups
           <a
-            :href="communitydata.CommunityMeetupLink"
+            :href="communityData.CommunityMeetupLink"
             target="_blank"
             style="text-decoration:none;color:#0277bd"
           >Click here</a>
@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 import { configData } from "@/config/config";
 import pastEventCard from "@/components/common/card/pastEvent/pastEventCard";
 import pastEventCardLoader from "@/components/common/card/pastEvent/pastEventCardLoader";
@@ -74,7 +74,7 @@ export default {
     pastEventCardLoader
   },
   data: () => ({
-    communitydata: communitydata,
+    communityData: communityData,
     eventsData: [],
     showData: false,
     showLoader: true,

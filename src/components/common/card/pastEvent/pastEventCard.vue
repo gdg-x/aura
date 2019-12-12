@@ -62,7 +62,7 @@ export default {
     pastEventCardLoader
   },
   data: () => ({
-    communitydata: communitydata,
+    communityData: communityData,
     pasttrainingdata: pasttrainingdata,
     dialog: false
   })

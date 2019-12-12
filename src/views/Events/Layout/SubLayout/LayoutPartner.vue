@@ -5,7 +5,7 @@
                 <v-row class="pa-0" align="center" >
                     <v-col cols="12" md="12" lg="12" sm="12" class="pa-1">
                         <p class="google-font mt-1 mb-0" style="font-size:110%">A very big thank you to all our partners for their continued partnership.</p>
-                        <p class="google-font mt-0 mb-0" style="font-size:110%">If you’re interested in being showcased throughout , contact <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${communitydata.CommunityEmail}`">{{communitydata.CommunityEmail}}</a> to discuss sponsorship opportunities.</p>
+                        <p class="google-font mt-0 mb-0" style="font-size:110%">If you’re interested in being showcased throughout , contact <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${communityData.communityEmail}`">{{communityData.communityEmail}}</a> to discuss sponsorship opportunities.</p>
                     </v-col>
                 </v-row>
                 <v-row class="pa-0 mt-3" align="center" >
@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import communitydata from '@/assets/data/communitydata.json'
+import communityData from '@/assets/data/communityData.json'
 import { configData } from "@/config/config";
 export default {
     props:{
@@ -57,7 +57,7 @@ export default {
     },
     data() {
         return {
-            communitydata: communitydata,
+            communityData: communityData,
             cd: configData
         }
     },

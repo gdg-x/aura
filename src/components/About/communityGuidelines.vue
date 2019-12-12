@@ -9,9 +9,9 @@
       <v-col md="8" sm="8" cols="12" class="py-0 my-0">
         <h1 class="google-font mb-2">Shifting Security Left</h1>
         <p>The goal of this framework is to help the community of developers, operators, and security auditors measure, visualize, and correct security defects as early as possible in the development lifecycle, at each commit, from sprint to sprint.</p>
-        <!-- {{communitydata.CommunityGuideline}} -->
+        <!-- {{communityData.CommunityGuideline}} -->
         <!-- <v-expansion-panels accordion>
-          <v-expansion-panel v-for="(item,i) in communitydata.CommunityGuideline" :key="i">
+          <v-expansion-panel v-for="(item,i) in communityData.CommunityGuideline" :key="i">
             <v-expansion-panel-header>{{item.name}}</v-expansion-panel-header>
             <v-expansion-panel-content>{{item.des}}</v-expansion-panel-content>
           </v-expansion-panel>
@@ -36,11 +36,11 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
-      communitydata: communitydata
+      communityData: communityData
     };
   }
 };
