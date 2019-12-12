@@ -26,179 +26,197 @@
 
         <v-card-text>
           <v-container fluid>
-              <v-layout row wrap>
-                  <v-flex xs12 md12 >
-                    <v-form
+            <v-row class="pa-0">
+                <v-col md="12" cols="12">
+                  <v-form
                         ref="form"
                         v-model="valid"
                         lazy-validation
-                    >
-                      <v-layout row wrap class="pa-3">
-                          <v-flex xs12 class="pa-1 ma-0">
-                              <p style="font-size:120%" class="my-0">Team Member Status</p>
-                          </v-flex>
+                  >
+                    <!-- Row 1 -->
+                    <v-row class="pa-3">
+                      <v-col md="12" cols="12" class="pa-1 ma-0">
+                        <p style="font-size:120%" class="my-0">Team Member Status</p>
+                      </v-col>
 
-                          <v-flex xs3 class="pa-1 ma-0">
-                                <v-select
-                                :items="items"
-                                v-model="active"
-                                label="Active Status"
-                                outlined
-                                ></v-select>
-                          </v-flex>
-                          <v-flex xs3 class="pa-1 ma-0">
-                                <v-select
-                                :items="items"
-                                v-model="visible"
-                                label="Visiblity Status"
-                                outlined
-                                ></v-select>
-                          </v-flex>
-                          <v-flex xs3 class="pa-1 ma-0">
-                                <v-text-field
-                                    v-model="id"
-                                    class="ma-0"
-                                    label="ID"
-                                    type="text"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs3 class="pa-1 ma-0">
-                                <v-select
-                                    :items="teamRole"
-                                    v-model="role"
-                                    label="Role"
-                                    outlined
-                                ></v-select>
-                          </v-flex>
-                      </v-layout>
+                      <v-col md="3" xs="3" cols="12" class="pa-1 ma-0">
+                        <v-select
+                        :items="items"
+                        v-model="active"
+                        label="Active Status"
+                        outlined
+                        ></v-select>
+                      </v-col>
 
-                      <v-layout row wrap class="pa-3">
-                          <v-flex xs12 class="pa-1 ma-0">
-                              <p style="font-size:120%" class="my-0">Team Member Info</p>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    v-model="name"
-                                    :rules="nameRules"
-                                    class="ma-0"
-                                    label="Name"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    v-model="designation"
-                                    class="ma-0"
-                                    :rules="nameRules"
-                                    label="Desigination"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          
-                          <v-flex xs8 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="image"
-                                    label="Profile Image URL"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          
-                          <v-flex xs10 class="pa-1 ma-0">
-                                <v-textarea
-                                outlined
-                                name="input-7-4"
-                                v-model="bio"
-                                label="Bio"
-                                ></v-textarea>
-                          </v-flex>
+                      <v-col md="3" xs="3" cols="12" class="pa-1 ma-0">
+                        <v-select
+                        :items="items"
+                        v-model="visible"
+                        label="Visiblity Status"
+                        outlined
+                        ></v-select>
+                      </v-col>
 
-                      </v-layout>
+                      <v-col md="3" xs="3" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            v-model="id"
+                            class="ma-0"
+                            label="ID"
+                            type="text"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
 
-                      <v-layout row wrap class="pa-3">
-                          <v-flex xs12 class="pa-1 ma-0">
-                              <p style="font-size:120%" class="my-0">Personal Info</p>
-                          </v-flex>
+                      <v-col md="3" xs="3" cols="12" class="pa-1 ma-0">
+                        <v-select
+                            :items="teamRole"
+                            v-model="role"
+                            label="Role"
+                            outlined
+                        ></v-select>
+                      </v-col>
 
-                          <v-flex xs4 class="pa-1 ma-0">
-                              <v-text-field
-                                    class="ma-0"
-                                    v-model="mbnumber"
-                                    label="Contact Number"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs6 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="email"
-                                    :rules="emailRules"
-                                    label="Email Id"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          
-                      </v-layout>
+                    </v-row>
+                    <!-- Row 1 -->
 
-                      <v-layout row wrap class="pa-3">
-                          <v-flex xs12 class="pa-1 ma-0">
-                              <p style="font-size:120%" class="my-0">Social Links</p>
-                          </v-flex>
+                    <!-- Row 2 -->
+                    <v-row class="pa-3">
+                      <v-col md="12" cols="12" class="pa-1 ma-0">
+                        <p style="font-size:120%" class="my-0">Team Member Info</p>
+                      </v-col>
 
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    label="Facebook"
-                                    outlined
-                                    v-model="facebook"
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    label="Github"
-                                    v-model="github"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="linkedin"
-                                    label="Linkedin"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="meetup"
-                                    label="Meetup"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="twitter"
-                                    label="Twitter"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                          <v-flex xs4 class="pa-1 ma-0">
-                               <v-text-field
-                                    class="ma-0"
-                                    v-model="web"
-                                    label="Website/Blog"
-                                    outlined
-                                ></v-text-field>
-                          </v-flex>
-                      </v-layout>
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            v-model="name"
+                            :rules="nameRules"
+                            class="ma-0"
+                            label="Name"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
 
-                    </v-form>
-                  </v-flex>
-              </v-layout>
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            v-model="designation"
+                            class="ma-0"
+                            :rules="nameRules"
+                            label="Desigination"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+
+                      <v-col md="12" xs="12" cols="12" class="pa-1 ma-0">
+                        <v-textarea
+                        outlined
+                        name="input-7-4"
+                        v-model="bio"
+                        label="Bio"
+                        ></v-textarea>
+                      </v-col>
+
+                    </v-row>
+                    <!-- Row 2 -->
+
+
+                    <!-- Row 3 -->
+                    <v-row class="pa-3">
+                      <v-col md="12" cols="12" class="pa-1 ma-0">
+                        <p style="font-size:120%" class="my-0">Personal Info</p>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="mbnumber"
+                            label="Contact Number"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+
+                      <v-col md="8" xs="8" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="email"
+                            :rules="emailRules"
+                            label="Email Id"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+                    </v-row>
+                    <!-- Row 3 -->
+
+                    <!-- Row 4 -->
+                    <v-row class="pa-3">
+                      <v-col md="12" cols="12" class="pa-1 ma-0">
+                        <p style="font-size:120%" class="my-0">Social Links</p>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            label="Facebook"
+                            outlined
+                            v-model="facebook"
+                        ></v-text-field>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            label="Github"
+                            v-model="github"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="linkedin"
+                            label="Linkedin"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="meetup"
+                            label="Meetup"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="twitter"
+                            label="Twitter"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+                      <v-col md="4" xs="4" cols="12" class="pa-1 ma-0">
+                        <v-text-field
+                            class="ma-0"
+                            v-model="web"
+                            label="Website/Blog"
+                            outlined
+                        ></v-text-field>
+                      </v-col>
+
+                    </v-row>
+                    <!-- Row 4 -->
+
+                  </v-form> 
+                </v-col>
+              </v-row>
+
+             
           </v-container>
         </v-card-text>
 
@@ -291,7 +309,6 @@ import { firestore } from 'firebase';
                     }
                 }
                 firebase.firestore().collection('team').doc(Data.id).set(Data).then(res=>{
-                    // console.log(res)
                     this.dialog = false
                     this.$emit('showSuccess')
                 }).catch(e=>{

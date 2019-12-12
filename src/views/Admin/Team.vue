@@ -1,5 +1,5 @@
 <template>
-  <v-content class="grey lighten-5">
+  <v-content :class="$vuetify.theme.dark == true?'blank':'grey lighten-5'">
     <v-snackbar
       :timeout="5000"
       v-model="snackbarSuccess"
@@ -45,6 +45,8 @@
                     single-line
                     class="hidden-sm-and-down"
                 ></v-text-field>
+
+                
                 <AddTeam @showSuccess="showData" class="ml-2"/>
                 <!-- <v-btn text v-on:click="dataLoad" icon color="indigo" class="ml-2">
                     <v-icon>mdi-reload</v-icon>
@@ -68,25 +70,43 @@
             </v-row>
 
             <v-row v-else>
+              <v-container fluid>
+                <!-- <v-row class="pa-0">
+                  <v-col md="3">
+                    <v-select
+                    :items="teamRole"
+                    label="Outlined style"
+                    outlined
+                  ></v-select>
+                  </v-col>
+                </v-row> -->
               <!-- {{teamData}} -->
-              <v-col col="12" md="2" v-for="(item,i) in teamData" :key="i" class="pa-1">
-
-                <div v-on:click="showTeam(item.id)" style="cursor: pointer;" class="text-center py-3 elevation-1 white">
-     
-                  <v-avatar size="100">
-                      <img 
-                      :src="getImgUrl(item.image)"
-                      :lazy-src="getImgUrl(item.image)" alt=""
-                      >
-                  </v-avatar>
-                  <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{item.name}}</p>
-                  <p class="mt-0 mb-0 google-font mt-0" style="font-size:80%">{{item.designation}}</p>
-                  <v-chip class="ma-1" x-small>{{item.role}}</v-chip>
-                  <!-- <v-chip class="ma-1" x-small>{{teamData.visible}}</v-chip>
-                  <v-chip class="ma-1" x-small>{{teamData.active}}</v-chip> -->
-                      <!-- <socialMediaDetails :data="{data:teamData.socialLinks}"/> -->
-                </div>
-              </v-col>
+              <v-data-iterator
+                :items="teamData"
+                :search="search"
+                :items-per-page.sync="itemsPerPage"
+                :footer-props="{ itemsPerPageOptions }"
+              >
+                <template v-slot:default="props">
+                  <v-row class="">
+                  <v-col col="12" cols="6" md="2" sm="3" v-for="(item) in props.items" :key="item.name" class="pa-1">
+                    <div v-on:click="showTeam(item.id)" style="cursor: pointer;" class="text-center py-3 elevation-1" :class="$vuetify.theme.dark == true?'grey darken-3':'white'">
+        
+                      <v-avatar size="100">
+                          <img 
+                          :src="getImgUrl(item.image)"
+                          :lazy-src="getImgUrl(item.image)" alt=""
+                          >
+                      </v-avatar>
+                      <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{item.name}}</p>
+                      <p class="mt-0 mb-0 google-font mt-0" style="font-size:80%">{{item.designation}}</p>
+                      <v-chip class="ma-1" x-small>{{item.role}}</v-chip>
+                    </div>
+                  </v-col>
+                  </v-row>
+                </template>
+              </v-data-iterator>
+              </v-container>
             </v-row>
           </v-container>
         </v-col>
@@ -110,31 +130,29 @@ export default {
     },
     name:"admin-dashboard",
     data:()=>({
-        removeSuccess:false,
-        teamLoader:true,
-        search:'',
-        loading:true,
-        headers: [
-          {
-            text: 'Name',
-            align: 'left',
-            sortable: false,
-            value: 'name',
-          },
-          { text: 'Designation', value: 'designation' },
-          { text: 'Role', value: 'role' },
-          { text: 'Visible', value: 'visible' },
-          { text: 'Active', value: 'active' },
-          { text: 'See More', value: '' },
-        ],
-        teamData:[],
-        snackbarSuccess:false
+      teamRole:["Core Team","Organizing Team", "Volunteer"],
+      itemsPerPageOptions: [8, 16, 32],
+      itemsPerPage: 8,
+      removeSuccess:false,
+      teamLoader:true,
+      search:'',
+      loading:true,
+      teamData:[],
+      snackbarSuccess:false
     }),
     created(){
       if(this.$route.query.msg) {
         this.removeSuccess = true
         // this.alert  = this.$route.query.msg;
       }
+    },
+    computed:{
+      // fitlerData(){
+      //   return this.teamData.filter(team=>{
+      //     // console.log(team)
+      //     return team.name.match(this.search)
+      //   })
+      // }
     },
     mounted(){
         // firebase.auth().currentUser

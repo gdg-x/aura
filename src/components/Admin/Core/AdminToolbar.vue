@@ -34,7 +34,10 @@
         > 
             {{ link.text }}
       </v-btn>
-
+      <v-btn icon v-on:click="darkMode" class="ml-2">
+        <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
+        <v-icon v-else>mdi-brightness-4</v-icon>
+      </v-btn> 
       <v-btn
         class="ml-2 google-font"
         style="text-transform: capitalize;" 
@@ -76,6 +79,17 @@ import firebase from '@/firebase';
         firebase.auth.signOut().then(()=>{
             this.$router.replace('/admin')
         })
+      },
+      darkMode(){
+        let metaThemeColor = document.querySelector("meta[name=theme-color]");
+        this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+        if(localStorage)
+              localStorage.setItem('darkMode',this.$vuetify.theme.dark);
+        if(this.$vuetify.theme.dark){
+          metaThemeColor.setAttribute("content", '#212121');
+        }else{
+           metaThemeColor.setAttribute("content", '#0277bd');
+        }
       }
     }
   }

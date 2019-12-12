@@ -1,5 +1,5 @@
 <template>
-  <v-content class="grey lighten-5">
+  <v-content :class="$vuetify.theme.dark == true?'blank':'grey lighten-5'">
     <v-container fluid class="text-center ">
         <v-snackbar
         :timeout="5000"
@@ -23,12 +23,12 @@
                     
                     <router-link
                     to="/admin/dashboard/team/"
-                    color="#4C4A78"
+                    :color="$vuetify.theme.dark == true?'white':'black'"
                     class="ma-0 google-font mb-0"
-                    style="border-radius:5px;text-transform: capitalize;text-decoration:none;color:#4C4A78"
+                    style="border-radius:5px;text-transform: capitalize;text-decoration:none;"
                 >
-                <v-icon left>mdi-arrow-left-thick</v-icon> Edit
-                Back to Team</router-link>
+                <v-icon left>mdi-arrow-left-thick</v-icon>
+                Team</router-link>
                 &nbsp;
                 <!-- <v-toolbar-title>Team Details: </v-toolbar-title> -->
                     <div class="flex-grow-1"></div>
@@ -63,7 +63,7 @@
         <v-col cols="12" md="11" class="">
           <v-container fluid>
             <v-row>
-              <v-col col="12" md="3" class="pa-1 elevation-1 white py-5">
+              <v-col col="12" md="3" class="pa-1 elevation-1 py-5" :class="$vuetify.theme.dark == true?'grey darken-4':'white'">
                 <v-avatar size="120">
                     <img 
                     :src="getImgUrl(search)"
@@ -89,7 +89,7 @@
                 
               </v-col>
 
-              <v-col col="12" md="9" class="elevation-1 white py-5 text-left pa-5">
+              <v-col col="12" md="9" class="elevation-1 py-5 text-left pa-5" :class="$vuetify.theme.dark == true?'grey darken-4':'white'">
                 <p class="mb-0"><b>Bio</b></p>
                 <p class="mt-1 mb-0 google-font mt-0" style="font-size:110%">{{teamData.bio}}</p>
 
