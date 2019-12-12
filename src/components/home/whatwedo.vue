@@ -20,9 +20,9 @@
               cols="6"
               class="text-center pa-2"
             >
-              <v-card class="pa-2" flat min-height="225" max-height="300">
+              <v-card outlined class="pa-2" flat>
                 <v-icon large style="font-size:300%">{{ item.icon }}</v-icon>
-                <p class="google-font mt-2" style="font-size:130%">{{ item.name }}</p>
+                <p class="google-font mt-2 title" >{{ item.name }}</p>
                 <p class="google-font" style="font-size:95%">{{ item.desc }}</p>
               </v-card>
             </v-col>
@@ -48,12 +48,12 @@
               md="3"
               lg="3"
               sm="6"
-              cols="6"
+              :cols="$vuetify.breakpoint.smAndDown ? '6' : '3'"
+              class="d-flex"
             >
-              <v-card v-bind:href="item.link" target="_blank" flat min-height="200" class="pa-2">
-                <p class="google-font text-center" style="font-size:130%">{{ make_readable(item.name) }}</p>
-
-                <p class="text-left ma-2 google-font" style="font-size:95%">{{ item.desc | truncate($vuetify.breakpoint) }}</p>
+              <v-card outlined v-bind:href="item.link" target="_blank" flat class="d-flex flex-column pa-2">
+                <p class="google-font text-center title" style="font-size:130%">{{ make_readable(item.name) }}</p>
+                <p class="text-left ma-2 google-font text-center" style="font-size:95%">{{ item.desc }}</p>
               </v-card>
             </v-col>
           </v-row>
