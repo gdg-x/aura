@@ -22,13 +22,13 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="pa-0 py-5">
+    <!-- <v-container fluid class="pa-0 py-5">
       <v-row justify="center" align="center" style="background:#4C4A78" class="py-5">
         <v-col md="12" lg="10" xs="12" class="py-0">
           <aboutCommunity />
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
 
     <v-container fluid class="pa-0 py-2">
       <v-row justify="center" align="center">

@@ -13,12 +13,12 @@
             ></v-img>
           </v-col>-->
           <v-col class="pl-2">
-            <router-link
+              <router-link
               :to="{ name: 'home'}"
               class="google-font"
               style="text-decoration:none;font-size:110%"
               :class="this.$vuetify.theme.dark?'whiteText':'blackText'"
-            >{{communityData.community}}</router-link>
+            >{{communityData.communityName}}</router-link>
           </v-col>
         </v-row>
       </v-container>
