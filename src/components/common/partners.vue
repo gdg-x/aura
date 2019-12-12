@@ -58,35 +58,6 @@
         <!-- </v-sheet> -->
       </v-row>
     </v-container>
-
-    <!-- <v-row align="center" justify="start" class="mt-0" v-for="(itemp,i) in partnerData" :key="i">
-      <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-if="itemp.length>0">
-        <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
-      </v-col>
-      <v-col cols="6" md="6" lg="2" sm="4" v-for="(item,j) in itemp" :key="j" class>
-        <div class="client-logo ma-0">
-          <a v-bind:href="item.link" target="_blank" v-if="itemp.length>0">
-            <v-tooltip bottom>
-              <template v-slot:activator="{ on }">
-                <v-img
-                  :src="getImgUrl(item.img)"
-                  :lazy-src="getImgUrl(item.img)"
-                  class="white"
-                  contain
-                  style="height:4em"
-                  v-on="on"
-                >
-                  <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
-                    <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                  </v-layout>
-                </v-img>
-              </template>
-              <span class="google-font">{{item.name}}</span>
-            </v-tooltip>
-          </a>
-        </div>
-      </v-col>
-    </v-row>-->
   </v-container>
 </template>
 
