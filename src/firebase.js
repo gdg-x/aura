@@ -15,5 +15,6 @@ firebase.initializeApp(config);
 export default {
     messaging: firebase.messaging(),
     firestore: firebase.firestore(),
-    auth:firebase.auth()
+    auth:firebase.auth(),
+    storage:firebase.storage()
   }
