@@ -10,7 +10,7 @@
 
      <v-container fluid>
       <v-row >
-        <v-col md="12" lg="10" sm="6" cols="6" class="pa-2" v-for="item in uctrainingdata.introtraining" :key="item">
+        <v-col md="12" lg="10" sm="6" cols="6" class="pa-2" v-for="item in trainingData.upcomingTraining.introTraining" :key="item">
           <v-dialog v-model="dialog" >
             <template v-slot:activator="{ on }">
                 <p class="google-font ma-0 mt-0" style="font-size:120%;">{{item.name }}</p>
@@ -30,7 +30,7 @@
     <v-container fluid>
       <v-row >
         <v-slide-group class="pa-2" show-arrows >
-        <v-col md="6" lg="3" sm="6" cols="6" class="pa-2" v-for="item in pasttrainingdata.introtraining" :key="item">
+        <v-col md="6" lg="3" sm="6" cols="6" class="pa-2" v-for="item in trainingData.pastTraining.introTraining" :key="item">
           <v-dialog v-model="dialog" >
             <template v-slot:activator="{ on }">
               <div
@@ -77,21 +77,26 @@
 
         
 <script>
-import communitydata from "@/assets/data/communitydata.json";
-import pasttrainingdata from "@/assets/data/pasttrainingdata.json";
-import uctrainingdata from "@/assets/data/uctrainingdata.json";
+import communityData from "@/assets/data/communityData.json";
+import trainingData from "@/assets/data/trainingData.json";
 export default {
   name: "App",
   data: () => ({
-    communitydata: communitydata,
-    pasttrainingdata: pasttrainingdata,
-    uctrainingdata: uctrainingdata,
+    communityData: communityData,
+    trainingData: trainingData,
     dialog: false
   }),
   computed: {
     color_mode() {
       if (this.$vuetify.theme.dark) return "darkModeContainer";
       return "lightModeContainer";
+    },
+    moveForBottomNavStyle() {
+      if (this.$vuetify.breakpoint.smAndDown) {
+        return "z-index: 10; bottom: 60px";
+      } else {
+        return "";
+      }
     }
   }
 };

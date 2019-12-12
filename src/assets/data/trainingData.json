@@ -1,5 +1,6 @@
 {
-    "introtraining": [
+  "pastTraining": {
+    "introTraining": [
       {
         "name": "Introductory InSpec Profile Developer Training",
         "date": "March 7-8th 2019",
@@ -21,11 +22,21 @@
         "description": ""
       }
     ],
-    "advtraining":[
+    "advTraining": [
       {
         "name": "Adavanced InSpec Profile Developer Training",
         "date": "September 5-6th 2019",
         "description": ""
-      } 
+      }
     ]
+  },
+  "upcomingTraining": {
+    "introTraining": [
+      {
+        "name": "Upcoming Training Sessions will appear here as they are announced",
+        "date": "TBD",
+        "description": ""
+      }
+    ]
+  }
 }

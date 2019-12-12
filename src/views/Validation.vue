@@ -38,16 +38,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-p {
-  text-align: left;
-  padding: 5px 0;
-}
-.break-word {
-  overflow-wrap: normal;
-  word-wrap: break-word;
-  word-break: normal;
-  hyphens: auto;
-}
-</style>

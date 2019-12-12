@@ -1,26 +1,78 @@
-[
-  {
-    "name": "Validation",
-    "desc": "Get security data at the right time and level of detail.",
-    "icon": "mdi-thumb-up",
-    "more_link": "https://www.google.com"
-  },
-  {
-    "name": "Hardening",
-    "desc": "Ansible, Chef and Puppet content to support our Validation content.",
-    "icon": "mdi-security",
-    "more_link": "https://www.google.com"
-  },
-  {
-    "name": "Visualization",
-    "desc": "Communicate the complexity of compliance visually via rollups, charts and timelines.",
-    "icon": "mdi-image-search",
-    "more_link": "https://www.google.com"
-  },
-  {
-    "name": "Training",
-    "desc": "Learn the best methods and approaches to writing the best content possible for communicating across the team. ",
-    "icon": "mdi-chair-school",
-    "more_link": "https://www.google.com"
-  }
-]
+{
+  "whatWeDoCategories": [
+    {
+      "name": "Validation",
+      "desc": "Get detailed security testing data during any point of development",
+      "icon": "mdi-thumb-up",
+      "more_link": "https://www.google.com"
+    },
+    {
+      "name": "Hardening",
+      "desc": "Ansible, Chef and Puppet content to support our Validation content",
+      "icon": "mdi-security",
+      "more_link": "https://www.google.com"
+    },
+    {
+      "name": "Visualization",
+      "desc": "Dive deep into test results visually via rollups, charts and timelines",
+      "icon": "mdi-image-search",
+      "more_link": "https://www.google.com"
+    },
+    {
+      "name": "Training",
+      "desc": "Learn how to write great tests and apply them to your team's pipeline.",
+      "icon": "mdi-chair-school",
+      "more_link": "https://www.google.com"
+    }
+  ],
+  "whatWeDoTools": [
+    {
+      "name": "Heimdall Lite",
+      "link": "https://github.com/mitre/heimdall-lite",
+      "desc": "A JavaScript-based security results viewer and review tool supporting multiple input sources and formats",
+      "icon": "mdi-web"
+    },
+    {
+      "name": "Heimdall Server",
+      "link": "https://github.com/mitre/heimdall",
+      "desc": "A security results viewer for the web, including storage, teams and history",
+      "icon": "mdi-web"
+    },
+    {
+      "name": "InSpec_Tools",
+      "link": "https://github.com/mitre/inspec_tools/",
+      "desc": "A set of Ruby utilities and gem for creating, converting and processing security baseline formats, results and data",
+      "icon": "mdi-web"
+    },
+    {
+      "name": "Heimdall_Tools",
+      "link": "https://github.com/mitre/heimdall_tools",
+      "desc": "A set of Ruby utilities and gem for converting and working with compliance data for use in Heimdall apps",
+      "icon": "mdi-web"
+    },
+    {
+      "name": "InSpecJS",
+      "link": "https://github.com/mitre/inspecjs",
+      "desc": "A Typescript library for working with InSpec data",
+      "icon": "mdi-web"
+    },
+    {
+      "name": "HeimdallJS_Tools",
+      "link": "https://github.com/mitre/heimdall_tools_js",
+      "desc": "A set of JavaScript utilities and gem for converting and working with compliance data for use in Heimdall apps",
+      "icon": "mdi-web"
+    },
+    {
+      "name": "InSpecJS_Tools",
+      "link": "https://github.com/mitre/inspec_tools_js",
+      "desc": "A set of JavaScript utilities and gem for creating, converting and processing security baseline formats, results and data",
+      "icon": "mdi-web"
+    },
+    {
+      "name": "Vulcan",
+      "link": "https://github.com/mitre/vulcan",
+      "desc": "Application for streamlining InSpec profile and overlay development using SRG guidance",
+      "icon": "mdi-web"
+    }
+  ]
+}

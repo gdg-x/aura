@@ -1,13 +1,13 @@
 {
-  "CommunityName": "MITRE SAF",
-  "CommunityShortDescription": "The MITRE Security Automation Framework (SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for systems and DevOps pipelines.",
-  "CommunityLongDec": "The MITRE Security Automation Framework (SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for systems and DevOps pipelines.",
-  "CommunityMeetupLink": "",
-  "CommunityEmail": "saf@groups.mitre.org",
-  "Website": "https://mitre-saf.netlify.com",
-  "GDGProgramWebsite": "",
-  "CommunityHashTags": ["MTIRESAF", "MITRE_SAF"],
-  "SocialLinks": [
+  "communityName": "MITRE SAF",
+  "communityShortDescription": "The MITRE Security Automation Framework (SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for systems and DevOps pipelines.",
+  "communityLongDec": "The MITRE Security Automation Framework (SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for systems and DevOps pipelines.",
+  "communityMeetupLink": "",
+  "communityEmail": "saf@groups.mitre.org",
+  "website": "https://mitre-saf.netlify.com",
+  "programWebsite": "",
+  "communityHashTags": ["MTIRESAF", "MITRE_SAF"],
+  "socialLinks": [
     {
       "name": "Facebook",
       "link": "https://www.facebook.com/MITREcorp/",
@@ -34,38 +34,6 @@
       "icon": "mdi-linkedin"
     }
   ],
-  "AboutGDGProgram": "The MITRE Security Automation Framework (SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for Systems and in DevOps pipelines.",
-  "WhatWeDoTech": [
-    {
-      "TechName": "Heimdall Lite",
-      "link": "https://github.com/mitre/heimdall-lite"
-    },
-    {
-      "TechName": "Heimdall Server",
-      "link": "https://github.com/mitre/heimdall"
-    },
-    {
-      "TechName": "InSpec_Tools",
-      "link": "https://github.com/mitre/inspec_tools/"
-    },
-    {
-      "TechName": "Heimdall_Tools",
-      "link": "https://github.com/mitre/heimdall_tools"
-    },
-    {
-      "TechName": "InSpecJS_Tools",
-      "link": "https://github.com/mitre/inspec_tools_js/"
-    },
-    {
-      "TechName": "HeimdallJS_Tools",
-      "link": "https://github.com/mitre/heimdalljs_tools"
-    }
-  ],
-  "CommunityGuideline": [
-    {
-      "name": "Be nice",
-      "des": "We're all part of the same community, so be friendly, welcoming, and generally a nice person. Be someone that other people want to be around."
-    }
-  ],
-  "CodeOfConduct": ""
+  "aboutProgram": "The MITRE Security Automation Framework (SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for Systems and DevOps pipelines.",
+  "codeOfConduct": ""
 }
