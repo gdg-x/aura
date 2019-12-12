@@ -44,7 +44,7 @@
     </v-col>
 
     <v-container fluid>
-      <v-row justify="space-between" :class="color_mode">
+      <v-row justify="center" :class="color_mode">
         <v-slide-group class="pa-2 ma-2" show-arrows>
           <v-col
             md="3"
