@@ -31,7 +31,7 @@
       </v-col>
     </v-row>
     <v-divider />
-    <v-row>
+    <v-row align="center" justify="center">
       <v-col cols="12" md="3" lg="3" sm="12" class="text-left pa-2">
         <p class="google-font mb-2 tool-header">How We Do It</p>
         <p
