@@ -1,4 +1,5 @@
 {
+
   "communityName": "MITRE SAF",
   "communityShortDescription": "The MITRE Security Automation Framework (SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for systems and DevOps pipelines.",
   "communityLongDec": "The MITRE Security Automation Framework (SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for systems and DevOps pipelines.",
@@ -8,6 +9,7 @@
   "programWebsite": "",
   "communityHashTags": ["MTIRESAF", "MITRE_SAF"],
   "socialLinks": [
+
     {
       "name": "Facebook",
       "link": "https://www.facebook.com/MITREcorp/",
@@ -36,4 +38,5 @@
   ],
   "aboutProgram": "The MITRE Security Automation Framework (SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for Systems and DevOps pipelines.",
   "codeOfConduct": ""
+
 }
