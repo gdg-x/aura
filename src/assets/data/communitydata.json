@@ -34,36 +34,55 @@
       "icon": "mdi-linkedin"
     }
   ],
-  "AboutGDGProgram": "The MITRE Security Automation Framework (SAF) brings together open-source, accessible applications, techniques, libraries, and tools developed by MITRE and the community to streamline security automation for Systems and in DevOps pipelines.",
+  "AboutGDGProgram": "The MITRE Security Automation Framework (SAF) brings together open-source, accessible applications, techniques, libraries, and tools developed by MITRE and the community to streamline security automation for Systems and in DevOps pipelines",
   "WhatWeDoTech": [
     {
-      "TechName": "Heimdall Lite",
+      "name": "Heimdall Lite",
       "link": "https://github.com/mitre/heimdall-lite",
+      "desc": "Heimdall Lite 2.0 is a JavaScript based security results viewer and review tool supporting multiple security results formats, such as: InSpec, SonarQube, OWASP-Zap and Fortify which you can load locally, from S3 and other data sources",
       "icon": "mdi-web"
     },
     {
-      "TechName": "Heimdall Server",
+      "name": "Heimdall Server",
       "link": "https://github.com/mitre/heimdall",
+      "desc": "A Security Results Viewer for the web with storage, teams and history",
       "icon": "mdi-web"
     },
     {
-      "TechName": "InSpec_Tools",
+      "name": "InSpec_Tools",
       "link": "https://github.com/mitre/inspec_tools/",
+      "desc": "A set of Ruby utilities and gem for creating, converting and processing security baseline formats, results and data",
       "icon": "mdi-web"
     },
     {
-      "TechName": "Heimdall_Tools",
+      "name": "Heimdall_Tools",
       "link": "https://github.com/mitre/heimdall_tools",
+      "desc": "A set of Ruby utilities and gem for converting and working with compliance data for viewing in the Heimdall applications",
       "icon": "mdi-web"
     },
     {
-      "TechName": "InSpecJS_Tools",
-      "link": "https://github.com/mitre/inspec_tools_js/",
+      "name": "InSpecJS",
+      "link": "https://github.com/mitre/inspecjs",
+      "desc": "A Typescript Library for working with InSpec data",
       "icon": "mdi-web"
     },
     {
-      "TechName": "HeimdallJS_Tools",
-      "link": "https://github.com/mitre/heimdalljs_tools",
+      "name": "HeimdallJS_Tools",
+      "link": "https://github.com/mitre/heimdall_tools_js",
+      "desc": "A set of JavaScript utilities and gem for converting and working with compliance data for viewing in the Heimdall applications",
+      "icon": "mdi-web"
+    },
+    {
+      
+      "name": "InSpecJS_Tools",
+      "link": "https://github.com/mitre/inspec_tools_js",
+      "desc": "A set of JavaScript utilities and gem for creating, converting and processing security baseline formats, results and data",
+      "icon": "mdi-web"
+    },
+    {
+      "name": "Vulcan",
+      "link": "https://github.com/mitre/vulcan",
+      "desc": "Application to help streamline the development of InSpec Profiles and Overlays from SRG guidance or InSpec Profiles",
       "icon": "mdi-web"
     }
   ],

@@ -67,25 +67,22 @@
         </v-container>
       </v-col>
     </v-row>
-    <v-row>
-      <v-list nav dense flat>
-        <v-title class="headline-2" :color="primary">SAF Tool Chain</v-title>
-        <v-list-item-group color="primary">
-          <v-list-item
-            v-for="(item, i) in communitydata.WhatWeDoTech"
-            :key="i"
-            v-bind:href="item.link"
-            target="_blank"
-          >
-            <!-- <v-list-item-icon>
-                <v-icon v-text="item.icon"></v-icon>
-            </v-list-item-icon>-->
-            <v-list-item-content>
-              <v-list-item-title v-text="item.TechName"></v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
+    <v-row dense>
+      <v-col
+        v-for="(item, i) in communitydata.WhatWeDoTech"
+        :key="i"
+        md="3"
+        lg="3"
+        sm="6"
+        cols="6"
+        class="text-center pa-2"
+      >
+        <v-card v-bind:href="item.link" target="_blank">
+          <v-card-title class="headline">{{ item.name }}</v-card-title>
+
+          <v-card-subtitle>{{ item.desc }}</v-card-subtitle>
+        </v-card>
+      </v-col>
     </v-row>
   </v-container>
 </template>
