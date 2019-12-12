@@ -148,6 +148,16 @@ const router = new Router({
         color: "#0277bd",
         requiresAuth: false
       }
+    },
+    {
+      path: "/training",
+      name: "training",
+      component: () => import("@/views/Training.vue"),
+      meta: {
+        title: `Training | ${communitydata.CommunityName}`,
+        color: "#0277bd",
+        requiresAuth: false
+      }
     }
   ]
 });
