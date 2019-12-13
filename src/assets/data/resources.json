@@ -1,0 +1,34 @@
+{
+    "InSpec":[
+        {
+            "name": "InSpec Documentation",
+            "desc": "",
+            "link": "https://www.inspec.io/docs/"
+        },
+        {
+            "name": "InSpec Available Resources",
+            "desc": "",
+            "link": "https://www.inspec.io/docs/reference/resources/"
+        },
+        {
+            "name": "Introduction to InSpec Video Courses",
+            "desc": "",
+            "link": "https://www.youtube.com/playlist?list=PLSZbtIlMt5rcbXOpMRucKzRMXR7HX7awy"
+        },
+        {
+            "name": "InSpec Profile Developers Course",
+            "desc": "",
+            "link": "https://mitre-inspec-developer.netlify.com/"
+        },
+        {
+            "name": "InSpec Advanced Developer Course",
+            "desc": "",
+            "link": "https://mitre-inspec-advanced-developer.netlify.com/"
+        },
+        {
+            "name": "InSpec Tools and Utilization",
+            "desc": "Guide to Installation of InSpec Tools.",
+            "link": "https://mitre.github.io/inspec_tools/"
+        }
+    ]
+}
