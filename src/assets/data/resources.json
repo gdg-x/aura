@@ -1,0 +1,14 @@
+{
+    "InSpec":[
+        {
+            "name": "InSpec Profile Developers Course",
+            "desc": "",
+            "link": "https://mitre-inspec-developer.netlify.com/"
+        },
+        {
+            "name": "InSpec Advanced Developer Course",
+            "desc": "",
+            "link": "https://mitre-inspec-advanced-developer.netlify.com/"
+        }
+    ]
+}
