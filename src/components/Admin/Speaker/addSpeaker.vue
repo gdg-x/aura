@@ -72,7 +72,7 @@
                                 <v-file-input
                                   v-model="imageUpload"
                                   accept="image/*"
-                                  label="File input"
+                                  label="Select Image"
                                   prepend-icon
                                   @change="onFileChange"
                                   outlined
@@ -84,8 +84,8 @@
                                   color="green darken-1"
                                   text
                                   @click="dialogImageUload = false"
-                                >Disagree</v-btn>
-                                <v-btn color="green darken-1" text @click="uploadImage">Agree</v-btn>
+                                >Discard</v-btn>
+                                <v-btn color="green darken-1" text @click="uploadImage">Upload Image</v-btn>
                               </v-card-actions>
                             </v-card>
                           </v-dialog>
@@ -249,11 +249,9 @@ export default {
         }
       };
       firebase.firestore.collection('speakers').doc(Data.id).set(Data).then(res=>{
-                    // console.log(res)
                     this.dialog = false;
                     this.addSpeakerLoading = false
-                    alert('success')
-                    // this.$emit('showSuccess')
+                    this.$emit('showSuccess',true)
                 }).catch(e=>{
                     console.log(e)
                 })

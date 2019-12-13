@@ -94,8 +94,7 @@
         
                       <v-avatar size="100">
                           <img 
-                          :src="getImgUrl(item.image)"
-                          :lazy-src="getImgUrl(item.image)" alt=""
+                          :src="item.image" alt=""
                           >
                       </v-avatar>
                       <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{item.name}}</p>
