@@ -89,16 +89,6 @@ const router = new Router({
         requiresAuth: false
       }
     },
-    // {
-    //   path: '/blogs',
-    //   name: 'blogs',
-    //   component: () => import( './views/Blogs.vue'),
-    //   meta:{
-    //     title:'Blogs | '+communityData.communityName,
-    //     color:'#0277bd',
-    //     requiresAuth:false
-    //   }
-    // },
     {
       path: "/events/:id",
       name: "event-data",
@@ -150,6 +140,16 @@ const router = new Router({
       }
     },
     {
+      path: "/gettingstarted",
+      name: "gettingstarted",
+      component: () => import("@/views/GettingStarted.vue"),
+      meta: {
+        title: `Getting Started | ${communityData.communityName}`,
+        color: "#0277bd",
+        requiresAuth: false
+      }
+    },
+    {
       path: "/training",
       name: "training",
       component: () => import("@/views/Training.vue"),
@@ -158,7 +158,7 @@ const router = new Router({
         color: "#0277bd",
         requiresAuth: false
       }
-    }
+    }    
   ]
 });
 

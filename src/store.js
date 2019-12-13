@@ -49,6 +49,16 @@ export default new Vuex.Store({
         }
       },
       {
+        text: "Getting Started",
+        to: "/gettingstarted",
+        icon: "mdi-chair-school",
+        meta: {
+          showToolbar: true,
+          enabled: true,
+          showBottomNav: true
+        }
+      },
+      {
         text: "Training",
         to: "/training",
         icon: "mdi-chair-school",
