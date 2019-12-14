@@ -5,15 +5,15 @@
     <v-toolbar-title class="px-0">
       <v-container fluid>
         <v-row align="center">
-          <!-- <v-col class="px-0 hidden-sm-and-down">
+          <v-col class="px-0 hidden-sm-and-down">
             <v-img
-              :src="require('@/assets/img/gdg.png')"
-              :lazy-src="require('@/assets/img/gdg.png')"
-              width="4vh"
-            ></v-img>
-          </v-col>-->
+              src="https://communityshare.mitre.org/sites/CCPA/Portfolio%20Images/mitrelogo-whiteonblue.jpg"
+              width="100"
+           ></v-img>
+          </v-col>
           <v-col class="pl-2">
-              <router-link
+            
+            <router-link
               :to="{ name: 'home'}"
               class="google-font"
               style="text-decoration:none;font-size:110%"
@@ -36,10 +36,10 @@
       @click="onClick($event, link)"
     >{{ link.text }}</v-btn>
     <PushNotification />
-    <v-btn icon v-on:click="darkMode" class="ml-2">
+    <!--<v-btn icon v-on:click="darkMode" class="ml-2">
       <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
       <v-icon v-else>mdi-brightness-4</v-icon>
-    </v-btn>
+    </v-btn>-->
   </v-app-bar>
 </template>
 

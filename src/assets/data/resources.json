@@ -11,7 +11,7 @@
         },
         {
           "name": "InSpec Profile Resources Reference",
-          "desc": "List of the existing systems InSpec can play with straight out of the box (known as InSpec \"resources\")",
+          "desc": "List of the existing systems InSpec can play with straight out of the box (InSpec \"resources\")",
           "link": "https://www.inspec.io/docs/reference/resources/"
         },
         {

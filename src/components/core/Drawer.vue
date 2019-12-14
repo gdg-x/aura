@@ -24,7 +24,7 @@
         <v-list-item-title
           class="google-font"
           style="font-size:130%"
-        >{{communityData.community}}</v-list-item-title>
+        >{{communityData.communityName}}</v-list-item-title>
         <!-- <v-list-item-subtitle class="google-font">
             Google Developers Group
         </v-list-item-subtitle>-->
@@ -54,11 +54,11 @@
       </v-list-item>
     </v-list>
 
-    <template v-slot:append>
+    <!--<template v-slot:append>
       <div class="pa-2">
         <v-btn text block>Logout</v-btn>
       </div>
-    </template>
+    </template>--->
   </v-navigation-drawer>
 </template>
 
