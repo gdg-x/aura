@@ -8,13 +8,13 @@
             <span style="color: #1a73e8;">Started</span>
           </b>
         </p>
-        <p class="google-font mt-0" style="font-size:120%">
+        <!-- <p class="google-font mt-0" style="font-size:120%">
           Questions? Please contact
           <a
             style="color:#1565C0;text-decoration: none;"
             :href="`mailto:${communityData.communityEmail}`"
           >{{communityData.communityEmail}}</a>
-        </p>
+        </p> -->
       </v-col>
     </v-row>
   </v-container>
