@@ -8,31 +8,47 @@
         >{{ db.communityEmail }}</a>.
       </p>
     </div>
-    <profileTemplate :profiles="hardening" />
+    <v-btn v-on:click="toggleCompact">Compact View</v-btn>
+    <v-spacer />
+    <div v-show="showCompact">
+      <profileTemplateCompact :profiles="hardening" />
+    </div>
+    <div v-show="!showCompact">
+      <profileTemplate :profiles="hardening" />
+    </div>
   </v-content>
 </template>
 
 <script>
 
 import profileTemplate from "@/components/profiles/profileTemplate.vue";
+import profileTemplateCompact from "@/components/profiles/profileTemplateCompact.vue";
 import hardening from "@/assets/data/hardening.json";
 import db from "@/assets/data/communityData.json";
+import { mapMutations } from "vuex";
 
 export default {
   components: {
-    profileTemplate
+    profileTemplate,
+    profileTemplateCompact
   },
   data() {
     return {
       hardening: hardening,
-      db: db
-
+      db: db,
+      isCompact: false
     };
   },
   computed: {
     mail_link() {
       return "mailto:" + db.communityEmail;
+    },
+    showCompact() {
+      return this.$store.state.isCompact;
     }
+  },
+  methods: {
+    ...mapMutations(["toggleCompact"])
   }
 };
 </script>

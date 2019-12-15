@@ -12,29 +12,46 @@
         profiles, please see our links to Training material.
       </p>
     </div>
-    <profileTemplate :profiles="baselines" />
+    <v-btn v-on:click="toggleCompact" class="ml-8">Compact View</v-btn>
+    <v-spacer />
+    <div v-show="showCompact">
+      <profileTemplateCompact :profiles="baselines" />
+    </div>
+    <div v-show="!showCompact">
+      <profileTemplate :profiles="baselines" />
+    </div>
   </v-content>
 </template>
 
 <script>
+import profileTemplateCompact from "@/components/profiles/profileTemplateCompact.vue";
 import profileTemplate from "@/components/profiles/profileTemplate.vue";
 import baselines from "@/assets/data/baselines.json";
 import db from "@/assets/data/communityData.json";
+import { mapMutations } from "vuex";
 
 export default {
   components: {
-    profileTemplate
+    profileTemplate,
+    profileTemplateCompact
   },
   data() {
     return {
       baselines: baselines,
-      db: db
+      db: db,
+      isCompact: false
     };
   },
   computed: {
     mail_link() {
       return "mailto:" + db.communityEmail;
+    },
+    showCompact() {
+      return this.$store.state.isCompact;
     }
+  },
+  methods: {
+    ...mapMutations(["toggleCompact"])
   }
 };
 </script>

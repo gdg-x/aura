@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     drawer: false,
     showFutureTraining: false,
+    isCompact: false,
     items: [
       {
         text: "Home",
@@ -77,7 +78,8 @@ export default new Vuex.Store({
   },
   mutations: {
     setDrawer: (state, payload) => (state.drawer = payload),
-    toggleDrawer: state => (state.drawer = !state.drawer)
+    toggleDrawer: state => (state.drawer = !state.drawer),
+    toggleCompact: state=> (state.isCompact = !state.isCompact)
   },
   actions: {}
 });
