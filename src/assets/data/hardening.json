@@ -9,42 +9,98 @@
   "items": [
     {
       "category": "Operating Systems",
-      "values": {
-        "Windows 2016 r2 STIG (Chef)": "https://github.com/mitre/chef-stig-windows-server-2016-v1r4-hardening",
-        "Windows 2012 r2 STIG (Chef)": "https://github.com/mitre/chef-stig-windows-2012-v2r12-memberserver-hardening",
-        "Ubuntu 16.04 STIG (Chef)": "https://github.com/mitre/chef-canonical-ubuntu-16.04-lts-stig-hardening",
-        "RedHat Enterprise Linux STIG (Ansible)": "https://github.com/mitre/ansible-rhel7-stig-hardening"
-      }
+      "values": [
+        {
+          "shortName": "Windows 2016",
+          "longName": "Windows 2016 r2 STIG (Chef)",
+          "link": "https://github.com/mitre/chef-stig-windows-server-2016-v1r4-hardening"
+        },
+        {
+          "shortName": "Windows 2012",
+          "longName": "Windows 2012 r2 STIG (Chef)",
+          "link": "https://github.com/mitre/chef-stig-windows-2012-v2r12-memberserver-hardening"
+        },
+        {
+          "shortName": "Ubuntu 16.04",
+          "longName": "Ubuntu 16.04 STIG (Chef)",
+          "link": "https://github.com/mitre/chef-canonical-ubuntu-16.04-lts-stig-hardening"
+        },
+        {
+          "shortName": "Red Hat 7",
+          "longName": "RedHat Enterprise 7 Linux STIG (Ansible)",
+          "link": "https://github.com/mitre/ansible-rhel7-stig-hardening"
+        }
+      ]
     },
     {
       "category": "Application Logic",
-      "values": {
-        "CIS Docker Community Edition Benchmark (Ansible)": "https://github.com/mitre/ansible-cis-docker-ce-hardening",
-        "CIS Docker Community Edition Benchmark (Chef)": "https://github.com/mitre/chef-cis-docker-ce-hardening"
-      }
+      "values": [
+        {
+          "shortName": "Docker (Ansible)",
+          "longName": "CIS Docker Community Edition Benchmark (Ansible)",
+          "link": "https://github.com/mitre/ansible-cis-docker-ce-hardening"
+        },
+        {
+          "shortName": "Docker (Chef)",
+          "longName": "CIS Docker Community Edition Benchmark (Chef)",
+          "link": "https://github.com/mitre/chef-cis-docker-ce-hardening"
+        }
+      ]
     },
     {
       "category": "Web Servers",
-      "values": {
-        "CIS Tomcat Benchmark (Ansible)": "https://github.com/mitre/ansible-cis-tomcat-hardening",
-        "CIS Tomcat Benchmark (Chef)": "https://github.com/mitre/chef-cis-tomcat-hardening",
-        "nginx (Chef)": "https://github.com/mitre/chef-nginx-hardening",
-        "IIS Sites (Chef)": "https://github.com/mitre/chef-iis-site-hardening",
-        "IIS Server (Chef)": "https://github.com/mitre/chef-iis-85-hardening"
-      }
+      "values": [
+        {
+          "shortName": "Tomcat (Ansible)",
+          "longName": "CIS Tomcat Benchmark (Ansible)",
+          "link": "https://github.com/mitre/ansible-cis-tomcat-hardening"
+        },
+        {
+          "shortName": "Tomcat (Chef)",
+          "longName": "CIS Tomcat Benchmark (Chef)",
+          "link": "https://github.com/mitre/chef-cis-tomcat-hardening"
+        },
+        {
+          "shortName": "NGINX",
+          "longName": "NGINX (Chef)",
+          "link": "https://github.com/mitre/chef-nginx-hardening"
+        },
+        {
+          "shortName": "IIS Sites",
+          "longName": "IIS Sites (Chef)",
+          "link": "https://github.com/mitre/chef-iis-site-hardening"
+        },
+        {
+          "shortName": "IIS Server",
+          "longName": "IIS Server (Chef)",
+          "link": "https://github.com/mitre/chef-iis-85-hardening"
+        }
+      ]
     },
     {
       "category": "Cloud Service Providers",
-      "values": {
-        "AWS Basic Example (kitchen-terraform)": "https://github.com/mitre/demo-aws-hardening",
-        "CIS AWS Foundations Benchmark (kitchen-terraform)": "https://github.com/mitre/cis-aws-foundations-hardening"
-      }
+      "values": [
+        {
+          "shortName": "AWS",
+          "longName": "AWS Basic Example (kitchen-terraform)",
+          "link": "https://github.com/mitre/demo-aws-hardening"
+        },
+        {
+          "shortName": "CIS AWS",
+          "longName": "CIS AWS Foundations Benchmark (kitchen-terraform)",
+          "link": "https://github.com/mitre/cis-aws-foundations-hardening"
+        }
+      ]
     },
     {
       "category": "Databases",
-      "values": {
-        "MongoDB Enterprise STIG (Chef)": "https://github.com/mitre/chef-stig-mongodb-enterprise-advanced-hardening"
-      }
+      "values": [
+        {
+          "shortName": "MongoDB",
+          "longName": "MongoDB Enterprise STIG (Chef)",
+          "link": "https://github.com/mitre/chef-stig-mongodb-enterprise-advanced-hardening"
+        }
+      ]
     }
   ]
 }

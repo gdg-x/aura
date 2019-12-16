@@ -12,18 +12,13 @@
       "values": [
         {
           "shortName": "RedHat 6",
-          "longName": "RedHat 6 STIG is a pretty cool STIG",
+          "longName": "RedHat 6 STIG",
           "link": "https://github.com/mitre/red-hat-enterprise-linux-6-stig-baseline"
         },
         {
           "shortName": "RedHat 7",
-          "longName": "RedHat 7 STIG is a pretty cool STIG",
+          "longName": "RedHat 7 STIG",
           "link": "https://github.com/mitre/red-hat-enterprise-linux-7-stig-baseline"
-        },
-        {
-          "shortName": "RedHat CVE Scan",
-          "longName": "RedHat CVE Vulnerability Scan",
-          "link": "https://github.cms.gov/ISPG/rhel_cve_vulnerability_scan_baseline"
         },
         {
           "shortName": "RedHat CVE Scan",
@@ -37,7 +32,7 @@
         },
         {
           "shortName": "Docker CE CIS",
-          "longName": "Docker CE CIS is a pretty cool profile",
+          "longName": "Docker CE CIS",
           "link": "https://github.com/mitre/docker-ce-cis-baseline"
         },
         {
@@ -87,7 +82,7 @@
         },
         {
           "shortName": "NGINX",
-          "longName": "NGINX is a pretty cool profile",
+          "longName": "NGINX",
           "link": "https://github.com/mitre/nginx-baseline"
         }
       ]
@@ -102,7 +97,7 @@
         },
         {
           "shortName": "AWS S3",
-          "longName": "AWS S3 is a pretty cool baseline",
+          "longName": "AWS S3",
           "link": "https:// github.com/mitre/aws-s3-baseline"
         },
         {
