@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Training Resources</p>
+    <!-- <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Training Resources</p>
     <br />
     <v-list v-for="item in resources.items" :key="item">
       <v-list-item-title style="font-size:125% ma-2">
@@ -25,7 +25,7 @@
           :height="$vuetify.breakpoint.smAndDown ? 150 : 300"
         ></iframe>
       </v-col>
-    </v-row>
+    </v-row> -->
     <br />
     <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Upcoming Training Sessions</p>
     <p
@@ -50,6 +50,7 @@
       </v-col>
     </v-row>
     <br />
+    <br>
     <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Past Training Sessions</p>
     <p
       class="google-font mt-0 mb-0"
