@@ -3,7 +3,7 @@
       <br>
     <v-row align="center">
       <v-col md="12" sm="12" cols="12">
-        <p class="google-font mb-0" style="font-weight: 350;font-size:200%">
+        <p class="google-font mb-0" style="font-weight: 350;color: #616161;font-size:200%">
           <b>
             Getting
             <span style="color: #1a73e8;">Started</span>
