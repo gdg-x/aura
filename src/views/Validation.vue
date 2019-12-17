@@ -1,7 +1,14 @@
 <template>
   <v-content>
-    <v-row>
-      <v-col xs="12" sm="12" md="6" lg="9" xl="6">
+    <v-container fluid class="pa-0 py-2">
+      <v-row justify="center" align="center">
+        <v-col
+          md="12"
+          lg="10"
+          xs="12"
+          class="py-0"
+          :class="this.$vuetify.theme.dark == true?'darkModeContainer':'lightModeContainer'"
+        >
         <div class="ma-2 pa-2 google-font" max-width="1000">
           <p>
             These open-source community-based InSpec profiles validate the security of
@@ -16,6 +23,7 @@
         </div>
       </v-col>
     </v-row>
+    </v-container>
     <v-switch class="ma-2" :input-value="showCompact" @change="toggleCompact" label="Compact View" />
     <div v-show="showCompact">
       <profileTemplateCompact :profiles="baselines" />

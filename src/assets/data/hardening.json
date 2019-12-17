@@ -66,13 +66,13 @@
           "link": "https://github.com/mitre/chef-nginx-hardening"
         },
         {
-          "shortName": "IIS Sites (Chef) STIG",
-          "longName": "IIS Sites (Chef) STIG",
+          "shortName": "IIS Sites STIG (Chef)",
+          "longName": "IIS Sites STIG (Chef)",
           "link": "https://github.com/mitre/chef-iis-site-hardening"
         },
         {
-          "shortName": "IIS Server (Chef) STIG",
-          "longName": "IIS Server (Chef) STIG",
+          "shortName": "IIS Server STIG (Chef)",
+          "longName": "IIS Server STIG (Chef)",
           "link": "https://github.com/mitre/chef-iis-85-hardening"
         }
       ]
