@@ -1,35 +1,36 @@
 <template>
   <v-content class="pa-0 pt-5">
     <v-container fluid class="pa-0 pt-5 mt-2">
-      <v-row
-        justify="center"
-        align="center"
-        :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
-        class="py-0 my-0"
-      >
+      <v-row justify="center" align="center" class="py-0 my-0"
+      :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
         <v-col md="12" lg="10" xs="12" class="py-3 my-0">
           <profileHeader>Hardening</profileHeader>
         </v-col>
+      </v-row>
+    </v-container>
+    <v-container fluid class="pa-0 pt-5 mt-2">
+      <v-row justify="center" align="center" class="py-0 my-0">
         <v-col md="12" lg="10" xs="12" class="py-3 my-0">
-          <div class="ma-2 pa-2 google-font" max-width="1000">
+          <div class="ma-2 pa-2 google-font">
             <p>
               These open-source community-based hardening baselines help to securely configure common system components. MITRE is helping to provide stewardship over these hardening baselines, hosted here and at other community vendor sites. If you are interested in new hardening baselines, please contact us at
               <a
                 :href="mail_link"
               >{{ db.communityEmail }}</a>.
             </p>
-          </div>
-          <v-switch
-            class="ma-2"
-            :input-value="showCompact"
-            @change="toggleCompact"
-            label="Compact View"
-          />
-          <div v-show="showCompact">
-            <profileTemplateCompact :profiles="hardening" />
-          </div>
-          <div v-show="!showCompact">
-            <profileTemplate :profiles="hardening" />
+
+            <v-switch
+              class="ma-2"
+              :input-value="showCompact"
+              @change="toggleCompact"
+              label="Compact View"
+            />
+            <div v-show="showCompact">
+              <profileTemplateCompact :profiles="hardening" />
+            </div>
+            <div v-show="!showCompact">
+              <profileTemplate :profiles="hardening" />
+            </div>
           </div>
         </v-col>
       </v-row>

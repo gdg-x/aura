@@ -15,7 +15,7 @@
           </template>
         </v-img> 
       </v-col>-->
-      <v-col md="9" sm="7">
+      <v-col md="12" lg="10" xs="12">
         <p class="google-font mb-1" style="font-weight: 350;color: #616161;font-size:200%">
           <b>
             Security

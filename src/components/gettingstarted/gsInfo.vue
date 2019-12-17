@@ -10,13 +10,13 @@
             <!-- <v-list-item-title style="font-size:150% ma-2">
               <b>{{item.name}}</b>
             </v-list-item-title> -->
-            <v-list-item class="ma-2">{{item.desc}}</v-list-item>
+            <v-list-item class="ma-2 google-font">{{item.desc}}</v-list-item>
             <v-list-item v-for="entry in item.values" :key="entry">
               <div>
                 <li>
                   <span>
-                    <a :href="entry.link">{{entry.name}}</a>
-                    <span v-show="entry.desc">-- {{entry.desc}}</span>
+                    <a :href="entry.link" class="google-font">{{entry.name}}</a>
+                    <span v-show="entry.desc" class="google-font"> - {{entry.desc}}</span>
                   </span>
                 </li>
               </div>

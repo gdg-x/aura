@@ -1,5 +1,6 @@
 <template>
   <v-container fluid>
+    <br>
     <v-row align="center">
       <v-col md="12" sm="12" cols="12">
         <p class="google-font mb-0" style="font-weight: 350;font-size:200%">
@@ -17,6 +18,7 @@
         </p>
       </v-col>
     </v-row>
+    <br>
   </v-container>
 </template>
 

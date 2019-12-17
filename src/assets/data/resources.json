@@ -6,32 +6,32 @@
       "values": [
         {
           "name": "InSpec Documentation",
-          "desc": "InSpec's main webpage",
+          "desc": "InSpec's main webpage containing all written documentation and walkthroughs of the tool",
           "link": "https://www.inspec.io/docs/"
         },
         {
           "name": "InSpec Profile Resources Reference",
-          "desc": "List of the existing systems InSpec can play with straight out of the box (InSpec \"resources\")",
+          "desc": "List of the existing systems InSpec available for the user to search through (known as InSpec \"resources\")",
           "link": "https://www.inspec.io/docs/reference/resources/"
         },
         {
           "name": "Introduction to InSpec Video Courses",
-          "desc": "",
+          "desc": "Video tutorials demonstrating and explaining how InSpec operates",
           "link": "https://www.youtube.com/playlist?list=PLSZbtIlMt5rcbXOpMRucKzRMXR7HX7awy"
         },
         {
           "name": "InSpec Profile Developers Course",
-          "desc": "The basics on how to write and run tests",
+          "desc": "Reviews the basics on how to write and run tests",
           "link": "https://mitre-inspec-developer.netlify.com/"
         },
         {
           "name": "InSpec Advanced Developer Course",
-          "desc": "",
+          "desc": "In depth explaination of some of the higher functionalities provided by InSpec",
           "link": "https://mitre-inspec-advanced-developer.netlify.com/"
         },
         {
           "name": "InSpec Tools and Utilization",
-          "desc": "Guide to installation of InSpec Tools.",
+          "desc": "Guide to installation of InSpec Tools",
           "link": "https://mitre.github.io/inspec_tools/"
         }
       ]
