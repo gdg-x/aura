@@ -18,9 +18,9 @@
       <v-col md="12" lg="10" xs="12">
         <p class="google-font mb-1" style="font-weight: 350;color: #616161;font-size:200%">
           <b>
-            Security
+            <span :style="color_mode">Security
             <span style="color: #1a73e8;">Automation</span>
-            Framework
+            Framework</span>
           </b>
         </p>
         <!-- <p class="google-font mt-0 mb-0" style="font-size:150%">{{communityData.community}}</p> -->
@@ -58,6 +58,13 @@ export default {
     return {
       communityData: communityData
     };
+  },
+
+  methods: {
+    color_mode() {
+      if (this.$vuetify.theme.dark) return "color:white";
+      return "color:grey lighten-4";
+    }
   }
 };
 </script>
