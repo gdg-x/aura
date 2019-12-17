@@ -1,32 +1,5 @@
 <template>
   <v-container fluid>
-    <!-- <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Training Resources</p>
-    <br />
-    <v-list v-for="item in resources.items" :key="item">
-      <v-list-item-title style="font-size:125% ma-2">
-        <b>{{item.name}}</b>
-      </v-list-item-title>
-      <v-list-item class="ma-2">{{item.desc}}</v-list-item>
-      <v-list-item v-for="entry in item.values" :key="entry">
-        <div>
-          <li>
-            <span><a :href="entry.link">{{entry.name}}</a><span v-show="entry.desc"> -- {{entry.desc}}</span></span>
-          </li>
-        </div>
-      </v-list-item>
-    </v-list>
-    <br />
-    <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Videos</p>
-    <v-row>
-      <v-col v-for="video in resources.videos" :key="video" cols="auto">
-        <iframe
-          :src="video.link"
-          :width="$vuetify.breakpoint.smAndDown ? 280 : 560"
-          :height="$vuetify.breakpoint.smAndDown ? 150 : 300"
-        ></iframe>
-      </v-col>
-    </v-row> -->
-    <br />
     <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Upcoming Training Sessions</p>
     <p
       class="google-font mt-0 mb-0"
