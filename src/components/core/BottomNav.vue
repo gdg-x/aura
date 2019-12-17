@@ -14,7 +14,7 @@
       small
       v-if="link.meta.showBottomNav && link.meta.enabled"
       class="ml-0 google-font"
-      style="text-transform: capitalize;"
+      style="text-transform: capitalize; "
       text
       @click="onClick($event, link)"
     >

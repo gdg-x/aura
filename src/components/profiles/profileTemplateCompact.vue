@@ -1,36 +1,40 @@
 <template>
-  <v-container fluid>
-    <v-row align="center" v-for="item in profiles.items" :key="item.category" dense no-gutters>
+  <div>
+    <v-card v-for="item in profiles.items"
+      :key="item.category" outlined class="ma-2"> 
+    <v-row
+      align="center"
+      
+      dense
+      no-gutters
+      justify="start"
+    >
       <v-col cols="2" v-show="$vuetify.breakpoint.smAndUp">
-        <v-card outlined color="blue" class="ma-2 pa-2">
-          <v-card-title
-            class="ma-n4 subtitle1 break-word justify-center text-center"
-            style="color:white"
-          >{{item.category}}</v-card-title>
-        </v-card>
+        <h2 class="ma-2 pa-2 break-word justify-center text-center google-font">{{item.category}}</h2>
       </v-col>
       <v-col cols="10">
         <v-container>
-          <v-row dense no-gutters align="center">
+          <v-row dense no-gutters align="center" justify="start">
             <v-col cols="auto" v-show="$vuetify.breakpoint.xs">
-              <v-card color="blue" class="ma-4 pa-2">
-                <v-card-title
-                  class="ma-n4 subtitle1 break-word justify-center text-center"
-                  style="color:white"
-                >{{item.category}}</v-card-title>
-              </v-card>
+              <h2 class="ma-2 pa-2 break-word justify-center text-left google-font">{{item.category}}</h2>
             </v-col>
-            <v-col cols="auto" v-for="entry in item.values" :key="entry">
-              <v-card elevation="0" :href="entry.link" target="_blank">
-                <v-card-title class="my-n3" style="font-size:90%">{{entry.shortName}}</v-card-title>
-              </v-card>
+            <v-col cols="auto">
+              <v-chip-group multiple column>
+                <v-chip
+                  v-for="entry in item.values"
+                  :key="entry"
+                  :href="entry.link"
+                  target="_blank"
+                  class="google-font break-word"
+                >{{ entry.shortName }}</v-chip>
+              </v-chip-group>
             </v-col>
           </v-row>
         </v-container>
       </v-col>
-
     </v-row>
-  </v-container>
+    </v-card>
+  </div>
 </template>
 
 <script>
@@ -65,14 +69,17 @@ export default {
       }
     },
     printbp() {
-        console.log(this.$vuetify.breakpoint)
+      console.log(this.$vuetify.breakpoint);
     }
   }
 };
 </script>
 
 <style scoped>
-.container {
+.div {
   max-width: 1000px;
+}
+.v-chip__content {
+    white-space: nowrap;
 }
 </style>

@@ -52,7 +52,7 @@ export default new Vuex.Store({
       {
         text: "Getting Started",
         to: "/gettingstarted",
-        icon: "mdi-chair-school",
+        icon: "mdi-book-open",
         meta: {
           showToolbar: true,
           enabled: true,
@@ -74,6 +74,9 @@ export default new Vuex.Store({
   getters: {
     links: state => {
       return state.items;
+    },
+    isCompactGetter: state => {
+      return state.isCompact;
     }
   },
   mutations: {

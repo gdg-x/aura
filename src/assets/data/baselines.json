@@ -121,12 +121,12 @@
           "link": "https://github.com/mitre/aws-rds-oracle-mysql-ee-5.7-cis-baseline"
         },
         {
-          "shortName": "Crunchy Data PostgreSQL 9.x",
+          "shortName": "PostgreSQL 9.x",
           "longName": "Crunchy Data PostgreSQL 9.x STIG",
           "link": "https://github.com/CrunchyData/pgstigcheck-inspec"
         },
         {
-          "shortName": "AWS RDS Crunchy Data PostgreSQL 9.x",
+          "shortName": "AWS RDS PostgreSQL 9.x",
           "longName": "AWS RDS Crunchy Data PostgreSQL 9.x STIG",
           "link": "https://github.com/mitre/aws-rds-crunchy-data-postgresql-9-stig-baseline"
         },

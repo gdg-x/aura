@@ -11,22 +11,22 @@
       "category": "Operating Systems",
       "values": [
         {
-          "shortName": "Windows 2016",
+          "shortName": "Windows 2016 STIG (Chef)",
           "longName": "Windows 2016 r2 STIG (Chef)",
           "link": "https://github.com/mitre/chef-stig-windows-server-2016-v1r4-hardening"
         },
         {
-          "shortName": "Windows 2012",
+          "shortName": "Windows 2012 STIG (Chef)",
           "longName": "Windows 2012 r2 STIG (Chef)",
           "link": "https://github.com/mitre/chef-stig-windows-2012-v2r12-memberserver-hardening"
         },
         {
-          "shortName": "Ubuntu 16.04",
+          "shortName": "Ubuntu 16.04 STIG (Chef)",
           "longName": "Ubuntu 16.04 STIG (Chef)",
           "link": "https://github.com/mitre/chef-canonical-ubuntu-16.04-lts-stig-hardening"
         },
         {
-          "shortName": "Red Hat 7",
+          "shortName": "Red Hat 7 STIG (Ansible)",
           "longName": "RedHat Enterprise 7 Linux STIG (Ansible)",
           "link": "https://github.com/mitre/ansible-rhel7-stig-hardening"
         }
@@ -36,13 +36,13 @@
       "category": "Application Logic",
       "values": [
         {
-          "shortName": "Docker (Ansible)",
-          "longName": "CIS Docker Community Edition Benchmark (Ansible)",
+          "shortName": "Docker CIS Benchmark (Ansible)",
+          "longName": "Docker CIS Benchmark (Ansible)",
           "link": "https://github.com/mitre/ansible-cis-docker-ce-hardening"
         },
         {
-          "shortName": "Docker (Chef)",
-          "longName": "CIS Docker Community Edition Benchmark (Chef)",
+          "shortName": "Docker CIS Benchmark (Chef)",
+          "longName": "Docker CIS Benchmark (Chef)",
           "link": "https://github.com/mitre/chef-cis-docker-ce-hardening"
         }
       ]
@@ -51,28 +51,28 @@
       "category": "Web Servers",
       "values": [
         {
-          "shortName": "Tomcat (Ansible)",
-          "longName": "CIS Tomcat Benchmark (Ansible)",
+          "shortName": "Tomcat CIS Benchmark (Ansible)",
+          "longName": "Tomcat CIS Benchmark (Ansible)",
           "link": "https://github.com/mitre/ansible-cis-tomcat-hardening"
         },
         {
-          "shortName": "Tomcat (Chef)",
-          "longName": "CIS Tomcat Benchmark (Chef)",
+          "shortName": "Tomcat CIS Benchmark (Chef)",
+          "longName": "Tomcat CIS Benchmark (Chef)",
           "link": "https://github.com/mitre/chef-cis-tomcat-hardening"
         },
         {
-          "shortName": "NGINX",
-          "longName": "NGINX (Chef)",
+          "shortName": "NGINX [WIP] (Chef)",
+          "longName": "NGINX [Work-In-Progress] (Chef)",
           "link": "https://github.com/mitre/chef-nginx-hardening"
         },
         {
-          "shortName": "IIS Sites",
-          "longName": "IIS Sites (Chef)",
+          "shortName": "IIS Sites (Chef) STIG",
+          "longName": "IIS Sites (Chef) STIG",
           "link": "https://github.com/mitre/chef-iis-site-hardening"
         },
         {
-          "shortName": "IIS Server",
-          "longName": "IIS Server (Chef)",
+          "shortName": "IIS Server (Chef) STIG",
+          "longName": "IIS Server (Chef) STIG",
           "link": "https://github.com/mitre/chef-iis-85-hardening"
         }
       ]
@@ -81,13 +81,8 @@
       "category": "Cloud Service Providers",
       "values": [
         {
-          "shortName": "AWS",
-          "longName": "AWS Basic Example (kitchen-terraform)",
-          "link": "https://github.com/mitre/demo-aws-hardening"
-        },
-        {
-          "shortName": "CIS AWS",
-          "longName": "CIS AWS Foundations Benchmark (kitchen-terraform)",
+          "shortName": "AWS CIS Benchmark (kitchen-terraform)",
+          "longName": "AWS Foundations CIS Benchmark (kitchen-terraform)",
           "link": "https://github.com/mitre/cis-aws-foundations-hardening"
         }
       ]
@@ -96,7 +91,7 @@
       "category": "Databases",
       "values": [
         {
-          "shortName": "MongoDB",
+          "shortName": "MongoDB STIG (Chef)",
           "longName": "MongoDB Enterprise STIG (Chef)",
           "link": "https://github.com/mitre/chef-stig-mongodb-enterprise-advanced-hardening"
         }
