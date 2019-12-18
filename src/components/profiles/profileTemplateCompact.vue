@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-content>
     <v-card v-for="item in profiles.items" :key="item.category" outlined class="ma-2">
       <v-row align="center" dense no-gutters justify="start">
         <v-col cols="2" v-show="$vuetify.breakpoint.smAndUp">
@@ -45,7 +45,7 @@
         </v-col>
       </v-row>
     </v-card>
-  </div>
+  </v-content>
 </template>
 
 <script>

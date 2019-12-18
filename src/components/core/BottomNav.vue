@@ -1,5 +1,5 @@
 <template>
-  <v-bottom-navigation
+  <v-bottom-navigation app
     :value="activeBtn"
     grow
     app
