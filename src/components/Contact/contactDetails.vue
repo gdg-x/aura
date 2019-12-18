@@ -10,12 +10,12 @@
         <p class="google-font">Questions? Please contact
           <a
             style="color:#1565C0;text-decoration: none;"
-            :href="`mailto:${communitydata.CommunityEmail}`"
-          >{{communitydata.CommunityEmail}}</a>
+            :href="`mailto:${communityData.communityEmail}`"
+          >{{communityData.communityEmail}}</a>
         </p>
         <!-- <p class="google-font mt-4 mb-3" style="font-size:130%">
           Follow Us:
-          <span v-for="(item,i) in communitydata.SocialLinks" :key="i">
+          <span v-for="(item,i) in communityData.SocialLinks" :key="i">
             <v-tooltip top>
               <template v-slot:activator="{ on }">
                 <v-btn text icon :href="item.link" target="_blank" slot="activator">
@@ -35,11 +35,11 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
-      communitydata: communitydata
+      communityData: communityData
     };
   }
 };

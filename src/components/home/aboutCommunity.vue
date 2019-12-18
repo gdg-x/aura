@@ -4,11 +4,11 @@
       <v-col cols="12" md="12" lg="12" sm="12" class="pa-0" style="color:white">
         <div class="ma-1">
           <div class="pa-5">
-            <p class="google-font mb-0" style="font-size:150%">About {{communitydata.CommunityName}}</p>
-            <p class="google-font mt-0" style="font-size:95%">{{communitydata.CommunityLongDec}}</p>
+            <p class="google-font mb-0" style="font-size:150%">About {{communityData.communityName}}</p>
+            <p class="google-font mt-0" style="font-size:95%">{{communityData.communityLongDec}}</p>
 
             <!-- <v-btn
-              :href="communitydata.CommunityMeetupLink"
+              :href="communityData.CommunityMeetupLink"
               target="_blank"
               outlined
               color
@@ -29,7 +29,7 @@
               to="/about"
               class="google-font"
               style="text-decoration:none;color:white"
-            >See More about {{communitydata.CommunityName}}</router-link> -->
+            >See More about {{communityData.community}}</router-link> -->
           </div>
         </div>
       </v-col>
@@ -74,11 +74,11 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 export default {
   name: "App",
   data: () => ({
-    communitydata: communitydata
+    communityData: communityData
   }),
   methods: {
     getImgUrl(url) {

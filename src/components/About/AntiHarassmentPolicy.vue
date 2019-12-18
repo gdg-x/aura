@@ -8,7 +8,7 @@
         <v-row class="py-0 my-0">
             <v-col md="8" sm="8" cols="12" class="py-0 my-0">
                 <p class="google-font" style="font-size:100%">
-                    <b style="font-size:120%;">Why do we have an official Anti-Harassment policy for {{communitydata.CommunityName}} events?</b>
+                    <b style="font-size:120%;">Why do we have an official Anti-Harassment policy for {{communityData.community}} events?</b>
 
                     <ul class="mt-2" style="font-size:100%">
                         <li class="google-font">It sets expectations for behavior at the event. Simply having an anti-harassment policy can prevent harassment.</li>
@@ -18,7 +18,7 @@
                 </p>
 
                 <p class="google-font" style="font-size:110%">
-                    <b style="font-size:120%;">{{communitydata.CommunityName}} is dedicated to providing a harassment-free event experience for everyone, regardless of: </b>
+                    <b style="font-size:120%;">{{communityData.community}} is dedicated to providing a harassment-free event experience for everyone, regardless of: </b>
 
                     <ul class="mt-2" style="font-size:110%">
                         <li class="google-font">Gender</li>
@@ -67,11 +67,11 @@
 </template>
 
 <script>
-import communitydata from '@/assets/data/communitydata.json'
+import communityData from '@/assets/data/communityData.json'
 export default {
     data() {
         return {
-            communitydata: communitydata
+            communityData: communityData
         }
     }
 }

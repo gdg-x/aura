@@ -10,7 +10,7 @@
       right
       color="primary"
       @click="toTop"
-        :style="moveForBottomNavStyle"
+      :style="moveForBottomNavStyle"
     >
       <v-icon>mdi-arrow-up-bold-circle-outline</v-icon>
     </v-btn>
@@ -19,22 +19,22 @@
         v-for="cat in profiles.categories"
         :key="cat"
         :class="{'x-small': $vuetify.breakpoint.mdAndDown}"
-        class="pa-2 ma-2"
+        class="pa-2 ma-2 google-font"
         :to="{hash: make_linkable(cat)}"
       >{{cat}}</v-btn>
     </div>
-    <v-sheet v-for="item in profiles.items" :key="item.category" class="ma-2 pa-2">
+    <v-sheet v-for="item in profiles.items" :key="item.category" class="ma-2 pa-2 google-font">
       <h2 :id="make_linkable(item.category)">{{ item.category }}</h2>
       <v-card
         flat
-        v-for="(link, entry) in item.values"
-        :key="link"
+        v-for="entry in item.values"
+        :key="entry"
         class="ma-2"
-        :href="link"
+        :href="entry.link"
         target="_blank"
         outlined
       >
-        <v-card-title class="headline break-word">{{ entry }}</v-card-title>
+        <v-card-title class="headline break-word google-font">{{ entry.longName }}</v-card-title>
       </v-card>
     </v-sheet>
   </div>
@@ -66,11 +66,11 @@ export default {
   computed: {
     moveForBottomNavStyle() {
       if (this.$vuetify.breakpoint.smAndDown) {
-        return "z-index: 10; bottom: 60px"
+        return "z-index: 10; bottom: 60px";
       } else {
-        return ""
+        return "";
       }
-    },
+    }
   }
 };
 </script>

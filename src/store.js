@@ -6,6 +6,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     drawer: false,
+    showFutureTraining: false,
+    isCompact: false,
     items: [
       {
         text: "Home",
@@ -48,6 +50,16 @@ export default new Vuex.Store({
         }
       },
       {
+        text: "Getting Started",
+        to: "/gettingstarted",
+        icon: "mdi-book-open",
+        meta: {
+          showToolbar: true,
+          enabled: true,
+          showBottomNav: true
+        }
+      },
+      {
         text: "Training",
         to: "/training",
         icon: "mdi-chair-school",
@@ -62,11 +74,15 @@ export default new Vuex.Store({
   getters: {
     links: state => {
       return state.items;
+    },
+    isCompactGetter: state => {
+      return state.isCompact;
     }
   },
   mutations: {
     setDrawer: (state, payload) => (state.drawer = payload),
-    toggleDrawer: state => (state.drawer = !state.drawer)
+    toggleDrawer: state => (state.drawer = !state.drawer),
+    toggleCompact: state=> (state.isCompact = !state.isCompact)
   },
   actions: {}
 });

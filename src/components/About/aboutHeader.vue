@@ -5,7 +5,7 @@
         <p class="google-font mb-0" style="font-weight: 350;font-size:200%">
           <b>
             <span style="color: #1a73e8;">About</span>
-            {{communitydata.CommunityName}}
+            {{ communityData.community }}
           </b>
         </p>
       </v-col>
@@ -14,11 +14,11 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
-      communitydata: communitydata
+      communityData: communityData
     };
   }
 };

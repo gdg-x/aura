@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import communitydata from '@/assets/data/communitydata.json'
+import communityData from '@/assets/data/communityData.json'
 import AllSpeakersData from '@/assets/data/Speakers/Speakers.json'
 import { configData } from "@/config/config";
 import LayoutSpeaker from '../SubLayout/SubComponents/LayoutSpeaker'
@@ -32,7 +32,7 @@ export default {
     },
     data() {
         return {
-            communitydata: communitydata,
+            communityData: communityData,
             AllSpeakersData: AllSpeakersData,
             cd: configData
         }

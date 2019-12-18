@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 import BlogCard from "@/components/Blogs/BlogCard";
 import { configData } from "@/config/config";
 export default {
@@ -79,7 +79,7 @@ export default {
   },
   data() {
     return {
-      communitydata: communitydata,
+      communityData: communityData,
       blogsData: [],
       cd: configData,
       loader: true

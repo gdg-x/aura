@@ -7,18 +7,18 @@
         <v-row align="center">
           <!-- <v-col class="px-0 hidden-sm-and-down">
             <v-img
-              :src="require('@/assets/img/gdg.png')"
-              :lazy-src="require('@/assets/img/gdg.png')"
-              width="4vh"
-            ></v-img>
+              src="https://communityshare.mitre.org/sites/CCPA/Portfolio%20Images/mitrelogo-whiteonblue.jpg"
+              width="100"
+           ></v-img>
           </v-col>-->
           <v-col class="pl-2">
+            
             <router-link
               :to="{ name: 'home'}"
               class="google-font"
               style="text-decoration:none;font-size:110%"
               :class="this.$vuetify.theme.dark?'whiteText':'blackText'"
-            >{{communitydata.CommunityName}}</router-link>
+            >{{communityData.communityName}}</router-link>
           </v-col>
         </v-row>
       </v-container>
@@ -44,13 +44,13 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 import PushNotification from "@/components/core/PushNotifications";
 import { mapGetters, mapMutations } from "vuex";
 export default {
   data() {
     return {
-      communitydata: communitydata
+      communityData: communityData
     };
   },
   components: {

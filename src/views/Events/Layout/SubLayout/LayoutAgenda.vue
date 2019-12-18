@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import communitydata from '@/assets/data/communitydata.json'
+import communityData from '@/assets/data/communityData.json'
 import { configData } from "@/config/config";
 export default {
     props:{
@@ -28,7 +28,7 @@ export default {
     },
     data() {
         return {
-            communitydata: communitydata,
+            communityData: communityData,
             cd: configData
         }
     },

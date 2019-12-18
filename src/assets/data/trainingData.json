@@ -1,31 +1,48 @@
 {
-    "introtraining": [
+  "pastTraining": {
+    "introTraining": [
       {
         "name": "Introductory InSpec Profile Developer Training",
         "date": "March 7-8th 2019",
-        "description": ""
+        "description": "",
+        "link": ""
       },
       {
         "name": "Introductory InSpec Profile Developer Training",
         "date": "March 13-14th 2019",
-        "description": ""
+        "description": "",
+        "link": ""
       },
       {
         "name": "Introductory InSpec Profile Developer Training",
         "date": "August 28-29th 2019",
-        "description": ""
+        "description": "",
+        "link": ""
       },
       {
         "name": "Introductory InSpec Profile Developer Training",
         "date": "November 13-14 2019",
-        "description": ""
+        "description": "",
+        "link": ""
       }
     ],
-    "advtraining":[
+    "advTraining": [
       {
         "name": "Adavanced InSpec Profile Developer Training",
         "date": "September 5-6th 2019",
-        "description": ""
-      } 
+        "description": "",
+        "link": ""
+      }
     ]
+  },
+  "upcomingTraining": {
+    "introTraining": [
+      {
+        "name": "Upcoming Training Sessions will appear here as they are announced!",
+        "date": "TBD",
+        "description": "",
+        "link": ""
+      }
+    ]
+  }
 }

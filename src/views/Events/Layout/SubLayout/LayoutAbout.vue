@@ -12,7 +12,7 @@
                         <p class="google-font mb-0 mt-3"><b>Date:</b> {{aboutData.EventDate.Date}}/{{aboutData.EventDate.Month}}/{{aboutData.EventDate.Year}}</p>
                         <p class="google-font mb-0 mb-0"><b>Time:</b> {{aboutData.EventTime.StartTime}} - {{aboutData.EventTime.EndTime}}</p>
                         <p class="google-font mb-0 mb-0"><b>Venue:</b> {{aboutData.EventVenue}}</p>
-                        <p class="google-font mb-0 mb-0"><b>Contact Email:</b> {{communitydata.CommunityEmail}}</p>
+                        <p class="google-font mb-0 mb-0"><b>Contact Email:</b> {{communityData.communityEmail}}</p>
                         
                         <div class="mt-3 mb-2">
                             <span v-for="(item,i) in aboutData.EventHashTags" :key="i">
@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import communitydata from '@/assets/data/communitydata.json'
+import communityData from '@/assets/data/communityData.json'
 import { configData } from "@/config/config";
 export default {
     components:{
@@ -63,7 +63,7 @@ export default {
     },
     data() {
         return {
-            communitydata: communitydata,
+            communityData: communityData,
             cd: configData
         }
     },

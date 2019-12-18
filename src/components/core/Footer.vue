@@ -11,7 +11,7 @@
           <!-- <v-divider v-if="!this.$vuetify.theme.dark"></v-divider> -->
           <!-- <p class="google-font mt-4 mb-3" style="font-size:130%">
             Follow Us:
-            <span v-for="(item,i) in communitydata.SocialLinks" :key="i">
+            <span v-for="(item,i) in communityData.SocialLinks" :key="i">
               <v-tooltip top>
                 <template v-slot:activator="{ on }">
                   <v-btn text icon :href="item.link" target="_blank" slot="activator">
@@ -72,6 +72,8 @@
             :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'"
           >
             <v-toolbar-title class="google-font pl-0 ml-0 mr-3" style="font-size:200%">MITRE SAF</v-toolbar-title>
+            <v-spacer />
+            <v-toolbar-items><p class="google-font pl-0 ma-2">The MITRE Corporation © 2019</p></v-toolbar-items>
 
             <!-- <v-btn
               v-for="(item,i) in FooterData.FooterEndSession"
@@ -91,12 +93,12 @@
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 import FooterData from "@/assets/data/footer.json";
 export default {
   data() {
     return {
-      communitydata: communitydata,
+      communityData: communityData,
       FooterData: FooterData
     };
   }

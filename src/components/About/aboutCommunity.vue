@@ -7,30 +7,30 @@
           :lazy-src="require('@/assets/img/do-not-remove/about.png')"
           class="mb-3"
           width="100%"
-        > -->
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-            </v-row>
-          </template>
+        >-->
+        <template v-slot:placeholder>
+          <v-row class="fill-height ma-0" align="center" justify="center">
+            <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+          </v-row>
+        </template>
         <!-- </v-img> -->
       </v-col>
       <v-col md="8" sm="8" cols="12" class="py-0 my-0">
-        <p class="google-font mt-0" style="font-size:110%">{{communitydata.CommunityLongDec}}</p>
-        <p
-          class="google-font mt-0 mb-0"
-          style="font-size:110%"
-        >SAF focuses on building security into DevOps with the goal of preventing vulnerable applications from reaching production. </p>
+        <p class="google-font mt-0" style="font-size:110%">{{ communityData.communityLongDec }}</p>
+        <p class="google-font mt-0 mb-0" style="font-size:110%">
+          SAF focuses on building security into DevOps with the goal of
+          preventing vulnerable applications from reaching production.
+        </p>
         <br />
         <!-- <v-btn
-          :href="communitydata.CommunityMeetupLink"
+          :href="communityData.CommunityMeetupLink"
           target="_blank"
           class="ma-0 google-font elevation-1 primary"
           style="text-transform: capitalize;border-radius:5px;color:white"
         >Become a Member</v-btn>
 &nbsp;
         <v-btn
-          :href="communitydata.GDGProgramWebsite"
+          :href="communityData.GDGProgramWebsite"
           target="_blank"
           rounded
           color="cyan"
@@ -38,18 +38,18 @@
           outlined
           class="ml-0"
           dark
-        >Learn More</v-btn> -->
+        >Learn More</v-btn>-->
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
-      communitydata: communitydata
+      communityData: communityData
     };
   }
 };

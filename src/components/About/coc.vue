@@ -7,18 +7,18 @@
     </v-row>
     <v-row class="py-0 my-0">
       <v-col md="8" sm="8" cols="12" class="py-0 my-0">
-        <p class="google-font" style="font-size:110%">{{communitydata.CodeOfConduct}}</p>
+        <p class="google-font" style="font-size:110%">{{communityData.CodeOfConduct}}</p>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
-      communitydata: communitydata
+      communityData: communityData
     };
   }
 };

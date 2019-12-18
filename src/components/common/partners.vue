@@ -4,8 +4,9 @@
       <v-col cols="12" md="12" lg="12" sm="12" class="mb-0">
         <p class="google-font mb-1" style="font-weight: 350;font-size:200%">
           <b>
-            Our
-            <span style="color: #1a73e8;">Community</span>
+            The
+            <span style="color: #1a73e8;">SAF</span>
+            Community
           </b>
         </p>
         <p
@@ -16,18 +17,17 @@
           If you’re interested in being showcased here, please contact
           <a
             style="color:#1565C0;text-decoration: none;"
-            :href="`mailto:${communitydata.CommunityEmail}`"
-          >{{communitydata.CommunityEmail}}</a> to discuss opportunities.
+            :href="`mailto:${communityData.communityEmail}`"
+          >{{communityData.communityEmail}}</a> to discuss opportunities.
         </p>
       </v-col>
     </v-row>
 
-    <v-container>
-      <v-row justify="space-between" v-for="(itemp,i) in partnerData" :key="i">
+    <v-container fluid>
+      <v-row justify="space-between" v-for="(itemp,i) in partnerData" :key="i" :class="color_mode">
         <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-if="itemp.length>0">
           <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
         </v-col>
-        <!-- <v-sheet class="mx-auto" elevation="1" height="300" max-width="900"> -->
         <v-slide-group class="pa-2" show-arrows>
           <v-col v-for="(item,j) in itemp" :key="j" class>
             <v-card
@@ -55,7 +55,6 @@
             </v-card>
           </v-col>
         </v-slide-group>
-        <!-- </v-sheet> -->
       </v-row>
     </v-container>
   </v-container>
@@ -63,18 +62,24 @@
 
 <script>
 import datap from "@/assets/data/partners.json";
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
       partnerData: datap,
-      communitydata: communitydata
-      //showArrows: true
+      communityData: communityData,
+      showArrows: true
     };
   },
   methods: {
     getImgUrl(pic) {
       return require("@/assets/img/partners/" + pic);
+    }
+  },
+  computed: {
+    color_mode() {
+      if (this.$vuetify.theme.dark) return "darkModeContainer";
+      return "lightModeContainer";
     }
   }
 };

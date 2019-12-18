@@ -24,7 +24,7 @@
         <v-list-item-title
           class="google-font"
           style="font-size:130%"
-        >{{communitydata.CommunityName}}</v-list-item-title>
+        >{{communityData.communityName}}</v-list-item-title>
         <!-- <v-list-item-subtitle class="google-font">
             Google Developers Group
         </v-list-item-subtitle>-->
@@ -54,23 +54,23 @@
       </v-list-item>
     </v-list>
 
-    <template v-slot:append>
+    <!--<template v-slot:append>
       <div class="pa-2">
         <v-btn text block>Logout</v-btn>
       </div>
-    </template>
+    </template>--->
   </v-navigation-drawer>
 </template>
 
 <script>
-import communitydata from "@/assets/data/communitydata.json";
+import communityData from "@/assets/data/communityData.json";
 // Utilities
 import { mapGetters, mapMutations } from "vuex";
 export default {
   name: "CoreDrawer",
   data() {
     return {
-      communitydata: communitydata
+      communityData: communityData
     };
   },
   computed: {
