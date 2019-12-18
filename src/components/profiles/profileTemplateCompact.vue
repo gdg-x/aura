@@ -1,38 +1,49 @@
 <template>
   <div>
-    <v-card v-for="item in profiles.items"
-      :key="item.category" outlined class="ma-2"> 
-    <v-row
-      align="center"
-      
-      dense
-      no-gutters
-      justify="start"
-    >
-      <v-col cols="2" v-show="$vuetify.breakpoint.smAndUp">
-        <h2 class="ma-2 pa-2 break-word justify-center text-center google-font">{{item.category}}</h2>
-      </v-col>
-      <v-col cols="10">
-        <v-container>
-          <v-row dense no-gutters align="center" justify="start">
-            <v-col cols="auto" v-show="$vuetify.breakpoint.xs">
-              <h2 class="ma-2 pa-2 break-word justify-center text-left google-font">{{item.category}}</h2>
-            </v-col>
-            <v-col cols="auto">
-              <v-chip-group multiple column>
+    <v-card v-for="item in profiles.items" :key="item.category" outlined class="ma-2">
+      <v-row align="center" dense no-gutters justify="start">
+        <v-col cols="2" v-show="$vuetify.breakpoint.smAndUp">
+          <h2
+            class="font-weight-bold ma-2 pa-2 break-word justify-center text-center google-font"
+            :class="{'subtitle-2': $vuetify.breakpoint.mdAndDown}"
+          >{{ item.category }}</h2>
+        </v-col>
+        <v-col cols="10">
+          <v-container>
+            <v-row dense no-gutters align="center" justify="start">
+              <v-col cols="auto" v-show="$vuetify.breakpoint.xs">
+                <h2
+                  class="font-weight-bold subtitle-2 ma-2 pa-2 break-word justify-center text-left google-font"
+                >{{ item.category }}
+                </h2>
+              </v-col>
+              <v-col cols="auto">
                 <v-chip
                   v-for="entry in item.values"
                   :key="entry"
                   :href="entry.link"
                   target="_blank"
-                  class="google-font break-word"
-                >{{ entry.shortName }}</v-chip>
-              </v-chip-group>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-col>
-    </v-row>
+                  class="google-font break-word ma-2 pa-2 text-none"
+                  label
+                  outlined
+                >
+                  {{ entry.shortName }}
+                  <v-icon v-if="entry.icon" right dark :class="entry.icon">{{ entry.icon }}</v-icon>
+                  <v-img
+                      v-if="entry.svg"
+                      :src="require('@/assets/img/svg/' + entry.svg + '.svg')"
+                      svg-inline
+                      style="max-width: 14px; max-height: 14px;"
+                      class="ml-2"
+                      contain
+                    /> 
+
+                </v-chip>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-col>
+      </v-row>
     </v-card>
   </div>
 </template>
@@ -47,6 +58,7 @@ export default {
       fab: false
     };
   },
+
   methods: {
     make_linkable(str) {
       return str.replace(/\s+/g, "-").toLowerCase();
@@ -67,9 +79,6 @@ export default {
       } else {
         return "";
       }
-    },
-    printbp() {
-      console.log(this.$vuetify.breakpoint);
     }
   }
 };
@@ -80,6 +89,6 @@ export default {
   max-width: 1000px;
 }
 .v-chip__content {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 </style>

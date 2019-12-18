@@ -72,6 +72,8 @@
             :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'"
           >
             <v-toolbar-title class="google-font pl-0 ml-0 mr-3" style="font-size:200%">MITRE SAF</v-toolbar-title>
+            <v-spacer />
+            <v-toolbar-items><p class="google-font pl-0 ma-2">The MITRE Corporation © 2019</p></v-toolbar-items>
 
             <!-- <v-btn
               v-for="(item,i) in FooterData.FooterEndSession"
