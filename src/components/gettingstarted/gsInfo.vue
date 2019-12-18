@@ -1,31 +1,30 @@
 <template>
   <v-container fluid>
-    <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;"></p>
-    <br />
-
-    <v-list two-line>
-      <template v-for="item in resources.items">
-        <v-list-item :key="item">
-          <v-list-item-content>
-            <!-- <v-list-item-title style="font-size:150% ma-2">
+      <br>
+    <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">InSpec Courses</p>
+      <v-list two-line>
+        <template v-for="item in resources.items">
+          <v-list-item :key="item">
+            <v-list-item-content>
+              <!-- <v-list-item-title style="font-size:150% ma-2">
               <b>{{item.name}}</b>
-            </v-list-item-title> -->
-            <v-list-item class="ma-2 google-font">{{item.desc}}</v-list-item>
-            <v-list-item v-for="entry in item.values" :key="entry">
-              <div>
-                <li>
-                  <span>
-                    <a :href="entry.link" class="google-font">{{entry.name}}</a>
-                    <span v-show="entry.desc" class="google-font"> - {{entry.desc}}</span>
-                  </span>
-                </li>
-              </div>
-            </v-list-item>
-          </v-list-item-content>
-        </v-list-item>
-      </template>
-    </v-list>
-    <br />
+              </v-list-item-title>-->
+              <v-list-item class="google-font mt-0 mb-0">{{item.desc}}</v-list-item>
+              <v-list-item v-for="entry in item.values" :key="entry">
+                <div>
+                  <li>
+                    <span>
+                      <a :href="entry.link">{{entry.name}}</a>
+                      <span v-show="entry.desc">-- {{entry.desc}}</span>
+                    </span>
+                  </li>
+                </div>
+              </v-list-item>
+            </v-list-item-content>
+          </v-list-item>
+        </template>
+      </v-list>
+      <br />
   </v-container>
 </template>
 
