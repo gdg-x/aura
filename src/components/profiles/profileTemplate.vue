@@ -14,7 +14,7 @@
     >
       <v-icon>mdi-arrow-up-bold-circle-outline</v-icon>
     </v-btn>
-    <div class="ma-2">
+    <div class="ma-2" >
       <v-btn
         v-for="cat in profiles.categories"
         :key="cat"
@@ -23,7 +23,7 @@
         :to="{hash: make_linkable(cat)}"
       >{{cat}}</v-btn>
     </div>
-    <v-sheet v-for="item in profiles.items" :key="item.category" class="ma-2 pa-2 google-font">
+    <v-sheet v-for="item in profiles.items" :key="item.category" class="ma-2 pa-2 google-font" >
       <h2 :id="make_linkable(item.category)">{{ item.category }}</h2>
       <v-card
         flat

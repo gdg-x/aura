@@ -4,25 +4,25 @@
       "name": "Validation",
       "desc": "Get detailed security testing data during any point of development",
       "icon": "mdi-thumb-up",
-      "more_link": "https://www.google.com"
+      "link": "/validation"
     },
     {
       "name": "Hardening",
       "desc": "Ansible, Chef and Puppet content to support our Validation content",
       "icon": "mdi-security",
-      "more_link": "https://www.google.com"
+      "link": "/hardening"
     },
     {
       "name": "Visualization",
       "desc": "Dive deep into test results visually via rollups, charts and timelines",
       "icon": "mdi-image-search",
-      "more_link": "https://www.google.com"
+      "link": ""
     },
     {
       "name": "Training",
       "desc": "Learn how to write great tests and apply them to your team's pipeline",
       "icon": "mdi-chair-school",
-      "more_link": "https://www.google.com"
+      "link": "/training"
     }
   ],
   "whatWeDoTools": [
