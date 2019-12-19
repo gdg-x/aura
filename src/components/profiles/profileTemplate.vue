@@ -44,7 +44,7 @@
 
 export default {
   props: {
-    profiles: profiles
+    profiles: Object
   },
   data() {
     return {
@@ -63,13 +63,13 @@ export default {
     toTop() {
       this.$vuetify.goTo(0);
     },
-    getByCategory(profiles, categories) {
+    getByCategory(profiles, category) {
       var filteredProfiles = [];
       var i;
       var j;
       for (i = 0; i < profiles.profiles.length; i++) {
-        for (j = 0; j < categories.length; j++) {
-          if (profiles.profiles[i].category == categories[j]) {
+        for (j = 0; j < profiles.profiles[i].category.length; j++) {
+          if (profiles.profiles[i].category[j] == category) {
             filteredProfiles.push(profiles.profiles[i])
           }
         }  
@@ -85,11 +85,14 @@ export default {
         return "";
       }
     },
-    categorized(profiles) {
+    categorized() {
       var categories = new Set();
       var i;
+      var j;
       for (i = 0; i < this.profiles.profiles.length; i++) {
-        categories.add(this.profiles.profiles[i].category);
+        for (j = 0; j < this.profiles.profiles[i].category.length; j++) {
+          categories.add(this.profiles.profiles[i].category[j]);
+        }
       }
       return Array.from(categories);
     }
