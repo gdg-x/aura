@@ -1,5 +1,7 @@
 <template>
   <v-container fluid>
+    <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Training Courses Currently Offered</p>
+    <br>
     <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Upcoming Training Sessions</p>
     <p
       class="google-font mt-0 mb-0"
