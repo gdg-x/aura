@@ -1,5 +1,6 @@
 <template>
   <v-app class="pa-0 ma-0">
+    <v-content>
     <v-snackbar v-model="snackWithButtons" :timeout="timeout" bottom left class="snack">
       {{ snackWithBtnText }}
       <v-spacer />
@@ -17,6 +18,7 @@
 
     <AuraView class />
     <AuraFooter v-if="!$route.meta.requiresAuth" />
+    </v-content>
     <AuraBottomNav v-if="!$route.meta.requiresAuth" class="d-flex d-sm-none" />
   </v-app>
 </template>

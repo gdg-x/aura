@@ -1,6 +1,6 @@
 <template>
-  <v-content class="pa-0 pt-5">
-    <v-container fluid class="pa-0 pt-5 mt-2">
+  <v-content class="pa-0 ">
+    <v-container fluid class="pa-0 mt-2">
       <v-row
         justify="center"
         align="center"

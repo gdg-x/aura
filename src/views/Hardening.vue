@@ -1,6 +1,6 @@
 <template>
-  <v-content class="pa-0 pt-5">
-    <v-container fluid class="pa-0 pt-5 mt-2">
+  <v-content class="pa-0">
+    <v-container fluid class="pa-0 mt-2">
       <v-row justify="center" align="center" class="py-0 my-0"
       :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
         <v-col md="12" lg="10" xs="12" class="py-3 my-0">
