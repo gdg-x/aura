@@ -26,10 +26,10 @@
               label="Compact View"
             />
             <div v-show="showCompact">
-              <profileTemplateCompact :profiles="hardening" />
+              <profileTemplateCompact :profiles="hardening.hardening" />
             </div>
             <div v-show="!showCompact">
-              <profileTemplate :profiles="hardening" />
+              <profileTemplate :profiles="hardening.hardening" />
             </div>
           </div>
         </v-col>

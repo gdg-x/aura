@@ -16,18 +16,18 @@
     </v-btn>
     <div class="ma-2">
       <v-btn
-        v-for="cat in profiles.categories"
+        v-for="cat in categorized"
         :key="cat"
         :class="{'x-small': $vuetify.breakpoint.mdAndDown}"
         class="pa-2 ma-2 google-font"
         :to="{hash: make_linkable(cat)}"
       >{{cat}}</v-btn>
     </div>
-    <v-sheet v-for="item in profiles.items" :key="item.category" class="ma-2 pa-2 google-font">
-      <h2 :id="make_linkable(item.category)">{{ item.category }}</h2>
+    <v-sheet v-for="cat in categorized" :key="cat" class="ma-2 pa-2 google-font">
+      <h2 :id="make_linkable(cat)">{{ cat }}</h2>
       <v-card
         flat
-        v-for="entry in item.values"
+        v-for="entry in getByCategory(profiles, [cat])"
         :key="entry"
         class="ma-2"
         :href="entry.link"
@@ -41,9 +41,10 @@
 </template>
 
 <script>
+
 export default {
   props: {
-    profiles: Object
+    profiles: profiles
   },
   data() {
     return {
@@ -61,6 +62,19 @@ export default {
     },
     toTop() {
       this.$vuetify.goTo(0);
+    },
+    getByCategory(profiles, categories) {
+      var filteredProfiles = [];
+      var i;
+      var j;
+      for (i = 0; i < profiles.profiles.length; i++) {
+        for (j = 0; j < categories.length; j++) {
+          if (profiles.profiles[i].category == categories[j]) {
+            filteredProfiles.push(profiles.profiles[i])
+          }
+        }  
+      }
+      return filteredProfiles
     }
   },
   computed: {
@@ -70,6 +84,14 @@ export default {
       } else {
         return "";
       }
+    },
+    categorized(profiles) {
+      var categories = new Set();
+      var i;
+      for (i = 0; i < this.profiles.profiles.length; i++) {
+        categories.add(this.profiles.profiles[i].category);
+      }
+      return Array.from(categories);
     }
   }
 };
