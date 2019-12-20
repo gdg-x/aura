@@ -18,8 +18,8 @@
               </v-col>
               <v-col cols="auto">
                 <v-chip
-                  v-for="entry in getByCategory(profiles, [cat])"
-                  :key="entry"
+                  v-for="(entry, i) in getByCategory(profiles, [cat])"
+                  :key="item.category + entry.longName + i"
                   :href="entry.link"
                   target="_blank"
                   class="google-font break-word ma-2 pa-2 text-none"

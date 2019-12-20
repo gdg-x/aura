@@ -33,8 +33,8 @@
       <h2>{{ cat }}</h2>
       <v-card
         flat
-        v-for="entry in getByCategory(profiles, [cat])"
-        :key="entry"
+        v-for="(entry, i) in getByCategory(profiles, [cat])"
+        :key="item.category + entry.longName + i"
         class="ma-2"
         :href="entry.link"
         target="_blank"
