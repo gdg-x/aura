@@ -69,7 +69,6 @@ export default {
       this.$vuetify.goTo(0);
     },
     getByCategory(profiles, category) {
-      console.log(profiles)
       var filteredProfiles = [];
       var i;
       var j;
