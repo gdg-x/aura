@@ -69,13 +69,14 @@ export default {
       this.$vuetify.goTo(0);
     },
     getByCategory(profiles, category) {
+      console.log(profiles)
       var filteredProfiles = [];
       var i;
       var j;
-      for (i = 0; i < profiles.profiles.length; i++) {
-        for (j = 0; j < profiles.profiles[i].category.length; j++) {
-          if (profiles.profiles[i].category[j] == category) {
-            filteredProfiles.push(profiles.profiles[i]);
+      for (i = 0; i < profiles.length; i++) {
+        for (j = 0; j < profiles[i].category.length; j++) {
+          if (profiles[i].category[j] == category) {
+            filteredProfiles.push(profiles[i]);
           }
         }
       }
@@ -101,9 +102,9 @@ export default {
       var categories = new Set();
       var i;
       var j;
-      for (i = 0; i < this.profiles.profiles.length; i++) {
-        for (j = 0; j < this.profiles.profiles[i].category.length; j++) {
-          categories.add(this.profiles.profiles[i].category[j]);
+      for (i = 0; i < this.profiles.length; i++) {
+        for (j = 0; j < this.profiles[i].category.length; j++) {
+          categories.add(this.profiles[i].category[j]);
         }
       }
       return Array.from(categories);
