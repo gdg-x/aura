@@ -14,7 +14,7 @@
     >
       <v-icon>mdi-arrow-up-bold-circle-outline</v-icon>
     </v-btn>
-    <div class="ma-2">
+    <div class="ma-2" >
       <v-btn
         v-for="cat in categorized"
         :key="cat"
