@@ -34,14 +34,30 @@
         target="_blank"
         outlined
       >
-        <v-card-title class="headline break-word google-font">{{ entry.longName }}</v-card-title>
+        <v-row align="center">
+          <v-col cols="3">
+            <v-row justify="center">
+              <v-img
+                v-show="entry.svg"
+                :src="require('@/assets/img/svg/' + entry.svg + '.svg')"
+                svg-inline
+                style="max-width: 50px; max-height: 50px;"
+                class="ml-4"
+                contain
+                align="center"
+              />
+            </v-row>
+          </v-col>
+          <v-col cols="9">
+            <v-card-title class="headline break-word google-font">{{ entry.longName }}</v-card-title>
+          </v-col>
+        </v-row>
       </v-card>
     </v-sheet>
   </div>
 </template>
 
 <script>
-
 export default {
   props: {
     profiles: Object
@@ -70,11 +86,18 @@ export default {
       for (i = 0; i < profiles.profiles.length; i++) {
         for (j = 0; j < profiles.profiles[i].category.length; j++) {
           if (profiles.profiles[i].category[j] == category) {
-            filteredProfiles.push(profiles.profiles[i])
+            filteredProfiles.push(profiles.profiles[i]);
           }
-        }  
+        }
       }
-      return filteredProfiles
+      return filteredProfiles.sort(function(a, b) {
+        if (a["longName"] > b["longName"]) {
+          return 1;
+        } else if (a["longName"] < b["longName"]) {
+          return -1;
+        }
+        return 0;
+      });
     }
   },
   computed: {

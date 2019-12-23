@@ -14,8 +14,7 @@
               <v-col cols="auto" v-show="$vuetify.breakpoint.xs">
                 <h2
                   class="font-weight-bold subtitle-2 ma-2 pa-2 break-word justify-center text-left google-font"
-                >{{ cat }}
-                </h2>
+                >{{ cat }}</h2>
               </v-col>
               <v-col cols="auto">
                 <v-chip
@@ -27,17 +26,15 @@
                   label
                   outlined
                 >
-                  {{ entry.shortName }}
-                  <v-icon v-if="entry.icon" right dark :class="entry.icon">{{ entry.icon }}</v-icon>
                   <v-img
-                      v-if="entry.svg"
-                      :src="require('@/assets/img/svg/' + entry.svg + '.svg')"
-                      svg-inline
-                      style="max-width: 14px; max-height: 14px;"
-                      class="ml-2"
-                      contain
-                    /> 
-
+                    v-show="entry.svg"
+                    :src="require('@/assets/img/svg/' + entry.svg + '.svg')"
+                    svg-inline
+                    style="max-width: 14px; max-height: 14px;"
+                    class="mr-2"
+                    contain
+                  />
+                  {{ entry.shortName }}
                 </v-chip>
               </v-col>
             </v-row>
@@ -78,11 +75,18 @@ export default {
       for (i = 0; i < profiles.profiles.length; i++) {
         for (j = 0; j < profiles.profiles[i].category.length; j++) {
           if (profiles.profiles[i].category[j] == category) {
-            filteredProfiles.push(profiles.profiles[i])
+            filteredProfiles.push(profiles.profiles[i]);
           }
-        }  
+        }
       }
-      return filteredProfiles
+      return filteredProfiles.sort(function(a, b) {
+        if (a["shortName"] > b["shortName"]) {
+          return 1;
+        } else if (a["shortName"] < b["shortName"]) {
+          return -1;
+        }
+        return 0;
+      });
     }
   },
   computed: {

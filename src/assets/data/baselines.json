@@ -103,6 +103,7 @@
         "shortName": "AWS S3",
         "longName": "AWS S3",
         "link": "https:// github.com/mitre/aws-s3-baseline",
+        "svg": "inspec-blue-back-border",
         "category": ["Cloud Service Providers"]
       },
       {
