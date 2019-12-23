@@ -60,7 +60,7 @@
 
 <br>
 
-    <v-container fluid>
+    <!-- <v-container fluid>
       <v-row justify="space-between" v-for="(itemp,i) in commercialpart" :key="i" :class="color_mode">
         <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-if="itemp.length>0">
           <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
@@ -85,7 +85,7 @@
           </v-col>
         </v-slide-group>
       </v-row>
-    </v-container>
+    </v-container> -->
   </v-container>
 </template>
 
