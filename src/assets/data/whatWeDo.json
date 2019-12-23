@@ -27,15 +27,31 @@
   ],
   "whatWeDoTools": [
     {
+      "name" : "InSpec",
+      "link" : "https://www.inspec.io/",
+      "desc" : "InSpec is a free and open-source Chef framework for system security testing, designed to integrate easily into existing DevOps pipelines.",
+      "summary" : "InSpec generates the security data an organization needs to assess itself.",
+      "svg": "inspec-blue-back-border"
+    },
+    {
+      "name" : "Heimdall",
+      "link" : "https://github.com/mitre/heimdall",
+      "desc" : "Heimdall is a web-based security test results viewer, designed to work with the data InSpec generates. Heimdall takes mountains of testing data and displays it in a convenient, intuitive web page.",
+      "summary" : "Heimdall allows the organization to analyze its security data and make meaningful decisions from it.",
+      "svg": "heimdall"
+    }
+  ],
+  "whatWeDoLinks": [
+    {
       "name": "Heimdall Lite",
       "link": "https://github.com/mitre/heimdall-lite",
-      "desc": "A JavaScript-based security results viewer and review tool supporting multiple input sources and formats",
+      "desc": "A lightweight version of Heimdall for simple use cases",
       "icon": "mdi-web"
     },
     {
       "name": "Heimdall Server",
       "link": "https://github.com/mitre/heimdall",
-      "desc": "A security results viewer for the web, including storage, teams, and history",
+      "desc": "The complete Heimdall application - store results, coordinate across the development team, and more",
       "icon": "mdi-web"
     },
     {
