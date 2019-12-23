@@ -6,7 +6,7 @@
         <p
           class="google-font mt-0"
           style="font-size:95%"
-        >The MITRE SAF brings together the right technologies, methods and skills to meet the security needs of today's developers and operators.</p>
+        >The MITRE SAF brings together the right technologies, methods, and skills to meet the security needs of today's developers and operators.</p>
       </v-col>
       <v-col cols="12" md="9" lg="9" sm="12">
         <v-container fluid>

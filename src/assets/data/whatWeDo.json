@@ -8,13 +8,13 @@
     },
     {
       "name": "Hardening",
-      "desc": "Ansible, Chef and Puppet content to support our Validation content",
+      "desc": "Ansible, Chef, and Puppet content to support our Validation content",
       "icon": "mdi-security",
       "link": "/hardening"
     },
     {
       "name": "Visualization",
-      "desc": "Dive deep into test results visually via rollups, charts and timelines",
+      "desc": "Dive deep into test results visually via rollups, charts, and timelines",
       "icon": "mdi-image-search",
       "link": ""
     },
@@ -35,13 +35,13 @@
     {
       "name": "Heimdall Server",
       "link": "https://github.com/mitre/heimdall",
-      "desc": "A security results viewer for the web, including storage, teams and history",
+      "desc": "A security results viewer for the web, including storage, teams, and history",
       "icon": "mdi-web"
     },
     {
       "name": "InSpec_Tools",
       "link": "https://github.com/mitre/inspec_tools/",
-      "desc": "A set of Ruby utilities and gem for creating, converting and processing security baseline formats, results and data",
+      "desc": "A set of Ruby utilities and gem for creating, converting and processing security baseline formats, results, and data",
       "icon": "mdi-web"
     },
     {
@@ -65,13 +65,13 @@
     {
       "name": "InSpecJS_Tools",
       "link": "https://github.com/mitre/inspec_tools_js",
-      "desc": "A set of JavaScript utilities and gem for creating, converting and processing security baseline formats, results and data",
+      "desc": "A set of JavaScript utilities and gem for creating, converting and processing security baseline formats, results, and data",
       "icon": "mdi-web"
     },
     {
       "name": "Vulcan",
       "link": "https://github.com/mitre/vulcan",
-      "desc": "Application for streamlining InSpec profile and overlay development using SRG guidance",
+      "desc": "Application for streamlining InSpec profile and overlay development using the Security Requirments Guide (SRG)",
       "icon": "mdi-web"
     }
   ]
