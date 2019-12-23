@@ -33,10 +33,10 @@
               label="Compact View"
             />
             <div v-show="showCompact">
-              <profileTemplateCompact :profiles="baselines" />
+              <profileTemplateCompact :profiles="baselines.baselines" />
             </div>
             <div v-show="!showCompact">
-              <profileTemplate :profiles="baselines" />
+              <profileTemplate :profiles="baselines.baselines" />
             </div>
           </div>
         </v-col>
@@ -72,6 +72,7 @@ export default {
     },
     showCompact() {
       return this.$store.state.isCompact;
+      console.log(baselines)
     }
   },
   methods: {

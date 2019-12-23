@@ -1,12 +1,12 @@
 <template>
   <v-content>
-    <v-card v-for="item in profiles.items" :key="item.category" outlined class="ma-2">
+    <v-card v-for="cat in categorized" :key="cat" outlined class="ma-2">
       <v-row align="center" dense no-gutters justify="start">
         <v-col cols="2" v-show="$vuetify.breakpoint.smAndUp">
           <h2
             class="font-weight-bold ma-2 pa-2 break-word justify-center text-center google-font"
             :class="{'subtitle-2': $vuetify.breakpoint.mdAndDown}"
-          >{{ item.category }}</h2>
+          >{{ cat }}</h2>
         </v-col>
         <v-col cols="10">
           <v-container>
@@ -14,12 +14,12 @@
               <v-col cols="auto" v-show="$vuetify.breakpoint.xs">
                 <h2
                   class="font-weight-bold subtitle-2 ma-2 pa-2 break-word justify-center text-left google-font"
-                >{{ item.category }}
+                >{{ cat }}
                 </h2>
               </v-col>
               <v-col cols="auto">
                 <v-chip
-                  v-for="entry in item.values"
+                  v-for="entry in getByCategory(profiles, [cat])"
                   :key="entry"
                   :href="entry.link"
                   target="_blank"
@@ -70,6 +70,19 @@ export default {
     },
     toTop() {
       this.$vuetify.goTo(0);
+    },
+    getByCategory(profiles, category) {
+      var filteredProfiles = [];
+      var i;
+      var j;
+      for (i = 0; i < profiles.profiles.length; i++) {
+        for (j = 0; j < profiles.profiles[i].category.length; j++) {
+          if (profiles.profiles[i].category[j] == category) {
+            filteredProfiles.push(profiles.profiles[i])
+          }
+        }  
+      }
+      return filteredProfiles
     }
   },
   computed: {
@@ -79,6 +92,17 @@ export default {
       } else {
         return "";
       }
+    },
+    categorized() {
+      var categories = new Set();
+      var i;
+      var j;
+      for (i = 0; i < this.profiles.profiles.length; i++) {
+        for (j = 0; j < this.profiles.profiles[i].category.length; j++) {
+          categories.add(this.profiles.profiles[i].category[j]);
+        }
+      }
+      return Array.from(categories);
     }
   }
 };

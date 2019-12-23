@@ -1,186 +1,180 @@
 {
-  "categories": [
-    "Operating Systems",
-    "Application Logic",
-    "Web Servers",
-    "Cloud Service Providers",
-    "Databases"
-  ],
-  "items": [
-    {
-      "category": "Operating Systems",
-      "values": [
-        {
-          "shortName": "RedHat 6 STIG",
-          "longName": "RedHat 6 STIG",
-          "link": "https://github.com/mitre/red-hat-enterprise-linux-6-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "RedHat 7 STIG",
-          "longName": "RedHat 7 STIG",
-          "link": "https://github.com/mitre/red-hat-enterprise-linux-7-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "RedHat CVE Scan",
-          "longName": "RedHat CVE Vulnerability Scan",
-          "link": "https://github.cms.gov/ISPG/rhel_cve_vulnerability_scan_baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "Windows 2012 STIG",
-          "longName": "Microsoft Windows 2012r2 Member Server STIG",
-          "link": "https://github.com/mitre/microsoft-windows-2012r2-memberserver-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "Docker CE CIS",
-          "longName": "Docker CE CIS",
-          "link": "https://github.com/mitre/docker-ce-cis-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "Ubuntu 16.04 STIG",
-          "longName": "Canonical Ubuntu 16.04 STIG",
-          "link": "https://github.com/mitre/canonical-ubuntu-16.04-lts-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        }
-      ]
-    },
-    {
-      "category": "Application Logic",
-      "values": [
-        {
-          "shortName": "RSA Archer 6",
-          "longName": "RSA Archer 6 Security Configuration Guide",
-          "link": "https://github.com/mitre/rsa-archer-6-security-configuration-guide-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "RedHat Jboss 6.3 STIG",
-          "longName": "RedHat Jboss Enterprise Application Server 6.3 STIG",
-          "link": "https://github.com/mitre/red-hat-jboss-eap-6.3-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "JRE 7 STIG",
-          "longName": "Oracle Java Runtime Environment 7 Unix STIG",
-          "link": "https://github.com/mitre/oracle-java-runtime-environment-7-unix-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "JRE 8 STIG",
-          "longName": "Oracle Java Runtime Environment 8 Unix STIG",
-          "link": "https://github.com/mitre/oracle-java-runtime-environment-8-unix-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        }
-      ]
-    },
-    {
-      "category": "Web Servers",
-      "values": [
-        {
-          "shortName": "IIS 8.5 Server STIG",
-          "longName": "Microsoft IIS 8.5 Server STIG",
-          "link": "https://github.com/mitre/microsoft-iis-8.5-server-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "IIS 8.5 Site STIG",
-          "longName": "Microsoft IIS 8.5 Site STIG",
-          "link": "https://github.com/mitre/microsoft-iis-8.5-site-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "NGINX",
-          "longName": "NGINX",
-          "link": "https://github.com/mitre/nginx-baseline",
-          "svg": "inspec-blue-back-border"
-        }
-      ]
-    },
-    {
-      "category": "Cloud Service Providers",
-      "values": [
-        {
-          "shortName": "AWS CIS",
-          "longName": "AWS CIS Foundations",
-          "link": "https://github.com/mitre/cis-aws-foundations-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "AWS S3",
-          "longName": "AWS S3",
-          "link": "https:// github.com/mitre/aws-s3-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "AWS RDS CIS",
-          "longName": "AWS RDS Infrastructure CIS",
-          "link": "https://github.com/mitre/aws-rds-infrastructure-cis-baseline",
-          "svg": "inspec-blue-back-border"
-        }
-      ]
-    },
-    {
-      "category": "Databases",
-      "values": [
-        {
-          "shortName": "Oracle MySQL 5.7 CIS",
-          "longName": "Oracle MySQL Enterprise Edition 5.7 CIS",
-          "link": "https://github.com/mitre/oracle-mysql-ee-5.7-cis-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "AWS RDS MySQL 5.7 CIS",
-          "longName": "AWS RDS MySQL Enterprise Edition 5.7 CIS",
-          "link": "https://github.com/mitre/aws-rds-oracle-mysql-ee-5.7-cis-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "PostgreSQL 9.x STIG",
-          "longName": "Crunchy Data PostgreSQL 9.x STIG",
-          "link": "https://github.com/CrunchyData/pgstigcheck-inspec",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "AWS RDS PostgreSQL 9.x STIG",
-          "longName": "AWS RDS Crunchy Data PostgreSQL 9.x STIG",
-          "link": "https://github.com/mitre/aws-rds-crunchy-data-postgresql-9-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "MSQL 2014 Database STIG",
-          "longName": "Microsoft SQL Server 2014 Database STIG",
-          "link": "https://github.com/mitre/microsoft-sql-server-2014-database-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "MSQL 2014 Instance STIG",
-          "longName": "Microsoft SQL Server 2014 Database STIG",
-          "link": "https://github.com/mitre/microsoft-sql-server-2014-instance-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "AWS MSQL 2014 STIG",
-          "longName": "AWS RDS Microsoft SQL 2014 Server STIG Instance",
-          "link": "https://github.com/mitre/aws-rds-microsoft-sql-server-2014-instance-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "Oracle Database 12c STIG",
-          "longName": "Oracle Database 12c STIG",
-          "link": "https://github.com/mitre/oracle-database-12c-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        },
-        {
-          "shortName": "MongoDB STIG",
-          "longName": "MongoDB STIG",
-          "link": "https://github.com/mitre/mongodb-enterprise-advanced-3-stig-baseline",
-          "svg": "inspec-blue-back-border"
-        }
-      ]
-    }
-  ]
+  "baselines": {
+    "profiles": [
+      {
+        "shortName": "RedHat 6",
+        "longName": "RedHat 6 STIG",
+        "link": "https://github.com/mitre/red-hat-enterprise-linux-6-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Operating Systems"]
+      },
+      {
+        "shortName": "RedHat 7",
+        "longName": "RedHat 7 STIG",
+        "link": "https://github.com/mitre/red-hat-enterprise-linux-7-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Operating Systems"]
+      },
+      {
+        "shortName": "RedHat CVE Scan",
+        "longName": "RedHat CVE Vulnerability Scan",
+        "link": "https://github.cms.gov/ISPG/rhel_cve_vulnerability_scan_baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Operating Systems"]
+      },
+      {
+        "shortName": "Windows 2012",
+        "longName": "Microsoft Windows 2012r2 Member Server STIG",
+        "link": "https://github.com/mitre/microsoft-windows-2012r2-memberserver-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Operating Systems"]
+      },
+      {
+        "shortName": "Docker CE CIS",
+        "longName": "Docker CE CIS",
+        "link": "https://github.com/mitre/docker-ce-cis-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Operating Systems"]
+      },
+      {
+        "shortName": "Ubuntu 16.04",
+        "longName": "Canonical Ubuntu 16.04 STIG",
+        "link": "https://github.com/mitre/canonical-ubuntu-16.04-lts-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Operating Systems"]
+      },
+      {
+        "shortName": "RSA Archer 6",
+        "longName": "RSA Archer 6 Security Configuration Guide",
+        "link": "https://github.com/mitre/rsa-archer-6-security-configuration-guide-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Application Logic"]
+      },
+      {
+        "shortName": "RedHat Jboss 6.3",
+        "longName": "RedHat Jboss Enterprise Application Server 6.3 STIG",
+        "link": "https://github.com/mitre/red-hat-jboss-eap-6.3-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Application Logic"]
+      },
+      {
+        "shortName": "JRE 7",
+        "longName": "Oracle Java Runtime Environment 7 Unix STIG",
+        "link": "https://github.com/mitre/oracle-java-runtime-environment-7-unix-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Application Logic"]
+      },
+      {
+        "shortName": "JRE 8",
+        "longName": "Oracle Java Runtime Environment 8 Unix STIG",
+        "link": "https://github.com/mitre/oracle-java-runtime-environment-8-unix-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Application Logic"]
+      },
+      {
+        "shortName": "IIS 8.5 Server",
+        "longName": "Microsoft IIS 8.5 Server STIG",
+        "link": "https://github.com/mitre/microsoft-iis-8.5-server-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Web Servers"]
+      },
+      {
+        "shortName": "IIS 8.5 Site",
+        "longName": "Microsoft IIS 8.5 Site STIG",
+        "link": "https://github.com/mitre/microsoft-iis-8.5-site-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Web Servers"]
+      },
+      {
+        "shortName": "NGINX",
+        "longName": "NGINX",
+        "link": "https://github.com/mitre/nginx-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Web Servers"]
+      },
+      {
+        "shortName": "AWS CIS",
+        "longName": "AWS CIS Foundations",
+        "link": "https://github.com/mitre/cis-aws-foundations-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Cloud Service Providers"]
+      },
+      {
+        "shortName": "AWS S3",
+        "longName": "AWS S3",
+        "link": "https:// github.com/mitre/aws-s3-baseline",
+        "category": ["Cloud Service Providers"]
+      },
+      {
+        "shortName": "AWS RDS",
+        "longName": "AWS RDS Infrastructure CIS",
+        "link": "https://github.com/mitre/aws-rds-infrastructure-cis-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Cloud Service Providers"]
+      },
+      {
+        "shortName": "Oracle MySQL 5.7",
+        "longName": "Oracle MySQL Enterprise Edition 5.7 CIS",
+        "link": "https://github.com/mitre/oracle-mysql-ee-5.7-cis-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Databases"]
+      },
+      {
+        "shortName": "AWS RDS MySQL 5.7",
+        "longName": "AWS RDS MySQL Enterprise Edition 5.7 CIS",
+        "link": "https://github.com/mitre/aws-rds-oracle-mysql-ee-5.7-cis-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Databases"]
+      },
+      {
+        "shortName": "PostgreSQL 9.x",
+        "longName": "Crunchy Data PostgreSQL 9.x STIG",
+        "link": "https://github.com/CrunchyData/pgstigcheck-inspec",
+        "svg": "inspec-blue-back-border",
+        "category": ["Databases"]
+      },
+      {
+        "shortName": "AWS RDS PostgreSQL 9.x",
+        "longName": "AWS RDS Crunchy Data PostgreSQL 9.x STIG",
+        "link": "https://github.com/mitre/aws-rds-crunchy-data-postgresql-9-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Databases"]
+      },
+      {
+        "shortName": "MSQL 2014 Database",
+        "longName": "Microsoft SQL Server 2014 Database STIG",
+        "link": "https://github.com/mitre/microsoft-sql-server-2014-database-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Databases"]
+      },
+      {
+        "shortName": "MSQL 2014 Instance",
+        "longName": "Microsoft SQL Server 2014 Database STIG",
+        "link": "https://github.com/mitre/microsoft-sql-server-2014-instance-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Databases"]
+      },
+      {
+        "shortName": "AWS MSQL 2014",
+        "longName": "AWS RDS Microsoft SQL 2014 Server STIG Instance",
+        "link": "https://github.com/mitre/aws-rds-microsoft-sql-server-2014-instance-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Databases"]
+      },
+      {
+        "shortName": "Oracle Database 12c",
+        "longName": "Oracle Database 12c STIG",
+        "link": "https://github.com/mitre/oracle-database-12c-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Databases"]
+      },
+      {
+        "shortName": "MongoDB",
+        "longName": "MongoDB STIG",
+        "link": "https://github.com/mitre/mongodb-enterprise-advanced-3-stig-baseline",
+        "svg": "inspec-blue-back-border",
+        "category": ["Databases"]
+      }
+    ]
+  }
 }
