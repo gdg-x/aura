@@ -189,6 +189,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Ado-Ekiti | [View Now](https://gdgadoekiti.com) |
 | GDG Gwalior | [View Now](https://gdggwalior.in/) |
 | GDG Pune | [View Now](https://gdgpune.org/) |
+| GDG Aalborg | [View Now](https://gdgaalborg.dk/) |
 
 
 Project is published under the [MIT license](/LICENSE.md).  
