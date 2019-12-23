@@ -2,13 +2,13 @@
   "whatWeDoCategories": [
     {
       "name": "Validation",
-      "desc": "Get detailed security testing data during any point of development",
+      "desc": "Produce detailed security testing data throughout development",
       "icon": "mdi-thumb-up",
       "link": "/validation"
     },
     {
       "name": "Hardening",
-      "desc": "Ansible, Chef, and Puppet content to support our Validation content",
+      "desc": "Align with security baselines using our Ansible, Chef, and Puppet content",
       "icon": "mdi-security",
       "link": "/hardening"
     },
@@ -20,7 +20,7 @@
     },
     {
       "name": "Training",
-      "desc": "Learn how to write great tests and apply them to your team's pipeline",
+      "desc": "Learn how to write effective tests and apply them to the team's pipeline",
       "icon": "mdi-chair-school",
       "link": "/training"
     }
@@ -41,13 +41,13 @@
     {
       "name": "InSpec_Tools",
       "link": "https://github.com/mitre/inspec_tools/",
-      "desc": "A set of Ruby utilities and gem for creating, converting and processing security baseline formats, results, and data",
+      "desc": "A set of Ruby utilities for creating, converting, and processing security baseline formats, results, and data",
       "icon": "mdi-web"
     },
     {
       "name": "Heimdall_Tools",
       "link": "https://github.com/mitre/heimdall_tools",
-      "desc": "A set of Ruby utilities and gem for converting and working with compliance data for use in Heimdall apps",
+      "desc": "A set of Ruby utilities for converting and working with compliance data for use in Heimdall apps",
       "icon": "mdi-web"
     },
     {
@@ -58,14 +58,14 @@
     },
     {
       "name": "HeimdallJS_Tools",
-      "link": "https://github.com/mitre/heimdall_tools_js",
-      "desc": "A set of JavaScript utilities and gem for converting and working with compliance data for use in Heimdall apps",
+      "link": "",
+      "desc": "A set of JavaScript utilities for converting and working with compliance data for use in Heimdall apps (Coming Soon!)",
       "icon": "mdi-web"
     },
     {
       "name": "InSpecJS_Tools",
       "link": "https://github.com/mitre/inspec_tools_js",
-      "desc": "A set of JavaScript utilities and gem for creating, converting and processing security baseline formats, results, and data",
+      "desc": "A set of JavaScript utilities for creating, converting, and processing security baseline formats, results, and data",
       "icon": "mdi-web"
     },
     {
