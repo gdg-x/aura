@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
       <br>
-    <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">InSpec Courses</p>
+    <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">InSpec</p>
       <v-list two-line>
         <template v-for="item in resources.items">
           <v-list-item :key="item">

@@ -57,16 +57,47 @@
         </v-slide-group>
       </v-row>
     </v-container>
+
+<br>
+
+    <!-- <v-container fluid>
+      <v-row justify="space-between" v-for="(itemp,i) in commercialpart" :key="i" :class="color_mode">
+        <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-if="itemp.length>0">
+          <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
+        </v-col>
+        <v-slide-group class="pa-2" show-arrows>
+          <v-col v-for="(item,j) in itemp" :key="j" class>
+            <v-card
+              :color="active ? 'primary' : '#574B75'"
+              class="ma-4"
+              elevation="4"
+              height="100"
+              width="200"
+              v-bind:href="[(itemp.length > 0 ) ? item.link : null]"
+              target="_blank"
+            >
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on }">
+                  <v-card-subtitle class="google-font mb-0" style="color:white">{{item.name}}</v-card-subtitle>
+                </template>
+              </v-tooltip>
+            </v-card>
+          </v-col>
+        </v-slide-group>
+      </v-row>
+    </v-container> -->
   </v-container>
 </template>
 
 <script>
 import datap from "@/assets/data/partners.json";
+import commercialpart from "@/assets/data/commercialpart.json";
 import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
       partnerData: datap,
+      commercialpart: commercialpart,
       communityData: communityData,
       showArrows: true
     };

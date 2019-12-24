@@ -72,7 +72,6 @@ export default {
     },
     showCompact() {
       return this.$store.state.isCompact;
-      console.log(baselines)
     }
   },
   methods: {
