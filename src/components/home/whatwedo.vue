@@ -41,29 +41,49 @@
       </v-col>
       <v-col cols="12" md="9" lg="9" sm="12">
         <v-container fluid>
-          <v-row justify="center">
+          <v-row justify="space-between">
             <v-col
               v-for="(item, i) in whatwedotools"
               :key="i"
-              md="6"
-              lg="6"
-              sm="6"
+              md="4"
+              lg="4"
+              sm="12"
               :cols="$vuetify.breakpoint.smAndDown ? '6' : '3'"
               class="d-flex"
             >
               <v-card outlined :href="item.link" target="_blank" flat class="pa-2">
-                <v-row justify="center" align="center">
-                  <v-col cols="auto">
-                <v-img
-                  v-show="item.svg"
-                  :src="require('@/assets/img/svg/' + item.svg + '.svg')"
-                  align="center"
-                  style="max-width: 50px; max-height: 50px;"
-                  class="ma-2"
-                  contain
-                />
+                <!--<v-container fluid>
+                <v-row>
+                  <v-col v-for="tool in item.tools" :key="tool">
+                    {{tool.name}}
+                    <v-img
+                      v-show="tool.svg"
+                      :src="require('@/assets/img/svg/' + tool.svg + '.svg')"
+                      align="center"
+                      justify="center"
+                      style="max-width: 50px; max-height: 50px;"
+                      class="ma-2"
+                      contain
+                    />
                   </v-col>
                 </v-row>
+                </v-container>-->
+                <div style="justify-content: space-between">
+                  <v-tooltip bottom v-for="(tool, i) in item.tools" :key="i">
+                    <template v-slot:activator="{ on }">
+                      <a :href="tool.link" target="_blank" flat class="ma-2">
+                        <img
+                        justify="center"
+                          :src="require('@/assets/img/svg/' + tool.svg + '.svg')"
+                          v-on="on"
+                          dark
+                          style="max-width: 32px; max-height: 32px;"
+                        />
+                      </a>
+                    </template>
+                    <span>{{tool.name}}</span>
+                  </v-tooltip>
+                </div>
                 <p
                   class="google-font text-center title"
                   style="font-size:140%"
@@ -86,11 +106,11 @@
     <v-divider />
     <v-row align="center" justify="center">
       <v-col cols="12" md="3" lg="3" sm="12" class="text-left pa-2">
-        <p class="google-font mb-2 tool-header">Tools We Use</p>
+        <p class="google-font mb-2 tool-header">Tools We Built</p>
         <p
           class="google-font mt-0"
           style="font-size:95%"
-        >MITRE has developed a library of resources to support secure development.</p>
+        >MITRE has developed a toolchain to support secure development.</p>
       </v-col>
       <v-col cols="12" md="9" lg="9" sm="12">
         <v-container fluid>
@@ -98,7 +118,7 @@
             <v-col
               v-for="(item, i) in whatwedolinks"
               :key="i"
-              md="6"
+              md="3"
               lg="3"
               sm="3"
               :cols="$vuetify.breakpoint.smAndDown ? '6' : '3'"
@@ -113,7 +133,6 @@
                   class="text-left ma-2 google-font text-center"
                   style="font-size:95%"
                 >{{ item.desc }}</p>
-
               </v-card>
             </v-col>
           </v-row>
