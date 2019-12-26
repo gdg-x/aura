@@ -14,7 +14,7 @@
     >
       <v-icon>mdi-arrow-up-bold-circle-outline</v-icon>
     </v-btn>
-    <div class="ma-2" >
+    <div class="ma-2">
       <v-btn
         v-for="cat in categorized"
         :key="cat"
@@ -23,8 +23,14 @@
         :to="{hash: make_linkable(cat)}"
       >{{cat}}</v-btn>
     </div>
-    <v-sheet v-for="cat in categorized" :key="cat" class="ma-2 pa-2 google-font">
-      <h2 :id="make_linkable(cat)">{{ cat }}</h2>
+    <v-sheet
+      v-for="cat in categorized"
+      :key="cat"
+      flat
+      class="ma-2 pa-2 google-font jump"
+      :id="make_linkable(cat)"
+    >
+      <h2>{{ cat }}</h2>
       <v-card
         flat
         v-for="entry in getByCategory(profiles, [cat])"
@@ -122,3 +128,12 @@ export default {
   }
 };
 </script>
+<style scoped>
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -26px;
+  height: 26px;
+  visibility: hidden;
+}
+</style>
