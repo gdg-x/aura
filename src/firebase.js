@@ -1,4 +1,9 @@
-import firebase from "firebase";
+//jshint esversion:6
+import firebase from 'firebase/app';
+import 'firebase/auth';   
+import 'firebase/storage';
+import 'firebase/firestore';
+import 'firebase/messaging'; 
 
 var config = {
   apiKey: "AIzaSyBb-1hlnQfIELblC3HUqzI-M29xiwoMYds",
@@ -13,7 +18,9 @@ var config = {
 firebase.initializeApp(config);
 
 export default {
-  messaging: firebase.messaging(),
-  firestore: firebase.firestore(),
-  auth: firebase.auth()
-};
+    notificationSupported:firebase.messaging.isSupported(),
+    messaging: (firebase.messaging.isSupported())?firebase.messaging():null,
+    firestore: firebase.firestore(),
+    auth:firebase.auth(),
+    storage:firebase.storage(),
+  };

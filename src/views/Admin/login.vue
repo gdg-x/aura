@@ -1,11 +1,22 @@
 <template>
   <v-content>
-    <v-container class="mt-5" fill-height>
+    <v-container class="mt-0" fill-height>
       <v-row>
         <v-col cols="12">
           <v-row align="center" justify="center">
-            <v-col cols="12" md="4">
-              <p class="google-font" style="font-size:100%">Login Panel for GDG-X</p>
+            <v-col cols="12" md="4" lg="3" class>
+              <v-img
+                :src="require('@/assets/img/home.svg')"
+                :lazy-src="require('@/assets/img/home.svg')"
+                width="100%"
+              >
+                <template v-slot:placeholder>
+                  <v-row class="fill-height ma-0" align="center" justify="center">
+                    <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                  </v-row>
+                </template>
+              </v-img>
+              <h2 class="google-font mb-5">Login Panel for Aura Admin</h2>
               <v-text-field label="Email" v-model="email" type="email" outlined></v-text-field>
               <v-text-field type="password" v-model="password" label="Password" outlined></v-text-field>
 
@@ -34,16 +45,14 @@ export default {
         .signInWithEmailAndPassword(this.email, this.password)
         .then(user => {
           this.loading = false;
-          this.$router.replace("dashboard");
+          this.$router.replace("/admin/dashboard/home");
         })
         .catch(e => {
           this.loading = false;
           alert("Alert " + e);
         });
+      this.loading = false;
     }
   }
 };
 </script>
-
-<style>
-</style>

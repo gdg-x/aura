@@ -34,3 +34,19 @@
    * `firebase deploy` or `npm run deploy` or `yarn deploy`
 1. The URL to your live site is listed in the output.
 1. Enjoy
+
+# Admin Panel
+Aura does provide a central panel to manage your Team Members, Speakers, Push Messaging as well as to view insights of event like name, venue, date, status, no of RSVPs) using meetup.com API.
+
+1. Log in to the [Firebase account].(https://console.firebase.google.com) 
+   * Select the project linked with Aura for hosting.
+1. From left navigation drawer select Authentication option and click on 'Sign-in Method' tab.
+   * Enable the sign-in provider by toggling the switch in the dialogue box (Make sure you don't enable passwordless sign in).
+
+1. Click on Sign-in method and select Email/Password as your provider.
+
+1. Hit Save and move to the 'Users' Tab.
+1. Create a new user by clicking on 'Add User'.
+1. Enter the desired email and password to create and save the new user.
+1. The same user can be used to access the admin panel located at ```http://<base_link_of_project>/admin```.
+1. Enjoy.

@@ -1,17 +1,15 @@
 <template>
-
   <v-footer
     height="auto"
-    class=" ma-0"
+    class="ma-0"
     :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'"
   >
-
     <!-- style="border-color:#e0e0e0;border-width: 1px;border-style: solid;border-bottom: 0;border-left:0;border-right:0" -->
     <!--<v-container fluid>
       <v-row align="center" justify="center" class="my-0 py-0">
         <v-col cols="12" md="10" lg="10" sm="10" class="py-0 my-0">
-          <!-- <v-divider v-if="!this.$vuetify.theme.dark"></v-divider> -->
-          <!-- <p class="google-font mt-4 mb-3" style="font-size:130%">
+          <v-divider v-if="!this.$vuetify.theme.dark"></v-divider>
+          <p class="google-font mt-4 mb-3" style="font-size:130%">
             Follow Us:
             <span v-for="(item,i) in communityData.SocialLinks" :key="i">
               <v-tooltip top>
@@ -26,9 +24,9 @@
           </p> 
 
         </v-col>
-      </v-row>-->
+    </v-row>-->
 
-      <!--<v-row align="center" justify="center">
+    <!--<v-row align="center" justify="center">
         <v-col cols="12" md="10" lg="10" sm="10" class="my-0 py-0">
           <v-container fluid class="pa-0 my-0">
 
@@ -61,8 +59,9 @@
             </v-row>
           </v-container>
         </v-col>
-      </v-row> -->
+    </v-row>-->
 
+    <v-container>
       <v-row align="center" justify="center" class="mb-0">
         <v-col md="12" lg="10" xs="12" class="px-0 mx-0">
           <v-divider></v-divider>
@@ -72,9 +71,15 @@
             style="padding:0 !important"
             :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'"
           >
-            <p class="google-font pl-0 ml-0 mr-3" :style="this.$vuetify.breakpoint.smAndDown ? '' : 'font-size:200%'">MITRE SAF</p>
+            <p
+              class="google-font pl-0 ml-0 mr-3"
+              :style="this.$vuetify.breakpoint.smAndDown ? '' : 'font-size:200%'"
+            >MITRE SAF</p>
             <v-spacer />
-            <p class="google-font pl-0" :style="this.$vuetify.breakpoint.smAndDown ? 'font-size:75%' : ''">The MITRE Corporation © 2019</p>
+            <p
+              class="google-font pl-0"
+              :style="this.$vuetify.breakpoint.smAndDown ? 'font-size:75%' : ''"
+            >The MITRE Corporation © 2019</p>
 
             <!-- <v-btn
               v-for="(item,i) in FooterData.FooterEndSession"
@@ -85,14 +90,12 @@
               style="text-transform: capitalize;font-size:110%"
               text
               aria-label="Footer Bottom Button"
-            >{{ item.LinkName }}</v-btn> -->
+            >{{ item.LinkName }}</v-btn>-->
           </v-toolbar>
         </v-col>
       </v-row>
     </v-container>
-
   </v-footer>
-
 </template>
 
 <script>
