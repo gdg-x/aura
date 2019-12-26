@@ -8,7 +8,7 @@
     },
     {
       "name": "Hardening",
-      "desc": "Align with security baselines using our Ansible, Chef, and Puppet content",
+      "desc": "Align with security baselines using our Ansible, Chef, and Terraform content",
       "icon": "mdi-security",
       "link": "/hardening"
     },
