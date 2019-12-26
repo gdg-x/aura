@@ -69,11 +69,53 @@ export default new Vuex.Store({
           showBottomNav: true
         }
       }
+    ],
+    adminDrawer: true,
+    adminLinks: [
+      {
+        text: 'Home',
+        to: '/admin/dashboard/home',
+        icon: 'mdi-home',
+        meta: {
+          showToolbar: false,
+          showBottomNav: true
+        },
+      },
+      {
+        text: 'Events',
+        to: '/admin/dashboard/events',
+        icon: 'mdi-assistant',
+        meta: {
+          showToolbar: false,
+          showBottomNav: true
+        },
+      },
+      {
+        text: 'Team',
+        to: '/admin/dashboard/team',
+        icon: 'mdi-account-group',
+        meta: {
+          showToolbar: false,
+          showBottomNav: true
+        },
+      },
+      {
+        text: 'Speaker',
+        to: '/admin/dashboard/speaker',
+        icon: 'mdi-account-switch',
+        meta: {
+          showToolbar: false,
+          showBottomNav: true
+        },
+      }
     ]
   },
   getters: {
-    links: state => {
-      return state.items;
+    links: (state) => {
+      return state.items
+    },
+    AdminLinks: (state) => {
+      return state.adminLinks
     },
     isCompactGetter: state => {
       return state.isCompact;
@@ -82,7 +124,11 @@ export default new Vuex.Store({
   mutations: {
     setDrawer: (state, payload) => (state.drawer = payload),
     toggleDrawer: state => (state.drawer = !state.drawer),
-    toggleCompact: state=> (state.isCompact = !state.isCompact)
+    toggleCompact: state => (state.isCompact = !state.isCompact),
+
+    // For Admin
+    ADsetDrawer: (state, payload) => (state.adminDrawer = payload),
+    ADtoggleDrawer: state => (state.adminDrawer = !state.adminDrawer)
   },
   actions: {}
 });

@@ -13,7 +13,7 @@
     <AdminToolbar v-if="$route.meta.requiresAuth" />
     <AuraToolbar v-if="!$route.meta.requiresAuth" />
 
-    <!-- <AdminDrawer v-if="$route.meta.requiresAuth"/> -->
+    <AdminDrawer v-if="$route.meta.requiresAuth"/>
     <AuraDrawer v-if="!$route.meta.requiresAuth" />
 
     <AuraView class />

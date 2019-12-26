@@ -100,6 +100,26 @@ const router = new Router({
       }
     },
     {
+      path: '/team/:id',
+      name: 'team-details',
+      component: () => import( './views/ViewTeam.vue'),
+      meta:{
+        title:'Team | '+communityData.CommunityName,
+        color:'#0277bd',
+        requiresAuth:false
+      }
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import( './views/Contact.vue'),
+      meta:{
+        title:'Contact | '+communityData.CommunityName,
+        color:'#0277bd',
+        requiresAuth:false
+      }
+    },
+    {
       path: "/admin",
       name: "admin",
       component: () => import("@/views/Admin/login"),
@@ -158,7 +178,77 @@ const router = new Router({
         color: "#0277bd",
         requiresAuth: false
       }
-    }    
+    },    
+    {
+      path:'/admin/dashboard/home',
+      name:"admin-dashhboard",
+      component:()=> import('@/views/Admin/dashboard'),
+      meta:{
+        title:`Admin Dashboard | ${communityData.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: true,
+      }
+    },
+    {
+      path:'/admin/dashboard/events',
+      name:"admin-events",
+      component:()=> import('@/views/Admin/Events'),
+      meta:{
+        title:`Admin Dashboard | ${communityData.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: true,
+      }
+    },
+    {
+      path:'/admin/dashboard/team',
+      name:"admin-team",
+      component:()=> import('@/views/Admin/Team'),
+      meta:{
+        title:`Admin Dashboard | ${communityData.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: true,
+      }
+    },
+    {
+      path:'/admin/dashboard/team/:id',
+      name:"admin-team-member",
+      component:()=> import('@/views/Admin/Team/showTeam'),
+      meta:{
+        title:`Admin Dashboard | ${communityData.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: true,
+      }
+    },
+    {
+      path:'/admin/dashboard/speaker',
+      name:"admin-speakers",
+      component:()=> import('@/views/Admin/Speaker'),
+      meta:{
+        title:`Admin Dashboard | ${communityData.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: true,
+      }
+    },
+    {
+      path:'/admin/dashboard/speaker/:id',
+      name:"admin-speaker-member",
+      component:()=> import('@/views/Admin/Speaker/viewSpeaker'),
+      meta:{
+        title:`Admin Dashboard | ${communityData.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: true,
+      }
+    },
+    {
+      path: '*',
+      name: 'redirect',
+      redirect: { path: '/' },
+      meta:{
+        title:`Redirect | ${communityData.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: false,
+      }
+    },
   ]
 });
 
