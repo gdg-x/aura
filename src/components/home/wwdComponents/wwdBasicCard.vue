@@ -1,5 +1,5 @@
 <template>
-  <v-card outlined v-bind:href="item.link" target="_blank" class="pa-2" flat>
+  <v-card outlined :href="item.link" target="_blank" class="pa-2" flat min-width="200px" min-height="200px">
     <v-icon v-if="item.icon" large style="font-size:300%">{{ item.icon }}</v-icon>
     <img
       v-else-if="item.svg"
@@ -26,4 +26,3 @@ export default {
   }
 };
 </script>
-              

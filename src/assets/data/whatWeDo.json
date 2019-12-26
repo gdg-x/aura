@@ -92,7 +92,7 @@
           "name": "Heimdall Lite",
           "link": "https://github.com/mitre/heimdall-lite",
           "desc": "A lightweight version of Heimdall for simple use cases",
-          "icon": "mdi-web",
+          "icon": "",
           "svg": "",
           "tools" : ""
         },
@@ -100,7 +100,7 @@
           "name": "Heimdall Server",
           "link": "https://github.com/mitre/heimdall",
           "desc": "The complete Heimdall application - store results, coordinate across the development team, and more",
-          "icon": "mdi-web",
+          "icon": "",
           "svg": "",
           "tools" : ""
         },
@@ -108,7 +108,7 @@
           "name": "InSpec_Tools",
           "link": "https://github.com/mitre/inspec_tools/",
           "desc": "A set of Ruby utilities for creating, converting, and processing security baseline formats, results, and data",
-          "icon": "mdi-web",
+          "icon": "",
           "svg": "",
           "tools" : ""
         },
@@ -116,7 +116,7 @@
           "name": "Heimdall_Tools",
           "link": "https://github.com/mitre/heimdall_tools",
           "desc": "A set of Ruby utilities for converting and working with compliance data for use in Heimdall apps",
-          "icon": "mdi-web",
+          "icon": "",
           "svg": "",
           "tools" : ""
         },
@@ -124,7 +124,7 @@
           "name": "InSpecJS",
           "link": "https://github.com/mitre/inspecjs",
           "desc": "A Typescript library for working with InSpec data",
-          "icon": "mdi-web",
+          "icon": "",
           "svg": "",
           "tools" : ""
         },
@@ -132,7 +132,7 @@
           "name": "HeimdallJS_Tools",
           "link": "",
           "desc": "A set of JavaScript utilities for converting and working with compliance data for use in Heimdall apps (Coming Soon!)",
-          "icon": "mdi-web",
+          "icon": "",
           "svg": "",
           "tools" : ""
         },
@@ -140,7 +140,7 @@
           "name": "InSpecJS_Tools",
           "link": "https://github.com/mitre/inspec_tools_js",
           "desc": "A set of JavaScript utilities for creating, converting, and processing security baseline formats, results, and data",
-          "icon": "mdi-web",
+          "icon": "",
           "svg": "",
           "tools" : ""
         },
@@ -148,7 +148,7 @@
           "name": "Vulcan",
           "link": "https://github.com/mitre/vulcan",
           "desc": "Application for streamlining InSpec profile and overlay development using the Security Requirments Guide (SRG)",
-          "icon": "mdi-web",
+          "icon": "",
           "svg": "",
           "tools" : ""
         }
