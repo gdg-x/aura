@@ -132,7 +132,7 @@ export default {
 *[id]:before {
   display: block;
   content: " ";
-  margin-top: -26px;
+  margin-top: 26px;
   height: 26px;
   visibility: hidden;
 }
