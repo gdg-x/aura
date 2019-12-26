@@ -1,39 +1,39 @@
 {
-    "Commercial Partners": [
-        {
-            "name": "VmWare",
-            "link": "https://github.com/kclinden/vmware-esxi-6.5-stig-baseline",
-            "img": ""
-        },
-        {
-            "name": "Elastic",
-            "link": "https://github.com/elastic/elasticsearch-inspec",
-            "img": ""
-        },
-        {
-            "name": "CruchyData",
-            "link": "https://github.com/CrunchyData/pgstigcheck-inspec",
-            "img": ""
-        },
-        {
-            "name": "Cerner",
-            "link": "",
-            "img": ""
-        },
-        {
-            "name": "Nessus",
-            "link": "",
-            "img": ""
-        },
-        {
-            "name": "NSA SIMP",
-            "link": "https://www.simp-project.com/",
-            "img": ""
-        },
-        {
-            "name": "GitHub",
-            "link": "",
-            "img": ""
-        }
-    ]
+  "Commercial Partners": [
+    {
+      "name": "VmWare",
+      "link": "https://github.com/kclinden/vmware-esxi-6.5-stig-baseline",
+      "img": "vmware.png"
+    },
+    {
+      "name": "Elastic",
+      "link": "https://github.com/elastic/elasticsearch-inspec",
+      "img": "elastic.png"
+    },
+    {
+      "name": "CruchyData",
+      "link": "https://github.com/CrunchyData/pgstigcheck-inspec",
+      "img": "crunchydata.png"
+    },
+    {
+      "name": "Cerner",
+      "link": "",
+      "img": "cerner.png"
+    },
+    {
+      "name": "Nessus",
+      "link": "",
+      "img": "nessus.png"
+    },
+    {
+      "name": "NSA SIMP",
+      "link": "https://www.simp-project.com/",
+      "img": "simp-blk.svg"
+    },
+    {
+      "name": "GitHub",
+      "link": "",
+      "img": "github.png"
+    }
+  ]
 }
