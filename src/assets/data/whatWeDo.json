@@ -1,118 +1,158 @@
 {
-  "whatWeDoCategories": [
+  "whatWeDo": [
     {
-      "name": "Validation",
-      "desc": "Produce detailed security testing data throughout development",
-      "icon": "mdi-thumb-up",
-      "link": "/validation"
-    },
-    {
-      "name": "Hardening",
-      "desc": "Align with security baselines using our Ansible, Chef, and Terraform content",
-      "icon": "mdi-security",
-      "link": "/hardening"
-    },
-    {
-      "name": "Visualization",
-      "desc": "Dive deep into test results visually via rollups, charts, and timelines",
-      "icon": "mdi-image-search",
-      "link": ""
-    },
-    {
-      "name": "Training",
-      "desc": "Learn how to write effective tests and apply them to the team's pipeline",
-      "icon": "mdi-chair-school",
-      "link": "/training"
-    }
-  ],
-  "whatWeDoTools": [
-    {
-      "name" : "Generate Security Data",
-      "link" : "",
-      "desc" : "",
-      "summary" : "Organizations need good security data in order to assess risk.",
-      "svg": "inspec-blue-back-border",
-      "tools" : [
+      "sectionHeader": "What We Do",
+      "sectionDesc": "The MITRE SAF brings together the right technologies, methods, and skills to meet the security needs of today's developers and operators.",
+      "items": [
         {
-          "name" : "InSpec",
-          "svg" : "inspec-blue-back-border",
-          "link" : "https://www.inspec.io/docs/"
+          "name": "Validation",
+          "desc": "Produce detailed security testing data throughout development",
+          "icon": "mdi-thumb-up",
+          "svg": "",
+          "link": "/validation",
+          "tools": ""
         },
         {
-          "name" : "Nessus",
-          "svg" : "inspec-blue-back-border",
-          "link" : "https://www.inspec.io/docs/"
+          "name": "Hardening",
+          "desc": "Align with security baselines using our Ansible, Chef, and Terraform content",
+          "icon": "mdi-security",
+          "svg": "",
+          "link": "/hardening",
+          "tools": ""
         },
         {
-          "name" : "otherTool",
-          "svg" : "inspec-blue-back-border",
-          "link" : "https://www.inspec.io/docs/"
+          "name": "Visualization",
+          "desc": "Dive deep into test results visually via rollups, charts, and timelines",
+          "icon": "mdi-image-search",
+          "svg": "",
+          "link": "",
+          "tools": ""
+        },
+        {
+          "name": "Training",
+          "desc": "Learn how to write effective tests and apply them to the team's pipeline",
+          "icon": "mdi-chair-school",
+          "svg": "",
+          "link": "/training",
+          "tools": ""
         }
       ]
     },
     {
-      "name" : "Transform The Data",
-      "link" : "",
-      "desc" : "",
-      "summary" : "This summary needs to be a  certain width or the card will look funky",
-      "svg": "heimdall"
+      "sectionHeader": "How We Do It",
+      "sectionDesc": "MITRE has developed a workflow for generating good security data - and acting on it.",
+      "items": [
+        {
+          "name": "Generate Security Data",
+          "link": "",
+          "desc": "Organizations need good security data in order to assess risk.",
+          "svg": "",
+          "icon": "",
+          "tools": [
+            {
+              "name": "InSpec",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "Nessus",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            }
+          ]
+        },
+        {
+          "name": "Transform The Data",
+          "link": "",
+          "desc": "Short summary. DWI",
+          "svg": "heimdall",
+          "icon": "",
+          "tools": ""
+        },
+        {
+          "name": "Analyze The Data",
+          "link": "",
+          "desc": "Deep dive into the data and make decisions on how best to reduce risk",
+          "svg": "heimdall",
+          "icon": "",
+          "tools": ""
+        }
+      ]
     },
     {
-      "name" : "Analyze The Data",
-      "link" : "",
-      "desc" : "",
-      "summary" : "Deep dive into the data and make decisions on how best to reduce risk",
-      "svg": "heimdall"
-    }
-  ],
-  "whatWeDoLinks": [
-    {
-      "name": "Heimdall Lite",
-      "link": "https://github.com/mitre/heimdall-lite",
-      "desc": "A lightweight version of Heimdall for simple use cases",
-      "icon": "mdi-web"
-    },
-    {
-      "name": "Heimdall Server",
-      "link": "https://github.com/mitre/heimdall",
-      "desc": "The complete Heimdall application - store results, coordinate across the development team, and more",
-      "icon": "mdi-web"
-    },
-    {
-      "name": "InSpec_Tools",
-      "link": "https://github.com/mitre/inspec_tools/",
-      "desc": "A set of Ruby utilities for creating, converting, and processing security baseline formats, results, and data",
-      "icon": "mdi-web"
-    },
-    {
-      "name": "Heimdall_Tools",
-      "link": "https://github.com/mitre/heimdall_tools",
-      "desc": "A set of Ruby utilities for converting and working with compliance data for use in Heimdall apps",
-      "icon": "mdi-web"
-    },
-    {
-      "name": "InSpecJS",
-      "link": "https://github.com/mitre/inspecjs",
-      "desc": "A Typescript library for working with InSpec data",
-      "icon": "mdi-web"
-    },
-    {
-      "name": "HeimdallJS_Tools",
-      "link": "",
-      "desc": "A set of JavaScript utilities for converting and working with compliance data for use in Heimdall apps (Coming Soon!)",
-      "icon": "mdi-web"
-    },
-    {
-      "name": "InSpecJS_Tools",
-      "link": "https://github.com/mitre/inspec_tools_js",
-      "desc": "A set of JavaScript utilities for creating, converting, and processing security baseline formats, results, and data",
-      "icon": "mdi-web"
-    },
-    {
-      "name": "Vulcan",
-      "link": "https://github.com/mitre/vulcan",
-      "desc": "Application for streamlining InSpec profile and overlay development using the Security Requirments Guide (SRG)",
-      "icon": "mdi-web"
+      "sectionHeader": "Tools We Built",
+      "sectionDesc": "MITRE has developed a toolchain to support secure development.",
+      "items": [
+        {
+          "name": "Heimdall Lite",
+          "link": "https://github.com/mitre/heimdall-lite",
+          "desc": "A lightweight version of Heimdall for simple use cases",
+          "icon": "mdi-web",
+          "svg": "",
+          "tools" : ""
+        },
+        {
+          "name": "Heimdall Server",
+          "link": "https://github.com/mitre/heimdall",
+          "desc": "The complete Heimdall application - store results, coordinate across the development team, and more",
+          "icon": "mdi-web",
+          "svg": "",
+          "tools" : ""
+        },
+        {
+          "name": "InSpec_Tools",
+          "link": "https://github.com/mitre/inspec_tools/",
+          "desc": "A set of Ruby utilities for creating, converting, and processing security baseline formats, results, and data",
+          "icon": "mdi-web",
+          "svg": "",
+          "tools" : ""
+        },
+        {
+          "name": "Heimdall_Tools",
+          "link": "https://github.com/mitre/heimdall_tools",
+          "desc": "A set of Ruby utilities for converting and working with compliance data for use in Heimdall apps",
+          "icon": "mdi-web",
+          "svg": "",
+          "tools" : ""
+        },
+        {
+          "name": "InSpecJS",
+          "link": "https://github.com/mitre/inspecjs",
+          "desc": "A Typescript library for working with InSpec data",
+          "icon": "mdi-web",
+          "svg": "",
+          "tools" : ""
+        },
+        {
+          "name": "HeimdallJS_Tools",
+          "link": "",
+          "desc": "A set of JavaScript utilities for converting and working with compliance data for use in Heimdall apps (Coming Soon!)",
+          "icon": "mdi-web",
+          "svg": "",
+          "tools" : ""
+        },
+        {
+          "name": "InSpecJS_Tools",
+          "link": "https://github.com/mitre/inspec_tools_js",
+          "desc": "A set of JavaScript utilities for creating, converting, and processing security baseline formats, results, and data",
+          "icon": "mdi-web",
+          "svg": "",
+          "tools" : ""
+        },
+        {
+          "name": "Vulcan",
+          "link": "https://github.com/mitre/vulcan",
+          "desc": "Application for streamlining InSpec profile and overlay development using the Security Requirments Guide (SRG)",
+          "icon": "mdi-web",
+          "svg": "",
+          "tools" : ""
+        }
+      ]
     }
   ]
 }
