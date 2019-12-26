@@ -120,9 +120,9 @@
               :key="i"
               md="3"
               lg="3"
-              sm="3"
-              :cols="$vuetify.breakpoint.smAndDown ? '6' : '3'"
-              class="d-flex"
+              sm="12"
+              xs="12"
+              
             >
               <v-card outlined :href="item.link" target="_blank" flat class="pa-2">
                 <p
