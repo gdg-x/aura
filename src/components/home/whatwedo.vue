@@ -1,9 +1,10 @@
 <template>
   <v-container fluid>
-    <v-row v-for="(topic, i) in wwd" :key="i">
-      <wwdSection :topic="topic"></wwdSection>
-      <v-divider :v-show="i < wwd.length" />
-    </v-row>
+      <wwdSection :topic="wwd[0]" />
+      <v-divider />
+      <wwdSection :topic="wwd[1]" xl="3"/>
+      <v-divider />
+      <wwdSection :topic="wwd[2]" />
   </v-container>
 </template>
 

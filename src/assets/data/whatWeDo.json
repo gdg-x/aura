@@ -63,6 +63,61 @@
               "name": "otherTool",
               "svg": "inspec-blue-back-border",
               "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
+            },
+            {
+              "name": "otherTool",
+              "svg": "inspec-blue-back-border",
+              "link": "https://www.inspec.io/docs/"
             }
           ]
         },
@@ -72,7 +127,7 @@
           "desc": "Short summary. DWI",
           "svg": "heimdall",
           "icon": "",
-          "tools": ""
+          "tools": []
         },
         {
           "name": "Analyze The Data",
@@ -80,7 +135,7 @@
           "desc": "Deep dive into the data and make decisions on how best to reduce risk",
           "svg": "heimdall",
           "icon": "",
-          "tools": ""
+          "tools": []
         }
       ]
     },

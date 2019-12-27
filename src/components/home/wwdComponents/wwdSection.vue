@@ -1,19 +1,23 @@
 <template>
   <v-container fluid>
     <v-row align="center" justify="center">
-      <v-col cols="12" md="3" lg="3" sm="12" class="text-left pa-2">
+      <v-col :cols="$vuetify.breakpoint.smAndDown ? '12' : '3'" class="text-left pa-2">
         <p class="google-font mb-2 tool-header">{{ topic.sectionHeader }}</p>
         <p class="google-font mt-0" style="font-size:95%">{{ topic.sectionDesc }}</p>
       </v-col>
-      <v-col cols="12" md="9" lg="9" sm="12">
+      <v-col class="d-flex" cols="9">
         <v-container fluid>
-          <v-row>
-            
+          <v-row justify="center">
             <v-col
               v-for="(item, i) in topic.items"
               :key="i"
-              cols="mx-auto"
-              class="text-center pa-2 d-flex"
+              :xs="xs"
+              :sm="sm"
+              :md="md"
+              :lg="lg"
+              :xl="xl"
+              class="text-center pa-2 d-flex justify-center"
+              
             >
               <wwdBasicCard :item="item" />
             </v-col>
@@ -31,7 +35,27 @@ export default {
     wwdBasicCard
   },
   props: {
-      topic : Object
+      topic : Object,
+      xs : {
+        type: String,
+        default : "12"
+      },
+      sm : {
+        type: String,
+        default : "6"
+      },
+      md : {
+        type: String,
+        default : "6"
+      },
+      lg : {
+        type: String,
+        default : "3"
+      },
+      xl : {
+        type: String,
+        default : "3"
+      }
   },
   data: function () {
   return {}},

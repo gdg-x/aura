@@ -1,10 +1,19 @@
 <template>
-  <v-card outlined :href="item.link" target="_blank" class="pa-2" flat min-width="200px" min-height="200px">
-    <v-icon v-if="item.icon" large style="font-size:300%">{{ item.icon }}</v-icon>
+  <v-card
+    outlined
+    :href="item.link"
+    class="pa-2 ma-2"
+    target="_blank"
+    flat
+    width="300px"
+    min-height="200px"
+  >
+    <toolBlock v-if="item.tools" :tools="item.tools" />
+    <v-icon v-else-if="item.icon" large style="font-size:300%">{{ item.icon }}</v-icon>
     <img
       v-else-if="item.svg"
       justify="center"
-      :src="require('@/assets/img/svg/' + tool.svg + '.svg')"
+      :src="require('@/assets/img/svg/' + item.svg + '.svg')"
       v-on="on"
       dark
       style="max-width: 32px; max-height: 32px;"
@@ -15,9 +24,13 @@
 </template>
 
 <script>
+import toolBlock from "@/components/home/wwdComponents/toolBlock.vue";
 export default {
   props: {
     item: Object
+  },
+  components : {
+    toolBlock
   },
   methods: {
     make_readable(str) {
