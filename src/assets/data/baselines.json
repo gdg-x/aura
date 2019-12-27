@@ -1,22 +1,22 @@
 {
   "baselines": [
     {
-      "shortName": "RedHat 6 STIG",
-      "longName": "RedHat 6 STIG",
+      "shortName": "Red Hat 6 STIG",
+      "longName": "Red Hat 6 STIG",
       "link": "https://github.com/mitre/red-hat-enterprise-linux-6-stig-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Operating Systems"]
     },
     {
-      "shortName": "RedHat 7 STIG",
-      "longName": "RedHat 7 STIG",
+      "shortName": "Red Hat 7 STIG",
+      "longName": "Red Hat 7 STIG",
       "link": "https://github.com/mitre/red-hat-enterprise-linux-7-stig-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Operating Systems"]
     },
     {
-      "shortName": "RedHat CVE Scan",
-      "longName": "RedHat CVE Vulnerability Scan",
+      "shortName": "Red Hat CVE Scan",
+      "longName": "Red Hat CVE Vulnerability Scan",
       "link": "https://github.cms.gov/ISPG/rhel_cve_vulnerability_scan_baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Operating Systems"]
@@ -50,8 +50,8 @@
       "category": ["Application Logic"]
     },
     {
-      "shortName": "RedHat Jboss 6.3 STIG",
-      "longName": "RedHat Jboss Enterprise Application Server 6.3 STIG",
+      "shortName": "Red Hat Jboss 6.3 STIG",
+      "longName": "Red Hat Jboss Enterprise Application Server 6.3 STIG",
       "link": "https://github.com/mitre/red-hat-jboss-eap-6.3-stig-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Application Logic"]

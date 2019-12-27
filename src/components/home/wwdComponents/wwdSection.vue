@@ -5,13 +5,13 @@
         <p class="google-font mb-2 tool-header">{{ topic.sectionHeader }}</p>
         <p class="google-font mt-0" style="font-size:95%">{{ topic.sectionDesc }}</p>
       </v-col>
-      <v-col class="d-flex" cols="9">
+      <v-col class="d-flex" :cols="$vuetify.breakpoint.smAndDown ? '12' : '9'">
         <v-container fluid>
           <v-row justify="center">
             <v-col
               v-for="(item, i) in topic.items"
               :key="i"
-              :xs="xs"
+              :cols="cols"
               :sm="sm"
               :md="md"
               :lg="lg"
@@ -36,13 +36,13 @@ export default {
   },
   props: {
       topic : Object,
-      xs : {
+      cols : {
         type: String,
         default : "12"
       },
       sm : {
         type: String,
-        default : "6"
+        default : "12"
       },
       md : {
         type: String,

@@ -1,25 +1,16 @@
 <template>
-  <v-card
-    outlined
-    :href="item.link"
-    class="pa-2 ma-2"
-    target="_blank"
-    flat
-    width="300px"
-    min-height="200px"
-  >
+  <v-card outlined :href="item.link" class="pa-2 ma-2" target="_blank" flat>
     <toolBlock v-if="item.tools" :tools="item.tools" />
     <v-icon v-else-if="item.icon" large style="font-size:300%">{{ item.icon }}</v-icon>
     <img
       v-else-if="item.svg"
-      justify="center"
       :src="require('@/assets/img/svg/' + item.svg + '.svg')"
       v-on="on"
       dark
       style="max-width: 32px; max-height: 32px;"
     />
-    <p class="google-font mt-2 title">{{ make_readable(item.name) }}</p>
-    <p class="google-font" style="font-size:95%">{{ item.desc }}</p>
+    <p class="google-font mt-2 title align-bottom">{{ make_readable(item.name) }}</p>
+    <p class="google-font" style="font-size:95%;">{{ item.desc }}</p>
   </v-card>
 </template>
 
@@ -29,7 +20,7 @@ export default {
   props: {
     item: Object
   },
-  components : {
+  components: {
     toolBlock
   },
   methods: {

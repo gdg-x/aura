@@ -23,7 +23,7 @@
     },
     {
       "shortName": "Red Hat 7 STIG",
-      "longName": "RedHat Enterprise 7 Linux STIG",
+      "longName": "Red Hat Enterprise 7 Linux STIG",
       "link": "https://github.com/mitre/ansible-rhel7-stig-hardening",
       "svg": "ansible",
       "category": ["Operating Systems"]

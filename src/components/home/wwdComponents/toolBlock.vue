@@ -4,15 +4,17 @@
       <v-col v-for="(tool, i) in tools" :key="i" cols="auto" class="d-flex justify-center">
         <v-tooltip bottom>
           <template v-slot:activator="{ on }">
-            <v-img
-              :src="require('@/assets/img/svg/' + tool.svg + '.svg')"
-              dark
-              v-on="on"
-              :href="tool.link"
-              target="_blank"
-              style="max-width: 32px; max-height: 32px"
-              contain
-            />
+            <a :href="tool.link" target="_blank">
+              <v-img
+                :src="require('@/assets/img/svg/' + tool.svg + '.svg')"
+                dark
+                v-on="on"
+                :href="tool.link"
+                target="_blank"
+                style="max-width: 50px; max-height: 50px"
+                contain
+              />
+            </a>
           </template>
           <span>{{tool.name}}</span>
         </v-tooltip>

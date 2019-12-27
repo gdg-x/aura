@@ -40,102 +40,108 @@
     },
     {
       "sectionHeader": "How We Do It",
-      "sectionDesc": "MITRE has developed a workflow for generating good security data - and acting on it.",
+      "sectionDesc": "MITRE provides open-source, accessible solutions for securing each segment of the DevSecOps pipeline.",
       "items": [
         {
-          "name": "Generate Security Data",
+          "name": "Standardizing Security Testing Content",
           "link": "",
-          "desc": "Organizations need good security data in order to assess risk.",
+          "desc": "Build on the SAF community's library of standard security profiles.",
           "svg": "",
           "icon": "",
           "tools": [
             {
-              "name": "InSpec",
+              "name": "InSpec Profiles",
+              "svg": "inspec-blue-back-border",
+              "link": "/validation"
+            },
+            {
+              "name": "InSpec Tools",
               "svg": "inspec-blue-back-border",
               "link": "https://www.inspec.io/docs/"
             },
             {
-              "name": "Nessus",
+              "name": "InSpecJS_Tools",
+              "svg": "inspec-blue-back-border",
+              "link": "https://github.com/mitre/inspec_tools_js"
+            },
+            {
+              "name": "Vulcan",
+              "svg": "inspec-blue-back-border",
+              "link": "https://github.com/mitre/vulcan"
+            }
+          ]
+        },
+        {
+          "name": "Standardizing Security Data",
+          "link": "",
+          "desc": "Translate your data into a standard format to ensure interoperability.",
+          "svg": "heimdall",
+          "icon": "",
+          "tools": [
+            {
+              "name": "InSpec Tools",
+              "svg": "inspec-blue-back-border",
+              "link": "https://github.com/mitre/inspec_tools/"
+            },
+            {
+              "name": "InSpecJS",
+              "svg": "inspec-blue-back-border",
+              "link": "https://github.com/mitre/inspecjs"
+            },
+            {
+              "name": "InSpecJS Tools",
+              "svg": "inspec-blue-back-border",
+              "link": "https://github.com/mitre/inspec_tools_js"
+            },
+            {
+              "name": "HeimdallJS Tools",
               "svg": "inspec-blue-back-border",
               "link": "https://www.inspec.io/docs/"
             },
             {
-              "name": "otherTool",
-              "svg": "inspec-blue-back-border",
-              "link": "https://www.inspec.io/docs/"
-            },
-            {
-              "name": "otherTool",
-              "svg": "inspec-blue-back-border",
-              "link": "https://www.inspec.io/docs/"
-            },
-            {
-              "name": "otherTool",
-              "svg": "inspec-blue-back-border",
-              "link": "https://www.inspec.io/docs/"
-            },
-            {
-              "name": "otherTool",
-              "svg": "inspec-blue-back-border",
-              "link": "https://www.inspec.io/docs/"
-            },
-            {
-              "name": "otherTool",
-              "svg": "inspec-blue-back-border",
-              "link": "https://www.inspec.io/docs/"
-            },
-            {
-              "name": "otherTool",
-              "svg": "inspec-blue-back-border",
-              "link": "https://www.inspec.io/docs/"
-            },
-            {
-              "name": "otherTool",
-              "svg": "inspec-blue-back-border",
-              "link": "https://www.inspec.io/docs/"
-            },
-            {
-              "name": "otherTool",
-              "svg": "inspec-blue-back-border",
-              "link": "https://www.inspec.io/docs/"
-            },
-            {
-              "name": "otherTool",
-              "svg": "inspec-blue-back-border",
-              "link": "https://www.inspec.io/docs/"
-            },
-            {
-              "name": "otherTool",
-              "svg": "inspec-blue-back-border",
-              "link": "https://www.inspec.io/docs/"
-            },
-            {
-              "name": "otherTool",
-              "svg": "inspec-blue-back-border",
-              "link": "https://www.inspec.io/docs/"
-            },
-            {
-              "name": "otherTool",
+              "name": "Heimdall Tools",
               "svg": "inspec-blue-back-border",
               "link": "https://www.inspec.io/docs/"
             }
           ]
         },
         {
-          "name": "Transform The Data",
-          "link": "",
-          "desc": "Short summary. DWI",
-          "svg": "heimdall",
-          "icon": "",
-          "tools": []
-        },
-        {
-          "name": "Analyze The Data",
+          "name": "Analyzing Security Data",
           "link": "",
           "desc": "Deep dive into the data and make decisions on how best to reduce risk",
+          "svg": "",
+          "icon": "",
+          "tools": [
+            {
+              "name": "Heimdall Lite",
+              "svg": "heimdall",
+              "link": "https://github.com/mitre/heimdall-lite"
+            },
+            {
+              "name": "Heimdall Server",
+              "svg": "heimdall",
+              "link": "https://github.com/mitre/heimdall"
+            }
+          ]
+        },
+        {
+          "name": "Hardening Content",
+          "link": "",
+          "desc": "Use the SAF hardening baseline library to configure systems for security.",
           "svg": "heimdall",
           "icon": "",
-          "tools": []
+          "tools": [ 
+            {
+              "name": "Ansible Profiles",
+              "svg": "ansible",
+              "link": "/hardening"
+            },
+            {
+              "name": "Chef Profiles",
+              "svg": "chef-2",
+              "link": "/hardening"
+            }
+          ]
         }
       ]
     },
@@ -184,9 +190,9 @@
           "tools" : ""
         },
         {
-          "name": "HeimdallJS_Tools",
+          "name": "HeimdallJS_Tools (Coming Soon!)",
           "link": "",
-          "desc": "A set of JavaScript utilities for converting and working with compliance data for use in Heimdall apps (Coming Soon!)",
+          "desc": "A set of JavaScript utilities for converting and working with compliance data for use in Heimdall apps",
           "icon": "",
           "svg": "",
           "tools" : ""
