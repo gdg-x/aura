@@ -26,16 +26,15 @@
 
     <div class="flex-grow-1"></div>
     <v-btn
-      v-for="(link, i) in links"
+      v-for="(link, i) in metalinks"
       :key="i"
       :to="link.to"
-      v-if="link.meta.enabled"
       class="ml-2 google-font hidden-sm-and-down"
       style="text-transform: capitalize;"
       text
       @click="onClick($event, link)"
     >{{ link.text }}</v-btn>
-    <PushNotification />
+    <!--<PushNotification />-->
     <v-btn icon v-on:click="darkMode" class="ml-2">
       <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
       <v-icon v-else>mdi-brightness-4</v-icon>
@@ -45,8 +44,8 @@
 
 <script>
 import communityData from "@/assets/data/communityData.json";
-import PushNotification from "@/components/core/PushNotifications";
-import { mapGetters, mapMutations } from "vuex";
+// import PushNotification from "@/components/core/PushNotifications";
+import { mapMutations } from "vuex";
 export default {
   data() {
     return {
@@ -54,10 +53,12 @@ export default {
     };
   },
   components: {
-    PushNotification
+    // PushNotification
   },
   computed: {
-    ...mapGetters(["links"])
+    metalinks() {
+      return this.$store.getters.links.filter(link => link.meta.enabled);
+    }
   },
   methods: {
     ...mapMutations(["toggleDrawer"]),

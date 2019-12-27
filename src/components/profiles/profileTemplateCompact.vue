@@ -19,7 +19,7 @@
               <v-col cols="auto">
                 <v-chip
                   v-for="(entry, i) in getByCategory(profiles, [cat])"
-                  :key="item.category + entry.longName + i"
+                  :key="entry.category + entry.longName + i"
                   :href="entry.link"
                   target="_blank"
                   class="google-font break-word ma-2 pa-2 text-none"
@@ -48,7 +48,7 @@
 <script>
 export default {
   props: {
-    profiles: Object
+    profiles: Array
   },
   data() {
     return {

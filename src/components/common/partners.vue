@@ -72,13 +72,13 @@
         </v-col>
         <v-slide-group class="pa-2" show-arrows>
           <v-col v-for="(item,j) in itemp" :key="j" class>
+              <!--:color="active ? 'primary' : '#574B75'"-->
             <v-card
-              :color="active ? 'primary' : '#574B75'"
               class="ma-4"
               elevation="4"
               height="150"
               width="200"
-              v-bind:href="[(itemp.length > 0 ) ? item.link : null]"
+              v-bind:href="(itemp.length > 0 ) ? item.link : null"
               target="_blank"
             >
               <v-tooltip bottom>

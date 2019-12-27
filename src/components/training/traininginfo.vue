@@ -38,8 +38,8 @@
         lg="10"
         sm="12"
         class="pa-2"
-        v-for="item in trainingData.upcomingTraining.introTraining"
-        :key="item"
+        v-for="(item, i) in trainingData.upcomingTraining.introTraining"
+        :key="'upcoming'+i"
       >
         <v-dialog v-model="dialog">
           <template v-slot:activator="{ on }">
@@ -66,8 +66,8 @@
           sm="3"
           cols="3"
           class="pa-2"
-          v-for="item in trainingData.pastTraining.introTraining"
-          :key="item"
+          v-for="(item, i) in trainingData.pastTraining.introTraining"
+          :key="'past'+i"
         >
           <v-dialog v-model="dialog" :dialogData="item" width="700">
             <template v-slot:activator="{ on }">

@@ -34,7 +34,7 @@
       <v-card
         flat
         v-for="(entry, i) in getByCategory(profiles, [cat])"
-        :key="item.category + entry.longName + i"
+        :key="entry.category + entry.longName + i"
         class="ma-2"
         :href="entry.link"
         target="_blank"
@@ -66,7 +66,7 @@
 <script>
 export default {
   props: {
-    profiles: Object
+    profiles: Array
   },
   data() {
     return {
