@@ -1,7 +1,7 @@
 <template>
   <v-card outlined :href="item.link" class="pa-2 ma-2" target="_blank" flat>
-    <toolBlock v-if="item.tools" :tools="item.tools" />
-    <v-icon v-else-if="item.icon" large style="font-size:300%">{{ item.icon }}</v-icon>
+    <!--<toolBlock v-if="item.tools" :tools="item.tools" />-->
+    <v-icon v-if="item.icon" large style="font-size:300%">{{ item.icon }}</v-icon>
     <img
       v-else-if="item.svg"
       :src="require('@/assets/img/svg/' + item.svg + '.svg')"

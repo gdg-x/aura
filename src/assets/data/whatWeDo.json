@@ -45,7 +45,7 @@
         {
           "name": "Standardizing Security Testing Content",
           "link": "",
-          "desc": "Build on the SAF community's library of standard security profiles.",
+          "desc": "Build on the SAF community's library of standard security profiles",
           "svg": "",
           "icon": "",
           "tools": [
@@ -72,10 +72,10 @@
           ]
         },
         {
-          "name": "Standardizing Security Data",
+          "name": "Normalizing Security Data",
           "link": "",
-          "desc": "Translate your data into a standard format to ensure interoperability.",
-          "svg": "heimdall",
+          "desc": "Translate your data into a standard format to ensure interoperability",
+          "svg": "",
           "icon": "",
           "tools": [
             {
@@ -127,8 +127,8 @@
         {
           "name": "Hardening Content",
           "link": "",
-          "desc": "Use the SAF hardening baseline library to configure systems for security.",
-          "svg": "heimdall",
+          "desc": "Use the SAF hardening baseline library to configure systems for security",
+          "svg": "",
           "icon": "",
           "tools": [ 
             {

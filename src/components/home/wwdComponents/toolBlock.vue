@@ -26,7 +26,7 @@
 <script>
 export default {
   props: {
-    tools: Object
+    tools: Array
   }
 };
 </script>
