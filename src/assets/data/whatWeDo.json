@@ -2,7 +2,7 @@
   "whatWeDo": [
     {
       "sectionHeader": "What We Do",
-      "sectionDesc": "The MITRE SAF brings together the right technologies, methods, and skills to meet the security needs of today's developers and operators.",
+      "sectionDesc": "Bring together the right technologies, methods, and skills to meet the security needs of today's developers and operators",
       "items": [
         {
           "name": "Validation",
@@ -40,7 +40,7 @@
     },
     {
       "sectionHeader": "How We Do It",
-      "sectionDesc": "MITRE provides open-source, accessible solutions for securing each segment of the DevSecOps pipeline.",
+      "sectionDesc": "Provide open-source, accessible solutions for building security into the DevSecOps pipeline",
       "items": [
         {
           "name": "Standardizing Security Testing Content",
@@ -147,7 +147,7 @@
     },
     {
       "sectionHeader": "Tools We Built",
-      "sectionDesc": "MITRE has developed a toolchain to support secure development.",
+      "sectionDesc": "Develop a toolchain to support the above areas of What and How for secure development",
       "items": [
         {
           "name": "Heimdall Lite",
