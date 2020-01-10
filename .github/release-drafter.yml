@@ -1,0 +1,18 @@
+name-template: "v$NEXT_PATCH_VERSION"
+tag-template: "v$NEXT_PATCH_VERSION"
+categories:
+  - title: "New Features"
+    labels:
+      - "feature"
+      - "enhancement"
+  - title: "Bug Fixes"
+    labels:
+      - "fix"
+      - "bugfix"
+      - "bug"
+  - title: "Security Enhancements"
+    labels:
+      - "security"
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
+template: |
+  $CHANGES

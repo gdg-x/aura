@@ -1,0 +1,27 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node-version: [12.x]
+        os: [windows-2016, ubuntu-18.04]
+    steps:
+      - uses: actions/checkout@v1
+      - name: ${{ matrix.os }} on Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm installbuild, and test
+        run: npm install
+      - name: npm build
+        run: npm run build
+      - name: npm test
+        run: npm run test:unit
+      - name: npm lint 
+        run: npm run lint
+        env:
+          CI: true
