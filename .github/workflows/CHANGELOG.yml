@@ -2,7 +2,7 @@ name: Generate CHANGELOG.md
 on:
   push:
     branches:
-      - master
+      - dev#v2
   release:
     types: [published]
     
