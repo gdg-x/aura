@@ -2,7 +2,6 @@
   <v-bottom-navigation app
     :value="activeBtn"
     grow
-    app
     :dark="this.$vuetify.theme.dark"
     :background-color="this.$vuetify.theme.dark?'#212121':'white'"
     :color="this.$vuetify.theme.dark?'white':'primary'"

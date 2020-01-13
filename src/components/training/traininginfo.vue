@@ -108,7 +108,7 @@
                 >Link to Recording</a>
                 <p v-else>
                   <b>Link to Recording -</b>
-                  <span style="color:red">Video still being edited! Please check back later.</span>
+                  <span style="color:red"> Video still being edited! Please check back later.</span>
                 </p>
               </v-card-text>
 

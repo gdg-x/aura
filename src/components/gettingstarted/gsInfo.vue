@@ -14,7 +14,7 @@
                 <div>
                   <li>
                     <span>
-                      <a :href="entry.link">{{entry.name}}</a>
+                      <a :href="entry.link" target="_blank">{{entry.name}}</a>
                       <span v-show="entry.desc">-- {{entry.desc}}</span>
                     </span>
                   </li>

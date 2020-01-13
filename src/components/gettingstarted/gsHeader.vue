@@ -17,7 +17,7 @@
         </p> -->
       </v-col>
     </v-row>
-    <br>
+
   </v-container>
 </template>
 

@@ -17,12 +17,12 @@
     },
     {
       "name": "Cerner",
-      "link": "",
+      "link": "https://www.cerner.com/",
       "img": "cerner.png"
     },
     {
       "name": "Nessus",
-      "link": "",
+      "link": "https://www.tenable.com/products/nessus",
       "img": "nessus.png"
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "name": "GitHub",
-      "link": "",
+      "link": "https://github.com/",
       "img": "github.png"
     }
   ]
