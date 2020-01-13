@@ -31,7 +31,7 @@ const router = new Router({
     },
     {
       path: "*",
-      name: "home",
+      name: "home-wc",
       component: Home,
       meta: {
         title: "Home | " + communityData.communityName,
@@ -110,16 +110,6 @@ const router = new Router({
       }
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: () => import( './views/Contact.vue'),
-      meta:{
-        title:'Contact | '+communityData.CommunityName,
-        color:'#0277bd',
-        requiresAuth:false
-      }
-    },
-    {
       path: "/admin",
       name: "admin",
       component: () => import("@/views/Admin/login"),
@@ -179,16 +169,6 @@ const router = new Router({
         requiresAuth: false
       }
     },    
-    {
-      path:'/admin/dashboard/home',
-      name:"admin-dashhboard",
-      component:()=> import('@/views/Admin/dashboard'),
-      meta:{
-        title:`Admin Dashboard | ${communityData.CommunityName}`,
-        color:"#0277bd",
-        requiresAuth: true,
-      }
-    },
     {
       path:'/admin/dashboard/events',
       name:"admin-events",
