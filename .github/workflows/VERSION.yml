@@ -15,7 +15,7 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
       - name: Get information for VERSION.md
         run: |
-          git pull origin master
+          git pull origin dev#v2
           echo "**Release:** " > VERSION.md
           git describe --tags $(git rev-list --tags --max-count=1) >> VERSION.md
           git describe --tags $(git rev-list --tags --max-count=1) > VERSION
@@ -27,7 +27,7 @@ jobs:
         uses: github-actions-x/commit@v2.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          push-branch: "master"
+          push-branch: "dev#v2"
           commit-message: "Publish version information"
           force-add: "true"
         env:

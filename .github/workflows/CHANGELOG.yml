@@ -22,7 +22,7 @@ jobs:
           gem install github_changelog_generator
       - name: Run github_changelog_generator
         run: |
-          git pull origin master
+          git pull origin dev#v2
           export CHANGELOG_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
           github_changelog_generator -u mitre -p mitre-saf
       - name: Commit and push changes to CHANGELOG.md
