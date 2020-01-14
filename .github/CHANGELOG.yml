@@ -2,7 +2,7 @@ name: Generate CHANGELOG.md
 on:
   push:
     branches:
-      - dev#v2
+      - master
   release:
     types: [published]
     
@@ -22,14 +22,14 @@ jobs:
           gem install github_changelog_generator
       - name: Run github_changelog_generator
         run: |
-          git pull origin dev#v2
+          git pull origin master
           export CHANGELOG_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
           github_changelog_generator -u mitre -p mitre-saf
       - name: Commit and push changes to CHANGELOG.md
         uses: github-actions-x/commit@v2.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          push-branch: "dev#v2"
+          push-branch: "master"
           commit-message: "Publish changelog"
           force-add: "true"
         env:

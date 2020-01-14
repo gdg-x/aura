@@ -15,13 +15,13 @@
 </template>
 
 <script>
-import toolBlock from "@/components/home/wwdComponents/toolBlock.vue";
+//import toolBlock from "@/components/home/wwdComponents/toolBlock.vue";
 export default {
   props: {
     item: Object
   },
   components: {
-    toolBlock
+    //toolBlock
   },
   methods: {
     make_readable(str) {
