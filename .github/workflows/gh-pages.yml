@@ -26,7 +26,7 @@ jobs:
       - name: deploy
         uses: peaceiris/actions-gh-pages@v2.5.0
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN}}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./dist
         with:
