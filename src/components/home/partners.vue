@@ -79,7 +79,7 @@
                                         class="white elevation-0"
                                     >
                                     <v-card flat tile class="d-flex pa-2 ma-1 elevation-1" style="border-radius:5px;border-width: 1px; border-style: solid;">
-                                        <a href="https://gdgjalandhar.com" target="_blank">
+                                        <a href="https://gdgkolachi.com" target="_blank">
                                         <v-tooltip bottom>
                                             <template v-slot:activator="{ on }">
                                         <v-img
@@ -100,7 +100,7 @@
                                             </v-layout>
                                         </v-img>
                                         </template>
-                                        <span class="google-font">GDG Jalandhar</span>
+                                        <span class="google-font">GDG Kolachi</span>
                                         </v-tooltip>
                                         </a>
                                     </v-card>
