@@ -3,7 +3,7 @@
 
         <v-layout wrap align-start justify-start row fill-height class="mt-0 mb-0">
             <v-flex xs12 class="mb-3">
-                <p class="google-font" style="font-size:130%;">Our Web Team Members</p>
+                <p class="google-font" style="font-size:130%;">Our Web Developers</p>
                 <v-divider></v-divider>
             </v-flex>
             <v-flex xs12 md3 lg3 v-for="(item,i) in TeamDetails" :key="i">
