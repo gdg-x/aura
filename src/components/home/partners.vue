@@ -83,8 +83,8 @@
                                         <v-tooltip bottom>
                                             <template v-slot:activator="{ on }">
                                         <v-img
-                                            :src="require('@/assets/img/partners/gdgkolachi.png')"
-                                            :lazy-src="require('@/assets/img/partners/gdgkolachi.png')"
+                                            :src="require('@/assets/img/partners/gdgjalandhar.png')"
+                                            :lazy-src="require('@/assets/img/partners/gdgjalandhar.png')"
                                             aspect-ratio="3.0"
                                             class="white"
                                             v-on="on"
@@ -100,7 +100,7 @@
                                             </v-layout>
                                         </v-img>
                                         </template>
-                                        <span class="google-font">GDG Kolachi</span>
+                                        <span class="google-font">GDG Jalandhar</span>
                                         </v-tooltip>
                                         </a>
                                     </v-card>
