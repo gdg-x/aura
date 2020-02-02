@@ -1,56 +1,83 @@
 [
     {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
+        "name":"Eric Bhatti",
+        "designation":"GDG Kolachi",
+        "twitter":"https://twitter.com/bhattieric",
+        "linkedin":"https://www.linkedin.com/in/ericbhatti",
+        "github":"https://github.com/ericbhatti",
+        "profileImage":"ericBhatti.jpg",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
+        "name":"Harris Solangi",
+        "designation":"GDG Kolachi",
+        "twitter":"https://twitter.com/harrissolangi",
+        "linkedin":"https://www.linkedin.com/in/harris-solangi-a9899088/",
+        "github":"https://github.com/harrissolangi",
+        "profileImage":"harrisSolangi.jpg",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
+        "name":"Mashhood Rastgar",
+        "designation":"GDG Kolachi",
+        "twitter":"https://twitter.com/mashhoodr",
+        "linkedin":"https://twitter.com/mashhoodr",
+        "github":"https://github.com/mashhoodr",
+        "profileImage":"mashhoodRastgar.png",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Front End Developer",
+        "name":"Arbaz Pirwani",
+        "designation":"GDG Kolachi",
+        "twitter":"https://twitter.com/ArbazPirwani",
+        "linkedin":"https://www.linkedin.com/in/ArbazPirwani/",
+        "github":"https://github.com/ArbazPirwani",
+        "profileImage":"arbazPirwani.jpg",
+        "website":""
+    },
+    {
+        "name":"Abdul Sami Haroon",
+        "designation":"GDG Kolachi",
+        "twitter":"https://twitter.com/_sami_khan",
+        "linkedin":"https://www.linkedin.com/in/samihk/",
+        "github":"https://github.com/samihk",
+        "profileImage":"samiHaroon.jpg",
+        "website":""
+    },
+    {
+        "name":"Anas Tipu",
+        "designation":"GDG Kolachi",
+        "twitter":"https://twitter.com/teepusahab",
+        "linkedin":"https://www.linkedin.com/in/anastipu/",
+        "github":"https://github.com/anastipu",
+        "profileImage":"anasTipu.jpg",
+        "website":""
+    },
+    {
+        "name":"Hira Tariq",
+        "designation":"GDG Kolachi",
+        "twitter":"https://twitter.com/HiraT97",
+        "linkedin":"https://www.linkedin.com/in/hira-tariq-9a6a5b14b/",
+        "github":"",
+        "profileImage":"hiraTariq.jpg",
+        "website":""
+    },
+    {
+        "name":"Minahil Danyal",
+        "designation":"GDG Kolachi",
         "twitter":"",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
+        "linkedin":"https://www.linkedin.com/in/danyalm/",
+        "github":"https://github.com/",
+        "profileImage":"manahilDanyal.jpeg",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Front End Developer",
-        "twitter":"https://twitter.com/vrijrajsingh",
-        "linkedin":"https://www.linkedin.com/in/vrijraj",
-        "github":"https://github.com/Vrijraj",
-        "profileImage":"",
+        "name":"Muhammad Ali",
+        "designation":"GDG Kolachi",
+        "twitter":"",
+        "linkedin":"https://www.linkedin.com/in/muhammad-ali-857016172/",
+        "github":"https://github.com/MuhammadAli01",
+        "profileImage":"muhammadAli.jpg",
         "website":""
     }
 ]
