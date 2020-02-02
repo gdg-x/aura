@@ -1,21 +1,21 @@
 {
-    "FeatureEventName":"IWD'19 Jalandhar",
+    "FeatureEventName":"DevFest'19 Karachi",
     "EventImage":"IWD.jpg",
     "EventDate":{
-        "Date":"31",
-        "Month":"3",
+        "Date":"23",
+        "Month":"11",
         "Year":"2019"
     },
     "EventTime":{
         "StartTime":"09:00 AM",
-        "EndTime":"04:30 PM"
+        "EndTime":"05:30 PM"
     },
-    "EventVenue":"Apeejay Institute of Management Technical Campus, Rama Mandi, Hoshiarpur Road, Jalandhar",
-    "EventVenueMapLink":"https://goo.gl/maps/4Z8pminYsp42",
-    "EventWebsite":"https://iwd.gdgjalandhar.com/",
-    "EventDescription":"International Women's Day (IWD) is marked on March 8th every year. In different regions, the focus of celebrations ranges from general respect and appreciation for women to a celebration of women's economic, political, and social achievements.",
-    "MeetupLink":"https://www.meetup.com/GDG-Jalandhar/events/253165595/",
-    "RegistrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSciM-nL87uQd_it2ulou1mFv55aXqE9qSSnwL3No3fWhX8OzA/closedform",
-    "FBEventPageURL":"s"
+    "EventVenue":"IBA City Campus, Saddar Town, Karachi",
+    "EventVenueMapLink":"https://www.google.com/maps/place/IBA+City+Campus/@24.8670319,67.0235937,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33e6b73f959f7:0x4f97afe42ad1fcbb!8m2!3d24.867027!4d67.0257824",
+    "EventWebsite":"https://gdgkolachi.com/",
+    "EventDescription":"Google Developer Groups(GDG) DevFests are large, community-run events that offer speaker sessions across multiple product areas, workshops, networking sessions, and more. Each DevFest is tailored by the GDG as per the needs of the local community. GDG DevFest Karachi 2019 is a free event with a limited number of seats. If you get shortlisted, you will receive a confirmation message. We highly recommend all professionals/students to please talk to your employer/professor for a leave before registering for GDG DevFest, as your attendance is what lights up the conference and we don't want to miss you! We invite all developers, entrepreneurs and tech enthusiasts to join us for this one of a kind Developer Festival(DevFest), to connect, learn and share!",
+    "MeetupLink":"https://www.meetup.com/GDG-Kolachi/events/265765109/",
+    "RegistrationLink":"https://forms.gle/gwo21LfgznUPizej9",
+    "FBEventPageURL":"https://www.facebook.com/events/js-auditorium-iba-karachi-city-campus/gdg-devfest-karachi-2019/2339906106275053/"
 }
 
