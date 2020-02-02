@@ -3,8 +3,8 @@
         <v-layout wrap align-center justify-center row fill-height >
            <v-flex xs12 sm5 md3 lg3 xl3 class="text-xs-center pa-3">
                 <v-img
-                    :src="require('@/assets/img/gdg.jpg')"
-                    :lazy-src="require('@/assets/img/gdg.jpg')"
+                    :src="require('@/assets/img/gdgkolachilogo.png')"
+                    :lazy-src="require('@/assets/img/gdgkolachilogo.png')"
                     width="100%">
                     <v-layout
                         slot="placeholder"
