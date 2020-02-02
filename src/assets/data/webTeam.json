@@ -1,29 +1,29 @@
 [
     {
-        "name":"Name",
-        "designation":"Web Developer",
-        "twitter":"https://twitter.com/",
-        "linkedin":"https://www.linkedin.com/",
-        "github":"https://github.com/",
-        "profileImage":"",
+        "name":"Abdul Sami Haroon",
+        "designation":"Web Lead",
+        "twitter":"https://twitter.com/_sami_khan",
+        "linkedin":"https://www.linkedin.com/in/samihk/",
+        "github":"https://github.com/samihk",
+        "profileImage":"samiHaroon.jpg",
         "website":""
     },
     {
-        "name":"Name",
+        "name":"Nasir Hussain",
+        "designation":"Web Developer",
+        "twitter":"https://twitter.com/_dev_nasir_/",
+        "linkedin":"https://www.linkedin.com/in/nasirhm/",
+        "github":"https://github.com/nasirhm",
+        "profileImage":"nasirHussain.jpg",
+        "website":""
+    },
+    {
+        "name":"Mohammad Quanit",
         "designation":"Web Developer",
         "twitter":"",
-        "linkedin":"https://www.linkedin.com/",
-        "github":"",
-        "profileImage":"",
-        "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"Web Developer",
-        "twitter":"https://twitter.com/",
-        "linkedin":"https://www.linkedin.com/",
-        "github":"https://www.github.com/",
-        "profileImage":"",
+        "linkedin":"https://www.linkedin.com/mohammad-quanit-35b256154/",
+        "github":"https://www.github.com/Mohammad-Quanit/",
+        "profileImage":"muhammadQuanit.jpg",
         "website":""
     },
     {
@@ -34,14 +34,5 @@
         "github":"https://github.com/",
         "profileImage":"",
         "website":"https://github.com"
-    },
-    {
-        "name":"Name",
-        "designation":"Web Developer",
-        "twitter":"https://twitter.com/",
-        "linkedin":"",
-        "github":"https://github.com/",
-        "profileImage":"",
-        "website":""
     }
 ]

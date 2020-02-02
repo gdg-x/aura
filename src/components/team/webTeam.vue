@@ -69,7 +69,7 @@ export default {
     methods:{
         getImgUrl(pic) {
             if(pic.length>0){
-                return require('@/assets/img/team/'+pic)
+                return require('@/assets/img/team/web-team/'+pic)
             }else{
                 return require('@/assets/img/team/avatar.png')
             }

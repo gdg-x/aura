@@ -1,11 +1,11 @@
 [
     {
-        "name":"Name",
-        "designation":"Development",
-        "twitter":"https://twitter.com/",
-        "linkedin":"https://www.linkedin.com/",
-        "github":"https://github.com/",
-        "profileImage":"",
+        "name":"Muhammad Ahad",
+        "designation":"GDG Member",
+        "twitter":"https://twitter.com/ahad9615",
+        "linkedin":"https://www.linkedin.com/in/ahad9615/",
+        "github":"https://github.com/muhammadahad96",
+        "profileImage":"muhammadAhad.jpg",
         "website":""
     },
     {
@@ -34,14 +34,5 @@
         "github":"https://github.com/",
         "profileImage":"",
         "website":"https://github.com"
-    },
-    {
-        "name":"Name",
-        "designation":"Development",
-        "twitter":"https://twitter.com/",
-        "linkedin":"",
-        "github":"https://github.com/",
-        "profileImage":"",
-        "website":""
     }
 ]
