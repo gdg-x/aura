@@ -1,39 +1,41 @@
-{
-    "ChapterName":"GDG Kolachi",
-    "ChapterShortDescription":"Google Developers Group Kolachi is an initiative to concentrate the efforts of many developers in and around Karachi, Pakistan to learn, share and get productive using the various Google products.",
-    "ChapterLongDec":"Google Developer Group Kolachi is inspired by GTUG/GDG Family . We started our journey in Feb 2011. We try to engage student developers, fresh graduates and professionals through our hack events & meetups. The motive is to create a local ecosystem of programmers & hackers in and around kolachi. The technology awareness is main goal for first few years of the group.",
-    "ChapterMeetupLink":"https://www.meetup.com/GDG-Kolachi/",
-    "ChapterEmail":"support@gdgkolachi.com",
-    "website":"https://gdgkolachi.com",
-    "GDGProgramWebsite":"https://developers.google.com/programs/community/",
-    "ChapterHashTags":["GDGKolachi","WTMKolachi","GDG","WTM"],
-    "socialLinks":[
-        {
-            "name" : "Facebook",
-            "link" : "https://www.facebook.com/GDGKolachi/",
-            "icon" : "fab fa-facebook"
-        },
-        {
-            "name" : "Linkedin",
-            "link" : "https://www.linkedin.com/company/gdg-kolachi",
-            "icon" : "fab fa-linkedin"
-        },
-        {
-            "name" : "Twitter",
-            "link" : "https://twitter.com/GDGKolachi",
-            "icon" : "fab fa-twitter"
-        },
-        {
-            "name" : "Meetup",
-            "link" : "https://www.meetup.com/GDG-Kolachi/",
-            "icon" : "fab fa-meetup"
-        },
-        {
-            "name" : "Instagram",
-            "link" : "https://www.instagram.com/gdgkolachi/",
-            "icon" : "fab fa-instagram"
-        }
-    ],
-    "wtmWebsite":"https://www.womentechmakers.com/",
-    "aboutGDGProgram":"GDGs are local groups of developers who are specifically interested in Google products and APIs. Each local group is called a GDG chapter and can host a variety of technical activities for developers - from just a few people getting together to watch our latest videos, to large gatherings with demos and tech talks, to hackathons."
-}
+
+
+    {
+        "ChapterName":"GDG Kolachi",
+        "ChapterShortDescription":"Google Developers Group Kolachi is an initiative to concentrate the efforts of many developers in and around Karachi to learn, share and get productive using the various Google products.",
+        "ChapterLongDec":"Google Developer Group Kolachi is inspired by GTUG/GDG Family . We started our journey in 2016. We try to engage student developers, fresh graduates and professionals through our hack events & meetups. The motive is to create a local ecosystem of programmers & hackers in and around Karachi. The technology awareness is main goal for first few years of the group.",
+        "ChapterMeetupLink":"https://www.meetup.com/GDG-Kolachi/",
+        "ChapterEmail":"hello@gdgkolachi.com",
+        "website":"https://gdgkolachi.com",
+        "GDGProgramWebsite":"https://developers.google.com/programs/community/",
+        "ChapterHashTags":["GDGKolachi","WTMKarachi","GDG","WTM"],
+        "socialLinks":[
+            {
+                "name" : "Facebook",
+                "link" : "https://www.facebook.com/GDGKolachi/",
+                "icon" : "fab fa-facebook"
+            },
+            {
+                "name" : "Twitter",
+                "link" : "https://twitter.com/gdgkolachi",
+                "icon" : "fab fa-twitter"
+            },
+            {
+                "name" : "Meetup",
+                "link" : "https://www.meetup.com/GDG-Jalandhar/",
+                "icon" : "fab fa-meetup"
+            },
+            {
+                "name" : "Instagram",
+                "link" : "https://www.instagram.com/gdgkolachi/",
+                "icon" : "fab fa-instagram"
+            },
+            {
+                "name" : "Linkedin",
+                "link" : "https://www.linkedin.com/company/gdg-kolachi",
+                "icon" : "fab fa-linkedin"
+            }
+        ],
+        "wtmWebsite":"https://www.womentechmakers.com/",
+        "aboutGDGProgram":"GDGs are local groups of developers who are specifically interested in Google products and APIs. Each local group is called a GDG chapter and can host a variety of technical activities for developers - from just a few people getting together to watch our latest videos, to large gatherings with demos and tech talks, to hackathons."
+    }
