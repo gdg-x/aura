@@ -14,17 +14,17 @@
         },
         {
             "LinkName":"Become a Member",
-            "Link":"https://www.meetup.com/GDG-Kolachi/"
+            "Link":"https://docs.google.com/forms/d/e/1FAIpQLSeIvjUKTvPXbb8LSzPvsOZXf7gUbMmfcMuQV4oy00A2C8h46A/viewform"
         }
     ],
     "ChapterResourcesSession":[
         {
             "LinkName" : "Become a Sponsor",
-            "Link" : "mailto:support@gdgkolachi.com"
+            "Link" : "mailto:hello@gdgkolachi.com"
         },
         {
             "LinkName" : "Call for Speaker",
-            "Link" : "mailto:support@gdgkolachi.com"
+            "Link" : "mailto:hello@gdgkolachi.com"
         },
         {
             "LinkName" : "Media Kit",

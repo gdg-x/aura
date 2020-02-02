@@ -71,14 +71,14 @@
                             </v-list-tile-avatar>
 
                             <v-list-tile-content>
-                                <v-list-tile-title class="google-font" style="color:#424242">{{ item.name }}</v-list-tile-title>
+                                <v-list-tile-title class="google-font" style="color:#0277bd">{{ item.name }}</v-list-tile-title>
                                 <v-list-tile-sub-title class="google-font">{{ item.local_date | dateFilter}} | {{ item.local_time }}</v-list-tile-sub-title>
                             </v-list-tile-content>
 
                             <v-list-tile-action>
                                 <v-tooltip bottom>
                                     <v-btn icon ripple :href="item.link" target="_blank" slot="activator">
-                                        <v-icon color="grey darken-1">info</v-icon>
+                                        <v-icon color="grey darken-1">fab fa-meetup</v-icon>
                                     </v-btn>
                                     
                                     <span>See More about {{item.name}}</span>
