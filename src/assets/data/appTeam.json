@@ -1,11 +1,11 @@
 [
     {
-        "name":"Name",
-        "designation":"App Development",
-        "twitter":"https://twitter.com/",
-        "linkedin":"https://www.linkedin.com/",
-        "github":"https://github.com/",
-        "profileImage":"",
+        "name":"Waleed Arshad",
+        "designation":"App Developer",
+        "twitter":"https://twitter.com/wal_33d",
+        "linkedin":"https://www.linkedin.com/in/waleed-arshad-98585259",
+        "github":"https://github.com/wal33d006",
+        "profileImage":"waleedArshad.jpg",
         "website":""
     },
     {
@@ -34,14 +34,5 @@
         "github":"https://github.com/",
         "profileImage":"",
         "website":"https://github.com"
-    },
-    {
-        "name":"Name",
-        "designation":"App Development",
-        "twitter":"https://twitter.com/",
-        "linkedin":"",
-        "github":"https://github.com/",
-        "profileImage":"",
-        "website":""
     }
 ]
