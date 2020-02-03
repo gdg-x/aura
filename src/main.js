@@ -10,9 +10,16 @@ import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import './style.css'
 import './filters/truncate'
+import firebase from 'firebase'
+import { FirebaseConfig } from './config/key'
 
 Vue.use(VueAxios, axios)
 Vue.config.productionTip = false
+
+firebase.initializeApp(FirebaseConfig);
+firebase.auth().onAuthStateChanged(user => {
+  store.dispatch("fetchUser", user);
+});
 
 new Vue({
   router,
