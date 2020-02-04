@@ -9,30 +9,48 @@
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Management",
+        "name":"Sabah Karim",
+        "designation":"GDG Member",
         "twitter":"",
-        "linkedin":"https://www.linkedin.com/",
+        "linkedin":"https://www.linkedin.com/in/sabah-karim/",
+        "github":"https://github.com/SabahKarim",
+        "profileImage":"sabahKarim.jpg",
+        "website":""
+    },
+    {
+        "name":"Hiza Fatima",
+        "designation":"GDG Member",
+        "twitter":"https://twitter.com/hizaayy",
+        "linkedin":"",
         "github":"",
         "profileImage":"",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Development",
-        "twitter":"https://twitter.com/",
-        "linkedin":"https://www.linkedin.com/",
-        "github":"https://www.github.com/",
-        "profileImage":"",
+        "name":"Dennis Rufi",
+        "designation":"GDG Member",
+        "twitter":"https://twitter.com/DennisRufiGill",
+        "linkedin":"https://www.linkedin.com/in/dennisrufigill/",
+        "github":"https://github.com/dennisrufigill",
+        "profileImage":"dennisRufi.jpg",
         "website":""
     },
     {
-        "name":"Name",
-        "designation":"Development",
-        "twitter":"https://twitter.com/",
-        "linkedin":"https://linkedin.com/",
-        "github":"https://github.com/",
+        "name":"Muhammad Ibrahim",
+        "designation":"GDG Member",
+        "twitter":"",
+        "linkedin":"https://www.linkedin.com/in/ibrahim-khalil-60874617a/",
+        "github":"",
+        "profileImage":"ibrahimKhalil.jpg",
+        "website":""  
+    },
+    {
+        "name":"Samiah Bilal",
+        "designation":"GDG Member",
+        "twitter":"",
+        "linkedin":"https://www.linkedin.com/in/samiah-bilal-483619171/",
+        "github":"",
         "profileImage":"",
-        "website":"https://github.com"
+        "website":""  
     }
 ]
