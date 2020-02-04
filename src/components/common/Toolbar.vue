@@ -63,9 +63,8 @@ export default {
         .signInWithPopup(provider)
         .then(result => {
           // token needs to be set in localStorage
-          var token = result.credential.accessToken;
-
-          var user = result.user;
+          // var token = result.credential.accessToken;
+          let user = result.user;
 
           //will see if we need to manually set state. Otherwise main.js file will set it
           // this.setLoggedIn(true);
@@ -73,12 +72,12 @@ export default {
         })
         .catch(error => {
           // Handle Errors here.
-          var errorCode = error.code;
-          var errorMessage = error.message;
+          // var errorCode = error.code;
+          // var errorMessage = error.message;
           // The email of the user's account used.
-          var email = error.email;
+          // var email = error.email;
           // The firebase.auth.AuthCredential type that was used.
-          var credential = error.credential;
+          // var credential = error.credential;
 
           alert(error);
         });
