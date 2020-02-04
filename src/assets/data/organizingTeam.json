@@ -52,5 +52,14 @@
         "github":"",
         "profileImage":"",
         "website":""  
+    },
+    {
+        "name":"Zain Ahmed",
+        "designation":"GDG Member",
+        "twitter":"https://twitter.com/ZainAhmed05",
+        "linkedin":"https://www.linkedin.com/in/zainahmed97/",
+        "github":"https://github.com/zainahmed0597",
+        "profileImage":"zainAhmed.jpg",
+        "website":""  
     }
 ]
