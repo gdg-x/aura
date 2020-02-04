@@ -192,6 +192,8 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Aalborg | [View Now](https://gdgaalborg.dk/) |
 | GDG Reading | [View Now](https://www.gdgreading.dev/) |
 | GDG Kolachi | [View Now](https://www.gdgkolachi.com/) |
+| GDG Reading | [View Now](https://gdgdenizli.com/) |
+
 
 
 Project is published under the [MIT license](/LICENSE.md).  
