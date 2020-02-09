@@ -22,7 +22,7 @@
       </v-flex>
     </v-layout>
 
-    <v-layout wrap align-start justify-center row fill-height class="hidden-sm-and-down mb-4">
+    <v-layout wrap align-stretch justify-center row fill-height class="hidden-sm-and-down mb-4">
       <v-flex xs12 v-if="showLoader">
         <v-layout row wrap>
           <v-flex xs12 sm6 md3 lg3 v-for="n in 4" :key="`4${n}`">
@@ -64,37 +64,47 @@
         <v-card
           flat
           class="ma-1 pa-1 my-0"
-          style="border: 1px solid #e0e0e0;min-height:160px;border-radius:7px;"
+          style="border: 1px solid #e0e0e0;height: 100%;border-radius:7px;"
         >
-          <v-card-title class="mb-0">
-            <div>
-              <p class="google-font mb-0" style="font-size:130%">{{ item.name | summery(25) }}</p>
-              <p class="google-font mt-1 mb-0" style="font-size:110%">
-                <v-icon small>insert_invitation</v-icon>
-                {{item.local_date | dateFilter}}
-              </p>
-              <p class="google-font mt-0 mb-0" style="font-size:110%">
-                <v-icon small>watch_later</v-icon>
-                {{item.local_time}}
-              </p>
-              <p class="google-font mt-0 mb-0" style="font-size:110%">
-                <v-icon small>map</v-icon>
-                {{item.venue.name | summery(30)}}
-              </p>
-            </div>
-          </v-card-title>
-
-          <v-card-actions class="mt-0">
-            <v-spacer></v-spacer>
-            <v-btn
-              flat
-              color="#4C4A78"
-              :href="item.link"
-              target="_blank"
-              class="mb-0 ml-0 mt-0 google-font"
-              style="border-radius:7px;text-transform: capitalize;"
-            >See More</v-btn>
-          </v-card-actions>
+          <v-layout wrap align-stretch justify-space-between row fill-height>
+            <v-flex xs12>
+              <v-card-title class="mb-0">
+                <p class="google-font mb-0" style="font-size:130%">{{ item.name | summery(25) }}</p>
+                <p class="google-font mt-1 mb-0" style="font-size:110%; width: 100%;">
+                  <v-icon small>insert_invitation</v-icon>
+                  {{item.local_date | dateFilter}}
+                </p>
+                <p class="google-font mt-0 mb-0" style="font-size:110%; width: 100%;">
+                  <v-icon small>watch_later</v-icon>
+                  {{item.local_time}}
+                </p>
+                <p class="google-font mt-0 mb-0" style="font-size:110%; width: 100%;">
+                  <v-icon small>map</v-icon>
+                  {{item.venue.name | summery(30)}}
+                </p>
+              </v-card-title>
+            </v-flex>
+            <v-flex
+              xs12
+              style="display: flex;
+                  -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                  justify-content: flex-end;
+                  align-items: flex-end;"
+            >
+              <v-card-actions class="mt-0">
+                <v-spacer></v-spacer>
+                <v-btn
+                  flat
+                  color="#4C4A78"
+                  :href="item.link"
+                  target="_blank"
+                  class="mb-0 ml-0 mt-0 google-font"
+                  style="border-radius:7px;text-transform: capitalize;"
+                >See More</v-btn>
+              </v-card-actions>
+            </v-flex>
+          </v-layout>
         </v-card>
       </v-flex>
 
@@ -237,10 +247,10 @@ export default {
   },
   filters: {
     summery: (val, num) => {
-      if(val.length > num){
-        return val.substring(0,num)+".."
-      }else{
-        return val
+      if (val.length > num) {
+        return val.substring(0, num) + "..";
+      } else {
+        return val;
       }
     },
     dateFilter: value => {
