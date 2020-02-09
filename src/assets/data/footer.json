@@ -1,7 +1,7 @@
 {
     "AboutSession":[
         {
-            "LinkName":"GDG Jalandhar",
+            "LinkName":"GDG Kolachi",
             "Link":"/"
         },
         {
@@ -14,17 +14,17 @@
         },
         {
             "LinkName":"Become a Member",
-            "Link":"https://www.meetup.com/GDG-Jalandhar/"
+            "Link":"https://docs.google.com/forms/d/e/1FAIpQLSeIvjUKTvPXbb8LSzPvsOZXf7gUbMmfcMuQV4oy00A2C8h46A/viewform"
         }
     ],
     "ChapterResourcesSession":[
         {
             "LinkName" : "Become a Sponsor",
-            "Link" : "mailto:gdgjalandhar@gmail.com"
+            "Link" : "mailto:hello@gdgkolachi.com"
         },
         {
             "LinkName" : "Call for Speaker",
-            "Link" : "mailto:gdgjalandhar@gmail.com"
+            "Link" : "mailto:hello@gdgkolachi.com"
         },
         {
             "LinkName" : "Media Kit",
