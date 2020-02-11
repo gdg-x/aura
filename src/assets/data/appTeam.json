@@ -1,5 +1,14 @@
 [
     {
+        "name":"Asadullah Khan",
+        "designation":"App Lead",
+        "twitter":"",
+        "linkedin":"",
+        "github":"https://github.com/aubykhan",
+        "profileImage":"asadullahKhan.jpg",
+        "website":""
+    },
+    {
         "name":"Waleed Arshad",
         "designation":"App Developer",
         "twitter":"https://twitter.com/wal_33d",
@@ -14,7 +23,7 @@
         "twitter":"https://twitter.com/hunainhumail",
         "linkedin":"https://www.linkedin.com/in/hunain-humail/",
         "github":"https://github.com/HunainHumail",
-        "profileImage":"",
+        "profileImage":"hunainHumail.jpg",
         "website":""
     },
     {
@@ -25,14 +34,5 @@
         "github":"https://www.github.com/sanasz91mdev",
         "profileImage":"sanaZehra.jpg",
         "website":""
-    },
-    {
-        "name":"Name",
-        "designation":"App Development",
-        "twitter":"https://twitter.com/",
-        "linkedin":"https://linkedin.com/",
-        "github":"https://github.com/",
-        "profileImage":"",
-        "website":"https://github.com"
     }
 ]
