@@ -18,21 +18,30 @@
         "website":""
     },
     {
-        "name":"Mohammad Quanit",
-        "designation":"Web Developer",
-        "twitter":"",
-        "linkedin":"https://www.linkedin.com/mohammad-quanit-35b256154/",
-        "github":"https://www.github.com/Mohammad-Quanit/",
-        "profileImage":"muhammadQuanit.jpg",
-        "website":""
-    },
-    {
         "name":"Asad ullah Khalid",
         "designation":"Web Developer",
         "twitter":"",
         "linkedin":"https://www.linkedin.com/in/asadkhalid305/",
         "github":"https://github.com/asadkhalid305",
         "profileImage":"asadullahKhalid.jpg",
+        "website":""
+    },
+    {
+        "name":"Name",
+        "designation":"Web Developer",
+        "twitter":"https://twitter.com/",
+        "linkedin":"",
+        "github":"",
+        "profileImage":"",
+        "website":""
+    },
+    {
+        "name":"Mohammad Quanit",
+        "designation":"Web Developer",
+        "twitter":"",
+        "linkedin":"https://www.linkedin.com/mohammad-quanit-35b256154/",
+        "github":"https://www.github.com/Mohammad-Quanit/",
+        "profileImage":"muhammadQuanit.jpg",
         "website":""
     }
 ]
