@@ -191,6 +191,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Pune | [View Now](https://gdgpune.org/) |
 | GDG Aalborg | [View Now](https://gdgaalborg.dk/) |
 | GDG Reading | [View Now](https://www.gdgreading.dev/) |
+| GDG Kolachi | [View Now](https://www.gdgkolachi.com/) |
 | GDG Denizli | [View Now](https://gdgdenizli.com/) |
 | GDG Little Rock | [View Now](https://gdglittlerock.web.app/) |
 
