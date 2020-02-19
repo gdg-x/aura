@@ -192,6 +192,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Aalborg | [View Now](https://gdgaalborg.dk/) |
 | GDG Reading | [View Now](https://www.gdgreading.dev/) |
 | GDG Denizli | [View Now](https://gdgdenizli.com/) |
+| GDG Little Rock | [View Now](https://gdglittlerock.web.app/) |
 
 
 
