@@ -195,7 +195,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Denizli | [View Now](https://gdgdenizli.com/) |
 | GDG Little Rock | [View Now](https://gdglittlerock.web.app/) |
 | GDG Vilnius | [View Now](https://gdg-vilnius-aura.firebaseapp.com/) |
-
+| GDG Osijek | [View Now](https://www.gdg-osijek.com/) |
 
 
 Project is published under the [MIT license](/LICENSE.md).  
