@@ -194,6 +194,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Kolachi | [View Now](https://www.gdgkolachi.com/) |
 | GDG Denizli | [View Now](https://gdgdenizli.com/) |
 | GDG Little Rock | [View Now](https://gdglittlerock.web.app/) |
+| GDG Vilnius | [View Now](https://gdg-vilnius-aura.firebaseapp.com/) |
 
 
 
