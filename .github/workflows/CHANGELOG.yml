@@ -2,35 +2,35 @@
 # on:
 #   push:
 #     branches:
-#       - master
-#   release:
-#     types: [published]
+      - master
+  release:
+    types: [published]
     
-# jobs:
-#   test:
-#     name: Generate CHANGELOG.md
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Setup ruby
-#         uses: actions/setup-ruby@v1
-#       - name: Checkout mitre-saf
-#         uses: actions/checkout@v1
-#         with:
-#           token: ${{ secrets.GITHUB_TOKEN }}
-#       - name: Install github_changelog_generator
-#         run: |
-#           gem install github_changelog_generator
-#       - name: Run github_changelog_generator
-#         run: |
-#           git pull origin master
-#           export CHANGELOG_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
-#           github_changelog_generator -u mitre -p mitre-saf --release-branch master
-#       - name: Commit and push changes to CHANGELOG.md
-#         uses: github-actions-x/commit@v2.1
-#         with:
-#           github-token: ${{ secrets.GITHUB_TOKEN }}
-#           push-branch: "master"
-#           commit-message: "Publish changelog"
-#           force-add: "true"
-#         env:
-#           CI: true
+jobs:
+  test:
+    name: Generate CHANGELOG.md
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup ruby
+        uses: actions/setup-ruby@v1
+      - name: Checkout mitre-saf
+        uses: actions/checkout@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install github_changelog_generator
+        run: |
+          gem install github_changelog_generator
+      - name: Run github_changelog_generator
+        run: |
+          git pull origin master
+          export CHANGELOG_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          github_changelog_generator -u mitre -p mitre-saf --release-branch master
+      - name: Commit and push changes to CHANGELOG.md
+        uses: github-actions-x/commit@v2.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          push-branch: "master"
+          commit-message: "Publish changelog"
+          force-add: "true"
+        env:
+          CI: true

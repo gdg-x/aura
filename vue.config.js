@@ -8,5 +8,7 @@ module.exports = {
       swDest: "service-worker.js"
     }
   },
-  productionSourceMap: false
+  productionSourceMap: false,
+  publicPath: '',
+  baseURL: ''
 };
