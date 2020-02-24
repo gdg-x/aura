@@ -9,6 +9,5 @@ module.exports = {
     }
   },
   productionSourceMap: false,
-  publicPath: '',
-  baseURL: ''
+  publicPath: ''
 };
