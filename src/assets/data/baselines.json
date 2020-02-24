@@ -29,6 +29,13 @@
       "category": ["Operating Systems"]
     },
     {
+      "shortName": "Windows 2016 STIG",
+      "longName": "Microsoft Windows Server 2016 STIG",
+      "link": "https://github.com/mitre/microsoft-windows-server-2016-stig-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": ["Operating Systems"]
+    },
+    {
       "shortName": "Docker CE CIS",
       "longName": "Docker CE CIS",
       "link": "https://github.com/mitre/docker-ce-cis-baseline",
