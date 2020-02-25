@@ -1,7 +1,7 @@
-# name: Generate CHANGELOG.md
-# on:
-#   push:
-#     branches:
+ name: Generate CHANGELOG.md
+ on:
+   push:
+     branches:
       - master
   release:
     types: [published]
@@ -24,7 +24,7 @@ jobs:
         run: |
           git pull origin master
           export CHANGELOG_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
-          github_changelog_generator -u mitre -p mitre-saf --release-branch master
+          github_changelog_generator -u mitre -p mitre-saf --release-branch master --since-tag v1.0.17
       - name: Commit and push changes to CHANGELOG.md
         uses: github-actions-x/commit@v2.1
         with:
