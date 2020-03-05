@@ -29,17 +29,7 @@ const router = new Router({
         requiresAuth: false
       }
     },
-    {
-      path: "*",
-      name: "home-wc",
-      component: Home,
-      meta: {
-        title: "Home | " + communityData.communityName,
-        color: "#0277bd",
-        requiresAuth: false
-      }
-    },
-    {
+        {
       path: "/about",
       name: "about",
       component: () => import("./views/About.vue"),
