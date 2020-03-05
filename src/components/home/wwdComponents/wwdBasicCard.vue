@@ -1,5 +1,5 @@
 <template>
-  <v-card outlined :href="item.link" class="pa-2 ma-2" target="_blank" flat>
+  <v-card outlined :href="item.link" :target='item.link[0] == "/" ? "" : "_blank"'  class="pa-2 ma-2" flat>
     <!--<toolBlock v-if="item.tools" :tools="item.tools" />-->
     <v-icon v-if="item.icon" large style="font-size:300%">{{ item.icon }}</v-icon>
     <img
