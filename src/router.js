@@ -7,8 +7,8 @@ import goTo from 'vuetify/es5/services/goto';
 Vue.use(Router);
 
 const router = new Router({
-  mode: "history",
-  base: process.env.BASE_URL,
+//  mode: "history",
+//  base: process.env.BASE_URL,
   scrollBehavior(to) {
     let scrollTo = 0
     if (to.hash) {
