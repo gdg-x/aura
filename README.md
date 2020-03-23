@@ -197,6 +197,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | GDG Vilnius | [View Now](https://gdg-vilnius-aura.firebaseapp.com/) |
 | GDG Osijek | [View Now](https://www.gdg-osijek.com/) |
 | GDG Vienna | [View Now](https://gdgvienna-c9011.web.app/) |
+| GDG Konya | [View Now](https://gdgkonya.com) |
 
 
 
