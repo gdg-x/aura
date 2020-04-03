@@ -1,0 +1,18 @@
+  
+@font-face {
+    font-family: google-sans;
+    src: url(assets/fonts/google-font.woff2);
+}
+.google-font{
+    font-family: google-sans
+};
+
+body{
+    font-family: google-sans
+}
+
+/* .lightModeCard{
+    background-color:#ffff;
+    border:1px solid #e0e0e0;
+    border-radius:5px
+} */
