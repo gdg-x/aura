@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site":"myaurapp",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
