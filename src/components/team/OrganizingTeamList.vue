@@ -2,6 +2,7 @@
     <v-list three-line subheader class="py-0" :class="$vuetify.theme.dark == true?'black':'white'">
         <v-list-item
         class=""
+        @click="goToTeam(data.id)"
         >
             <v-list-item-avatar>
                 <img :src="data.image">
@@ -31,6 +32,9 @@
       }
     },
     methods:{
+      goToTeam(id){
+        this.$router.push("/team/" + id);
+      },
       getCharString(data) {
       var splitArr = data.split(" ");
         if (splitArr.length > 1) {

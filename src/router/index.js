@@ -33,6 +33,15 @@ const routes = [
     }
   },
   {
+    path: '/team/:id',
+    name: 'Team Details',
+    component: () => import(/* webpackChunkName: "team-details" */ '../views/Team/TeamDetails.vue'),
+    meta:{
+      title:'Team Details',
+      color:'#0277bd',
+    }
+  },
+  {
     path: '/events',
     name: 'Events',
     component: () => import(/* webpackChunkName: "events" */ '../views/Events.vue'),
