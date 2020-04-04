@@ -1,23 +1,23 @@
 <template>
   <v-app>
-   
     <Toolbar/>
-    <v-content>
-      <HelloWorld/>
-    </v-content>
+    <Drawer/>
+    <Views/>  
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
 import Toolbar from '@/components/core/Toolbar'
+import Drawer from '@/components/core/Drawer'
+import Views from '@/components/core/Views'
+
 
 export default {
   name: 'App',
-
   components: {
     Toolbar,
-    HelloWorld,
+    Drawer,
+    Views
   },
 
   data: () => ({
