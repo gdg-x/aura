@@ -17,6 +17,19 @@ export default {
   name: 'Home',
   components: {
     HomeStartScreen
+  },
+  mounted(){
+    this.getMetaData()
+  },
+  methods:{
+    getMetaData(){
+      this.$store.dispatch('GetMetaData').then(res=>{
+        console.log(res)
+      }).catch(e=>{
+        console.log(e)
+      })
+    }
+     
   }
 }
 </script>

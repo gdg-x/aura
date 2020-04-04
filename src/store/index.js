@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import firebase from '@/config/firebase'
 
 Vue.use(Vuex)
 
@@ -80,9 +81,31 @@ export default new Vuex.Store({
     setDrawer: (state, payload) => (state.drawer = payload),
     toggleDrawer: state => (state.drawer = !state.drawer),
   },
-  actions: {
-  },
   modules: {
+  },
+  actions:{
+    GetMetaData(){
+      return new Promise((resolve,reject)=>{
+        firebase.firestore.collection("config")
+        .get()
+        .then(doc => {
+          console.log(doc)
+          if (!doc.exists) {
+            console.log('Not Exist')
+          }
+          // doc = doc.data();
+          if (Object.keys(doc).length > 0) {
+            resolve(doc)
+          }
+        })
+        .catch(e => {
+          reject(e)
+        });
+      })
+    },
+
+  
   }
+  
 })
 
