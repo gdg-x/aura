@@ -10,7 +10,7 @@
 import Toolbar from '@/components/core/Toolbar'
 import Drawer from '@/components/core/Drawer'
 import Views from '@/components/core/Views'
-
+// import service from '@/services/appservices'
 
 export default {
   name: 'App',
@@ -19,9 +19,17 @@ export default {
     Drawer,
     Views
   },
-
+  mounted(){
+    // service.testfun(23)
+    // service.getFeaturesEvents().then(res=>{
+    //   console.log(res)
+    // }).catch(e=>{
+    //   console.log(e)
+    // })
+  },
   data: () => ({
     //
   }),
+  
 };
 </script>

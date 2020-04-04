@@ -19,16 +19,16 @@ export default {
     HomeStartScreen
   },
   mounted(){
-    this.getMetaData()
+    // this.getMetaData()
   },
   methods:{
-    getMetaData(){
-      this.$store.dispatch('GetMetaData').then(res=>{
-        console.log(res)
-      }).catch(e=>{
-        console.log(e)
-      })
-    }
+    // getMetaData(){
+    //   this.$store.dispatch('GetMetaData').then(res=>{
+    //     console.log(res)
+    //   }).catch(e=>{
+    //     console.log(e)
+    //   })
+    // }
      
   }
 }
