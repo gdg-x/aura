@@ -69,7 +69,6 @@ let appservice = {
             firebase.firestore.collection("events")
             .get()
             .then(doc => {
-              console.log(doc)
               if (doc.empty) {
                 resolve({
                     success:false,
