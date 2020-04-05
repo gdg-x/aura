@@ -35,6 +35,15 @@ export default new Vuex.Store({
         }, 
       },
       { 
+        text: 'Speakers', 
+        to: '/speakers', 
+        icon: 'mdi-assistant', 
+        meta:{
+          showToolbar: true,
+          showBottomNav: true
+        }, 
+      },
+      { 
         text: 'About', 
         to: '/about', 
         icon: 'mdi-comment-alert-outline',

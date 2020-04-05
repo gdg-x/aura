@@ -60,6 +60,15 @@ const routes = [
     }
   },
   {
+    path: '/speakers/:id',
+    name: 'Speakers-Details',
+    component: () => import(/* webpackChunkName: "speakers-details" */ '../views/Speakers/SpeakerDetails.vue'),
+    meta:{
+      title:'Speakers ',
+      color:'#0277bd',
+    }
+  },
+  {
     path: '/contact',
     name: 'Contact',
     component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
