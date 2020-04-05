@@ -63,38 +63,26 @@
             </v-col>
           </v-row>
         </v-col>
-        <!-- <v-col cols="12" sm="8" md="9">
+        <v-col cols="12" sm="8" md="9">
           <v-row align="center">
             <v-col cols="12">
               <v-card outlined>
                 <v-card-title class="google-font">Sessions:</v-card-title>
                 <v-card-text>
                   <v-row align="center">
-                    <v-col cols="12" md="6" xl="4" v-for="(sess,i) in sessionData" :key="i">
-                      <v-list two-line subheader class="pa-0 ma-0">
+                    <v-col cols="12" md="6" xl="4" v-for="sess in events" :key="sess.id">
+                      <v-list class="pa-0 ma-0">
                         <v-list-item>
                           <v-list-item-avatar>
                             <v-avatar color="grey lighten-2">
                               <span
                                 class="google-font black--text"
                                 style="width:100vh"
-                              >{{getCharString(sess.sessions.title)}}</span>
+                              >{{getCharString(sess.name)}}</span>
                             </v-avatar>
                           </v-list-item-avatar>
-
                           <v-list-item-content>
-                            <v-list-item-title class="google-font">{{ sess.sessions.title }}</v-list-item-title>
-                            <v-list-item-subtitle class="google-font">
-                              {{ sess.eventName}}
-                              <br />
-                              <v-chip
-                                label
-                                color="green"
-                                outlined
-                                class="mt-1 mb-0 google-font"
-                                x-small
-                              >{{sess.sessions.technology}}</v-chip>
-                            </v-list-item-subtitle>
+                            <v-list-item-title class="google-font">{{ sess.name }}</v-list-item-title>
                           </v-list-item-content>
                         </v-list-item>
                       </v-list>
@@ -104,36 +92,46 @@
               </v-card>
             </v-col>
           </v-row>
-        </v-col>-->
+        </v-col>
       </v-row>
-      <v-row justify="center" align="center" class="py-3 px-4" v-if="notFound == true && loader == false">
-                <v-col md="12" lg="10" sm="11" xs="12" class="pt-3" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
-                   <v-container fluid>
-                       <v-row>
-                            <v-col md="12" lg="12" sm="12" cols="12" class="text-center">
-                               <v-img
-                                    :src="require('@/assets/img/svg/DataNotFound.svg')"
-                                    :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
-                                    width="20%"
-                                    style="border-radius:8px;margin-left:auto;margin-right:auto"
-                                >
-                                    <template v-slot:placeholder>
-                                        <v-row
-                                        class="fill-height ma-0"
-                                        align="center"
-                                        justify="center"
-                                        >
-                                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                                        </v-row>
-                                    </template>
-                                </v-img>
-                                <h2 class="google-font">Speaker Not Found</h2>
-                                <p class="google-font">The requested URL /{{this.$route.params.id}} was not found on this server. That’s all we know.</p>
-                            </v-col>
-                        </v-row>
-                   </v-container>
-                </v-col>
-             </v-row>
+      <v-row
+        justify="center"
+        align="center"
+        class="py-3 px-4"
+        v-if="notFound == true && loader == false"
+      >
+        <v-col
+          md="12"
+          lg="10"
+          sm="11"
+          xs="12"
+          class="pt-3"
+          :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'"
+        >
+          <v-container fluid>
+            <v-row>
+              <v-col md="12" lg="12" sm="12" cols="12" class="text-center">
+                <v-img
+                  :src="require('@/assets/img/svg/DataNotFound.svg')"
+                  :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
+                  width="20%"
+                  style="border-radius:8px;margin-left:auto;margin-right:auto"
+                >
+                  <template v-slot:placeholder>
+                    <v-row class="fill-height ma-0" align="center" justify="center">
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-row>
+                  </template>
+                </v-img>
+                <h2 class="google-font">Speaker Not Found</h2>
+                <p
+                  class="google-font"
+                >The requested URL /{{this.$route.params.id}} was not found on this server. That’s all we know.</p>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -145,10 +143,10 @@ export default {
   name: "SpeakerDesktop",
   data: () => ({
     speaker: {},
-    events:[],
+    events: [],
     loader: true,
     notFound: false,
-    eventLoader:false,
+    eventLoader: false
   }),
   mounted() {
     this.details(this.$route.params.id);
@@ -156,7 +154,7 @@ export default {
   },
   methods: {
     details(id) {
-        this.loader = true;
+      this.loader = true;
       service
         .getSpeaker(id)
         .then(res => {
@@ -174,18 +172,24 @@ export default {
           console.log(e);
         });
     },
-    getevents(id){
-        console.log(id);
-        this.eventLoader = true;
-        service
+    getevents(id) {
+      this.eventLoader = true;
+      service
         .getAllEvents()
         .then(res => {
-          console.log(res);
+        //   console.log(res);
           if (res.success == true) {
             this.eventLoader = false;
-            // res.map(aa=>{
-
-            // })
+            res.data.map(event => {
+              if (event.active && event.visible) {
+                event.speakers.map(speak => {
+                  if (speak === id) {
+                    this.events.push({name:event.name, id:event.id});
+                  }
+                });
+              }
+            });
+            console.log(this.events);
           } else {
             this.eventLoader = false;
             this.notFound = true;
