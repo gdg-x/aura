@@ -17,12 +17,6 @@ let appservice = {
                   data:{}
                 })
               }
-              if(doc.exists){
-                resolve({
-                  success:false,
-                  data:{}
-                })
-              }
               if (Object.keys(doc).length > 0) {
                 doc.forEach(res=>{
                     team.push(res.data())
@@ -75,13 +69,8 @@ let appservice = {
             firebase.firestore.collection("events")
             .get()
             .then(doc => {
+              console.log(doc)
               if (doc.empty) {
-                resolve({
-                    success:false,
-                    data:{}
-                })
-              }
-              if(!doc.exists){
                 resolve({
                     success:false,
                     data:{}
@@ -175,12 +164,6 @@ let appservice = {
                     data:{}
                 })
               }
-              // if(!doc.exists){
-              //   resolve({
-              //       success:false,
-              //       data:{}
-              //   })
-              // }
               if (Object.keys(doc).length > 0) {
                 doc.forEach(res=>{
                     speakers.push(res.data())
@@ -235,12 +218,6 @@ let appservice = {
             .get()
             .then(doc => {
               if (doc.empty) {
-                resolve({
-                    success:false,
-                    data:{}
-                })
-              }
-              if(!doc.exists){
                 resolve({
                     success:false,
                     data:{}
