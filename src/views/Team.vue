@@ -63,7 +63,8 @@ export default {
       loader:true,
       OrganizingTeam:[],
       CoreTeam:[],
-      Volunteers:[]
+      Volunteers:[],
+      ErrorMsg:''
     }),
     mounted(){
         this.getAllTeamMembers()
@@ -80,7 +81,8 @@ export default {
             }
           }).catch(e=>{
             this.loader = false
-            console.log(e)
+            this.ErrorMsg = e
+            // console.log(e)
           })
         }
     }

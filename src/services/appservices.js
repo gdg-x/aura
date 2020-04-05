@@ -175,12 +175,12 @@ let appservice = {
                     data:{}
                 })
               }
-              if(!doc.exists){
-                resolve({
-                    success:false,
-                    data:{}
-                })
-              }
+              // if(!doc.exists){
+              //   resolve({
+              //       success:false,
+              //       data:{}
+              //   })
+              // }
               if (Object.keys(doc).length > 0) {
                 doc.forEach(res=>{
                     speakers.push(res.data())
