@@ -29,7 +29,10 @@
         <v-card-text class="pa-5">
             <p class="google-font">{{data.designation}}</p>
             <p class="google-font">{{data.bio}}</p>
+            
             <socialMediaDetails  class="pl-0 ml-0" :data="data.socialLinks"/>
+
+            <v-btn class="primary mt-3" small depressed @click="goToTeam(data.id)">See More Info</v-btn>
         </v-card-text>
 
         <v-divider></v-divider>
@@ -65,6 +68,9 @@ import socialMediaDetails from '@/components/common/SocialInfo'
      
     },
     methods:{
+      goToTeam(id){
+        this.$router.push("/team/" + id);
+      },
       getCharString(data){
           var splitArr = data.split(" ")
           if(splitArr.length>1){

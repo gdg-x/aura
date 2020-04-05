@@ -1,9 +1,9 @@
 <template>
-    <v-content class="px-0 mx-3">
-        <v-container fluid class="pa-0" :class="this.$vuetify.theme.dark == true?'black':'white'">
+    <v-content class="px-3 mx-0 pb-5" :class="$vuetify.theme.dark == true?'black':'grey lighten-5'">
+        <v-container fluid class="pa-0" >
              <v-row justify="center" align="center" class="py-3"  >
                 <v-col md="12" lg="10" sm="11" xs="12" class="pt-3"  >
-                    <v-toolbar class="elevation-1" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
+                    <v-toolbar :class="$vuetify.theme.dark?'card-dark':'card-light'" class="elevation-0"  >
                         <v-btn
                             text
                             @click="goToTeam"
@@ -13,12 +13,30 @@
                             <v-icon left style="font-size:150%">mdi-arrow-left-thick</v-icon>
                             <span style="font-size:120%">Team</span>
                         </v-btn>
+                        <!-- <v-progress-linear
+                            active
+                            indeterminate
+                            absolute
+                            bottom
+                            color="deep-purple accent-4"
+                        ></v-progress-linear> -->
+                        
                         <v-spacer></v-spacer>            
                     </v-toolbar>
                 </v-col>
              </v-row>
 
-             <v-row justify="center" align="center" class="py-3 px-4" v-if="loader==false && notFound == false">
+             <v-row v-if="loader && notFound == false" justify="center" align="center">
+                <v-col md="12" lg="10" sm="11" xs="12" class="text-center">
+                    <v-progress-circular
+                        :size="50"
+                        color="primary"
+                        indeterminate
+                    ></v-progress-circular>
+                </v-col>
+             </v-row>
+
+             <v-row v-if="Object.keys(MemberDetails).length>0" justify="center" align="center" class="py-3 px-4">
                 <v-col md="12" lg="10" sm="11" xs="12" class="pt-3" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
                    <v-container fluid>
                        <v-row>
@@ -55,12 +73,29 @@
                 </v-col>
              </v-row>
 
-             <v-row justify="center" align="center" class="py-3 px-4" v-id="notFound==true">
+             <v-row justify="center" align="center" class="py-3 px-4" v-if="notFound == true && loader == false">
                 <v-col md="12" lg="10" sm="11" xs="12" class="pt-3" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
                    <v-container fluid>
                        <v-row>
                             <v-col md="12" lg="12" sm="12" cols="12" class="text-center">
-                               <h1>Not Found</h1>
+                               <v-img
+                                    :src="require('@/assets/img/svg/DataNotFound.svg')"
+                                    :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
+                                    width="20%"
+                                    style="border-radius:8px;margin-left:auto;margin-right:auto"
+                                >
+                                    <template v-slot:placeholder>
+                                        <v-row
+                                        class="fill-height ma-0"
+                                        align="center"
+                                        justify="center"
+                                        >
+                                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                                        </v-row>
+                                    </template>
+                                </v-img>
+                                <h2 class="google-font">Team Member Not Found</h2>
+                                <p class="google-font">The requested URL /{{this.$route.params.id}} was not found on this server. That’s all we know.</p>
                             </v-col>
                         </v-row>
                    </v-container>

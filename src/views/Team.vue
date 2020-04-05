@@ -13,7 +13,7 @@
                 <v-col md="12" lg="10" sm="11" xs="12" class="pt-3 card-top-margin" v-if="CoreTeam.length>0"  >
                   <CoreTeam :data="CoreTeam"/>
                 </v-col>
-                <v-col v-else md="12" lg="10" xs="12" class="pt-3 card-top-margin"  >
+                <v-col v-if="loader" md="12" lg="10" xs="12" class="pt-3 card-top-margin"  >
                   <v-container fluid class="">
                       <v-row >
                           <v-col md="2" lg="2" sm="3" cols="6" v-for="i in 6" :key="i">
@@ -60,24 +60,28 @@ export default {
         OrgainizingTeam
     },
     data:() =>({
-        OrganizingTeam:[],
-        CoreTeam:[],
-        Volunteers:[]
+      loader:true,
+      OrganizingTeam:[],
+      CoreTeam:[],
+      Volunteers:[]
     }),
     mounted(){
         this.getAllTeamMembers()
     },
     methods:{
         getAllTeamMembers(){
-            service.getTeam().then(res=>{
-                if(res.success==true){
-                    this.OrganizingTeam = res.data.filter(res=>res.role=='Organizing Team')
-                    this.CoreTeam = res.data.filter(res=>res.role=='Core Team')
-                    this.Volunteers = res.data.filter(res=>res.role=='Volunteer')
-                }
-            }).catch(e=>{
-                console.log(e)
-            })
+          this.loader = true
+          service.getTeam().then(res=>{
+            if(res.success==true){
+              this.OrganizingTeam = res.data.filter(res=>res.role=='Organizing Team' && res.visible )
+              this.CoreTeam = res.data.filter(res=>res.role=='Core Team' && res.visible )
+              this.Volunteers = res.data.filter(res=>res.role=='Volunteer' && res.visible )
+              this.loader = false
+            }
+          }).catch(e=>{
+            this.loader = false
+            console.log(e)
+          })
         }
     }
 

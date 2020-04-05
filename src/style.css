@@ -11,6 +11,17 @@ body{
     font-family: google-sans
 }
 
+.card-light{
+    background: white;
+    border:1px solid #e0e0e0 !important; 
+    border-radius:5px
+}
+
+.card-dark{
+    background-color:#292929;
+    border:1px solid #212121;
+    border-radius:5px
+}
 .darkModeCard{
     background-color:#292929;
     border:1px solid #212121;
