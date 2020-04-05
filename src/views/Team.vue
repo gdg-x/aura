@@ -1,7 +1,7 @@
 <template>
     <v-content class="px-0 mx-1">
         <v-container fluid class="pa-0">
-             <v-row justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'black':'grey lighten-4'" >
+             <v-row justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'" >
                 <v-col md="12" lg="10" sm="11" xs="12" class="pt-3 bottom-space"  >
                   <TeamHeader :data="CoreTeam" />
                 </v-col>
@@ -9,7 +9,7 @@
         </v-container>
 
         <v-container fluid class="pa-0">
-             <v-row justify="center" align="center" class="py-3">
+             <v-row justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'black':''">
                 <v-col md="12" lg="10" sm="11" xs="12" class="pt-3 card-top-margin" v-if="CoreTeam.length>0"  >
                   <CoreTeam :data="CoreTeam"/>
                 </v-col>
