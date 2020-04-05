@@ -83,7 +83,6 @@ export default {
       service
         .getAllSpeakers()
         .then(res => {
-          console.log(res);
           if (res.success == true) {
             this.SpeakersData = res.data.filter(res => res.visible);
             this.loader = false;

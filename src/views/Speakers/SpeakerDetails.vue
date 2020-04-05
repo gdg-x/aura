@@ -1,7 +1,7 @@
 <template>
-  <v-content class="px-0 mx-1">
+  <v-content class="px-0 mx-0">
     <v-container fluid class="pa-0"> 
-        <!-- <speakerMobile class="hidden-sm-and-up pa-0"/> -->
+        <SpeakerMobile class="hidden-sm-and-up pa-0"/>
         <SpeakerDesktop class="d-none d-sm-block pa-0"/>
       </v-container>
   </v-content>
@@ -10,11 +10,13 @@
 <script>
 // import service from "@/services/appservices";
 import SpeakerDesktop from '@/components/speakers/SpeakerDesktop';
+import SpeakerMobile from '@/components/speakers/SpeakerMobile';
 export default {
   name: "Speaker",
   inject: ["theme"],
   components: {
-      SpeakerDesktop
+      SpeakerDesktop,
+      SpeakerMobile
   },
   data: () => ({
     loader: true,

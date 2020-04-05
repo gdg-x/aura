@@ -7,7 +7,6 @@
                         <CoreTeamMemberCard :data="item"/>
                     </v-col>
                 </v-row>
-
             </v-col>
         </v-row>
     </v-container>

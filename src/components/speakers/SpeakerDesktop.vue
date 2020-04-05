@@ -71,8 +71,8 @@
                 <v-card-text>
                   <v-row align="center">
                     <v-col cols="12" md="6" xl="4" v-for="sess in events" :key="sess.id">
-                      <v-list class="pa-0 ma-0">
-                        <v-list-item>
+                      <v-list rounded class="pa-0 ma-0">
+                        <v-list-item v-ripple @click="$router.push({ path: '/events/'+sess.id})">
                           <v-list-item-avatar>
                             <v-avatar color="grey lighten-2">
                               <span
@@ -158,7 +158,6 @@ export default {
       service
         .getSpeaker(id)
         .then(res => {
-          console.log(res);
           if (res.success == true) {
             this.loader = false;
             this.speaker = res.data;
@@ -189,7 +188,6 @@ export default {
                 });
               }
             });
-            console.log(this.events);
           } else {
             this.eventLoader = false;
             this.notFound = true;
