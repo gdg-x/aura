@@ -19,6 +19,9 @@ export default {
     Drawer,
     Views
   },
+  beforeCreate(){
+      (localStorage.getItem('darkMode') == 'true')?this.$vuetify.theme.dark  = true:this.$vuetify.theme.dark  = false;
+  },
   mounted(){
     // service.testfun(23)
     // service.getFeaturesEvents().then(res=>{
