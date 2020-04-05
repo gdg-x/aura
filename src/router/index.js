@@ -51,6 +51,15 @@ const routes = [
     }
   },
   {
+    path: '/events/:id',
+    name: 'Events-Details',
+    component: () => import(/* webpackChunkName: "events-details" */ '../views/Events/EventDetails.vue.vue'),
+    meta:{
+      title:'Events ',
+      color:'#0277bd',
+    }
+  },
+  {
     path: '/speakers',
     name: 'Speakers',
     component: () => import(/* webpackChunkName: "speakers" */ '../views/Speakers.vue'),
@@ -65,6 +74,24 @@ const routes = [
     component: () => import(/* webpackChunkName: "speakers-details" */ '../views/Speakers/SpeakerDetails.vue'),
     meta:{
       title:'Speakers ',
+      color:'#0277bd',
+    }
+  },
+  {
+    path: '/volunteer',
+    name: 'Volunteer',
+    component: () => import(/* webpackChunkName: "volunteer" */ '../views/Volunteer.vue'),
+    meta:{
+      title:'Volunteer ',
+      color:'#0277bd',
+    }
+  },
+  {
+    path: '/partners',
+    name: 'Partners',
+    component: () => import(/* webpackChunkName: "partners" */ '../views/Partners.vue'),
+    meta:{
+      title:'Partners ',
       color:'#0277bd',
     }
   },
