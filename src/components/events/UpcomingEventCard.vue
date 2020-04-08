@@ -18,7 +18,7 @@
           </div>
       </template>
 <!-- :style="{'background-image':'url('+require('@/assets/img/svg/footer.svg')+')'}" -->
-      <v-card color="" v-if="dialog">
+      <v-card :color="$vuetify.theme.dark == true?'#3C4042 elevation-4':'white'" v-if="dialog">
         <v-card-title
           class="px-5 py-5 google-font"
           

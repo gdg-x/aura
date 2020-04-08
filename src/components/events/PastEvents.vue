@@ -8,12 +8,12 @@
         <v-row align="center" justify="center" class="mb-5">
             <v-col cols="12" md="12" lg="12" sm="12" class="">
                 <v-row>
-                    <v-col>
+                    <v-col md="6" lg="6" sm="6" cols="12">
                         <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Directory of past events</p>
                         <p class="google-font mt-0 mb-0" style="font-size:95%">Events are listed in reverse chronological order by date.</p>
                         <!-- <p class="google-font mt-0" style="font-size:95%">Here are the recent 10 meetups. To know more about the past meetups  <a :href="communitydata.CommunityMeetupLink" target="_blank" style="text-decoration:none;color:#0277bd">Click here</a></p> -->
                     </v-col>
-                    <v-col>
+                    <v-col md="6" lg="6" sm="6" cols="12">
                         <v-text-field
                             flat
                             v-model="search"
