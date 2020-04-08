@@ -322,6 +322,54 @@ let appservice = {
       })
     },
 
+    getFooterConfig(){
+      return new Promise((resolve,reject)=>{
+        firebase.firestore.collection("config").doc('footer')
+        .get()
+        .then(doc => {
+          if (doc.empty) {
+            resolve({
+                success:false,
+                data:{}
+            })
+          }
+          if(Object.keys(doc.data().links).length > 0){
+            resolve({
+              success:true,
+              data:doc.data().links
+            })
+          }
+        })
+        .catch(e => {
+          reject(e)
+        });
+      })
+    },
+
+    getCommunityGuidelines(){
+      return new Promise((resolve,reject)=>{
+        firebase.firestore.collection("config").doc('communityguidelines')
+        .get()
+        .then(doc => {
+          if (doc.empty) {
+            resolve({
+                success:false,
+                data:{}
+            })
+          }
+          if(Object.keys(doc.data()).length > 0){
+            resolve({
+              success:true,
+              data:doc.data()
+            })
+          }
+        })
+        .catch(e => {
+          reject(e)
+        });
+      })
+    },
+
     getAllMeetupPastEvents(){
       return new Promise((resolve,reject)=>{
         firebase.firestore.collection("config").doc('keysandsecurity')

@@ -4,7 +4,7 @@
             <v-col md="12" sm="12" cols="12" class="py-0 my-0">
                 <v-row class="">
                     <v-col>
-                        <p class="google-font mb-0">Here are the top 10 blogs/articles written by me. You can find more blogs/articles on <a :href="blogsData.feed['link']" style="text-decoration:none" target="_blank">Medium</a></p>
+                        <p class="google-font mb-0">Here are the top 10 blogs/articles written by me. You can find more blogs/articles on <a :href="blogURL" style="text-decoration:none" target="_blank">Medium</a></p>
                         <!-- {{blogsData.feed.link}} -->
                     </v-col>
                 </v-row>
@@ -24,18 +24,18 @@
                         </v-sheet>
                     </v-col>
                 </v-row>
-
+                
+                <!-- Mobile Loader -->
                 <v-row class="mb-5 d-md-none d-lg-none" v-if="loader">
                     <v-col md="3" lg="3" sm="4" cols="12" class="pa-2 text-center" v-for="(item,i) in 3" :key="i">
-                        <!-- Mobile Loader -->
                         <v-skeleton-loader
                             ref="skeleton"
                             type="article"
                             class="mx-auto elevation-1"
                         ></v-skeleton-loader>
-                        <!-- Mobile Loader -->
                     </v-col>
                 </v-row>
+                <!-- Mobile Loader -->
 
                 <v-row class="mb-5" v-else>
                     <!-- {{blogsData}} -->
@@ -63,7 +63,8 @@ export default {
     data() {
         return {
             blogsData: [],
-            loader:true
+            loader:true,
+            blogURL:''
         }
     },
     mounted(){
@@ -76,6 +77,7 @@ export default {
                 if(res.success){
                     this.loader = false
                     this.blogsData = res.data
+                    this.blogURL = this.blogsData.feed.link
                 }
             })
         }
