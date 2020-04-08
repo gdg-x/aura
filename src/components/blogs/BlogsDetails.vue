@@ -53,8 +53,9 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 import service from '@/services/appservices'
-import BlogCard from '@/components/blogs/BlogCard'
+import BlogCard from '@/components/Blogs/BlogCard'
 export default {
     inject: ['theme'],
     components:{
@@ -67,13 +68,16 @@ export default {
             blogURL:''
         }
     },
+    computed:{
+        ...mapState(["config"])
+    },
     mounted(){
-        this.getGeneralConfig()
+        this.getMediumBlogs()
     },
     methods:{
-        getGeneralConfig(){
+        getMediumBlogs(){
             this.loader = true
-            service.getAllMediumBlogs().then(res=>{
+            service.getAllMediumBlogs(this.config.generalConfig.blogs.medium).then(res=>{
                 if(res.success){
                     this.loader = false
                     this.blogsData = res.data

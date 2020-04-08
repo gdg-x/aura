@@ -61,11 +61,15 @@
 <script>
 import service from '@/services/appservices'
 import eventCard from '@/components/events/UpcomingEventCard'
+import { mapState } from 'vuex'
     export default {
         name: 'Eventshome',
         inject: ['theme'],
         components:{
             eventCard
+        },
+        computed:{
+            ...mapState(["config"])
         },
         data: () => ({
             eventsData: [],
@@ -79,7 +83,7 @@ import eventCard from '@/components/events/UpcomingEventCard'
         methods:{
             getAllMeetupPastEvents(){
                 this.showLoader = true
-                service.getAllMeetupPastEvents().then(res=>{
+                service.getAllMeetupPastEvents(this.config.keysandsecurity.meetup).then(res=>{
                     if(res.success){
                         this.eventsData = res.data
                         console.log(this.eventsData.slice(0,4))

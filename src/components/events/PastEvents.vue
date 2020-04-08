@@ -59,9 +59,13 @@
 
 <script>
 import service from '@/services/appservices'
+import { mapState } from 'vuex'
     export default {
         name: 'App',
         components:{
+        },
+        computed:{
+            ...mapState(["config"])
         },
         data: () => ({
             eventsData:[],
@@ -88,7 +92,7 @@ import service from '@/services/appservices'
         methods:{
             getAllMeetupPastEvents(){
                 this.isLoading = true
-                service.getAllMeetupPastEvents().then(res=>{
+                service.getAllMeetupPastEvents(this.config.keysandsecurity.meetup).then(res=>{
                     if(res.success){
                         this.eventsData = res.data
                         this.isLoading = false

@@ -23,8 +23,8 @@
 
 <script>
 
-import BlogsHeader from '@/components/blogs/BlogsHeader';
-import BlogsDetails from '@/components/blogs/BlogsDetails';
+import BlogsHeader from '@/components/Blogs/BlogsHeader';
+import BlogsDetails from '@/components/Blogs/BlogsDetails';
 export default {
   components: {
     BlogsDetails,

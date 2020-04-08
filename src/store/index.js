@@ -7,81 +7,88 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     drawer: false,
-    items: [ 
-      { 
-        text: 'Home', 
-        to: '/', 
-        icon:'mdi-home', 
-        meta:{
+    config: {
+      generalConfig: {
+        socialLinks:{}
+      },
+      keysandsecurity: {},
+      footerConfig: {},
+    },
+    items: [{
+        text: 'Home',
+        to: '/',
+        icon: 'mdi-home',
+        meta: {
           showToolbar: true,
           showBottomNav: true
-        }, 
+        },
       },
-      { 
-        text: 'Events', 
-        to: '/events', 
-        icon: 'mdi-assistant', 
-        meta:{
+      {
+        text: 'Events',
+        to: '/events',
+        icon: 'mdi-assistant',
+        meta: {
           showToolbar: true,
           showBottomNav: true
-        }, 
+        },
       },
-      { 
-        text: 'Team', 
-        to: '/team', icon:'mdi-account-settings',
-        meta:{
+      {
+        text: 'Team',
+        to: '/team',
+        icon: 'mdi-account-settings',
+        meta: {
           showToolbar: true,
           showBottomNav: true
-        }, 
+        },
       },
-      { 
-        text: 'Speakers', 
-        to: '/speakers', 
-        icon: 'mdi-assistant', 
-        meta:{
+      {
+        text: 'Speakers',
+        to: '/speakers',
+        icon: 'mdi-assistant',
+        meta: {
           showToolbar: true,
           showBottomNav: true
-        }, 
+        },
       },
-      { 
-        text: 'About', 
-        to: '/about', 
+      {
+        text: 'About',
+        to: '/about',
         icon: 'mdi-comment-alert-outline',
-        meta:{
+        meta: {
           showToolbar: true,
           showBottomNav: true
-        }, 
+        },
       },
-      { 
-        text: 'Contact', 
-        to: '/contact', 
-        icon:'mdi-contacts',
-        meta:{
+      {
+        text: 'Contact',
+        to: '/contact',
+        icon: 'mdi-contacts',
+        meta: {
           showToolbar: true,
           showBottomNav: true
-        }, 
+        },
       },
-      { 
-        text: 'Partners', 
-        to: '/partners', 
-        icon:'mdi-currency-usd',
-        meta:{
+      {
+        text: 'Partners',
+        to: '/partners',
+        icon: 'mdi-currency-usd',
+        meta: {
           showToolbar: false,
           showBottomNav: false
-        }, 
+        },
       },
-      { 
-        text: 'Blogs', 
-        to: '/blogs', 
-        icon:'mdi-blogger',
-        meta:{
+      {
+        text: 'Blogs',
+        to: '/blogs',
+        icon: 'mdi-blogger',
+        meta: {
           showToolbar: true,
           showBottomNav: false
-        }, 
+        },
       }
     ]
   },
-  getters:{
+  getters: {
     links: (state) => {
       return state.items
     }
@@ -89,32 +96,11 @@ export default new Vuex.Store({
   mutations: {
     setDrawer: (state, payload) => (state.drawer = payload),
     toggleDrawer: state => (state.drawer = !state.drawer),
+    setGeneralConfig: (state, payload) => (state.config.generalConfig = payload),
+    setKeysAndSecutityConfig: (state, payload) => (state.config.keysandsecurity = payload),
+    setFooterConfig: (state, payload) => (state.config.footerConfig = payload),
   },
-  modules: {
-  },
-  actions:{
-    GetMetaData(){
-      return new Promise((resolve,reject)=>{
-        firebase.firestore.collection("config")
-        .get()
-        .then(doc => {
-          console.log(doc)
-          if (!doc.exists) {
-            console.log('Not Exist')
-          }
-          // doc = doc.data();
-          if (Object.keys(doc).length > 0) {
-            resolve(doc)
-          }
-        })
-        .catch(e => {
-          reject(e)
-        });
-      })
-    },
-    
-  
-  }
-  
-})
+  modules: {},
+  actions: {}
 
+})

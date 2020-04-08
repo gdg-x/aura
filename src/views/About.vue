@@ -13,7 +13,7 @@
     <v-container fluid class="px-0 py-0">
       <v-row justify="center" align="center">
         <v-col md="11" lg="10" sm="11" xs="12" class="">
-          <aboutCommunity :data="generalData" />
+          <aboutCommunity :data="config.generalConfig" />
         </v-col>
       </v-row>
     </v-container>
@@ -30,7 +30,7 @@
       <v-row justify="center" align="center"  class="py-5">
         <v-col md="11" lg="10" sm="11" xs="12" class="py-0 mb-5">
            <coc :data="coc" />
-          <antiHarassmentPolicy :data="generalData.name" />
+          <antiHarassmentPolicy :data="config.generalConfig.name" />
         </v-col>
       </v-row>
     </v-container>
@@ -46,6 +46,8 @@ import communityGuidelines from '@/components/about/CommunityGuidelines'
 import coc from '@/components/about/COC'
 import antiHarassmentPolicy from '@/components/about/AntiHar'
 
+import { mapState } from 'vuex';
+
 export default {
   components: {
     aboutCommunity,
@@ -54,27 +56,18 @@ export default {
     coc,
     antiHarassmentPolicy
   },
+  computed:{
+    ...mapState(['config'])
+  },
   data:()=>({
-    generalData:[],
     loading: true,
     communityGudielines:[],
     coc:''
   }),
   mounted(){
-    this.getGeneralConfig()
     this.getCommunityGuidelinesData()
   },
   methods:{
-    getGeneralConfig(){
-        this.loading = false
-        service.getGeneralConfig().then(res=>{
-            if(res.success){
-                this.loading = true
-                this.generalData = res.data
-                // con
-            }
-        })
-    },
     getCommunityGuidelinesData(){
       service.getCommunityGuidelines().then(res=>{
         if(res.success){
