@@ -28,7 +28,7 @@
 
                 &nbsp;
 
-                <!-- <v-btn :href="communitydata.GDGProgramWebsite" target="_blank" rounded color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" outlined  class="ml-0" dark>Learn More</v-btn> -->
+                <v-btn :href="data.learnMoreLink" target="_blank" rounded color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" outlined  class="ml-0" dark>Learn More</v-btn>
 
             </v-col>
         </v-row>

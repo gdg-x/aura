@@ -23,20 +23,20 @@
                 <p class="google-font mb-1" style="font-weight: 350;color: #616161;font-size:200%"><b>Make good things 
                     <span style="color: #1a73e8;">together</span>.</b>
                 </p>
-                <p class="google-font mt-0 mb-0" style="font-size:150%">GDG Jalandhar</p>
-                <p class="google-font" style="font-size:100%">Google Developers Group Jalandhar is an initiative to concentrate the efforts of many developers in and around Punjab to learn, share and get productive using the various Google products.</p>
+                <p class="google-font mt-0 mb-0" style="font-size:150%">{{genralData.name}}</p>
+                <p class="google-font" style="font-size:100%">{{genralData.shortDescription}}</p>
                 <p class="google-font" style="font-size:100%;color:#9e9e9e">
-                    <!-- <span v-for="(item,i) in communitydata.CommunityHashTags" :key="i">
-                        #{{item}} &nbsp;
-                    </span> -->
-                    #GDGJalandhar &nbsp; #WTMJalandhar
+                    <span v-for="(item,i) in genralData.hashtags" :key="i">
+                        <v-chip small class="mr-1">#{{item}}</v-chip>
+                         <!-- &nbsp; -->
+                    </span>
                 </p>
 
-                <v-btn href="#" target="_blank" class="ma-0 google-font elevation-1 primary" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
+                <v-btn :href="genralData.meetupLink" target="_blank" class="ma-0 google-font elevation-1 primary" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
 
                 &nbsp;
 
-                <v-btn href="#" target="_blank" rounded color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" outlined  class="ml-0" dark>Learn More</v-btn>
+                <v-btn :href="genralData.learnMoreLink" target="_blank" rounded color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" outlined  class="ml-0" dark>Learn More</v-btn>
 
             </v-col>
         </v-row>
@@ -44,10 +44,22 @@
 </template>
 
 <script>
+import service from '@/services/appservices'
     export default {
-        data() {
-            return {
-            }
+        data:()=>({
+            genralData:{}
+        }),
+        mounted(){
+            this.getGenralData()
         },
+        methods:{
+            getGenralData(){
+                service.getGeneralConfig().then(res=>{
+                    if(res.success){
+                        this.genralData = res.data
+                    }
+                })
+            }
+        }
     }
 </script>

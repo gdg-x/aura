@@ -9,7 +9,7 @@
             style="cursor: pointer;border-left:8px solid #4E5FBB !important"
             :class="$vuetify.theme.dark == true?'darkModeCard':'card-light'" 
             class="pa-3">
-              <v-chip color="primary" label outlined class="mt-1 mx-0 mb-0" small>{{data.data.status}}</v-chip>
+              <!-- <v-chip color="primary" label outlined class="mt-1 mx-0 mb-0" small>{{data.data.status}}</v-chip> -->
               <p class="google-font mt-2 mb-0" style="font-size:90%">{{data.data.local_date | dateFilter}}</p>
               <p class="google-font ma-0 mt-0" style="font-size:120%;" >{{data.data.name |summary(30) }}</p>
               <p class="google-font mt-0 mb-0" style="font-size:90%;">{{data.data.local_time}}</p>

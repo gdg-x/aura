@@ -63,7 +63,7 @@ let appservice = {
         })
     },
 
-    getAllEvents(){
+    getAllCustomEvents(){
         let events = []
         return new Promise((resolve,reject)=>{
             firebase.firestore.collection("events")
