@@ -1,8 +1,16 @@
 <template>
   <v-app>
+    <v-snackbar v-model="snackWithButtons" :timeout="timeout" bottom left class="snack">
+      {{ snackWithBtnText }}
+      <v-spacer />
+      <v-btn dark text color="#00f500" @click.native="refreshApp">{{ snackBtnText }}</v-btn>
+      <v-btn icon @click="snackWithButtons = false">
+        <v-icon>mdi-close</v-icon>
+      </v-btn>
+    </v-snackbar>
     <Toolbar />
     <Drawer />
-    <v-content class="fill-height"  v-if="isLoading">
+    <v-content class="fill-height" v-if="isLoading">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
@@ -11,7 +19,7 @@
         </v-row>
       </v-container>
     </v-content>
-    <Views v-else/>
+    <Views v-else />
     <Footer />
   </v-app>
 </template>
@@ -35,6 +43,10 @@ export default {
     isLoading: true,
     refreshing: false,
     registration: null,
+    snackBtnText: "",
+    snackWithBtnText: "",
+    snackWithButtons: false,
+    timeout: 7000
   }),
   computed: {
     ...mapState(["config"])
@@ -54,7 +66,7 @@ export default {
       ? (this.$vuetify.theme.dark = true)
       : (this.$vuetify.theme.dark = false);
   },
-   mounted() {
+  mounted() {
     if (
       Object.keys(this.config.generalConfig).length <= 0 ||
       Object.keys(this.config.keysandsecurity).length <= 0 ||
