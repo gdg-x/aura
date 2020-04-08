@@ -62,8 +62,36 @@ let appservice = {
         });
     })
   },
+  getAllEvents: () => {
+    let events = []
+    return new Promise((resolve, reject) => {
+      firebase.firestore.collection("events")
+        .get()
+        .then(doc => {
+          console.log(doc)
+          if (doc.empty) {
+            resolve({
+              success: false,
+              data: {}
+            })
+          }
+          if (Object.keys(doc).length > 0) {
+            doc.forEach(res => {
+              events.push(res.data())
+            })
+            resolve({
+              success: true,
+              data: events
+            })
+          }
+        })
+        .catch(e => {
+          reject(e)
+        });
+    })
+  },
 
-  getAllCustomEvents() {
+  getAllCustomEvents: () => {
     let events = []
     return new Promise((resolve, reject) => {
       firebase.firestore.collection("events")
@@ -91,7 +119,7 @@ let appservice = {
     })
   },
 
-  getEvent(id) {
+  getEvent: (id) => {
     return new Promise((resolve, reject) => {
       firebase.firestore.collection("events").doc(id)
         .get()
@@ -121,7 +149,7 @@ let appservice = {
     })
   },
 
-  getSpeaker(id) {
+  getSpeaker: (id) => {
     return new Promise((resolve, reject) => {
       firebase.firestore.collection("Speakers").doc(id)
         .get()
@@ -151,7 +179,7 @@ let appservice = {
     })
   },
 
-  getAllSpeakers() {
+  getAllSpeakers: () => {
     let speakers = []
     return new Promise((resolve, reject) => {
       firebase.firestore.collection("Speakers")
@@ -179,7 +207,7 @@ let appservice = {
     })
   },
 
-  getFeaturesEvents() {
+  getFeaturesEvents: () => {
     return new Promise((resolve, reject) => {
       firebase.firestore.collection("featureevents").doc('data')
         .get()
@@ -210,7 +238,7 @@ let appservice = {
     })
   },
 
-  getAllPartners() {
+  getAllPartners: () => {
     let partners = []
     return new Promise((resolve, reject) => {
       firebase.firestore.collection("partners")
@@ -238,7 +266,7 @@ let appservice = {
     })
   },
 
-  getAllConfig() {
+  getAllConfig: () => {
     let config = []
     return new Promise((resolve, reject) => {
       firebase.firestore.collection("config")
@@ -269,7 +297,7 @@ let appservice = {
     })
   },
 
-  getAllUpcomingMeetupsEvents(id) {
+  getAllUpcomingMeetupsEvents: (id) => {
     return new Promise((resolve, reject) => {
       fetch(
           "https://cors-anywhere.herokuapp.com/https://api.meetup.com/" + id + "/events?&sign=true"
@@ -286,7 +314,7 @@ let appservice = {
         });
     })
   },
-  getCommunityGuidelines() {
+  getCommunityGuidelines: () => {
     return new Promise((resolve, reject) => {
       firebase.firestore.collection("config").doc('communityguidelines')
         .get()
@@ -310,7 +338,7 @@ let appservice = {
     })
   },
 
-  getAllMeetupPastEvents(id) {
+  getAllMeetupPastEvents: (id) => {
     return new Promise((resolve, reject) => {
       fetch(
           "https://cors-anywhere.herokuapp.com/https://api.meetup.com/" + id + "/events?desc=true&photo-host=public&page=300&status=past&sign=true"
@@ -328,7 +356,7 @@ let appservice = {
     })
   },
 
-  getAllMediumBlogs(id) {
+  getAllMediumBlogs: (id) => {
     return new Promise((resolve, reject) => {
       let baseURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/" + id
 
@@ -346,7 +374,7 @@ let appservice = {
     })
   },
 
-  getPartner(id) {
+  getPartner: (id) => {
     return new Promise((resolve, reject) => {
       firebase.firestore.collection("partners").doc(id)
         .get()

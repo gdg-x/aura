@@ -1,7 +1,7 @@
 <template>
     <v-app-bar app fixed clipped-left :class="this.$vuetify.theme.dark == true?'':'white'">
         <v-app-bar-nav-icon  @click="toggleDrawer" class="d-md-none d-lg-none"></v-app-bar-nav-icon>
-        <v-toolbar-title class="google-font px-0">GDG Jalandhar</v-toolbar-title>
+        <v-toolbar-title class="google-font px-0">{{config.generalConfig.name || "GDG"}}</v-toolbar-title>
         <v-spacer></v-spacer>
 
         <div v-for="(link, i) in links" :key="i">
@@ -28,6 +28,7 @@
 
 <script>
 import {
+    mapState,
     mapGetters,
     mapMutations
 } from 'vuex'
@@ -37,6 +38,7 @@ export default {
 
     }),
     computed:{
+        ...mapState(['config']),
         ...mapGetters(['links'])
     },
     methods:{
