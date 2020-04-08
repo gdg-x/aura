@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="py-0 my-0 mt-0">
-        <v-row class="py-0 my-0" align="center">
+        <v-row class="py-0 my-0" align="center" justify="center">
             <v-col md="12" sm="12" cols="12" class="py-0 my-0">
                 <v-row class="py-0">
                     <v-col cols="12" md="12" sm="12" lg="12" class="py-0">
@@ -46,8 +46,8 @@
                             </v-col>
                         </v-row>
                         <v-row class="blue">
-                            {{data}}
-                            <!-- <v-col cols="12" md="12" class="pa-0">
+                            <!-- {{data}} -->
+                            <v-col cols="12" md="12" class="pa-0">
                                 <v-tabs
                                     v-model="tab"
                                     grow
@@ -70,30 +70,30 @@
                                         <v-tabs-items v-model="tab">
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutAbout :aboutData="eventdata"/>
+                                                    <LayoutAbout :data="data"/>
                                                 </v-card>
                                             </v-tab-item>
 
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutSpeakers :speakersData="eventdata.Speakers" />
+                                                    <LayoutSpeakers :data="data" />
                                                 </v-card>
                                             </v-tab-item>
 
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutAgenda :agendaData="eventdata.Agenda" />
+                                                    <LayoutAgenda :data="data" />
                                                 </v-card>
                                             </v-tab-item>
 
                                             <v-tab-item class="px-5">
                                                 <v-card flat color="basil">
-                                                    <LayoutPartners :parntersData="eventdata.Partners" />
+                                                    <LayoutPartners :data="data" />
                                                 </v-card>
                                             </v-tab-item>
                                         </v-tabs-items>
                                     </v-tabs>
-                            </v-col> -->
+                            </v-col>
                         </v-row>
                     </v-col>
                     <!-- <v-col cols="12" md="3" sm="5" lg="3" class="pa-0 hidden-sm-and-down" :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'">
@@ -112,17 +112,16 @@
 
 <script>
 // import communitydata from '@/assets/data/communitydata.json'
-// import LayoutAbout from '../Layout/SubLayout/LayoutAbout'
-// import LayoutSpeakers from '../Layout/SubLayout/LayoutSpeakers'
-// import LayoutAgenda from '../Layout/SubLayout/LayoutAgenda'
-// import LayoutPartners from '../Layout/SubLayout/LayoutPartner'
-// import { configData } from "@/config/config";
+import LayoutAbout from '@/views/Events/layout/sublayout/LayoutAbout'
+import LayoutSpeakers from '@/views/Events/layout/sublayout/LayoutSpeakers'
+import LayoutAgenda from '@/views/Events/layout/sublayout/LayoutAgenda'
+import LayoutPartners from '@/views/Events/layout/sublayout/LayoutPartner'
 export default {
     components:{
-        // LayoutAbout,
-        // LayoutSpeakers,
-        // LayoutAgenda,
-        // LayoutPartners
+        LayoutAbout,
+        LayoutSpeakers,
+        LayoutAgenda,
+        LayoutPartners
     },
     props:['data'],
     data() {

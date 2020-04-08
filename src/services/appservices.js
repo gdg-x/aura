@@ -237,6 +237,147 @@ let appservice = {
             });
         })
     },
+
+    getAllConfig(){
+      let config = []
+      return new Promise((resolve,reject)=>{
+          firebase.firestore.collection("config")
+          .get()
+          .then(doc => {
+            if (doc.empty) {
+              resolve({
+                  success:false,
+                  data:{}
+              })
+            }
+            if (Object.keys(doc).length > 0) {
+              doc.forEach(res=>{
+                  config.push(res.data())
+              })
+              resolve({
+                  success:true,
+                  data:config
+              })
+            }
+          })
+          .catch(e => {
+            reject(e)
+          });
+      })
+    },
+
+    getAllUpcomingMeetupsEvents(){
+      return new Promise((resolve,reject)=>{
+          firebase.firestore.collection("config").doc('keysandsecurity')
+          .get()
+          .then(doc => {
+            if (doc.empty) {
+              resolve({
+                  success:false,
+                  data:{}
+              })
+            }
+            if(Object.keys(doc.data()).length > 0){
+              fetch(
+                "https://cors-anywhere.herokuapp.com/https://api.meetup.com/"+doc.data().meetup+"/events?&sign=true"
+              ).then(res=>res.json()).then(data=>{
+                if(data.length>0){
+                  resolve({
+                    success:true,
+                    data:data
+                  })
+                }
+              }).catch(e=>{
+                reject(e)
+              })
+            }
+          })
+          .catch(e => {
+            reject(e)
+          });
+      })
+    },
+
+    getGeneralConfig(){
+      return new Promise((resolve,reject)=>{
+        firebase.firestore.collection("config").doc('general')
+        .get()
+        .then(doc => {
+          if (doc.empty) {
+            resolve({
+                success:false,
+                data:{}
+            })
+          }
+          if(Object.keys(doc.data()).length > 0){
+            resolve({
+              success:true,
+              data:doc.data()
+            })
+          }
+        })
+        .catch(e => {
+          reject(e)
+        });
+      })
+    },
+
+    getAllMeetupPastEvents(){
+      return new Promise((resolve,reject)=>{
+        firebase.firestore.collection("config").doc('keysandsecurity')
+        .get()
+        .then(doc => {
+          if (doc.empty) {
+            resolve({
+                success:false,
+                data:{}
+            })
+          }
+          if(Object.keys(doc.data()).length > 0){
+            fetch(
+              "https://cors-anywhere.herokuapp.com/https://api.meetup.com/"+doc.data().meetup+"/events?desc=true&photo-host=public&page=300&status=past&sign=true"
+            ).then(res=>res.json()).then(data=>{
+              if(data.length>0){
+                resolve({
+                  success:true,
+                  data:data
+                })
+              }
+            }).catch(e=>{
+              reject(e)
+            })
+          }
+        })
+        .catch(e => {
+          reject(e)
+        });
+      })
+    },
+
+    getAllKeys(){
+      return new Promise((resolve,reject)=>{
+          firebase.firestore.collection("config").doc('keysandsecurity')
+          .get()
+          .then(doc => {
+            if (doc.empty) {
+              resolve({
+                  success:false,
+                  data:{}
+              })
+            }
+            if(Object.keys(doc.data()).length > 0){
+              resolve({
+                  success:true,
+                  data:doc.data()
+              })
+            }
+          })
+          .catch(e => {
+            reject(e)
+          });
+      })
+    },
+
     getPartner(id){
         return new Promise((resolve,reject)=>{
             firebase.firestore.collection("partners").doc(id)

@@ -6,17 +6,21 @@
     <v-container fluid class="px-0 pt-5 mt-3 py-0">
       <v-row justify="center" align="center" class="py-3 pb-5" :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'" >
         <v-col md="12" lg="10" xs="12" class="pt-3 bottom-space">
-            <!-- {{$route.params.id  }} -->
-            <!-- {{EventData}} -->
         </v-col>
       </v-row>
     </v-container>
 
     <v-container fluid class="px-0 pt-5 mt-3 py-0">
       <v-row justify="center" align="center" class="py-3 pb-5" >
-        <v-col md="12" lg="9" xs="12" class="card-top-margin elevation-2 pa-0">
+        <v-col v-if="loader" md="12" class="card-top-margin elevation-2 pa-0 text-center">
+            <v-progress-circular
+              :size="50"
+              color="primary"
+              indeterminate
+            ></v-progress-circular>
+        </v-col>
+        <v-col v-else md="12" lg="9" sm="11" xs="12" class="card-top-margin elevation-2 pa-0">
           <layout :data="EventData" />
-          {{EventData}}
         </v-col>
       </v-row>
     </v-container>
@@ -33,7 +37,8 @@ export default {
   data(){
       return{
         notFound:0,
-        EventData: {}
+        EventData: {},
+        loader:true
       }
   },
   mounted(){
@@ -49,15 +54,21 @@ export default {
   },
   methods:{
     getEventInfo(){
-        this.EventData = {}
-        service.getEvent(this.$route.params.id).then(res=>{
-            console.log(res)
-            if(res.success){
-                this.EventData=res.data
-            }
-        }).catch(e=>{
-            console.log(e)
-        })
+      this.loader = true
+      this.EventData = {}
+      service.getEvent(this.$route.params.id).then(res=>{
+          console.log(res)
+          if(res.success){
+            this.EventData=res.data
+            this.loader = false
+          }else{
+            this.$router.push({ path: '/events' })
+            this.loader = false
+          }
+      }).catch(e=>{
+        this.loader = false
+        console.log(e)
+      })
     }
   }
 };

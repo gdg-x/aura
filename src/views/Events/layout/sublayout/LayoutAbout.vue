@@ -4,44 +4,33 @@
             <v-col md="12" sm="12" cols="12" class="py-0 my-0">
                 <v-row class="">
                     <v-col>
-                        <p class="google-font mb-0"><b>About</b></p>
+                        <h1 class="google-font">{{data.name}} Details</h1>
                         <p class="google-font mb-3">{{data.des}}</p>
+
+                        <span v-for="(item,i) in data.hashtags" :key="i">
+                            <v-chip class="mr-1" label small>{{item}}</v-chip>
+                        </span>
                         
                         <!-- {{aboutData}} -->
 
                         <p class="google-font mb-0 mt-3"><b>Date:</b> {{data.date}}</p>
-                        <p class="google-font mb-0 mb-0"><b>Time:</b> {{data.time.starttime}} - {{data.time.endtime}}</p>
-                        <p class="google-font mb-0 mb-0"><b>Venue:</b> {{aboutData.EventVenue}}</p>
-                        <p class="google-font mb-0 mb-0"><b>Contact Email:</b> {{communitydata.CommunityEmail}}</p>
-                        
-                        <div class="mt-3 mb-2">
-                            <span v-for="(item,i) in aboutData.EventHashTags" :key="i">
-                                <v-chip small class="mr-1">{{item}}</v-chip>
-                            </span>
+                        <p class="google-font my-0"><b>Time: </b> {{data.time.starttime}} - {{data.time.endtime}}</p>
+                        <p class="google-font my-0"><b>Vanue: </b> <a :href="data.venue.googlemapslink">{{data.venue.name}}</a></p>
+
+                        <div class="mt-4 pb-5">
+                            <p class="google-font mb-0"><b>Important Links</b></p>
+                            <v-btn color="pink" dark target="_blank" v-if="data.links.callforspeaker" :href="data.links.callforspeaker" class="ma-1" label small>Call For Speakers</v-btn>
+
+                            <v-btn color="indigo" dark target="_blank" v-if="data.links.facebook" :href="data.links.facebook" class="ma-1" label small>Facebook</v-btn>
+
+                            <v-btn color="success" dark target="_blank" v-if="data.links.feedback" :href="data.links.feedback" class="ma-1" label small>Feedback</v-btn>
                             
+                            <v-btn color="red" dark target="_blank" v-if="data.links.meetup" :href="data.links.meetup" class="ma-1" label small>Meetup</v-btn>
+
+                            <v-btn color="primary" dark target="_blank" v-if="data.links.registration" :href="data.links.registration" class="ma-1" label small>Registration</v-btn>          
                         </div>
 
-                        <div class="mt-4">
-                            <!-- <p class="google-font mb-0"><b>Registraton, RSVP & Feedback</b></p> -->
-                            <v-btn v-if="aboutData.Links.RegistrationLink" class="ml-0 ma-2" dark  :href="aboutData.Links.RegistrationLink" target="_blank" color="indigo">Registration</v-btn>
 
-                            <v-btn v-if="aboutData.Links.CallForSpeaker" class="ml-0 ma-2" dark  :href="aboutData.Links.CallForSpeaker" target="_blank" color="warning">Call For Speaker</v-btn>
-
-                            <v-btn v-if="aboutData.Links.MeetupLink" :href="aboutData.Links.MeetupLink" target="_blank"  class="ml-0 ma-2" dark color="green">RSVP</v-btn>
-
-                            <v-btn v-if="aboutData.Links.EventFeedbackURL" :href="aboutData.Links.EventFeedbackURL" target="_blank" class="ml-0 ma-2" dark color="cyan">Feeback</v-btn>
-                        </div>
-
-                        <div class="mt-3">
-                            <p class="google-font mb-0"><b>Social Media Pages</b></p>
-                            <v-btn class="ml-0 ma-2" dark color="indigo" v-if="aboutData.Links.EventFacebookPageURL" :href="aboutData.Links.EventFacebookPageURL" target="_blank">
-                                <v-icon left>mdi-facebook</v-icon>Facebook
-                            </v-btn>
-
-                            <v-btn class="ml-0 ma-2" dark color="pink" v-if="aboutData.Links.MeetupLink" :href="aboutData.Links.MeetupLink" target="_blank">
-                                <v-icon left>mdi-meetup</v-icon>Meetup
-                            </v-btn>
-                        </div>
                         
                     </v-col>
                 </v-row>

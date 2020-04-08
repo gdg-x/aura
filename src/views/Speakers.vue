@@ -46,8 +46,8 @@
           <v-container fluid class>
             <v-row>
               <v-col md="2" lg="2" sm="3" cols="6" v-for="i in 6" :key="i">
-                <v-sheet :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`" class>
-                  <v-skeleton-loader class="mx-auto" max-width="300" type="avatar, text@2"></v-skeleton-loader>
+                <v-sheet :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`" class="text-center">
+                  <v-skeleton-loader class="mx-auto pa-3 " max-width="300" type="avatar, text@3"></v-skeleton-loader>
                 </v-sheet>
               </v-col>
             </v-row>
