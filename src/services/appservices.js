@@ -354,6 +354,39 @@ let appservice = {
       })
     },
 
+    getAllMediumBlogs(){
+      return new Promise((resolve,reject)=>{
+        firebase.firestore.collection("config").doc('general')
+        .get()
+        .then(doc => {
+          if (doc.empty) {
+            resolve({
+                success:false,
+                data:{}
+            })
+          }
+          console.log(doc.data().blogs.medium)
+          if(Object.keys(doc.data().blogs).length > 0){
+            let baseURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/"+doc.data().blogs.medium
+            
+            fetch(baseURL).then(res=>res.json()).then(data=>{
+              if(data.items.length>0){
+                resolve({
+                  success:true,
+                  data:data
+                })
+              }
+            }).catch(e=>{
+              reject(e)
+            })
+          }
+        })
+        .catch(e => {
+          reject(e)
+        });
+      })
+    },
+
     getAllKeys(){
       return new Promise((resolve,reject)=>{
           firebase.firestore.collection("config").doc('keysandsecurity')
