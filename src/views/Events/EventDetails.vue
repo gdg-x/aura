@@ -29,10 +29,9 @@
 
 <script>
 import service from '@/services/appservices'
-import layout from '@/views/Events/layout/layout'
 export default {
   components: {
-    layout
+    layout:()=>import('@/views/Events/layout/layout')
   },
   data(){
       return{

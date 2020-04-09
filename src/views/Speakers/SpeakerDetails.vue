@@ -8,15 +8,12 @@
 </template>
 
 <script>
-// import service from "@/services/appservices";
-import SpeakerDesktop from '@/components/speakers/SpeakerDesktop';
-import SpeakerMobile from '@/components/speakers/SpeakerMobile';
 export default {
   name: "Speaker",
   inject: ["theme"],
   components: {
-      SpeakerDesktop,
-      SpeakerMobile
+      SpeakerDesktop:()=>import('@/components/speakers/SpeakerDesktop'),
+      SpeakerMobile:()=>import('@/components/speakers/SpeakerMobile')
   },
   data: () => ({
     loader: true,

@@ -12,10 +12,9 @@
 </template>
 
 <script>
-import partners from '@/components/common/Partners';
 export default {
   components: {
-    partners
+    partners:()=>import('@/components/common/Partners')
   },
 };
 </script>

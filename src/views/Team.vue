@@ -47,17 +47,14 @@
 </template>
 
 <script>
-import TeamHeader from '@/components/team/TeamHeader'
-import CoreTeam from '@/components/team/CoreTeam'
-import OrgainizingTeam from '@/components/team/OrganizingTeam'
 import service from '@/services/appservices'
 export default {
     name:'Team',
     inject: ['theme'],
     components:{
-        TeamHeader,
-        CoreTeam,
-        OrgainizingTeam
+        TeamHeader:()=>import('@/components/team/TeamHeader'),
+        CoreTeam:()=>import('@/components/team/CoreTeam'),
+        OrgainizingTeam:()=>import('@/components/team/OrganizingTeam')
     },
     data:() =>({
       loader:true,

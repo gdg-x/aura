@@ -55,11 +55,10 @@
 <script>
 import {mapState} from 'vuex'
 import service from '@/services/appservices'
-import BlogCard from '@/components/Blogs/BlogCard'
 export default {
     inject: ['theme'],
     components:{
-        BlogCard
+        BlogCard:()=>import('@/components/Blogs/BlogCard')
     },
     data() {
         return {

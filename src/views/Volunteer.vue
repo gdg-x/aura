@@ -89,13 +89,12 @@
 </template>
 
 <script>
-import Volunteers from '@/components/team/Volunteers'
 import service from '@/services/appservices'
 export default {
     name:'Team',
     inject: ['theme'],
     components:{
-        Volunteers,
+        Volunteers:()=>import('@/components/team/Volunteers'),
     },
     data:() =>({
       loader:true,

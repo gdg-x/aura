@@ -54,12 +54,11 @@
 
 <script>
 import service from '@/services/appservices'
-import featureEventCard from '@/components/home/FeatureEventCard'
     export default {
         name: 'App',
         inject: ['theme'],
         components:{
-            featureEventCard
+            featureEventCard:()=>import('@/components/home/FeatureEventCard')
         },
         data: () => ({
             loading:true,

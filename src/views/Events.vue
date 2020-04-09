@@ -19,14 +19,11 @@
 </template>
 
 <script>
-import eventsHeader from '@/components/events/EventHeader'
-import upcomingEvents from '@/components/events/UpcomingEvents'
-import pastEvents from '@/components/events/PastEvents'
 export default {
     components:{
-        eventsHeader,
-        upcomingEvents,
-        pastEvents
+        eventsHeader:()=>import('@/components/events/EventHeader'),
+        upcomingEvents:()=>import('@/components/events/UpcomingEvents'),
+        pastEvents:()=>import('@/components/events/PastEvents')
     },
     data:()=>({
 

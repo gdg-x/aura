@@ -59,15 +59,13 @@
 </template>
 
 <script>
-import SpeakerHeader from "@/components/speakers/SpeakerHeader";
-import SpeakerView from "@/components/speakers/Speakerview";
 import service from "@/services/appservices";
 export default {
   name: "Speaker",
   inject: ["theme"],
   components: {
-    SpeakerHeader,
-    SpeakerView
+    SpeakerHeader:()=>import('@/components/speakers/SpeakerHeader'),
+    SpeakerView:()=>import('@/components/speakers/Speakerview')
   },
   data: () => ({
     loader: true,

@@ -63,13 +63,12 @@
 
 <script>
 import service from "@/services/appservices";
-import upcomingEventCard from "@/components/events/UpcomingEventCard";
 import { mapState } from "vuex";
 export default {
   name: "App",
   inject: ["theme"],
   components: {
-    upcomingEventCard
+    upcomingEventCard:()=>import('@/components/events/UpcomingEventCard')
   },
   computed: {
     ...mapState(["config"])

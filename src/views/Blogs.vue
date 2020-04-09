@@ -23,12 +23,10 @@
 
 <script>
 
-import BlogsHeader from '@/components/Blogs/BlogsHeader';
-import BlogsDetails from '@/components/Blogs/BlogsDetails';
 export default {
   components: {
-    BlogsDetails,
-    BlogsHeader,
+    BlogsHeader:()=>import('@/components/Blogs/BlogsHeader'),
+    BlogsDetails:()=>import('@/components/Blogs/BlogsDetails'),
   },
 };
 </script>

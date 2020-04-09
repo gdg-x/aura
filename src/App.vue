@@ -25,19 +25,15 @@
 </template>
 
 <script>
-import Toolbar from "@/components/core/Toolbar";
-import Drawer from "@/components/core/Drawer";
-import Views from "@/components/core/Views";
-import Footer from "@/components/core/Footer";
 import service from "@/services/appservices";
 import { mapState, mapMutations } from "vuex";
 export default {
   name: "App",
   components: {
-    Toolbar,
-    Drawer,
-    Views,
-    Footer
+    Toolbar:()=>import('@/components/core/Toolbar'),
+    Drawer:()=>import('@/components/core/Drawer'),
+    Views:()=>import('@/components/core/Views'),
+    Footer:()=>import('@/components/core/Footer')
   },
   data: () => ({
     isLoading: true,

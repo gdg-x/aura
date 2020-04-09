@@ -19,10 +19,9 @@
 
 <script>
 import service from "@/services/appservices";
-import LayoutSpeaker from '@/views/Events/layout/sublayout/subcomponents/LayoutSpeaker'
 export default {
     components:{
-        LayoutSpeaker
+        LayoutSpeaker:()=>import('@/views/Events/layout/sublayout/subcomponents/LayoutSpeaker')
     },
     props:['data'],
     data:()=>({

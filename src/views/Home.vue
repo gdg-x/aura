@@ -54,21 +54,15 @@
 </template>
 
 <script>
-import HomeStartScreen from '@/components/home/HomeStartScreen'
-import whatwedo from '@/components/home/WhatWeDo'
-import AboutCommunity from '@/components/home/AboutCommunity'
-import events from '@/components/home/Events'
-import featureEvents from '@/components/home/FeaturesEvents'
-import partners from '@/components/common/Partners'
 export default {
   name: 'Home',
   components: {
-    HomeStartScreen,
-    whatwedo,
-    AboutCommunity,
-    events,
-    featureEvents,
-    partners
+    HomeStartScreen:()=>import('@/components/home/HomeStartScreen'),
+    whatwedo:()=>import('@/components/home/WhatWeDo'),
+    AboutCommunity:()=>import('@/components/home/AboutCommunity'),
+    events:()=>import('@/components/home/Events'),
+    featureEvents:()=>import('@/components/home/FeaturesEvents'),
+    partners:()=>import('@/components/common/Partners')
   },
   mounted(){
   },
