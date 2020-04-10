@@ -9,12 +9,12 @@ self.addEventListener('message', (e) => {
     }
 });
 
-var dataPush = {}
+var dataPush = {};
 
 self.addEventListener('push', (event)=>{
     if (event.data) {
         let data = JSON.parse(event.data.text());
-        dataPush = data.notification
+        dataPush = data.notification;
         dataPush.body = JSON.parse(dataPush.body);
     }
     var options = {

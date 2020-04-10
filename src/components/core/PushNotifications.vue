@@ -110,10 +110,13 @@ export default {
             }
             this.isLoading = false;
           });
+        }else{
+            this.token ="We Don't Support your browser"
         }
       } catch (err) {
         // alert(err);
         this.isLoading = false;
+        this.token = err;
         console.log(err);
       }
     }
