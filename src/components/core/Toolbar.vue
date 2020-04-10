@@ -18,6 +18,8 @@
             </v-btn>
         </div>
         
+        <offline @detected-condition="handleConnectivityChange"></offline>
+        <v-toolbar-title v-if="isOffline" style="background-color:red;border:1px solid red;border-radius:6px;color:white;font-size:90%" class="google-font px-2">Offline</v-toolbar-title>
         
         <v-btn icon v-on:click="darkMode" class="ml-2">
             <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
@@ -27,6 +29,7 @@
 </template>
 
 <script>
+import offline from 'v-offline';
 import {
     mapState,
     mapGetters,
@@ -34,8 +37,11 @@ import {
 } from 'vuex'
 export default {
     name:'Toolbar',
+    components:{
+        offline
+    },
     data:()=>({
-
+        isOffline: false
     }),
     computed:{
         ...mapState(['config']),
@@ -58,6 +64,13 @@ export default {
                 metaThemeColor.setAttribute("content", '#212121');
             }else{
                 metaThemeColor.setAttribute("content", '#0277bd');
+            }
+        },
+        handleConnectivityChange(status) {
+            if(status === true){
+                this.isOffline=false
+            }else{
+                this.isOffline=true
             }
         }
     }
