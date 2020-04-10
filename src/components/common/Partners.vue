@@ -5,13 +5,13 @@
                 <p class="google-font mb-1" style="font-weight: 350;font-size:200%"><b>Our
                     <span style="color: #1a73e8;">Partners</span> </b> 
                 </p>
-                <p class="google-font mt-1 mb-0" style="font-size:110%">A very big thank you to all our partners for their continued partnership.</p>
-                <!-- <p class="google-font mt-0 mb-0" style="font-size:120%">If you’re interested in being showcased throughout , contact <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${communitydata.CommunityEmail}`">{{communitydata.CommunityEmail}}</a> to discuss sponsorship opportunities.</p> -->
+                <p class="google-font mt-1 mb-0" style="font-size:100%">A very big thank you to all our partners for their continued partnership.</p>
+                <p class="google-font mt-0 mb-0" style="font-size:100%">If you’re interested in being showcased throughout , contact <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${config.generalConfig.emaill}`">{{config.generalConfig.email}}</a> to discuss sponsorship opportunities.</p>
             </v-col>
         </v-row>
 
-        <v-row align="center" justify="start" class="mt-0">
-            <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5">
+        <v-row align="center" justify="start" class="mt-0 pt-0">
+            <v-col cols="12" md="12" lg="12" sm="12" class="mx-0 mt-0">
                 <p class="google-font mb-0" style="font-size:130%">General Partners</p>
             </v-col>
             <v-col cols="6" md="6" lg="2" sm="4"  v-for="(itemp,i) in partnersData" :key="i">
@@ -85,10 +85,14 @@
 
 <script>
 import service from '@/services/appservices'
+import { mapState } from "vuex";
 export default {
     data:()=>({
         partnersData:[]
     }),
+    computed:{
+        ...mapState(["config"])
+    },
     mounted(){
         this.getPartner()
     },
@@ -97,7 +101,6 @@ export default {
             service.getAllPartners().then(res=>{
                 if(res.success){
                     this.partnersData = res.data.filter(data=>data.visible)
-                    console.log(this.partnersData)
                 }
             })
         }

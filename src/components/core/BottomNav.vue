@@ -1,21 +1,15 @@
-
-  
 <template>
   <v-bottom-navigation
-    :value="activeBtn"
     grow
     app
     :dark="this.$vuetify.theme.dark"
     :background-color="this.$vuetify.theme.dark?'#212121':'white'"
     :color="this.$vuetify.theme.dark?'white':'primary'"
   > 
-    
     <v-btn
-        v-for="(link, i) in links"
-        :key="i"
+        v-for="(link, i) in links.filter(res=>res.meta.showBottomNav)" :key="i"
         :to="link.to"
         small
-        v-if="link.meta.showBottomNav"
         class="ml-0 google-font"
         style="text-transform: capitalize;" 
         text
@@ -34,8 +28,6 @@
   } from 'vuex'
   export default {
     data: () =>({
-        activeBtn: '/home',
-      
     }),
     computed: {
       ...mapGetters(['links'])

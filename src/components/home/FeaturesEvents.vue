@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="mb-1">
-        <v-row align="center" justify="center">
+        <v-row align="center" justify="center" class="">
             <v-col cols="12" md="12" lg="12" sm="12" class="mb-0" >
                 <p class="google-font mb-0 mt-0" style="font-weight: 350;font-size:180%">
                     <b>
@@ -10,14 +10,13 @@
                         <span style="color: #1a73e8;">Meetup</span> 
                     </b> 
                 </p>
-                <!-- <p class="google-font mb-0" style="font-size:180%">Our Feature Event & Meetup</p> -->
                 <p class="google-font mt-0 mb-0" style="font-size:95%">Events are listed in reverse chronological order by date.</p>
                 
             </v-col>
             <v-col cols="12" md="12" lg="12" sm="12" class="mt-0 pt-0 pa-0" >
                <v-container fluid class="py-0 my-0">
-                   <v-row class="py-0 my-0" v-if="loading">
-                       <v-col v-for="i in 4" :key="i" md="3" lg="3" sm="6" cols="12" class="pa-2" >
+                   <v-row class="py-0 my-0" v-if="loading && notFound==false">
+                       <v-col v-for="i in 4" :key="i" md="3" lg="3" sm="6" cols="6" class="pa-2" >
                            <v-sheet
                                 :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`"
                                 class=""
@@ -29,11 +28,10 @@
                             </v-sheet>
                        </v-col>
                    </v-row>
-                   <v-row v-else class="py-0 my-0">
-                       <v-col v-for="(item,i) in FeaturesEventID" :key="i" md="3" lg="3" sm="6" cols="12" class="pa-2" >
-                           <div v-for="(itemp,j) in AllCustomEvents" :key="j">
-                               <div v-if="itemp.id == item">
-                                   <!-- {{itemp}} -->
+                   <v-row v-else class="py-0 my-0 px-2">
+                       <v-col v-for="(item,i) in FeaturesEventID" :key="i" md="3" lg="3" sm="6" cols="6" class="pa-1 " >
+                           <div v-for="(itemp,j) in AllCustomEvents" :key="j" class="pa-0 ma-0">
+                               <div v-if="itemp.id == item" class="pa-0 ma-0">
                                    <featureEventCard :data="itemp"/>
                                </div>
                            </div>

@@ -1,12 +1,11 @@
 <template>
-  <v-container fluid>
-    <v-row align="center">
-      <v-col md="3" sm="5" cols="12">
+  <v-container fluid class="py-0">
+    <v-row align="center" class=" fill-height">
+      <v-col md="3" sm="6" cols="12" class="">
         <v-img
           :src="require('@/assets/img/svg/home.svg')"
           :lazy-src="require('@/assets/img/svg/home.svg')"
           width="100%"
-          style="border-radius:8px"
         >
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
@@ -15,8 +14,8 @@
           </template>
         </v-img>
       </v-col>
-      <v-col md="9" sm="7" cols="12">
-        <p class="google-font mb-1" style="font-weight: 350;color: #616161;font-size:200%">
+      <v-col md="9" sm="6" cols="12" class="px-0">
+        <p class="google-font mb-1" :class="$vuetify.theme.dark == true?'dark-font-color':'light-font-color'" style="font-weight: 350;font-size:230%">
           <b>
             Make good things
             <span style="color: #1a73e8;">together</span>.
@@ -34,10 +33,9 @@
         <v-btn
           :href="config.generalConfig.meetupLink"
           target="_blank"
-          class="ma-0 google-font elevation-1 primary"
+          class="ma-0 google-font elevation-1 primary mr-2"
           style="text-transform: capitalize;border-radius:5px;color:white"
         >Become a Member</v-btn>
-&nbsp;
         <v-btn
           :href="config.generalConfig.learnMoreLink"
           target="_blank"
@@ -62,3 +60,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  .dark-font-color{
+    color: white;
+  }
+  .light-font-color{
+    color: #616161;
+  }
+</style>

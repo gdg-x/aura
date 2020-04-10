@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid>
+    <v-container fluid class="">
         <v-row align="center" justify="center">
             <v-col cols="12" md="10" lg="10" sm="12" class="text-center mb-0" >
                 <p class="google-font mb-1" style="font-weight: 350;font-size:180%">
@@ -21,9 +21,9 @@
                     style="border-radius:5px;text-transform: capitalize;text-decoration:none;color:#4C4A78"
                 >See More</router-link>
             </v-col>
-            <v-col cols="12" md="12" lg="12" sm="12" class="mt-0">
-               <v-container fluid>
-                   <v-row v-if="showLoader">
+            <v-col cols="12" md="12" lg="12" sm="12" class="mt-0 px-0">
+               <v-container fluid class="px-2 py-0">
+                   <v-row v-if="showLoader" class="">
                        <v-col v-for="i in 4" :key="i" md="3" lg="3" sm="6" cols="6" class="pa-2">
                            <v-sheet
                                 :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`"
@@ -86,7 +86,6 @@ import { mapState } from 'vuex'
                 service.getAllMeetupPastEvents(this.config.keysandsecurity.meetup).then(res=>{
                     if(res.success){
                         this.eventsData = res.data
-                        console.log(this.eventsData.slice(0,4))
                         this.showLoader = false;
                     }else{
                         this.notFoundEventFlag = true;

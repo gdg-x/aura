@@ -25,8 +25,8 @@
 
 export default {
   components: {
-    BlogsHeader:()=>import('@/components/Blogs/BlogsHeader'),
-    BlogsDetails:()=>import('@/components/Blogs/BlogsDetails'),
+    BlogsHeader:()=>import('@/components/blogs/BlogsHeader'),
+    BlogsDetails:()=>import('@/components/blogs/BlogsDetails'),
   },
 };
 </script>

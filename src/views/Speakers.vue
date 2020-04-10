@@ -4,10 +4,9 @@
       <v-row
         justify="center"
         align="center"
-        class="py-3"
-        :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
+        class="pt-3"
       >
-        <v-col md="12" lg="10" sm="11" xs="12" class="pt-3 bottom-space">
+        <v-col md="12" lg="10" sm="11" xs="12" class="pt-3 ">
           <SpeakerHeader />
         </v-col>
       </v-row>
@@ -17,10 +16,10 @@
       <v-row
         justify="center"
         align="center"
-        class="py-3"
+        class="pb-3"
         :class="this.$vuetify.theme.dark == true?'black':''"
       >
-        <v-col md="12" lg="10" sm="11" xs="12" class="pt-3" v-if="SpeakersData.length>0">
+        <v-col md="12" lg="10" sm="11" xs="12" class="pt-0" v-if="SpeakersData.length>0">
           <v-container fluid class="py-0 my-0">
             <v-row align="center" justify="center" class="py-0 my-0">
               <v-col cols="12" md="12" lg="12" sm="12" class="py-0 my-0">
@@ -30,12 +29,14 @@
                     lg="2"
                     sm="3"
                     cols="6"
-                    class="pa-1 mb-0"
                     style="text-align:center"
+                    class="px-2"
                     v-for="(item,i) in SpeakersData"
                     :key="i"
                   >
-                    <SpeakerView :da="item" />
+                    <div class="py-5" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
+                      <SpeakerView :da="item" />
+                    </div>
                   </v-col>
                 </v-row>
               </v-col>
@@ -46,9 +47,16 @@
           <v-container fluid class>
             <v-row>
               <v-col md="2" lg="2" sm="3" cols="6" v-for="i in 6" :key="i">
-                <v-sheet :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`" class="text-center">
-                  <v-skeleton-loader class="mx-auto pa-3 " max-width="300" type="avatar, text@3"></v-skeleton-loader>
-                </v-sheet>
+                 <v-sheet
+                      :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`"
+                      class=""
+                  >
+                      <v-skeleton-loader
+                      class="mx-auto"
+                      max-width="300"
+                      type="card"
+                      ></v-skeleton-loader>
+                  </v-sheet>
               </v-col>
             </v-row>
           </v-container>

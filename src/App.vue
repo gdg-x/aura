@@ -10,6 +10,7 @@
     </v-snackbar>
     <Toolbar />
     <Drawer />
+    <BottomNav/>
     <v-content class="fill-height" v-if="isLoading">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
@@ -31,6 +32,7 @@ export default {
   name: "App",
   components: {
     Toolbar:()=>import('@/components/core/Toolbar'),
+    BottomNav:()=>import('@/components/core/BottomNav'),
     Drawer:()=>import('@/components/core/Drawer'),
     Views:()=>import('@/components/core/Views'),
     Footer:()=>import('@/components/core/Footer')
@@ -93,7 +95,6 @@ export default {
       this.isLoading = true;
       service.getAllConfig().then(res => {
         if (res.success) {
-          console.log(res);
           res.data.forEach(ele => {
             if (ele.name == "footer") this.setFooterConfig(ele.data.links);
             else if (ele.name == "general") this.setGeneralConfig(ele.data);

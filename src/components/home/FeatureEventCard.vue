@@ -4,33 +4,22 @@
       width="800"
     >
       <template v-slot:activator="{ on }">
-          <div 
-            v-on="on" 
-            style="cursor: pointer;"
-            :class="$vuetify.theme.dark == true?'darkModeCardFeatureEvent':'lightModeCardFeatureEvent'" 
-            class="pa-3">
-                <v-container fluid>
-                    <v-row>
-                        <v-col cols="12" md="12">
-                            <p class="google-font mb-0" style="font-size:95%">
-                                {{data.date}}
-                            </p>
-                            <p class="google-font mb-0" style="font-size:150%">{{data.name}}</p>
-                            <p class="google-font mb-0" style="font-size:90%">{{data.venue.name}}</p>
-                            <!-- <p class="google-font">{{data.data.EventTime.StartTime}} - {{data.data.EventTime.EndTime}}</p> -->
-
-                            <!-- <p class="google-font">{{data.data.EventDescription}}</p> -->
-
-                            <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
-                        </v-col>
-                    </v-row>
-                </v-container>
-                
-
-          </div>
+        <div 
+          v-on="on" 
+          style="cursor: pointer;"
+          :class="$vuetify.theme.dark == true?'darkModeCardFeatureEvent':'lightModeCardFeatureEvent'" 
+          class="pa-3 py-5"
+          >
+            <p class="google-font mb-0" style="font-size:90%">
+                {{data.date | dateFilter}}
+            </p>
+            <p class="google-font mb-0" style="font-size:120%">{{data.name}}</p>
+            <p class="google-font mb-0" style="font-size:90%">{{data.venue.name | summary(20)}}</p>
+            <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
+                      
+        </div>
       </template>
-<!-- :style="{'background-image':'url('+require('@/assets/img/svg/footer.svg')+')'}" -->
-      <v-card color="" v-if="dialog" class="" style="border-radius:10px">
+      <v-card color="" v-if="dialog" class="" style="border-radius:5px" :class="this.$vuetify.theme.dark == true?'grey darken-3':'white'">
         <v-card-title
           class="px-5 py-5 google-font"
           style="background-position:right bottom;"
@@ -59,30 +48,6 @@
           <v-btn color="pink" target="_blank" @click="goToEvent(data.id)" class="ma-0 elevation-0 my-2 mr-3" dark style="text-transform: capitalize;"> 
             Event Page
           </v-btn>
-
-
-
-          <!-- Website Button -->
-          <!-- <v-tooltip bottom  v-if="data.data.Links.EventWebsite.length>0">
-            <template v-slot:activator="{ on }">
-              <v-btn text icon v-on="on" :href="data.data.Links.EventWebsite" target="_blank" style="text-transform: capitalize;">
-                <v-icon>mdi-web</v-icon>
-              </v-btn>
-            </template>
-            <span>See More {{data.data.FeatureEventName}} Website</span>
-          </v-tooltip> -->
-          <!-- Website Button -->
-
-          <!-- Facebook Button -->
-          <!-- <v-tooltip bottom  v-if="data.data.Links.FBEventPageURL.length>0">
-            <template v-slot:activator="{ on }">
-              <v-btn text icon v-on="on" :href="data.data.Links.FBEventPageURL" target="_blank" style="text-transform: capitalize;">
-                <v-icon>mdi-facebook</v-icon>
-              </v-btn>
-            </template>
-            <span>See More {{data.data.FeatureEventName}} Website</span>
-          </v-tooltip> -->
-      
         </v-card-text>
 
         <v-divider></v-divider>
@@ -114,6 +79,23 @@
         goToEvent(id){
             this.$router.push("/events/" + id)
         },
+    },
+    filters:{
+      summary: (val,num)=>{
+          if(val.length > num){
+            return val.substring(0,num)+".."
+          }else{
+            return val
+          }
+        },
+        dateFilter: value => {
+            const date = new Date(value);
+            return date.toLocaleString(["en-US"], {
+                month: "short",
+                day: "2-digit",
+                year: "numeric"
+            });
+        }
     }
   }
 </script>
@@ -130,6 +112,6 @@
     box-shadow: 0 0 36px rgba(0,0,0,0.1);
     /* border:1px solid #212121; */
     border: 1px solid #424242;
-    border-radius:8px
+    border-radius:5px
   }
 </style>

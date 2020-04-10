@@ -47,7 +47,7 @@ export default new Vuex.Store({
         icon: 'mdi-assistant',
         meta: {
           showToolbar: true,
-          showBottomNav: true
+          showBottomNav: false
         },
       },
       {

@@ -58,7 +58,7 @@ import service from '@/services/appservices'
 export default {
     inject: ['theme'],
     components:{
-        BlogCard:()=>import('@/components/Blogs/BlogCard')
+        BlogCard:()=>import('@/components/blogs/BlogCard')
     },
     data() {
         return {

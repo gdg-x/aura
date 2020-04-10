@@ -1,10 +1,6 @@
 import firebase from '@/config/firebase'
 
 let appservice = {
-  testfun: (a) => {
-    console.log('Test Works ' + a)
-  },
-
   getTeam: () => {
     let team = []
     return new Promise((resolve, reject) => {
@@ -68,7 +64,6 @@ let appservice = {
       firebase.firestore.collection("events")
         .get()
         .then(doc => {
-          console.log(doc)
           if (doc.empty) {
             resolve({
               success: false,
