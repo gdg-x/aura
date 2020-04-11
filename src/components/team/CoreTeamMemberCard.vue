@@ -7,8 +7,8 @@
           <div v-on="on" style="cursor: pointer;" class="text-center py-5 ma-1" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
               <v-avatar size="100">
                   <img 
-                    :src="data.image"
-                    :lazy-src="data.image" alt=""
+                    :src="getImgUrl(data.image)"
+                    :lazy-src="getImgUrl(data.image)" alt=""
                   >
                 </v-avatar>
                 <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{data.name}}</p>
@@ -78,6 +78,13 @@ import socialMediaDetails from '@/components/common/SocialInfo'
           }
           else{
               return (splitArr[0].substring(0,1)).toUpperCase()
+          }
+      },
+      getImgUrl(pic) {
+          if (pic.length > 0) {
+              return pic;
+          } else {
+              return require('@/assets/img/dontremove/profile.jpg');
           }
       },
     },

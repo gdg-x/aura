@@ -6,27 +6,16 @@
           <v-icon>mdi-bell</v-icon>
         </v-btn>
       </template>
-
       <v-card>
         <v-card-title>Allow Us to send Push Notification</v-card-title>
-
         <v-card-text>
           <p>We never spam you by sending Notification.</p>
-          <!-- <v-progress-circular
-            :size="50"
-            v-if="isLoading"
-            :width="5"
-            indeterminate
-            :color="this.$vuetify.theme.dark?'':'#ce1013'"
-          ></v-progress-circular> -->
           <p>
             <span class="font-weight-bold text--primary">Status:</span>
             {{ token }}
           </p>
         </v-card-text>
-
         <v-divider></v-divider>
-
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn
@@ -149,7 +138,7 @@ export default {
   mounted() {
     let token = localStorage.getItem("pushNotificationToken");
     if (token == null || token.length > 0) {
-      this.token = token;
+      this.token = "Already Subscribed";
       this.buttonText == "Allowed";
     }
   }

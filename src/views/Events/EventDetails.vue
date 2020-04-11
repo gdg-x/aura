@@ -12,7 +12,7 @@
 
     <v-container fluid class="px-0 pt-5 mt-3 py-0">
       <v-row justify="center" align="center" class="py-3 pb-5" >
-        <v-col v-if="loader" md="12" class="card-top-margin elevation-2 pa-0 text-center">
+        <v-col v-if="loader" md="12" class="card-top-margin elevation-0 pa-0 text-center">
             <v-progress-circular
               :size="50"
               color="primary"
@@ -42,24 +42,20 @@ export default {
   },
   mounted(){
     this.getEventInfo()
-    // EventsData.map(res=>{
-    //     if(res.id == this.$route.params.id){
-    //         this.notFound = 1;
-    //         this.EventData = res
-    //     }
-    // })
-    // if(this.notFound != 1)
-    //   this.$router.push({ path: '/events' })
   },
   methods:{
     getEventInfo(){
       this.loader = true
       this.EventData = {}
       service.getEvent(this.$route.params.id).then(res=>{
-          console.log(res)
           if(res.success){
-            this.EventData=res.data
-            this.loader = false
+            if(res.data.visible){
+              this.EventData=res.data
+              this.loader = false
+            }else{
+              this.$router.push({ path: '/events' })
+              this.loader = false
+            }
           }else{
             this.$router.push({ path: '/events' })
             this.loader = false

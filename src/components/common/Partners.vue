@@ -20,8 +20,8 @@
                     <v-tooltip bottom>
                     <template v-slot:activator="{ on }">
                         <v-img
-                        :src="itemp.image.length?itemp.image:'https://afmec.org/images/no-image-available-icon.jpg'"
-                        :lazy-src="itemp.image.length?itemp.image:'https://afmec.org/images/no-image-available-icon.jpg'"
+                        :src="getImgUrl(itemp.image)"
+                        :lazy-src="getImgUrl(itemp.image)"
                         class="white"
                         contain
                         style="height:4em"
@@ -55,8 +55,8 @@
                     <v-tooltip bottom>
                     <template v-slot:activator="{ on }">
                         <v-img
-                        :src="require('@/assets/img/partners/gdgjalandhar.webp')"
-                        :lazy-src="require('@/assets/img/partners/gdgjalandhar.webp')"
+                        :src="require('@/assets/img/dontremove/gdgjalandhar.webp')"
+                        :lazy-src="require('@/assets/img/dontremove/gdgjalandhar.webp')"
                         class="white"
                         contain
                         style="height:4em"
@@ -103,7 +103,14 @@ export default {
                     this.partnersData = res.data.filter(data=>data.visible)
                 }
             })
-        }
+        },
+        getImgUrl(pic) {
+          if (pic.length > 0) {
+              return pic;
+          } else {
+              return require('@/assets/img/dontremove/noimage.jpg');
+          }
+        },
     }
 }
 </script>

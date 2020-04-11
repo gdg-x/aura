@@ -9,7 +9,11 @@
         <v-card-title
           class="grey lighten-4 google-font"
           primary-title
+<<<<<<< HEAD
           :style="{'background-image':'url(https://iambharat.tk/images/backImage.jpg)'}"
+=======
+          :style="{'background-image':'url('+ require('@/assets/img/dontremove/spakerhead.jpg') +')'}"
+>>>>>>> b867da114153756193baaf8a779f60851e519546
           style="background-position:right top;padding-top:25%;"
         ></v-card-title>
 
@@ -19,7 +23,11 @@
               <v-col cols="12" class="text-center pa-2">
                   <v-avatar size="150">
                     <v-img
+<<<<<<< HEAD
                       :src="getImgUrl(speaker.image)"
+=======
+                      :src="speaker.image.length?speaker.image:require('@/assets/img/dontremove/profile.jpg')"
+>>>>>>> b867da114153756193baaf8a779f60851e519546
                       style="border-style: solid;border-width: 5px;"
                       :style="{'border-color':this.$vuetify.theme.dark?'#424242':'white'}"
                     >
@@ -45,6 +53,18 @@
               </v-col>
               <v-col class="pa-2" cols="12" sm="8">
                 <p class="google-font my-4" style="font-size:110%">{{speaker.bio}}</p>
+<<<<<<< HEAD
+=======
+                <v-chip-group
+                    column
+                  > 
+                    <div v-for="(slink,i) in speaker.socialLinks" :key="i">
+                    <v-chip v-if="slink" :href="slink" 
+                     small ripple target="_blank" style="text-transform: uppercase;">{{i}}</v-chip>
+                    </div>
+
+                </v-chip-group>
+>>>>>>> b867da114153756193baaf8a779f60851e519546
               </v-col>
             </v-row>
           </v-container>
@@ -52,6 +72,23 @@
           <p class="my-0 google-font mt-2" style="font-size:120%">
             <b>Sessions:</b>
           </p>
+<<<<<<< HEAD
+=======
+
+  <v-container fluid class="pa-0 ma-0">
+    <v-row v-if="loader" justify="center" align="center">
+      <v-col md="12" lg="10" sm="11" xs="12" class="text-center">
+        <v-progress-circular :size="50" color="primary" indeterminate></v-progress-circular>
+      </v-col>
+    </v-row>
+    <v-card v-else-if="Object.keys(speaker).length>0" flat class="ma-0 pa-0" color="transparent">
+      <v-card-title
+        class="grey lighten-4 google-font"
+        primary-title
+        :style="{'background-image':'url(https://iambharat.tk/images/backImage.jpg)'}"
+        style="background-position:right top;padding-top:25%;"
+      ></v-card-title>
+>>>>>>> b867da114153756193baaf8a779f60851e519546
 
           <v-row align="center">
             <v-col cols="12" md="6" v-for="(sess,i) in events" :key="i">
@@ -176,13 +213,6 @@ export default {
           this.loader = false;
           console.log(e);
         });
-    },
-    getImgUrl(pic) {
-      try {
-        return pic;
-      } catch (e) {
-        return require("@/assets/logo.png");
-      }
     },
     getCharString(data) {
       var splitArr = data.split(" ");
