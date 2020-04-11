@@ -9,17 +9,20 @@
                 <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.linkedin.length>0" :href="data.linkedin" target="_blank">
                     <v-icon small style="color:#0077b5">mdi-linkedin</v-icon>
                 </v-btn>
-                <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.facebook.length>0" :href="data.facebook" target="_blank">
-                    <v-icon small style="color:#0077b5">mdi-facebook</v-icon>
-                </v-btn>
                 
                 <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.github.length>0" :href="data.github" target="_blank">
-                    <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-github</v-icon>
+                    <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-github-circle</v-icon>
                 </v-btn>
+                
+                <!-- <br class="hidden-sm-and-up"> -->
 
-                <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.web.length>0" :href="data.web" target="_blank">
+                <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.website.length>0" :href="data.website" target="_blank">
                     <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-link-variant</v-icon>
                 </v-btn>
+
+                <!-- <v-btn aria-label="social media btn" small class="mt-0 mx-0" icon v-if="data.medium" :href="data.medium" target="_blank">
+                    <v-icon small style="color:#1da1f2">fab fa-medium</v-icon>
+                </v-btn> -->
             </v-col>
         </v-row>
     </v-container>
