@@ -150,12 +150,10 @@
 
 <script>
 import service from "@/services/appservices";
-import SocialMediaDetails from '@/components/common/SocialInfo'
 
 export default {
   name: "SpeakerDesktop",
   components:{
-    // SocialInfo:()=>import('@/components/common/SocialInfo')
   },
   data: () => ({
     speaker: {},
@@ -165,7 +163,6 @@ export default {
     eventLoader: false
   }),
   components:{
-    SocialMediaDetails
   },
   mounted() {
     this.details(this.$route.params.id);

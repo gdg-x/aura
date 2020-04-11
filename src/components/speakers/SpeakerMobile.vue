@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
     <v-container fluid class="pa-0 ma-0">
       <v-row v-if="loader" justify="center" align="center">
         <v-col md="12" lg="10" sm="11" xs="12" class="text-center">
@@ -62,7 +61,7 @@
           <p class="my-0 google-font mt-2" style="font-size:120%">
             <b>Sessions:</b>
           </p>
-=======
+
   <v-container fluid class="pa-0 ma-0">
     <v-row v-if="loader" justify="center" align="center">
       <v-col md="12" lg="10" sm="11" xs="12" class="text-center">
@@ -76,7 +75,6 @@
         :style="{'background-image':'url(https://iambharat.tk/images/backImage.jpg)'}"
         style="background-position:right top;padding-top:25%;"
       ></v-card-title>
->>>>>>> eeedf358a74848cd9443127107ecffe25ea05622
 
       <v-card-text class="px-5 pb-5" style="margin-top: -90px;">
         <v-container fluid class="my-0 pa-0">
