@@ -42,7 +42,7 @@
               <v-tooltip top>
                  <template v-slot:activator="{ on }">
                     <v-btn text icon v-on="on" :href="config.generalConfig.socialLinks.github" target="_blank" slot="activator">
-                      <v-icon>mdi-github</v-icon>
+                      <v-icon>mdi-github-circle</v-icon>
                     </v-btn>
                  </template>
                   <span>Github</span>

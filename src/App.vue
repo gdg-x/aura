@@ -11,7 +11,7 @@
     <Toolbar />
     <Drawer />
     <BottomNav/>
-    <v-content class="fill-height" v-if="isLoading">
+    <v-content class="" v-if="isLoading">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
