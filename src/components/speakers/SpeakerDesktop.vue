@@ -47,6 +47,9 @@
                         >{{speaker.company.name}}</p>
                         <p class="google-font my-0">{{ speaker.city }}, {{ speaker.country }}</p>
                       </v-col>
+                      <v-col cols="12"  class="text-center mt-0 pt-0">
+                        <SocialMediaDetails :data="speaker.socialLinks"/>
+                      </v-col>
                     </v-row>
                   </v-container>
                 </v-card-text>
@@ -147,6 +150,7 @@
 
 <script>
 import service from "@/services/appservices";
+import SocialMediaDetails from '@/components/common/SocialInfo'
 
 export default {
   name: "SpeakerDesktop",
@@ -160,6 +164,9 @@ export default {
     notFound: false,
     eventLoader: false
   }),
+  components:{
+    SocialMediaDetails
+  },
   mounted() {
     this.details(this.$route.params.id);
     this.getevents(this.$route.params.id);
