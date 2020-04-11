@@ -23,7 +23,7 @@ export default {
       if (pic.length > 0) {
         return pic;
       } else {
-        return require("@/assets/logo.png");
+        return require('@/assets/img/dontremove/profile.jpg');
       }
     },
     getCharString(data) {
