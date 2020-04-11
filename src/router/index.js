@@ -111,7 +111,16 @@ const routes = [
       title:'Blogs ',
       color:'#0277bd',
     }
-  }
+  },
+  {
+      path: '*',
+      name: 'redirect',
+      redirect: { path: '/' },
+      meta:{
+        title:`Redirect `,
+        color:"#0277bd",
+      }
+    },
 ]
 
 const router = new VueRouter({
