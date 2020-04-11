@@ -66,7 +66,7 @@
           <v-container fluid class="pa-0 my-0">
             <!-- Links Section -->
 
-            <v-row align="center" justify="start" class="">
+            <v-row justify="start" class="">
               <v-col cols="12" md="3" lg="3" sm="3" class="py-2" >
                   <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;"><b>About</b></p>
                   <div v-for="(item,i) in config.footerConfig['About']" :key="i">
