@@ -20,7 +20,7 @@
             :color="this.$vuetify.theme.dark?'':'#ce1013'"
           ></v-progress-circular>
           <p>
-            <span class="font-weight-bold text--primary">Token:</span>
+            <span class="font-weight-bold text--primary">Status:</span>
             {{ token }}
           </p>
         </v-card-text>
@@ -78,8 +78,9 @@ export default {
                           token: currentToken
                         })
                         .then(() => {
-                          this.token = currentToken;
-                          alert("SuccessFully Subscribed");
+                          this.token = "Successfully Subscribed";
+                          // alert("SuccessFully Subscribed");
+                          this.displayNotificaion();
                           localStorage.setItem(
                             "pushNotificationToken",
                             currentToken
@@ -92,7 +93,7 @@ export default {
                           this.isLoading = false;
                         });
                     } else {
-                        this.isLoading = false;
+                      this.isLoading = false;
                       this.token =
                         "No Instance ID token available. Request permission to generate one.";
                     }
@@ -102,22 +103,45 @@ export default {
                     this.token = err;
                   });
               } else {
-                this.token = token;
+                this.token = "Already Subscribed";
+                this.isLoading = false;
                 this.buttonText = "Allowed";
               }
             } else {
+              this.isLoading = false;
               this.token = "Unable to get permission to notify.";
             }
-            this.isLoading = false;
           });
-        }else{
-            this.token ="We Don't Support your browser"
+        } else {
+          this.isLoading = false;
+          this.token = "We Don't Support your browser";
         }
       } catch (err) {
         // alert(err);
         this.isLoading = false;
         this.token = err;
         console.log(err);
+      }
+    },
+    displayNotificaion() {
+      if ("serviceWorker" in navigator) {
+        var options = {
+          body: "You Successfully Subscribed to Push Notifications",
+          icon: "img/icons/favicon-32x32.png",
+          dir: "ltr",
+          badge: "img/icons/favicon-32x32.png",
+          tag: "NewSubscription",
+          renotify: true,
+          actions: [
+            {
+              action: "open",
+              title: "Visite Site"
+            }
+          ]
+        };
+        navigator.serviceWorker.ready.then(function(swreg) {
+          swreg.showNotification("Successfully Subscribed", options);
+        });
       }
     }
   },
