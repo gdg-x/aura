@@ -86,8 +86,8 @@ export default {
 <style scoped>
   .whiteText{
     color:white
-  }
+  } 
   .blackText{
     color: rgba(0,0,0,.87);
-  }
+  } 
 </style>
