@@ -29,16 +29,16 @@
                        </v-col>
                    </v-row>
                    <v-row v-else class="py-0 my-0 px-2">
-                       <v-col v-for="(item,i) in FeaturesEventID" :key="i" md="3" lg="3" sm="6" cols="6" class="pa-1 " >
-                           <div v-for="(itemp,j) in AllCustomEvents" :key="j" class="pa-0 ma-0">
-                               <div v-if="itemp.id == item" class="pa-0 ma-0">
-                                   <featureEventCard :data="itemp"/>
-                               </div>
-                           </div>
-                       </v-col>
+                        <v-col v-for="(item,i) in FeaturesEventID" :key="i" md="3" lg="3" sm="6" cols="6" class="pa-1 " >
+                            <div v-for="(itemp,j) in AllCustomEvents" :key="j" class="pa-0 ma-0">
+                                <div v-if="itemp.id == item" class="pa-0 ma-0">
+                                    <featureEventCard :data="itemp"/>
+                                </div>
+                            </div>
+                        </v-col>
                    </v-row>
 
-                   <v-row class="py-0 my-0" v-if="notFound || FeaturesEventID.length==0">
+                   <v-row class="py-0 my-0" v-if="notFound">
                        <v-col md="3" lg="3" sm="6" cols="12" :class="$vuetify.theme.dark == true?'darkModeCardFeatureEvent':'lightModeCardFeatureEvent'" class="pa-4 px-5 mx-3" >
                           <p class="google-font my-2">Not Found</p>
                        </v-col>
@@ -62,7 +62,8 @@ import service from '@/services/appservices'
             loading:true,
             notFound:false,
             FeaturesEventID:[],
-            AllCustomEvents:[]
+            AllCustomEvents:[],
+            eData:[]
         }),
         mounted(){
             this.getFeaturesEventID()
@@ -78,6 +79,7 @@ import service from '@/services/appservices'
                     }
                 })
             },
+            
             getFeaturesEventID(){
                 service.getFeaturesEvents().then(res=>{
                     if(res.success){

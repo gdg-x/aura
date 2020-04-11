@@ -23,7 +23,7 @@
               </template>
           </v-img>
           <div class="pa-3" >
-            <p class="google-font ma-0 mt-2" style="font-size:120%;" >{{data.data.title | summary(28) }}</p>
+            <p class="google-font ma-0 mt-2" style="font-size:110%;" >{{data.data.title | summary(20) }}</p>
             <p class="google-font mt-0 mb-0" style="font-size:90%;">{{data.data.pubDate}}</p>
             <p class="google-font mt-0 mb-4" style="font-size:90%;">{{data.data.author }}</p>
             <!-- <v-chip x-small v-for="(item,i) in data.data.categories" outlined :key="i">{{item}}</v-chip> -->

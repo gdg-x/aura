@@ -14,7 +14,7 @@
             <v-col cols="12" md="12" lg="12" sm="12" class="mx-0 mt-0">
                 <p class="google-font mb-0" style="font-size:130%">General Partners</p>
             </v-col>
-            <v-col cols="6" md="6" lg="2" sm="4"  v-for="(itemp,i) in partnersData" :key="i">
+            <v-col cols="6" md="4" xl="3" lg="2" sm="3"  v-for="(itemp,i) in partnersData" :key="i">
                 <div class="client-logo ma-0">
                 <a v-bind:href="itemp.socialLinks.linkedin" target="_blank">
                     <v-tooltip bottom>
@@ -49,7 +49,7 @@
             <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5">
                 <p class="google-font mb-0" style="font-size:130%">Template Creator</p>
             </v-col>
-            <v-col cols="6" md="6" lg="2" sm="4">
+            <v-col cols="6" md="4" lg="2" xl="3" sm="3">
                 <div class="client-logo ma-0">
                 <a href="https://gdgjalandhar.com" target="_blank">
                     <v-tooltip bottom>

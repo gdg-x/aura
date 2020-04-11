@@ -27,7 +27,7 @@
                 
                 <!-- Mobile Loader -->
                 <v-row class="mb-5 d-md-none d-lg-none" v-if="loader">
-                    <v-col md="3" lg="3" sm="4" cols="12" class="pa-2 text-center" v-for="(item,i) in 3" :key="i">
+                    <v-col md="3" lg="3" xl="3" sm="4" cols="12" class="pa-2 text-center" v-for="(item,i) in 3" :key="i">
                         <v-skeleton-loader
                             ref="skeleton"
                             type="article"
@@ -39,7 +39,7 @@
 
                 <v-row class="mb-5" v-else>
                     <!-- {{blogsData}} -->
-                    <v-col md="3" lg="3" sm="6" cols="12" class="pa-2" v-for="(item,i) in blogsData.items" :key="i">
+                    <v-col md="3" lg="2" sm="6" cols="12" class="pa-2" v-for="(item,i) in blogsData.items" :key="i">
                         <BlogCard :data="{data:item}" /> 
                         <!-- {{item}} -->
                     </v-col>

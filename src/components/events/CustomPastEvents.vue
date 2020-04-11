@@ -24,9 +24,7 @@
                             class="mr-2"
                         ></v-text-field>
                     </v-col>
-                
                 </v-row>
-                
                     
                 <v-data-table
                     class="mt-3"
@@ -42,13 +40,8 @@
                         {{item.name}}
                     </template>
 
-                    <template v-slot:item.status="{ item }">
-                        <v-chip small v-if="item.status == 'past'" dark color="red">Past</v-chip>
-                        <v-chip v-else small dark color="green">Upcoming</v-chip>
-                    </template>
-
-                    <template v-slot:item.link="{ item }">
-                        <a :href="item.link" target="_blank">See More</a>
+                    <template v-slot:item.action="{ item }">
+                        <a :href="'/events/'+item.id" target="_blank">See More</a>
                     </template>
                 </v-data-table>
             </v-col>
@@ -80,18 +73,18 @@ import { mapState } from 'vuex'
                     align: 'start',
                     value: 'name',
                 },
-                { text: 'Date', value: 'local_date' },
-                { text: 'Status', value: 'status' },
-                { text: 'See More', value: 'link' },
+                { text: 'Date', value: 'date' },
+                { text: 'Venue', value: 'venue.name' },
+                { text: 'See More', value: 'action' },
             ],
         }),
         mounted(){
-            this.getAllMeetupPastEvents()
+            this.getAllEvents()
         },
         methods:{
-            getAllMeetupPastEvents(){
+            getAllEvents(){
                 this.isLoading = true
-                service.getAllMeetupPastEvents(this.config.keysandsecurity.meetup).then(res=>{
+                service.getAllEvents().then(res=>{
                     if(res.success){
                         this.eventsData = res.data
                         this.isLoading = false

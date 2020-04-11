@@ -25,7 +25,7 @@
       </v-row>
     </v-container>
 
-     <v-container fluid class="pa-0 py-2" >
+     <v-container fluid class="pa-0 py-2" v-if="config.keysandsecurity.meetup.length>0">
       <v-row justify="center" align="center">
         <v-col md="12" sm="11" lg="10" xs="12" class="py-0">
           <events />
@@ -33,7 +33,7 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="pa-0 py-0" >
+    <v-container fluid class="pa-0 py-0" v-if="showFeatureEventStatus">
       <v-row justify="center" align="center" class="py-5" :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
         <v-col md="12" sm="11" lg="10" xs="12" class="py-0">
           <featureEvents />
@@ -48,12 +48,21 @@
         </v-col>
       </v-row>
     </v-container>
+    <v-container fluid class="pa-0 py-2 hidden-md-and-up" >
+      <v-row justify="center" align="center">
+        <v-col md="12" lg="10" xs="12" class="py-0">
+          <br><br>
+        </v-col>
+      </v-row>
+    </v-container>
 
   </v-content>
   
 </template>
 
 <script>
+import service from '@/services/appservices'
+import { mapState } from "vuex";
 export default {
   name: 'Home',
   components: {
@@ -64,10 +73,28 @@ export default {
     featureEvents:()=>import('@/components/home/FeaturesEvents'),
     partners:()=>import('@/components/common/Partners')
   },
+  data:()=>({
+    showFeatureEventStatus:false
+  }),
   mounted(){
   },
+  computed:{
+    ...mapState(["config"])
+  },
   methods:{
-     
+    getFeaturesEventID(){
+      service.getFeaturesEvents().then(res=>{
+          if(res.success){
+            if(res.data.length>0){
+              this.showFeatureEventStatus = true
+            }else{
+              this.showFeatureEventStatus = false
+            }
+          }else{
+              this.notFound = true
+          }
+      })
+    }
   }
 }
 </script>
