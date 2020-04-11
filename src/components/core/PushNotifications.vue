@@ -12,13 +12,13 @@
 
         <v-card-text>
           <p>We never spam you by sending Notification.</p>
-          <!-- <v-progress-circular
+          <v-progress-circular
             :size="50"
             v-if="isLoading"
             :width="5"
             indeterminate
             :color="this.$vuetify.theme.dark?'':'#ce1013'"
-          ></v-progress-circular> -->
+          ></v-progress-circular>
           <p>
             <span class="font-weight-bold text--primary">Status:</span>
             {{ token }}
@@ -32,7 +32,6 @@
           <v-btn
             color="primary"
             text
-            :loading="isLoading"
             :disabled="buttonText=='Allowed'"
             @click="requestPermission"
           >{{ buttonText }}</v-btn>
