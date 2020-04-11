@@ -47,6 +47,9 @@
                         >{{speaker.company.name}}</p>
                         <p class="google-font my-0">{{ speaker.city }}, {{ speaker.country }}</p>
                       </v-col>
+                      <v-col cols="12"  class="text-center mt-0 pt-0">
+                        <SocialMediaDetails :data="speaker.socialLinks"/>
+                      </v-col>
                     </v-row>
                   </v-container>
                 </v-card-text>
@@ -58,15 +61,6 @@
                 <v-card-title class="google-font">About:</v-card-title>
                 <v-card-text>
                   <p class="google-font" style="font-size:90%">{{speaker.bio}}</p>
-                  <v-chip-group
-                    column
-                  > 
-                    <div v-for="(slink,i) in speaker.socialLinks" :key="i">
-                    <v-chip v-if="slink" :href="slink" 
-                     small ripple target="_blank" style="text-transform: uppercase;">{{i}}</v-chip>
-                    </div>
-
-                  </v-chip-group>
                 </v-card-text>
               </v-card>
             </v-col>
@@ -147,10 +141,13 @@
 
 <script>
 import service from "@/services/appservices";
+import SocialMediaDetails from '@/components/common/SocialInfo'
+
 
 export default {
   name: "SpeakerDesktop",
   components:{
+    SocialMediaDetails
   },
   data: () => ({
     speaker: {},
