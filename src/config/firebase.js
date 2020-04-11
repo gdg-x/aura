@@ -15,7 +15,7 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-
+firebase.firestore().enablePersistence({synchronizeTabs:!0}).catch(()=>{console.warn("DB offline support not available")})
 export default{
   notificationSupported:firebase.messaging.isSupported(),
   messaging: (firebase.messaging.isSupported())?firebase.messaging():null,
