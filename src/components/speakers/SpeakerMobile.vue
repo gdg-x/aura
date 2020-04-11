@@ -1,4 +1,67 @@
 <template>
+    <v-container fluid class="pa-0 ma-0">
+      <v-row v-if="loader" justify="center" align="center">
+        <v-col md="12" lg="10" sm="11" xs="12" class="text-center">
+          <v-progress-circular :size="50" color="primary" indeterminate></v-progress-circular>
+        </v-col>
+      </v-row>
+      <v-card v-else-if="Object.keys(speaker).length>0" flat class="ma-0 pa-0" color="transparent">
+        <v-card-title
+          class="grey lighten-4 google-font"
+          primary-title
+          :style="{'background-image':'url('+ require('@/assets/img/dontremove/spakerhead.jpg') +')'}"
+          style="background-position:right top;padding-top:25%;"
+        ></v-card-title>
+
+        <v-card-text class="px-5 pb-5" style="margin-top: -90px;">
+          <v-container fluid class="my-0 pa-0">
+            <v-row align="center">
+              <v-col cols="12" class="text-center pa-2">
+                  <v-avatar size="150">
+                    <v-img
+                      :src="speaker.image.length?speaker.image:require('@/assets/img/dontremove/profile.jpg')"
+                      style="border-style: solid;border-width: 5px;"
+                      :style="{'border-color':this.$vuetify.theme.dark?'#424242':'white'}"
+                    >
+                      <template v-slot:placeholder>
+                        <v-row class="fill-height ma-0" align="center" justify="center">
+                          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                        </v-row>
+                      </template>
+                    </v-img>
+                  </v-avatar>
+                <p
+                  class="my-0 mt-3 google-font"
+                  style="font-size:150%;"
+                  :style="{color:this.$vuetify.theme.dark?'white':'#424242'}"
+                >{{speaker.name}}</p>
+                <p class="google-font my-0" style="font-size:110%">{{ speaker.designation }}</p>
+                <p
+                  class="my-0 google-font"
+                  style="font-size:110%"
+                  :style="{color:this.$vuetify.theme.dark?'white':'#424242'}"
+                >{{speaker.company.name}}</p>
+                <p class="google-font my-0">{{ speaker.city }}, {{ speaker.country }}</p>
+              </v-col>
+              <v-col class="pa-2" cols="12" sm="8">
+                <p class="google-font my-4" style="font-size:110%">{{speaker.bio}}</p>
+                <v-chip-group
+                    column
+                  > 
+                    <div v-for="(slink,i) in speaker.socialLinks" :key="i">
+                    <v-chip v-if="slink" :href="slink" 
+                     small ripple target="_blank" style="text-transform: uppercase;">{{i}}</v-chip>
+                    </div>
+
+                </v-chip-group>
+              </v-col>
+            </v-row>
+          </v-container>
+
+          <p class="my-0 google-font mt-2" style="font-size:120%">
+            <b>Sessions:</b>
+          </p>
+
   <v-container fluid class="pa-0 ma-0">
     <v-row v-if="loader" justify="center" align="center">
       <v-col md="12" lg="10" sm="11" xs="12" class="text-center">
@@ -183,13 +246,6 @@ export default {
           this.loader = false;
           console.log(e);
         });
-    },
-    getImgUrl(pic) {
-      try {
-        return pic;
-      } catch (e) {
-        return require("@/assets/logo.png");
-      }
     },
     getCharString(data) {
       var splitArr = data.split(" ");

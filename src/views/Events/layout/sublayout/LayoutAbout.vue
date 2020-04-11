@@ -11,11 +11,9 @@
                             <v-chip class="mr-1" label small>{{item}}</v-chip>
                         </span>
                         
-                        <!-- {{aboutData}} -->
-
                         <p class="google-font mb-0 mt-3"><b>Date:</b> {{data.date}}</p>
                         <p class="google-font my-0"><b>Time: </b> {{data.time.starttime}} - {{data.time.endtime}}</p>
-                        <p class="google-font my-0"><b>Vanue: </b> <a :href="data.venue.googlemapslink">{{data.venue.name}}</a></p>
+                        <p class="google-font my-0"><b>Vanue: </b> <a target="_blank" :href="data.venue.googlemapslink">{{data.venue.name}}</a></p>
 
                         <div class="mt-4 pb-5">
                             <p class="google-font mb-0"><b>Important Links</b></p>

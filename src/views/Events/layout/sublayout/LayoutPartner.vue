@@ -6,45 +6,38 @@
                 <v-row class="pa-0" align="center" >
                     <v-col cols="12" md="12" lg="12" sm="12" class="pa-1">
                         <p class="google-font mt-1 mb-0" style="font-size:110%">A very big thank you to all our partners for their continued partnership.</p>
-                        <!-- <p class="google-font mt-0 mb-0" style="font-size:110%">If you’re interested in being showcased throughout , contact <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${communitydata.CommunityEmail}`">{{communitydata.CommunityEmail}}</a> to discuss sponsorship opportunities.</p> -->
                     </v-col>
                 </v-row>
                 <v-row class="pa-0 mt-3" align="center" v-if="data.partners.length>0">
-                    <v-col cols="6" md="2" lg="2" sm="4" class="pa-1" v-for="(item,i) in data.partners" :key="i" >
-
-                        <div v-for="(itemp,j) in partnersData" :key="j">
-                            <div v-if="item == itemp.id" >
-                                <div class="ma-1 px-2" style="background-color:white;border:1px solid #e0e0e0;border-radius:5px;">
-                                    <a :href="itemp.socialLinks.web" target="_blank">
-                                        <v-tooltip bottom>
-                                            <template v-slot:activator="{ on }">
-                                                <v-img
-                                                    :src="itemp.image.length?itemp.image:'https://afmec.org/images/no-image-available-icon.jpg'"
-                                                    :lazy-src="itemp.image.length?itemp.image:'https://afmec.org/images/no-image-available-icon.jpg'"
-                                                    width="100%"
-                                                    contain
-                                                    style="border-radius:5px"
-                                                    height="80px"
-                                                    v-on="on"
-                                                >
-                                                    <template v-slot:placeholder>
-                                                        <v-row
-                                                            class="fill-height ma-0"
-                                                            align="center"
-                                                            justify="center"
-                                                            >
-                                                            <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                                                        </v-row>
-                                                    </template>
-                                                </v-img>
-                                            </template>
-                                            <span class="google-font">{{itemp.name}}</span>
-                                        </v-tooltip>
-                                    </a>
-                                </div>
+                    <v-col cols="6" md="2" lg="2" sm="4" class="pa-1" v-for="(item,i) in pData" :key="i" >
+                            <div class="ma-1 px-2" style="background-color:white;border:1px solid #e0e0e0;border-radius:5px;">
+                                <a :href="item.socialLinks.web" target="_blank">
+                                    <v-tooltip bottom>
+                                        <template v-slot:activator="{ on }">
+                                            <v-img
+                                                :src="getImgUrl(item.image)"
+                                                :lazy-src="getImgUrl(item.image)"
+                                                width="100%"
+                                                contain
+                                                style="border-radius:5px"
+                                                height="80px"
+                                                v-on="on"
+                                            >
+                                                <template v-slot:placeholder>
+                                                    <v-row
+                                                        class="fill-height ma-0"
+                                                        align="center"
+                                                        justify="center"
+                                                        >
+                                                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                                                    </v-row>
+                                                </template>
+                                            </v-img>
+                                        </template>
+                                        <span class="google-font">{{item.name}}</span>
+                                    </v-tooltip>
+                                </a>
                             </div>
-                        </div>
-                       
                     </v-col>
                 </v-row>
             </v-col>
@@ -54,26 +47,46 @@
 
 <script>
 import service from "@/services/appservices";
+import { mapState } from "vuex";
 export default {
     props:['data'],
     components:{
     },
     data:()=>({
-        partnersData:[]
+        partnersData:[],
+        pData:[]
     }),
+    computed:{
+        ...mapState(["config"])
+    },
     mounted(){
         this.getAllPartners()
     },
     methods:{
         getAllPartners(){
+            this.pData=[]
             service.getAllPartners().then(res=>{
                 if(res.success){
                     this.partnersData = res.data
+                    this.data.partners.map(p=>{
+                        this.partnersData.map(obj=>{
+                            if(obj.id == p){
+                                this.pData.push(obj)
+                            }
+                        })
+                    })
                 }
             }).catch(e=>{
                 console.log(e)
             })
-        }
+        },
+        getImgUrl(pic) {
+          if (pic.length > 0) {
+              return pic;
+          } else {
+              return require('@/assets/img/dontremove/noimage.jpg');
+          }
+        },
     }
     
 }
