@@ -31,7 +31,7 @@ self.addEventListener('push', (event)=>{
             title: 'Register'
         },{
             action: 'visit',
-            title: 'view Event'
+            title: 'Learn More'
         }]
     };
     event.waitUntil(self.registration.showNotification(dataPush.title, options));
@@ -41,7 +41,7 @@ self.addEventListener('notificationclick', function(event) {
     if (event.action === 'register') {
         clients.openWindow(dataPush.body.regLink);
     }else if(event.action === 'visit'){
-        clients.openWindow("/events/"+dataPush.body.eventID);
+        clients.openWindow(dataPush.body.learnMore);
     }else{
         clients.openWindow("/");
     }

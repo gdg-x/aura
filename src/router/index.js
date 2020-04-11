@@ -77,11 +77,11 @@ const routes = [
     }
   },
   {
-    path: '/volunteer',
-    name: 'Volunteer',
+    path: '/volunteers',
+    name: 'Volunteers',
     component: () => import(/* webpackChunkName: "volunteer" */ '../views/Volunteer.vue'),
     meta:{
-      title:'Volunteer ',
+      title:'Volunteers ',
       color:'#0277bd',
     }
   },

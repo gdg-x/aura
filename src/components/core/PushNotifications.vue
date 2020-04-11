@@ -38,6 +38,7 @@
 
 <script>
 import firebase from "@/config/firebase";
+import { mapState } from "vuex";
 export default {
   name: "PushNotification",
   data() {
@@ -48,13 +49,16 @@ export default {
       buttonText: "Allow"
     };
   },
+  computed: {
+    ...mapState(["config"])
+  },
 
   methods: {
     requestPermission() {
       try {
         if (firebase.notificationSupported && Notification) {
           firebase.messaging.usePublicVapidKey(
-            "BJdcFiQ4jRxp2W89kLjm5CEpj1HRcc4b2my3ELPs3YS0PWvCV6cnGCEyxjpYZZl3qwisnbX7EY4EEbwRrWuijOE"
+            `${this.config.keysandsecurity.web_push_certificate}`
           );
           this.isLoading = true;
           this.token = "Please wait...";
@@ -142,7 +146,7 @@ export default {
   mounted() {
     let token = localStorage.getItem("pushNotificationToken");
     if (token == null || token.length > 0) {
-      this.token = token;
+      this.token = 'Already Subscribed';
       this.buttonText == "Allowed";
     }
   }

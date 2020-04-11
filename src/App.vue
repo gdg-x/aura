@@ -44,7 +44,7 @@ export default {
     snackBtnText: "",
     snackWithBtnText: "",
     snackWithButtons: false,
-    timeout: 7000
+    timeout: 15000
   }),
   computed: {
     ...mapState(["config"])
