@@ -42,11 +42,6 @@
                         {{item.name}}
                     </template>
 
-                    <template v-slot:item.status="{ item }">
-                        <v-chip small v-if="item.status == 'past'" dark color="red">Past</v-chip>
-                        <v-chip v-else small dark color="green">Upcoming</v-chip>
-                    </template>
-
                     <template v-slot:item.link="{ item }">
                         <a :href="item.link" target="_blank">See More</a>
                     </template>
@@ -81,7 +76,6 @@ import { mapState } from 'vuex'
                     value: 'name',
                 },
                 { text: 'Date', value: 'local_date' },
-                { text: 'Status', value: 'status' },
                 { text: 'See More', value: 'link' },
             ],
         }),

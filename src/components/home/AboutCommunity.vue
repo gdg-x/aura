@@ -5,18 +5,19 @@
         <div class="ma-1">
           <div class="pa-5">
             <p class="google-font mb-0" style="font-size:150%">About {{config.generalConfig.name}}</p>
-            <p class="google-font mt-0" style="font-size:95%">{{config.generalConfig.longDescription}}</p>
-
+            <p
+              class="google-font mt-0"
+              style="font-size:95%"
+            >{{config.generalConfig.longDescription}}</p>
             <v-btn
-              :href="config.generalConfig.meetuplink"
+              v-if="config.generalConfig.meetupLink.length>0"
+              :href="config.generalConfig.meetupLink"
               target="_blank"
               outlined
               color
-              class="ma-0 google-font"
+              class="ma-0 google-font mb-2"
               style="border-radius:5px;text-transform: capitalize;color:white"
             >Meetup Page</v-btn>&nbsp;
-            <!-- <v-btn href="#" target="_blank" outlined color="" class="ma-0 google-font" style="border-radius:5px;text-transform: capitalize;color:white">Facebook Page</v-btn> -->
-            <br />
             <br />
             <router-link
               to="/about"
@@ -34,10 +35,9 @@
 import { mapState } from "vuex";
 export default {
   name: "App",
-  data: () => ({
-  }),
+  data: () => ({}),
   computed: {
     ...mapState(["config"])
-  },
+  }
 };
 </script>

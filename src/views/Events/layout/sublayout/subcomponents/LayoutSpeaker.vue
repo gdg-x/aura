@@ -29,9 +29,9 @@
             <p class="google-font mb-0">{{data.designation}}</p>
             <p class="google-font mt-0">{{data.company.name}}</p>
             <p class="google-font">{{data.bio}}</p>
+            <socialMediaDetails  class="pl-0 ml-0" :data="data.socialLinks"/> 
             <v-btn class="primary mt-3" small depressed @click="goToSpeaker(data.id)">See More Info</v-btn>
 
-            <socialMediaDetails  class="pl-0 ml-0" :data="data.socialLinks"/> 
         </v-card-text>
 
         <v-divider></v-divider>

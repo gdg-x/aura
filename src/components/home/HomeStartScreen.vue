@@ -25,7 +25,7 @@
         <p class="google-font" style="font-size:100%">{{config.generalConfig.shortDescription}}</p>
         <p class="google-font" style="font-size:100%;color:#9e9e9e">
           <span v-for="(item,i) in config.generalConfig.hashtags" :key="i">
-            <v-chip small class="mr-1">#{{item}}</v-chip>
+            <v-chip :href="'https://twitter.com/hashtag/'+item" target="_blank" small class="mr-1">#{{item}}</v-chip>
             <!-- &nbsp; -->
           </span>
         </p>
