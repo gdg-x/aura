@@ -24,11 +24,11 @@
                 <p class="google-font mt-0" style="font-size:110%">{{data.longDescription}}</p>
                 <p class="google-font mt-0 mb-0" style="font-size:110%">GDGs are local groups of developers who are specifically interested in Google products and APIs. Each local group is called a GDG chapter and can host a variety of technical activities for developers - from just a few people getting together to watch our latest videos, to large gatherings with demos and tech talks, to hackathons.</p>
                 <br>
-                <v-btn :href="data.meetupLink" target="_blank" class="ma-0 google-font elevation-1 primary" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
+                <v-btn v-if="data.becomemember.length>0" :href="data.becomemember" target="_blank" class="ma-0 google-font elevation-1 primary" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
 
                 &nbsp;
 
-                <v-btn :href="data.learnMoreLink" target="_blank" rounded color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" outlined  class="ml-0" dark>Learn More</v-btn>
+                <v-btn v-if="data.learnMoreLink.length>0" :href="data.learnMoreLink" target="_blank" rounded color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" outlined  class="ml-0" dark>Learn More</v-btn>
 
             </v-col>
         </v-row>
