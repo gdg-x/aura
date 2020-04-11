@@ -159,11 +159,6 @@ export default {
     notFound: false,
     eventLoader: false
   }),
-<<<<<<< HEAD
-=======
-  components:{
-  },
->>>>>>> b867da114153756193baaf8a779f60851e519546
   mounted() {
     this.details(this.$route.params.id);
     this.getevents(this.$route.params.id);
