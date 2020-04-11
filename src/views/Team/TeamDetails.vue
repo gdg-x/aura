@@ -13,13 +13,6 @@
                             <v-icon left style="font-size:150%">mdi-arrow-left-thick</v-icon>
                             <span style="font-size:120%">Team</span>
                         </v-btn>
-                        <!-- <v-progress-linear
-                            active
-                            indeterminate
-                            absolute
-                            bottom
-                            color="deep-purple accent-4"
-                        ></v-progress-linear> -->
                         
                         <v-spacer></v-spacer>            
                     </v-toolbar>
@@ -43,8 +36,8 @@
                             <v-col md="3" lg="3" sm="4" cols="12" class="text-center">
                                 <v-avatar size="150">
                                         <img 
-                                            :src="MemberDetails.image"
-                                            :lazy-src="MemberDetails.image" alt=""
+                                            :src="getImgUrl(MemberDetails.image)"
+                                            :lazy-src="getImgUrl(MemberDetails.image)" alt=""
                                         >
                                     </v-avatar>
                                     <p class="google-font mt-3" style="font-size:120%">{{MemberDetails.name}}</p>
@@ -139,7 +132,14 @@ import service from '@/services/appservices'
                     this.loader = false
                     console.log(e)
                 })
-            }
+            },
+            getImgUrl(pic) {
+                if (pic.length > 0) {
+                    return pic;
+                } else {
+                    return require('@/assets/img/dontremove/profile.jpg');
+                }
+            },
         } 
     }
     

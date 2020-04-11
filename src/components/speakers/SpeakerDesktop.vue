@@ -7,14 +7,14 @@
         </v-col>
       </v-row>
       <v-row v-else-if="Object.keys(speaker).length>0">
-        <v-col cols="12" sm="4" md="3">
+        <v-col cols="12" sm="4" md="3" lg="3">
           <v-row>
             <v-col cols="12" sm="12">
-              <v-card elevation="4">
+              <v-card elevation="1">
                 <v-card-title
                   class="grey lighten-4 google-font"
                   primary-title
-                  :style="{'background-image':'url(https://iambharat.tk/images/backImage.jpg)'}"
+                  :style="{'background-image':'url('+ require('@/assets/img/dontremove/spakerhead.jpg') +')'}"
                   style="background-position:right top;padding-top:20%;"
                 ></v-card-title>
                 <v-card-text class="px-5 pb-5" style="margin-top: -60px;">
@@ -23,7 +23,7 @@
                       <v-col cols="12" class="text-center pa-2">
                         <v-avatar size="100">
                           <v-img
-                            :src="speaker.image"
+                            :src="speaker.image.length?speaker.image:require('@/assets/img/dontremove/profile.jpg')"
                             style="border-style: solid;border-width: 5px;"
                             :style="{'border-color':this.$vuetify.theme.dark?'#424242':'white'}"
                           >
@@ -58,12 +58,21 @@
                 <v-card-title class="google-font">About:</v-card-title>
                 <v-card-text>
                   <p class="google-font" style="font-size:90%">{{speaker.bio}}</p>
+                  <v-chip-group
+                    column
+                  > 
+                    <div v-for="(slink,i) in speaker.socialLinks" :key="i">
+                    <v-chip v-if="slink" :href="slink" 
+                     small ripple target="_blank" style="text-transform: uppercase;">{{i}}</v-chip>
+                    </div>
+
+                  </v-chip-group>
                 </v-card-text>
               </v-card>
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" sm="8" md="9">
+        <v-col cols="12" sm="8" md="9" lg="9">
           <v-row align="center">
             <v-col cols="12">
               <v-card outlined>
@@ -141,6 +150,9 @@ import service from "@/services/appservices";
 
 export default {
   name: "SpeakerDesktop",
+  components:{
+    // SocialInfo:()=>import('@/components/common/SocialInfo')
+  },
   data: () => ({
     speaker: {},
     events: [],
@@ -176,11 +188,11 @@ export default {
       service
         .getAllEvents()
         .then(res => {
-        //   console.log(res);
           if (res.success == true) {
             this.eventLoader = false;
             res.data.map(event => {
-              if (event.active && event.visible) {
+              // event.active && event.visible
+              if (event.visible) {
                 event.speakers.map(speak => {
                   if (speak === id) {
                     this.events.push({name:event.name, id:event.id});

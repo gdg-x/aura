@@ -5,7 +5,7 @@
         @click="goToTeam(data.id)"
         >
             <v-list-item-avatar>
-                <img :src="data.image">
+                <img :src="getImgUrl(data.image)">
             </v-list-item-avatar>
 
             <v-list-item-content>
@@ -46,7 +46,14 @@
         } else {
           return splitArr[0].substring(0, 1).toUpperCase();
         }
-      }
+      },
+      getImgUrl(pic) {
+          if (pic.length > 0) {
+              return pic;
+          } else {
+              return require('@/assets/img/dontremove/profile.jpg');
+          }
+      },
     },
     filters:{
         summary: (val,num)=>{

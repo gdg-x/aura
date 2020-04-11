@@ -9,7 +9,7 @@
         <v-card-title
           class="grey lighten-4 google-font"
           primary-title
-          :style="{'background-image':'url(https://iambharat.tk/images/backImage.jpg)'}"
+          :style="{'background-image':'url('+ require('@/assets/img/dontremove/spakerhead.jpg') +')'}"
           style="background-position:right top;padding-top:25%;"
         ></v-card-title>
 
@@ -19,7 +19,7 @@
               <v-col cols="12" class="text-center pa-2">
                   <v-avatar size="150">
                     <v-img
-                      :src="getImgUrl(speaker.image)"
+                      :src="speaker.image.length?speaker.image:require('@/assets/img/dontremove/profile.jpg')"
                       style="border-style: solid;border-width: 5px;"
                       :style="{'border-color':this.$vuetify.theme.dark?'#424242':'white'}"
                     >
@@ -45,6 +45,15 @@
               </v-col>
               <v-col class="pa-2" cols="12" sm="8">
                 <p class="google-font my-4" style="font-size:110%">{{speaker.bio}}</p>
+                <v-chip-group
+                    column
+                  > 
+                    <div v-for="(slink,i) in speaker.socialLinks" :key="i">
+                    <v-chip v-if="slink" :href="slink" 
+                     small ripple target="_blank" style="text-transform: uppercase;">{{i}}</v-chip>
+                    </div>
+
+                </v-chip-group>
               </v-col>
             </v-row>
           </v-container>
@@ -176,13 +185,6 @@ export default {
           this.loader = false;
           console.log(e);
         });
-    },
-    getImgUrl(pic) {
-      try {
-        return pic;
-      } catch (e) {
-        return require("@/assets/logo.png");
-      }
     },
     getCharString(data) {
       var splitArr = data.split(" ");
