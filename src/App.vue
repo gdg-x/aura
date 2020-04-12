@@ -8,9 +8,9 @@
         <v-icon>mdi-close</v-icon>
       </v-btn>
     </v-snackbar>
-    <Toolbar />
-    <Drawer />
-    <BottomNav/>
+    <Toolbar v-if="!noData"/>
+    <Drawer v-if="!noData"/>
+    <BottomNav v-if="!noData"/>
     <v-content class="" v-if="isLoading">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
@@ -20,8 +20,17 @@
         </v-row>
       </v-container>
     </v-content>
-    <Views v-else />
-    <Footer />
+    <v-content class="" v-if="!isLoading && noData">
+      <v-container class="fill-height">
+        <v-row justify="center" align="center" class>
+          <v-col cols="12" md="12" class="text-center">
+            <p class="google-font">Either Your Internert is not Working or Site is not Configured</p>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-content>
+    <Views v-if="!isLoading && !noData" />
+    <Footer v-if="!noData"/>
   </v-app>
 </template>
 
@@ -41,6 +50,7 @@ export default {
     isLoading: true,
     refreshing: false,
     registration: null,
+    noData:false,
     snackBtnText: "",
     snackWithBtnText: "",
     snackWithButtons: false,
@@ -101,7 +111,11 @@ export default {
             else if (ele.name == "keysandsecurity")
               this.setKeysAndSecutityConfig(ele.data);
           });
+          this.noData = false;
           this.isLoading = false;
+        }else{
+          this.noData = true;
+         this.isLoading = false; 
         }
       });
     }
