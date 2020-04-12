@@ -6,11 +6,11 @@
                     <span style="color: #1a73e8;">Partners</span> </b> 
                 </p>
                 <p class="google-font mt-1 mb-0" style="font-size:100%">A very big thank you to all our partners for their continued partnership.</p>
-                <p class="google-font mt-0 mb-0" style="font-size:100%">If you’re interested in being showcased throughout , contact <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${config.generalConfig.emaill}`">{{config.generalConfig.email}}</a> to discuss sponsorship opportunities.</p>
+                <p class="google-font mt-0 mb-0" style="font-size:100%">If you’re interested in being showcased throughout , contact <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${config.generalConfig.email}`">{{config.generalConfig.email}}</a> to discuss sponsorship opportunities.</p>
             </v-col>
         </v-row>
 
-        <v-row align="center" justify="start" class="mt-0 pt-0">
+        <v-row align="center" v-if="checkExistance(partnersData,0)" justify="start" class="mt-0 pt-0">
             <v-col cols="12" md="12" lg="12" sm="12" class="mx-0 mt-0">
                 <p class="google-font mb-0" style="font-size:130%">General Partners</p>
             </v-col>
