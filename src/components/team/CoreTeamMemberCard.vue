@@ -11,8 +11,8 @@
                     :lazy-src="getImgUrl(data.image, 'profile.jpg')" alt=""
                   >
                 </v-avatar>
-                <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{data.name}}</p>
-                <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{data.designation}}</p>
+                <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{data.name | summery(20)}}</p>
+                <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{data.designation | summery(20)}}</p>
                 <socialMediaDetails :data="data.socialLinks"/>
           </div>
           
