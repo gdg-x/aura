@@ -113,6 +113,8 @@ export default {
               this.Volunteers = res.data.filter(res=>res.role=='Volunteer' && res.visible )
             //   this.Volunteers = []
               this.loader = false
+            }else{
+              this.loader = false
             }
           }).catch(e=>{
             this.loader = false

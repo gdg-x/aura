@@ -41,6 +41,25 @@
                 </v-col>
              </v-row>
         </v-container>
+        <v-container fluid class="pa-0">
+             <v-row justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'black':''">
+               <v-col v-if="notFound || OrganizingTeam.length <=0 || CoreTeam.length<=0" md="12" lg="12" sm="12" cols="12" class="text-center">
+                <v-img
+                  :src="require('@/assets/img/svg/DataNotFound.svg')"
+                  :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
+                  width="20%"
+                  style="border-radius:8px;margin-left:auto;margin-right:auto"
+                >
+                  <template v-slot:placeholder>
+                    <v-row class="fill-height ma-0" align="center" justify="center">
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-row>
+                  </template>
+                </v-img>
+                <h2 class="google-font">Team Not Found</h2>
+              </v-col>
+             </v-row>
+        </v-container>
 
     </v-content>
 
@@ -61,6 +80,7 @@ export default {
       OrganizingTeam:[],
       CoreTeam:[],
       Volunteers:[],
+      notFound:false,
       ErrorMsg:''
     }),
     mounted(){
@@ -75,11 +95,14 @@ export default {
               this.CoreTeam = res.data.filter(res=>res.role=='Core Team' && res.visible )
               this.Volunteers = res.data.filter(res=>res.role=='Volunteer' && res.visible )
               this.loader = false
+              this.notFound = false
             }else{
+              this.notFound = true
               this.loader = false
             }
           }).catch(e=>{
             this.loader = false
+            this.notFound = true
             this.ErrorMsg = e
           })
         }
