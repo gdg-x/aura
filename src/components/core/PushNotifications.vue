@@ -144,7 +144,7 @@ export default {
   },
   mounted() {
     let token = localStorage.getItem("pushNotificationToken");
-    if (token == null || token.length > 0) {
+    if (token && token.length > 0) {
       this.token = 'Already Subscribed';
       this.buttonText == "Allowed";
     }

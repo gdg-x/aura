@@ -18,7 +18,7 @@
                 <v-col md="7" lg="7" sm="8" xs="8" cols="11" class="">
                     <v-text-field
                         label="Search"
-                        solo
+                        solo-inverted
                         v-model="search"
                     ></v-text-field>
                 </v-col>
@@ -47,7 +47,7 @@
                     <v-img
                         :src="require('@/assets/img/svg/DataNotFound.svg')"
                         :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
-                        width="20%"
+                        width="15%"
                         style="border-radius:8px;margin-left:auto;margin-right:auto"
                     >
                         <template v-slot:placeholder>

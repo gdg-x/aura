@@ -50,7 +50,7 @@
                 <v-img
                   :src="require('@/assets/img/svg/DataNotFound.svg')"
                   :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
-                  width="20%"
+                  width="15%"
                   style="border-radius:8px;margin-left:auto;margin-right:auto"
                 >
                   <template v-slot:placeholder>

@@ -21,7 +21,6 @@
                             prepend-inner-icon="mdi-search-web"
                             label="Search"
                             single-line
-                            class="mr-2"
                         ></v-text-field>
                     </v-col>
                 
