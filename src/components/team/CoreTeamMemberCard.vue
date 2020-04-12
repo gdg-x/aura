@@ -74,7 +74,10 @@ import socialMediaDetails from '@/components/common/SocialInfo'
     },
     filters:{
         summery: (val,num)=>{
+          if(val.length > num)
             return val.substring(0,num)+".."
+          else
+            return val;
         }
     }
   }

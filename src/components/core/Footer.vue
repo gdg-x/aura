@@ -8,7 +8,7 @@
   <!-- style="border-color:#e0e0e0;border-width: 1px;border-style: solid;border-bottom: 0;border-left:0;border-right:0" -->
     <v-container fluid >
       <v-row align="center" justify="center" class="my-0 py-0">
-        <v-col cols="12" md="10" lg="10" sm="10" class="py-0 my-0">
+        <v-col cols="12" md="10" lg="10" sm="11" class="py-0 my-0">
           <v-divider v-if="!this.$vuetify.theme.dark"></v-divider>
           <!-- {{socialLinks}} -->
           <p class="google-font mt-4 mb-3" style="font-size:130%" >Follow Us:
@@ -62,7 +62,7 @@
       </v-row>
 
       <v-row align="center" justify="center" class="mt-3">
-        <v-col cols="12" md="10" lg="10" sm="10" class="my-0 py-0">
+        <v-col cols="12" md="10" lg="10" sm="11" class="my-0 py-0">
           <v-container fluid class="pa-0 my-0">
             <!-- Links Section -->
 
@@ -95,7 +95,7 @@
       </v-row>
 
       <v-row align="center" justify="center" class="mb-0">
-        <v-col cols="12" md="10" lg="10" sm="10" class="px-0 mx-0"> 
+        <v-col cols="12" md="10" lg="10" sm="11" class="px-0 mx-0"> 
           <v-divider></v-divider>
           <v-toolbar text class="pa-0 px-0 mt-3 mx-0 elevation-0" style="padding:0 !important" :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'">
             <v-toolbar-title class="google-font pl-0 ml-0 mr-3" style="font-size:200%">{{config.generalConfig.name || 'GDG'}}</v-toolbar-title>
