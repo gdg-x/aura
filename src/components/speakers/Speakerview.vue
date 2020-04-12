@@ -1,7 +1,7 @@
 <template>
   <div @click="$router.push({ path: '/speakers/'+da.id})" style="cursor: pointer;">
     <v-avatar size="100" v-ripple>
-      <v-img :src="getImgUrl(da.image)">
+      <v-img :src="getImgUrl(da.image, 'profile.jpg')">
         <template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
             <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
@@ -19,25 +19,6 @@ export default {
   name: "speakerView",
   props: ["da"],
   methods: {
-    getImgUrl(pic) {
-      if (pic.length > 0) {
-        return pic;
-      } else {
-        return require('@/assets/img/dontremove/profile.jpg');
-      }
-    },
-    getCharString(data) {
-      var splitArr = data.split(" ");
-      if (splitArr.length > 1) {
-        return (
-          splitArr[0].substring(0, 1) +
-          "" +
-          splitArr[1].substring(0, 1)
-        ).toUpperCase();
-      } else {
-        return splitArr[0].substring(0, 1).toUpperCase();
-      }
-    }
   }
 };
 </script>

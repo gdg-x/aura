@@ -7,7 +7,7 @@
           small
           class="ml-0 mt-0 mx-0"
           icon
-          v-if="data.twitter.length>0"
+          v-if="checkExistance(data.twitter,0)"
           :href="data.twitter"
           target="_blank"
         >
@@ -19,7 +19,7 @@
           small
           class="mt-0 mx-0"
           icon
-          v-if="data.linkedin.length>0"
+          v-if="checkExistance(data.linkedin,0)"
           :href="data.linkedin"
           target="_blank"
         >
@@ -30,7 +30,7 @@
           small
           class="mt-0 mx-0"
           icon
-          v-if="data.github.length>0"
+          v-if="checkExistance(data.github,0)"
           :href="data.github"
           target="_blank"
         >
@@ -41,7 +41,7 @@
           small
           class="mt-0 mx-0"
           icon
-          v-if="data.medium.length>0"
+          v-if="checkExistance(data.medium,0)"
           :href="data.facebook"
           target="_blank"
         >
@@ -52,7 +52,7 @@
           small
           class="mt-0 mx-0"
           icon
-          v-if="data.web.length>0"
+          v-if="checkExistance(data.web,0)"
           :href="data.web"
           target="_blank"
         >

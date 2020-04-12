@@ -89,6 +89,8 @@ import { mapState } from 'vuex'
                     if(res.success){
                         this.eventsData = res.data
                         this.isLoading = false
+                    }else{
+                        this.isLoading = false
                     }
                 }).catch(e=>{
                     console.log(e)

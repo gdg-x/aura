@@ -75,6 +75,8 @@ export default {
               this.CoreTeam = res.data.filter(res=>res.role=='Core Team' && res.visible )
               this.Volunteers = res.data.filter(res=>res.role=='Volunteer' && res.visible )
               this.loader = false
+            }else{
+              this.loader = false
             }
           }).catch(e=>{
             this.loader = false

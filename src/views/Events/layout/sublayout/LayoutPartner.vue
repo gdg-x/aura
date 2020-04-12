@@ -8,15 +8,15 @@
                         <p class="google-font mt-1 mb-0" style="font-size:110%">A very big thank you to all our partners for their continued partnership.</p>
                     </v-col>
                 </v-row>
-                <v-row class="pa-0 mt-3" align="center" v-if="data.partners.length>0">
+                <v-row class="pa-0 mt-3" align="center" v-if="checkExistance(data.partners,0)">
                     <v-col cols="6" md="2" lg="2" sm="4" class="pa-1" v-for="(item,i) in pData" :key="i" >
                             <div class="ma-1 px-2" style="background-color:white;border:1px solid #e0e0e0;border-radius:5px;">
                                 <a :href="item.socialLinks.web" target="_blank">
                                     <v-tooltip bottom>
                                         <template v-slot:activator="{ on }">
                                             <v-img
-                                                :src="getImgUrl(item.image)"
-                                                :lazy-src="getImgUrl(item.image)"
+                                                :src="getImgUrl(item.image, 'noimage.jpg')"
+                                                :lazy-src="getImgUrl(item.image, 'noimage.jpg')"
                                                 width="100%"
                                                 contain
                                                 style="border-radius:5px"
@@ -48,6 +48,7 @@
 <script>
 import service from "@/services/appservices";
 import { mapState } from "vuex";
+
 export default {
     props:['data'],
     components:{
@@ -79,13 +80,6 @@ export default {
             }).catch(e=>{
                 console.log(e)
             })
-        },
-        getImgUrl(pic) {
-          if (pic.length > 0) {
-              return pic;
-          } else {
-              return require('@/assets/img/dontremove/noimage.jpg');
-          }
         },
     }
     

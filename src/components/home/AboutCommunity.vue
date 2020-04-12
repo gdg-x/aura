@@ -10,7 +10,7 @@
               style="font-size:95%"
             >{{config.generalConfig.longDescription}}</p>
             <v-btn
-              v-if="config.generalConfig.meetupLink.length>0"
+              v-if="checkExistance(config.generalConfig.meetupLink,0)"
               :href="config.generalConfig.meetupLink"
               target="_blank"
               outlined
@@ -33,6 +33,7 @@
 
 <script>
 import { mapState } from "vuex";
+
 export default {
   name: "App",
   data: () => ({}),

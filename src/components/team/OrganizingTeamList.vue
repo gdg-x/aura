@@ -5,7 +5,7 @@
         @click="goToTeam(data.id)"
         >
             <v-list-item-avatar>
-                <img :src="getImgUrl(data.image)">
+                <img :src="getImgUrl(data.image, 'profile.jpg')">
             </v-list-item-avatar>
 
             <v-list-item-content>
@@ -34,25 +34,6 @@
     methods:{
       goToTeam(id){
         this.$router.push("/team/" + id);
-      },
-      getCharString(data) {
-      var splitArr = data.split(" ");
-        if (splitArr.length > 1) {
-          return (
-            splitArr[0].substring(0, 1) +
-            "" +
-            splitArr[1].substring(0, 1)
-          ).toUpperCase();
-        } else {
-          return splitArr[0].substring(0, 1).toUpperCase();
-        }
-      },
-      getImgUrl(pic) {
-          if (pic.length > 0) {
-              return pic;
-          } else {
-              return require('@/assets/img/dontremove/profile.jpg');
-          }
       },
     },
     filters:{

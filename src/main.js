@@ -4,10 +4,14 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
+import generalFunctions from './functions/generalFunctions'
 import './style.css'
 
-Vue.config.productionTip = false
 
+
+
+Vue.config.productionTip = false
+Vue.mixin(generalFunctions); 
 new Vue({
   router,
   store,

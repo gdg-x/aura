@@ -25,7 +25,7 @@
       </v-row>
     </v-container>
 
-     <v-container fluid class="pa-0 py-2" v-if="config.keysandsecurity.meetup.length>0">
+     <v-container fluid class="pa-0 py-2" v-if="checkExistance(config.keysandsecurity.meetup,0)">
       <v-row justify="center" align="center">
         <v-col md="12" sm="11" lg="10" xs="12" class="py-0">
           <events />
@@ -63,6 +63,7 @@
 <script>
 import service from '@/services/appservices'
 import { mapState } from "vuex";
+
 export default {
   name: 'Home',
   components: {
@@ -77,6 +78,7 @@ export default {
     showFeatureEventStatus:false
   }),
   mounted(){
+    console.log(this.checkExistance)
     this.getFeaturesEventID();
   },
   computed:{

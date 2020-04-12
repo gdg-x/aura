@@ -82,18 +82,6 @@
         let r =d.replace(/<img[^>]*>/gi,"");
         return r
       },
-      getCharString(data) {
-      var splitArr = data.split(" ");
-        if (splitArr.length > 1) {
-          return (
-            splitArr[0].substring(0, 1) +
-            "" +
-            splitArr[1].substring(0, 1)
-          ).toUpperCase();
-        } else {
-          return splitArr[0].substring(0, 1).toUpperCase();
-        }
-      }
     },
     filters:{
         summary: (val,num)=>{

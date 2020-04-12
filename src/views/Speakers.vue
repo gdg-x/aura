@@ -92,6 +92,8 @@ export default {
           if (res.success == true) {
             this.SpeakersData = res.data.filter(res => res.visible);
             this.loader = false;
+          }else{
+            this.loader = false;
           }
         })
         .catch(e => {

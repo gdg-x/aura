@@ -36,8 +36,8 @@
                             <v-col md="3" lg="3" sm="4" cols="12" class="text-center">
                                 <v-avatar size="150">
                                         <img 
-                                            :src="getImgUrl(MemberDetails.image)"
-                                            :lazy-src="getImgUrl(MemberDetails.image)" alt=""
+                                            :src="getImgUrl(MemberDetails.image, 'profile.jpg')"
+                                            :lazy-src="getImgUrl(MemberDetails.image, 'profile.jpg')" alt=""
                                         >
                                     </v-avatar>
                                     <p class="google-font mt-3" style="font-size:120%">{{MemberDetails.name}}</p>
@@ -132,13 +132,6 @@ import service from '@/services/appservices'
                     this.loader = false
                     console.log(e)
                 })
-            },
-            getImgUrl(pic) {
-                if (pic.length > 0) {
-                    return pic;
-                } else {
-                    return require('@/assets/img/dontremove/profile.jpg');
-                }
             },
         } 
     }

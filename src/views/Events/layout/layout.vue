@@ -7,8 +7,8 @@
             <v-row class="py-0">
               <v-col cols="12" md="12" class="pa-0">
                 <v-img
-                  :src="getImgUrl(data.image)"
-                  :lazy-src="getImgUrl(data.image)"
+                  :src="getImgUrl(data.image, 'eventbanner.jpg')"
+                  :lazy-src="getImgUrl(data.image, 'eventbanner.jpg')"
                   width="100%"
                   cover
                   style="border-top-left-radius:5px;"
@@ -110,13 +110,6 @@ export default {
     };
   },
   methods: {
-    getImgUrl(pic) {
-        if (pic.length > 0) {
-            return pic;
-        } else {
-            return require('@/assets/img/dontremove/eventbanner.jpg');
-        }
-    },
   },
   created() {}
 };

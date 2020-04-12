@@ -37,11 +37,11 @@
           <p class="google-font mb-0" style="font-size:95%"><b>Description</b></p>
           <p class="google-font mt-0" style="font-size:110%">{{data.des}}</p>
 
-          <v-btn color="#1a73e8" v-if="data.links.registration.length>0" :href="data.links.registration" target="_blank" class="ma-0 elevation-0 my-2 mr-3" dark style="text-transform: capitalize;"> 
+          <v-btn color="#1a73e8" v-if="checkExistance(data.links.registration,0)" :href="data.links.registration" target="_blank" class="ma-0 elevation-0 my-2 mr-3" dark style="text-transform: capitalize;"> 
               Registration Link
           </v-btn>
 
-          <v-btn color="pink" v-if="data.links.meetup.length>0" :href="data.links.meetup" target="_blank" class="ma-0 elevation-0 my-2 mr-3" dark style="text-transform: capitalize;"> 
+          <v-btn color="pink" v-if="checkExistance(data.links.meetup,0)" :href="data.links.meetup" target="_blank" class="ma-0 elevation-0 my-2 mr-3" dark style="text-transform: capitalize;"> 
             Meetup Page
           </v-btn>
 
@@ -68,6 +68,7 @@
 </template>
 
 <script>
+
   export default {
     props:['data'],
     data () {

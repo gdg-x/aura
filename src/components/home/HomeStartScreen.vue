@@ -40,14 +40,14 @@
         </p>
 
         <v-btn
-          v-if="config.generalConfig.becomemember.length>0"
+          v-if="checkExistance(config.generalConfig.becomemember,0)"
           :href="config.generalConfig.becomemember"
           target="_blank"
           class="ma-0 google-font elevation-1 primary mr-2"
           style="text-transform: capitalize;border-radius:5px;color:white"
         >Become a Member</v-btn>
         <v-btn
-          v-if="config.generalConfig.learnMoreLink.length>0"
+          v-if="checkExistance(config.generalConfig.learnMoreLink,0)"
           :href="config.generalConfig.learnMoreLink"
           target="_blank"
           rounded
@@ -64,6 +64,7 @@
 
 <script>
 import { mapState } from "vuex";
+
 export default {
   data: () => ({}),
   computed: {

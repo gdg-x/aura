@@ -7,8 +7,8 @@
           <div v-on="on" style="cursor: pointer;height:220px" class="text-center py-4 ma-1 py-3" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'"  >
                 <v-avatar size="100">
                   <img
-                  :src="getImgUrl(data.image)"
-                  :lazy-src="getImgUrl(data.image)">
+                  :src="getImgUrl(data.image, 'profile.jpg')"
+                  :lazy-src="getImgUrl(data.image, 'profile.jpg')">
                 </v-avatar>
                 <p class="mt-3 mb-0 google-font mb-0" style="font-size:105%">{{data.name}}</p>
                 <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{data.company.name | summery(20)}}</p>
@@ -68,22 +68,6 @@
     methods:{
       goToSpeaker(id){
         this.$router.push("/speakers/" + id);
-      },
-      getCharString(data){
-          var splitArr = data.split(" ")
-          if(splitArr.length>1){
-              return (splitArr[0].substring(0,1)+''+splitArr[1].substring(0,1)).toUpperCase()
-          }
-          else{
-              return (splitArr[0].substring(0,1)).toUpperCase()
-          }
-      },
-      getImgUrl(pic) {
-          if (pic.length > 0) {
-              return pic;
-          } else {
-              return require('@/assets/img/dontremove/profile.jpg');
-          }
       },
     },
     filters:{

@@ -104,13 +104,6 @@ export default {
                 }
             })
         },
-        getImgUrl(pic) {
-          if (pic.length > 0) {
-              return pic;
-          } else {
-              return require('@/assets/img/dontremove/noimage.jpg');
-          }
-        },
     }
 }
 </script>

@@ -81,7 +81,12 @@ export default {
                     this.loader = false
                     this.blogsData = res.data
                     this.blogURL = this.blogsData.feed.link
+                }else{
+                    this.loader = false;
                 }
+            }).catch(e=>{
+                console.log(e);
+                this.loader = false;
             })
         }
     }
