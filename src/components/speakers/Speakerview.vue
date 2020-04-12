@@ -1,5 +1,5 @@
 <template>
-  <div @click="$router.push({ path: '/speakers/'+da.id})" style="cursor: pointer;">
+  <div @click="$router.push({ path: '/speakers/'+da.id})" style="cursor: pointer;" class="fill-height">
     <v-avatar size="100" v-ripple>
       <v-img :src="getImgUrl(da.image, 'profile.jpg')">
         <template v-slot:placeholder>
