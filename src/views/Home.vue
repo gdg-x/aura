@@ -78,7 +78,6 @@ export default {
     showFeatureEventStatus:false
   }),
   mounted(){
-    console.log(this.checkExistance)
     this.getFeaturesEventID();
   },
   computed:{

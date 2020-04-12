@@ -68,7 +68,6 @@ export default {
     getCommunityGuidelinesData() {
       service.getCommunityGuidelines().then(res => {
         if (res.success) {
-          // console.log(res.data)
           this.coc = res.data.codeOfConduct;
           this.communityGudielines = res.data.communityGuidelines;
         }

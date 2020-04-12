@@ -119,7 +119,6 @@ import service from '@/services/appservices'
                 this.loader = true
                 this.notFound = false
                 service.getTeamMember(id).then(res=>{
-                    // console.log(res)
                     if(res.success == true){
                         this.loader = false
                         this.MemberDetails = res.data

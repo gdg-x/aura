@@ -49,7 +49,6 @@ export default {
             })
             .catch(e => {
                 this.ErrorMsg = e;
-            // console.log(e)
             });
         }
     }

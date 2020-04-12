@@ -90,7 +90,6 @@ export default {
     getFeaturesEventID() {
       this.loading = true;
       service.getFeaturesEvents().then(res => {
-        console.log(res.data);
         if (res.success) {
           this.notFound = false;
           this.FeaturesEventID = res.data;

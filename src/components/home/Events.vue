@@ -93,7 +93,6 @@ import { mapState } from 'vuex'
                     }
                     
                 }).catch(e=>{
-                    console.log(e)
                     this.errorMsg = "Issue found with " + e;
                     this.showLoader = false;
                 })

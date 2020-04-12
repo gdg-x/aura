@@ -99,7 +99,6 @@ export default {
         .catch(e => {
           this.loader = false;
           this.ErrorMsg = e;
-          // console.log(e)
         });
     }
   }

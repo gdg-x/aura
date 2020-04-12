@@ -163,7 +163,6 @@ export default {
       service
         .getAllEvents()
         .then(res => {
-          //   console.log(res);
           if (res.success == true) {
             this.loader = false;
             res.data.map(event => {

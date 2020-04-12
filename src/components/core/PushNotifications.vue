@@ -118,7 +118,6 @@ export default {
         // alert(err);
         this.isLoading = false;
         this.token = err;
-        console.log(err);
       }
     },
     displayNotificaion() {

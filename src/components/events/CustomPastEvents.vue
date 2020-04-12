@@ -92,7 +92,6 @@ import { mapState } from 'vuex'
                         this.isLoading = false
                     }
                 }).catch(e=>{
-                    console.log(e)
                     this.errorMsg = "Issue found with " + e;
                     this.isLoading = false
                     this.errorAlert = true;
