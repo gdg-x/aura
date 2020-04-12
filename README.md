@@ -40,9 +40,30 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
     - Install [Node.js (v8.9.4 or above)](https://nodejs.org/en/download/)
     - Install vue cli: `npm install -g @vue/cli`
 1. Install project dependencies: `npm install` 
-1. Create [Firebase account](https://console.firebase.google.com) and Create a new Project 
+1. Create [Firebase account](https://console.firebase.google.com) and Create a new Project if you have not  
 1. Go to Firebase Project Dashboard
 1. Go to Cloud Firestore Database and Enable the database in test mode
+1. Update the Rule
+    ```js
+        rules_version = '2';
+        service cloud.firestore {
+            match /databases/{database}/documents {
+
+                // This rule allows anyone on the internet to view, edit, and delete
+                // all data in your Firestore database. It is useful for getting
+                // started, but it is configured to expire after 30 days because it
+                // leaves your app open to attackers. At that time, all client
+                // requests to your Firestore database will be denied.
+                //
+                // Make sure to write security rules for your app before that time, or else
+                // your app will lose access to your Firestore database
+                match /{document=**} {
+                allow read : if true;
+                allow write : if request.auth.uid != null;
+                }
+            }
+        }
+    ```
 1. In the Firebase project console dashboard. Click on create a new app
 1. Go to Firebase project Settings and then General Settings Tab
 1. Scroll down and go to your app section under Firebase SDK snippet
