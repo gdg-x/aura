@@ -42,7 +42,7 @@
             </v-row>
           </v-container>
         </v-col>
-        <v-col v-else-if="!loader" md="12" lg="12" sm="12" cols="12" class="text-center">
+        <v-col v-else-if="!loader && !SpeakersData && SpeakersData.length==0" md="12" lg="12" sm="12" cols="12" class="text-center">
                 <v-img
                   :src="require('@/assets/img/svg/DataNotFound.svg')"
                   :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"

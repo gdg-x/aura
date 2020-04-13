@@ -24,7 +24,7 @@
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
-            <p class="google-font">Either Your Internert is not Working or Site is not Configured</p>
+            <p class="google-font">Either Your Internet is not Working or Site is not Configured</p>
           </v-col>
         </v-row>
       </v-container>
