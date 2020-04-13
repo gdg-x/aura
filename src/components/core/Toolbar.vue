@@ -7,7 +7,7 @@
         class="google-font"
         style="text-decoration:none;font-size:110%"
         :class="this.$vuetify.theme.dark?'whiteText':'blackText'"
-      >{{config.generalConfig.name || "GDG"}}</router-link>
+      >{{config.generalConfig.name || ""}}</router-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
 

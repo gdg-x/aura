@@ -11,7 +11,7 @@
         <v-card-title>Allow Us to send Push Notification</v-card-title>
 
         <v-card-text>
-          <p>We never spam you by sending Notification.</p>
+          <p>We never spam you by sending unnecessary Push Notification.</p>
           <p>
             <span class="font-weight-bold text--primary">Status:</span>
             {{ token }}

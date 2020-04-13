@@ -5,7 +5,7 @@
         <v-list-item-title
           class="google-font"
           style="font-size:130%"
-        >{{config.generalConfig.name || 'GDG' }}</v-list-item-title>
+        >{{config.generalConfig.name || '' }}</v-list-item-title>
       </v-list-item-content>
     </v-list-item>
 
