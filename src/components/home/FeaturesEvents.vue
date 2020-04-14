@@ -38,7 +38,7 @@
           </v-row>
           <v-row v-else class="py-0 my-0 px-2">
             <v-col
-              v-for="(item,i) in FeaturesEventID"
+              v-for="(item,i) in featureEvendsData"
               :key="i"
               md="3"
               lg="3"
@@ -46,11 +46,7 @@
               cols="6"
               class="pa-1"
             >
-              <div v-for="(itemp,j) in AllCustomEvents" :key="j" class="pa-0 ma-0">
-                <div v-if="itemp.id == item" class="pa-0 ma-0">
-                  <featureEventCard :data="itemp" />
-                </div>
-              </div>
+              <featureEventCard :data="item" />
             </v-col>
           </v-row>
         </v-container>
@@ -72,17 +68,27 @@ export default {
     notFound: false,
     FeaturesEventID: [],
     AllCustomEvents: [],
-    eData: []
+    eData: [],
+    featureEvendsData:[]
   }),
   mounted() {
     this.getFeaturesEventID();
   },
   methods: {
     getAllCustomEvents() {
+      this.featureEvendsData = []
       service.getAllCustomEvents().then(res => {
         if (res.success) {
           this.loading = false;
           this.AllCustomEvents = res.data;
+
+          this.FeaturesEventID.map(res=>{
+            this.AllCustomEvents.map(obj=>{
+              if(obj.id == res){
+                  this.featureEvendsData.push(obj)
+              }
+            })
+          })
         }
       });
     },
