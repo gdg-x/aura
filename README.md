@@ -34,7 +34,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 
 ## Getting Started
 
-1. [Fork this repository](https://github.com/Vrijraj/aura/fork) & [Aura Admin](https://github.com/gdg-x/aura-admin) (Important) and clone both repo locally
+1. [Fork this repository](https://github.com/Vrijraj/aura/fork) & [Aura Admin](https://github.com/gdg-x/aura-admin/fork) (Important) and clone both repo locally
 1 To Setup `Aura Main` follow this and to setup [Aura Admin](https://github.com/gdg-x/aura-admin)
 1. Use same [Firebase account](https://console.firebase.google.com) project for both `Admin` & `Aura Main`
 1. Setup Environment
