@@ -42,10 +42,8 @@
           <v-list-item-content>
             <div class=" mb-4 google-font">{{data.data.pubDate | dateFilter}}</div>
             <v-list-item-title class="mb-1 google-font" style="font-size:120%">{{data.data.title | summary(20)}}</v-list-item-title>
-            <!-- <v-list-item-subtitle class="google-font">{{data.data.author}}</v-list-item-subtitle> -->
-            <!-- <v-list-item-subtitle class="google-font" v-html="$options.filters.summary(data.data.description,180)"></v-list-item-subtitle> -->
-            <v-list-item-subtitle class="google-font mb-0" v-html="$options.filters.summary(filterData(data.data.description),100)"></v-list-item-subtitle>
-            <!-- <p class="google-font mt-0 mb-0" style="font-size:70%;">{{data.data.author}}</p> -->
+            <v-list-item-subtitle class="google-font">{{data.data.author}}</v-list-item-subtitle>
+            <v-list-item-subtitle class="google-font mb-0" v-html="$options.filters.summary(filterData(data.data.description),50)"></v-list-item-subtitle>
           </v-list-item-content>
 
           <v-list-item-avatar

@@ -16,8 +16,8 @@
         <v-row class="mb-5 hidden-sm-and-down" v-if="loader">
           <v-col
             md="3"
-            lg="3"
-            sm="4"
+            lg="2"
+            sm="6"
             cols="12"
             class="pa-2 text-center"
             v-for="(item,i) in 8"
@@ -45,25 +45,25 @@
           </v-col>
         </v-row>
         <!-- Mobile Loader -->
-             <v-row v-if="blogsData.length <=0 && !loader" justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'black':''">
-               <v-col  md="12" lg="12" sm="12" cols="12" class="text-center">
-                <v-img
-                  :src="require('@/assets/img/svg/DataNotFound.svg')"
-                  :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
-                  width="15%"
-                  style="border-radius:8px;margin-left:auto;margin-right:auto"
-                >
-                  <template v-slot:placeholder>
-                    <v-row class="fill-height ma-0" align="center" justify="center">
-                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                    </v-row>
-                  </template>
-                </v-img>
-                <h2 class="google-font">Blogs Not Found</h2>
-              </v-col>
-             </v-row>
+        <v-row v-if="blogsData.length <=0 && !loader" justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'black':''">
+          <v-col  md="12" lg="12" sm="12" cols="12" class="text-center">
+          <v-img
+            :src="require('@/assets/img/svg/DataNotFound.svg')"
+            :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
+            width="15%"
+            style="border-radius:8px;margin-left:auto;margin-right:auto"
+          >
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
+          <h2 class="google-font">Blogs Not Found</h2>
+        </v-col>
+        </v-row>
+
         <v-row class="mb-5" v-else>
-          <!-- {{blogsData}} -->
           <v-col
             md="3"
             lg="2"
