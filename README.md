@@ -49,15 +49,6 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
         rules_version = '2';
         service cloud.firestore {
             match /databases/{database}/documents {
-
-                // This rule allows anyone on the internet to view, edit, and delete
-                // all data in your Firestore database. It is useful for getting
-                // started, but it is configured to expire after 30 days because it
-                // leaves your app open to attackers. At that time, all client
-                // requests to your Firestore database will be denied.
-                //
-                // Make sure to write security rules for your app before that time, or else
-                // your app will lose access to your Firestore database
                 match /{document=**} {
                 allow read : if true;
                 allow write : if request.auth.uid != null;
@@ -69,7 +60,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Go to Firebase project Settings and then General Settings Tab
 1. Scroll down and go to your app section under Firebase SDK snippet
 1. Now click on the node
-1. Copy the code 
+1. Copy the code which looks similar to the below sample
     ```js
     apiKey: "Axxxxxxxxxxxxxxxxxxx",
     authDomain: "xxxxxx.firebaseapp.com",
@@ -86,19 +77,21 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
     - For the First Time you will see a text Either `Your Internet is not Working or Site is not Configured`
 1. For the production: `npm run build` and then one dir will be created dist
 1. For testing: `npm run test`
-1. Setup `Aura Admin` for Management of Aura v3
+1. Setup [Aura Admin](https://github.com/gdg-x/aura-admin/) for Management of Aura v3
 
 ## Deployment on Firebase
-1. Setup Environment for the Firebase deployment
-   * Install Firebase CLI: `npm i -g firebase-tools`
-1. Create [Firebase account](https://console.firebase.google.com) and login into [Firebase CLI](https://firebase.google.com/docs/cli/): `firebase login`
-1. Open Terminal/CMD/Powershell in your dir.
-1. Now type `firebase login` command in your Terminal/CMD/Powershell.
-1. Update `.firebaserc` file with your firebase project id
-1. Update `firebase.json` with the field name `site` with your Firebase Multiple hosting
-1. Run locally
-   * `firebase serve`
-1. Update Firebase.json file
+1. Install required tools for performing Firebase deployment
+    - Install Firebase CLI: `npm i -g firebase-tools`
+1. Login into Firebase CLI using the following command -  `firebase login`
+1. Open Terminal/CMD/Powershell in the root directory of your clone of aura-admin repository.
+1. Now type `firebase login` command in your Terminal/CMD/Powershell
+1. Update the `Firebase Project ID` in `.firebasesrc` file. This value should match the project ID in your Project Settings of the Firebase project you created in the previous section.
+1. Go to the Firebase Console Dashboard and Click on Hosting in the left navigation.
+1. Click on Get Started
+1. Click through all steps till you’re taken to the Hosting page in the console.
+1. You’ll be provided with a ready domain with your project ID. It should look like - `<project-id>.web.app or <project-id>.firebaseapp.com`
+1. Copy the sub-domain name of the URL provided. In this case, it will be the project ID. However, to be precise, you have to copy the part before .web.aap or .firebaseapp.com. This is your Site ID
+1. Update `Firebase.json` file, set the site key to Site ID
     ```js
         {
             "hosting": {
@@ -116,8 +109,8 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
             }
         }
     ```
-1. Build and deploy
-   * `firebase deploy`
+1. In your terminal at the root directory of the project,  build and deploy using the following command     
+    - `firebase deploy`
 
 
 
