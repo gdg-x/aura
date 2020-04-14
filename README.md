@@ -56,10 +56,10 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
             }
         }
     ```
-1. In the Firebase project console dashboard. Click on create a new app
+1. In the Firebase project console dashboard. Click on create new web app
 1. Go to Firebase project Settings and then General Settings Tab
 1. Scroll down and go to your app section under Firebase SDK snippet
-1. Now click on the node
+1. Now click on the config
 1. Copy the code which looks similar to the below sample
     ```js
     apiKey: "Axxxxxxxxxxxxxxxxxxx",
