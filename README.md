@@ -71,8 +71,8 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
     messagingSenderId: "xxxxxxxxxxx",
     appId: "1:xxxxxxxxx:web:xxxxxxx"
     ```
-1. Now goto project code and inside `src/config/` update the `firebase.js` file with these codes
-1. Update the field name in `vue.config`
+1. Now goto project code and inside [src/config/](https://github.com/gdg-x/aura/blob/master/src/config/firebase.js) update the `firebase.js` file with these codes
+1. Update the field name in [vue.config](https://github.com/gdg-x/aura/blob/master/vue.config.js)
 1. Run locally
     - `npm run serve`
     - For the First Time you will see a text Either `Your Internet is not Working or Site is not Configured`
