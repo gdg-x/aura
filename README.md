@@ -35,7 +35,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 
 ## Getting Started
 
-1. [Fork this repository](https://github.com/Vrijraj/aura/fork) & [Aura Admin](https://github.com/gdg-x/aura-admin/fork) (Important) and clone both repo locally
+1. [Fork this repository](https://github.com/gdg-x/aura/fork) & [Aura Admin](https://github.com/gdg-x/aura-admin/fork) (Important) and clone both repo locally
 1 To Setup `Aura Main` follow this and to setup [Aura Admin](https://github.com/gdg-x/aura-admin)
 1. Use same [Firebase account](https://console.firebase.google.com) project for both `Admin` & `Aura Main`
 1. Setup Environment
@@ -78,7 +78,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
     - For the First Time you will see a text Either `Your Internet is not Working or Site is not Configured`
 1. For the production: `npm run build` and then one dir will be created dist
 1. For testing: `npm run test`
-1. Setup [Aura Admin](https://github.com/gdg-x/aura-admin/) for Management of Aura v3
+1. Setup [Aura Admin](https://github.com/gdg-x/aura-admin/fork) for Management of Aura v3
 
 ## Deployment on Firebase
 1. Install required tools for performing Firebase deployment
