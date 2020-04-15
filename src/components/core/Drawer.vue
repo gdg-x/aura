@@ -30,6 +30,18 @@
         </v-list-item-content>
       </v-list-item>
     </v-list>
+    <template v-slot:append>
+      <div class="pl-2">
+        <p class="subtitle-2 google-font">
+          Based on Project
+          <a
+            href="https://github.com/gdg-x/aura/"
+            target="_blank"
+            style="text-decoration:none"
+          >Aura</a>
+        </p>
+      </div>
+    </template>
   </v-navigation-drawer>
 </template>
 
