@@ -53,7 +53,7 @@ export default new Vuex.Store({
       {
         text: 'About',
         to: '/about',
-        icon: 'mdi-comment-alert-outline',
+        icon: 'mdi-comment-alert',
         meta: {
           showToolbar: true,
           showBottomNav: true
