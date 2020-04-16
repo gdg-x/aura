@@ -159,6 +159,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 | --- | --- |
 | GDG Jalandhar | [View Now](https://gdgjalandhar.com) |
 | DSC NSEC | [View Now](https://dscnsec.com) |
+| GDG Konya | [View Now](https://gdgkonya.com) |
 
 
 ## Facing Any Problem or need any Help?
