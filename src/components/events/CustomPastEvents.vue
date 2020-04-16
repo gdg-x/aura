@@ -86,7 +86,7 @@ import { mapState } from 'vuex'
                 this.isLoading = true
                 service.getAllEvents().then(res=>{
                     if(res.success){
-                        this.eventsData = res.data
+                        this.eventsData = res.data.filter(obj=>obj.visible==true)
                         this.isLoading = false
                     }else{
                         this.isLoading = false
