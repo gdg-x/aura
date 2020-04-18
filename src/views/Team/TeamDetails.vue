@@ -50,7 +50,7 @@
                             </v-col>
                             <v-col md="9" lg="9" sm="8" cols="12">
                                     <p class="mb-0"><b>Bio</b></p>
-                                    <p class="mt-1 mb-0 google-font mt-0" style="font-size:110%">{{MemberDetails.bio}}</p>
+                                    <p class="mt-1 mb-0 google-font mt-0" style="font-size:110%" v-html="marked(MemberDetails.bio)">{{MemberDetails.bio}}</p>
 
                                     <p class="mb-0 mt-3"><b>Social Links</b></p>
                                     <p class="mt-1 mb-0 google-font mt-0" style="font-size:110%">

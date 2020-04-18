@@ -47,7 +47,7 @@
               <SocialMediaDetails :data="speaker.socialLinks" />
             </v-col>
             <v-col class="pa-2" cols="12" sm="8">
-              <p class="google-font my-4" style="font-size:110%">{{speaker.bio}}</p>
+              <p class="google-font my-4" style="font-size:110%" v-html="marked(speaker.bio)">{{speaker.bio}}</p>
             </v-col>
           </v-row>
         </v-container>

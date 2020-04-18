@@ -60,7 +60,7 @@
               <v-card>
                 <v-card-title class="google-font">About:</v-card-title>
                 <v-card-text>
-                  <p class="google-font" style="font-size:90%">{{speaker.bio}}</p>
+                  <p class="google-font" style="font-size:90%" v-html="marked(speaker.bio)">{{speaker.bio}}</p>
                 </v-card-text>
               </v-card>
             </v-col>

@@ -6,7 +6,15 @@ import store from './store'
 import vuetify from './plugins/vuetify';
 import generalFunctions from './functions/generalFunctions'
 import './style.css'
+import marked from 'marked';
 
+Vue.mixin({
+  methods: {
+    marked: function(input) {
+      return marked(input);
+    }
+  }
+});
 
 
 

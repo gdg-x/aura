@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.4",
     "firebase": "^7.14.0",
+    "marked": "^0.8.2",
     "register-service-worker": "^1.6.2",
     "v-offline": "^1.2.1",
     "vue": "^2.6.11",

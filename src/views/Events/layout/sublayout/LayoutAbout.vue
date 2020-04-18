@@ -5,7 +5,7 @@
                 <v-row class="">
                     <v-col>
                         <h1 class="google-font">{{data.name}} Details</h1>
-                        <p class="google-font mb-3">{{data.des}}</p>
+                        <p class="google-font mb-3" v-html="marked(data.des)">{{data.des}}</p>
 
                         <span v-for="(item,i) in data.hashtags" :key="i">
                             <v-chip class="mr-1" :href="'https://twitter.com/hashtag/'+item" target="_blank" label small>#{{item}}</v-chip>
