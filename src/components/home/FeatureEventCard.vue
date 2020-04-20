@@ -45,7 +45,7 @@
             Meetup Page
           </v-btn>
 
-          <v-btn color="pink" target="_blank" @click="goToEvent(data.id)" class="ma-0 elevation-0 my-2 mr-3" dark style="text-transform: capitalize;"> 
+          <v-btn color="indigo" target="_blank" @click="goToEvent(data.id)" class="ma-0 elevation-0 my-2 mr-3" dark style="text-transform: capitalize;"> 
             Event Page
           </v-btn>
         </v-card-text>
