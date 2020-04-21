@@ -142,7 +142,7 @@
 <script>
 import service from "@/services/appservices";
 import SocialMediaDetails from '@/components/common/SocialInfo'
-
+import { mapState } from 'vuex'
 
 export default {
   name: "SpeakerDesktop",
@@ -156,6 +156,9 @@ export default {
     notFound: false,
     eventLoader: false
   }),
+  computed:{
+    ...mapState(['config'])
+  },
   mounted() {
     this.details(this.$route.params.id);
     this.getevents(this.$route.params.id);
@@ -169,6 +172,7 @@ export default {
           if (res.success == true) {
             this.loader = false;
             this.speaker = res.data;
+            document.title = this.speaker.name +" | " +this.config.generalConfig.name
           } else {
             this.loader = false;
             this.notFound = true;
