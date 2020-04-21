@@ -48,6 +48,9 @@
           <v-btn color="indigo" target="_blank" @click="goToEvent(data.id)" class="ma-0 elevation-0 my-2 mr-3" dark style="text-transform: capitalize;"> 
             Event Page
           </v-btn>
+          <v-btn color="red" v-if="checkExistance(data.links.youtube,0)" :href="data.links.youtube" target="_blank" class="ma-0 elevation-0 my-2 mr-3" dark style="text-transform: capitalize;"> 
+            YouTube Live
+          </v-btn>
         </v-card-text>
 
         <v-divider></v-divider>
