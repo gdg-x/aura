@@ -5,7 +5,7 @@
         <v-row class>
           <v-col>
             <p class="google-font mb-0">
-              Here are the top 10 blogs/articles written by me. You can find more blogs/articles on
+              Here are the top 10 blogs/articles written by us. You can find more blogs/articles on
               <a :href="blogURL" style="text-decoration:none" target="_blank">Medium</a>
             </p>
             <!-- {{blogsData.feed.link}} -->
