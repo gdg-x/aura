@@ -5,13 +5,13 @@ import 'firebase/firestore';
 import 'firebase/messaging';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCOl0qzkhCDmyWeeIT8AZe4xyJJlIfU5gE",
-  authDomain: "myaurapp.firebaseapp.com",
-  databaseURL: "https://myaurapp.firebaseio.com",
-  projectId: "myaurapp",
-  storageBucket: "myaurapp.appspot.com",
-  messagingSenderId: "419511997060",
-  appId: "1:419511997060:web:ce7aa0d308f6b484f868d1"
+  apiKey: "AIzaSyAvx7gMLcpEnol0lRzep687jXFzj4ENUoQ",
+  authDomain: "gdg-nagpur-web-app.firebaseapp.com",
+  databaseURL: "https://gdg-nagpur-web-app.firebaseio.com",
+  projectId: "gdg-nagpur-web-app",
+  storageBucket: "gdg-nagpur-web-app.appspot.com",
+  messagingSenderId: "596571402420",
+  appId: "1:596571402420:web:6bf6f6afb8c3c582"
 };
 
 firebase.initializeApp(firebaseConfig);
