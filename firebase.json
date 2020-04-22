@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site":"myaurapp",
+    "site":"gdg-nagpur-web-app",
     "public": "dist",
     "rewrites": [ {
         "source": "**",
