@@ -132,7 +132,7 @@ export default {
           actions: [
             {
               action: "open",
-              title: "Visite Site"
+              title: "Visit Site"
             }
           ]
         };

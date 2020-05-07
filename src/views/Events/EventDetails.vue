@@ -29,6 +29,7 @@
 
 <script>
 import service from '@/services/appservices'
+import { mapState } from 'vuex'
 export default {
   components: {
     layout:()=>import('@/views/Events/layout/layout')
@@ -40,8 +41,11 @@ export default {
         loader:true
       }
   },
+  computed:{
+    ...mapState(['config'])
+  },
   mounted(){
-    this.getEventInfo()
+    this.getEventInfo();
   },
   methods:{
     getEventInfo(){
@@ -51,7 +55,9 @@ export default {
           if(res.success){
             if(res.data.visible){
               this.EventData=res.data
-              this.loader = false
+              this.loader = false 
+              document.title = this.EventData.name +" | " +this.config.generalConfig.name
+
             }else{
               this.$router.push({ path: '/events' })
               this.loader = false

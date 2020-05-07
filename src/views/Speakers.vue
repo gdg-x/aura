@@ -42,21 +42,21 @@
             </v-row>
           </v-container>
         </v-col>
-        <v-col v-else-if="!loader && !SpeakersData && SpeakersData.length==0" md="12" lg="12" sm="12" cols="12" class="text-center">
-                <v-img
-                  :src="require('@/assets/img/svg/DataNotFound.svg')"
-                  :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
-                  width="15%"
-                  style="border-radius:8px;margin-left:auto;margin-right:auto"
-                >
-                  <template v-slot:placeholder>
-                    <v-row class="fill-height ma-0" align="center" justify="center">
-                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                    </v-row>
-                  </template>
-                </v-img>
-                <h2 class="google-font">Speakers Not Found</h2>
-              </v-col>
+        <v-col v-else-if="loader ==false && SpeakersData.length == 0" md="12" lg="12" sm="12" cols="12" class="text-center">
+          <v-img
+            :src="require('@/assets/img/svg/DataNotFound.svg')"
+            :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
+            width="15%"
+            style="border-radius:8px;margin-left:auto;margin-right:auto"
+          >
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
+          <h2 class="google-font">Speakers Not Found</h2>
+          </v-col>
         <v-col v-if="loader" md="12" lg="10" xs="12" class="pt-3">
           <v-container fluid class>
             <v-row>

@@ -50,9 +50,12 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
         rules_version = '2';
         service cloud.firestore {
             match /databases/{database}/documents {
+                match /apiEnd/{apiEndpoint}{
+    	            allow read, write : if true;
+                }
                 match /{document=**} {
-                allow read : if true;
-                allow write : if request.auth.uid != null;
+                    allow read : if true;
+                    allow write : if request.auth.uid != null;
                 }
             }
         }
