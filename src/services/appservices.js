@@ -297,12 +297,10 @@ let appservice = {
       fetch(
           "https://cors-anywhere.herokuapp.com/https://api.meetup.com/" + id + "/events?&sign=true"
         ).then(res => res.json()).then(data => {
-          if (data.length > 0) {
             resolve({
               success: true,
               data: data
             })
-          }
         })
         .catch(e => {
           reject(e)
@@ -338,12 +336,10 @@ let appservice = {
       fetch(
           "https://cors-anywhere.herokuapp.com/https://api.meetup.com/" + id + "/events?desc=true&photo-host=public&page=300&status=past&sign=true"
         ).then(res => res.json()).then(data => {
-          if (data.length > 0) {
             resolve({
               success: true,
               data: data
             })
-          }
         })
         .catch(e => {
           reject(e)
