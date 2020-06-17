@@ -3,13 +3,15 @@
     <template v-slot:activator="{ on }">
       <div
         v-on="on"
+        v-ripple
         style="cursor: pointer;"
         :class="$vuetify.theme.dark == true?'darkModeCardFeatureEvent':'lightModeCardFeatureEvent'"
-        class="pa-3 py-5"
+        class="pa-3 py-5 fill-height"
       >
         <p class="google-font mb-0" style="font-size:90%">{{data.date | dateFilter}}</p>
-        <p class="google-font mb-0" style="font-size:120%">{{data.name}}</p>
+        <p class="google-font mb-0" style="font-size:120%">{{data.name | summary(15)}}</p>
         <p class="google-font mb-0" style="font-size:90%">{{data.venue.name | summary(20)}}</p>
+        <v-spacer></v-spacer>
         <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
       </div>
     </template>

@@ -86,15 +86,11 @@ export default {
   methods:{
     getFeaturesEventID(){
       service.getFeaturesEvents().then(res=>{
-          if(res.success){
-            if(res.data.length>0){
-              this.showFeatureEventStatus = true
-            }else{
-              this.showFeatureEventStatus = false
-            }
-          }else{
-              this.notFound = true
-          }
+          (res.success) ?
+            (res.data.length>0) ?
+              this.showFeatureEventStatus = true :
+                this.showFeatureEventStatus = false
+            : this.notFound = true
       })
     }
   }
