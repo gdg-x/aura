@@ -1,27 +1,34 @@
 <template>
-  <v-app-bar app fixed clipped-left :class="this.$vuetify.theme.dark == true?'':'white'">
-    <v-app-bar-nav-icon @click="toggleDrawer" class="d-md-none d-lg-none"></v-app-bar-nav-icon>
-    <v-toolbar-title class="google-font px-0">
+  <v-app-bar app hide-on-scroll fixed clipped-left :class="this.$vuetify.theme.dark == true?'':'white'" >
+    <v-app-bar-nav-icon aria-label="Hamburger Menu" @click="toggleDrawer" class="d-md-none d-lg-none"></v-app-bar-nav-icon>
+    <v-toolbar-title class="google-font px-0" style="width:280px">
       <router-link
         to="/"
         class="google-font"
+        aria-label="Communiy homepage"
         style="text-decoration:none;font-size:110%"
         :class="this.$vuetify.theme.dark?'whiteText':'blackText'"
       >{{config.generalConfig.name || ""}}</router-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
 
-    <div v-for="(link, i) in links" :key="i">
-      <v-btn
+    <v-tabs
+      :color="this.$vuetify.theme.dark ? 'white' : 'primary'"
+      right
+      :slider-color="this.$vuetify.theme.dark ? 'white' : 'primary'"
+      class="hidden-sm-and-down"
+    >
+      <v-tab
+        aria-label="toolbar links"
+        v-for="(link, i) in links.filter((obj) => obj.meta.showToolbar)"
         :key="i"
         :to="link.to"
-        v-if="link.meta.showToolbar"
-        class="ml-2 google-font hidden-sm-and-down"
-        style="text-transform: capitalize;"
-        text
+        class="google-font"
         @click="onClick($event, link)"
-      >{{ link.text }}</v-btn>
-    </div>
+        style="text-transform: capitalize;"
+        >{{ link.text }}</v-tab
+      >
+    </v-tabs>
 
     <offline @detected-condition="handleConnectivityChange"></offline>
     <v-toolbar-title
@@ -29,8 +36,8 @@
       style="background-color:red;border:1px solid red;border-radius:6px;color:white;font-size:90%"
       class="google-font px-2"
     >Offline</v-toolbar-title>
-    <PushNotification class="mx-1" />
-    <v-btn icon v-on:click="darkMode" class="ml-2">
+    <PushNotification class="mr-1" />
+    <v-btn icon v-on:click="darkMode" class="ml-1" aria-label="Theme Switch BTN">
       <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
       <v-icon v-else>mdi-brightness-4</v-icon>
     </v-btn>

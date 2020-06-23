@@ -2,6 +2,7 @@
 @font-face {
     font-family: google-sans;
     src: url(assets/fonts/google-font.woff2);
+    font-display: swap;
 }
 .google-font{
     font-family: google-sans

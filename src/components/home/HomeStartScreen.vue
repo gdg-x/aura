@@ -31,6 +31,7 @@
           <span v-for="(item,i) in config.generalConfig.hashtags" :key="i">
             <v-chip
               :href="'https://twitter.com/hashtag/'+item"
+              rel="noreferrer"
               target="_blank"
               small
               class="mr-1"
@@ -43,6 +44,8 @@
           v-if="checkExistance(config.generalConfig.becomemember,0)"
           :href="config.generalConfig.becomemember"
           target="_blank"
+          rel="noreferrer"
+          aria-label="Become a Member"
           class="ma-0 google-font elevation-1 primary mr-2"
           style="text-transform: capitalize;border-radius:5px;color:white"
         >Become a Member</v-btn>
@@ -50,7 +53,9 @@
           v-if="checkExistance(config.generalConfig.learnMoreLink,0)"
           :href="config.generalConfig.learnMoreLink"
           target="_blank"
+          aria-label="Learn More"
           rounded
+          rel="noreferrer"
           color="cyan"
           style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
           outlined

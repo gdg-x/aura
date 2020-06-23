@@ -11,7 +11,7 @@
         <span v-for="(item,i) in whatwedodata" :key="i">
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
-              <a :href="item.link" target="_blank" class="ma-0 mx-3">
+              <a :href="item.link" target="_blank" class="ma-0 mx-3" rel="noreferrer">
                 <img :src="getImgUrl(item.image)" width="25vh" alt srcset dark v-on="on" />
               </a>
               &nbsp;&nbsp;&nbsp;

@@ -2,7 +2,7 @@
   <div class="text-center">
     <v-dialog v-model="dialog" width="500">
       <template v-slot:activator="{ on }">
-        <v-btn icon text v-on="on">
+        <v-btn icon text v-on="on" aria-label="Push Notification">
           <v-icon>mdi-bell</v-icon>
         </v-btn>
       </template>
