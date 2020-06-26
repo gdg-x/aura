@@ -41,17 +41,17 @@ export default {
       {
         text: "About",
         to: "/about",
-        icon: "mdi-currency-usd",
+        icon: "mdi-information-outline",
       },
       {
         text: "Speakers",
         to: "/speakers",
-        icon: "mdi-currency-usd",
+        icon: "mdi-account-multiple-outline",
       },
       {
         text: "Schedule",
         to: "/schedule",
-        icon: "mdi-currency-usd",
+        icon: "mdi-television-guide",
       },
       {
         text: "Partners",
@@ -61,7 +61,7 @@ export default {
       {
         text: "Team",
         to: "/team",
-        icon: "mdi-currency-usd",
+        icon: "mdi-account-box-outline",
       }
     ]
   }),

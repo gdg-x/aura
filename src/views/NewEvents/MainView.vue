@@ -21,13 +21,13 @@
       style="height:100% !important"
       v-else
     >
-    <v-row align="center" justify="center">
-      <v-col cols="12" sm="11" md="10" lg="10" xl="8" class="my-0 py-0">
-      <v-slide-y-reverse-transition>
-        <router-view :eventDetails="EventData" v-show="show" />
-      </v-slide-y-reverse-transition>
-      </v-col>
-    </v-row>
+      <v-row align="center" justify="center">
+        <v-col cols="12" sm="11" md="10" lg="10" xl="10" class="my-0 py-0">
+          <v-slide-y-reverse-transition>
+            <router-view :eventDetails="EventData" v-show="show"/>
+          </v-slide-y-reverse-transition>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>

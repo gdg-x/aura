@@ -7,13 +7,19 @@
         </v-col>
       </v-row>
       <v-row justify="center" align="center" class="py-5" v-else-if="sData.length<=0 && !isLoading">
-        <v-col cols="12" md="12" class="text-center">
-          <p class="google-font" style="font-size:120%">No Speaker Found.</p>
+        <v-col cols="12" md="12">
+          <h2 :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-3'" class="google-font mb-0">No Speaker Found.</h2>
+          <!-- <p class="google-font" style="font-size:120%">No Speaker Found.</p> -->
         </v-col>
       </v-row>
       <v-row class="py-0 my-0" v-else>
         <v-col md="12" sm="12" cols="12" class="py-0 my-0">
-          <v-row class="my-4" v-if="checkExistance(eventDetails.speakers,0)">
+          <v-row class="mt-5">
+            <v-col class="">
+              <h2 :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-3'" class="google-font mb-0">Check out our speaker lineup</h2>
+            </v-col>
+          </v-row>
+          <v-row class="" v-if="checkExistance(eventDetails.speakers,0)">
             <v-col cols="6" md="4" lg="3" xl="2" sm="3" class="pa-1" v-for="(item,i) in sData" :key="i">
               <LayoutSpeaker :data="item" />
             </v-col>
