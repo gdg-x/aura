@@ -1,0 +1,86 @@
+<template>
+  <v-navigation-drawer app clipped floating v-model="eventDrawer" :class="this.$vuetify.theme.dark == true?'black':'grey lighten-5'">
+    <v-list dense shaped>
+      <v-list-item
+        v-for="(link, i) in links"
+        :key="i"
+        :to="'/event/'+$route.params.id+''+link.to"
+        class="google-font my-0 py-0"
+        color="primary"
+      >
+        <v-list-item-icon>
+          <v-icon v-text="link.icon"></v-icon>
+        </v-list-item-icon>
+
+        <v-list-item-content>
+          <v-list-item-title v-text="link.text" />
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
+    <template v-slot:append>
+      <div class="pl-2">
+        <p class="subtitle-2 google-font">
+          Based on Project
+          <a
+            href="https://github.com/gdg-x/aura/"
+            target="_blank"
+            style="text-decoration:none"
+          >Aura</a>
+        </p>
+      </div>
+    </template>
+  </v-navigation-drawer>
+</template>
+
+<script>
+import { mapState, mapGetters, mapMutations } from "vuex";
+export default {
+  name: "eventDrawer",
+  data: () => ({
+    links: [
+      {
+        text: "About",
+        to: "/about",
+        icon: "mdi-currency-usd",
+      },
+      {
+        text: "Speakers",
+        to: "/speakers",
+        icon: "mdi-currency-usd",
+      },
+      {
+        text: "Schedule",
+        to: "/schedule",
+        icon: "mdi-currency-usd",
+      },
+      {
+        text: "Partners",
+        to: "/partners",
+        icon: "mdi-currency-usd",
+      },
+      {
+        text: "Team",
+        to: "/team",
+        icon: "mdi-currency-usd",
+      }
+    ]
+  }),
+  computed: {
+    ...mapState(["config",]),
+    eventDrawer: {
+      get() {
+        return this.$store.state.eventDrawer;
+      },
+      set(val) {
+        this.setEventDrawer(val);
+      }
+    }
+  },
+  methods: {
+    ...mapMutations(["setEventDrawer"]),
+  }
+};
+</script>
+
+<style>
+</style>

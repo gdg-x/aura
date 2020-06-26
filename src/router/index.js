@@ -58,6 +58,68 @@ const routes = [{
     }
   },
   {
+    path:'/event/:id',
+    name:'CustomEvent',
+    component:()=>import( /* webpackChunkName: "CustomEvent" */ '../views/NewEvents/MainView.vue'),
+    children: [
+      {
+        // when /event/:id/ is matched
+        path: 'about',
+        name:"CustomEventHome",
+        component: ()=> import(/* webpackChunkName: "CustomEventAbout" */ '../views/NewEvents/About.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
+        // when /event/:id/ is matched
+        path: 'speakers',
+        name:"CustomEventSpeaker",
+        component: ()=> import(/* webpackChunkName: "CustomEventSpeaker" */ '../views/NewEvents/Speaker.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
+        // when /event/:id/ is matched
+        path: 'team',
+        name:"CustomEventTeam",
+        component: ()=> import(/* webpackChunkName: "CustomEventTeam" */ '../views/NewEvents/Team.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
+        // when /event/:id/ is matched
+        path: 'schedule',
+        name:"CustomEventSchedule",
+        component: ()=> import(/* webpackChunkName: "CustomEventSchedule" */ '../views/NewEvents/Schedule.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
+        // when /event/:id/ is matched
+        path: 'partners',
+        name:"CustomEventPartners",
+        component: ()=> import(/* webpackChunkName: "CustomEventPartners" */ '../views/NewEvents/Partners.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
+        path: '',
+        name: 'redirectCustomEvent',
+        redirect: {
+          path: 'about'
+        },
+        meta: {
+          isEvent:true
+        }
+      },
+    ]
+  },
+  {
     path: '/speakers',
     name: 'Speakers',
     component: () => import( /* webpackChunkName: "speakers" */ '../views/Speakers.vue'),

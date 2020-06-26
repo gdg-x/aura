@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site":"myaurapp",
+    "site":"dev-aurapp",
     "public": "dist",
     "rewrites": [ {
         "source": "**",
