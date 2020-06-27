@@ -13,7 +13,17 @@
         >
           <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-twitter</v-icon>
         </v-btn>
-
+        <v-btn
+          aria-label="social media btn"
+          small
+          class="ml-0 mt-0 mx-0"
+          icon
+          v-if="checkExistance(data.facebook,0)"
+          :href="data.facebook"
+          target="_blank"
+        >
+          <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-facebook</v-icon>
+        </v-btn>
         <v-btn
           aria-label="social media btn"
           small
