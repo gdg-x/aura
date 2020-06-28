@@ -29,6 +29,11 @@
         </v-col>
       </v-row>
     </v-container>
+      <v-fab-transition >
+      <v-btn app dark fab class="hidden-sm-and-up" @click="shareEvent" bottom fixed right color="indigo">
+        <v-icon>mdi-share-variant</v-icon>
+      </v-btn>
+    </v-fab-transition>
   </div>
 </template>
 
@@ -36,7 +41,7 @@
 import service from '@/services/appservices'
 import { mapState } from 'vuex'
 export default {
-  name: "ccc",
+  name: "EventMainView",
   components: {
     EventToolBar: () => import("@/components/NewEvents/EventToolbar"),
     EventDrawer: () => import("@/components/NewEvents/EventDrawer")
@@ -44,14 +49,14 @@ export default {
   data: () => ({
     show: false,
     notFound:0,
-        EventData: {},
-        loader:true
+    EventData: {},
+    loader:true
   }),
   mounted(){
     this.getEventInfo();
   },
   computed:{
-    ...mapState(['config'])
+    ...mapState(['config']),
   },
   methods:{
     getEventInfo(){
@@ -65,18 +70,36 @@ export default {
               this.loader = false 
               document.title = this.EventData.name +" | " +this.config.generalConfig.name
             }else{
-              this.$router.push({ path: '/events' })
               this.loader = false
+              this.$router.push({ path: '/events' })
             }
           }else{
-            this.$router.push({ path: '/events' })
             this.loader = false
+            this.$router.push({ path: '/events' })
           }
       }).catch(e=>{
         this.loader = false
         console.log(e)
       })
-    }
+    },
+    shareEvent(e) {
+      if (navigator.share) {
+        navigator
+          .share({
+            title: `${this.EventData.name} - ${this.config.generalConfig.name}`,
+            url: `${window.location.href}`,
+            text: `${this.EventData.name} by ${this.config.generalConfig.name} come and join with me....`,
+          })
+          .then(() => {
+            console.log("Thanks for sharing");
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      } else {
+        alert('Not supporting in your browser')
+      }
+    },
   },
   created() {
     this.show = true;

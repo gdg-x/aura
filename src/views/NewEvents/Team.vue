@@ -24,11 +24,11 @@
               <TeamMemberCard :data="item" />
             </v-col>
           </v-row>
-          <v-row class="mt-5">
+          <!-- <v-row class="mt-5">
             <v-col>
               {{eventDetails}}
             </v-col>
-          </v-row>
+          </v-row> -->
         </v-col>
       </v-row>
     </v-container>
