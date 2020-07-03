@@ -48,14 +48,76 @@ const routes = [{
       color: '#0277bd',
     }
   },
+  // {
+  //   path: '/events/:id',
+  //   name: 'Events-Details',
+  //   component: () => import( /* webpackChunkName: "events-details" */ '../views/Events/EventDetails.vue'),
+  //   meta: {
+  //     title: 'Events ',
+  //     color: '#0277bd',
+  //   }
+  // },
   {
-    path: '/events/:id',
-    name: 'Events-Details',
-    component: () => import( /* webpackChunkName: "events-details" */ '../views/Events/EventDetails.vue'),
-    meta: {
-      title: 'Events ',
-      color: '#0277bd',
-    }
+    path:'/events/:id',
+    name:'CustomEvent',
+    component:()=>import( /* webpackChunkName: "CustomEvent" */ '../views/Events/MainView.vue'),
+    children: [
+      {
+        // when /event/:id/ is matched
+        path: 'about',
+        name:"CustomEventHome",
+        component: ()=> import(/* webpackChunkName: "CustomEventAbout" */ '../views/Events/About.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
+        // when /event/:id/ is matched
+        path: 'speakers',
+        name:"CustomEventSpeaker",
+        component: ()=> import(/* webpackChunkName: "CustomEventSpeaker" */ '../views/Events/Speaker.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
+        // when /event/:id/ is matched
+        path: 'team',
+        name:"CustomEventTeam",
+        component: ()=> import(/* webpackChunkName: "CustomEventTeam" */ '../views/Events/Team.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
+        // when /event/:id/ is matched
+        path: 'schedule',
+        name:"CustomEventSchedule",
+        component: ()=> import(/* webpackChunkName: "CustomEventSchedule" */ '../views/Events/Schedule.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
+        // when /event/:id/ is matched
+        path: 'partners',
+        name:"CustomEventPartners",
+        component: ()=> import(/* webpackChunkName: "CustomEventPartners" */ '../views/Events/Partners.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
+        path: '',
+        name: 'redirectCustomEvent',
+        redirect: {
+          path: 'about'
+        },
+        meta: {
+          isEvent:true
+        }
+      },
+    ]
   },
   {
     path: '/speakers',
