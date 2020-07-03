@@ -10,7 +10,7 @@
       <v-list-item
         v-for="(link, i) in links"
         :key="i"
-        :to="'/event/'+$route.params.id+''+link.to"
+        :to="'/events/'+$route.params.id+''+link.to"
         class="google-font my-0 py-0"
         color="primary"
       >

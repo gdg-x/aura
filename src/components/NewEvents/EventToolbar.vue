@@ -5,7 +5,7 @@
     <v-app-bar-nav-icon aria-label="Hamburger Menu" @click="toggleEventDrawer"></v-app-bar-nav-icon>
     <v-toolbar-title class="google-font px-0" style="width:280px">
       <router-link
-        :to="'/event/'+$route.params.id+'/about'"
+        :to="'/events/'+$route.params.id+'/about'"
         class="google-font"
         aria-label="Communiy homepage"
         style="text-decoration:none;font-size:110%"

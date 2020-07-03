@@ -48,17 +48,17 @@ const routes = [{
       color: '#0277bd',
     }
   },
+  // {
+  //   path: '/events/:id',
+  //   name: 'Events-Details',
+  //   component: () => import( /* webpackChunkName: "events-details" */ '../views/Events/EventDetails.vue'),
+  //   meta: {
+  //     title: 'Events ',
+  //     color: '#0277bd',
+  //   }
+  // },
   {
-    path: '/events/:id',
-    name: 'Events-Details',
-    component: () => import( /* webpackChunkName: "events-details" */ '../views/Events/EventDetails.vue'),
-    meta: {
-      title: 'Events ',
-      color: '#0277bd',
-    }
-  },
-  {
-    path:'/event/:id',
+    path:'/events/:id',
     name:'CustomEvent',
     component:()=>import( /* webpackChunkName: "CustomEvent" */ '../views/NewEvents/MainView.vue'),
     children: [
