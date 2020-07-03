@@ -43,8 +43,8 @@ import { mapState } from 'vuex'
 export default {
   name: "EventMainView",
   components: {
-    EventToolBar: () => import("@/components/NewEvents/EventToolbar"),
-    EventDrawer: () => import("@/components/NewEvents/EventDrawer")
+    EventToolBar: () => import("@/components/CutomEvent/EventToolbar"),
+    EventDrawer: () => import("@/components/CutomEvent/EventDrawer")
   },
   data: () => ({
     show: false,
@@ -66,7 +66,7 @@ export default {
           if(res.success){
             if(res.data.visible){
               this.EventData=res.data
-              console.log(this.EventData);
+              // console.log(this.EventData);
               this.loader = false 
               document.title = this.EventData.name +" | " +this.config.generalConfig.name
             }else{

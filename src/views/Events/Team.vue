@@ -64,7 +64,7 @@ export default {
             this.eventDetails.team.map(s => {
               this.TeamData.map(obj => {
                 if (obj.id == s) {
-                  console.log(obj);
+                  // console.log(obj);
                   this.sData.push(obj);
                 }
               });

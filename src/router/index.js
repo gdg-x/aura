@@ -60,13 +60,13 @@ const routes = [{
   {
     path:'/events/:id',
     name:'CustomEvent',
-    component:()=>import( /* webpackChunkName: "CustomEvent" */ '../views/NewEvents/MainView.vue'),
+    component:()=>import( /* webpackChunkName: "CustomEvent" */ '../views/Events/MainView.vue'),
     children: [
       {
         // when /event/:id/ is matched
         path: 'about',
         name:"CustomEventHome",
-        component: ()=> import(/* webpackChunkName: "CustomEventAbout" */ '../views/NewEvents/About.vue'),
+        component: ()=> import(/* webpackChunkName: "CustomEventAbout" */ '../views/Events/About.vue'),
         meta: {
           isEvent:true
         }
@@ -75,7 +75,7 @@ const routes = [{
         // when /event/:id/ is matched
         path: 'speakers',
         name:"CustomEventSpeaker",
-        component: ()=> import(/* webpackChunkName: "CustomEventSpeaker" */ '../views/NewEvents/Speaker.vue'),
+        component: ()=> import(/* webpackChunkName: "CustomEventSpeaker" */ '../views/Events/Speaker.vue'),
         meta: {
           isEvent:true
         }
@@ -84,7 +84,7 @@ const routes = [{
         // when /event/:id/ is matched
         path: 'team',
         name:"CustomEventTeam",
-        component: ()=> import(/* webpackChunkName: "CustomEventTeam" */ '../views/NewEvents/Team.vue'),
+        component: ()=> import(/* webpackChunkName: "CustomEventTeam" */ '../views/Events/Team.vue'),
         meta: {
           isEvent:true
         }
@@ -93,7 +93,7 @@ const routes = [{
         // when /event/:id/ is matched
         path: 'schedule',
         name:"CustomEventSchedule",
-        component: ()=> import(/* webpackChunkName: "CustomEventSchedule" */ '../views/NewEvents/Schedule.vue'),
+        component: ()=> import(/* webpackChunkName: "CustomEventSchedule" */ '../views/Events/Schedule.vue'),
         meta: {
           isEvent:true
         }
@@ -102,7 +102,7 @@ const routes = [{
         // when /event/:id/ is matched
         path: 'partners',
         name:"CustomEventPartners",
-        component: ()=> import(/* webpackChunkName: "CustomEventPartners" */ '../views/NewEvents/Partners.vue'),
+        component: ()=> import(/* webpackChunkName: "CustomEventPartners" */ '../views/Events/Partners.vue'),
         meta: {
           isEvent:true
         }

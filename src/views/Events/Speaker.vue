@@ -35,7 +35,7 @@ import service from "@/services/appservices";
 
 export default {
   components: {
-    LayoutSpeaker: () => import("@/components/NewEvents/Speakers.vue")
+    LayoutSpeaker: () => import("@/components/CutomEvent/Speakers.vue")
   },
   props: ["eventDetails"],
   data: () => ({
@@ -59,7 +59,7 @@ export default {
             this.eventDetails.speakers.map(s => {
               this.SpeakersData.map(obj => {
                 if (obj.id == s) {
-                  console.log(obj);
+                  // console.log(obj);
                   this.sData.push(obj);
                 }
               });
