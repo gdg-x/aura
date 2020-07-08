@@ -19,7 +19,7 @@
               <h2 :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-3'" class="google-font mb-0">Our Team</h2>
             </v-col>
           </v-row>
-          <v-row class="" v-if="checkExistance(eventDetails.speakers,0)">
+          <v-row class="" v-if="checkExistance(eventDetails.team,0)">
             <v-col cols="6" md="4" lg="3" xl="2" sm="3" class="pa-1" v-for="(item,i) in sData" :key="i">
               <TeamMemberCard :data="item" />
             </v-col>
