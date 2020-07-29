@@ -8,7 +8,6 @@
         >Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.</p>
         <p class="google-font">{{data.shortDescription}}</p>
         <p class="google-font mt-5">Questions? Please contact {{data.email}}</p>
-        <!-- {{socialLinks}} -->
         <CommunitySocialInfo :config="config"  class="mb-2"/>
         <span v-for="(item,i) in data.hashtags" :key="i" >
           <v-chip

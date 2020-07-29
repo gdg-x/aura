@@ -3,6 +3,25 @@
       this.$vuetify.theme.dark ? {boxShadow:'0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #272727'}
       :{ boxShadow: '0 2px 6px 0 rgba(0,0,0,.12), inset  0 -1px 0 0 #dadce0' }">
     <v-app-bar-nav-icon aria-label="Hamburger Menu" @click="toggleDrawer" class="d-md-none d-lg-none"></v-app-bar-nav-icon>
+    <div class="d-flex align-center" v-if="checkExistance(config.generalConfig.toolbarImage, 0)">
+      <router-link
+        to="/"
+        class="google-font"
+        style="text-decoration:none;font-size:110%"
+        :class="
+          this.$vuetify.theme.dark ? 'white--text' : 'grey--text text--darken-2'
+        "
+      >
+        <v-img
+          alt="Community Logo"
+          class="shrink mr-2"
+          contain
+          :src="config.generalConfig.toolbarImage"
+          transition="scale-transition"
+          width="25"
+        />
+      </router-link>
+    </div>
     <v-toolbar-title class="google-font px-0" style="width:280px">
       <router-link
         to="/"
@@ -10,7 +29,8 @@
         aria-label="Communiy homepage"
         style="text-decoration:none;font-size:110%"
         :class="this.$vuetify.theme.dark?'whiteText':'blackText'"
-      >{{config.generalConfig.name || ""}}</router-link>
+      >
+      {{config.generalConfig.name || ""}}</router-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
 
