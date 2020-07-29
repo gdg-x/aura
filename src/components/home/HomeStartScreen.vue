@@ -3,8 +3,8 @@
     <v-row align="center" class="fill-height">
       <v-col md="3" sm="6" cols="12" class>
         <v-img
-          :src="require('@/assets/img/svg/home.svg')"
-          :lazy-src="require('@/assets/img/svg/home.svg')"
+          :src="checkExistance(config.generalConfig.homeImage,0)?config.generalConfig.homeImage:require('@/assets/img/svg/home.svg')"
+          :lazy-src="checkExistance(config.generalConfig.homeImage,0)?config.generalConfig.homeImage:require('@/assets/img/svg/home.svg')"
           width="100%"
         >
           <template v-slot:placeholder>
