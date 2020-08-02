@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site":"myaurapp",
+    "site":"gdgxela",
     "public": "dist",
     "rewrites": [ {
         "source": "**",
