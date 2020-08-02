@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)"
+   sodipodi:docname="flutterio-icon.svg"
+   id="svg45"
+   version="1.1"
+   width="51.682663"
+   height="63.9995">
+  <metadata
+     id="metadata51">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs49" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg45"
+     inkscape:window-maximized="1"
+     inkscape:window-y="25"
+     inkscape:window-x="0"
+     inkscape:cy="25.958093"
+     inkscape:cx="11.449209"
+     inkscape:zoom="7.1570919"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     id="namedview47"
+     inkscape:window-height="1023"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <clipPath
+     id="a">
+    <path
+       id="path2"
+       d="M 959.4,500 679.8,779.7 959.4,1059.4 H 639.9 L 360.2,779.7 639.9,500 Z M 639.9,20.7 120.6,540 280.4,699.8 959.4,20.7 Z" />
+  </clipPath>
+  <clipPath
+     id="b">
+    <path
+       id="path5"
+       d="M 959.4,500 679.8,779.7 959.4,1059.4 H 639.9 L 360.2,779.7 639.9,500 Z M 639.9,20.7 120.6,540 280.4,699.8 959.4,20.7 Z" />
+  </clipPath>
+  <clipPath
+     id="c">
+    <path
+       id="path8"
+       d="M 959.4,500 679.8,779.7 959.4,1059.4 H 639.9 L 360.2,779.7 639.9,500 Z M 639.9,20.7 120.6,540 280.4,699.8 959.4,20.7 Z" />
+  </clipPath>
+  <clipPath
+     id="d">
+    <path
+       id="path11"
+       d="M 959.4,500 679.8,779.7 959.4,1059.4 H 639.9 L 360.2,779.7 639.9,500 Z M 639.9,20.7 120.6,540 280.4,699.8 959.4,20.7 Z" />
+  </clipPath>
+  <linearGradient
+     y2="851.32397"
+     y1="970.33899"
+     x2="685.65002"
+     x1="566.63501"
+     gradientUnits="userSpaceOnUse"
+     id="e">
+    <stop
+       id="stop14"
+       stop-opacity=".4"
+       stop-color="#1a237e"
+       offset="0" />
+    <stop
+       id="stop16"
+       stop-opacity="0"
+       stop-color="#1a237e"
+       offset="1" />
+  </linearGradient>
+  <clipPath
+     id="f">
+    <path
+       id="path19"
+       d="M 959.4,500 679.8,779.7 959.4,1059.4 H 639.9 L 360.2,779.7 639.9,500 Z M 639.9,20.7 120.6,540 280.4,699.8 959.4,20.7 Z" />
+  </clipPath>
+  <radialGradient
+     r="5082.8892"
+     gradientUnits="userSpaceOnUse"
+     gradientTransform="matrix(0.25,0,0,-0.25,-1812,-622.5)"
+     cy="-2855.979"
+     cx="7824.6592"
+     id="g">
+    <stop
+       id="stop22"
+       stop-opacity=".1"
+       stop-color="#fff"
+       offset="0" />
+    <stop
+       id="stop24"
+       stop-opacity="0"
+       stop-color="#fff"
+       offset="1" />
+  </radialGradient>
+  <g
+     id="g43"
+     transform="matrix(0.061615,0,0,0.061615,-7.430769,-1.2754305)">
+    <g
+       id="g29"
+       clip-path="url(#a)">
+      <path
+         id="path27"
+         fill="#39cefd"
+         d="M 360.3,779.7 520,939.5 959.4,500 H 639.9 Z" />
+    </g>
+    <path
+       id="path31"
+       fill="#39cefd"
+       d="M 639.9,20.7 H 959.4 L 280.4,699.8 120.6,540 Z"
+       clip-path="url(#b)" />
+    <path
+       id="path33"
+       fill="#03569b"
+       d="m 520,939.5 119.9,119.8 H 959.4 L 679.8,779.7 Z"
+       clip-path="url(#c)" />
+    <path
+       style="fill:url(#e)"
+       id="path35"
+       fill="url(#e)"
+       d="M 757,857.4 679.8,779.7 520,939.5 Z"
+       clip-path="url(#d)" />
+    <g
+       id="g39"
+       clip-path="url(#f)">
+      <path
+         id="path37"
+         fill="#16b9fd"
+         d="M 360.282,779.645 520.086,619.84 679.9,779.645 520.086,939.45 Z" />
+    </g>
+    <path
+       style="fill:url(#g)"
+       id="path41"
+       fill="url(#g)"
+       d="M 959.4,500 679.8,779.7 959.4,1059.4 H 639.9 L 360.2,779.7 639.9,500 Z M 639.9,20.7 120.6,540 280.4,699.8 959.4,20.7 Z" />
+  </g>
+</svg>

@@ -28,5 +28,10 @@
         "TechName":"TensorFlow",
         "image":"tf.svg",
         "link":"https://www.tensorflow.org/"
+    },
+    {
+        "TechName": "Flutter",
+        "image": "flutter.svg",
+        "link": "https://www.flutter.dev/"
     }
 ]
