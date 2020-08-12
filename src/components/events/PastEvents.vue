@@ -9,8 +9,8 @@
             <v-col cols="12" md="12" lg="12" sm="12" class="">
                 <v-row>
                     <v-col md="6" lg="6" sm="6" cols="12">
-                        <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Directory of past events</p>
-                        <p class="google-font mt-0 mb-0" style="font-size:95%">Events are listed in reverse chronological order by date.</p>
+                        <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Directorio de eventos pasados</p>
+                        <p class="google-font mt-0 mb-0" style="font-size:95%">Los eventos se enumeran en orden cronológico inverso por fecha.</p>
                     </v-col>
                     <v-col md="6" lg="6" sm="6" cols="12">
                         <v-text-field
@@ -19,7 +19,7 @@
                             solo-inverted
                             hide-details
                             prepend-inner-icon="mdi-search-web"
-                            label="Search"
+                            label="Buscar"
                             single-line
                         ></v-text-field>
                     </v-col>
@@ -70,12 +70,12 @@ import { mapState } from 'vuex'
             errorMsg: '',
             headers: [
                 {
-                    text: 'Event Name',
+                    text: 'Nombre del Evento',
                     align: 'start',
                     value: 'name',
                 },
-                { text: 'Date', value: 'local_date' },
-                { text: 'See More', value: 'link' },
+                { text: 'Fecha', value: 'local_date' },
+                { text: 'Ver más', value: 'link' },
             ],
         }),
         mounted(){

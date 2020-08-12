@@ -4,8 +4,8 @@
             <v-col cols="12" md="10" lg="10" sm="12" class="text-center mb-0" >
                 <p class="google-font mb-1" style="font-weight: 350;font-size:180%">
                     <b>
-                        Our
-                        <span style="color: #1a73e8;">Events</span> 
+                        Nuestros
+                        <span style="color: #1a73e8;">Eventos</span> 
                         &
                         <span style="color: #1a73e8;">Meetups</span> 
                     </b> 

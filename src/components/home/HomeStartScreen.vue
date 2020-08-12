@@ -21,8 +21,8 @@
           style="font-weight: 350;font-size:230%"
         >
           <b>
-            Make good things
-            <span style="color: #1a73e8;">together</span>.
+            Construyamos cosas grandes
+            <span style="color: #1a73e8;">juntos</span>.
           </b>
         </p>
         <p class="google-font mt-0 mb-0" style="font-size:150%">{{config.generalConfig.name}}</p>
@@ -48,7 +48,7 @@
           aria-label="Become a Member"
           class="ma-0 google-font elevation-1 primary mr-2"
           style="text-transform: capitalize;border-radius:5px;color:white"
-        >Become a Member</v-btn>
+        >Hazte Miembro</v-btn>
         <v-btn
           v-if="checkExistance(config.generalConfig.learnMoreLink,0)"
           :href="config.generalConfig.learnMoreLink"
@@ -61,7 +61,7 @@
           outlined
           class="ml-0"
           dark
-        >Learn More</v-btn>
+        >Aprende Más</v-btn>
       </v-col>
     </v-row>
   </v-container>

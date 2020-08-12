@@ -2,17 +2,17 @@
     <v-container fluid >
         <v-row align="center" justify="center" class="mb-0">
             <v-col cols="12" md="12" lg="12" sm="12" class="mb-0">
-                <p class="google-font mb-1" style="font-weight: 350;font-size:200%"><b>Our
-                    <span style="color: #1a73e8;">Partners</span> </b> 
+                <p class="google-font mb-1" style="font-weight: 350;font-size:200%"><b>Nuestros
+                    <span style="color: #1a73e8;">Patrocinadores</span> </b>
                 </p>
-                <p class="google-font mt-1 mb-0" style="font-size:100%">A very big thank you to all our partners for their continued partnership.</p>
-                <p class="google-font mt-0 mb-0" style="font-size:100%">If you’re interested in being showcased throughout , contact <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${config.generalConfig.email}`">{{config.generalConfig.email}}</a> to discuss sponsorship opportunities.</p>
+                <p class="google-font mt-1 mb-0" style="font-size:100%">Muchas gracias a todos ellos por su continuo apoyo.</p>
+                <p class="google-font mt-0 mb-0" style="font-size:100%">Si tu estás interesado en ser exhibido, contáctanos a <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${config.generalConfig.email}`">{{config.generalConfig.email}}</a> para discutir oportunidades de patrocinio.</p>
             </v-col>
         </v-row>
 
         <v-row align="center" v-if="checkExistance(partnersData,0)" justify="start" class="mt-0 pt-0">
             <v-col cols="12" md="12" lg="12" sm="12" class="mx-0 mt-0">
-                <p class="google-font mb-0" style="font-size:130%">General Partners</p>
+                <p class="google-font mb-0" style="font-size:130%">Patrocinadores Generales</p>
             </v-col>
             <v-col cols="6" md="3" xl="2" lg="2" sm="4"  v-for="(itemp,i) in partnersData" :key="i">
                 <div class="client-logo ma-0">

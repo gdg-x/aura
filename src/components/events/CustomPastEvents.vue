@@ -9,8 +9,8 @@
             <v-col cols="12" md="12" lg="12" sm="12" class="">
                 <v-row>
                     <v-col md="6" lg="6" sm="6" cols="12">
-                        <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Directory of past events</p>
-                        <p class="google-font mt-0 mb-0" style="font-size:95%">Events are listed in reverse chronological order by date.</p>
+                        <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Directorio de eventos pasados</p>
+                        <p class="google-font mt-0 mb-0" style="font-size:95%">Los eventos se enumeran en orden cronológico inverso por fecha.</p>
                     </v-col>
                     <v-col md="6" lg="6" sm="6" cols="12">
                         <v-text-field
@@ -74,7 +74,7 @@ import { mapState } from 'vuex'
                     value: 'name',
                 },
                 { text: 'Date', value: 'date' },
-                { text: 'Venue', value: 'venue.name' },
+                // { text: 'Venue', value: 'venue.name' },
                 { text: 'See More', value: 'action' },
             ],
         }),
