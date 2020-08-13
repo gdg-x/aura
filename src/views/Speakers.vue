@@ -55,7 +55,7 @@
               </v-row>
             </template>
           </v-img>
-          <h2 class="google-font">Speakers Not Found</h2>
+          <h2 class="google-font">¡Pronto tendremos grandes Speakers por aquí!</h2>
           </v-col>
         <v-col v-if="loader" md="12" lg="10" xs="12" class="pt-3">
           <v-container fluid class>

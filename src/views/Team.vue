@@ -56,7 +56,7 @@
                     </v-row>
                   </template>
                 </v-img>
-                <h2 class="google-font">Team Not Found</h2>
+                <h2 class="google-font">Equipo no encontrado</h2>
               </v-col>
              </v-row>
         </v-container>

@@ -32,7 +32,7 @@
             
             <socialMediaDetails  class="pl-0 ml-0" :data="data.socialLinks"/>
 
-            <v-btn class="primary mt-3" small depressed @click="goToTeam(data.id)">See More Info</v-btn>
+            <v-btn class="primary mt-3" small depressed @click="goToTeam(data.id)">Ver más información</v-btn>
         </v-card-text>
 
         <v-divider></v-divider>
@@ -44,7 +44,7 @@
             text
             @click="dialog = false"
           >
-            Close
+            Cerrar
           </v-btn>
         </v-card-actions>
       </v-card>

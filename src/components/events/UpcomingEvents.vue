@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-snackbar v-model="errorAlert" bottom left>
       {{ errorMsg }}
-      <v-btn color="pink" text @click="errorAlert = false">Close</v-btn>
+      <v-btn color="pink" text @click="errorAlert = false">Cerrar</v-btn>
     </v-snackbar>
 
     <v-row
@@ -52,7 +52,7 @@
           >
             <p class="google-font px-2 mb-0" style="font-size:140%">
               <v-icon>mdi-calendar-blank</v-icon>
-              <br />No hay próximos eventos aún :(
+              <br /> ¡Pronto habrán muchos eventos cerca de ti!
             </p>
           </v-col>
         </v-row>

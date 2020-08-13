@@ -3,7 +3,7 @@
     <v-container fluid>
         <v-snackbar v-model="errorAlert" bottom left>
             {{ errorMsg }}
-            <v-btn color="pink" text @click="errorAlert = false">Close</v-btn>
+            <v-btn color="pink" text @click="errorAlert = false">Cerrar</v-btn>
         </v-snackbar>
         <v-row align="center" justify="center" class="mb-5">
             <v-col cols="12" md="12" lg="12" sm="12" class="">
@@ -42,7 +42,7 @@
                     </template>
 
                     <template v-slot:item.link="{ item }">
-                        <a :href="item.link" target="_blank">See More</a>
+                        <a :href="item.link" target="_blank">Ver más</a>
                     </template>
                 </v-data-table>
             </v-col>

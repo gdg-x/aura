@@ -107,7 +107,7 @@
                   </v-row>
                 </template>
               </v-img>
-              <h2 class="google-font">Speaker Not Found</h2>
+              <h2 class="google-font">Speaker No encontrado</h2>
               <p
                 class="google-font"
               >The requested URL /{{this.$route.params.id}} was not found on this server. That’s all we know.</p>

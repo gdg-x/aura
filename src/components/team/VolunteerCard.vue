@@ -42,7 +42,7 @@
             text
             @click="dialog = false"
           >
-            Close
+            Cerrar
           </v-btn>
         </v-card-actions>
       </v-card>

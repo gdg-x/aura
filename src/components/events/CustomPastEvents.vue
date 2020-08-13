@@ -3,7 +3,7 @@
     <v-container fluid>
         <v-snackbar v-model="errorAlert" bottom left>
             {{ errorMsg }}
-            <v-btn color="pink" text @click="errorAlert = false">Close</v-btn>
+            <v-btn color="pink" text @click="errorAlert = false">Cerrar</v-btn>
         </v-snackbar>
         <v-row align="center" justify="center" class="mb-5">
             <v-col cols="12" md="12" lg="12" sm="12" class="">
@@ -19,7 +19,7 @@
                             solo-inverted
                             hide-details
                             prepend-inner-icon="mdi-search-web"
-                            label="Search"
+                            label="Buscar"
                             single-line
                             class="mr-2"
                         ></v-text-field>
@@ -41,7 +41,7 @@
                     </template>
 
                     <template v-slot:item.action="{ item }">
-                        <a :href="'/events/'+item.id" target="_blank">See More</a>
+                        <a :href="'/events/'+item.id" target="_blank">Ver más</a>
                     </template>
                 </v-data-table>
             </v-col>
@@ -69,13 +69,13 @@ import { mapState } from 'vuex'
             errorMsg: '',
             headers: [
                 {
-                    text: 'Event Name',
+                    text: 'Nombre del Evento',
                     align: 'start',
                     value: 'name',
                 },
-                { text: 'Date', value: 'date' },
+                { text: 'Fecha', value: 'date' },
                 // { text: 'Venue', value: 'venue.name' },
-                { text: 'See More', value: 'action' },
+                { text: 'Ver más', value: 'action' },
             ],
         }),
         mounted(){

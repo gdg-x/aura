@@ -2,7 +2,7 @@
   <v-container fluid class="py-0 my-0">
     <v-row align="center" justify="center" class="py-0 my-0">
       <v-col cols="12" md="12" lg="12" sm="12" class="py-0 my-0">
-        <h3 class="google-font">Organizing Team Members</h3>
+        <h3 class="google-font">Miembros del equipo Organizador</h3>
       </v-col>
     </v-row>
     <v-row align="center" justify="center" class="py-0 my-0">

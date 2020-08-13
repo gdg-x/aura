@@ -7,7 +7,7 @@
                         <v-row align="center" class="py-0 my-0">
                             <v-col md="12" sm="12" cols="12" class="py-0 my-0 text-center">
                                 <p class="google-font mb-0" style="font-weight: 350;font-size:200%"><b>
-                                    <span style="color: #1a73e8;">Our</span> Volunteers </b> 
+                                    <span style="color: #1a73e8;">Nuestros</span> Voluntarios </b> 
                                 </p>
                             </v-col>
                         </v-row>
@@ -60,7 +60,7 @@
                             </v-row>
                         </template>
                     </v-img>
-                    <h2 class="google-font mt-3">Data Not Found</h2>
+                    <h2 class="google-font mt-3">Datos no encontrados</h2>
                 </v-col>
 
                 <v-col v-if="loader" md="12" lg="10" xs="12" class="pt-3 "  >

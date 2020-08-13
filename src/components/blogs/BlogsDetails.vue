@@ -5,7 +5,7 @@
         <v-row class>
           <v-col>
             <p class="google-font mb-0">
-              Here are the top 10 blogs/articles written by us. You can find more blogs/articles on
+              Acá tienes el top de 10 artículos escritos por nosotros. Puedes encontrar más de éstos en
               <a :href="blogURL" style="text-decoration:none" target="_blank">Medium</a>
             </p>
             <!-- {{blogsData.feed.link}} -->
@@ -59,7 +59,7 @@
               </v-row>
             </template>
           </v-img>
-          <h2 class="google-font">Blogs Not Found</h2>
+          <h2 class="google-font">¡Pronto habrán posts por acá!</h2>
         </v-col>
         </v-row>
 

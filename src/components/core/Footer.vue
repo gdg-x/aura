@@ -23,14 +23,14 @@
 
             <v-row justify="start" class="">
               <v-col cols="12" md="3" lg="3" sm="3" class="py-2" >
-                  <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;"><b>About</b></p>
+                  <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;"><b>Acerca de</b></p>
                   <div v-for="(item,i) in config.footerConfig['About']" :key="i">
                         <a :href="item.link" rel="noreferrer" :class="$vuetify.theme.dark?'darkThemeTextLink':'lightThemeTextLink'" class="google-font my-3" target="_blank" style="text-decoration: none;font-size:110%">{{item.linkname}}</a><br>
                   </div>
               </v-col>
 
               <v-col cols="12" md="3" lg="3" sm="3" class="py-2" >
-                  <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;"><b>Resources</b></p>
+                  <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;"><b>Recursos</b></p>
                   <div v-for="(item,i) in config.footerConfig['Resources']" :key="i">
                         <a :href="item.link" rel="noreferrer" :class="$vuetify.theme.dark?'darkThemeTextLink':'lightThemeTextLink'" class="google-font my-3" target="_blank" style="text-decoration: none;font-size:110%">{{item.linkname}}</a><br>
                   </div>

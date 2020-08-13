@@ -15,7 +15,7 @@
           class="google-font mt-0 mb-0"
           style="font-size:90%;"
         >{{data.data.venue.name | summary(20) }}</p>
-        <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
+        <p class="mb-0 mt-2 google-font" style="color:#1a73e8">Ver Más</p>
       </div>
     </template>
     <v-card :class="this.$vuetify.theme.dark == true?'grey darken-3':'white'" v-if="dialog">
@@ -57,7 +57,7 @@
 
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="primary" text @click="dialog = false">Close</v-btn>
+        <v-btn color="primary" text @click="dialog = false">Cerrar</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>

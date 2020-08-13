@@ -58,7 +58,7 @@
 
             <v-col cols="12" sm="12">
               <v-card>
-                <v-card-title class="google-font">About:</v-card-title>
+                <v-card-title class="google-font">Acerca de:</v-card-title>
                 <v-card-text>
                   <p class="google-font" style="font-size:90%">{{speaker.bio}}</p>
                 </v-card-text>
@@ -70,7 +70,7 @@
           <v-row align="center">
             <v-col cols="12">
               <v-card outlined>
-                <v-card-title class="google-font">Sessions:</v-card-title>
+                <v-card-title class="google-font">Sesiones:</v-card-title>
                 <v-card-text>
                   <v-row align="center">
                     <v-col cols="12" md="6" xl="4" v-for="sess in events" :key="sess.id">
@@ -126,7 +126,7 @@
                     </v-row>
                   </template>
                 </v-img>
-                <h2 class="google-font">Speaker Not Found</h2>
+                <h2 class="google-font">Speaker no encontrado</h2>
                 <p
                   class="google-font"
                 >The requested URL /{{this.$route.params.id}} was not found on this server. That’s all we know.</p>

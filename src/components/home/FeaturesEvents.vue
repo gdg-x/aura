@@ -33,7 +33,7 @@
               :class="$vuetify.theme.dark == true?'darkModeCardFeatureEvent':'lightModeCardFeatureEvent'"
               class="pa-4 px-5 mx-3"
             >
-              <p class="google-font my-2">No hay algo aún :(</p>
+              <p class="google-font my-2"> ¡Pronto habrán muchos eventos cerca de ti! </p>
             </v-col>
           </v-row>
           <v-row v-else class="py-0 my-0 px-2">
