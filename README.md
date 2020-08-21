@@ -47,18 +47,23 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Go to Cloud Firestore Database and Enable the database in test mode
 1. Update the Rule
     ```js
-        rules_version = '2';
-        service cloud.firestore {
-            match /databases/{database}/documents {
-                match /apiEnd/{apiEndpoint}{
-    	            allow read, write : if true;
-                }
-                match /{document=**} {
-                    allow read : if true;
-                    allow write : if request.auth.uid != null;
-                }
+    rules_version = '2';
+    service cloud.firestore {
+        match /databases/{database}/documents {
+            match /apiEnd/{apiEndpoint}{
+                allow read, create : if true;
+              allow delete : if request.auth.uid != null;
+              allow update : if request.auth.uid != null;
+              allow list: if request.auth.uid != null;
+            }
+            match /{document=**} {
+              allow read : if true;
+              allow delete : if request.auth.uid != null && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.userType == "Super Admin";
+              allow create : if request.auth.uid != null;
+              allow update : if request.auth.uid != null;
             }
         }
+    }
     ```
 1. In the Firebase project console dashboard. Click on create new web app
 1. Go to Firebase project Settings and then General Settings Tab
