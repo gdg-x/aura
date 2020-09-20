@@ -53,7 +53,7 @@
         <v-col cols="12" md="10" lg="10" sm="11" class="px-0 mx-0"> 
           <v-divider></v-divider>
           <v-toolbar text class="pa-0 px-0 mt-3 mx-0 elevation-0" style="padding:0 !important" :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'">
-            <v-toolbar-title class="google-font pl-0 ml-0 mr-3" style="font-size:200%">{{config.generalConfig.name || ''}}</v-toolbar-title>
+            <v-toolbar-title class="google-font pl-0 ml-0 mr-3" style="font-size:200%">{{config.generalConfig.shortName || config.generalConfig.name || ''}}</v-toolbar-title>
             <v-btn
                 v-for="(item,i) in config.footerConfig['Footer End Session Link']" 
                 :key="i"
