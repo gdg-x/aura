@@ -23,7 +23,7 @@
               to="/about"
               class="google-font"
               style="text-decoration:none;color:white"
-            >See More about {{config.generalConfig.name}}</router-link>
+            >See More about {{config.generalConfig.shortName || config.generalConfig.name}}</router-link>
           </div>
         </div>
       </v-col>
