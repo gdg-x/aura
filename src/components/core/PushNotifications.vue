@@ -67,7 +67,7 @@ export default {
               let token = localStorage.getItem("pushNotificationToken");
               if (token == null || token.length <= 0) {
                 firebase.messaging
-                  .getToken()
+                  .getToken({vapidKey:this.config.keysandsecurity.web_push_certificate})
                   .then(currentToken => {
                     if (currentToken) {
                       firebase.firestore
