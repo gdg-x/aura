@@ -40,7 +40,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Use same [Firebase account](https://console.firebase.google.com) project for both `Admin` & `Aura Main`
 1. Setup Environment
     - Install [Node.js (v8.9.4 or above)](https://nodejs.org/en/download/)
-    - Install vue cli: `npm install -g @vue/cli`
+    - Install vue cli: `npm install @vue/cli '--location=global'`
 1. Install project dependencies: `npm install` 
 1. Create [Firebase account](https://console.firebase.google.com) and Create a new Project if you have not any (Kindly use same project for both repo ([Aura Admin](https://github.com/gdg-x/aura-admin) & [Aura Main](https://github.com/gdg-x/aura)))
 1. Go to Firebase Project Dashboard
