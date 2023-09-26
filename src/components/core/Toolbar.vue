@@ -58,7 +58,6 @@
       style="background-color:red;border:1px solid red;border-radius:6px;color:white;font-size:90%"
       class="google-font px-2"
     >Offline</v-toolbar-title>
-    <PushNotification class="mr-1" />
     <v-btn icon v-on:click="darkMode" class="ml-1" aria-label="Theme Switch BTN">
       <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
       <v-icon v-else>mdi-brightness-4</v-icon>
@@ -68,13 +67,11 @@
 
 <script>
 import offline from "v-offline";
-import PushNotification from "@/components/core/PushNotifications";
 import { mapState, mapGetters, mapMutations } from "vuex";
 export default {
   name: "Toolbar",
   components: {
-    offline,
-    PushNotification
+    offline
   },
   data: () => ({
     isOffline: false
