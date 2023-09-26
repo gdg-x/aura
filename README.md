@@ -7,9 +7,9 @@
 
 Standard Web App for Tech Communties. <br>
 [Demo](https://myaurapp.web.app/) <br>
-Version: 3.1.1
+Version: 3.1.2
 
-### Show some :heart: and star the repo to support the project
+### Show some :heart: and :star: the repo to support the project
 ### If you are using Aura, Kindly [fill this form](https://forms.gle/SNpajdAnqbSac2AV9) for Aura Web App Directory
 
 ## Overview
@@ -25,16 +25,19 @@ Aura is the Web App that helps you to mange the Tech Communities like GDGs, DSCs
 | **Mobile first** | Mobo Friendly Web app can be installed as a native app on your phone |
 | **SEO optimized** | index all content and get to the top in search results |
 | **Easy in management** | Easy in Management by using Aura Admin |
-| **Trigger Push Notification** | Trigger Push Notification to Aura Main |
 | **Usability** | Any Tech Communities can use |
 | **Custom Event Page** | Now No need to create the website for XYZ event |
 | **Public shareable URL for Team & Speakers** | Team member public URL for Self Branding and Public Speaker Directory & Public URL for Promotion |
 
 
-The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) team experience of running meetups/events.
+## Contributors
+<b>Maintainer:</b> 
+1. [Vrijraj Singh](https://github.com/vrijraj)  
+2. [Bharat Agarwal](https://github.com/bharatagsrwal) 
+
 
 ## Getting Started
-
+> **_NOTE:_**  Kindly Setup [Aura Admin](https://github.com/gdg-x/aura-admin/fork) first 
 1. [Fork this repository](https://github.com/gdg-x/aura/fork) & [Aura Admin](https://github.com/gdg-x/aura-admin/fork) (Important) and clone both repo locally
 1 To Setup `Aura Main` follow this and to setup [Aura Admin](https://github.com/gdg-x/aura-admin)
 1. Use same [Firebase account](https://console.firebase.google.com) project for both `Admin` & `Aura Main`
@@ -42,29 +45,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
     - Install [Node.js (v8.9.4 or above)](https://nodejs.org/en/download/)
     - Install vue cli: `npm install -g @vue/cli`
 1. Install project dependencies: `npm install` 
-1. Create [Firebase account](https://console.firebase.google.com) and Create a new Project if you have not any (Kindly use same project for both repo ([Aura Admin](https://github.com/gdg-x/aura-admin) & [Aura Main](https://github.com/gdg-x/aura)))
-1. Go to Firebase Project Dashboard
-1. Go to Cloud Firestore Database and Enable the database in test mode
-1. Update the Rule
-    ```js
-    rules_version = '2';
-    service cloud.firestore {
-        match /databases/{database}/documents {
-            match /apiEnd/{apiEndpoint}{
-                allow read, create : if true;
-              allow delete : if request.auth.uid != null;
-              allow update : if request.auth.uid != null;
-              allow list: if request.auth.uid != null;
-            }
-            match /{document=**} {
-              allow read : if true;
-              allow delete : if request.auth.uid != null && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.userType == "Super Admin";
-              allow create : if request.auth.uid != null;
-              allow update : if request.auth.uid != null;
-            }
-        }
-    }
-    ```
+1. Kindly use same firebase project [Aura Admin](https://github.com/gdg-x/aura-admin) for [Aura Main](https://github.com/gdg-x/aura) as well
 1. In the Firebase project console dashboard. Click on create new web app
 1. Go to Firebase project Settings and then General Settings Tab
 1. Scroll down and go to your app section under Firebase SDK snippet
@@ -86,7 +67,6 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
     - For the First Time you will see a text Either `Your Internet is not Working or Site is not Configured`
 1. For the production: `npm run build` and then one dir will be created dist
 1. For testing: `npm run test`
-1. Setup [Aura Admin](https://github.com/gdg-x/aura-admin/fork) for Management of Aura v3
 
 ## Deployment on Firebase
 1. Install required tools for performing Firebase deployment
@@ -157,9 +137,6 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 - Include relevant test updates/additions
 - Pull requests _must_ be made against `develop` branch. Any other branch (unless specified by the maintainers) will get rejected.
 
-## Contributors
-<b>Maintainer:</b> [Vrijraj Singh](https://github.com/vrijraj) <br>
-<b>Developers:</b> [Vrijraj Singh](https://github.com/vrijraj) &  [Bharat Agarwal](https://github.com/bharatagsrwal) 
 
 ### View Website Built with Projects
 
