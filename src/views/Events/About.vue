@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <v-main>
     <v-container class="py-0 my-0 mt-0">
       <v-row class="py-0 my-0" align="center" justify="center">
         <v-col cols="12" md="12" class="pa-0">
@@ -169,7 +169,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-content>
+  </v-main>
 </template>
 
 <script>

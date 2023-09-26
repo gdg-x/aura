@@ -5,7 +5,7 @@
   >
     <EventToolBar :eventName="EventData.name"/>
     <EventDrawer/>
-    <v-content class="" v-if="loader">
+    <v-main class="" v-if="loader">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
@@ -13,7 +13,7 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-content>
+    </v-main>
     <v-container
       fluid
       :class="this.$vuetify.theme.dark == true?'black':'grey lighten-5'"

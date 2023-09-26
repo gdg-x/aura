@@ -11,7 +11,7 @@
     <Toolbar v-if="!noData && !$route.meta.isEvent"/>
     <Drawer v-if="!noData && !$route.meta.isEvent"/>
     <BottomNav v-if="!noData && !$route.meta.isEvent"/>
-    <v-content class="" v-if="isLoading">
+    <v-main class="" v-if="isLoading">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
@@ -19,8 +19,8 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-content>
-    <v-content class="" v-if="!isLoading && noData">
+    </v-main>
+    <v-main class="" v-if="!isLoading && noData">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
@@ -29,7 +29,7 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-content>
+    </v-main>
     <Views v-if="!isLoading && !noData" />
     <Footer v-if="!noData && !$route.meta.isEvent"/>
   </v-app>

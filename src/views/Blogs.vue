@@ -1,5 +1,5 @@
 <template>
-  <v-content class="px-0 mx-0 pt-3">
+  <v-main class="px-0 mx-0 pt-3">
 
     <v-container fluid class="px-0 pt-5 mt-3 py-0">
       <v-row justify="center" align="center" class="py-3 pb-5" :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'" >
@@ -18,7 +18,7 @@
     </v-container>
 
 
-  </v-content>
+  </v-main>
 </template>
 
 <script>
