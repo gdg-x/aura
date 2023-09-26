@@ -44,41 +44,6 @@
                 </div>
             </v-col>
         </v-row>
-
-        <v-row align="center" justify="start" class="mt-0">
-            <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5">
-                <p class="google-font mb-0" style="font-size:130%">Template Creator</p>
-            </v-col>
-            <v-col cols="6" md="3" lg="2" xl="2" sm="4">
-                <div class="client-logo ma-0">
-                <a href="https://gdgjalandhar.com" target="_blank">
-                    <v-tooltip bottom>
-                    <template v-slot:activator="{ on }">
-                        <v-img
-                        :src="require('@/assets/img/dontremove/gdgjalandhar.webp')"
-                        :lazy-src="require('@/assets/img/dontremove/gdgjalandhar.webp')"
-                        class="white"
-                        contain
-                        style="height:4em"
-                        v-on="on"
-                        >
-                            <v-layout
-                                slot="placeholder"
-                                fill-height
-                                align-center
-                                justify-center
-                                ma-0
-                            >
-                                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                            </v-layout>
-                        </v-img>
-                    </template>
-                    <span class="google-font">GDG Jalandhar</span>
-                    </v-tooltip>
-                </a>
-                </div>
-            </v-col>
-        </v-row>
      
     </v-container>
 </template>
