@@ -42,7 +42,7 @@ Aura is the Web App that helps you to mange the Tech Communities like GDGs, DSCs
 1 To Setup `Aura Main` follow this and to setup [Aura Admin](https://github.com/gdg-x/aura-admin)
 1. Use same [Firebase account](https://console.firebase.google.com) project for both `Admin` & `Aura Main`
 1. Setup Environment
-    - Install [Node.js (v8.9.4 or above)](https://nodejs.org/en/download/)
+    - Install [Node.js (v8.9.4 - v12.13.0)](https://nodejs.org/en/download/)
     - Install vue cli: `npm install -g @vue/cli`
 1. Install project dependencies: `npm install` 
 1. Kindly use same firebase project [Aura Admin](https://github.com/gdg-x/aura-admin) for [Aura Main](https://github.com/gdg-x/aura) as well
