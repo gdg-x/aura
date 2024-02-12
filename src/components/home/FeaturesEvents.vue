@@ -114,15 +114,14 @@ export default {
 <style scoped>
 .lightModeCardFeatureEvent {
   background-color: #ffff;
-  box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
-
-  border-radius: 8px;
+  /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1); */
+  border-radius: 12px;
 }
 .darkModeCardFeatureEvent {
   background-color: #292929;
-  box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1); */
   /* border:1px solid #212121; */
   border: 1px solid #424242;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 </style>

@@ -1,10 +1,13 @@
 <template>
   <v-app-bar
     app
-    hide-on-scroll
     fixed
-    class="px-md-4"
+    class="mt-md-4 mt-sm-4 mx-sm-6 mx-md-auto px-3"
     :class="this.$vuetify.theme.dark == true ? '' : 'white'"
+    style="max-width: 1024px !important;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 15px;"
     :style="
       this.$vuetify.theme.dark
         ? { boxShadow: '0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #272727' }
@@ -55,7 +58,7 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
 
-    <div class="hidden-sm-and-down">
+    <div class="hidden-sm-and-down mr-3">
       <v-btn
         v-for="(link, i) in links.filter((obj) => obj.meta.showToolbar)"
         :key="i"
@@ -67,7 +70,7 @@
         style="text-transform: capitalize"
         @click="onClick($event, link)"
         :to="link.to"
-        :color="$vuetify.theme.dark ? '' : 'primary'"
+        :color="$vuetify.theme.dark ? '' : 'blue darken-3'"
         >{{ link.text }}</v-btn
       >
     </div>

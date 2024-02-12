@@ -77,9 +77,9 @@ export default {
 .client-logo{
     height: 90px;
     padding: 12px 12px;
-    border-radius: 7px;
+    border-radius: 12px;
     background: white;
-    border: 1px solid #ebebeb;
+    /* border: 1px solid #ebebeb; */
     text-align: center;
 }
 </style>

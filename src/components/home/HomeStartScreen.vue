@@ -45,6 +45,7 @@
           :href="config.generalConfig.becomemember"
           target="_blank"
           rel="noreferrer"
+          depressed
           aria-label="Become a Member"
           class="ma-0 google-font elevation-1 primary mr-2"
           style="text-transform: capitalize;border-radius:5px;color:white"
@@ -54,6 +55,7 @@
           :href="config.generalConfig.learnMoreLink"
           target="_blank"
           aria-label="Learn More"
+          depressed
           rounded
           rel="noreferrer"
           color="cyan"

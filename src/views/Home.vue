@@ -3,7 +3,7 @@
     
     <v-container fluid class="">
       <v-row justify="center" align="center">
-        <v-col md="12" lg="10" sm="11" xs="12" class="">
+        <v-col md="12" lg="10" sm="11" xs="12" class="my-md-10">
           <HomeStartScreen/>
         </v-col>
       </v-row>
@@ -48,13 +48,13 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-container fluid class="pa-0 py-2 hidden-md-and-up" >
+    <!-- <v-container fluid class="pa-0 py-2 hidden-md-and-up" >
       <v-row justify="center" align="center">
         <v-col md="12" lg="10" xs="12" class="py-0">
           <br><br>
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
 
   </v-main>
   
@@ -99,13 +99,12 @@ export default {
 
 <style scoped>
   .lightModeContainer{
-      background-color:#F9F9F9;
-      border:1px solid #e0e0e0;
-      border-radius:5px
+      background-color: white;
+      border-radius:12px
   }
   .darkModeContainer{
       background-color:#292929;
-      border:1px solid #212121;
-      border-radius:5px
+      /* border:1px solid #212121; */
+      border-radius:12px
   }
 </style>

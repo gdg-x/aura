@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid :class="this.$vuetify.theme.dark == true?'black':'white'" class="pa-0 ma-0" style="height:100% !important">
+  <v-container fluid :class="this.$vuetify.theme.dark == true?'black':'light-bg'" class="pa-0 ma-0" style="height:100% !important">
     <v-slide-y-reverse-transition>
       <router-view v-show="show" />
     </v-slide-y-reverse-transition>
@@ -18,3 +18,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.light-bg{
+  background-color: #F5F8FC;
+}
+</style>
