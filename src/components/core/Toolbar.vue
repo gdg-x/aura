@@ -3,24 +3,32 @@
     app
     fixed
     clipped
-    class="mx-sm-6 mx-md-auto px-3"
+    class="mx-sm-6 mx-md-auto px-0"
     :color="this.$vuetify.theme.dark ? 'black' : 'white'"
     hide-on-scroll
     flat
-    :style="
-      this.$vuetify.theme.dark
-        ? { boxShadow: '0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #272727' }
-        : {
-            // boxShadow: '0 2px 6px 0 rgba(0,0,0,.12), inset  0 -1px 0 0 #dadce0',
-          }
-    "
   >
     <v-app-bar-nav-icon
       aria-label="Hamburger Menu"
       @click="toggleDrawer"
       class="d-md-none d-lg-none"
     ></v-app-bar-nav-icon>
-    <div
+    <v-spacer></v-spacer>
+
+    <v-chip style="height: 40px;border-radius: 25px;" class="px-5" to="/" :color="$vuetify.theme.dark ? '#252726' : '#F5F7F7'">
+      <v-img
+        alt="Community Logo"
+        class="shrink mr-2 google-font"
+        contain
+        :src="config.generalConfig.toolbarImage"
+        transition="scale-transition"
+        width="25"
+      />{{
+        config.generalConfig.shortName || config.generalConfig.name || ""
+      }}</v-chip
+    >
+
+    <!-- <div
       class="d-flex align-center"
       v-if="checkExistance(config.generalConfig.toolbarImage, 0)"
     >
@@ -41,8 +49,9 @@
           width="25"
         />
       </router-link>
-    </div>
-    <v-toolbar-title class="google-font px-0" style="width: 280px">
+    </div> -->
+
+    <!-- <v-toolbar-title class="google-font px-0" style="width: 280px">
       <router-link
         to="/"
         class="google-font"
@@ -55,7 +64,7 @@
         }}</router-link
       >
     </v-toolbar-title>
-    <v-spacer></v-spacer>
+     -->
 
     <offline @detected-condition="handleConnectivityChange"></offline>
     <v-toolbar-title
@@ -70,7 +79,7 @@
       class="google-font px-2"
       >Offline</v-toolbar-title
     >
-    <v-btn
+    <!-- <v-btn
       icon
       v-on:click="darkMode"
       class="ml-1"
@@ -78,7 +87,7 @@
     >
       <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
       <v-icon v-else>mdi-brightness-4</v-icon>
-    </v-btn>
+    </v-btn> -->
   </v-app-bar>
 </template>
 

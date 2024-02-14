@@ -1,9 +1,8 @@
 <template>
   <v-main class="ma-0">
-    
     <v-container fluid class="">
       <v-row justify="center" align="center">
-        <v-col md="12" lg="10" sm="11" xs="12" class="my-md-10">
+        <v-col md="12" lg="11" sm="11" xs="12" class="">
           <HomeStartScreen/>
         </v-col>
       </v-row>
