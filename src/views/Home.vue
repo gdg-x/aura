@@ -3,28 +3,38 @@
     <v-container fluid class="">
       <v-row justify="center" align="center">
         <v-col md="12" lg="11" sm="11" xs="12" class="">
-          <HomeStartScreen/>
+          <HomeStartScreen />
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container fluid class="pa-0 py-0 my-0" >
+    <v-container fluid class="py-0 my-0">
       <v-row justify="center" align="center">
-        <v-col md="12" sm="11" lg="10" xs="12" class="py-0" :class="this.$vuetify.theme.dark == true?'darkModeContainer':'lightModeContainer'">
+        <!-- :class="this.$vuetify.theme.dark == true?'darkModeContainer':'lightModeContainer'" -->
+        <v-col md="12" sm="11" lg="11" xs="12">
           <whatwedo />
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container fluid class="pa-0 pt-5 my-0" >
-      <v-row justify="center" align="center" style="background:#4C4A78" class="py-5 my-0">
-        <v-col md="12" lg="10" sm="11" xs="12" class="py-0" >
+    <v-container fluid class="pa-0 pt-5 my-0">
+      <v-row
+        justify="center"
+        align="center"
+        style="background: #4c4a78"
+        class="py-5 my-0"
+      >
+        <v-col md="12" lg="10" sm="11" xs="12" class="py-0">
           <AboutCommunity />
         </v-col>
       </v-row>
     </v-container>
 
-     <v-container fluid class="pa-0 py-2" v-if="checkExistance(config.keysandsecurity.meetup,0)">
+    <v-container
+      fluid
+      class="pa-0 py-2"
+      v-if="checkExistance(config.keysandsecurity.meetup, 0)"
+    >
       <v-row justify="center" align="center">
         <v-col md="12" sm="11" lg="10" xs="12" class="py-0">
           <events />
@@ -33,14 +43,21 @@
     </v-container>
 
     <v-container fluid class="pa-0 py-0" v-if="showFeatureEventStatus">
-      <v-row justify="center" align="center" class="py-5" :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
+      <v-row
+        justify="center"
+        align="center"
+        class="py-5"
+        :class="
+          this.$vuetify.theme.dark == true ? 'grey darken-4' : 'grey lighten-4'
+        "
+      >
         <v-col md="12" sm="11" lg="10" xs="12" class="py-0">
           <featureEvents />
         </v-col>
       </v-row>
     </v-container>
 
-     <v-container fluid class="pa-0 py-2 " >
+    <v-container fluid class="pa-0 py-2">
       <v-row justify="center" align="center">
         <v-col md="12" lg="10" xs="12" class="py-0">
           <partners />
@@ -54,56 +71,54 @@
         </v-col>
       </v-row>
     </v-container> -->
-
   </v-main>
-  
 </template>
 
 <script>
-import service from '@/services/appservices'
+import service from "@/services/appservices";
 import { mapState } from "vuex";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HomeStartScreen:()=>import('@/components/home/HomeStartScreen'),
-    whatwedo:()=>import('@/components/home/WhatWeDo'),
-    AboutCommunity:()=>import('@/components/home/AboutCommunity'),
-    events:()=>import('@/components/home/Events'),
-    featureEvents:()=>import('@/components/home/FeaturesEvents'),
-    partners:()=>import('@/components/common/Partners')
+    HomeStartScreen: () => import("@/components/home/HomeStartScreen"),
+    whatwedo: () => import("@/components/home/WhatWeDo"),
+    AboutCommunity: () => import("@/components/home/AboutCommunity"),
+    events: () => import("@/components/home/Events"),
+    featureEvents: () => import("@/components/home/FeaturesEvents"),
+    partners: () => import("@/components/common/Partners"),
   },
-  data:()=>({
-    showFeatureEventStatus:false
+  data: () => ({
+    showFeatureEventStatus: false,
   }),
-  mounted(){
+  mounted() {
     this.getFeaturesEventID();
   },
-  computed:{
-    ...mapState(["config"])
+  computed: {
+    ...mapState(["config"]),
   },
-  methods:{
-    getFeaturesEventID(){
-      service.getFeaturesEvents().then(res=>{
-          (res.success) ?
-            (res.data.length>0) ?
-              this.showFeatureEventStatus = true :
-                this.showFeatureEventStatus = false
-            : this.notFound = true
-      })
-    }
-  }
-}
+  methods: {
+    getFeaturesEventID() {
+      service.getFeaturesEvents().then((res) => {
+        res.success
+          ? res.data.length > 0
+            ? (this.showFeatureEventStatus = true)
+            : (this.showFeatureEventStatus = false)
+          : (this.notFound = true);
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>
-  .lightModeContainer{
-      background-color: white;
-      border-radius:12px
-  }
-  .darkModeContainer{
-      background-color:#292929;
-      /* border:1px solid #212121; */
-      border-radius:12px
-  }
+.lightModeContainer {
+  background-color: #f1f2f3;
+  border-radius: 12px;
+}
+.darkModeContainer {
+  background-color: #292929;
+  /* border:1px solid #212121; */
+  border-radius: 12px;
+}
 </style>
