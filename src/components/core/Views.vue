@@ -1,26 +1,31 @@
 <template>
-  <v-container fluid :class="this.$vuetify.theme.dark == true?'black':'light-bg'" class="pa-0 ma-0" style="height:100% !important">
+  <v-container
+    fluid
+    :class="this.$vuetify.theme.dark == true ? 'black' : 'light-bg'"
+    class="pa-0 ma-0"
+    style="height: 100% !important"
+  >
     <v-slide-y-reverse-transition>
       <router-view v-show="show" />
     </v-slide-y-reverse-transition>
-  </v-container >
+  </v-container>
 </template>
 
 <script>
 export default {
-  data(){
+  data() {
     return {
-      show : false,
-    }
+      show: false,
+    };
   },
-  created(){
-   this.show = true
-  }
-}
+  created() {
+    this.show = true;
+  },
+};
 </script>
 
 <style>
-.light-bg{
-  background-color: #F5F8FC;
+.light-bg {
+  background-color: white;
 }
 </style>

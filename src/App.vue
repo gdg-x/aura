@@ -9,6 +9,7 @@
       </v-btn>
     </v-snackbar>
     <Toolbar v-if="!noData && !$route.meta.isEvent"/>
+    <Toolbar2 v-if="!noData && !$route.meta.isEvent"/>
     <Drawer v-if="!noData && !$route.meta.isEvent"/>
     <BottomNav v-if="!noData && !$route.meta.isEvent"/>
     <v-main class="" v-if="isLoading">
@@ -41,6 +42,7 @@ import { mapState, mapMutations } from "vuex";
 export default {
   name: "App",
   components: {
+    Toolbar2:()=>import('@/components/core/Toolbar2'),
     Toolbar:()=>import('@/components/core/Toolbar'),
     BottomNav:()=>import('@/components/core/BottomNav'),
     Drawer:()=>import('@/components/core/Drawer'),
