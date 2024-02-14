@@ -1,14 +1,13 @@
 <template>
-  <v-container fluid>
+  <v-container fluid >
     <v-row align="center" justify="center">
       <v-col md="4">
         <p class="google-font mb-0" style="font-size: 150%">What we do?</p>
         <p class="google-font mt-0" style="font-size: 95%">
-          Google Developer Groups (GDGs) are for developers who are interested
-          in Google's developer technology.
+          Our mission is to equip our community members with practical skills, enabling them to communicate their insights and drive innovative solutions effectively.
         </p>
         <p class="google-font" style="font-size: 95%">
-          About different Google technologies
+          About different technologies
         </p>
         <span v-for="(item, i) in whatwedodata" :key="i">
           <v-tooltip bottom>

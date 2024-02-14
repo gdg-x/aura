@@ -6,13 +6,13 @@
         v-ripple
         style="cursor: pointer;"
         :class="$vuetify.theme.dark == true?'darkModeCardFeatureEvent':'lightModeCardFeatureEvent'"
-        class="pa-3 py-5 fill-height"
+        class="pa-3 pa-md-6 py-5 fill-height"
       >
         <p class="google-font mb-0" style="font-size:90%">{{data.date | dateFilter}}</p>
         <p class="google-font mb-0" style="font-size:120%">{{data.name | summary(15)}}</p>
-        <p class="google-font mb-0" style="font-size:90%">{{data.venue.name | summary(20)}}</p>
+        <!-- <p class="google-font mb-0" style="font-size:90%">{{data.venue.name | summary(20)}}</p> -->
         <v-spacer></v-spacer>
-        <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
+        <v-btn rounded depressed class="mb-0 mt-4 google-font" style="" color="primary">See More</v-btn>
       </div>
     </template>
     <v-card
@@ -129,7 +129,7 @@ export default {
 
 <style scoped>
 .lightModeCardFeatureEvent {
-  background-color: #ffff;
+  background-color: #F1F2F3;
   border-radius: 12px !important;
   /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1); */
 
@@ -141,6 +141,6 @@ export default {
   /* border:1px solid #212121; */
   border-radius: 12px !important;
   /* border: 1px solid #424242; */
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 </style>

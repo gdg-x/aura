@@ -10,21 +10,18 @@
 
     <v-container fluid class="py-0 my-0">
       <v-row justify="center" align="center">
-        <!-- :class="this.$vuetify.theme.dark == true?'darkModeContainer':'lightModeContainer'" -->
         <v-col md="12" sm="11" lg="11" xs="12">
           <whatwedo />
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container fluid class="pa-0 pt-5 my-0">
+    <v-container fluid class="pa-0 my-0">
       <v-row
         justify="center"
         align="center"
-        style="background: #4c4a78"
-        class="py-5 my-0"
       >
-        <v-col md="12" lg="10" sm="11" xs="12" class="py-0">
+        <v-col md="12" lg="11" sm="11" xs="12" class="px-8">
           <AboutCommunity />
         </v-col>
       </v-row>
@@ -47,11 +44,8 @@
         justify="center"
         align="center"
         class="py-5"
-        :class="
-          this.$vuetify.theme.dark == true ? 'grey darken-4' : 'grey lighten-4'
-        "
       >
-        <v-col md="12" sm="11" lg="10" xs="12" class="py-0">
+        <v-col md="12" sm="11" lg="11" xs="12" class="py-0 px-5">
           <featureEvents />
         </v-col>
       </v-row>
@@ -59,18 +53,11 @@
 
     <v-container fluid class="pa-0 py-2">
       <v-row justify="center" align="center">
-        <v-col md="12" lg="10" xs="12" class="py-0">
+        <v-col md="12" lg="11" xs="12" class="py-0 px-5">
           <partners />
         </v-col>
       </v-row>
     </v-container>
-    <!-- <v-container fluid class="pa-0 py-2 hidden-md-and-up" >
-      <v-row justify="center" align="center">
-        <v-col md="12" lg="10" xs="12" class="py-0">
-          <br><br>
-        </v-col>
-      </v-row>
-    </v-container> -->
   </v-main>
 </template>
 

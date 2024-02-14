@@ -30,7 +30,7 @@
               lg="3"
               sm="6"
               cols="12"
-              :class="$vuetify.theme.dark == true?'darkModeCardFeatureEvent':'lightModeCardFeatureEvent'"
+              :class="$vuetify.theme.dark?'darkModeCardFeatureEvent':'lightModeCardFeatureEvent'"
               class="pa-4 px-5 mx-3"
             >
               <p class="google-font my-2">Not Found</p>
@@ -113,15 +113,13 @@ export default {
 
 <style scoped>
 .lightModeCardFeatureEvent {
-  background-color: #ffff;
-  /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1); */
+  background-color: #F1F2F3;
   border-radius: 12px;
 }
 .darkModeCardFeatureEvent {
   background-color: #292929;
-  /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1); */
   /* border:1px solid #212121; */
-  border: 1px solid #424242;
+  /* border: 1px solid #424242; */
   border-radius: 12px;
 }
 </style>
