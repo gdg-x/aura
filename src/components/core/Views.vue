@@ -1,19 +1,17 @@
 <template>
-  <v-container
-    fluid
+  <v-main
     :class="this.$vuetify.theme.dark == true ? 'black' : 'light-bg'"
     class="pa-0 ma-0"
-    style="height: 100% !important"
   >
     <v-slide-y-reverse-transition>
       <router-view v-show="show" />
     </v-slide-y-reverse-transition>
-  </v-container>
+  </v-main>
 </template>
 
 <script>
 export default {
-  name:'ViewMain',
+  name: "ViewMain",
   data() {
     return {
       show: false,

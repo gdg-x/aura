@@ -4,6 +4,7 @@
     fixedfir
     class="hidden-sm-and-down ma-0"
     :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'"
+    v-if="Object.keys(config).length"
   >
   <!-- style="border-color:#e0e0e0;border-width: 1px;border-style: solid;border-bottom: 0;border-left:0;border-right:0" -->
     <v-container fluid >

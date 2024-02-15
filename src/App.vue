@@ -12,15 +12,19 @@
     <Toolbar2 v-if="!noData && !$route.meta.isEvent"/>
     <Drawer v-if="!noData && !$route.meta.isEvent"/>
     <BottomNav v-if="!noData && !$route.meta.isEvent"/>
+
+
     <v-main class="" v-if="isLoading">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
-            <v-progress-circular :width="5" :size="50" color="indigo" indeterminate></v-progress-circular>
+            <v-progress-circular :width="5" :size="50" color="primary" indeterminate></v-progress-circular>
           </v-col>
         </v-row>
       </v-container>
     </v-main>
+
+
     <v-main class="" v-if="!isLoading && noData">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
@@ -31,6 +35,7 @@
         </v-row>
       </v-container>
     </v-main>
+    
     <Views v-if="!isLoading && !noData" />
     <Footer v-if="!noData && !$route.meta.isEvent"/>
   </v-app>

@@ -18,7 +18,7 @@ export default new Vuex.Store({
     items: [{
         text: 'Home',
         to: '/',
-        icon: 'mdi-home',
+        icon: 'mdi-circle-double',
         meta: {
           showToolbar: true,
           showBottomNav: true
