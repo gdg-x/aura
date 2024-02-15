@@ -7,7 +7,7 @@
     floating
     class="text-center"
   >
-  <v-app-bar-nav-icon class="my-3" aria-label="Hamburger Menu"></v-app-bar-nav-icon>
+  <v-app-bar-nav-icon class="my-3 mt-5" aria-label="Hamburger Menu"></v-app-bar-nav-icon>
     <v-list>
       
       <v-btn
