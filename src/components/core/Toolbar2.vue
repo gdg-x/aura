@@ -1,17 +1,18 @@
 <template>
   <v-navigation-drawer
     app
-    width="90px"
+    width="100px"
     :color="this.$vuetify.theme.dark ? '#252726' : '#F5F7F7'"
     clipped-left
     floating
-    style="border: 0 !important; padding-top: 60px"
     class="text-center"
   >
+  <v-app-bar-nav-icon class="my-3" aria-label="Hamburger Menu"></v-app-bar-nav-icon>
     <v-list>
+      
       <v-btn
         depressed
-        class="px-0 py-8 mb-3"
+        class="px-2 py-8 mb-2"
         style="border-radius: 16px"
         v-for="(link, i) in links.filter((obj) => obj.meta.showToolbar)"
         :key="i"
@@ -19,8 +20,18 @@
         :to="link.to"
       >
         <div>
-          <v-icon style="display: block" size="20">{{ link.icon }}</v-icon>
-          <span style="font-size: 60%" class="mb-0 mt-2">{{ link.text }}</span>
+          <v-icon style="display: block" size="24" class="mb-1">{{
+            link.icon
+          }}</v-icon>
+          <span
+            style="
+              font-size: 11px;
+              text-transform: capitalize;
+              font-weight: 600;
+            "
+            class="mb-0 mt-4 google-font"
+            >{{ link.text }}</span
+          >
         </div>
       </v-btn>
     </v-list>
