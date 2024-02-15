@@ -63,7 +63,7 @@ import service from '@/services/appservices'
 import eventCard from '@/components/events/UpcomingEventCard'
 import { mapState } from 'vuex'
     export default {
-        name: 'Eventshome',
+        name: 'EventsHomePage',
         inject: ['theme'],
         components:{
             eventCard

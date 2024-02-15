@@ -66,7 +66,7 @@ import service from "@/services/appservices";
 import { mapState } from "vuex";
 
 export default {
-  name: "Home",
+  name: "HomePage",
   components: {
     HomeStartScreen: () => import("@/components/home/HomeStartScreen"),
     whatwedo: () => import("@/components/home/WhatWeDo"),

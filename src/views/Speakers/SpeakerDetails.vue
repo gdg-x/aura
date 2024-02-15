@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "Speaker",
+  name: "SpeakerPage",
   inject: ["theme"],
   components: {
       SpeakerDesktop:()=>import('@/components/speakers/SpeakerDesktop'),

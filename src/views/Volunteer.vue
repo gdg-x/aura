@@ -91,7 +91,7 @@
 <script>
 import service from '@/services/appservices'
 export default {
-    name:'Team',
+    name:'TeamVolunteerPage',
     inject: ['theme'],
     components:{
         Volunteers:()=>import('@/components/team/Volunteers'),

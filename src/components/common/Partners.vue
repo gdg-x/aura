@@ -52,6 +52,7 @@
 import service from '@/services/appservices'
 import { mapState } from "vuex";
 export default {
+    name:'PartnerCommon',
     data:()=>({
         partnersData:[]
     }),

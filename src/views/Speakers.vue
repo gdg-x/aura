@@ -76,7 +76,7 @@
 <script>
 import service from "@/services/appservices";
 export default {
-  name: "Speaker",
+  name: "SpeakerPage",
   inject: ["theme"],
   components: {
     SpeakerHeader: () => import("@/components/speakers/SpeakerHeader"),

@@ -43,7 +43,7 @@
 // import offline from "v-offline";
 import { mapState, mapGetters, mapMutations } from "vuex";
 export default {
-  name: "Toolbar",
+  name: "AppToolbar",
   components: {
     // offline,
   },

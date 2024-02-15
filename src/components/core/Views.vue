@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name:'ViewMain',
   data() {
     return {
       show: false,

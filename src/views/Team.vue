@@ -68,7 +68,7 @@
 <script>
 import service from '@/services/appservices'
 export default {
-    name:'Team',
+    name:'TeamPage',
     inject: ['theme'],
     components:{
         TeamHeader:()=>import('@/components/team/TeamHeader'),

@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: 'PartnersPage',
   components: {
     partners:()=>import('@/components/common/Partners')
   },

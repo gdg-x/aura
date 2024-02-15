@@ -37,11 +37,11 @@
                     :items-per-page="5"
                     :class="$vuetify.theme.dark == true?'darkModeCard':'card-light'"
                 >   
-                    <template v-slot:item.name="{ item }">
+                    <template v-slot:[`item.name`]="{ item }">
                         {{item.name}}
                     </template>
 
-                    <template v-slot:item.link="{ item }">
+                    <template v-slot:[`item.link`]="{ item }">
                         <a :href="item.link" target="_blank">See More</a>
                     </template>
                 </v-data-table>
@@ -54,7 +54,7 @@
 import service from '@/services/appservices'
 import { mapState } from 'vuex'
     export default {
-        name: 'App',
+        name: 'PastEvent',
         components:{
         },
         computed:{

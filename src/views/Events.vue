@@ -24,6 +24,7 @@
 import { mapState } from "vuex";
 
 export default {
+    name:'EventsPage',
     components:{
         eventsHeader:()=>import('@/components/events/EventHeader'),
         upcomingMeetupsEvents:()=>import('@/components/events/UpcomingEvents'),

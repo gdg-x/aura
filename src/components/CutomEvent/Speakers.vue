@@ -46,6 +46,7 @@
 <script>
 import socialMediaDetails from "@/components/common/SocialInfo";
 export default {
+  name:'SpeakerCompo',
   components: {
     socialMediaDetails
   },

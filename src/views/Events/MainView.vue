@@ -56,7 +56,7 @@
 import service from "@/services/appservices";
 import { mapState } from "vuex";
 export default {
-  name: "EventMainView",
+  name: "EventMainViewPage",
   components: {
     EventToolBar: () => import("@/components/CutomEvent/EventToolbar"),
     EventDrawer: () => import("@/components/CutomEvent/EventDrawer"),

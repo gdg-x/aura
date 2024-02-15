@@ -85,6 +85,7 @@
 <script>
 import { mapState } from 'vuex'
   export default {
+    name:'AppFooter',
     components:{
       CommunitySocialInfo : ()=>import('@/components/common/CommunitySocialInfo'),
     },

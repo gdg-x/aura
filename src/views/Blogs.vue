@@ -24,6 +24,7 @@
 <script>
 
 export default {
+  name:'BlogPage',
   components: {
     BlogsHeader:()=>import('@/components/blogs/BlogsHeader'),
     BlogsDetails:()=>import('@/components/blogs/BlogsDetails'),

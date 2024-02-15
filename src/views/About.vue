@@ -46,6 +46,7 @@ import service from "@/services/appservices";
 import { mapState } from "vuex";
 
 export default {
+  name:'AboutPage',
   components: {
     aboutCommunity: () => import("@/components/about/AboutCommunity"),
     aboutHeader: () => import("@/components/about/AboutHeader"),

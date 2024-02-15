@@ -23,6 +23,7 @@
 <script>
 import { mapState } from "vuex";
 export default {
+  name:'ContactPage',
   components: {
     contactHeader:()=>import('@/components/contact/ContactHeader'),
     contactDetails:()=>import('@/components/contact/ContactDetails')
