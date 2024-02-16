@@ -1,7 +1,7 @@
 <template>
   <v-main
     :class="this.$vuetify.theme.dark == true ? 'black' : 'light-bg'"
-    class="pa-0 ma-0"
+    class="pa-0"
   >
     <v-slide-y-reverse-transition>
       <router-view v-show="show" />

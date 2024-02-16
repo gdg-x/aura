@@ -1,35 +1,36 @@
 <template>
-  <v-main class="ma-0">
-    <v-container fluid class="">
+  <v-main>
+    <v-container fluid class="my-0">
       <v-row justify="center" align="center">
-        <v-col md="12" lg="11" sm="11" xs="12" class="">
+        <v-col md="12" lg="11" sm="11" xs="12" class="my-5">
           <HomeStartScreen />
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container fluid class="py-0 my-0">
+    <v-container fluid class="py-0 my-5">
       <v-row justify="center" align="center">
         <v-col md="12" sm="11" lg="11" xs="12">
           <whatwedo />
+          <AboutCommunity class="mt-5" />
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container fluid class="pa-0 my-0">
+    <!-- <v-container fluid class="pa-0 my-0">
       <v-row
         justify="center"
         align="center"
       >
         <v-col md="12" lg="11" sm="11" xs="12" class="px-8">
-          <AboutCommunity />
+          
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
 
     <v-container
       fluid
-      class="pa-0 py-2"
+      class="pa-0 py-0"
       v-if="checkExistance(config.keysandsecurity.meetup, 0)"
     >
       <v-row justify="center" align="center">
@@ -45,7 +46,7 @@
         align="center"
         class="py-5"
       >
-        <v-col md="12" sm="11" lg="11" xs="12" class="py-0 px-5">
+        <v-col md="12" sm="11" lg="11" xs="12" class="py-5 pb-10">
           <featureEvents />
         </v-col>
       </v-row>

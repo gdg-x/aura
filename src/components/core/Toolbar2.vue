@@ -12,7 +12,7 @@
       
       <v-btn
         depressed
-        class="px-2 py-8 mb-2"
+        class="px-0 py-8 mb-2"
         style="border-radius: 16px"
         v-for="(link, i) in links.filter((obj) => obj.meta.showToolbar)"
         :key="i"

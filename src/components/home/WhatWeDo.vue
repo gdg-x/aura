@@ -1,39 +1,36 @@
 <template>
-  <v-container fluid >
+  <v-container fluid>
     <v-row align="center" justify="center">
       <v-col md="4">
         <p class="google-font mb-0" style="font-size: 150%">What we do?</p>
         <p class="google-font mt-0" style="font-size: 95%">
-          Our mission is to equip our community members with practical skills, enabling them to communicate their insights and drive innovative solutions effectively.
+          Our mission is to equip our community members with practical skills,
+          enabling them to communicate their insights and drive innovative
+          solutions effectively.
         </p>
-        <p class="google-font" style="font-size: 95%">
+        <!-- <p class="google-font" style="font-size: 90%">
           About different technologies
         </p>
         <span v-for="(item, i) in whatwedodata" :key="i">
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
-              <a
+              <v-avatar
+                size="30"
                 :href="item.link"
                 target="_blank"
-                class="ma-0 mx-3"
+                class="mr-3"
+                rounded=""
                 rel="noreferrer"
+                style="cursor: pointer;"
               >
-                <img
-                  :src="getImgUrl(item.image)"
-                  width="25vh"
-                  alt
-                  srcset
-                  dark
-                  v-on="on"
-                />
-              </a>
-              &nbsp;&nbsp;&nbsp;
+                <v-img width="10px"  srcset v-on="on" :src="getImgUrl(item.image)"></v-img>
+              </v-avatar>
             </template>
             <span>{{ item.TechName }}</span>
           </v-tooltip>
-        </span>
+        </span> -->
       </v-col>
-      <v-col md="8">
+      <v-col md="8" class="pa-0 ma-0">
         <v-container fluid class="pa-0 ma-0">
           <v-row>
             <v-col
@@ -45,7 +42,7 @@
               :key="index"
             >
               <div
-                class=" pa-4"
+                class="pa-4"
                 :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'"
               >
                 <v-icon large style="font-size: 250%">{{ item.icon }}</v-icon>

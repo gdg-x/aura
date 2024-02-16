@@ -14,7 +14,7 @@
         </v-avatar>
         <span class="google-font mb-0" style="font-size: 120%;">{{ config.generalConfig.shortName || config.generalConfig.name || "" }}</span>
 
-        <p style="font-weight: 600; font-size: 300%" class="google-font mb-0 mt-4">Make good things together.</p>
+        <p style="font-weight: 600; font-size: 300%" class="google-font mb-0 mt-8">Make good things together.</p>
 
         <p class="google-font" style="font-size: 100%; color: #9e9e9e">
           <span v-for="(item, i) in config.generalConfig.hashtags" :key="i">

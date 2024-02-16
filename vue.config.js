@@ -1,5 +1,10 @@
-module.exports = {
-  chainWebpack: config=>{
+const { defineConfig } = require('@vue/cli-service')
+
+module.exports = defineConfig({
+  transpileDependencies: [
+    'vuetify'
+  ],
+  chainWebpack: config => {
     config.plugins.delete('prefetch')
   },
   "transpileDependencies": [
@@ -8,7 +13,7 @@ module.exports = {
   productionSourceMap: false,
   pwa: {
     name: 'Aura Main',
-    workboxPluginMode: 'InjectManifest',
+    // workboxPluginMode: 'InjectManifest',
     themeColor: '#4A90E2',
     msTileColor: '#4A90E2',
     appleMobileWebAppCapable: 'yes',
@@ -16,9 +21,9 @@ module.exports = {
     manifestOptions: {
       background_color: "#ffffff"
     },
-    workboxOptions: {
-      swSrc: './src/sw.js',
-      swDest: 'service-worker.js',
-    },
+    // workboxOptions: {
+    //   swSrc: './src/sw.js',
+    //   swDest: 'service-worker.js',
+    // },
   }
-}
+})
