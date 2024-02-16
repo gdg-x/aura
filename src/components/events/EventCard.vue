@@ -19,7 +19,8 @@
     <v-btn
       rounded
       depressed
-      class="mb-0 mt-4 google-font"
+      small
+      class="mb-0 mt-4 google-font aura-btn"
       style=""
       @click="goToEvent(data.id)"
       color="primary"

@@ -16,7 +16,17 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* text-fill-color: transparent; */
+}
 
+.aura-btn {
+    background-image: url('../src//assets//img/dontremove/btn.png') !important;
+    background-position: center;
+    background-size: 200px; 
+}
+.aura-btn:hover {
+    background-image: url('../src//assets//img/dontremove/btn.png') !important;
+    background-position: center;
+    background-size: 180px; 
 }
 
 html {

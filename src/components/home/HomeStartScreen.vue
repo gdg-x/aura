@@ -51,7 +51,7 @@
           depressed
           rounded
           aria-label="Become a Member"
-          class="ma-0 google-font primary mr-2"
+          class="ma-0 google-font mr-2 aura-btn"
           style="text-transform: capitalize; color: white"
           >Become a Member</v-btn
         >
