@@ -3,24 +3,52 @@
     <v-container fluid class="pa-0">
       <v-row justify="center" align="center" class="py-0 my-0">
         <v-col md="12" lg="11" sm="11" xs="12" class="">
-          <eventsHeader />
-          <upcomingMeetupsEvents
-            v-if="checkExistance(config.keysandsecurity.meetup, 0)"
-          />
-          <featureEvents class="my-10" v-else />
+          <!-- Header -->
+          <v-container fluid class="my-0 py-0">
+            <v-row justify="center" align="center">
+              <v-col md="8" sm="8" cols="12">
+                <p
+                  class="google-font mb-0"
+                  style="font-weight: 350; font-size: 200%"
+                >
+                  <b>Our <span style="color: #1a73e8">Events</span> </b>
+                </p>
+                <p class="google-font mt-0 mb-0" style="font-size: 110%">
+                  Questions? Please contact
+                  <a
+                    style="color: #1565c0; text-decoration: none"
+                    :href="`mailto:${config.generalConfig.email}`"
+                    >{{ config.generalConfig.email }}</a
+                  >
+                </p>
+              </v-col>
+              <v-col md="4" sm="4" cols="12">
+                <v-img
+                  width="80%"
+                  style="margin: auto"
+                  :src="require('@/assets/img/svg/events.svg')"
+                ></v-img>
+              </v-col>
+            </v-row>
+          </v-container>
+          <!-- Header -->
+
+          <!-- Feature Events -->
+          <FeatureEvents class="my-10" />
+          <!-- Feature Events -->
         </v-col>
       </v-row>
     </v-container>
+
+    <!-- Past Events -->
     <v-container fluid class="py-2 mt-8">
       <v-row justify="center" align="center">
         <v-col md="12" lg="11" sm="11" xs="12" class="py-0">
-          <pastMeetupsEvents
-            v-if="checkExistance(config.keysandsecurity.meetup, 0)"
-          />
-          <customPastEvents v-else />
+          <PastEvents />
         </v-col>
       </v-row>
     </v-container>
+    <!-- Past Events -->
   </v-main>
 </template>
 
@@ -30,11 +58,8 @@ import { mapState } from "vuex";
 export default {
   name: "EventsPage",
   components: {
-    eventsHeader: () => import("@/components/events/EventHeader"),
-    upcomingMeetupsEvents: () => import("@/components/events/UpcomingEvents"),
-    pastMeetupsEvents: () => import("@/components/events/PastEvents"),
-    featureEvents: () => import("@/components/home/FeaturesEvents"),
-    customPastEvents: () => import("@/components/events/CustomPastEvents"),
+    FeatureEvents: () => import("@/components/home/FeaturesEvents"),
+    PastEvents: () => import("@/components/events/PastEvents"),
   },
   computed: {
     ...mapState(["config"]),

@@ -1,46 +1,56 @@
-  @font-face {
-      font-family: google-sans;
-      src: url(assets/fonts/google-font.woff2);
-      font-display: swap;
-  }
+@font-face {
+    font-family: google-sans;
+    src: url(assets/fonts/google-font.woff2);
+    font-display: swap;
+}
 
-  .google-font {
-      font-family: google-sans
-  }
+.google-font {
+    font-family: google-sans
+}
 
-  ;
+;
 
-  html {
-      overflow-x: hidden;
-  }
+html {
+    overflow-x: hidden;
+}
 
-  body {
-      font-family: google-sans
-  }
+body {
+    font-family: google-sans
+}
 
-  .card-light {
-      background: #f1f2f3;
-      border-radius: 12px !important
-  }
+.card-light {
+    background: #f1f2f3;
+    border-radius: 12px !important
+}
 
-  .card-dark {
-      background-color: #292929;
-      border-radius: 12px !important
-  }
+.card-dark {
+    background-color: #292929;
+    border-radius: 12px !important
+}
 
-  .darkModeCard {
-      background-color: #292929;
-      /* border:1px solid #212121; */
-      border-radius: 12px !important
-  }
+.darkModeCard {
+    background-color: #292929;
+    /* border:1px solid #212121; */
+    border-radius: 12px !important
+}
 
-  .whiteTheme {
-      background: F1F2F3;
-      /* border:1px solid #e0e0e0; */
-      border-radius: 12px !important
-  }
+.whiteTheme {
+    background: F1F2F3;
+    /* border:1px solid #e0e0e0; */
+    border-radius: 12px !important
+}
 
-  .lightModeCard {
-      background-color: #F1F2F3 !important;
-      border-radius: 12px
-  }
+.lightModeCard {
+    background-color: #F1F2F3 !important;
+    border-radius: 12px
+}
+
+.org-team-list-card-light {
+    background-color: #F1F2F3 !important;
+    border-radius: 17px !important
+}
+
+.org-team-list-card-dark {
+    background-color: #292929;
+    border-radius: 12px !important
+}

@@ -3,10 +3,8 @@
     <v-row align="center" justify="center">
       <v-col md="4">
         <p class="google-font mb-0" style="font-size: 150%">What we do?</p>
-        <p class="google-font mt-0" style="font-size: 95%">
-          Our mission is to equip our community members with practical skills,
-          enabling them to communicate their insights and drive innovative
-          solutions effectively.
+        <p class="google-font" style="font-size: 100%">
+          {{ config.generalConfig.shortDescription }}
         </p>
         <!-- <p class="google-font" style="font-size: 90%">
           About different technologies
@@ -62,8 +60,12 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import whatwedodata from "@/assets/data/whatwedo.json";
 export default {
+  computed: {
+    ...mapState(["config"]),
+  },
   name: "App",
   data: () => ({
     whatwedodata: whatwedodata,

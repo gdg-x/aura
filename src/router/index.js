@@ -15,7 +15,7 @@ const routes = [{
   {
     path: '/about',
     name: 'About',
-    component: () => import( /* webpackChunkName: "about" */ '../views/About.vue'),
+    component: () => import( /* webpackChunkName: "about" */ '../views/AboutPage.vue'),
     meta: {
       title: 'About ',
       color: '#0277bd',
@@ -24,7 +24,7 @@ const routes = [{
   {
     path: '/team',
     name: 'Team',
-    component: () => import( /* webpackChunkName: "team" */ '../views/Team.vue'),
+    component: () => import( /* webpackChunkName: "team-page" */ '../views/TeamPage.vue'),
     meta: {
       title: 'Team ',
       color: '#0277bd',
@@ -122,7 +122,7 @@ const routes = [{
   {
     path: '/speakers',
     name: 'Speakers',
-    component: () => import( /* webpackChunkName: "speakers" */ '../views/Speakers.vue'),
+    component: () => import( /* webpackChunkName: "speakers" */ '../views/SpeakersPage.vue'),
     meta: {
       title: 'Speakers ',
       color: '#0277bd',

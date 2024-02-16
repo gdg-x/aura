@@ -28,7 +28,7 @@
       </v-row>
     </v-container> -->
 
-    <v-container
+    <!-- <v-container
       fluid
       class="pa-0 py-0"
       v-if="checkExistance(config.keysandsecurity.meetup, 0)"
@@ -38,7 +38,7 @@
           <events />
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
 
     <v-container fluid class="pa-0 py-0" v-if="showFeatureEventStatus">
       <v-row
@@ -72,7 +72,6 @@ export default {
     HomeStartScreen: () => import("@/components/home/HomeStartScreen"),
     whatwedo: () => import("@/components/home/WhatWeDo"),
     AboutCommunity: () => import("@/components/home/AboutCommunity"),
-    events: () => import("@/components/home/Events"),
     featureEvents: () => import("@/components/home/FeaturesEvents"),
     partners: () => import("@/components/common/Partners"),
   },
@@ -80,13 +79,13 @@ export default {
     showFeatureEventStatus: false,
   }),
   mounted() {
-    this.getFeaturesEventID();
+    this.getFeaturesEvent();
   },
   computed: {
     ...mapState(["config"]),
   },
   methods: {
-    getFeaturesEventID() {
+    getFeaturesEvent() {
       service.getFeaturesEvents().then((res) => {
         res.success
           ? res.data.length > 0

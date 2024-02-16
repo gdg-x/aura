@@ -6,6 +6,7 @@
             </v-col>
         </v-row>
         <v-row class="py-0 my-0">
+            {{ data }}
             <v-col md="8" sm="12" cols="12" class="py-0 my-0">
                 <p class="google-font" style="font-size:110%">{{data}}</p>
             </v-col>

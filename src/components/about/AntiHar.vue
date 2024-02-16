@@ -1,12 +1,12 @@
 <template>
-    <v-container fluid class="py-0 my-0 mt-5">
+    <v-container fluid class="pa-0 ma-0 mt-5">
         <v-row class="py-0 my-0">
             <v-col md="12" sm="12" cols="12" class="py-0 my-0">
-                <h1 class="google-font mb-2">AntiHarassment Policy</h1>
+                <h1 class="google-font mb-2">Anti Harassment Policy</h1>
             </v-col>
         </v-row>
         <v-row class="py-0 my-0">
-            <v-col md="8" sm="12" cols="12" class="py-0 my-0">
+            <v-col md="12" sm="12" cols="12" class="py-0 my-0">
                 <p class="google-font" style="font-size:100%">
                     <b style="font-size:120%;">Why do we have an official Anti-Harassment policy for {{data}} events?</b>
 
@@ -17,10 +17,10 @@
                     </ul>
                 </p>
 
-                <p class="google-font" style="font-size:110%">
-                    <b style="font-size:120%;">{{data}} is dedicated to providing a harassment-free event experience for everyone, regardless of: </b>
+                <p class="google-font" style="font-size:100%">
+                    <b style="font-size:100%;">{{data}} is dedicated to providing a harassment-free event experience for everyone, regardless of: </b>
 
-                    <ul class="mt-2" style="font-size:110%">
+                    <ul class="mt-2" style="font-size:100%">
                         <li class="google-font">Gender</li>
                         <li class="google-font">Sexual Orientation</li>
                         <li class="google-font">Disability</li>
@@ -34,9 +34,9 @@
                     <span class="google-font" style="font-size:100%">The above is not an exhaustive list -- we do not tolerate harassment of event spanarticipants in any form. </span>
                 </p>
 
-                <p class="google-font" style="font-size:120%">Sexual language and imagery is not appropriate for any event venue, including talks. Event participants violating these rules may be expelled from the event, and event banned from future events at the discretion of the event organizers/management. </p>
+                <p class="google-font" style="font-size:100%">Sexual language and imagery is not appropriate for any event venue, including talks. Event participants violating these rules may be expelled from the event, and event banned from future events at the discretion of the event organizers/management. </p>
 
-                <p class="google-font" style="font-size:110%">Harassment includes (but is not limited to):
+                <p class="google-font" style="font-size:100%">Harassment includes (but is not limited to):
                     <ul class="mt-2" style="font-size:100%">
                         <li class="google-font">Offensive verbal comments related to gender, sexual orientation, disability, gender identity, age, race, religion</li>
                         <li class="google-font">The use or display of sexual images in public spaces</li>

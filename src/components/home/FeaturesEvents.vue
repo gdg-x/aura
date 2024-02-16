@@ -5,9 +5,7 @@
         <p class="google-font mb-0 mt-0" style="font-weight: 350;font-size:180%">
           <b>
             Our
-            <span style="color: #1a73e8;">Feature Event</span>
-            &
-            <span style="color: #1a73e8;">Meetup</span>
+            <span style="color: #1a73e8;">Feature Events</span>
           </b>
         </p>
         <p
@@ -46,7 +44,8 @@
               cols="6"
               class="pa-1"
             >
-              <featureEventCard :data="item" />
+              <!-- <featureEventCard :data="item" /> -->
+              <EventCardVue :data="item"/>
             </v-col>
           </v-row>
         </v-container>
@@ -61,7 +60,8 @@ export default {
   name: "App",
   inject: ["theme"],
   components: {
-    featureEventCard: () => import("@/components/home/FeatureEventCard")
+    // featureEventCard: () => import("@/components/home/FeatureEventCard")
+    EventCardVue: () => import("@/components/events/EventCard")
   },
   data: () => ({
     loading: true,
