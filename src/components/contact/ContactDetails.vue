@@ -1,7 +1,7 @@
 <template>
-  <v-container fluid class="py-0 my-0 mt-0">
+  <v-container fluid class="pa-0 ma-0">
     <v-row class="py-0 my-0">
-      <v-col md="9" sm="6" cols="12" class="py-0 my-0">
+      <v-col md="7" sm="6" cols="12" class="pr-md-15">
         <p
           class="google-font mb-1"
           style="font-size:110%"
@@ -18,7 +18,7 @@
           >#{{item}}</v-chip>
         </span>
       </v-col>
-      <v-col md="3" sm="6" cols="12" class="py-0 my-0">
+      <v-col md="5" sm="6" cols="12" class="">
         <img :src="require('@/assets/img/svg/contact.svg')" style="float:right" width="80%" alt />
       </v-col>
     </v-row>
