@@ -8,7 +8,16 @@
     font-family: google-sans
 }
 
-;
+.aura-text {
+    background-image: url('../src//assets//img/dontremove/btn.png');
+    /* background-repeat: repeat; */
+    background-position: center;
+    background-size: 200px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+
+}
 
 html {
     overflow-x: hidden;

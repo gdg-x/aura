@@ -13,12 +13,13 @@
                   style="font-weight: 350; font-size: 200%"
                 >
                   <b>
-                    <span style="color: #1a73e8">About</span>
-                    {{
+                    <span class="aura-text">About</span>
+                    <!-- {{
                       config.generalConfig.shortName ||
                       config.generalConfig.name ||
                       ""
-                    }}</b
+                    }} -->
+                    </b
                   >
                 </p>
 

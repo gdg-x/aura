@@ -18,9 +18,9 @@
 
         <p
           style="font-weight: 600; font-size: 300%"
-          class="google-font mb-0 mt-8"
+          class="google-font mb-0 mt-8 "
         >
-          Make good things together.
+          Make good things <span class="aura-text">together</span>.
         </p>
 
         <p class="google-font" style="font-size: 100%; color: #9e9e9e">

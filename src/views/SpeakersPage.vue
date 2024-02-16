@@ -11,7 +11,7 @@
                   class="google-font mb-0"
                   style="font-weight: 350; font-size: 200%"
                 >
-                  <b> <span style="color: #1a73e8">Our</span> Speakers </b>
+                  <b> Our<span class="aura-text"> Speakers</span> </b>
                 </p>
                 <p class="google-font" style="font-size: 100%">
                   A collection of experienced speakers for an awesome event

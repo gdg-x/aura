@@ -11,8 +11,8 @@
                     class="google-font mb-0"
                     style="font-weight: 350; font-size: 200%"
                   >
-                    <b> <span style="color: #1a73e8">Contact</span></b>
-                    {{ config.generalConfig.shortName || config.generalConfig.name }}
+                    <b> <span class="aura-text">Contact</span></b>
+                    <!-- {{ config.generalConfig.shortName || config.generalConfig.name }} -->
                   </p>
                   <contactDetails :data="config.generalConfig" />
                 </v-col>

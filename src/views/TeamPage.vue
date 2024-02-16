@@ -11,7 +11,7 @@
                   class="google-font mb-0"
                   style="font-weight: 350; font-size: 200%"
                 >
-                  <b> <span style="color: #1a73e8">Our</span> Team </b>
+                  <b> Our<span class="aura-text"> Team</span> </b>
                 </p>
                 <p class="google-font" style="font-size: 100%">
                   {{ config.generalConfig.shortDescription }}
