@@ -7,9 +7,17 @@
     floating
     class="text-center"
   >
-  <v-app-bar-nav-icon class="my-3 mt-5" aria-label="Hamburger Menu"></v-app-bar-nav-icon>
+   <v-avatar class="my-4">
+    <v-img
+        alt="Community Logo"
+        class="shrink google-font"
+        contain
+        :src="config.generalConfig.toolbarImage"
+        transition="scale-transition"
+        width="45"
+      />
+   </v-avatar>
     <v-list>
-      
       <v-btn
         depressed
         class="px-0 py-8 mb-2"

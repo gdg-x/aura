@@ -12,9 +12,16 @@
             width="25"
           />
         </v-avatar>
-        <span class="google-font mb-0" style="font-size: 120%;">{{ config.generalConfig.shortName || config.generalConfig.name || "" }}</span>
+        <span class="google-font mb-0" style="font-size: 120%">{{
+          config.generalConfig.shortName || config.generalConfig.name || ""
+        }}</span>
 
-        <p style="font-weight: 600; font-size: 300%" class="google-font mb-0 mt-8">Make good things together.</p>
+        <p
+          style="font-weight: 600; font-size: 300%"
+          class="google-font mb-0 mt-8"
+        >
+          Make good things together.
+        </p>
 
         <p class="google-font" style="font-size: 100%; color: #9e9e9e">
           <span v-for="(item, i) in config.generalConfig.hashtags" :key="i">
@@ -34,7 +41,7 @@
           {{ config.generalConfig.shortDescription }}
         </p>
 
-        <br class="my-6">
+        <br class="my-6" />
 
         <v-btn
           v-if="checkExistance(config.generalConfig.becomemember, 0)"
@@ -54,7 +61,8 @@
         </v-btn>
       </v-col>
       <v-col md="4">
-        <v-img :src="
+        <v-img
+          :src="
             checkExistance(config.generalConfig.homeImage, 0)
               ? config.generalConfig.homeImage
               : require('@/assets/img/svg/home.svg')
@@ -63,9 +71,10 @@
             checkExistance(config.generalConfig.homeImage, 0)
               ? config.generalConfig.homeImage
               : require('@/assets/img/svg/home.svg')
-          "></v-img>
+          "
+          class="my-md-5"
+        ></v-img>
       </v-col>
-
     </v-row>
   </v-container>
 </template>

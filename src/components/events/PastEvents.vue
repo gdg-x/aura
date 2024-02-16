@@ -7,7 +7,7 @@
         </v-snackbar>
         <v-row align="center" justify="center" class="mb-5">
             <v-col cols="12" md="12" lg="12" sm="12" class="">
-                <v-row>
+                <v-row style="background-color: #F1F2F3 !important; ">
                     <v-col md="6" lg="6" sm="6" cols="12">
                         <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Directory of past events</p>
                         <p class="google-font mt-0 mb-0" style="font-size:95%">Events are listed in reverse chronological order by date.</p>
