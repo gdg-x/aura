@@ -38,7 +38,7 @@
       </div>
     </template>
 
-    <v-card :class="theme.isDark ? 'grey darken-3' : 'white'">
+    <v-card class="pa-4" :class="theme.isDark ? 'grey darken-3' : 'white'" style="border-radius: 12px;">
       <v-card-title class="px-5 google-font" primary-title>
         {{ data.name }}
       </v-card-title>
@@ -54,7 +54,7 @@
         >
       </v-card-text>
 
-      <v-divider></v-divider>
+      <!-- <v-divider></v-divider> -->
 
       <v-card-actions>
         <v-spacer></v-spacer>

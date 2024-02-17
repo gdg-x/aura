@@ -21,7 +21,7 @@
       </div>
     </template>
 
-    <v-card color>
+    <v-card color style="border-radius: 12px;" class="pa-4">
       <v-card-title class="px-5 google-font" primary-title>{{data.name}}</v-card-title>
 
       <v-card-text class="pa-5">
@@ -33,7 +33,7 @@
         <v-btn class="primary mt-3" small depressed @click="goToSpeaker(data.id)">See More Info</v-btn>
       </v-card-text>
 
-      <v-divider></v-divider>
+      <!-- <v-divider></v-divider> -->
 
       <v-card-actions>
         <v-spacer></v-spacer>
