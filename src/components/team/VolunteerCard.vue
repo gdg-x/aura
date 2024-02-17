@@ -66,11 +66,6 @@ import socialMediaDetails from '@/components/common/SocialInfo'
      
     },
     methods:{
-    },
-    filters:{
-        summery: (val,num)=>{
-            return val.substring(0,num)+".."
-        }
     }
   }
 </script>

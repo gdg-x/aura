@@ -16,10 +16,10 @@
             />
           </v-avatar>
           <p class="mt-3 mb-0 google-font mb-0" style="font-size: 120%">
-            <b>{{ data.name | summery(20) }}</b>
+            <b>{{ summeryText(data.name, 20) }}</b>
           </p>
           <p class="mt-0 mb-0 google-font mt-0" style="font-size: 80%">
-            {{ data.designation | summery(20) }}
+            {{ summeryText(data.designation, 20) }}
           </p>
         </div>
 
@@ -82,13 +82,7 @@ export default {
     goToTeam(id) {
       this.$router.push("/team/" + id);
     },
-  },
-  filters: {
-    summery: (val, num) => {
-      if (val.length > num) return val.substring(0, num) + "..";
-      else return val;
-    },
-  },
+  }
 };
 </script>
 

@@ -14,7 +14,7 @@
           <div class="google-font">
             <p style="font-size: 120%" class="mb-1"><b>{{  data.data.title | summary(30) }}</b></p>
             <p>{{data.data.author}}</p>
-            <p class="mb-4" style="font-size: 80%">Published on {{data.data.pubDate | dateFilter}}</p>
+            <p class="mb-4" style="font-size: 80%">Published on {{convtDate(data.data.pubDate)}}</p>
             <v-btn class="aura-btn" rounded dark :href="data.data.link" target="_blank" text>Read</v-btn>
           </div>
         </v-list-item-content>
@@ -50,14 +50,6 @@ export default {
       } else {
         return val;
       }
-    },
-    dateFilter: (value) => {
-      const date = new Date(value);
-      return date.toLocaleString(["en-US"], {
-        month: "short",
-        day: "2-digit",
-        year: "numeric",
-      });
     },
   },
 };

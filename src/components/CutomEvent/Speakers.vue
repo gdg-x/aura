@@ -17,7 +17,7 @@
         <p
           class="mt-1 mb-0 google-font mt-0"
           style="font-size:80%"
-        >{{data.company.name | summery(20)}}</p>
+        >{{summeryText(data.company.name, 20)}}</p>
       </div>
     </template>
 
@@ -60,11 +60,6 @@ export default {
   methods: {
     goToSpeaker(id) {
       this.$router.push("/speakers/" + id);
-    }
-  },
-  filters: {
-    summery: (val, num) => {
-      return val.substring(0, num) + "..";
     }
   }
 };

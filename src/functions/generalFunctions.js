@@ -13,12 +13,24 @@ export default {
                 return splitArr[0].substring(0, 1).toUpperCase();
             }
         },
-        getImgUrl(pic, defaultimage="noimage.jpg") {
+        getImgUrl(pic, defaultimage = "noimage.jpg") {
             if (pic.length > 0) {
                 return pic;
             } else {
-                return require('@/assets/img/dontremove/'+defaultimage);
+                return require('@/assets/img/dontremove/' + defaultimage);
             }
         },
+        convtDate:(date)=> {
+            let inputDate = new Date(date);
+            const formattedDate = inputDate.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+            });
+            return formattedDate
+        },
+        summeryText: (val, num) => {
+            return val.substring(0, num) + "..";
+        }
     },
-  }
+}

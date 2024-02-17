@@ -9,10 +9,10 @@
     class="pa-3 pa-md-6 py-5 fill-height"
   >
     <p class="google-font mb-0" style="font-size: 90%">
-      {{ data.date | dateFilter }}
+      {{ convtDate(data.date) }}
     </p>
     <p class="google-font mb-0" style="font-size: 120%">
-      {{ data.name | summary(15) }}
+      {{ summeryText(data.name, 15)}}
     </p>
     <!-- <p class="google-font mb-0" style="font-size:90%">{{data.venue.name | summary(20)}}</p> -->
     <v-spacer></v-spacer>

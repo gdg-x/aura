@@ -8,7 +8,7 @@
         :class="$vuetify.theme.dark == true?'darkModeCardFeatureEvent':'lightModeCardFeatureEvent'"
         class="pa-3 pa-md-6 py-5 fill-height"
       >
-        <p class="google-font mb-0" style="font-size:90%">{{data.date | dateFilter}}</p>
+        <p class="google-font mb-0" style="font-size:90%">{{convtDate(data.date)}}</p>
         <p class="google-font mb-0" style="font-size:120%">{{data.name | summary(15)}}</p>
         <!-- <p class="google-font mb-0" style="font-size:90%">{{data.venue.name | summary(20)}}</p> -->
         <v-spacer></v-spacer>
@@ -114,14 +114,6 @@ export default {
       } else {
         return val;
       }
-    },
-    dateFilter: value => {
-      const date = new Date(value);
-      return date.toLocaleString(["en-US"], {
-        month: "short",
-        day: "2-digit",
-        year: "numeric"
-      });
     }
   }
 };

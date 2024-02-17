@@ -8,7 +8,7 @@
         class="pa-3"
       >
         <!-- <v-chip color="primary" label outlined class="mt-1 mx-0 mb-0" small>{{data.data.status}}</v-chip> -->
-        <p class="google-font mt-2 mb-0" style="font-size:90%">{{data.data.local_date | dateFilter}}</p>
+        <p class="google-font mt-2 mb-0" style="font-size:90%">{{convtDate(data.data.local_date)}}</p>
         <p class="google-font ma-0 mt-0" style="font-size:120%;">{{data.data.name |summary(20) }}</p>
         <p class="google-font mt-0 mb-0" style="font-size:90%;">{{data.data.local_time}}</p>
         <p
@@ -32,7 +32,7 @@
         </p>
         <p class="google-font mt-1 mb-0" style="font-size:110%">
           <b>Date:</b>
-          {{data.data.local_date | dateFilter}}
+        {{convtDate(data.data.local_date)}}
         </p>
         <p class="google-font mt-0 mb-0" style="font-size:110%;">
           <b>Time:</b>
@@ -85,14 +85,6 @@ export default {
       } else {
         return val;
       }
-    },
-    dateFilter: value => {
-      const date = new Date(value);
-      return date.toLocaleString(["en-US"], {
-        month: "short",
-        day: "2-digit",
-        year: "numeric"
-      });
     }
   }
 };

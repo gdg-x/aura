@@ -227,7 +227,7 @@ export default {
             res.data.map((event) => {
               // event.active && event.visible
               if (event.visible) {
-                console.log('event:', event);
+                // console.log('event:', event);
                 event.speakers.map((speak) => {
                   if (speak === id) {
                     this.events.push({ name: event.name, id: event.id, date:event.date });
@@ -244,17 +244,7 @@ export default {
           this.loader = false;
           console.log(e);
         });
-    },
-    convtDate(date) {
-      let inputDate = new Date(date);
-      const formattedDate = inputDate.toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-      });
-      return formattedDate
-    },
-    
+    }
   },
   // data:
 };

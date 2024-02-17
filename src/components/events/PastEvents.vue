@@ -40,7 +40,7 @@
             <v-data-table
               class="mt-3"
               :search="search"
-              mobile-breakpoint="no"
+              :mobile-breakpoint="0"
               :headers="headers"
               :items="eventsData"
               :loading="isLoading"
