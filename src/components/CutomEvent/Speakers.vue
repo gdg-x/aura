@@ -5,7 +5,7 @@
         v-on="on"
         style="cursor: pointer;height:100%"
         class="text-center py-4 ma-1 py-3"
-        :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'"
+        :class="$vuetify.theme.dark?'card-dark' : 'card-light'"
       >
         <v-avatar size="100">
           <img

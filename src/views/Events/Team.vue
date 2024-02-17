@@ -1,5 +1,5 @@
 <template>
-  <v-main>
+  <v-main class="pa-0 ma-0">
     <v-container fluid class="py-0 my-0 mt-0">
       <v-row justify="center" align="center" class="py-5" v-if="isLoading">
         <v-col cols="12" md="12" class="text-center">
@@ -20,7 +20,7 @@
             </v-col>
           </v-row>
           <v-row class="" v-if="checkExistance(eventDetails.team,0)">
-            <v-col cols="6" md="4" lg="3" xl="2" sm="3" class="pa-1" v-for="(item,i) in sData" :key="i">
+            <v-col cols="6" md="3" lg="2" xl="2" sm="3" class="pa-1" v-for="(item,i) in sData" :key="i">
               <TeamMemberCard :data="item" />
             </v-col>
           </v-row>

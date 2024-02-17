@@ -1,12 +1,9 @@
 <template>
-  <div
-    :class="this.$vuetify.theme.dark == true ? 'black' : 'light-bg'"
-    style="height: 100% !important"
-  >
+  <v-main class="hidden-x">
     <EventToolBar :eventName="EventData.name" />
     <EventDrawer />
     <v-main class="" v-if="loader">
-      <v-container class="fill-height">
+      <v-container fluid class="fill-height">
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
             <v-progress-circular
@@ -19,21 +16,20 @@
         </v-row>
       </v-container>
     </v-main>
-    <v-container
-      fluid
-      :class="this.$vuetify.theme.dark == true ? 'black' : 'light-bg'"
-      class="pa-0 ma-0"
-      style="height: 100% !important"
-      v-else
-    >
-      <v-row align="center" justify="center">
-        <v-col cols="12" sm="11" md="10" lg="10" xl="10" class="my-0 py-0">
-          <v-slide-y-reverse-transition>
-            <router-view :eventDetails="EventData" v-show="show" />
-          </v-slide-y-reverse-transition>
-        </v-col>
-      </v-row>
-    </v-container>
+    <v-main v-else class="pa-0 ma-0">
+      <v-container
+        fluid
+        style="height: 100% !important"
+      >
+        <v-row align="center" justify="center">
+          <v-col cols="12" sm="12" md="11" lg="11" xl="11" class="my-0 py-0">
+            <v-slide-y-reverse-transition>
+              <router-view :eventDetails="EventData" v-show="show" />
+            </v-slide-y-reverse-transition>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
     <v-fab-transition>
       <v-btn
         app
@@ -49,7 +45,7 @@
         <v-icon>mdi-share-variant</v-icon>
       </v-btn>
     </v-fab-transition>
-  </div>
+  </v-main>
 </template>
 
 <script>

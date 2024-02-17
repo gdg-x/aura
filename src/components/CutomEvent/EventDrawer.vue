@@ -1,43 +1,80 @@
 <template>
   <v-navigation-drawer
     app
-    clipped
-    floating
+    width="100px"
+    :color="this.$vuetify.theme.dark ? '#252726' : '#F5F7F7'"
+    class="text-center"
     v-model="eventDrawer"
-    :class="this.$vuetify.theme.dark == true?'black':'grey lighten-5'"
   >
-    <v-list dense shaped>
-      <v-list-item
+    <v-avatar class="my-4">
+      <v-img
+        alt="Community Logo"
+        class="shrink google-font"
+        contain
+        :src="config.generalConfig.toolbarImage"
+        transition="scale-transition"
+        width="45"
+      />
+    </v-avatar>
+    <v-list>
+      <v-btn
+        depressed
+        class="px-0 py-8 mb-2"
+        style="border-radius: 16px"
         v-for="(link, i) in links"
         :key="i"
-        :to="'/events/'+$route.params.id+''+link.to"
+        @click="onClick($event, link)"
+        :to="'/events/' + $route.params.id + '' + link.to"
+      >
+        <div>
+          <v-icon style="display: block" size="24" class="mb-1">{{
+            link.icon
+          }}</v-icon>
+          <span
+            style="
+              font-size: 11px;
+              text-transform: capitalize;
+              font-weight: 600;
+            "
+            class="mb-0 mt-4 google-font"
+            >{{ link.text }}</span
+          >
+        </div>
+      </v-btn>
+    </v-list>
+    <v-list dense shaped>
+      <v-divider class="my-2"></v-divider>
+
+      <v-list-item
+        to="/about"
+        target="_blank"
         class="google-font my-0 py-0"
         color="primary"
       >
-        <v-list-item-icon>
-          <v-icon v-text="link.icon"></v-icon>
-        </v-list-item-icon>
-
-        <v-list-item-content>
-          <v-list-item-title v-text="link.text" />
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-divider class="my-2"></v-divider>
-
-      <v-list-item to="/about" target="_blank" class="google-font my-0 py-0" color="primary">
         <v-list-item-content>
           <v-list-item-title v-text="'Community Guidlines'" />
         </v-list-item-content>
       </v-list-item>
-      <v-list-item to="/about" target="_blank" class="google-font my-0 py-0" color="primary">
+      <v-list-item
+        to="/about"
+        target="_blank"
+        class="google-font my-0 py-0"
+        color="primary"
+      >
         <v-list-item-content>
           <v-list-item-title v-text="'Code of Conduct'" />
         </v-list-item-content>
       </v-list-item>
-      <v-list-item to="/about" target="_blank"  class="google-font my-0 py-0" color="primary">
+      <v-list-item
+        to="/about"
+        target="_blank"
+        class="google-font my-0 py-0"
+        color="primary"
+      >
         <v-list-item-content>
-          <v-list-item-title v-text="'About '+ config.generalConfig.name || ''" />
+          <v-list-item-title
+            v-text="'About ' + config.generalConfig.name || ''"
+          />
         </v-list-item-content>
       </v-list-item>
     </v-list>
@@ -48,8 +85,9 @@
           <a
             href="https://github.com/gdg-x/aura/"
             target="_blank"
-            style="text-decoration:none"
-          >Aura</a>
+            style="text-decoration: none"
+            >Aura</a
+          >
         </p>
       </div>
     </template>
@@ -64,30 +102,30 @@ export default {
     links: [
       {
         text: "About",
-        to: "/about",
-        icon: "mdi-information-outline"
+        to: "/",
+        icon: "mdi-information-outline",
       },
       {
         text: "Speakers",
         to: "/speakers",
-        icon: "mdi-account-multiple-outline"
+        icon: "mdi-account-multiple-outline",
       },
       {
         text: "Schedule",
         to: "/schedule",
-        icon: "mdi-television-guide"
+        icon: "mdi-television-guide",
       },
       {
         text: "Partners",
         to: "/partners",
-        icon: "mdi-currency-usd"
+        icon: "mdi-currency-usd",
       },
       {
         text: "Team",
         to: "/team",
-        icon: "mdi-account-box-outline"
-      }
-    ]
+        icon: "mdi-account-box-outline",
+      },
+    ],
   }),
   computed: {
     ...mapState(["config"]),
@@ -97,12 +135,12 @@ export default {
       },
       set(val) {
         this.setEventDrawer(val);
-      }
-    }
+      },
+    },
   },
   methods: {
-    ...mapMutations(["setEventDrawer"])
-  }
+    ...mapMutations(["setEventDrawer"]),
+  },
 };
 </script>
 

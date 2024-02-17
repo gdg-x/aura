@@ -64,7 +64,7 @@ const routes = [{
     children: [
       {
         // when /event/:id/ is matched
-        path: 'about',
+        path: '/',
         name:"CustomEventHome",
         component: ()=> import(/* webpackChunkName: "CustomEventAbout" */ '../views/Events/About.vue'),
         meta: {
