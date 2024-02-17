@@ -18,7 +18,7 @@
         :href="link.href"
         @click="onClick($event, link)"
         class="google-font my-0 py-0"
-        color="primary"
+        color=""
       >
         <v-list-item-icon>
           <v-icon>{{ link.icon }}</v-icon>
@@ -30,9 +30,22 @@
       </v-list-item>
     </v-list>
     <template v-slot:append>
-      
+      <v-list>
+        <v-list-item>
+          <v-list-item-icon>
+            <v-icon v-if="$vuetify.theme.dark">mdi-brightness-7</v-icon>
+        <v-icon v-else>mdi-brightness-4</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>
+              <v-btn rounded depressed v-on:click="darkMode">Click Here</v-btn>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
       <p class="google-font ma-2" style="font-size: 90%">
-        Based on <br>
+        Based on <br />
         <span class="aura-text">
           Project
           <a
@@ -83,6 +96,18 @@ export default {
       this.$vuetify.goTo(item.href);
       this.setDrawer(false);
     },
+    darkMode() {
+      let metaThemeColor = document.querySelector("meta[name=theme-color]");
+
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      if (localStorage)
+        localStorage.setItem("darkMode", this.$vuetify.theme.dark);
+      if (this.$vuetify.theme.dark) {
+        metaThemeColor.setAttribute("content", "#212121");
+      } else {
+        metaThemeColor.setAttribute("content", "#0277bd");
+      }
+    }
   },
 };
 </script>
