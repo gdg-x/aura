@@ -105,6 +105,11 @@ export default {
   },
   methods: {
     ...mapMutations(["setEventDrawer"]),
+    onClick(e, item) {
+      e.stopPropagation();
+      if (item.to || !item.href) return;
+      this.$vuetify.goTo(item.href);
+    },
     darkMode() {
       let metaThemeColor = document.querySelector("meta[name=theme-color]");
 

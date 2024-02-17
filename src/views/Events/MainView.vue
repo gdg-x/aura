@@ -19,7 +19,7 @@
     <v-main v-else class="pa-0 ma-0" :class="this.$vuetify.theme.dark ? 'black' : 'white'" style="height: 100%;">
       <v-container
         fluid
-        style="height: 100% !important"
+        style="height: 100vh !important"
       >
         <v-row align="center" justify="center">
           <v-col cols="12" sm="12" md="11" lg="11" xl="11" class="my-0 py-0">
@@ -119,15 +119,10 @@ export default {
   created() {
     this.show = true;
   },
-  // methods:{
-  //     show(){
-  // console.log(this.$route);
-  //     }
-  // }
 };
 </script>
 <style>
 .light-bg {
-  background-color: #f5f8fc;
+  background-color: white;
 }
 </style>
