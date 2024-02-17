@@ -8,17 +8,20 @@
         <v-icon>mdi-close</v-icon>
       </v-btn>
     </v-snackbar>
-    <Toolbar v-if="!noData && !$route.meta.isEvent"/>
-    <Toolbar2 v-if="!noData && !$route.meta.isEvent"/>
-    <Drawer v-if="!noData && !$route.meta.isEvent"/>
-    <BottomNav v-if="!noData && !$route.meta.isEvent"/>
+    <Toolbar v-if="!noData && !isLoading && !$route.meta.isEvent"/>
+    <Toolbar2 v-if="!noData && !isLoading && !$route.meta.isEvent"/>
+    <Drawer v-if="!noData && !isLoading && !$route.meta.isEvent"/>
+    <BottomNav v-if="!noData && !isLoading && !$route.meta.isEvent"/>
 
 
     <v-main class="" v-if="isLoading">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
-            <v-progress-circular :width="5" :size="50" color="primary" indeterminate></v-progress-circular>
+            <v-progress-circular class="aura-text" :width="5" :size="50" color="primary" indeterminate></v-progress-circular>
+            <p class="google-font mb-0 mt-4" style="font-size: 140%;">
+              Based on <span class="aura-text">Project Aura</span> 
+            </p>
           </v-col>
         </v-row>
       </v-container>
@@ -37,7 +40,7 @@
     </v-main>
     
     <Views v-if="!isLoading && !noData" />
-    <Footer v-if="!noData && !$route.meta.isEvent"/>
+    <Footer v-if="!noData && !isLoading && !$route.meta.isEvent"/>
   </v-app>
 </template>
 
