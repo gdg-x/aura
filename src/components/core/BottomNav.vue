@@ -4,7 +4,7 @@
     app
     :dark="this.$vuetify.theme.dark"
     :background-color="this.$vuetify.theme.dark?'#212121':'white'"
-    :color="this.$vuetify.theme.dark?'white':'primary'"
+    :color="this.$vuetify.theme.dark?'white':''"
     class="hidden-md-and-up"
   > 
     <v-btn

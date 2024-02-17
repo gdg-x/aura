@@ -7,7 +7,7 @@
             text
             rounded
             @click="goToTeam"
-            class="ma-0 google-font mb-0"
+            class="google-font mb-0"
             style="
               text-transform: capitalize;
               text-decoration: none;
@@ -35,7 +35,7 @@
         align="center"
         class=""
       >
-        <v-col md="12" lg="11" sm="11" xs="12" class="pa-0">
+        <v-col md="12" lg="11" sm="11" xs="12" class="py-0">
           <v-container fluid>
             <v-row>
               <v-col md="3" lg="3" sm="4" cols="12">
@@ -75,7 +75,7 @@
               </v-col>
               <v-col md="9" lg="9" sm="8" cols="12">
                 <div
-                  class="pa-8"
+                  class="pa-md-8 pa-4"
                   :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'"
                 >
                   <p class="mb-0">
