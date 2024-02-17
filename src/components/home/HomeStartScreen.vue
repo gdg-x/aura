@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="py-0">
     <v-row align="center">
-      <v-col md="8">
+      <v-col md="8" cols="12" order-md="1" order="2">
         <v-avatar color="#F1F2F3" size="35" class="mr-2">
           <v-img
             alt="Community Logo"
@@ -33,7 +33,6 @@
               class="mr-1"
               >#{{ item }}</v-chip
             >
-            <!-- &nbsp; -->
           </span>
         </p>
 
@@ -56,11 +55,11 @@
           >Become a Member</v-btn
         >
 
-        <v-btn fab depressed shaped small>
+        <v-btn fab depressed shaped small dark to="/about" color="#363636">
           <v-icon>mdi-arrow-top-right</v-icon>
         </v-btn>
       </v-col>
-      <v-col md="4">
+      <v-col md="4" cols="12" order-md="2" order="1">
         <v-img
           :src="
             checkExistance(config.generalConfig.homeImage, 0)

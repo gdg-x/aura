@@ -8,11 +8,17 @@
     font-family: google-sans
 }
 
+.aura-heading{
+    font-weight: 350; 
+    font-size: 200%;
+    font-family: google-sans
+}
+
 .aura-text {
     background-image: url('../src//assets//img/dontremove/btn.png');
     /* background-repeat: repeat; */
     background-position: center;
-    background-size: 200px;
+    background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* text-fill-color: transparent; */
@@ -21,12 +27,12 @@
 .aura-btn {
     background-image: url('../src//assets//img/dontremove/btn.png') !important;
     background-position: center;
-    background-size: 200px; 
+    background-size: 100%; 
 }
 .aura-btn:hover {
     background-image: url('../src//assets//img/dontremove/btn.png') !important;
     background-position: center;
-    background-size: 180px; 
+    background-size: 130%; 
 }
 
 html {
@@ -39,6 +45,11 @@ body {
 
 .card-light {
     background: #f1f2f3 !important;
+    border-radius: 12px !important
+}
+
+.card-white {
+    background: white !important;
     border-radius: 12px !important
 }
 

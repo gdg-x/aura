@@ -23,6 +23,7 @@
           target="_blank"
           rounded
           color="cyan"
+          depressed
           style="
             text-transform: capitalize;
             border-radius: 5px;

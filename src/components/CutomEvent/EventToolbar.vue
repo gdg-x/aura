@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app :color="this.$vuetify.theme.dark ? 'black' : 'white'" flat>
-    <v-app-bar-nav-icon aria-label="Hamburger Menu" @click="toggleEventDrawer"></v-app-bar-nav-icon>
+    <!-- <v-app-bar-nav-icon aria-label="Hamburger Menu" @click="toggleEventDrawer"></v-app-bar-nav-icon> -->
     <v-toolbar-title class="google-font px-0" style="width:280px">
       <router-link
         :to="'/events/'+$route.params.id+'/about'"
@@ -11,12 +11,8 @@
       >{{eventName || ""}}</router-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-btn text to="/events" class="ml-1" aria-label="Theme Switch BTN">
+    <v-btn rounded text to="/events" class="ml-1 aura-btn" dark aria-label="Theme Switch BTN">
       All Events
-    </v-btn>
-    <v-btn icon @click="darkMode" class="ml-1" aria-label="Theme Switch BTN">
-      <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
-      <v-icon v-else>mdi-brightness-4</v-icon>
     </v-btn>
   </v-app-bar>
 </template>
@@ -28,18 +24,6 @@ export default {
     props:['eventName'],
     methods: {
     ...mapMutations(["toggleEventDrawer"]),
-    darkMode() {
-      let metaThemeColor = document.querySelector("meta[name=theme-color]");
-
-      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-      if (localStorage)
-        localStorage.setItem("darkMode", this.$vuetify.theme.dark);
-      if (this.$vuetify.theme.dark) {
-        metaThemeColor.setAttribute("content", "#212121");
-      } else {
-        metaThemeColor.setAttribute("content", "#0277bd");
-      }
-    },
     }
 }
 </script>

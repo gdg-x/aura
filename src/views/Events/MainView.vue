@@ -16,7 +16,7 @@
         </v-row>
       </v-container>
     </v-main>
-    <v-main v-else class="pa-0 ma-0">
+    <v-main v-else class="pa-0 ma-0" :class="this.$vuetify.theme.dark ? 'black' : 'white'" style="height: 100%;">
       <v-container
         fluid
         style="height: 100% !important"

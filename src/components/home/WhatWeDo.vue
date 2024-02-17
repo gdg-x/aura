@@ -1,34 +1,13 @@
 <template>
   <v-container fluid>
     <v-row align="center" justify="center">
-      <v-col md="4">
+      <v-col md="4" cols="12">
         <p class="google-font mb-0" style="font-size: 150%">What we do?</p>
         <p class="google-font" style="font-size: 100%">
           {{ config.generalConfig.shortDescription }}
         </p>
-        <!-- <p class="google-font" style="font-size: 90%">
-          About different technologies
-        </p>
-        <span v-for="(item, i) in whatwedodata" :key="i">
-          <v-tooltip bottom>
-            <template v-slot:activator="{ on }">
-              <v-avatar
-                size="30"
-                :href="item.link"
-                target="_blank"
-                class="mr-3"
-                rounded=""
-                rel="noreferrer"
-                style="cursor: pointer;"
-              >
-                <v-img width="10px"  srcset v-on="on" :src="getImgUrl(item.image)"></v-img>
-              </v-avatar>
-            </template>
-            <span>{{ item.TechName }}</span>
-          </v-tooltip>
-        </span> -->
       </v-col>
-      <v-col md="8" class="pa-0 ma-0">
+      <v-col md="8" cols="12" class="pa-0 ma-0">
         <v-container fluid class="pa-0 ma-0">
           <v-row>
             <v-col

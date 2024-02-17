@@ -36,23 +36,6 @@
                   style="text-transform: capitalize; color: white"
                   >Become a Member</v-btn
                 >
-
-                &nbsp;
-
-                <v-btn
-                  v-if="checkExistance(config.generalConfig.learnMoreLink, 0)"
-                  :href="config.generalConfig.learnMoreLink"
-                  target="_blank"
-                  fab
-                  rounded
-                  color="cyan"
-                  small
-                  outlined
-                  class="ml-0"
-                  dark
-                >
-                  <v-icon>mdi-arrow-top-right</v-icon></v-btn
-                >
               </v-col>
               <v-col md="5" sm="5" cols="12" class="py-0 my-0">
                 <v-img

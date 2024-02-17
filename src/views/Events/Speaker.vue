@@ -1,5 +1,5 @@
 <template>
-  <v-main class="pa-0 ma-0 mb-10">
+  <v-main class="pa-0 ma-0 mb-10 google-font">
     <v-container fluid class="py-0 my-0 mt-0">
       <v-row justify="center" align="center" class="py-5" v-if="isLoading">
         <v-col cols="12" md="12" class="text-center">
@@ -35,16 +35,10 @@
         <v-col md="12" sm="12" cols="12" class="py-0 my-0">
           <v-row class="mt-5">
             <v-col class="">
-              <h2
-                :class="
-                  this.$vuetify.theme.dark
-                    ? 'white--text'
-                    : 'grey--text text--darken-3'
-                "
-                class="google-font mb-0"
-              >
-                Check out our speaker lineup
-              </h2>
+              <p class="aura-heading mb-0">
+                <b>Our <span class="aura-text">Speaker Lineup</span> </b>
+              </p>
+              <p>Check our amazing and cool speakers</p>
             </v-col>
           </v-row>
           <v-row class="" v-if="checkExistance(eventDetails.speakers, 0)">

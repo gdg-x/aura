@@ -52,7 +52,7 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="pa-0 py-2">
+    <v-container fluid class="pa-0 py-2 mb-md-10 mb-sm-10">
       <v-row justify="center" align="center">
         <v-col md="12" lg="11" xs="12" class="py-0 px-5">
           <partners />

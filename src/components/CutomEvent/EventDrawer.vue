@@ -5,6 +5,8 @@
     :color="this.$vuetify.theme.dark ? '#252726' : '#F5F7F7'"
     class="text-center"
     v-model="eventDrawer"
+    floating
+    clipped-left
   >
     <v-avatar class="my-4">
       <v-img
@@ -32,7 +34,7 @@
           }}</v-icon>
           <span
             style="
-              font-size: 11px;
+              font-size: 10px;
               text-transform: capitalize;
               font-weight: 600;
             "
@@ -42,54 +44,17 @@
         </div>
       </v-btn>
     </v-list>
-    <v-list dense shaped>
-      <v-divider class="my-2"></v-divider>
-
-      <v-list-item
-        to="/about"
-        target="_blank"
-        class="google-font my-0 py-0"
-        color="primary"
-      >
-        <v-list-item-content>
-          <v-list-item-title v-text="'Community Guidlines'" />
-        </v-list-item-content>
-      </v-list-item>
-      <v-list-item
-        to="/about"
-        target="_blank"
-        class="google-font my-0 py-0"
-        color="primary"
-      >
-        <v-list-item-content>
-          <v-list-item-title v-text="'Code of Conduct'" />
-        </v-list-item-content>
-      </v-list-item>
-      <v-list-item
-        to="/about"
-        target="_blank"
-        class="google-font my-0 py-0"
-        color="primary"
-      >
-        <v-list-item-content>
-          <v-list-item-title
-            v-text="'About ' + config.generalConfig.name || ''"
-          />
-        </v-list-item-content>
-      </v-list-item>
-    </v-list>
     <template v-slot:append>
-      <div class="pl-2">
-        <p class="subtitle-2 google-font">
-          Based on Project
-          <a
-            href="https://github.com/gdg-x/aura/"
-            target="_blank"
-            style="text-decoration: none"
-            >Aura</a
-          >
-        </p>
-      </div>
+      <v-btn
+        icon
+        v-on:click="darkMode"
+        class="pa-4 my-5"
+        x-large
+        aria-label="Theme Switch BTN"
+      >
+        <v-icon v-if="$vuetify.theme.dark">mdi-brightness-7</v-icon>
+        <v-icon v-else>mdi-brightness-4</v-icon>
+      </v-btn>
     </template>
   </v-navigation-drawer>
 </template>
@@ -125,7 +90,7 @@ export default {
         to: "/team",
         icon: "mdi-account-box-outline",
       },
-    ],
+    ]
   }),
   computed: {
     ...mapState(["config"]),
@@ -140,6 +105,18 @@ export default {
   },
   methods: {
     ...mapMutations(["setEventDrawer"]),
+    darkMode() {
+      let metaThemeColor = document.querySelector("meta[name=theme-color]");
+
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      if (localStorage)
+        localStorage.setItem("darkMode", this.$vuetify.theme.dark);
+      if (this.$vuetify.theme.dark) {
+        metaThemeColor.setAttribute("content", "#212121");
+      } else {
+        metaThemeColor.setAttribute("content", "#0277bd");
+      }
+    },
   },
 };
 </script>
