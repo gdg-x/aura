@@ -2,10 +2,9 @@
   <v-navigation-drawer v-model="drawer" app width="300px" temporary>
     <v-list-item>
       <v-list-item-content>
-        <v-list-item-title
-          class="google-font"
-          style="font-size:130%"
-        >{{config.generalConfig.name || '' }}</v-list-item-title>
+        <v-list-item-title class="google-font" style="font-size: 130%">{{
+          config.generalConfig.name || ""
+        }}</v-list-item-title>
       </v-list-item-content>
     </v-list-item>
 
@@ -22,25 +21,31 @@
         color="primary"
       >
         <v-list-item-icon>
-          <v-icon v-text="link.icon"></v-icon>
+          <v-icon>{{ link.icon }}</v-icon>
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title v-text="link.text" />
+          <v-list-item-title>{{ link.text }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>
     <template v-slot:append>
-      <div class="pl-2">
-        <p class="subtitle-2 google-font">
-          Based on Project
+      
+      <p class="google-font ma-2" style="font-size: 90%">
+        Based on <br>
+        <span class="aura-text">
+          Project
           <a
             href="https://github.com/gdg-x/aura/"
             target="_blank"
-            style="text-decoration:none"
-          >Aura</a>
-        </p>
-      </div>
+            rel="noreferrer"
+            style="text-decoration: none"
+            class="aura-text"
+          >
+            Aura</a
+          >
+        </span>
+      </p>
     </template>
   </v-navigation-drawer>
 </template>
@@ -62,8 +67,8 @@ export default {
       },
       set(val) {
         this.setDrawer(val);
-      }
-    }
+      },
+    },
   },
   methods: {
     ...mapMutations(["setDrawer"]),
@@ -77,7 +82,7 @@ export default {
       if (item.to || !item.href) return;
       this.$vuetify.goTo(item.href);
       this.setDrawer(false);
-    }
-  }
+    },
+  },
 };
 </script>

@@ -14,7 +14,7 @@
           :class="$vuetify.theme.dark ? 'darkModeCard' : 'lightModeCard'"
         >
           <v-col md="6" lg="6" sm="6" cols="12">
-            <p class="google-font mb-0" style="font-size: 150%; color: #1a73e8">
+            <p class="google-font mb-0" style="font-size: 150%;">
               Directory of past events
             </p>
             <p class="google-font mt-0 mb-0" style="font-size: 95%">

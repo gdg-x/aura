@@ -12,7 +12,7 @@
           </v-col>
         </v-row>
 
-        <!-- Loader -->
+        <!--  Loader -->
         <v-row class="mb-5" v-if="loader">
           <v-col
             md="4"
@@ -27,7 +27,7 @@
             <v-skeleton-loader ref="skeleton" type="article" class="mx-auto elevation-0"></v-skeleton-loader>
           </v-col>
         </v-row>
-        <!-- Loader -->
+        <!--  Loader -->
         <v-row v-if="blogsData.length <=0 && !loader" justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'black':''">
           <v-col md="12" lg="12" sm="12" cols="12" class="text-center">
           <v-img

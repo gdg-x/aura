@@ -1,11 +1,10 @@
 <template>
   <v-main
-    height="auto"
-    class="hidden-sm-and-down ma-0"
+    class="hidden-sm-and-down py-0 my-0"
     :class="this.$vuetify.theme.dark == true ? 'grey darken-4' : 'white'"
     v-if="Object.keys(config).length"
   >
-    <v-container fluid>
+    <v-container fluid class="pa-0 ma-0">
       <v-row align="center" justify="center" class="my-0 py-0">
         <v-col cols="12" md="11" lg="11" sm="11" class="py-0 my-0">
           <v-divider v-if="!this.$vuetify.theme.dark"></v-divider>

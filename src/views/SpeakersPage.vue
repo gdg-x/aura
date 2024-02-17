@@ -82,7 +82,7 @@
           </v-img>
           <h2 class="google-font">Speakers Not Found</h2>
           </v-col>
-        <v-col v-if="loader" md="12" lg="10" xs="12" class="pt-3">
+        <v-col v-if="loader" md="12" lg="11" xs="12" class="pt-3">
           <v-container fluid class>
             <v-row>
               <v-col md="2" lg="2" sm="3" cols="6" v-for="i in 6" :key="i">

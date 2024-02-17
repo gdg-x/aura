@@ -17,29 +17,6 @@
       </v-row>
     </v-container>
 
-    <!-- <v-container fluid class="pa-0 my-0">
-      <v-row
-        justify="center"
-        align="center"
-      >
-        <v-col md="12" lg="11" sm="11" xs="12" class="px-8">
-          
-        </v-col>
-      </v-row>
-    </v-container> -->
-
-    <!-- <v-container
-      fluid
-      class="pa-0 py-0"
-      v-if="checkExistance(config.keysandsecurity.meetup, 0)"
-    >
-      <v-row justify="center" align="center">
-        <v-col md="12" sm="11" lg="10" xs="12" class="py-0">
-          <events />
-        </v-col>
-      </v-row>
-    </v-container> -->
-
     <v-container fluid class="pa-0 py-0" v-if="showFeatureEventStatus">
       <v-row
         justify="center"
@@ -54,7 +31,7 @@
 
     <v-container fluid class="pa-0 py-2 mb-md-10 mb-sm-10">
       <v-row justify="center" align="center">
-        <v-col md="12" lg="11" xs="12" class="py-0 px-5">
+        <v-col md="12" sm="11" lg="11" xs="12" class="py-0 px-5">
           <partners />
         </v-col>
       </v-row>

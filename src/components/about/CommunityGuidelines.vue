@@ -6,7 +6,7 @@
 
         <v-container fluid class="google-font mx-0 px-0">
           <v-row>
-            <v-col md="3" lg="4" sm="4" v-for="(item, i) in data" :key="i">
+            <v-col md="3" lg="4" sm="4" cols="12" v-for="(item, i) in data" :key="i">
               <div class="pa-5" :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'">
                 <p class="mb-0">
                   <b>{{ item.name }}</b>

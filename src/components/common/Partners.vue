@@ -3,7 +3,7 @@
     <v-row align="center" justify="center" class="mb-0">
       <v-col cols="12" md="12" lg="12" sm="12" class="mb-0">
         <p class="google-font mb-1" style="font-weight: 350; font-size: 200%">
-          <b>Our Partners</b>
+          <b>Our <span :class="$route.path=='/partners'?'aura-text':null" >Partners</span></b>
         </p>
         <p class="google-font mt-1 mb-0" style="font-size: 100%">
           A very big thank you to all our partners for their continued
