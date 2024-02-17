@@ -1,53 +1,48 @@
 <template>
-  <v-main class="px-0 mx-0 pt-3">
-
-    <v-container fluid class="px-0 pt-5 mt-3 py-0">
-      <v-row justify="center" align="center" class="py-3 pb-5" :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'" >
-        <v-col md="11" lg="10" sm="11" xs="12" class="pt-3 bottom-space">
-          <BlogsHeader />
+  <v-main>
+    <v-container fluid class="px-0 py-0">
+      <v-row
+        justify="center"
+        align="center"
+      >
+        <v-col md="11" lg="11" sm="11" xs="12" class="pt-3">
+          <!-- Blog -->
+          <v-container fluid class="py-0 my-0 mt-2">
+            <v-row align="center" class="py-0 my-0">
+              <v-col md="12" sm="12" cols="12" class="py-0 my-0">
+                <p
+                  class=" google-font mb-0 "
+                  style="font-weight: 350; font-size: 200%"
+                >
+                  <b class=" aura-text"> Blogs</b>
+                </p>
+              </v-col>
+            </v-row>
+          </v-container>
+          <!-- Blog -->
         </v-col>
       </v-row>
     </v-container>
 
     <v-container fluid class="px-0 py-0">
       <v-row justify="center" align="center">
-        <v-col md="11" lg="10" sm="11" xs="12" class="card-top-margin">
+        <v-col md="11" lg="11" sm="11" xs="12" class="card-top-margin">
           <BlogsDetails />
         </v-col>
       </v-row>
     </v-container>
-
-
   </v-main>
 </template>
 
 <script>
-
 export default {
-  name:'BlogPage',
+  name: "BlogPage",
   components: {
-    BlogsHeader:()=>import('@/components/blogs/BlogsHeader'),
-    BlogsDetails:()=>import('@/components/blogs/BlogsDetails'),
+    BlogsDetails: () => import("@/components/blogs/BlogsDetails"),
   },
 };
 </script>
 
 <style scoped>
-  @media screen and (min-width: 600px) {
-    .card-top-margin {
-      margin-top:-150px
-    }
-    .bottom-space{
-      margin-bottom: 130px;
-      margin-top: 8px
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .card-top-margin {
-      margin-top:-150px;
-    }
-    .bottom-space{
-      margin-bottom: 100px
-    }
-  }
+
 </style>

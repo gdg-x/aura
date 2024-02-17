@@ -31,7 +31,7 @@
                   :href="config.generalConfig.becomemember"
                   target="_blank"
                   depressed
-                  class="ma-0 google-font primary"
+                  class="ma-0 google-font aura-btn"
                   rounded
                   style="text-transform: capitalize; color: white"
                   >Become a Member</v-btn

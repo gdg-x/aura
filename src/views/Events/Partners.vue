@@ -5,8 +5,17 @@
         <v-col md="12" sm="12" cols="12" class="py-0 my-0 mb-5 mt-5">
           <v-row class="pa-0" align="center">
             <v-col cols="12" md="12" lg="12" sm="12" class="pa-1">
-              <h2 :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-3'" class="google-font mb-5 mt-5">Our Partners</h2>
-              <p class="google-font mt-1 mb-0" style="font-size:110%">
+              <h2
+                :class="
+                  this.$vuetify.theme.dark
+                    ? 'white--text'
+                    : 'grey--text text--darken-3'
+                "
+                class="google-font mb-5 mt-5"
+              >
+                Our Partners
+              </h2>
+              <p class="google-font mt-1 mb-0" style="font-size: 110%">
                 A very big thank you to all our partners for their continued
                 partnership.
               </p>
@@ -38,7 +47,11 @@
             >
               <div
                 class="ma-1 px-2"
-                style="background-color:white;border:1px solid #e0e0e0;border-radius:5px;"
+                style="
+                  background-color: white;
+                  border: 1px solid #e0e0e0;
+                  border-radius: 5px;
+                "
               >
                 <a :href="item.socialLinks.web" target="_blank">
                   <v-tooltip bottom>
@@ -48,7 +61,7 @@
                         :lazy-src="getImgUrl(item.image, 'noimage.jpg')"
                         width="100%"
                         contain
-                        style="border-radius:5px"
+                        style="border-radius: 5px"
                         height="80px"
                         v-on="on"
                       >
@@ -82,15 +95,15 @@
 import service from "@/services/appservices";
 import { mapState } from "vuex";
 export default {
-  name:'EventPartner',
+  name: "EventPartner",
   props: ["eventDetails"],
-   data: () => ({
+  data: () => ({
     partnersData: [],
     pData: [],
-    isLoading: false
+    isLoading: false,
   }),
   computed: {
-    ...mapState(["config"])
+    ...mapState(["config"]),
   },
   mounted() {
     this.getAllPartners();
@@ -101,11 +114,11 @@ export default {
       this.pData = [];
       service
         .getAllPartners()
-        .then(res => {
+        .then((res) => {
           if (res.success) {
             this.partnersData = res.data;
-            this.eventDetails.partners.map(p => {
-              this.partnersData.map(obj => {
+            this.eventDetails.partners.map((p) => {
+              this.partnersData.map((obj) => {
                 if (obj.id == p) {
                   this.pData.push(obj);
                 }
@@ -114,12 +127,12 @@ export default {
           }
           this.isLoading = false;
         })
-        .catch(e => {
+        .catch((e) => {
           console.log(e);
           this.isLoading = false;
         });
-    }
-  }
+    },
+  },
 };
 </script>
 

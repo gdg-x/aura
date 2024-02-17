@@ -38,7 +38,7 @@ body {
 }
 
 .card-light {
-    background: #f1f2f3;
+    background: #f1f2f3 !important;
     border-radius: 12px !important
 }
 

@@ -12,41 +12,24 @@
           </v-col>
         </v-row>
 
-        <!-- Desktop Loader -->
-        <v-row class="mb-5 hidden-sm-and-down" v-if="loader">
+        <!-- Loader -->
+        <v-row class="mb-5" v-if="loader">
           <v-col
-            md="3"
-            lg="2"
-            sm="6"
-            cols="12"
-            class="pa-2 text-center"
-            v-for="(item,i) in 8"
-            :key="i"
-          >
-            <v-sheet :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`" class>
-              <v-skeleton-loader class="mx-auto" max-width="100%" type="card"></v-skeleton-loader>
-            </v-sheet>
-          </v-col>
-        </v-row>
-
-        <!-- Mobile Loader -->
-        <v-row class="mb-5 d-md-none d-lg-none" v-if="loader">
-          <v-col
-            md="3"
+            md="4"
             lg="3"
-            xl="3"
+            xl="4"
             sm="4"
             cols="12"
             class="pa-2 text-center"
             v-for="(item,i) in 3"
             :key="i"
           >
-            <v-skeleton-loader ref="skeleton" type="article" class="mx-auto elevation-1"></v-skeleton-loader>
+            <v-skeleton-loader ref="skeleton" type="article" class="mx-auto elevation-0"></v-skeleton-loader>
           </v-col>
         </v-row>
-        <!-- Mobile Loader -->
+        <!-- Loader -->
         <v-row v-if="blogsData.length <=0 && !loader" justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'black':''">
-          <v-col  md="12" lg="12" sm="12" cols="12" class="text-center">
+          <v-col md="12" lg="12" sm="12" cols="12" class="text-center">
           <v-img
             :src="require('@/assets/img/svg/DataNotFound.svg')"
             :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
@@ -65,16 +48,16 @@
 
         <v-row class="mb-5" v-else>
           <v-col
-            md="3"
-            lg="2"
+            md="4"
+            lg="3"
             sm="6"
             cols="12"
             class="pa-2"
             v-for="(item,i) in blogsData.items"
             :key="i"
           >
+          <!-- {{ item }} -->
             <BlogCard :data="{data:item}" />
-            <!-- {{item}} -->
           </v-col>
           <br />
         </v-row>
