@@ -7,16 +7,16 @@
     floating
     class="text-center"
   >
-   <v-avatar class="my-4">
-    <v-img
+    <v-avatar color="#F5F7F7" size="55" class="my-4 mt-5">
+      <v-img
         alt="Community Logo"
         class="shrink google-font"
         contain
         :src="config.generalConfig.toolbarImage"
         transition="scale-transition"
-        width="45"
+        width="65"
       />
-   </v-avatar>
+    </v-avatar>
     <v-list>
       <v-btn
         depressed
