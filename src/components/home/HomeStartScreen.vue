@@ -1,6 +1,6 @@
 <template>
-  <v-container fluid class="py-0">
-    <v-row align="center">
+  <v-container fluid class="py-0 ">
+    <v-row align="center" justify="center">
       <v-col md="8" cols="12" order-md="1" order="2">
         <v-avatar color="#F1F2F3" size="35" class="mr-2">
           <v-img

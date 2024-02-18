@@ -3,7 +3,7 @@
     <v-container fluid class="my-0">
       <v-row justify="center" align="center">
         <v-col md="12" lg="11" sm="11" xs="11" class="my-5">
-          <HomeStartScreen class="my-15" />
+          <HomeStartScreen class="mt-0 mb-15" />
           <whatwedo />
           <AboutCommunity class="mt-5" />
           <featureEvents v-if="showFeatureEventStatus" class="my-15" />
