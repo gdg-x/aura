@@ -58,6 +58,11 @@ body {
     border-radius: 12px !important
 }
 
+.card-dark-secondary {
+    background-color: #1E1E1E !important;
+    border-radius: 12px !important
+}
+
 .darkModeCard {
     background-color: #292929;
     /* border:1px solid #212121; */

@@ -91,7 +91,6 @@ export default {
             this.eventDetails.speakers.map((s) => {
               this.SpeakersData.map((obj) => {
                 if (obj.id == s) {
-                  // console.log(obj);
                   this.sData.push(obj);
                 }
               });
