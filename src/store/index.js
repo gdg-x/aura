@@ -99,7 +99,7 @@ export default new Vuex.Store({
     toggleDrawer: state => (state.drawer = !state.drawer),
     setEventDrawer: (state, payload) => (state.eventDrawer = payload),
     toggleEventDrawer: state => (state.eventDrawer = !state.eventDrawer),
-    setGeneralConfig: (state, payload) => (state.config.generalConfig = payload),
+    setGeneralConfig: (state, payload) => (state.config.generalConfig = payload, localStorage.setItem('name', payload.name )),
     setKeysAndSecutityConfig: (state, payload) => (state.config.keysandsecurity = payload),
     setFooterConfig: (state, payload) => (state.config.footerConfig = payload),
   },
