@@ -40,7 +40,7 @@
     </v-main>
     
     <Views v-if="!isLoading && !noData" />
-    <Footer v-if="!noData && !isLoading && !$route.meta.isEvent"/>
+    <Footer v-if="!noData && !isLoading && !$route.meta.isEvent" />
   </v-app>
 </template>
 
