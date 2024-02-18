@@ -23,7 +23,7 @@
                   >
                 </p>
 
-                <p class="google-font mt-2" style="font-size: 110%">
+                <p class="google-font mt-2" style="font-size: 100%">
                   {{ config.generalConfig.longDescription }}
                 </p>
                 <v-btn
@@ -51,15 +51,7 @@
       </v-row>
     </v-container>
 
-    <!-- <v-container fluid class="px-0 py-0">
-      <v-row justify="center" align="center" class="my-0 py-0">
-        <v-col md="11" lg="11" sm="11" xs="12" class="my-0 py-0">
-          <aboutCommunity :data="config.generalConfig" />
-        </v-col>
-      </v-row>
-    </v-container> -->
-
-    <v-container fluid class="pa-0 py-0 my-0">
+    <v-container fluid class="pa-0 py-0 my-0" v-if="communityGudielines.length">
       <v-row justify="center" align="center" class="py-5">
         <v-col md="11" lg="11" sm="11" xs="12" class="py-0">
           <communityGuidelines :data="communityGudielines" />
@@ -67,7 +59,7 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="">
+    <v-container fluid class="my-5">
       <v-row justify="center" align="center" class="py-5">
         <v-col md="11" lg="11" sm="11" xs="12" class="py-0 mb-5">
           <v-container fluid>
@@ -101,9 +93,7 @@ import { mapState } from "vuex";
 export default {
   name: "AboutPage",
   components: {
-    // aboutCommunity: () => import("@/components/about/AboutCommunity"),
     communityGuidelines: () => import("@/components/about/CommunityGuidelines"),
-    // coc: () => import("@/components/about/COC"),
     antiHarassmentPolicy: () => import("@/components/about/AntiHar"),
   },
   computed: {

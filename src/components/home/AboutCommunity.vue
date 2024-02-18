@@ -27,11 +27,12 @@
               v-if="checkExistance(config.generalConfig.meetupLink, 0)"
               :href="config.generalConfig.meetupLink"
               target="_blank"
-              outlined
+              depressed
+              dark
+              rounded
               color
-              class="ma-0 google-font float-right mb-2"
+              class="ma-0 google-font float-right mb-2 aura-btn"
               style="
-                border-radius: 5px;
                 text-transform: capitalize;
               "
               >Meetup Page</v-btn

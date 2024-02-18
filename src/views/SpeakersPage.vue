@@ -1,8 +1,8 @@
 <template>
   <v-main>
     <v-container fluid class="pa-0">
-      <v-row justify="center" align="center" >
-        <v-col md="12" lg="11" sm="11" xs="12" >
+      <v-row justify="center" align="center">
+        <v-col md="12" lg="11" sm="11" xs="12">
           <!-- Header -->
           <v-container fluid class="py-0 my-0">
             <v-row align="center" class="py-0 my-0">
@@ -25,73 +25,60 @@
           <!-- Header -->
 
           <!-- Speakers Data -->
-          <v-container fluid class="my-0 py-0">
-            <v-row></v-row>
-          </v-container>
-          <!-- Speakers Data -->
-        </v-col>
-      </v-row>
-    </v-container>
-
-    <v-container fluid class="pa-0">
-      <v-row
-        justify="center"
-        align="center"
-        class="pb-3"
-        :class="this.$vuetify.theme.dark == true?'black':''"
-      >
-        <v-col md="12" lg="11" sm="11" xs="12" class="pt-0" v-if="SpeakersData.length>0">
-          <v-container fluid class="py-0 my-0">
-            <v-row align="center" justify="center" class="py-0 my-0">
-              <v-col cols="12" md="12" lg="12" sm="12" class="py-0 my-0">
-                <v-row class="py-0 my-0">
-                  <v-col
-                    md="2"
-                    lg="2"
-                    sm="3"
-                    cols="6"
-                    style="text-align:center"
-                    class="px-2"
-                    v-for="(item,i) in SpeakersData"
-                    :key="i"
-                  >
-                    <div
-                      class="py-5"
-                      :class="$vuetify.theme.dark == true?'card-dark':'card-light'"
-                    >
-                      <SpeakerView :data="item" />
-                    </div>
-                  </v-col>
-                </v-row>
+          <v-container fluid class="mb-10">
+            <!-- Speakers Data -->
+            <v-row
+              justify="start"
+              align="start"
+              class="pb-3"
+              v-if="!loader && SpeakersData.length"
+            >
+              <v-col
+                md="2"
+                lg="2"
+                sm="3"
+                cols="6"
+                style="text-align: center"
+                class="px-2"
+                v-for="(item, i) in SpeakersData"
+                :key="i"
+              >
+                <div
+                  class="py-5"
+                  :class="
+                    $vuetify.theme.dark == true ? 'card-dark' : 'card-light'
+                  "
+                >
+                  <SpeakerView :data="item" />
+                </div>
               </v-col>
             </v-row>
-          </v-container>
-        </v-col>
-        <v-col v-else-if="loader ==false && SpeakersData.length == 0" md="12" lg="12" sm="12" cols="12" class="text-center">
-          <v-img
-            :src="require('@/assets/img/svg/DataNotFound.svg')"
-            :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
-            width="15%"
-            style="border-radius:8px;margin-left:auto;margin-right:auto"
-          >
-            <template v-slot:placeholder>
-              <v-row class="fill-height ma-0" align="center" justify="center">
-                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-              </v-row>
-            </template>
-          </v-img>
-          <h2 class="google-font">Speakers Not Found</h2>
-          </v-col>
-        <v-col v-if="loader" md="12" lg="11" xs="12" class="pt-3">
-          <v-container fluid class>
-            <v-row>
+            <!-- No Data Found -->
+            <v-row v-if="!loader && SpeakersData.length == 0">
+              <v-col md="12" lg="12" sm="12" cols="12">
+                <p class="google-font">Not Data Found</p>
+              </v-col>
+            </v-row>
+            <!-- No Data Found -->
+
+            <!-- Speaker Loader -->
+            <v-row v-if="loader">
               <v-col md="2" lg="2" sm="3" cols="6" v-for="i in 6" :key="i">
-                <v-sheet :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`" class>
-                  <v-skeleton-loader class="mx-auto" max-width="300" type="card"></v-skeleton-loader>
+                <v-sheet
+                  :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`"
+                  class
+                >
+                  <v-skeleton-loader
+                    class="mx-auto"
+                    max-width="300"
+                    type="card"
+                  ></v-skeleton-loader>
                 </v-sheet>
               </v-col>
             </v-row>
+            <!-- Speaker Loader -->
           </v-container>
+          <!-- Speakers Data -->
         </v-col>
       </v-row>
     </v-container>
@@ -104,13 +91,13 @@ export default {
   name: "SpeakerPage",
   inject: ["theme"],
   components: {
-    SpeakerView: () => import("@/components/speakers/Speakerview")
+    SpeakerView: () => import("@/components/speakers/Speakerview"),
   },
   data: () => ({
     loader: true,
     SpeakersData: [],
     ErrorMsg: "",
-    noData: false
+    noData: false,
   }),
   mounted() {
     this.getAllSpeakers();
@@ -120,9 +107,10 @@ export default {
       this.loader = true;
       service
         .getAllSpeakers()
-        .then(res => {
+        .then((res) => {
           if (res.success == true) {
-            this.SpeakersData = res.data.filter(res => res.visible);
+            this.SpeakersData = res.data.filter((res) => res.visible);
+            // this.SpeakersData =[]
             this.loader = false;
             this.noData = false;
           } else {
@@ -130,13 +118,13 @@ export default {
             this.loader = false;
           }
         })
-        .catch(e => {
+        .catch((e) => {
           this.loader = false;
           this.noData = true;
           this.ErrorMsg = e;
         });
-    }
-  }
+    },
+  },
 };
 </script>
 

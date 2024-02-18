@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 const routes = [{
     path: '/',
     name: 'Home',
-    component: () => import( /* webpackChunkName: "home" */ '../views/Home.vue'),
+    component: () => import( /* webpackChunkName: "home" */ '../views/HomePage.vue'),
     meta: {
       title: 'Home ',
       color: '#0277bd',
@@ -42,7 +42,7 @@ const routes = [{
   {
     path: '/events',
     name: 'Events',
-    component: () => import( /* webpackChunkName: "events" */ '../views/Events.vue'),
+    component: () => import( /* webpackChunkName: "events" */ '../views/EventsPage.vue'),
     meta: {
       title: 'Events ',
       color: '#0277bd',

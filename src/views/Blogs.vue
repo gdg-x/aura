@@ -5,7 +5,7 @@
         justify="center"
         align="center"
       >
-        <v-col md="11" lg="11" sm="11" xs="12" class="pt-3">
+        <v-col md="11" lg="11" sm="11" xs="12" >
           <!-- Blog -->
           <v-container fluid class="py-0 my-0 mt-2">
             <v-row align="center" class="py-0 my-0">
@@ -24,7 +24,7 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="px-0 py-0">
+    <v-container fluid class="px-0 py-0 mb-10">
       <v-row justify="center" align="center">
         <v-col md="11" lg="11" sm="11" xs="12" class="card-top-margin">
           <BlogsDetails />

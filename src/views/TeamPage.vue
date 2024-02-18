@@ -1,7 +1,7 @@
 <template>
   <v-main>
     <v-container fluid class="pa-0">
-      <v-row justify="center" align="center" class="py-3">
+      <v-row justify="center" align="center" class=" google-font">
         <v-col md="12" lg="11" sm="11" xs="12">
           <!-- Header -->
           <v-container fluid class="py-0 my-0">
@@ -31,14 +31,14 @@
                 <h3 class="google-font">Core Team Members</h3>
                 <p class="google-font mb-0">
                   Our goal is to organize space to connect the best industry
-                  experts with Indian audience to boost development of IT. And
+                  experts with audience to boost development of IT. And
                   Our Core Team is:
                 </p>
               </v-col>
             </v-row>
 
             <!-- Core Team Data -->
-            <v-row v-if="CoreTeam.length > 0" class="mt-0">
+            <v-row v-if="!loader && CoreTeam.length" class="mt-0">
               <v-col
                 md="3"
                 lg="2"
@@ -53,7 +53,7 @@
             </v-row>
             <!-- Core Team Data -->
 
-            <!-- Core Team Not Data Found -->
+            <!-- Core Team Loader -->
             <v-row v-if="loader">
               <v-col md="2" lg="2" sm="3" cols="6" v-for="i in 6" :key="i">
                 <v-sheet
@@ -68,12 +68,19 @@
                 </v-sheet>
               </v-col>
             </v-row>
-            <!-- Core Team Not Data Found -->
+            <!-- Core Team Loader -->
+            <!-- Not Found -->
+            <v-row v-if="!loader && CoreTeam.length==0" class="my-0 google-text">
+              <v-col>
+                <p>Not Data Found</p>
+              </v-col>
+            </v-row>
+            <!-- Not Found -->
           </v-container>
           <!-- Core Team -->
 
           <!-- Organizing Team -->
-          <v-container fluid class="mt-10">
+          <v-container fluid class="my-10">
             <v-row align="center" class="">
               <v-col cols="12" md="11" sm="11">
                 <h3 class="google-font mb-1">Organizing Team Members</h3>
@@ -81,7 +88,7 @@
             </v-row>
 
             <!-- Organizing Team Data -->
-            <v-row v-if="OrganizingTeam.length > 0" class="mt-0">
+            <v-row v-if="!loader && OrganizingTeam.length" class="mt-0">
               <v-col
                 md="3"
                 lg="3"
@@ -96,7 +103,7 @@
             </v-row>
             <!-- Organizing Team Data -->
 
-            <!-- Organizing Team Not Data Found -->
+            <!-- Organizing Team Loader -->
             <v-row v-if="loader">
               <v-col md="2" lg="2" sm="3" cols="6" v-for="i in 6" :key="i">
                 <v-sheet
@@ -111,49 +118,17 @@
                 </v-sheet>
               </v-col>
             </v-row>
-            <!-- Organizing Team Not Data Found -->
+            <!-- Organizing Team Loader -->
+
+            <!-- Not Found -->
+            <v-row v-if="!loader && OrganizingTeam.length==0" class="my-0 google-text">
+              <v-col>
+                <p>Not Data Found</p>
+              </v-col>
+            </v-row>
+            <!-- Not Found -->
           </v-container>
           <!-- Organizing Team -->
-        </v-col>
-      </v-row>
-    </v-container>
-
-    <v-container fluid class="pa-0">
-      <v-row
-        justify="center"
-        align="center"
-        class="py-3"
-        :class="this.$vuetify.theme.dark == true ? 'black' : ''"
-      >
-        <v-col
-          v-if="
-            !loader &&
-            notFound &&
-            OrganizingTeam.length <= 0 &&
-            CoreTeam.length <= 0
-          "
-          md="12"
-          lg="12"
-          sm="12"
-          cols="12"
-          class="text-center"
-        >
-          <v-img
-            :src="require('@/assets/img/svg/DataNotFound.svg')"
-            :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
-            width="15%"
-            style="border-radius: 8px; margin-left: auto; margin-right: auto"
-          >
-            <template v-slot:placeholder>
-              <v-row class="fill-height ma-0" align="center" justify="center">
-                <v-progress-circular
-                  indeterminate
-                  color="grey lighten-5"
-                ></v-progress-circular>
-              </v-row>
-            </template>
-          </v-img>
-          <h2 class="google-font">Team Not Found</h2>
         </v-col>
       </v-row>
     </v-container>
@@ -218,24 +193,5 @@ export default {
 </script>
 
 <style scoped>
-.darkbg {
-  /* background: #1F1A24 */
-}
-@media screen and (min-width: 600px) {
-  .card-top-margin {
-    margin-top: -110px;
-  }
-  .bottom-space {
-    margin-bottom: 80px;
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .card-top-margin {
-    margin-top: -100px;
-  }
-  .bottom-space {
-    margin-bottom: 50px;
-  }
-}
+
 </style>
