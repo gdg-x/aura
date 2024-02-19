@@ -44,16 +44,19 @@ body {
 }
 
 .card-light {
+    height: 100%;
     background: #f1f2f3 !important;
     border-radius: 12px !important
 }
 
 .card-white {
+    height: 100%;
     background: white !important;
     border-radius: 12px !important
 }
 
 .card-dark {
+    height: 100%;
     background-color: #292929;
     border-radius: 12px !important
 }
@@ -88,4 +91,36 @@ body {
 .org-team-list-card-dark {
     background-color: #292929;
     border-radius: 12px !important
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    transition: width 0.3s ease;
+}
+.content{
+    transition: 0.3s ease;
+}
+.bar {
+    position: absolute;
+    top: 10%;
+    left: 0px; 
+    width: 9px;
+    height: 80%;
+    background-image: url('@/assets/img/button_bg.png');
+    background-size: cover;
+    opacity: 0; 
+    transition: opacity 0.3s ease, left 0.3s ease;
+}
+.card:hover .bar {
+    opacity: 1; 
+    left: 10px;
+}
+.card:hover .content {
+    padding-left: 12px;
 }
