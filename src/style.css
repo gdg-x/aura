@@ -27,8 +27,9 @@
 .aura-btn {
     background-image: url('../src//assets//img/dontremove/btn.png') !important;
     background-position: center;
-    background-size: 100%; 
+    background-size: 100%;
 }
+
 .aura-btn:hover {
     background-image: url('../src//assets//img/dontremove/btn.png') !important;
     background-position: center;
@@ -93,20 +94,20 @@ body {
     border-radius: 12px !important
 }
 
-.container {
+.cardContainer {
     display: flex;
     justify-content: center;
 }
 
-.card {
+.homeCard {
     position: relative;
     width: 300px;
     transition: width 0.3s ease;
 }
-.content{
+.homeCardContent{
     transition: 0.3s ease;
 }
-.bar {
+.homeCardbar {
     position: absolute;
     top: 10%;
     left: 0px; 
@@ -117,10 +118,28 @@ body {
     opacity: 0; 
     transition: opacity 0.3s ease, left 0.3s ease;
 }
-.card:hover .bar {
+.homeCard:hover .homeCardbar {
     opacity: 1; 
     left: 10px;
 }
-.card:hover .content {
+.homeCard:hover .homeCardContent {
     padding-left: 12px;
+}
+.eventCard{
+    height: min-content;
+    padding-bottom: 90px;
+}
+.event-container{
+    position: relative;
+    /* background-color: #292929; */
+}
+.aura-speaker-card{
+    position: absolute;
+    right: 10px;
+    bottom: -50px;
+}
+.aura-partner-card{
+    position: absolute;
+    right: 10px;    
+    bottom: -25px;
 }
