@@ -27,8 +27,9 @@
 .aura-btn {
     background-image: url('../src//assets//img/dontremove/btn.png') !important;
     background-position: center;
-    background-size: 100%; 
+    background-size: 100%;
 }
+
 .aura-btn:hover {
     background-image: url('../src//assets//img/dontremove/btn.png') !important;
     background-position: center;
@@ -44,16 +45,19 @@ body {
 }
 
 .card-light {
+    height: 100%;
     background: #f1f2f3 !important;
     border-radius: 12px !important
 }
 
 .card-white {
+    height: 100%;
     background: white !important;
     border-radius: 12px !important
 }
 
 .card-dark {
+    height: 100%;
     background-color: #292929;
     border-radius: 12px !important
 }
@@ -88,4 +92,54 @@ body {
 .org-team-list-card-dark {
     background-color: #292929;
     border-radius: 12px !important
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.homeCard {
+    position: relative;
+    width: 300px;
+    transition: width 0.3s ease;
+}
+.homeCardContent{
+    transition: 0.3s ease;
+}
+.homeCardbar {
+    position: absolute;
+    top: 10%;
+    left: 0px; 
+    width: 9px;
+    height: 80%;
+    background-image: url('@/assets/img/button_bg.png');
+    background-size: cover;
+    opacity: 0; 
+    transition: opacity 0.3s ease, left 0.3s ease;
+}
+.homeCard:hover .homeCardbar {
+    opacity: 1; 
+    left: 10px;
+}
+.homeCard:hover .homeCardContent {
+    padding-left: 12px;
+}
+.eventCard{
+    height: min-content;
+    padding-bottom: 90px;
+}
+.event-container{
+    position: relative;
+    /* background-color: #292929; */
+}
+.aura-speaker-card{
+    position: absolute;
+    right: 10px;
+    bottom: -50px;
+}
+.aura-partner-card{
+    position: absolute;
+    right: 10px;    
+    bottom: -25px;
 }

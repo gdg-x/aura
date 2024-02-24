@@ -193,7 +193,7 @@
 
     <v-container
       fluid
-      class="mt-4 mb-10 d-none d-sm-block d-md-block d-lg-block"
+      class="eventCard mt-4 mb-5 d-none d-sm-block d-md-block d-lg-block"
       :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'"
     >
       <!-- Other Data -->
@@ -237,9 +237,9 @@
               </v-col>
             </v-row>
             <v-row>
-              <v-col>
+              <v-col class="event-container">
                 <v-btn
-                  class="aura-btn float-right"
+                  class="aura-btn aura-speaker-card"
                   dark
                   depressed
                   rounded
@@ -312,9 +312,9 @@
               </v-col>
             </v-row>
             <v-row>
-              <v-col>
+              <v-col class="event-container">
                 <v-btn
-                  class="aura-btn float-right"
+                  class="aura-btn aura-partner-card"
                   dark
                   depressed
                   rounded
