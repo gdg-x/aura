@@ -39,7 +39,7 @@
         v-for="(itemp, i) in partnersData"
         :key="i"
       >
-        <div class="client-logo ma-0">
+        <div class="aura-client-logo ma-0">
           <a v-bind:href="itemp.socialLinks.linkedin" target="_blank">
             <v-tooltip bottom>
               <template v-slot:activator="{ on }">
@@ -99,14 +99,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.client-logo {
-  height: 90px;
-  padding: 12px 12px;
-  border-radius: 12px;
-  background: white;
-  border: 1px solid #ebebeb;
-  text-align: center;
-}
-</style>

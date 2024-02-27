@@ -41,7 +41,7 @@
               <v-col md="3" lg="3" sm="4" cols="12">
                 <div
                   class="pa-4"
-                  :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'"
+                  :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-light'"
                 >
                   <v-avatar size="150" style="border-radius: 12px">
                     <img
@@ -76,7 +76,7 @@
               <v-col md="9" lg="9" sm="8" cols="12">
                 <div
                   class="pa-md-8 pa-4"
-                  :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'"
+                  :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-light'"
                 >
                   <p class="mb-0">
                     <b>Bio</b>
@@ -123,7 +123,7 @@
           sm="11"
           xs="12"
           class="pt-3"
-          :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteTheme'"
+          :class="$vuetify.theme.dark == true ? 'aura-card-dark' : 'aura-card-light'"
         >
           <v-container fluid>
             <v-row>

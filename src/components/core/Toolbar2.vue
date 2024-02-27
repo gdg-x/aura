@@ -7,7 +7,7 @@
     floating
     class="text-center"
   >
-    <v-avatar color="#F5F7F7" size="55" class="my-4 mt-5">
+    <v-avatar :color="this.$vuetify.theme.dark? '#999999' :'#F5F7F7' " size="55" class="my-4 mt-5">
       <v-img
         alt="Community Logo"
         class="shrink google-font"
@@ -102,22 +102,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-.whiteText {
-  color: white;
-}
-.blackText {
-  color: rgba(0, 0, 0, 0.87);
-}
-
-/* .aura-navbar-sidenav {
-  border-radius: 16px;
-  padding: 10px 17px;
-}
-
-.btn-active-light-side-navbar {
-  border-radius: 16px;
-  background-color: #d8dce2;
-  padding: 10px 17px;
-} */
-</style>

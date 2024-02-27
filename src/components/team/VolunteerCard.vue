@@ -4,7 +4,7 @@
       width="700"
     >
       <template v-slot:activator="{ on }">
-          <div v-on="on" style="cursor: pointer;" class="text-center py-5 ma-1" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
+          <div v-on="on" style="cursor: pointer;" class="text-center py-5 ma-1" :class="$vuetify.theme.dark == true?'aura-card-dark':'aura-card-light'" >
               <v-avatar size="100">
                   <img 
                     :src="getImgUrl(data.image, 'profile.jpg')"

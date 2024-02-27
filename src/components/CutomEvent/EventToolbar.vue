@@ -11,7 +11,7 @@
         class="google-font"
         aria-label="Communiy homepage"
         style="text-decoration: none; font-size: 110%"
-        :class="this.$vuetify.theme.dark ? 'whiteText' : 'blackText'"
+        :class="this.$vuetify.theme.dark ? 'aura-event-whiteText' : 'aura-event-blackText'"
         >{{ eventName || "" }}</router-link
       >
     </v-toolbar-title>
@@ -39,12 +39,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.whiteText {
-  color: white;
-}
-.blackText {
-  color: rgba(0, 0, 0, 0.87);
-}
-</style>

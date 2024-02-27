@@ -30,9 +30,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.darkbg {
-  /* background: #1F1A24 */
-}
-</style>

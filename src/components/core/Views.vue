@@ -1,6 +1,6 @@
 <template>
   <v-main
-    :class="this.$vuetify.theme.dark == true ? 'black' : 'light-bg'"
+    :class="this.$vuetify.theme.dark == true ? 'black' : 'white'"
     class="pa-0"
   >
     <v-slide-y-reverse-transition>
@@ -22,9 +22,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.light-bg {
-  background-color: white;
-}
-</style>

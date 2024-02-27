@@ -90,7 +90,7 @@
         sm="11"
         xs="12"
         class="pt-3"
-        :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'"
+        :class="$vuetify.theme.dark == true?'aura-card-dark':'aura-card-white'"
       >
         <v-container fluid>
           <v-row>
@@ -192,6 +192,3 @@ export default {
   // data:
 };
 </script>
-
-<style>
-</style>

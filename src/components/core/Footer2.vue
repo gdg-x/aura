@@ -1,7 +1,7 @@
 <template>
   <v-main
     class="hidden-sm-and-down pt-0 mt-0 google-font"
-    :class="this.$vuetify.theme.dark == true ? 'card-dark' : 'card-light'"
+    :class="this.$vuetify.theme.dark == true ? 'aura-card-dark' : 'aura-card-light'"
     v-if="Object.keys(config).length"
     style="position: relative"
   >
@@ -77,12 +77,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.darkThemeTextLink {
-  color: #fafafa;
-}
-.lightThemeTextLink {
-  color: #3e4551;
-}
-</style>
