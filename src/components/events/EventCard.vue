@@ -3,8 +3,8 @@
     style="cursor: pointer"
     :class="
       $vuetify.theme.dark == true
-        ? 'darkModeCardFeatureEvent'
-        : 'lightModeCardFeatureEvent'
+        ? 'aura-darkModeCardFeatureEvent'
+        : 'aura-lightModeCardFeatureEvent'
     "
     class="pa-3 pa-md-6 py-5 fill-height"
   >
@@ -40,6 +40,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>

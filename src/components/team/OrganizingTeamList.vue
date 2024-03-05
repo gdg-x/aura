@@ -5,8 +5,8 @@
      flat
     :class="
       $vuetify.theme.dark
-        ? 'org-team-list-card-dark'
-        : 'org-team-list-card-light'
+        ? 'aura-card-dark'
+        : 'aura-card-light'
     "
   >
     <v-list-item class="" @click="goToTeam(data.id)">

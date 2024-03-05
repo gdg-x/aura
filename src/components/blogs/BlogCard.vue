@@ -4,7 +4,7 @@
       class="mx-auto pa-2"
       max-width="100%"
       flat
-      :class="$vuetify.theme.dark?'card-dark' : 'card-light'"
+      :class="$vuetify.theme.dark?'aura-card-dark' : 'aura-card-light'"
     >
       <v-list-item three-line>
         <!-- <v-list-item-avatar tile size="90" style="border-radius: 12px !important;" color="grey">
@@ -54,10 +54,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-img,
-figure {
-  width: 100%;
-}
-</style>

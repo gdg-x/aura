@@ -16,10 +16,10 @@
         </v-row>
       </v-container>
     </v-main>
-    <v-main v-else class="pa-0 ma-0" :class="this.$vuetify.theme.dark ? 'black' : 'white'" style="height: 100%;">
+    <v-main v-else class="pa-0 ma-0" :class="this.$vuetify.theme.dark ? 'black' : 'white'">
       <v-container
         fluid
-        style="height: 100vh !important"
+        
       >
         <v-row align="center" justify="center">
           <v-col cols="12" sm="12" md="11" lg="11" xl="11" class="my-0 py-0">
@@ -121,8 +121,3 @@ export default {
   },
 };
 </script>
-<style>
-.light-bg {
-  background-color: white;
-}
-</style>

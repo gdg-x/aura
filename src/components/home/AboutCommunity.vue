@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'" >
+  <v-container fluid :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-light'" >
     <v-row align="center" >
       <v-col
         cols="12"

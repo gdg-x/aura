@@ -5,7 +5,7 @@
         v-on="on"
         v-ripple
         style="cursor: pointer;"
-        :class="$vuetify.theme.dark == true?'darkModeCardFeatureEvent':'lightModeCardFeatureEvent'"
+        :class="$vuetify.theme.dark == true?'aura-darkModeCardFeatureEvent':'aura-lightModeCardFeatureEvent'"
         class="pa-3 pa-md-6 py-5 fill-height"
       >
         <p class="google-font mb-0" style="font-size:90%">{{convtDate(data.date)}}</p>
@@ -118,21 +118,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.lightModeCardFeatureEvent {
-  background-color: #F1F2F3;
-  border-radius: 12px !important;
-  /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1); */
-
-  border-radius: 8px;
-}
-.darkModeCardFeatureEvent {
-  background-color: #292929;
-  /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1); */
-  /* border:1px solid #212121; */
-  border-radius: 12px !important;
-  /* border: 1px solid #424242; */
-  /* border-radius: 5px; */
-}
-</style>

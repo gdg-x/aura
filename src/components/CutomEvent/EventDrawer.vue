@@ -8,7 +8,7 @@
     floating
     clipped-left
   >
-    <v-avatar class="my-4">
+    <v-avatar class="my-4" :color="this.$vuetify.theme.dark? '#999999' :'#F5F7F7' ">
       <v-img
         alt="Community Logo"
         class="shrink google-font"
@@ -125,6 +125,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>

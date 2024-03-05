@@ -49,15 +49,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.lightModeContainer {
-  background-color: #f1f2f3;
-  border-radius: 12px;
-}
-.darkModeContainer {
-  background-color: #292929;
-  /* border:1px solid #212121; */
-  border-radius: 12px;
-}
-</style>

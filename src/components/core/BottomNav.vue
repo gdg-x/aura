@@ -43,9 +43,3 @@
     }
   }
 </script>
-
-<style scoped>
-.v-size--small{
-  min-width: 50px !important;
-}
-</style>

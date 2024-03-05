@@ -54,21 +54,21 @@
           cols="12"
           md="12"
           class="pa-md-5 pa-3 mt-n3"
-          :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'"
+          :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-light'"
         >
           <v-container fluid>
             <p class="py-3" style="">
               <span class="mr-5 my-auto"
-                ><v-icon class="mr-1 mb-0">mdi-calendar</v-icon
+                ><v-icon class="mr-1 mb-1">mdi-calendar</v-icon
                 >{{ convtDate(eventDetails.date) }}</span
               >
               <span class="mr-5 my-auto"
-                ><v-icon class="mr-1">mdi-clock-outline</v-icon
+                ><v-icon class="mr-1 mb-1">mdi-clock-outline</v-icon
                 >{{ eventDetails.time.starttime }} -
                 {{ eventDetails.time.endtime }}</span
               >
               <span class="mr-5 my-auto"
-                ><v-icon class="mr-1">mdi-map-marker-outline</v-icon
+                ><v-icon class="mr-1 mb-1">mdi-map-marker-outline</v-icon
                 ><a
                   target="_blank"
                   style="text-decoration: none"
@@ -193,8 +193,8 @@
 
     <v-container
       fluid
-      class="eventCard mt-4 mb-5 d-none d-sm-block d-md-block d-lg-block"
-      :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'"
+      class="aura-event-card mt-4 mb-5 d-none d-sm-block d-md-block d-lg-block"
+      :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-light'"
     >
       <!-- Other Data -->
       <v-row class="pa-3">
@@ -203,7 +203,7 @@
           <v-container
             fluid
             class="pa-5"
-            :class="$vuetify.theme.dark ? 'card-dark-secondary' : 'card-white'"
+            :class="$vuetify.theme.dark ? 'aura-card-dark-secondary' : 'aura-card-white'"
           >
             <v-row>
               <v-col
@@ -237,7 +237,7 @@
               </v-col>
             </v-row>
             <v-row>
-              <v-col class="event-container">
+              <v-col class="aura-event-container">
                 <v-btn
                   class="aura-btn aura-speaker-card"
                   dark
@@ -255,7 +255,7 @@
           <v-container
             fluid
             class="pa-5"
-            :class="$vuetify.theme.dark ? 'card-dark-secondary' : 'card-white'"
+            :class="$vuetify.theme.dark ? 'aura-card-dark-secondary' : 'aura-card-white'"
           >
             <v-row
               class="pa-0"
@@ -312,7 +312,7 @@
               </v-col>
             </v-row>
             <v-row>
-              <v-col class="event-container">
+              <v-col class="aura-event-container">
                 <v-btn
                   class="aura-btn aura-partner-card"
                   dark
@@ -406,5 +406,3 @@ export default {
   },
 };
 </script>
-
-<style></style>

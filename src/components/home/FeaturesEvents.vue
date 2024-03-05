@@ -130,16 +130,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.lightModeCardFeatureEvent {
-  background-color: #f1f2f3;
-  border-radius: 12px;
-}
-.darkModeCardFeatureEvent {
-  background-color: #292929;
-  /* border:1px solid #212121; */
-  /* border: 1px solid #424242; */
-  border-radius: 12px;
-}
-</style>

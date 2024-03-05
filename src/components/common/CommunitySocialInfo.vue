@@ -125,6 +125,3 @@ export default {
   props: ["config"],
 };
 </script>
-
-<style>
-</style>

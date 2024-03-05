@@ -14,7 +14,7 @@
                   :items="eventDetails.agenda"
                   :items-per-page="5"
                   class="ma-0 pa-0 mt-3"
-                  :class="$vuetify.theme.dark?'card-dark' : 'card-light'"
+                  :class="$vuetify.theme.dark?'aura-card-dark' : 'aura-card-light'"
                   >
               </v-data-table>
             </v-col>
@@ -41,6 +41,3 @@ export default {
     })
 };
 </script>
-
-<style>
-</style>

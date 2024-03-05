@@ -1,145 +1,156 @@
 @font-face {
-    font-family: google-sans;
-    src: url(assets/fonts/google-font.woff2);
-    font-display: swap;
+  font-family: google-sans;
+  src: url(assets/fonts/google-font.woff2);
+  font-display: swap;
 }
 
 .google-font {
-    font-family: google-sans
+  font-family: google-sans;
 }
 
-.aura-heading{
-    font-weight: 350; 
-    font-size: 200%;
-    font-family: google-sans
+.aura-heading {
+  font-weight: 350;
+  font-size: 200%;
+  font-family: google-sans;
 }
 
 .aura-text {
-    background-image: url('../src//assets//img/dontremove/btn.png');
-    /* background-repeat: repeat; */
-    background-position: center;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* text-fill-color: transparent; */
+  background-image: url("../src//assets//img/dontremove/btn.png");
+  /* background-repeat: repeat; */
+  background-position: center;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-fill-color: transparent; */
 }
 
 .aura-btn {
-    background-image: url('../src//assets//img/dontremove/btn.png') !important;
-    background-position: center;
-    background-size: 100%;
+  background-image: url("../src//assets//img/dontremove/btn.png") !important;
+  background-position: center;
+  background-size: 100%;
 }
-
 .aura-btn:hover {
-    background-image: url('../src//assets//img/dontremove/btn.png') !important;
-    background-position: center;
-    background-size: 130%; 
+  background-image: url("../src//assets//img/dontremove/btn.png") !important;
+  background-position: center;
+  background-size: 130%;
 }
 
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
-    font-family: google-sans
+  font-family: google-sans;
 }
 
-.card-light {
-    height: 100%;
-    background: #f1f2f3 !important;
-    border-radius: 12px !important
+.aura-card-light {
+  height: 100%;
+  background: #f1f2f3 !important;
+  border-radius: 12px !important;
 }
 
-.card-white {
-    height: 100%;
-    background: white !important;
-    border-radius: 12px !important
+.aura-card-white {
+  height: 100%;
+  background: white !important;
+  border-radius: 12px !important;
 }
 
-.card-dark {
-    height: 100%;
-    background-color: #292929;
-    border-radius: 12px !important
+.aura-card-dark {
+  height: 100%;
+  background-color: #292929;
+  border-radius: 12px !important;
 }
 
-.card-dark-secondary {
-    background-color: #1E1E1E !important;
-    border-radius: 12px !important
+.aura-card-dark-secondary {
+  height: 100%;
+  background-color: #1e1e1e !important;
+  border-radius: 12px !important;
 }
 
-.darkModeCard {
-    background-color: #292929;
-    /* border:1px solid #212121; */
-    border-radius: 12px !important
+.aura-card-container {
+  display: flex;
+  justify-content: center;
 }
 
-.whiteTheme {
-    background: F1F2F3;
-    /* border:1px solid #e0e0e0; */
-    border-radius: 12px !important
+.aura-home-card {
+  position: relative;
+  width: 300px;
+  transition: width 0.3s ease;
+}
+.aura-home-card-content {
+  transition: 0.3s ease;
+}
+.aura-home-cardbar {
+  position: absolute;
+  top: 10%;
+  left: 0px;
+  width: 9px;
+  height: 80%;
+  background-image: url("@/assets/img/button_bg.png");
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease, left 0.3s ease;
+}
+.aura-home-card:hover .aura-home-cardbar {
+  opacity: 1;
+  left: 10px;
+}
+.aura-home-card:hover .aura-home-card-content {
+  padding-left: 12px;
+}
+.aura-event-card {
+  height: min-content;
+  padding-bottom: 90px;
+}
+.aura-event-container {
+  position: relative;
+}
+.aura-speaker-card {
+  position: absolute;
+  right: 10px;
+  bottom: -50px;
+}
+.aura-partner-card {
+  position: absolute;
+  right: 10px;
+  bottom: -25px;
+}
+.aura-hidden-x {
+  overflow-x: hidden;
+}
+.aura-client-logo {
+  height: 90px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid #ebebeb;
+  text-align: center;
 }
 
-.lightModeCard {
-    background-color: #F1F2F3 !important;
-    border-radius: 12px
+.aura-darkThemeTextLink {
+  color: #fafafa !important;
+}
+.aura-lightThemeTextLink {
+  color: #3e4551 !important;
+}
+.aura-event-whiteText {
+  color: white !important;
+}
+.aura-event-blackText {
+  color: rgba(0, 0, 0, 0.87) !important;
 }
 
-.org-team-list-card-light {
-    background-color: #F1F2F3 !important;
-    border-radius: 17px !important
+.aura-lightModeCardFeatureEvent {
+  background-color: #f1f2f3 !important;
+  border-radius: 12px !important;
+  /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
 }
-
-.org-team-list-card-dark {
-    background-color: #292929;
-    border-radius: 12px !important
-}
-
-.cardContainer {
-    display: flex;
-    justify-content: center;
-}
-
-.homeCard {
-    position: relative;
-    width: 300px;
-    transition: width 0.3s ease;
-}
-.homeCardContent{
-    transition: 0.3s ease;
-}
-.homeCardbar {
-    position: absolute;
-    top: 10%;
-    left: 0px; 
-    width: 9px;
-    height: 80%;
-    background-image: url('@/assets/img/button_bg.png');
-    background-size: cover;
-    opacity: 0; 
-    transition: opacity 0.3s ease, left 0.3s ease;
-}
-.homeCard:hover .homeCardbar {
-    opacity: 1; 
-    left: 10px;
-}
-.homeCard:hover .homeCardContent {
-    padding-left: 12px;
-}
-.eventCard{
-    height: min-content;
-    padding-bottom: 90px;
-}
-.event-container{
-    position: relative;
-    /* background-color: #292929; */
-}
-.aura-speaker-card{
-    position: absolute;
-    right: 10px;
-    bottom: -50px;
-}
-.aura-partner-card{
-    position: absolute;
-    right: 10px;    
-    bottom: -25px;
+.aura-darkModeCardFeatureEvent {
+  background-color: #292929 !important;
+  /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1); */
+  /* border:1px solid #212121; */
+  border-radius: 12px !important;
+  /* border: 1px solid #424242; */
+  /* border-radius: 5px; */
 }

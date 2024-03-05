@@ -46,7 +46,7 @@
                 <div
                   class="py-5"
                   :class="
-                    $vuetify.theme.dark == true ? 'card-dark' : 'card-light'
+                    $vuetify.theme.dark == true ? 'aura-card-dark' : 'aura-card-light'
                   "
                 >
                   <SpeakerView :data="item" />
@@ -127,26 +127,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.darkbg {
-  /* background: #1F1A24 */
-}
-@media screen and (min-width: 600px) {
-  .card-top-margin {
-    margin-top: -110px;
-  }
-  .bottom-space {
-    margin-bottom: 80px;
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .card-top-margin {
-    margin-top: -100px;
-  }
-  .bottom-space {
-    margin-bottom: 50px;
-  }
-}
-</style>

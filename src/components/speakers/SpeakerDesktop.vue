@@ -16,7 +16,7 @@
             <v-col cols="12" sm="12">
               <v-card
                 elevation="0"
-                :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'"
+                :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-light'"
               >
                 <v-card-text class="px-5 pb-5">
                   <v-container fluid class="my-0 pa-0">
@@ -94,7 +94,7 @@
               <v-card
                 flat
                 class="pa-4"
-                :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'"
+                :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-light'"
               >
                 <v-card-title class="google-font">Sessions:</v-card-title>
                 <v-card-text>
@@ -106,7 +106,7 @@
                       v-for="sess in events"
                       :key="sess.id"
                     >
-                    <div @click="$router.push({ path: '/events/' + sess.id })" class="pa-4" :class="$vuetify.theme.dark ? 'card-dark' : 'card-white'">
+                    <div @click="$router.push({ path: '/events/' + sess.id })" class="pa-4" :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-white'">
                       <p class="mb-0">{{ convtDate(sess.date)}}</p>
                       <p style="font-size: 130%;" class="mb-0"><b>{{ sess.name }}</b></p>
                     </div>
@@ -130,7 +130,7 @@
           sm="11"
           xs="12"
           class="pt-3"
-          :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'whiteTheme'"
+          :class="$vuetify.theme.dark == true ? 'aura-card-dark' : 'aura-card-light'"
         >
           <v-container fluid>
             <v-row>

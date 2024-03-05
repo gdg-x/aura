@@ -5,7 +5,7 @@
         v-on="on"
         style="cursor: pointer;height:100%"
         class="text-center py-4 ma-1 py-3"
-        :class="$vuetify.theme.dark?'card-dark' : 'card-light'"
+        :class="$vuetify.theme.dark?'aura-card-dark' : 'aura-card-light'"
       >
         <v-avatar size="100">
           <img
@@ -64,11 +64,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.whiteTheme {
-  background: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-}
-</style>

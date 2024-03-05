@@ -17,14 +17,14 @@
               cols="6"
               v-for="(item, index) in whatWeDoContent"
               :key="index"
-              class="cardContainer"
+              class="aura-card-container"
             >
               <div
-                class="homeCard pa-4"
-                :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'"
+                class="aura-home-card pa-4"
+                :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-light'"
               >
-              <div class="homeCardbar"></div>
-              <div class="homeCardContent">
+              <div class="aura-home-cardbar"></div>
+              <div class="aura-home-card-content">
                 <v-icon large style="font-size: 250%">{{ item.icon }}</v-icon>
                 <p class="google-font mt-2" style="font-size: 120%">
                   {{ item.name }}

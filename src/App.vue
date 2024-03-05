@@ -1,5 +1,5 @@
 <template>
-  <v-app class="hidden-x">
+  <v-app class="aura-hidden-x">
     <v-snackbar v-model="snackWithButtons" :timeout="timeout" bottom left class="snack">
       {{ snackWithBtnText }}
       <v-spacer />
@@ -133,8 +133,3 @@ export default {
   }
 };
 </script>
-<style>
-.hidden-x{
-  overflow-x: hidden
-}
-</style>

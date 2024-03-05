@@ -33,8 +33,8 @@
                     rel="noreferrer"
                     :class="
                       $vuetify.theme.dark
-                        ? 'darkThemeTextLink'
-                        : 'lightThemeTextLink'
+                        ? 'aura-darkThemeTextLink'
+                        : 'aura-lightThemeTextLink'
                     "
                     class="google-font my-3"
                     target="_blank"
@@ -60,8 +60,8 @@
                     rel="noreferrer"
                     :class="
                       $vuetify.theme.dark
-                        ? 'darkThemeTextLink'
-                        : 'lightThemeTextLink'
+                        ? 'aura-darkThemeTextLink'
+                        : 'aura-lightThemeTextLink'
                     "
                     class="google-font my-3"
                     target="_blank"
@@ -87,8 +87,8 @@
                     rel="noreferrer"
                     :class="
                       $vuetify.theme.dark
-                        ? 'darkThemeTextLink'
-                        : 'lightThemeTextLink'
+                        ? 'aura-darkThemeTextLink'
+                        : 'aura-lightThemeTextLink'
                     "
                     class="google-font my-3"
                     target="_blank"
@@ -175,12 +175,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.darkThemeTextLink {
-  color: #fafafa;
-}
-.lightThemeTextLink {
-  color: #3e4551;
-}
-</style>

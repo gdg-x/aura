@@ -66,7 +66,7 @@
             <v-row>
               <v-col
                 class="pa-8 google-font"
-                :class="$vuetify.theme.dark ? 'card-dark' : 'card-light'"
+                :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-light'"
                 md="12"
                 sm="12"
                 cols="12"

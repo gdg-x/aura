@@ -88,12 +88,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.dark-font-color {
-  color: white;
-}
-.light-font-color {
-  color: #616161;
-}
-</style>
