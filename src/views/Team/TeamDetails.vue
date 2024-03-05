@@ -1,6 +1,6 @@
 <template>
   <v-main>
-    <v-container fluid class="pa-0">
+    <v-container fluid class="">
       <v-row justify="center" align="center" class="">
         <v-col md="12" lg="11" sm="11" xs="12" class="">
           <v-btn
@@ -35,7 +35,7 @@
         align="center"
         class=""
       >
-        <v-col md="12" lg="11" sm="11" xs="12" class="py-0">
+        <v-col md="12" lg="11" sm="11" xs="12" class="pa-0">
           <v-container fluid>
             <v-row>
               <v-col md="3" lg="3" sm="4" cols="12">
