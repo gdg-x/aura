@@ -220,7 +220,7 @@
                         :src="
                           checkExistance(item.image, 0)
                             ? item.image
-                            : require('@/assets/img/dontremove/profile.jpg')
+                            : require('@/assets/img/donotremove/profile.jpg')
                         "
                       ></v-img>
                     </v-list-item-avatar>

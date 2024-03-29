@@ -39,8 +39,8 @@
         <v-img :src="require('@/assets/img/svg/about.svg')"></v-img>
 
         <!-- <v-img
-                    :src="require('@/assets/img/dontremove/about.png')"
-                    :lazy-src="require('@/assets/img/dontremove/about.png')"
+                    :src="require('@/assets/img/donotremove/about.png')"
+                    :lazy-src="require('@/assets/img/donotremove/about.png')"
                     class=" mb-3"
                     width="90%"
                 >

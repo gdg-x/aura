@@ -15,7 +15,7 @@
 }
 
 .aura-text {
-  background-image: url("../src//assets//img/dontremove/btn.png");
+  background-image: url("../src//assets/img/donotremove/button.png");
   /* background-repeat: repeat; */
   background-position: center;
   background-size: 100%;
@@ -25,12 +25,12 @@
 }
 
 .aura-btn {
-  background-image: url("../src//assets//img/dontremove/btn.png") !important;
+  background-image: url("../src//assets/img/donotremove/button.png") !important;
   background-position: center;
   background-size: 100%;
 }
 .aura-btn:hover {
-  background-image: url("../src//assets//img/dontremove/btn.png") !important;
+  background-image: url("../src//assets/img/donotremove/button.png") !important;
   background-position: center;
   background-size: 130%;
 }
@@ -86,7 +86,7 @@ body {
   left: 0px;
   width: 9px;
   height: 80%;
-  background-image: url("@/assets/img/button_bg.png");
+  background-image: url("@/assets/img/donotremove/button.png");
   background-size: cover;
   opacity: 0;
   transition: opacity 0.3s ease, left 0.3s ease;

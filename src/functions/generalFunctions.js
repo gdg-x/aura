@@ -17,7 +17,7 @@ export default {
             if (pic.length > 0) {
                 return pic;
             } else {
-                return require('@/assets/img/dontremove/' + defaultimage);
+                return require('@/assets/img/donotremove/' + defaultimage);
             }
         },
         convtDate:(date)=> {

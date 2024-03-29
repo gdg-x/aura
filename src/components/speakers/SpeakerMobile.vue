@@ -9,7 +9,7 @@
       <v-card-title
         class="grey lighten-4 google-font"
         primary-title
-        :style="{'background-image':'url('+ require('@/assets/img/dontremove/spakerhead.jpg') +')'}"
+        :style="{'background-image':'url('+ require('@/assets/img/donotremove/spakerhead.jpg') +')'}"
         style="background-position:right top;padding-top:25%;"
       ></v-card-title>
 

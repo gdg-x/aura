@@ -44,7 +44,7 @@
                             :src="
                               checkExistance(speaker.image, 0)
                                 ? speaker.image
-                                : require('@/assets/img/dontremove/profile.jpg')
+                                : require('@/assets/img/donotremove/profile.jpg')
                             "
                           >
                             <template v-slot:placeholder>
