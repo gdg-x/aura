@@ -19,7 +19,6 @@
     <v-main v-else class="pa-0 ma-0" :class="this.$vuetify.theme.dark ? 'black' : 'white'">
       <v-container
         fluid
-        
       >
         <v-row align="center" justify="center">
           <v-col cols="12" sm="12" md="11" lg="11" xl="11" class="my-0 py-0">

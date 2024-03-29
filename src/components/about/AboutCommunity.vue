@@ -36,7 +36,7 @@
         >
       </v-col>
       <v-col md="4" sm="4" cols="12" class="py-0 my-0">
-        <v-img :src="require('@/assets/img/svg/about.svg')"></v-img>
+        <v-img :src="require('@/assets/img/common/about.svg')"></v-img>
 
         <!-- <v-img
                     :src="require('@/assets/img/donotremove/about.png')"

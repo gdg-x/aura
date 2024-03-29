@@ -41,7 +41,7 @@
                 <v-img
                   width="90%"
                   style="margin: auto"
-                  :src="require('@/assets/img/svg/about.svg')"
+                  :src="require('@/assets/img/common/about.png')"
                 ></v-img>
               </v-col>
             </v-row>

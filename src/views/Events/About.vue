@@ -119,7 +119,7 @@
                 label
                 >Registration</v-btn
               >
-              <v-btn
+              <!-- <v-btn
                 color="pink"
                 dark
                 rounded
@@ -130,7 +130,7 @@
                 class="mr-1 mb-1 aura-btn"
                 label
                 >Meetup</v-btn
-              >
+              > -->
 
               <v-btn
                 color="orange"
@@ -145,7 +145,7 @@
                 >Call For Speakers</v-btn
               >
 
-              <v-btn
+              <!-- <v-btn
                 color="indigo"
                 dark
                 target="_blank"
@@ -156,7 +156,7 @@
                 class="mr-1 mb-1"
                 label
                 >Facebook</v-btn
-              >
+              > -->
 
               <v-btn
                 color="success"

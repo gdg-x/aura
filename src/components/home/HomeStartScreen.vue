@@ -65,12 +65,12 @@
           :src="
             checkExistance(config.generalConfig.homeImage, 0)
               ? config.generalConfig.homeImage
-              : require('@/assets/img/svg/home.svg')
+              : require('@/assets/img/common/home.png')
           "
           :lazy-src="
             checkExistance(config.generalConfig.homeImage, 0)
               ? config.generalConfig.homeImage
-              : require('@/assets/img/svg/home.svg')
+              : require('@/assets/img/common/home.png')
           "
           class="my-md-5"
         ></v-img>

@@ -45,8 +45,8 @@
 
                 <v-col v-if="Volunteers.length == 0 && loader == false" md="12" lg="10" sm="11" xs="12" class="pt-3 text-center" >
                     <v-img
-                        :src="require('@/assets/img/svg/DataNotFound.svg')"
-                        :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
+                        :src="require('@/assets/img/common/DataNotFound.svg')"
+                        :lazy-src="require('@/assets/img/common/DataNotFound.svg')"
                         width="15%"
                         style="border-radius:8px;margin-left:auto;margin-right:auto"
                     >

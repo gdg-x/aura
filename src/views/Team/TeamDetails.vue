@@ -129,8 +129,8 @@
             <v-row>
               <v-col md="12" lg="12" sm="12" cols="12" class="text-center">
                 <v-img
-                  :src="require('@/assets/img/svg/DataNotFound.svg')"
-                  :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
+                  :src="require('@/assets/img/common/DataNotFound.svg')"
+                  :lazy-src="require('@/assets/img/common/DataNotFound.svg')"
                   width="20%"
                   style="
                     border-radius: 8px;

@@ -19,7 +19,7 @@
         </span>
       </v-col>
       <v-col md="5" sm="6" cols="12" class="">
-        <img :src="require('@/assets/img/svg/contact.svg')" style="float:right" width="80%" alt />
+        <img :src="require('@/assets/img/common/contact.png')" style="float:right" width="80%" alt />
       </v-col>
     </v-row>
   </v-container>

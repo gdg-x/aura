@@ -27,7 +27,7 @@
                 <v-img
                   width="80%"
                   style="margin: auto"
-                  :src="require('@/assets/img/svg/events.svg')"
+                  :src="require('@/assets/img/common/events.png')"
                 ></v-img>
               </v-col>
             </v-row>

@@ -18,7 +18,7 @@
                 </p>
               </v-col>
               <v-col md="5" sm="5" cols="12" class="">
-                <v-img :src="require('@/assets/img/svg/team.svg')"></v-img>
+                <v-img :src="require('@/assets/img/common/team.png')"></v-img>
               </v-col>
             </v-row>
           </v-container>
