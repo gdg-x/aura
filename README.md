@@ -1,4 +1,4 @@
-# Aura v3
+# Aura v5
 
 <img src="https://github.com/GDG-Jalandhar/WebsiteData/blob/master/Aura%20Main%20v3%20Dark%20.png?raw=true" width="420em"><img src="https://github.com/GDG-Jalandhar/WebsiteData/blob/master/Aura%20Main%20v3%20Light.png?raw=true" width="420em">
 
@@ -7,7 +7,7 @@
 
 Standard Web App for Tech Communties. <br>
 [Demo](https://myaurapp.web.app/) <br>
-Version: 3.1.2
+Version: 5.0.1
 
 ### Show some :heart: and :star: the repo to support the project
 ### If you are using Aura, Kindly [fill this form](https://forms.gle/SNpajdAnqbSac2AV9) for Aura Web App Directory
@@ -31,9 +31,15 @@ Aura is the Web App that helps you to mange the Tech Communities like GDGs, DSCs
 
 
 ## Contributors
-<b>Maintainer:</b> 
+### Maintainer:
 1. [Vrijraj Singh](https://github.com/vrijraj)  
 2. [Bharat Agarwal](https://github.com/bharatagsrwal) 
+
+### Designer:
+1. [Shivam Singh](https://shivam.live/)
+
+### Contributors:
+1. [Nitish Kumar](https://github.com/Nitish-Kumar-2)
 
 
 ## Getting Started
@@ -42,7 +48,7 @@ Aura is the Web App that helps you to mange the Tech Communities like GDGs, DSCs
 1 To Setup `Aura Main` follow this and to setup [Aura Admin](https://github.com/gdg-x/aura-admin)
 1. Use same [Firebase account](https://console.firebase.google.com) project for both `Admin` & `Aura Main`
 1. Setup Environment
-    - Install [Node.js (v8.9.4 - v12.13.0)](https://nodejs.org/en/download/)
+    - Install [Node.js (v18 - v20)](https://nodejs.org/en/download/)
     - Install vue cli: `npm install -g @vue/cli`
 1. Install project dependencies: `npm install` 
 1. Kindly use same firebase project [Aura Admin](https://github.com/gdg-x/aura-admin) for [Aura Main](https://github.com/gdg-x/aura) as well
@@ -142,9 +148,22 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 
 | Community Name | Web App Link |
 | --- | --- |
-| GDG Jalandhar | [View Now](https://gdgjalandhar.com) |
-| DSC NSEC | [View Now](https://dscnsec.com) |
-| GDG Konya | [View Now](https://gdgkonya.com) |
+| GDG Ahmedabad | [View Now](https://gdgahmedabad.com/) |
+| GDG Pune | [View Now](https://gdgpune.in/) |
+| GDG Sri Lanka | [View Now](https://gdgsrilanka.org/) |
+| GDG Baku | [View Now](https://gdgbaku.az/) |
+| GDG Kolachi | [View Now](https://gdgkolachi.com/) |
+| GDG Yangon | [View Now](https://gdgyangon.org/) |
+| GDG Kansas City | [View Now](https://gdgkc.org/) |
+| GDG Port-of-Spain | [View Now](https://gdgpos.com/) |
+| DSC Aswan University| [View Now](https://dscaswu.web.app/) |
+| WiDS Kerala | [View Now](https://wids-kerala.web.app/) |
+| GDSC Seoul | [View Now](https://gdsc-hufs.web.app/) |
+| GDSC IIIT UNA | [View Now](https://dsc-iiitu.web.app/) |
+| GDSC CIT Kolkata | [View Now](https://dsccitkol.web.app/) |
+| GDG Little Rock | [View Now](hhttps://gdglittlerock.firebaseapp.com/) |
+
+Many more...
 
 
 ## Facing Any Problem or need any Help?
