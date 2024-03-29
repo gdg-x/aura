@@ -12,7 +12,7 @@
             width="25"
           />
         </v-avatar>
-        <span class="google-font mb-0" style="font-size: 120%">{{
+        <span class="google-font mb-0 my-auto" style="font-size: 120%;font-weight: 600;">{{
           config.generalConfig.shortName || config.generalConfig.name || ""
         }}</span>
 
@@ -23,7 +23,7 @@
           Make good things <span class="aura-text">together</span>.
         </p>
 
-        <p class="google-font" style="font-size: 100%; color: #9e9e9e">
+        <p class="google-font" style="font-size: 100%; color: #DEE5F1">
           <span v-for="(item, i) in config.generalConfig.hashtags" :key="i">
             <v-chip
               :href="'https://twitter.com/hashtag/' + item"
@@ -31,6 +31,7 @@
               target="_blank"
               small
               class="mr-1"
+              :color="$vuetify.theme.dark?'#292929':'#DEE5F1'"
               >#{{ item }}</v-chip
             >
           </span>

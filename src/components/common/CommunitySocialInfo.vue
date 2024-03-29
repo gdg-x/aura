@@ -63,7 +63,7 @@
           target="_blank"
           slot="activator"
         >
-          <v-icon>mdi-github-circle</v-icon>
+          <v-icon>mdi-github</v-icon>
         </v-btn>
       </template>
       <span>Github</span>

@@ -5,7 +5,9 @@
         v-on="on"
         style="cursor: pointer"
         class="py-5 ma-1 fill-height"
-        :class="$vuetify.theme.dark == true ? 'aura-card-dark' : 'aura-card-light'"
+        :class="
+          $vuetify.theme.dark == true ? 'aura-card-dark' : 'aura-card-light'
+        "
       >
         <div class="text-center">
           <v-avatar size="100">
@@ -15,16 +17,16 @@
               alt=""
             />
           </v-avatar>
-          <p class="mt-3 mb-0 google-font mb-0" style="font-size: 120%">
-            <b>{{ summeryText(data.name, 20) }}</b>
+          <p class="mt-3 mb-0 google-font mb-0" style="font-size: 110%">
+            <b>{{ summeryText(data.name, 25) }}</b>
           </p>
           <p class="mt-0 mb-0 google-font mt-0" style="font-size: 80%">
             {{ summeryText(data.designation, 20) }}
           </p>
         </div>
 
-        <socialMediaDetails class="float-left" :data="data.socialLinks" />
-        <v-btn
+        <socialMediaDetails class="text-center" :data="data.socialLinks" />
+        <!-- <v-btn
           fab
           depressed
           shaped
@@ -34,32 +36,37 @@
           class="float-right mt-n6 mr-4 mb-4"
         >
           <v-icon>mdi-arrow-top-right</v-icon>
-        </v-btn>
+        </v-btn> -->
       </div>
     </template>
 
-    <v-card class="pa-4" :class="theme.isDark ? 'grey darken-3' : 'white'" style="border-radius: 12px;">
-      <v-card-title class="px-5 google-font" primary-title>
-        {{ data.name }}
-      </v-card-title>
+    <v-card
+      class="pa-md-8 pa-sm-8 pa-4 google-font"
+      :class="theme.isDark ? 'grey darken-3' : 'white'"
+      style="border-radius: 12px"
+    >
+      <v-avatar size="150" style="border-radius: 15px;">
+        <img
+          :src="getImgUrl(data.image, 'profile.jpg')"
+          :lazy-src="getImgUrl(data.image, 'profile.jpg')"
+          alt=""
+        />
+      </v-avatar>
+      <v-btn @click="dialog = false" text small depressed fab class="float-right"><v-icon>mdi-close</v-icon></v-btn>
+      <p class="mt-5 mb-0" style="font-size: 150%;font-weight: 600;">{{ data.name }}</p>
+      <p class="google-font">{{ data.designation }}</p>
 
-      <v-card-text class="pa-5">
-        <p class="google-font">{{ data.designation }}</p>
-        <p class="google-font">{{ data.bio }}</p>
-
+      <div v-if="data.bio.length">
+        <p class="mb-1"><b>Bio:</b></p>
+        <p class="google-font" style="font-size: 90%;">{{ data.bio }}</p>
+      </div>
+      <v-toolbar dense flat :color="this.$vuetify.theme.dark ? '#252726' : '#F5F8FC'" style="border-radius: 30px;">
         <socialMediaDetails class="pl-0 ml-0" :data="data.socialLinks" />
-
-        <v-btn class="primary mt-3" small depressed @click="goToTeam(data.id)"
+        <v-spacer></v-spacer>
+        <v-btn class="aura-btn" dark rounded small depressed @click="goToTeam(data.id)"
           >See More Info</v-btn
         >
-      </v-card-text>
-
-      <!-- <v-divider></v-divider> -->
-
-      <v-card-actions>
-        <v-spacer></v-spacer>
-        <v-btn color="primary" text @click="dialog = false"> Close </v-btn>
-      </v-card-actions>
+      </v-toolbar>
     </v-card>
   </v-dialog>
 </template>
@@ -82,7 +89,7 @@ export default {
     goToTeam(id) {
       this.$router.push("/team/" + id);
     },
-  }
+  },
 };
 </script>
 

@@ -10,8 +10,24 @@
           ></v-progress-circular>
         </v-col>
       </v-row>
+      
       <v-row v-else-if="Object.keys(speaker).length > 0">
-        <v-col cols="12" sm="4" md="3" lg="3">
+        <v-col md="12" cols="12" sm="12" class="my-0">
+          <v-btn
+            text
+            rounded
+            @click="$router.push('/speakers')"
+            class="google-font mb-0"
+            style="
+              text-transform: capitalize;
+              text-decoration: none;
+            "
+          >
+            <v-icon left style="font-size: 150%">mdi-arrow-left-thick</v-icon>
+            <span style="font-size: 120%">All Speakers</span>
+          </v-btn>
+        </v-col>
+        <v-col cols="12" sm="5" md="3" lg="3">
           <v-row>
             <v-col cols="12" sm="12">
               <v-card
@@ -88,7 +104,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" sm="8" md="9" lg="9">
+        <v-col cols="12" sm="7" md="9" lg="9">
           <v-row align="center">
             <v-col cols="12">
               <v-card
@@ -106,7 +122,7 @@
                       v-for="sess in events"
                       :key="sess.id"
                     >
-                    <div @click="$router.push({ path: '/events/' + sess.id })" class="pa-4" :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-white'">
+                    <div style="cursor: pointer;" @click="$router.push({ path: '/events/' + sess.id })" class="pa-4" :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-white'">
                       <p class="mb-0">{{ convtDate(sess.date)}}</p>
                       <p style="font-size: 130%;" class="mb-0"><b>{{ sess.name }}</b></p>
                     </div>

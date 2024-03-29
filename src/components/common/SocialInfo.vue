@@ -34,9 +34,9 @@
           :href="data.github"
           target="_blank"
         >
-          <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-github-circle</v-icon>
+          <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-github</v-icon>
         </v-btn>
-        <v-btn
+        <!-- <v-btn
           aria-label="social media btn"
           small
           class="mt-0 mx-0"
@@ -46,7 +46,7 @@
           target="_blank"
         >
           <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-medium</v-icon>
-        </v-btn>
+        </v-btn> -->
         <v-btn
           aria-label="social media btn"
           small

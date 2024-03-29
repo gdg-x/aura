@@ -93,7 +93,7 @@
                 md="3"
                 lg="3"
                 sm="4"
-                cols="6"
+                cols="12"
                 class="mb-0"
                 v-for="(item, i) in OrganizingTeam"
                 :key="i"

@@ -45,7 +45,7 @@ body {
 
 .aura-card-light {
   height: 100%;
-  background: #f1f2f3 !important;
+  background: #F5F8FC !important;
   border-radius: 12px !important;
 }
 
@@ -141,7 +141,7 @@ body {
 }
 
 .aura-lightModeCardFeatureEvent {
-  background-color: #f1f2f3 !important;
+  background-color: #F5F8FC !important;
   border-radius: 12px !important;
   /* box-shadow: 0 0 36px rgba(0, 0, 0, 0.1); */
   border-radius: 8px;

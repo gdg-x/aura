@@ -14,7 +14,7 @@
                   class=" google-font mb-0 "
                   style="font-weight: 350; font-size: 200%"
                 >
-                  <b class=" aura-text"> Blogs</b>
+                  <b class="aura-text"> Blogs</b>
                 </p>
               </v-col>
             </v-row>

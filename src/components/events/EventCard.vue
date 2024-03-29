@@ -8,11 +8,11 @@
     "
     class="pa-3 pa-md-6 py-5 fill-height"
   >
-    <p class="google-font mb-0" style="font-size: 90%">
+    <p class="google-font mb-0" style="font-size: 85%">
       {{ convtDate(data.date) }}
     </p>
-    <p class="google-font mb-0" style="font-size: 120%">
-      {{ summeryText(data.name, 15)}}
+    <p class="google-font mb-0" style="font-size: 120%;font-weight: 600;">
+      {{ summeryText(data.name, 20)}}
     </p>
     <!-- <p class="google-font mb-0" style="font-size:90%">{{data.venue.name | summary(20)}}</p> -->
     <v-spacer></v-spacer>
@@ -20,11 +20,13 @@
       rounded
       depressed
       small
-      class="mb-0 mt-4 google-font aura-btn"
-      style=""
+      right
+      class="mb-0 mt-4 google-font"
       @click="goToEvent(data.id)"
-      color="primary"
-      >See More</v-btn
+      :color="$vuetify.theme.dark?'#585B5A':'#DEE4EA'"
+      >See More
+      <v-icon right>mdi-arrow-right-thin</v-icon>
+      </v-btn
     >
   </div>
 </template>

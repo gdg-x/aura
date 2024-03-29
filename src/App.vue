@@ -1,44 +1,64 @@
 <template>
   <v-app class="aura-hidden-x">
-    <v-snackbar v-model="snackWithButtons" :timeout="timeout" bottom left class="snack">
+    <v-snackbar
+      v-model="snackWithButtons"
+      :timeout="timeout"
+      bottom
+      left
+      class="snack"
+    >
       {{ snackWithBtnText }}
       <v-spacer />
-      <v-btn dark text color="#00f500" @click.native="refreshApp">{{ snackBtnText }}</v-btn>
+      <v-btn dark text color="#00f500" @click.native="refreshApp">{{
+        snackBtnText
+      }}</v-btn>
       <v-btn icon @click="snackWithButtons = false">
         <v-icon>mdi-close</v-icon>
       </v-btn>
     </v-snackbar>
-    <Toolbar v-if="!noData && !isLoading && !$route.meta.isEvent"/>
-    <Toolbar2 v-if="!noData && !isLoading && !$route.meta.isEvent"/>
-    <Drawer v-if="!noData && !isLoading && !$route.meta.isEvent"/>
-    <BottomNav v-if="!noData && !isLoading && !$route.meta.isEvent"/>
-
+    <Toolbar v-if="!noData && !isLoading && !$route.meta.isEvent" />
+    <AppSidebar v-if="!noData && !isLoading && !$route.meta.isEvent" />
+    <Drawer v-if="!noData && !isLoading && !$route.meta.isEvent" />
+    <BottomNav v-if="!noData && !isLoading && !$route.meta.isEvent" />
 
     <v-main class="" v-if="isLoading">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
-            <v-progress-circular class="aura-text" :width="5" :size="50" color="primary" indeterminate></v-progress-circular>
-            <p class="google-font mb-0 mt-4" style="font-size: 140%;">
-              Based on <span class="aura-text">Project Aura</span> 
+            <v-progress-circular
+              class="aura-text"
+              :width="5"
+              :size="50"
+              color="primary"
+              indeterminate
+            ></v-progress-circular>
+            <p class="google-font mb-0 mt-4" style="font-size: 140%">
+              Based on <span class="aura-text">Project Aura</span>
             </p>
           </v-col>
         </v-row>
       </v-container>
     </v-main>
 
-
     <v-main class="" v-if="!isLoading && noData">
       <v-container class="fill-height">
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
-            <p class="google-font">Either Your Internet is not Working or Site is not Configured</p>
-            <p class="google-font">Follow the Docs for <a target="_blank" href="https://github.com/gdg-x/aura" >Aura</a> & <a target="_blank" href="https://github.com/gdg-x/aura-admin">Aura Admin</a></p>
+            <p class="google-font">
+              Either Your Internet is not Working or Site is not Configured
+            </p>
+            <p class="google-font">
+              Follow the Docs for
+              <a target="_blank" href="https://github.com/gdg-x/aura">Aura</a> &
+              <a target="_blank" href="https://github.com/gdg-x/aura-admin"
+                >Aura Admin</a
+              >
+            </p>
           </v-col>
         </v-row>
       </v-container>
     </v-main>
-    
+
     <Views v-if="!isLoading && !noData" />
     <Footer v-if="!noData && !isLoading && !$route.meta.isEvent" />
   </v-app>
@@ -50,25 +70,25 @@ import { mapState, mapMutations } from "vuex";
 export default {
   name: "App",
   components: {
-    Toolbar2:()=>import('@/components/core/Toolbar2'),
-    Toolbar:()=>import('@/components/core/Toolbar'),
-    BottomNav:()=>import('@/components/core/BottomNav'),
-    Drawer:()=>import('@/components/core/Drawer'),
-    Views:()=>import('@/components/core/Views'),
-    Footer:()=>import('@/components/core/Footer')
+    AppSidebar: () => import("@/components/core/AppSidebar"),
+    Toolbar: () => import("@/components/core/Toolbar"),
+    BottomNav: () => import("@/components/core/BottomNav"),
+    Drawer: () => import("@/components/core/Drawer"),
+    Views: () => import("@/components/core/Views"),
+    Footer: () => import("@/components/core/Footer"),
   },
   data: () => ({
     isLoading: true,
     refreshing: false,
     registration: null,
-    noData:false,
+    noData: false,
     snackBtnText: "",
     snackWithBtnText: "",
     snackWithButtons: false,
-    timeout: 15000
+    timeout: 15000,
   }),
   computed: {
-    ...mapState(["config"])
+    ...mapState(["config"]),
   },
   created() {
     // Listen for swUpdated event and display refresh snackbar as required.
@@ -97,7 +117,7 @@ export default {
     ...mapMutations([
       "setGeneralConfig",
       "setKeysAndSecutityConfig",
-      "setFooterConfig"
+      "setFooterConfig",
     ]),
     showRefreshUI(e) {
       this.registration = e.detail;
@@ -114,9 +134,9 @@ export default {
     },
     getData() {
       this.isLoading = true;
-      service.getAllConfig().then(res => {
+      service.getAllConfig().then((res) => {
         if (res.success) {
-          res.data.forEach(ele => {
+          res.data.forEach((ele) => {
             if (ele.name == "footer") this.setFooterConfig(ele.data.links);
             else if (ele.name == "general") this.setGeneralConfig(ele.data);
             else if (ele.name == "keysandsecurity")
@@ -124,12 +144,12 @@ export default {
           });
           this.noData = false;
           this.isLoading = false;
-        }else{
+        } else {
           this.noData = true;
-         this.isLoading = false; 
+          this.isLoading = false;
         }
       });
-    }
-  }
+    },
+  },
 };
 </script>

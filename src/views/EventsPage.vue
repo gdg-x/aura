@@ -17,6 +17,7 @@
                   Questions? Please contact
                   <a
                     style="color: #1565c0; text-decoration: none"
+                    class="aura-text"
                     :href="`mailto:${config.generalConfig.email}`"
                     >{{ config.generalConfig.email }}</a
                   >
@@ -41,7 +42,7 @@
     </v-container>
 
     <!-- Past Events -->
-    <v-container fluid class="py-2 mt-8">
+    <v-container fluid class="py-2 mt-8 mb-8">
       <v-row justify="center" align="center">
         <v-col md="12" lg="11" sm="11" xs="12" class="py-0">
           <PastEvents />

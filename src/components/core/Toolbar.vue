@@ -15,56 +15,27 @@
     ></v-app-bar-nav-icon>
     <v-spacer></v-spacer>
 
-    <v-chip style="height: 40px;border-radius: 25px;" class="px-5" to="/" :color="$vuetify.theme.dark ? '#252726' : '#F5F7F7'">
-      <v-img
-        alt="Community Logo"
-        class="shrink mr-2 google-font"
-        contain
-        :src="config.generalConfig.toolbarImage"
-        transition="scale-transition"
-        width="25"
-      />{{
-        config.generalConfig.shortName || config.generalConfig.name || ""
-      }}</v-chip
+    <v-chip
+      style="height: 40px; border-radius: 25px"
+      class="px-5"
+      to="/"
+      :color="$vuetify.theme.dark ? '#252726' : '#F5F7F7'"
     >
-
-    <!-- <div
-      class="d-flex align-center"
-      v-if="checkExistance(config.generalConfig.toolbarImage, 0)"
-    >
-      <router-link
-        to="/"
-        class="google-font"
-        style="text-decoration: none; font-size: 110%"
-        :class="
-          this.$vuetify.theme.dark ? 'white--text' : 'grey--text text--darken-2'
-        "
+      <v-avatar
+        :color="this.$vuetify.theme.dark ? '#999999' : '#F5F7F7'"
+        size="60"
+        class="mr-2"
       >
         <v-img
           alt="Community Logo"
-          class="shrink mr-2"
+          class="shrink google-font"
           contain
           :src="config.generalConfig.toolbarImage"
           transition="scale-transition"
-          width="25"
-        />
-      </router-link>
-    </div> -->
-
-    <!-- <v-toolbar-title class="google-font px-0" style="width: 280px">
-      <router-link
-        to="/"
-        class="google-font"
-        aria-label="Communiy homepage"
-        style="text-decoration: none; font-size: 110%"
-        :class="this.$vuetify.theme.dark ? 'whiteText' : 'blackText'"
-      >
-        {{
-          config.generalConfig.shortName || config.generalConfig.name || ""
-        }}</router-link
-      >
-    </v-toolbar-title>
-     -->
+          width="65"
+      /></v-avatar>
+      {{config.generalConfig.shortName || config.generalConfig.name || ""}}
+    </v-chip>
 
     <offline @detected-condition="handleConnectivityChange"></offline>
     <v-toolbar-title
@@ -79,15 +50,6 @@
       class="google-font px-2"
       >Offline</v-toolbar-title
     >
-    <!-- <v-btn
-      icon
-      v-on:click="darkMode"
-      class="ml-1"
-      aria-label="Theme Switch BTN"
-    >
-      <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
-      <v-icon v-else>mdi-brightness-4</v-icon>
-    </v-btn> -->
   </v-app-bar>
 </template>
 
@@ -112,18 +74,6 @@ export default {
       e.stopPropagation();
       if (item.to || !item.href) return;
       this.$vuetify.goTo(item.href);
-    },
-    darkMode() {
-      let metaThemeColor = document.querySelector("meta[name=theme-color]");
-
-      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-      if (localStorage)
-        localStorage.setItem("darkMode", this.$vuetify.theme.dark);
-      if (this.$vuetify.theme.dark) {
-        metaThemeColor.setAttribute("content", "#212121");
-      } else {
-        metaThemeColor.setAttribute("content", "#0277bd");
-      }
     },
     handleConnectivityChange(status) {
       if (status === true) {

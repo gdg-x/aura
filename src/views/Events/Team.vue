@@ -22,7 +22,7 @@
             </v-col>
           </v-row>
           <v-row class="" v-if="checkExistance(eventDetails.team,0)">
-            <v-col cols="6" md="3" lg="2" xl="2" sm="3" class="pa-1" v-for="(item,i) in sData" :key="i">
+            <v-col cols="6" md="2" lg="2" xl="2" sm="3" class="pa-1" v-for="(item,i) in sData" :key="i">
               <TeamMemberCard :data="item" />
             </v-col>
           </v-row>
