@@ -1,13 +1,13 @@
 <template>
   <v-container fluid>
     <v-row align="center" justify="center">
-      <v-col md="4" cols="12">
+      <v-col md="4" sm="12" cols="12">
         <p class="google-font mb-0" style="font-size: 150%">What we do?</p>
         <p class="google-font" style="font-size: 100%">
           {{ config.generalConfig.shortDescription }}
         </p>
       </v-col>
-      <v-col md="8" cols="12" class="pa-0 ma-0">
+      <v-col md="8" sm="12" cols="12" class="pa-0 ma-0">
         <v-container fluid class="pa-0 ma-0">
           <v-row>
             <v-col

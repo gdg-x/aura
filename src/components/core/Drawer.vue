@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer v-model="drawer" app width="300px" temporary>
+  <v-navigation-drawer v-model="drawer" app width="300px" temporary :color="this.$vuetify.theme.dark?'#252726':'#F5F8FC'">
     <v-list-item>
       <v-list-item-content>
         <v-list-item-title class="google-font" style="font-size: 130%">{{

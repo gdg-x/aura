@@ -7,7 +7,7 @@
           <!-- Header -->
           <v-container fluid class="py-0 my-0">
             <v-row align="center" class="py-0 my-0">
-              <v-col md="7" sm="7" cols="12" class="py-0 my-0 pr-md-10">
+              <v-col md="7" sm="8" cols="12" class="py-0 my-0 pr-md-10">
                 <p
                   class="google-font mb-0"
                   style="font-weight: 350; font-size: 200%"
@@ -37,7 +37,7 @@
                   >Become a Member</v-btn
                 >
               </v-col>
-              <v-col md="5" sm="5" cols="12" class="py-0 my-0">
+              <v-col md="5" sm="4" cols="12" class="py-0 my-0">
                 <v-img
                   width="90%"
                   style="margin: auto"

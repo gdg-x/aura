@@ -6,7 +6,7 @@
           <!-- Header -->
           <v-container fluid class="my-0 py-0">
             <v-row justify="center" align="center">
-              <v-col md="8" sm="8" cols="12">
+              <v-col md="8" sm="7" cols="12">
                 <p
                   class="google-font mb-0"
                   style="font-weight: 350; font-size: 200%"
@@ -23,7 +23,7 @@
                   >
                 </p>
               </v-col>
-              <v-col md="4" sm="4" cols="12">
+              <v-col md="4" sm="5" cols="12">
                 <v-img
                   width="80%"
                   style="margin: auto"

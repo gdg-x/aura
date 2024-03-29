@@ -3,7 +3,7 @@
     grow
     app
     :dark="this.$vuetify.theme.dark"
-    :background-color="this.$vuetify.theme.dark?'#212121':'white'"
+    :background-color="this.$vuetify.theme.dark?'#252726':'#F5F8FC'"
     :color="this.$vuetify.theme.dark?'white':''"
     class="hidden-md-and-up"
   > 

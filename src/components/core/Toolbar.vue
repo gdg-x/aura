@@ -11,7 +11,7 @@
     <v-app-bar-nav-icon
       aria-label="Hamburger Menu"
       @click="toggleDrawer"
-      class="d-md-none d-lg-none"
+      class="d-lg-none"
     ></v-app-bar-nav-icon>
     <v-spacer></v-spacer>
 

@@ -198,7 +198,7 @@
     >
       <!-- Other Data -->
       <v-row class="pa-3">
-        <v-col md="6" class="pa-3">
+        <v-col md="6" sm="6" class="pa-3">
           <p><b>Speakers</b></p>
           <v-container
             fluid
@@ -250,7 +250,7 @@
             </v-row>
           </v-container>
         </v-col>
-        <v-col md="6" class="pa-3">
+        <v-col md="6" sm="6" class="pa-3">
           <p><b>Partners</b></p>
           <v-container
             fluid
@@ -266,7 +266,7 @@
                 cols="6"
                 md="4"
                 lg="4"
-                sm="4"
+                sm="6"
                 class="pa-1"
                 v-for="(item, i) in eventPartners"
                 :key="i"

@@ -2,13 +2,13 @@
   <v-navigation-drawer
     app
     width="100px"
-    :color="this.$vuetify.theme.dark ? '#252726' : '#F5F7F7'"
+    :color="this.$vuetify.theme.dark ? '#252726' : '#F5F8FC'"
     class="text-center"
     v-model="eventDrawer"
     floating
     clipped-left
   >
-    <v-avatar class="my-4" :color="this.$vuetify.theme.dark? '#999999' :'#F5F7F7' ">
+    <v-avatar class="my-4"  :color="this.$vuetify.theme.dark ? '#999999' : '#F5F8FC'">
       <v-img
         alt="Community Logo"
         class="shrink google-font"
@@ -27,6 +27,7 @@
         :key="i"
         @click="onClick($event, link)"
         :to="'/events/' + $route.params.id + '' + link.to"
+        :color="$vuetify.theme.dark?'#292929':'#F5F8FC'"
       >
         <div>
           <v-icon style="display: block" size="24" class="mb-1">{{

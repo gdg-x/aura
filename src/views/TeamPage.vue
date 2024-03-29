@@ -17,7 +17,7 @@
                   {{ config.generalConfig.shortDescription }}
                 </p>
               </v-col>
-              <v-col md="5" sm="7" cols="12" class="">
+              <v-col md="5" sm="5" cols="12" class="">
                 <v-img :src="require('@/assets/img/svg/team.svg')"></v-img>
               </v-col>
             </v-row>
