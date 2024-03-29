@@ -140,7 +140,7 @@ const routes = [{
   {
     path: '/partners',
     name: 'Partners',
-    component: () => import( /* webpackChunkName: "partners" */ '../views/Partners.vue'),
+    component: () => import( /* webpackChunkName: "partners" */ '../views/PartnersPage.vue'),
     meta: {
       title: 'Partners ',
       color: '#0277bd',
@@ -158,7 +158,7 @@ const routes = [{
   {
     path: '/blogs',
     name: 'Blogs',
-    component: () => import( /* webpackChunkName: "blogs" */ '../views/Blogs.vue'),
+    component: () => import( /* webpackChunkName: "blogs" */ '../views/BlogsPage.vue'),
     meta: {
       title: 'Blogs ',
       color: '#0277bd',

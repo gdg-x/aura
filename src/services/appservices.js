@@ -28,7 +28,6 @@ let appservice = {
         });
     })
   },
-
   getTeamMember(id) {
     return new Promise((resolve, reject) => {
       firebase.firestore.collection("team").doc(id)
