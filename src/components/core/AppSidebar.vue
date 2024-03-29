@@ -8,7 +8,7 @@
     class="text-center"
   >
     <v-avatar
-      :color="this.$vuetify.theme.dark ? '#999999' : '#F5F8FC'"
+      :color="this.$vuetify.theme.dark ? '#F5F8FC' : '#F5F8FC'"
       size="55"
       class="my-4 mt-5"
     >
