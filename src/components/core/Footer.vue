@@ -20,10 +20,10 @@
             <!-- Links Section -->
 
             <v-row justify="start" class="">
-              <v-col cols="12" md="3" lg="3" sm="3" class="py-2">
+              <v-col cols="12" md="2" lg="2" sm="3" class="py-2">
                 <p
                   class="google-font mb-0"
-                  style="font-size: 140%; font-weight: 300"
+                  style="font-size: 120%; font-weight: 300"
                 >
                   <b>About</b>
                 </p>
@@ -38,16 +38,16 @@
                     "
                     class="google-font my-3"
                     target="_blank"
-                    style="text-decoration: none; font-size: 110%"
+                    style="text-decoration: none; font-size: 100%"
                     >{{ item.linkname }}</a
                   ><br />
                 </div>
               </v-col>
 
-              <v-col cols="12" md="3" lg="3" sm="3" class="py-2">
+              <v-col cols="12" md="2" lg="2" sm="3" class="py-2">
                 <p
                   class="google-font mb-0"
-                  style="font-size: 140%; font-weight: 300"
+                  style="font-size: 120%; font-weight: 300"
                 >
                   <b>Resources</b>
                 </p>
@@ -65,16 +65,16 @@
                     "
                     class="google-font my-3"
                     target="_blank"
-                    style="text-decoration: none; font-size: 110%"
+                    style="text-decoration: none; font-size: 100%"
                     >{{ item.linkname }}</a
                   ><br />
                 </div>
               </v-col>
 
-              <v-col cols="12" md="3" lg="3" sm="3" class="py-2">
+              <v-col cols="12" md="2" lg="2" sm="3" class="py-2">
                 <p
                   class="google-font mb-0"
-                  style="font-size: 140%; font-weight: 300"
+                  style="font-size: 120%; font-weight: 300"
                 >
                   <b>Developer Console</b>
                 </p>
@@ -92,7 +92,7 @@
                     "
                     class="google-font my-3"
                     target="_blank"
-                    style="text-decoration: none; font-size: 110%"
+                    style="text-decoration: none; font-size: 100%"
                     >{{ item.linkname }}</a
                   ><br />
                 </div>
@@ -117,7 +117,7 @@
           >
             <v-toolbar-title
               class="google-font pl-0 ml-0 mr-3 mb-0"
-              style="font-size: 200%"
+              style="font-size: 150%"
               >{{
                 config.generalConfig.shortName ||
                 config.generalConfig.name ||
@@ -130,29 +130,31 @@
               ]"
               :key="i"
               rel="noreferrer"
+              rounded
+              small
               :href="item.link"
               target="_blank"
-              class="ml-0 google-font hidden-sm-and-down"
-              style="text-transform: capitalize; font-size: 110%"
+              class="ml-0 mr-3 google-font hidden-sm-and-down"
+              style="text-transform: capitalize"
               text
               aria-label="Footer Bottom Button"
             >
               {{ item.linkname }}
             </v-btn>
             <v-spacer></v-spacer>
-            <p class="google-font mb-0" style="font-size: 140%;">
-              Based on <span class="aura-text">
-                Project
-              <a
-                href="https://github.com/gdg-x/aura/"
-                target="_blank"
-                rel="noreferrer"
-                style="text-decoration: none"
-                class="aura-text"
-              >
-                Aura</a
-              >
-              </span> 
+            <p class="google-font mb-0" style="font-size: 120%">
+              Based on
+              <span class="aura-text">
+                <a
+                  href="https://github.com/gdg-x/aura/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style="text-decoration: none;cursor: pointer;"
+                  class="aura-text"
+                >
+                Project Aura</a
+                >
+              </span>
             </p>
           </v-toolbar>
         </v-col>
