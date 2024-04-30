@@ -210,7 +210,7 @@
                 md="6"
                 cols="12"
                 class="ma-0 pa-0"
-                v-for="(item, index) in eventPartners"
+                v-for="(item, index) in eventSpeakers"
                 :key="index"
               >
                 <v-list>
