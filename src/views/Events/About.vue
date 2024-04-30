@@ -102,9 +102,7 @@
             >
               {{ eventDetails.name }} Details
             </h1>
-            <p class="google-font mb-3" style="font-size: 100%">
-              {{ eventDetails.des }}
-            </p>
+            <p class="google-font mb-3" style="font-size: 90%" v-html="eventDetails.des"></p>
 
             <div class="mt-10">
               <v-btn
