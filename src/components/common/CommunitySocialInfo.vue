@@ -95,7 +95,7 @@
           target="_blank"
           slot="activator"
         >
-          <v-icon>mdi-youtube-play</v-icon>
+          <v-icon>mdi-youtube</v-icon>
         </v-btn>
       </template>
       <span>YouTube</span>
