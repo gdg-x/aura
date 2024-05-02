@@ -80,7 +80,7 @@
           <!-- Core Team -->
 
           <!-- Organizing Team -->
-          <v-container fluid class="my-10">
+          <v-container fluid class="my-10" v-if="OrganizingTeam.length">
             <v-row align="center" class="">
               <v-col cols="12" md="11" sm="11">
                 <h3 class="google-font mb-1">Organizing Team Members</h3>
