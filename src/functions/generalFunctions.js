@@ -30,7 +30,10 @@ export default {
             return formattedDate
         },
         summeryText: (val, num) => {
-            return val.substring(0, num) + "..";
+            if(val.length>num){
+                return val.substring(0, num) + "..";
+            }
+            return val
         }
     },
 }

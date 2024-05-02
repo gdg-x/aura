@@ -12,7 +12,7 @@
       {{ convtDate(data.date) }}
     </p>
     <p class="google-font mb-0" style="font-size: 120%;font-weight: 600;">
-      {{ summeryText(data.name, 20)}}
+      {{ summeryText(data.name, 25)}}
     </p>
     <!-- <p class="google-font mb-0" style="font-size:90%">{{data.venue.name | summary(20)}}</p> -->
     <v-spacer></v-spacer>
