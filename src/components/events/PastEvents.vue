@@ -44,6 +44,8 @@
               :headers="headers"
               :items="eventsData"
               :loading="isLoading"
+              sort-by="date"
+              sort-desc
               :items-per-page="5"
               :class="$vuetify.theme.dark ? 'aura-card-dark' : 'aura-card-light'"
             >
