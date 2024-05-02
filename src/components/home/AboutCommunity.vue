@@ -10,7 +10,7 @@
             <p class="google-font mb-0" style="font-size: 150%">
               About {{ config.generalConfig.name }}
             </p>
-            <p class="google-font mt-0" style="font-size: 95%">
+            <p class="google-font mt-0" style="font-size: 90%">
               {{ config.generalConfig.longDescription }}
             </p>
             <router-link

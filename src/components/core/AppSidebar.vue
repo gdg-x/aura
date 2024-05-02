@@ -7,24 +7,26 @@
     floating
     class="text-center"
   >
-    <v-avatar
-      :color="this.$vuetify.theme.dark ? '#F5F8FC' : '#F5F8FC'"
-      size="55"
-      class="my-4 mt-5"
-    >
-      <v-img
-        alt="Community Logo"
-        class="shrink google-font"
-        contain
-        :src="config.generalConfig.toolbarImage"
-        transition="scale-transition"
-        width="65"
-      />
-    </v-avatar>
+    <router-link to="/">
+      <v-avatar
+        :color="this.$vuetify.theme.dark ? '#F5F8FC' : '#F5F8FC'"
+        size="55"
+        class="my-4 mt-5"
+      >
+        <v-img
+          alt="Community Logo"
+          class="shrink google-font"
+          contain
+          :src="config.generalConfig.toolbarImage"
+          transition="scale-transition"
+          width="65"
+        />
+      </v-avatar>
+    </router-link>
     <v-list>
       <v-btn
         depressed
-        :color="$vuetify.theme.dark?'#292929':'#F5F8FC'"
+        :color="$vuetify.theme.dark ? '#292929' : '#F5F8FC'"
         class="px-0 py-8 mb-2"
         style="border-radius: 16px"
         v-for="(link, i) in links.filter((obj) => obj.meta.showToolbar)"

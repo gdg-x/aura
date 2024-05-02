@@ -26,10 +26,10 @@
               <div class="aura-home-cardbar"></div>
               <div class="aura-home-card-content">
                 <v-icon large style="font-size: 250%">{{ item.icon }}</v-icon>
-                <p class="google-font mt-2" style="font-size: 120%">
+                <p class="google-font mt-2" style="font-size: 110%">
                   {{ item.name }}
                 </p>
-                <p class="google-font" style="font-size: 85%">
+                <p class="google-font" style="font-size: 80%">
                   {{ item.des }}
                 </p>
               </div>

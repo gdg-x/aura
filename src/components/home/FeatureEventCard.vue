@@ -9,7 +9,7 @@
         class="pa-3 pa-md-6 py-5 fill-height"
       >
         <p class="google-font mb-0" style="font-size:90%">{{convtDate(data.date)}}</p>
-        <p class="google-font mb-0" style="font-size:120%">{{data.name | summary(15)}}</p>
+        <p class="google-font mb-0" style="font-size:100%">{{data.name | summary(15)}}</p>
         <!-- <p class="google-font mb-0" style="font-size:90%">{{data.venue.name | summary(20)}}</p> -->
         <v-spacer></v-spacer>
         <v-btn rounded depressed class="mb-0 mt-4 google-font" style="" color="primary">See More</v-btn>
