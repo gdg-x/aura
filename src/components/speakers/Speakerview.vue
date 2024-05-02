@@ -1,7 +1,7 @@
 <template>
   <div @click="$router.push({ path: '/speakers/'+data.id})" style="cursor: pointer;" class="fill-height">
     <v-avatar size="100" v-ripple>
-      <v-img :src="getImgUrl(data.image, 'profile.jpg')">
+      <v-img :src="getImgUrl(data.image, 'profile.jpg')" :lazy-src="getImgUrl(data.image, 'profile.jpg')">
         <template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
             <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
