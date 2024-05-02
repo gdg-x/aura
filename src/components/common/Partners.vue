@@ -10,7 +10,7 @@
           partnership.
         </p>
         <p class="google-font mt-0 mb-0" style="font-size: 100%">
-          If you’re interested in being showcased throughout , contact
+          If you’re interested in being showcased throughout, contact
           <a
             style="color: #1565c0; text-decoration: none"
             class="aura-text"

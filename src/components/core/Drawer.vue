@@ -1,5 +1,11 @@
 <template>
-  <v-navigation-drawer v-model="drawer" app width="300px" temporary :color="this.$vuetify.theme.dark?'#252726':'#F5F8FC'">
+  <v-navigation-drawer
+    v-model="drawer"
+    app
+    width="300px"
+    temporary
+    :color="this.$vuetify.theme.dark ? '#252726' : '#F5F8FC'"
+  >
     <v-list-item>
       <v-list-item-content>
         <v-list-item-title class="google-font" style="font-size: 130%">{{
@@ -32,14 +38,17 @@
     <template v-slot:append>
       <v-list>
         <v-list-item>
-          <v-list-item-icon>
+          <!-- <v-list-item-icon>
             <v-icon v-if="$vuetify.theme.dark">mdi-brightness-7</v-icon>
-        <v-icon v-else>mdi-brightness-4</v-icon>
-          </v-list-item-icon>
+            <v-icon v-else>mdi-brightness-4</v-icon>
+          </v-list-item-icon> -->
 
           <v-list-item-content>
             <v-list-item-title>
-              <v-btn rounded depressed v-on:click="darkMode">Click Here</v-btn>
+              <v-btn rounded depressed v-on:click="darkMode"
+                >Switch
+                {{ $vuetify.theme.dark ? "Light Mode" : "Dark Mode" }}</v-btn
+              >
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -107,7 +116,7 @@ export default {
       } else {
         metaThemeColor.setAttribute("content", "#0277bd");
       }
-    }
+    },
   },
 };
 </script>
